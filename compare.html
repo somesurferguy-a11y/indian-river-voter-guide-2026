@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Candidates — Indian River County Voter Guide 2026</title>
+<meta name="description" content="Side-by-side comparison of every candidate on the Indian River County 2026 ballot, on the issues that matter locally.">
+<link rel="stylesheet" href="css/styles.css?v=20260808d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗳️</text></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">IRC</span>
+      <span class="brand__text">
+        <span class="brand__title">Voter Guide 2026</span>
+        <span class="brand__sub">Indian River County, Florida</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="races.html">Races</a>
+      <a href="compare.html">Compare</a>
+      <a href="issues.html">Issues</a>
+      <a href="money.html">Money</a>
+      <a href="measures.html">Measures</a>
+      <a href="how-to-vote.html">How to Vote</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="race-head">
+    <div class="wrap">
+      <h1>Compare candidates</h1>
+      <p class="hero__lede">
+        Pick a race to see every candidate's stated position on each issue, side by side.
+        Cells marked <em>"No position found"</em> mean this guide could not locate a public
+        statement from that candidate on that issue — which is itself worth knowing.
+      </p>
+
+      <div style="margin-top:22px">
+        <label for="raceSelect" style="display:block;font-weight:700;margin-bottom:7px">Choose a race</label>
+        <select id="raceSelect" style="font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-width:min(100%,420px)"></select>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div id="compareOut"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap wrap--narrow">
+      <div class="callout callout--info">
+        <h4>How to read this table</h4>
+        <p>Summaries are this guide's neutral paraphrase of the candidate's own public statements,
+           with a source link to the original. Where a direct quote exists, it appears on the
+           candidate's full profile.</p>
+        <p class="mb-0">Candidate order matches the ballot where known, otherwise alphabetical by
+           surname. Order carries no meaning and implies no ranking.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="mb-0">Nonpartisan and independent. Not affiliated with any candidate, party, or government agency.
+       <a href="methodology.html">Methodology &amp; corrections</a></p>
+  </div>
+</footer>
+
+<script src="data/guide.js?v=20260808d"></script>
+<script src="js/render.js?v=20260808d"></script>
+<script>
+(function () {
+  var G = window.GUIDE;
+  VG.initNav();
+  if (!G) { console.error('GUIDE data failed to load'); return; }
+
+  var sel = document.getElementById('raceSelect');
+  var out = document.getElementById('compareOut');
+  var races = G.races || [];
+
+  sel.innerHTML = races.map(function (r, i) {
+    return '<option value="' + i + '">' + VG.esc(r.office) +
+           (r.district ? ' — ' + VG.esc(r.district) : '') +
+           ' (' + (r.ballot === 'primary' ? 'Aug 18' : r.ballot === 'general' ? 'Nov 3' : 'both') + ')</option>';
+  }).join('');
+
+  function draw() {
+    var r = races[+sel.value];
+    if (!r) { out.innerHTML = '<p class="muted">No race selected.</p>'; return; }
+    out.innerHTML =
+      '<h2>' + VG.esc(r.office) + (r.district ? ' — ' + VG.esc(r.district) : '') + '</h2>' +
+      (r.stakes ? '<p class="muted" style="max-width:70ch">' + VG.esc(r.stakes) + '</p>' : '') +
+      (r.whoVotes ? '<div class="who-votes"><strong>Who can vote in this race:</strong> ' + VG.esc(r.whoVotes) + '</div>' : '') +
+      VG.renderCompareTable(r, G.issues || []) +
+      '<div class="btn-row"><a class="btn btn--ghost" href="races.html#race-' + VG.escAttr(r.id) + '">Full candidate profiles &amp; records →</a></div>';
+
+    // Reflect selection in the URL so a specific comparison can be linked/shared.
+    history.replaceState(null, '', '#' + r.id);
+  }
+
+  // Deep link support: /compare.html#cc-d2
+  var hash = location.hash.replace('#', '');
+  if (hash) {
+    var idx = races.findIndex(function (r) { return r.id === hash; });
+    if (idx >= 0) sel.value = idx;
+  }
+
+  sel.addEventListener('change', draw);
+  draw();
+})();
+</script>
+</body>
+</html>
