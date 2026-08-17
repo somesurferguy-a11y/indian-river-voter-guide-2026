@@ -1242,7 +1242,7 @@ window.GUIDE = {
           incumbent: true,
           residence: 'Vero Beach',
           occupation: 'Estate manager; sitting Seat 2 commissioner',
-          bio: 'The sitting Seat 2 commissioner, elected in 2022. By her own filed candidate statement: a third-generation Floridian and lifelong Indian River County resident, Vero Beach High School graduate, with an associate degree from Indian River State College and a bachelor\'s in business administration anticipated January 2027. Career in executive-level administration and estate management. Founded the Indian River County Cattlewomen chapter in 2019 and serves as its president. Has served on the Agriculture Advisory Committee, Economic Development Council, Environmental Control Hearing Board, and the Treasure Coast Regional Planning Council CEDS committee.',
+          bio: 'The sitting Seat 2 commissioner, elected in 2022. By her own filed candidate statement: a third-generation Floridian and lifelong Indian River County resident, Vero Beach High School graduate, with an associate degree from Indian River State College and a bachelor\'s in business administration anticipated January 2027. Career in executive-level administration and estate management. Founded the Indian River County Cattlewomen chapter in 2019 and serves as its president. Has served on the Agriculture Advisory Committee, Economic Development Council, Environmental Control Hearing Board, and the Treasure Coast Regional Planning Council CEDS committee. Her campaign\'s public Facebook page describes her: "Born and raised in Indian River County. Proud to serve as your Mosquito Control Commissioner, committed to protecting our community through responsible leadership."',
           positions: {
             taxes: {
               summary: 'Frames her candidacy around fiscal oversight and stewardship of taxpayer money, without naming a specific policy.',
@@ -1334,10 +1334,10 @@ window.GUIDE = {
             },
             {
               type: 'fact',
-              claim: 'A TCPalm candidate questionnaire published June 28, 2026 reportedly quotes MacCoy describing his education as Walsingham Academy, Fork Union Military Academy, and Virginia Commonwealth University, a self-owned consulting business called "Blue Sky Consultation," and volunteer work as a Little League coach and umpire.',
-              detail: 'IMPORTANT CAVEAT: this guide\'s fetching tool is blocked from accessing tcpalm.com directly and could not independently read the article. None of these specific details — the two schools, VCU, or "Blue Sky Consultation" — turned up in independent public-records searches this guide could run. This is reported here, attributed to TCPalm, rather than stated as this guide\'s own verified fact. The direct link is provided so it can be checked by anyone with TCPalm access.',
-              date: '2026-06-28',
-              source: { title: 'TCPalm — Indian River County Mosquito Control District candidates answer election questions', url: 'https://www.tcpalm.com/story/news/politics/elections/2026/06/28/indian-river-county-florida-mosquito-control-district-candidates-2026-election-vero-beach-irc/90524751007/' }
+              claim: 'Two of his education claims are independently confirmed on his own Facebook profile: high school at Fork Union Military Academy, college at Virginia Commonwealth University.',
+              detail: 'Verified directly from the public "About" section of his personal Facebook profile, not just a secondhand report. A TCPalm candidate questionnaire (June 28, 2026) additionally reported he attended Walsingham Academy, owns a consulting business called "Blue Sky Consultation," and volunteers as a Little League coach and umpire — this guide\'s tool is blocked from fetching tcpalm.com directly, so those three specific details remain attributed to TCPalm\'s reporting rather than independently confirmed.',
+              date: '2026-08-17',
+              source: { title: 'Craig MacCoy — public Facebook profile', url: 'https://www.facebook.com/craig.maccoy' }
             },
             {
               type: 'fact',
