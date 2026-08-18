@@ -653,7 +653,7 @@ window.GUIDE = {
           bio: 'Founding chair of Moms for Liberty Indian River County (2020–2025) and its legislative chair. Led the campaign that removed books from county school libraries. Married with two children; a 2003 graduate of Martin County High School who lists Indian River State College without stating a degree. Her campaign lists her employment as "Current Property Management Company CEO / Orthopedic Practice (Bones) / Outpatient Surgical Center / Indian River Medical Center — Operating Room — 2007." Served on the Florida Dept. of Education Library Media Review Committee (2023–24) and the district Code of Conduct Committee (2022–25). This is her first run for elected office.',
           positions: {
             amendment: {
-              summary: 'Explicitly SUPPORTS the November property tax amendment — the sharpest stated contrast in this race.',
+              summary: 'Her campaign site banner declares blanket support for the amendment. See her record below for a more hedged position stated in a later interview.',
               quote: 'I\'m YOUR County Commission District 2 Candidate that Supports the proposed constitutional amendment "Save Our Homes from Excessive Property Taxes" that will appear on Florida\'s November 2026 ballot.',
               source: { title: 'Campaign website homepage', url: 'https://votejenniferpippin.com/', date: '2026-08-05' }
             },
@@ -666,9 +666,29 @@ window.GUIDE = {
               summary: 'Frames county government around spending transparency; carries her school-board activism into county government.',
               quote: 'The same accountability I brought to our schools, I am bringing to county government. Same fight. Bigger arena.',
               source: { title: 'Campaign website', url: 'https://votejenniferpippin.com/', date: '2026-08-05' }
+            },
+            'sheriff-budget': {
+              summary: 'Says the county and sheriff should have settled their budget dispute earlier through tougher public discussion, and that she would back full funding for the sheriff\'s office if needed for safety.',
+              quote: 'If I was a county commissioner at that time, I would have tried to settle it prior. I would have said, listen, we need to have longer, harder conversations. Do it in the sunshine, do it in the public... if the sheriff and the Indian River County Sheriff\'s Office needs more money to do that, I would absolutely back the blue and make sure that they have the funding for what they need.',
+              detail: 'This guide\'s own transcription (via YouTube auto-captions) of a candidate interview recorded April 17, 2026.',
+              source: { title: 'The Board Report by IRC Media with Candidate Jennifer Pippin', url: 'https://www.youtube.com/watch?v=HiQchfzacOU', date: '2026-04-17' }
             }
           },
           record: [
+            {
+              type: 'fact',
+              claim: 'In an April 2026 interview, gave a more hedged position on the property tax amendment than her campaign site banner suggests: when asked directly whether she wants it to pass, she did not answer yes or no, instead favoring a phased rollout — retired veterans first, then seniors and the disabled — rather than eliminating property taxes for everyone at once.',
+              detail: 'She named non-governmental nonprofit funding (SESAC and similar county-funded outside organizations) as her first target for cuts if the amendment reduces county revenue, before touching the sheriff, roads, or safety services. Both her campaign-site banner statement and this more cautious interview answer are genuine public statements from the same candidate; this guide presents both rather than picking one as more authoritative.',
+              date: '2026-04-17',
+              source: { title: 'The Board Report by IRC Media with Candidate Jennifer Pippin', url: 'https://www.youtube.com/watch?v=HiQchfzacOU' }
+            },
+            {
+              type: 'fact',
+              claim: 'In the same interview, opposed allowing new Community Development Districts (CDDs) — an added layer of elected taxing authority some developers have proposed for new subdivisions — and separately said she wants to preserve agricultural land and conservation preserves rather than rezone them for denser development, tying land preservation directly to Indian River Lagoon health.',
+              quote: 'For me, I\'m about less government... I worry about putting more people in government, more votes, more things like that, more responsibility on one or two individuals that don\'t have the experience.',
+              date: '2026-04-17',
+              source: { title: 'The Board Report by IRC Media with Candidate Jennifer Pippin', url: 'https://www.youtube.com/watch?v=HiQchfzacOU' }
+            },
             {
               type: 'fact',
               claim: 'Led the campaign that removed books from Indian River County school libraries.',
