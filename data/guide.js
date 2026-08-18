@@ -2229,53 +2229,321 @@ window.GUIDE = {
       type: 'partisan',
       ballot: 'primary',
       term: '4 years',
-      stakes:
-        'A statewide cabinet office overseeing the Department of Agriculture and Consumer Services — directly relevant to Indian River County given its citrus and agricultural industry, and connected to Amendment 2 on this same ballot (the agricultural equipment tax exemption). The commissioner regulates consumer protection, food safety inspections, and state agricultural land and water policy.',
-      whoVotes:
-        'Registered Republicans and registered Democrats each vote a contested primary today. All voters choose in the November 3 general election, where a qualified write-in candidate, Kyle Gibson, also appears regardless of the primary outcome.',
+      stakes: 'A statewide cabinet office overseeing the Department of Agriculture and Consumer Services — 12 divisions regulating farm products, animal and forestry industries, state forests and wildfire response, concealed-weapons licensing, the hemp industry, and consumer-fraud enforcement, over a roughly $13 billion agricultural sector. Directly relevant to Indian River County given its citrus and agricultural industry, and connected to Amendment 2 on this same ballot (the agricultural equipment tax exemption). No public polling exists for either primary in this race.',
+      whoVotes: 'Registered Republicans and registered Democrats each vote a contested primary today. All voters choose in the November 3 general election, where a qualified write-in candidate, Kyle Gibson, also appears regardless of the primary outcome.',
       candidates: [
         {
-          id: 'simpson', name: 'Wilton Simpson', party: 'R', incumbent: true,
-          occupation: 'Florida Commissioner of Agriculture (since 2023); former Florida Senate President',
-          bio: 'The sitting Commissioner of Agriculture, in office since 2023, and former President of the Florida Senate. Running for re-election with endorsements from President Trump, Gov. DeSantis, the Florida Chamber of Commerce, and 61 of Florida\'s 67 sheriffs.',
+          id: 'simpson',
+          name: 'Wilton Simpson',
+          party: 'R',
+          incumbent: true,
+          occupation: 'Florida Commissioner of Agriculture; former Florida Senate President',
+          bio: 'Began working on his father\'s egg farm in Trilby as a teenager and built it into a large-scale operation now housing roughly 1 million chickens, alongside Simpson Environmental Services and Simpson Farms; net worth $31.5 million per his state financial disclosure. Served in the Florida Senate 2012-2022, as Majority Leader 2016-2018 and Senate President 2020-2022, backing the Florida Wildlife Corridor Act and school-choice expansion. Won the OPEN Commissioner of Agriculture seat outright in the November 2022 general election with 59.3% over Democrat Naomi Blemur — not an appointment — taking office January 2023 as Florida\'s 13th Commissioner of Agriculture. Now seeks a second term with endorsements from President Trump, Gov. DeSantis, the Florida Chamber of Commerce, and 61 of Florida\'s 67 sheriffs.',
           positions: {
-            growth: { summary: 'Supports preserving legacy farming operations against residential development encroachment and protecting agricultural communities from "frivolous lawsuits." Cites Cabinet-level approval of nearly $58 million in conservation easements protecting about 18,279 acres of working farmland — calling it the largest acquisition in the Rural and Family Lands Protection Program\'s history.',
-              source: { title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)', url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-commissioner-of-agriculture-race-republican-primary/', date: '2026-07-31' } }
+            growth: {
+              summary: 'Supports preserving legacy farming operations against residential development encroachment and protecting agricultural communities from "frivolous lawsuits." Cites Cabinet-level approval of nearly $58 million in conservation easements protecting about 18,279 acres of working farmland through the Rural and Family Lands Protection Program — which he has expanded roughly 243% during his tenure — rather than Florida Forever, which prioritizes public-access conservation.',
+              source: {
+                title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)',
+                url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-commissioner-of-agriculture-race-republican-primary/',
+                date: '2026-07-31'
+              }
+            }
           },
           record: [
-            { type: 'fact', claim: 'As Senate President, helped pass a law shielding sugar growers from lawsuits over air pollution from field-burning. As Commissioner, championed a farm bill that would originally have made it easier for sugar growers to sue environmentalists, scientists, and journalists publishing unflattering pollution research — that specific language was removed before the bill passed.',
+            {
+              type: 'fact',
+              claim: 'Fought a public, monthslong dispute with Gov. DeSantis in early 2025 over which of them would control state immigration enforcement — and lost.',
+              detail: 'In January 2025 the Legislature passed SB 2-B over DeSantis\'s objection, which would have made Simpson the state\'s sole immigration liaison and created an Office of State Immigration Enforcement inside his agency, with a $500 million local law-enforcement grant program to run through it. DeSantis publicly opposed the arrangement — "Agriculture has not exactly been known for immigration enforcement, so it\'s almost like the fox guarding the hen house" — and pushed for tougher provisions instead. Simpson pushed back, arguing farmers were being unfairly blamed and noting his own estimate that only about 4% of Florida\'s undocumented workforce is in agriculture. DeSantis ultimately signed a separate compromise immigration package on February 13, 2025 that left Simpson out of the chief-immigration-officer role, and formally vetoed the original SB 2-B on February 20, 2025. Net outcome: DeSantis prevailed.',
+              date: '2025-02-20',
+              source: {
+                title: 'WLRN — timeline compiled from Florida Senate bill history, Fox 13 Tampa Bay, and WFSU',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'Later in 2025, downplayed the role of undocumented labor in Florida agriculture and called for the federal H-2A visa program to be simplified rather than restricted.',
+              quote: 'In Florida, the vast majority of our agriculture labor is H2A legal labor.',
+              detail: 'Coverage noted this framing runs counter to federal research suggesting roughly 25% of U.S. crop workers nationally lack legal work authorization, and that most of Florida\'s unauthorized immigrants work in construction and services rather than agriculture.',
+              date: '2025-06-23',
+              source: {
+                title: 'WUSF',
+                url: 'https://www.wusf.org/politics-issues/2025-06-23/state-agriculture-commissioner-doubles-down-support-immigration-crackdowns'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'Championed 2024 legislation making Florida the first state to ban lab-grown meat, and backed a 2025 bill to ban fluoride in Florida drinking water.',
+              date: '2025-01-01',
+              source: {
+                title: 'Wikipedia — Wilton Simpson',
+                url: 'https://en.wikipedia.org/wiki/Wilton_Simpson',
+                date: '2026-08-18'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'As Senate President, helped pass a law shielding sugar growers from lawsuits over air pollution from field-burning. As Commissioner, championed a farm bill that would originally have made it easier for sugar growers to sue environmentalists, scientists, and journalists publishing unflattering pollution research — that specific language was removed before the bill passed.',
               detail: 'The final, weakened provision did pass into law; the strongest version did not. Both halves matter for an accurate picture.',
-              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU — Who is pouring millions into the ag commissioner race?', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } },
-            { type: 'fact', claim: 'Entered the 2026 race with $33 million already stashed across four political committees, with major donors dating back to his time as Senate President.',
-              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } },
-            { type: 'fact', claim: 'Became embroiled in a public feud with Gov. DeSantis in 2025 over illegal immigration policy.',
-              detail: 'This guide has not yet obtained the specific substance of the dispute beyond that it occurred and was public.',
-              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } }
+              date: '2026-08-03',
+              source: {
+                title: 'WUWF/WLRN/WGCU — Who is pouring millions into the ag commissioner race?',
+                url: 'https://www.wlrn.org/government-politics/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'Entered the 2026 race with $33 million already stashed across four political committees, and his campaign account alone shows $1,172,288.63 raised.',
+              detail: 'Top PAC donor categories: agriculture/sugar-industry donors over $1 million (Florida Crystals Corp. $250,000, U.S. Sugar $102,500, Siboney Ranch and a linked Tomeu family trust $200,000 combined); additional sugar-linked money via industry PACs totaling roughly $750,000; the Seminole Tribe of Florida $1 million; NextEra Energy/FPL $250,000; Sig Sauer $50,000. WLRN reported one source calling the Siboney Ranch donation\'s timing relative to a state conservation-easement payment to the same ranch as having "the appearance of pay-to-play" — a characterization from a source, not an adjudicated finding of wrongdoing.',
+              date: '2026-08-18',
+              source: {
+                title: 'Florida Division of Elections campaign finance database, queried directly',
+                url: 'https://dos.elections.myflorida.com/campaign-finance/'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'Became embroiled in the immigration dispute described above with Gov. DeSantis in 2025.',
+              detail: 'See the detailed timeline above; included here as a placeholder cross-reference in case this item is read out of order.',
+              date: '2025-02-20',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
           ],
-          finance: null, endorsements: [
-            { name: 'President Donald Trump', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner', date: '2026-08-03' } },
-            { name: 'Gov. Ron DeSantis', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner', date: '2026-08-03' } }
-          ], links: { 'Campaign website': 'https://wiltonsimpson.com' }
+          finance: {
+            raised: 1172288.63,
+            spent: null,
+            asOf: '2026-08-18',
+            note: 'This is his CANDIDATE ACCOUNT ONLY, pulled directly from the Florida Division of Elections database. Separately, WLRN reports $33 million raised across four affiliated political committees since April 2026 (Friends of Wilton Simpson, Home Grown PAC, Future Florida, Florida Green PAC), with about $26.8 million remaining as of July 31, 2026 — combined, all three of his opponents in this race had roughly $40,000 on hand at the same point.',
+            source: {
+              title: 'Florida Division of Elections campaign finance database',
+              url: 'https://dos.elections.myflorida.com/campaign-finance/',
+              date: '2026-08-18'
+            }
+          },
+          endorsements: [
+            {
+              name: 'President Donald Trump — called him a "true America First Patriot"',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            },
+            {
+              name: 'Gov. Ron DeSantis — despite the 2025 immigration dispute',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
+          ],
+          links: {
+            'Campaign website': 'https://wiltonsimpson.com'
+          }
         },
         {
-          id: 'taylor', name: 'Matt Taylor', party: 'R',
-          occupation: '"Matt the Welder" — welder/tradesman',
-          bio: 'Runs as a tradesman challenger to the sitting commissioner, campaigning as "Matt the Welder."',
+          id: 'taylor',
+          name: 'Matt Taylor',
+          party: 'R',
+          occupation: '"Matt the Welder" — welder and tractor mechanic',
+          bio: 'A Plant City native who built a following of over 474,000 Instagram followers through his campaign\'s social media presence. Runs as a tradesman challenger to the sitting commissioner, calling FDACS under Simpson a "giant bureaucracy."',
           positions: {
-            growth: { summary: 'Opposes converting farmland to subdivisions and solar projects; proposes expanded programs to keep farmers farming rather than selling to developers, tax relief for family farms and timber owners, a "Florida Grown First" state-purchasing program, faster disaster relief and crop insurance for small farms, farm-to-school programs, and cracking down on price gouging.',
-              source: { title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)', url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-commissioner-of-agriculture-race-republican-primary/', date: '2026-07-31' } }
+            growth: {
+              summary: 'Opposes converting farmland to subdivisions and solar projects; proposes expanded programs to keep farmers farming rather than selling to developers, tax relief for family farms and timber owners, a "Florida Grown First" state-purchasing program, faster disaster relief and crop insurance for small farms, farm-to-school programs, and cracking down on price gouging. Prefers Florida Forever-style public-access conservation over Simpson\'s working-farm easements, citing the state\'s $68 million June 2026 purchase of the 4G Ranch easement as land the public still can\'t use.',
+              source: {
+                title: 'Ballotpedia / campaign site (did not respond to survey)',
+                url: 'https://ballotpedia.org/Matt_The_Welder',
+                date: '2026-08-18'
+              }
+            },
+            lagoon: {
+              summary: 'Wants tighter oversight of phosphate-mining runoff and pesticide spraying, and says he would use the Commissioner\'s existing statewide pesticide-regulatory authority to protect rivers, springs, and wetlands.',
+              source: {
+                title: 'Mindful SWFL interview / campaign bio',
+                url: 'https://mindfulswfl.com/chat-with-matt-the-welder/',
+                date: '2026-08-18'
+              }
+            }
           },
-          record: [], finance: null, endorsements: [], links: { 'Campaign website': 'https://treadback.com' }
+          record: [
+            {
+              type: 'fact',
+              claim: 'Criticizes Simpson\'s 2018 vote (as a state senator) for the Marjory Stoneman Douglas Public High School Safety Act, which raised the minimum purchase age for long guns from 18 to 21, tying it to $50,000 in Sig Sauer contributions to Simpson\'s campaign committees.',
+              detail: 'The vote and the contribution are independently verifiable facts. The implication that one caused the other, or that it constitutes hypocrisy, is Taylor\'s campaign argument, not an independently adjudicated finding — presented here as a documented campaign critique, not as established fact.',
+              date: '2026-08-03',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner'
+              }
+            }
+          ],
+          finance: {
+            raised: 269000,
+            spent: null,
+            asOf: '2026-08-07',
+            note: 'This figure comes from news reporting (WLRN/Florida Phoenix), NOT a direct pull from the state database — this guide\'s attempt to query the Florida Division of Elections database directly for "Taylor" returned a server-side timeout on three separate attempts, while identical queries for every other candidate in this race succeeded. Reported cash on hand at the same time was under $29,000. Treat this figure as of early August 2026, not necessarily current to the primary date.',
+            source: {
+              title: 'Florida Phoenix / WLRN',
+              url: 'https://floridaphoenix.com/2026/08/07/floridas-primary-races-for-commissioner-of-agriculture/',
+              date: '2026-08-07'
+            }
+          },
+          endorsements: [],
+          links: {
+            'Campaign website': 'https://treadback.com'
+          }
         },
-        { id: 'atkins', name: 'Joey Mendoza Atkins', party: 'D', occupation: 'Not yet documented by this guide',
-          bio: 'Qualified for the August 18 Democratic primary for Commissioner of Agriculture.',
-          positions: {}, record: [], finance: null, endorsements: [], links: {} },
-        { id: 'prichard', name: 'Donald A. Prichard', party: 'D', occupation: 'Not yet documented by this guide',
-          bio: 'Qualified for the August 18 Democratic primary for Commissioner of Agriculture.',
-          positions: {}, record: [], finance: null, endorsements: [], links: {} },
-        { id: 'gibson', name: 'Kyle Gibson', party: 'WRITE-IN', occupation: 'Not yet documented by this guide',
-          bio: 'Qualified write-in candidate. Appears on the November 3 general election ballot regardless of the primary outcome; write-in candidates are never printed on the ballot and must be written in by the voter.',
-          positions: {}, record: [], finance: null, endorsements: [], links: {} }
+        {
+          id: 'atkins',
+          name: 'Joey Mendoza Atkins',
+          party: 'D',
+          occupation: 'Trial attorney (Barnes Trial Group); former sports agent',
+          bio: 'A Miami trial attorney and Florida Bar member who previously worked at a legal-aid foundation representing migrant farmworkers, which he cites as formative to his views on agriculture policy. Frames his campaign as "David vs. Goliath" against the far-better-funded incumbent.',
+          positions: {
+            growth: {
+              summary: 'Supports conservation easements as a tool but argues their success should be measured by public benefit rather than acres protected — an implicit critique of Simpson\'s working-farm easement approach that echoes Taylor\'s public-access argument from the opposite party.',
+              quote: 'It should be measured by public benefit.',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'Opposes Simpson\'s 2024 lab-grown meat ban, preferring "creative and dynamic" approaches that protect farmers economically without an outright ban, to avoid putting Florida at a competitive disadvantage.',
+              date: '2026-08-10',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide found no endorsements, no record of prior elected or appointed office, and no controversies for this candidate.',
+              detail: 'A genuinely thin public footprint outside a small cluster of August 2026 news profiles that appear to draw on similar candidate-interview material — stated plainly as a first-time statewide candidate in a low-profile down-ballot race, not as a finding against him.',
+              date: '2026-08-18',
+              source: {
+                title: 'This guide\'s review of public sources',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
+          ],
+          finance: {
+            raised: 10165.0,
+            spent: null,
+            asOf: '2026-08-18',
+            note: 'Largely self-loaned — WLRN reported $8,480 in self-loans against $1,290 from outside contributors as of early August.',
+            source: {
+              title: 'Florida Division of Elections campaign finance database, queried directly',
+              url: 'https://dos.elections.myflorida.com/campaign-finance/',
+              date: '2026-08-18'
+            }
+          },
+          endorsements: [],
+          links: {
+            'Campaign website': 'https://www.joeyforflorida.com/'
+          }
+        },
+        {
+          id: 'prichard',
+          name: 'Donald A. "Don" Prichard',
+          party: 'D',
+          age: 45,
+          occupation: 'Captain, Pembroke Park Police Department',
+          bio: 'A native Floridian who joined the Florida Army National Guard at 17 in 1998, serving as a sergeant through 2006, then joined the Broward Sheriff\'s Office at 19 and served there until 2025; now a captain with the Pembroke Park Police Department. Served as Vice President then President of the Broward Deputy Sheriffs Association, 2022-2025, and chaired the Broward County Farm Bureau\'s Young Farmers and Ranchers, 2018-2021. Filed to run only weeks before the qualifying deadline after concluding no other Democrat had entered the race, and campaigns nights and weekends around his police schedule.',
+          positions: {
+            lagoon: {
+              summary: 'His top stated issue: opposes Florida\'s 2026 data-center legislation (SB 484) for not addressing the long-term water impact of AI data centers, citing existing Central Florida droughts, and calls for self-sufficient systems that protect aquifers.',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            },
+            taxes: {
+              summary: 'Says he won\'t be a "rubber stamp for the governor" and would prioritize Floridians over special interests and corporate groups; says he\'d aggressively use FDACS\'s existing consumer-protection authority against phone scams and consumer fraud.',
+              source: {
+                title: 'WLRN',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'Listed on the Florida Democratic Party\'s official candidate tracker (BlueVoterGuide), though the specific endorsing organizations were not itemized on the page this guide retrieved.',
+              date: '2026-08-18',
+              source: {
+                title: 'BlueVoterGuide',
+                url: 'https://bluevoterguide.org/FL/candidate_Donald_Prichard/766731'
+              }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide found no controversies or complaints for this candidate.',
+              date: '2026-08-18',
+              source: {
+                title: 'This guide\'s review of public sources',
+                url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
+              }
+            }
+          ],
+          finance: {
+            raised: 29378.0,
+            spent: null,
+            asOf: '2026-08-18',
+            note: 'WLRN reported $28,135 raised as of early August; this direct database pull shows modest additional fundraising since then.',
+            source: {
+              title: 'Florida Division of Elections campaign finance database, queried directly',
+              url: 'https://dos.elections.myflorida.com/campaign-finance/',
+              date: '2026-08-18'
+            }
+          },
+          endorsements: [],
+          links: {
+
+          }
+        },
+        {
+          id: 'gibson',
+          name: 'Kyle "KC" Gibson',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'Qualified write-in candidate; appears on the November 3 general election ballot regardless of the primary outcome. Previously ran for Florida Governor in 2018 under the same name, suggesting a pattern of perennial candidacy rather than a first-time entry into politics — though that 2018 run is documented only via his own campaign Facebook page, not independent news coverage.',
+          positions: {
+
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide found no stated platform, no campaign website, and no news coverage of his current candidacy — only a Facebook presence and his official filing.',
+              detail: 'Combined with minimal campaign finance (see below), this suggests a low-visibility candidacy. Documented honestly rather than padded, consistent with this guide\'s equal-effort standard.',
+              date: '2026-08-18',
+              source: {
+                title: 'This guide\'s review of public sources',
+                url: 'https://dos.elections.myflorida.com/campaign-finance/'
+              }
+            }
+          ],
+          finance: {
+            raised: 2625.08,
+            spent: null,
+            asOf: '2026-08-18',
+            note: 'An earlier, lower-confidence news aggregation cited roughly $900 — this guide uses the direct Division of Elections figure as authoritative instead.',
+            source: {
+              title: 'Florida Division of Elections campaign finance database, queried directly',
+              url: 'https://dos.elections.myflorida.com/campaign-finance/',
+              date: '2026-08-18'
+            }
+          },
+          endorsements: [],
+          links: {
+
+          }
+        }
       ]
     },
 
