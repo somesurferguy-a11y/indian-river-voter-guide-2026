@@ -1925,16 +1925,27 @@ window.GUIDE = {
           party: 'R',
           residence: 'Lorida (Highlands County)',
           occupation: 'Farmer; member, South Florida Water Management District Governing Board',
-          bio: 'Describes himself as a ninth-generation Floridian, farmer, conservation advocate, and businessman. Serves on the South Florida Water Management District Governing Board. Qualified for the August 18 Republican primary in District 9.',
+          bio: 'A 22-year dairy farmer whose family has milked cows in Florida for 85 years; now also a cattle rancher. Attended the University of Florida, then returned to manage the family farm. Has served seven years on the South Florida Water Management District Governing Board, a taxing authority. Qualified for the August 18 Republican primary in District 9.',
           positions: {
-            growth: { summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience.',
+            growth: { summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience. At a July 29 candidate forum he named regulatory permitting delays — citing Army Corps of Engineers 404 permits with no enforced time limit — as a direct driver of higher costs.',
               quote: 'As a farmer, conservation advocate, and leader on the South Florida Water Management District Governing Board, Ben understands the balance between protecting our natural resources, supporting agriculture, and keeping our economy strong.',
-              source: { title: 'Campaign website', url: 'https://www.butlerforflorida.com/', date: '2026-08-17' } }
+              source: { title: 'Campaign website', url: 'https://www.butlerforflorida.com/', date: '2026-08-17' } },
+            housing: { summary: 'Proposed extending the VA home-loan guarantee model — which backs veteran home loans at no cost to government — to all U.S. citizens as a way to expand home ownership access.',
+              quote: 'This is a program that has been wildly successful for veterans that has not cost the government a penny. It\'s a free program essentially... we can offer that to all US citizens.',
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article. Direct video URL not yet located by this guide.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials and filings.',
+              claim: 'At a July 29 candidate forum, said his campaign has been endorsed by his entire county commission delegation across two counties, the Highlands County school board, four sheriffs from the district (including Sheriff Eric Flowers), and U.S. Reps. Greg Steube and Kat Cammack.',
+              detail: 'This guide\'s own transcription of the forum; endorsements as stated by the candidate himself, not independently verified against each endorser.',
+              date: '2026-07-29',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials, filings, and the forum transcript above.',
               detail: 'Stated explicitly rather than left blank. In a seven-way primary, lower-profile candidates are covered here on the same terms as the best-funded.',
               date: '2026-08-07',
               source: {
@@ -1965,14 +1976,22 @@ window.GUIDE = {
           party: 'R',
           residence: 'Kissimmee',
           occupation: 'Not documented by this guide',
-          bio: 'Qualified for the August 18 Republican primary in District 9.',
+          bio: 'Describes his campaign as volunteer-powered and self-consciously anti-corporate-money. Says he and volunteers have knocked on more than 30,000 doors over an 18-month campaign, which began in three counties before redistricting expanded the district. Qualified for the August 18 Republican primary in District 9.',
           positions: {
 
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials and filings.',
+              claim: 'At a July 29 candidate forum, said in his own words that his campaign takes no corporate or special-interest money and runs entirely on volunteers, framing this as central to his candidacy rather than incidental.',
+              quote: 'I don\'t take money from corporations. I don\'t take money from special interests. And my entire campaign is powered by volunteers.',
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. This is consistent with his FEC filings, which show no PAC contributions.',
+              date: '2026-07-29',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials, filings, and the forum transcript above.',
               detail: 'Stated explicitly rather than left blank. In a seven-way primary, lower-profile candidates are covered here on the same terms as the best-funded.',
               date: '2026-08-07',
               source: {
@@ -2007,7 +2026,11 @@ window.GUIDE = {
           positions: {
             schools: { summary: 'Supports school choice — public, charter, private, or homeschool, whichever fits the family — plus veterans\' benefits, growth-driven infrastructure, and food/health transparency.',
               quote: 'Empowering Florida families with the freedom to choose the school — public, charter, private, or homeschool — that fits their child best.',
-              source: { title: 'Campaign website', url: 'https://thomas4fl.com/issues', date: '2026-08-17' } }
+              source: { title: 'Campaign website', url: 'https://thomas4fl.com/issues', date: '2026-08-17' } },
+            housing: { summary: 'A homebuilder by background who says local government regulation adds 25-30% to the cost of a home, and points to a shortage of skilled trades labor (carpenters, welders, masons, electricians) as a second driver of housing costs.',
+              quote: 'The cost of regulation, government regulation locally is running between 25 and 30% of the cost of a home... we have a significant shortage of untrained, skilled labor.',
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
           },
           record: [
             {
@@ -2051,15 +2074,18 @@ window.GUIDE = {
           name: 'Jorge Martinez',
           party: 'R',
           residence: 'Orlando',
-          occupation: 'Not documented by this guide',
-          bio: 'Qualified for the August 18 Republican primary in District 9.',
+          occupation: 'Certified public accountant; ran an Orlando accounting firm for 32 years',
+          bio: 'A Cuban immigrant who arrived in the U.S. in 1973 and has lived in the Orlando area for nearly 50 years. Describes himself as the only immigrant and only Hispanic candidate in the race, and frames his general-election pitch around reaching the district\'s roughly 35% Hispanic vote share. Qualified for the August 18 Republican primary in District 9.',
           positions: {
-
+            housing: { summary: 'Says he has developed legislative proposals to reduce closing and ownership costs for first-time homebuyers, and separately supports expanding U.S. oil and gas production to lower energy costs.',
+              quote: 'I\'ve developed legislative ideas to help first-time home buyers lower the cost of purchasing a home by reducing unnecessary expenses for home ownership, making home ownership more attainable.',
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. This guide has not yet obtained the specific text of his proposed legislation.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials and filings.',
+              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials, filings, and the forum transcript above.',
               detail: 'Stated explicitly rather than left blank. In a seven-way primary, lower-profile candidates are covered here on the same terms as the best-funded.',
               date: '2026-08-07',
               source: {
@@ -2137,15 +2163,18 @@ window.GUIDE = {
           name: 'Justin Story',
           party: 'R',
           residence: 'St. Cloud',
-          occupation: 'Not documented by this guide',
-          bio: 'Qualified for the August 18 Republican primary in District 9.',
+          occupation: 'Commercial airline pilot; former Marine Corps F-18 fighter pilot',
+          bio: 'A sixth-generation Floridian, born and raised in St. Cloud, where he still lives. Commissioned into the Marine Corps in 2001 as an F-18 fighter pilot, flying combat missions over Iraq and Afghanistan across multiple deployments as both active duty and reserve. Now a commercial airline pilot. His wife is a Venezuelan immigrant who left the country six years ago. Qualified for the August 18 Republican primary in District 9.',
           positions: {
-
+            schools: { summary: 'Supports eliminating the U.S. Department of Education, arguing education policy should be set at the state, local, and school-board level rather than by the federal government.',
+              quote: 'I do not believe the federal government should have a hand in our education. This is a state function, ladies and gentlemen. It\'s a local function and it\'s a city function... every state should set its own policy, and we take best practices.',
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials and filings.',
+              claim: 'This guide located limited independent coverage of this candidate beyond campaign materials, filings, and the forum transcript above.',
               detail: 'Stated explicitly rather than left blank. In a seven-way primary, lower-profile candidates are covered here on the same terms as the best-funded.',
               date: '2026-08-07',
               source: {
