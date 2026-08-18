@@ -1800,9 +1800,12 @@ window.GUIDE = {
           age: 48,
           residence: 'Kissimmee',
           occupation: 'U.S. Representative; attorney',
-          bio: 'In Congress since 2017 and now a five-term incumbent, the first Floridian of Puerto Rican descent elected to Congress. Previously served in the Florida House (2007-2012) and Florida Senate (2012-2016). Rutgers undergraduate, George Washington University law degree; ran his own Central Florida practice in family law, civil litigation and real estate. He now runs in a district redrawn to lean Republican.',
+          bio: 'In Congress since 2017 and now a five-term incumbent, the first Floridian of Puerto Rican descent elected to Congress. Previously served in the Florida House (2007-2012) and Florida Senate (2012-2016). Rutgers undergraduate, George Washington University law degree; ran his own Central Florida practice in family law, civil litigation and real estate. Sits on the House Energy and Commerce Committee, where he points to work expanding access to affordable health care. He now runs in a district redrawn to lean Republican, and has confirmed he is running for re-election despite the less favorable map.',
           positions: {
-
+            lagoon: { summary: 'Sits on the House Natural Resources Committee and points to work preserving Florida\'s natural resources and securing federal disaster relief after storms.',
+              source: { title: 'Congressional committee assignments and campaign material', url: 'https://soto.house.gov/', date: '2026-08-17' } },
+            housing: { summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions.',
+              source: { title: 'Congress.gov / campaign material', url: 'https://www.congress.gov/member/darren-soto/S001200', date: '2026-08-17' } }
           },
           record: [
             {
@@ -1921,10 +1924,12 @@ window.GUIDE = {
           name: 'Ben Butler',
           party: 'R',
           residence: 'Lorida (Highlands County)',
-          occupation: 'Not documented by this guide',
-          bio: 'Qualified for the August 18 Republican primary in District 9.',
+          occupation: 'Farmer; member, South Florida Water Management District Governing Board',
+          bio: 'Describes himself as a ninth-generation Floridian, farmer, conservation advocate, and businessman. Serves on the South Florida Water Management District Governing Board. Qualified for the August 18 Republican primary in District 9.',
           positions: {
-
+            growth: { summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience.',
+              quote: 'As a farmer, conservation advocate, and leader on the South Florida Water Management District Governing Board, Ben understands the balance between protecting our natural resources, supporting agriculture, and keeping our economy strong.',
+              source: { title: 'Campaign website', url: 'https://www.butlerforflorida.com/', date: '2026-08-17' } }
           },
           record: [
             {
@@ -1997,10 +2002,12 @@ window.GUIDE = {
           name: 'Thomas E. Chalifoux Jr.',
           party: 'R',
           residence: 'Orlando',
-          occupation: 'Not documented by this guide',
-          bio: 'Qualified for the August 18 Republican primary in District 9.',
+          occupation: 'Retired U.S. Army Colonel; businessman',
+          bio: 'A retired Army Colonel and businessman who previously ran for this seat in 2024. Describes himself as a man of faith, husband and father. Qualified for the August 18 Republican primary in District 9.',
           positions: {
-
+            schools: { summary: 'Supports school choice — public, charter, private, or homeschool, whichever fits the family — plus veterans\' benefits, growth-driven infrastructure, and food/health transparency.',
+              quote: 'Empowering Florida families with the freedom to choose the school — public, charter, private, or homeschool — that fits their child best.',
+              source: { title: 'Campaign website', url: 'https://thomas4fl.com/issues', date: '2026-08-17' } }
           },
           record: [
             {
@@ -2163,6 +2170,63 @@ window.GUIDE = {
 
           }
         }
+      ]
+    },
+
+    {
+      id: 'fl-ag-commissioner',
+      office: 'Florida Commissioner of Agriculture',
+      district: 'Statewide',
+      type: 'partisan',
+      ballot: 'primary',
+      term: '4 years',
+      stakes:
+        'A statewide cabinet office overseeing the Department of Agriculture and Consumer Services — directly relevant to Indian River County given its citrus and agricultural industry, and connected to Amendment 2 on this same ballot (the agricultural equipment tax exemption). The commissioner regulates consumer protection, food safety inspections, and state agricultural land and water policy.',
+      whoVotes:
+        'Registered Republicans and registered Democrats each vote a contested primary today. All voters choose in the November 3 general election, where a qualified write-in candidate, Kyle Gibson, also appears regardless of the primary outcome.',
+      candidates: [
+        {
+          id: 'simpson', name: 'Wilton Simpson', party: 'R', incumbent: true,
+          occupation: 'Florida Commissioner of Agriculture (since 2023); former Florida Senate President',
+          bio: 'The sitting Commissioner of Agriculture, in office since 2023, and former President of the Florida Senate. Running for re-election with endorsements from President Trump, Gov. DeSantis, the Florida Chamber of Commerce, and 61 of Florida\'s 67 sheriffs.',
+          positions: {
+            growth: { summary: 'Supports preserving legacy farming operations against residential development encroachment and protecting agricultural communities from "frivolous lawsuits." Cites Cabinet-level approval of nearly $58 million in conservation easements protecting about 18,279 acres of working farmland — calling it the largest acquisition in the Rural and Family Lands Protection Program\'s history.',
+              source: { title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)', url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-commissioner-of-agriculture-race-republican-primary/', date: '2026-07-31' } }
+          },
+          record: [
+            { type: 'fact', claim: 'As Senate President, helped pass a law shielding sugar growers from lawsuits over air pollution from field-burning. As Commissioner, championed a farm bill that would originally have made it easier for sugar growers to sue environmentalists, scientists, and journalists publishing unflattering pollution research — that specific language was removed before the bill passed.',
+              detail: 'The final, weakened provision did pass into law; the strongest version did not. Both halves matter for an accurate picture.',
+              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU — Who is pouring millions into the ag commissioner race?', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } },
+            { type: 'fact', claim: 'Entered the 2026 race with $33 million already stashed across four political committees, with major donors dating back to his time as Senate President.',
+              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } },
+            { type: 'fact', claim: 'Became embroiled in a public feud with Gov. DeSantis in 2025 over illegal immigration policy.',
+              detail: 'This guide has not yet obtained the specific substance of the dispute beyond that it occurred and was public.',
+              date: '2026-08-03', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner' } }
+          ],
+          finance: null, endorsements: [
+            { name: 'President Donald Trump', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner', date: '2026-08-03' } },
+            { name: 'Gov. Ron DeSantis', source: { title: 'WUWF/WLRN/WGCU', url: 'https://www.wuwf.org/florida-news/2026-08-03/who-is-pouring-millions-into-the-sleepy-race-for-floridas-ag-commissioner', date: '2026-08-03' } }
+          ], links: { 'Campaign website': 'https://wiltonsimpson.com' }
+        },
+        {
+          id: 'taylor', name: 'Matt Taylor', party: 'R',
+          occupation: '"Matt the Welder" — welder/tradesman',
+          bio: 'Runs as a tradesman challenger to the sitting commissioner, campaigning as "Matt the Welder."',
+          positions: {
+            growth: { summary: 'Opposes converting farmland to subdivisions and solar projects; proposes expanded programs to keep farmers farming rather than selling to developers, tax relief for family farms and timber owners, a "Florida Grown First" state-purchasing program, faster disaster relief and crop insurance for small farms, farm-to-school programs, and cracking down on price gouging.',
+              source: { title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)', url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-commissioner-of-agriculture-race-republican-primary/', date: '2026-07-31' } }
+          },
+          record: [], finance: null, endorsements: [], links: { 'Campaign website': 'https://treadback.com' }
+        },
+        { id: 'atkins', name: 'Joey Mendoza Atkins', party: 'D', occupation: 'Not yet documented by this guide',
+          bio: 'Qualified for the August 18 Democratic primary for Commissioner of Agriculture.',
+          positions: {}, record: [], finance: null, endorsements: [], links: {} },
+        { id: 'prichard', name: 'Donald A. Prichard', party: 'D', occupation: 'Not yet documented by this guide',
+          bio: 'Qualified for the August 18 Democratic primary for Commissioner of Agriculture.',
+          positions: {}, record: [], finance: null, endorsements: [], links: {} },
+        { id: 'gibson', name: 'Kyle Gibson', party: 'WRITE-IN', occupation: 'Not yet documented by this guide',
+          bio: 'Qualified write-in candidate. Appears on the November 3 general election ballot regardless of the primary outcome; write-in candidates are never printed on the ballot and must be written in by the voter.',
+          positions: {}, record: [], finance: null, endorsements: [], links: {} }
       ]
     },
 
