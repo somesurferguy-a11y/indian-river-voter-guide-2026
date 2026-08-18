@@ -1932,8 +1932,8 @@ window.GUIDE = {
               source: { title: 'Campaign website', url: 'https://www.butlerforflorida.com/', date: '2026-08-17' } },
             housing: { summary: 'Proposed extending the VA home-loan guarantee model — which backs veteran home loans at no cost to government — to all U.S. citizens as a way to expand home ownership access.',
               quote: 'This is a program that has been wildly successful for veterans that has not cost the government a penny. It\'s a free program essentially... we can offer that to all US citizens.',
-              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article. Direct video URL not yet located by this guide.',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
           },
           record: [
             {
@@ -1941,7 +1941,7 @@ window.GUIDE = {
               claim: 'At a July 29 candidate forum, said his campaign has been endorsed by his entire county commission delegation across two counties, the Highlands County school board, four sheriffs from the district (including Sheriff Eric Flowers), and U.S. Reps. Greg Steube and Kat Cammack.',
               detail: 'This guide\'s own transcription of the forum; endorsements as stated by the candidate himself, not independently verified against each endorser.',
               date: '2026-07-29',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional' }
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' }
             },
             {
               type: 'fact',
@@ -1987,7 +1987,7 @@ window.GUIDE = {
               quote: 'I don\'t take money from corporations. I don\'t take money from special interests. And my entire campaign is powered by volunteers.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. This is consistent with his FEC filings, which show no PAC contributions.',
               date: '2026-07-29',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional' }
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' }
             },
             {
               type: 'fact',
@@ -2029,8 +2029,8 @@ window.GUIDE = {
               source: { title: 'Campaign website', url: 'https://thomas4fl.com/issues', date: '2026-08-17' } },
             housing: { summary: 'A homebuilder by background who says local government regulation adds 25-30% to the cost of a home, and points to a shortage of skilled trades labor (carpenters, welders, masons, electricians) as a second driver of housing costs.',
               quote: 'The cost of regulation, government regulation locally is running between 25 and 30% of the cost of a home... we have a significant shortage of untrained, skilled labor.',
-              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article.',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
           },
           record: [
             {
@@ -2080,7 +2080,7 @@ window.GUIDE = {
             housing: { summary: 'Says he has developed legislative proposals to reduce closing and ownership costs for first-time homebuyers, and separately supports expanding U.S. oil and gas production to lower energy costs.',
               quote: 'I\'ve developed legislative ideas to help first-time home buyers lower the cost of purchasing a home by reducing unnecessary expenses for home ownership, making home ownership more attainable.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. This guide has not yet obtained the specific text of his proposed legislation.',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
           },
           record: [
             {
@@ -2168,8 +2168,8 @@ window.GUIDE = {
           positions: {
             schools: { summary: 'Supports eliminating the U.S. Department of Education, arguing education policy should be set at the state, local, and school-board level rather than by the federal government.',
               quote: 'I do not believe the federal government should have a hand in our education. This is a state function, ladies and gentlemen. It\'s a local function and it\'s a city function... every state should set its own policy, and we take best practices.',
-              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. Event date, location and participants independently confirmed via the linked article.',
-              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum', url: 'https://thomasaugustus.substack.com/p/republican-club-hosts-us-congressional', date: '2026-07-29' } }
+              detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
+              source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
           },
           record: [
             {
