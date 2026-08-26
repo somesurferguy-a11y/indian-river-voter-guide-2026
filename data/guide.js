@@ -2275,7 +2275,7 @@ window.GUIDE = {
               stance: 'general-stewardship', summary: 'Sits on the House Natural Resources Committee and points to work preserving Florida\'s natural resources and securing federal disaster relief after storms.',
               source: { title: 'Congressional committee assignments and campaign material', url: 'https://soto.house.gov/', date: '2026-08-17' } },
             housing: {
-              stance: 'expand-affordable-mandate', summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions.',
+              summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions. Correction, Aug 2026: this had been tagged with an "expand affordable housing" stance for the match quiz based on the bill\'s name alone — since this guide has not actually verified what the bill does, no quiz stance is assigned; it will show as "no data" rather than a guessed match.',
               source: { title: 'Congress.gov / campaign material', url: 'https://www.congress.gov/member/darren-soto/S001200', date: '2026-08-17' } }
           },
           record: [
@@ -3039,16 +3039,14 @@ window.GUIDE = {
           },
           positions: {
             lagoon: {
-              stance: 'infrastructure-investment',
-              summary: 'His top stated issue: opposes Florida\'s 2026 data-center legislation (SB 484) for not addressing the long-term water impact of AI data centers, citing existing Central Florida droughts, and calls for self-sufficient systems that protect aquifers.',
+              summary: 'His top stated issue: opposes Florida\'s 2026 data-center legislation (SB 484) for not addressing the long-term water impact of AI data centers, citing existing Central Florida droughts, and calls for self-sufficient systems that protect aquifers. Correction, Aug 2026: no quiz stance is assigned here — this is a genuine mix of opposing specific legislation and a vague infrastructure aspiration ("self-sufficient systems") that doesn\'t cleanly fit this guide\'s mechanism categories, so it shows as "no data" rather than forced into either bucket.',
               source: {
                 title: 'WLRN',
                 url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
               }
             },
             taxes: {
-              stance: 'transparency-oversight',
-              summary: 'Says he won\'t be a "rubber stamp for the governor" and would prioritize Floridians over special interests and corporate groups; says he\'d aggressively use FDACS\'s existing consumer-protection authority against phone scams and consumer fraud.',
+              summary: 'Says he won\'t be a "rubber stamp for the governor" and would prioritize Floridians over special interests and corporate groups; says he\'d aggressively use FDACS\'s existing consumer-protection authority against phone scams and consumer fraud. Correction, Aug 2026: no quiz stance is assigned — this statement is about consumer-fraud enforcement, not government taxing/spending, so it doesn\'t actually answer the quiz\'s taxes question despite being filed under this issue.',
               source: {
                 title: 'WLRN',
                 url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
