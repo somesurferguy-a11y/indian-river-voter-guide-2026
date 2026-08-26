@@ -45,8 +45,17 @@
   // one quiz issue. Local nonpartisan races with no positions data (school
   // board, mosquito control, etc.) are correctly excluded rather than shown
   // empty.
+  //
+  // A candidate eliminated in their primary (or who withdrew/didn't qualify)
+  // is not on the Nov 3 ballot, so they're excluded from quiz matching
+  // entirely — matching someone who can't actually be voted for would be
+  // misleading, not just unhelpful.
+  function isOnGeneralBallot(c) {
+    return !c.primary || !['lost', 'withdrew', 'disqualified'].includes(c.primary.result);
+  }
   function raceHasQuizData(race) {
     return (race.candidates || []).some(function (c) {
+      if (!isOnGeneralBallot(c)) return false;
       return Object.keys(c.positions || {}).some(function (iid) {
         return c.positions[iid] && c.positions[iid].stance;
       });
@@ -79,7 +88,7 @@
     var race = quizRaces[+raceSelect.value];
     if (!race) { document.getElementById('quizResults').innerHTML = '<p class="muted">No race selected.</p>'; return; }
 
-    var scored = (race.candidates || []).map(function (c) {
+    var scored = (race.candidates || []).filter(isOnGeneralBallot).map(function (c) {
       return { c: c, s: scoreCandidate(c, answers) };
     });
     // Sort by the reader's own match score — see the callout above this
