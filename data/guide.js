@@ -409,7 +409,7 @@ window.GUIDE = {
         issueId: 'growth',
         text: 'How should growth and development be handled here?',
         options: [
-          { value: 'restrict-slow-growth', label: 'Slow it down — manage tightly, preserve existing character' },
+          { value: 'restrict-slow-growth', label: 'Resist unchecked growth — reject density, preserve local control against state mandates' },
           { value: 'balanced-managed', label: 'Balanced, case-by-case management' },
           { value: 'streamline-development', label: 'Streamline permitting — reduce barriers to building' }
         ]
@@ -721,8 +721,7 @@ window.GUIDE = {
               source: { title: 'Vero News — District 2 candidate forum', url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-07' }
             },
             lagoon: {
-              stance: 'general-stewardship',
-              summary: 'Names the lagoon his first priority; points to work on it during 15 years on the Sebastian council. In a separate candidate Q&A he reportedly proposed membership on a lagoon council as his specific mechanism, distinct from his opponents\' approaches.',
+              summary: 'Names the lagoon his first priority; points to work on it during 15 years on the Sebastian council. In a separate candidate Q&A he reportedly proposed membership on a lagoon council as his specific mechanism, distinct from his opponents\' approaches. Correction, Aug 2026: this guide had mistakenly tagged this as "general stewardship, no specific mechanism" for the match quiz — the opposite of what it says. A "lagoon council" is a real, specific mechanism, but it\'s a governance/coordination approach that doesn\'t fit this guide\'s other two mechanism categories (infrastructure spending, polluter-accountability regulation), so no quiz stance is assigned rather than force a wrong fit — it will show as "no data" in the quiz.',
               quote: 'The Indian River Lagoon is the heart of our community — our economy, our recreation, and our way of life all depend on it.',
               source: { title: 'Campaign website — Issues', url: 'https://votebobmcpartlan.com/', date: '2026-08-05' }
             },
@@ -1796,7 +1795,7 @@ window.GUIDE = {
           bio: 'Spent much of his youth in Vero Beach before a career in sports promotion and marketing, including work for Major League Soccer\'s Real Salt Lake, and later launched an insurance business in Massachusetts. He and his wife Colleen started their downtown realty company. Filed his candidacy in June 2026.',
           positions: {
             growth: {
-              stance: 'balanced-managed', summary: 'Frames the council term as a pivotal moment for shaping the city\'s next 30 years, citing his business and leadership background.',
+              summary: 'Frames the council term as a pivotal moment for shaping the city\'s next 30 years, citing his business and leadership background. Correction, Aug 2026: this guide had tagged this as a "balanced management" stance for the match quiz — on review, this statement doesn\'t actually commit to a growth-policy direction, so no stance is assigned; it will correctly show as "no data" in the quiz rather than a false match.',
               quote: 'I live, work, and raise my family in this city, and I believe we have a tremendous opportunity to shape what our community becomes over the next 30 years. I believe this is a pivotal moment in our city\'s history.',
               source: { title: 'The Sunshine Journal (partisan Substack) — reporting his candidacy filing', url: 'https://thomasaugustus.substack.com/p/breaking-rob-maccallum-files-candidacy', date: '2026-06-01' } }
           }, record: [], finance: null, endorsements: [], links: {} },
