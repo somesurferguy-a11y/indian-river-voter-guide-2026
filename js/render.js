@@ -88,7 +88,7 @@ function srcLink(source, label) {
 
 const PARTY_LABEL = {
   R: 'Republican', D: 'Democrat', NPA: 'No Party',
-  NONPARTISAN: 'Nonpartisan', 'WRITE-IN': 'Write-in'
+  NONPARTISAN: 'Nonpartisan', 'WRITE-IN': 'Write-in', L: 'Libertarian'
 };
 
 function partyPill(p) {
@@ -108,6 +108,8 @@ function primaryBadge(c) {
   if (p.result === 'lost') return `<span class="pill pill--eliminated">Eliminated in primary${pct}</span>`;
   if (p.result === 'advanced') return `<span class="pill pill--advanced">Advances to Nov 3 — no primary needed</span>`;
   if (p.result === 'unopposed') return `<span class="pill pill--won">Elected — unopposed</span>`;
+  if (p.result === 'withdrew') return `<span class="pill pill--eliminated">Withdrew before qualifying</span>`;
+  if (p.result === 'disqualified') return `<span class="pill pill--eliminated">Did not qualify</span>`;
   return '';
 }
 
@@ -292,7 +294,7 @@ function renderCandidate(c, issues) {
         `<a href="${escAttr(v)}" target="_blank" rel="noopener noreferrer">${esc(k)}</a>`).join('')}</div>`
     : '';
 
-  const eliminated = c.primary && c.primary.result === 'lost';
+  const eliminated = c.primary && ['lost', 'withdrew', 'disqualified'].includes(c.primary.result);
 
   return `
     <article class="cand-card${eliminated ? ' cand-card--eliminated' : ''}" id="cand-${escAttr(c.id)}">

@@ -114,7 +114,7 @@ window.MEDIA_RATINGS = {
 window.GUIDE = {
 
   meta: {
-    updated: '2026-08-25',
+    updated: '2026-08-26',
     primaryDate: '2026-08-18',
     generalDate: '2026-11-03',
     disclaimer: 'Independent, nonpartisan, and not affiliated with any candidate, party, or government agency.'
@@ -137,6 +137,11 @@ window.GUIDE = {
       label: 'A congressional district change to double-check',
       detail: 'Indian River County moved from U.S. House District 8 to District 9 under the map signed in May 2026. The elections office homepage announces District 9 while its own maps page still references District 8. Your sample ballot is the authority — check it.',
       source: { title: 'IRC Supervisor of Elections homepage notice', url: 'https://voteindianriver.gov/', date: '2026-08-05' }
+    },
+    {
+      label: 'Sebastian Inlet Tax District — added Aug 26, 2026; status genuinely unclear',
+      detail: 'An independent special taxing district managing Sebastian Inlet, separate from the county, with a 5-member commission (3 Brevard County seats, 2 Indian River County seats). The Indian River County seat, Board District 4, is held by David Barney with a term expiring in 2026 — but this guide could NOT confirm whether he is seeking re-election, whether the seat is contested, or whether it will actually appear on any Indian River County voter\'s printed ballot this cycle. It does not appear on the county Supervisor of Elections\' own "offices up for election" list, which only covers offices that qualify through the county\'s regular candidate portal — this district appears to run its own separate qualifying process. Included here so voters who\'ve heard of it know what is and isn\'t confirmed, rather than finding no mention of it at all.',
+      source: { title: 'Sebastian Inlet District — Board of Commissioners', url: 'https://www.sitd.us/board-of-commissioners', date: '2026-08-25' }
     }
   ],
 
@@ -930,12 +935,12 @@ window.GUIDE = {
           bio: 'Elected to the County Commission in 2022. Previously Sheriff of Indian River County, elected in 2008 and re-elected in 2012 and 2016. Before that, District Commander for the Florida Highway Patrol on the Treasure Coast from 1989 to 2008. Holds a BA in public administration. Describes himself as "a public servant for over 36 years." Serves with VNA Hospice and other community organizations.',
           positions: {
             'sheriff-budget': {
-              summary: 'Described the sheriff\'s lawsuit against the commission as unprecedented in county history.',
-              quote: 'This has never been done in the history of Indian River County where a constitutional officer has sued the board of county commissioners over budget concerns.',
+              summary: 'Described the sheriff\'s lawsuit against the commission as unprecedented in county history. After the April 2026 settlement, as Board Chairman, framed it as a reset toward cooperation rather than relitigating who was right.',
+              quote: 'The Board affirms its commitment to putting recent conflicts behind and moving forward in a cooperative, professional partnership with the Sheriff\'s Office for the benefit of all residents.',
               source: {
-                title: 'WPTV',
-                url: 'https://www.wptv.com/news/treasure-coast/region-indian-river-county/indian-river-county-sheriff-eric-flowers-sues-commissioners-over-budget-dispute',
-                date: '2025-10-01'
+                title: 'WPTV — "Indian River County settles budget dispute with sheriff, provides $3.5 million"',
+                url: 'https://www.wptv.com/news/treasure-coast/region-indian-river-county/indian-river-county-settles-budget-dispute-with-sheriff-provides-3-5-million',
+                date: '2026-04-14'
               }
             },
             taxes: {
@@ -1576,7 +1581,13 @@ window.GUIDE = {
               date: '2026-08-25'
             }
           },
-          positions: {}, record: [], finance: null, endorsements: [], links: {}
+          positions: {}, record: [
+            { type: 'vote', claim: 'As board chair, favored "strategic" funding over frugality in FY2025-26 budget deliberations.',
+              quote: "I think we have a responsibility to be strategic with our funding. I don't know about the word frugal.",
+              date: '2026-08-04', source: { title: 'Vero News — "Hospital District can\'t seem to curb its spending habits"', url: 'https://veronews.com/2026/08/04/hospital-district-cant-seem-to-curb-its-spending-habits/', date: '2026-08-04' } },
+            { type: 'vote', claim: 'The board approved a maximum FY2025-26 millage rate of 74.5 cents per $1,000 of assessed value — above the 71.2-cent rollback rate, a $1.2 million tax increase — on a 5-1 vote, with Trustee Paul Westcott dissenting. Total budget: $25.37 million, roughly double FY2021-22.',
+              date: '2026-08-04', source: { title: 'Vero News — "Hospital District can\'t seem to curb its spending habits"', url: 'https://veronews.com/2026/08/04/hospital-district-cant-seem-to-curb-its-spending-habits/', date: '2026-08-04' } }
+          ], finance: null, endorsements: [], links: {}
         },
         {
           id: 'adair', name: 'Bob Adair', party: 'NONPARTISAN',
@@ -1636,8 +1647,22 @@ window.GUIDE = {
           links: { 'Campaign website': 'https://traceyzudans.com/' } },
         { id: 'vos', name: 'Aaron Vos', party: 'NONPARTISAN', incumbent: true,
           occupation: 'Management/technical consultant, RTX Corporation (formerly Raytheon)',
-          bio: 'Elected to City Council in 2024 after moving to Vero Beach from California; lives in Castaway Cove. Age 63 at the time of that election, a first-time officeholder who won with 23% of the vote in a multi-candidate field. Seeking a second term in 2026 — this guide has not yet confirmed whether his stated positions have changed since 2024.',
-          positions: {}, record: [], finance: null, endorsements: [],
+          bio: 'Elected to City Council in 2024 after moving to Vero Beach from California; lives in Castaway Cove. Age 63 at the time of that election, a first-time officeholder who won with 23% of the vote in a multi-candidate field. Seeking a second term in 2026.',
+          positions: {}, record: [
+            { type: 'vote', claim: 'Seconded then-Vice Mayor Moore\'s motion to approve the FY2025-26 budget (2.9816 millage, 7.72% higher than the prior year); passed unanimously, 5-0. Separately advocated using AI to assist with crime-data analysis during the police-budget discussion.',
+              date: '2025-09-04', source: { title: 'Hometown News — "Vero Beach approves $36m city budget with higher tax rate"', url: 'https://www.hometownnewstc.com/news/indian_river/vero-beach-approves-36m-city-budget-with-higher-tax-rate/article_e73e323f-e8a2-5b1e-b911-2e7922c34448.html', date: '2025-09-04' } },
+            { type: 'vote', claim: 'Voted against using a 14-acre city-owned "old nursery site" for affordable housing under the Live Local Act (joined by Vice Mayor Dingle and Councilman Carroll; opposed by Moore and Mayor Cotugno, who wanted to use the site). Cited environmental/industrial-zoning concerns tied to a nearby cement operation.',
+              quote: "This site is a required city resource. It's just like a fire truck. We might not need a fire truck every day, but when you need it, you need it.",
+              date: '2025-12-30', source: { title: 'Vero News — "On housing site, Vero\'s tough call was right one"', url: 'https://veronews.com/2025/12/30/on-housing-site-veros-tough-call-was-right-one/', date: '2025-12-30' } },
+            { type: 'fact', claim: 'After a February 2025 state enforcement action against the city over late sales-tax payments and two years of delayed pension contributions (costing the city over $250,000 in penalties/interest), conducted his own independent root-cause analysis of the failures and pushed successfully for the city to resume monthly financial reports.',
+              quote: "There are more yellows, which means potential contributor to the issue, than I've ever seen [in comparable corrective-action studies].",
+              date: '2025-06-05', source: { title: 'Vero Beach 32963 — "Council Demands Monthly Reports On City Finances"', url: 'https://vb32963online.com/STORIES%202025/JUNE%202025/VB32963_Council_Demands_Monthly_Reports_On_City_Finances_Issue23_060525.html', date: '2025-06-05' } },
+            { type: 'vote', claim: 'Supported a second 30-day extension on Three Corners ground-lease negotiations in August 2026, while pushing for tighter oversight of any further extension.',
+              quote: 'Probably a little more rigor on the next round. Maybe have more of a briefing or an update that helps qualify another extension.',
+              date: '2026-08-13', source: { title: 'WQCS — "Three Corners project gets additional 30 day extension in Vero Beach"', url: 'https://www.wqcs.org/wqcs-news/2026-08-13/three-corners-project-gets-additional-30-day-extension-in-vero-beach', date: '2026-08-13' } },
+            { type: 'fact', claim: 'This guide could not locate a 2026-cycle campaign treasurer\'s report for Vos on the City of Vero Beach\'s filing system as of late August 2026 — only 2024-cycle filings are indexed there.',
+              date: '2026-08-26', source: { title: 'City of Vero Beach DocumentCenter', url: 'https://www.covb.org/161/Election-Information', date: '2026-08-26' } }
+          ], finance: null, endorsements: [],
           links: { 'Campaign website': 'https://www.vosforvero.com/' } },
         { id: 'maccallum', name: 'Robert MacCallum', party: 'NONPARTISAN',
           occupation: 'Owner, Exit Right Realty (downtown Vero Beach)',
@@ -1656,9 +1681,29 @@ window.GUIDE = {
           bio: 'A perennial Vero Beach candidate reported to be running his 26th campaign for office as of a recent cycle, with Ballotpedia pages for both 2024 and 2025 candidacies. His past stated focus has been opposing what he calls wasteful council spending on studies (downtown parking, the Twin Pairs). This guide has not confirmed his specific 2026 platform and is not importing older statements as current.',
           positions: {}, record: [], finance: null, endorsements: [], links: {} },
         { id: 'moore', name: 'Linda Moore', party: 'NONPARTISAN', incumbent: true,
-          occupation: 'Vero Beach Vice Mayor',
-          bio: 'Sitting Vice Mayor, elected to the council and previously confirmed seeking a second term as of the 2024 cycle. This guide has not yet confirmed her specific 2026 platform and is not importing 2024 statements as current.',
-          positions: {}, record: [], finance: null, endorsements: [],
+          occupation: 'Vero Beach City Council member (Vice Mayor 2023-2025)',
+          bio: 'Correction, Aug 26, 2026: this guide previously listed her as sitting Vice Mayor — she stepped down from that post at the council\'s Nov. 17, 2025 organizational meeting, nominating Councilman Taylor Dingle instead (he won 3-2). John Cotugno remains Mayor. Moore is now a Councilmember seeking a further term. This guide has not confirmed her specific 2026 platform beyond the record items below and is not importing older statements as current positions.',
+          positions: {}, record: [
+            { type: 'vote', claim: 'Made the motion to approve the city\'s FY2025-26 budget: a 2.9816 millage rate, 7.72% higher than the prior year, funding a $36 million budget with seven new positions and a 2% raise for retirees. Passed unanimously, 5-0.',
+              date: '2025-09-04', source: { title: 'Hometown News — "Vero Beach approves $36m city budget with higher tax rate"', url: 'https://www.hometownnewstc.com/news/indian_river/vero-beach-approves-36m-city-budget-with-higher-tax-rate/article_e73e323f-e8a2-5b1e-b911-2e7922c34448.html', date: '2025-09-04' } },
+            { type: 'vote', claim: 'On the Three Corners waterfront redevelopment, initially voted with two other council members to pursue a rival "SuDa" development proposal over "Clearpath" — a 3-2 vote. The council later disqualified SuDa in a separate, contested vote, and on April 22, 2025 selected Clearpath, reported by multiple outlets as unanimous.',
+              detail: 'This guide could not independently confirm Moore\'s specific April 22, 2025 vote from a directly-read tally — the "unanimous" characterization comes from secondary aggregation of news coverage, not a directly verified minutes document. Flagged rather than stated as fully confirmed.',
+              date: '2025-04-11', source: { title: 'Vero News — "Three Corners: Council seen backing Clearpath"', url: 'https://veronews.com/2025/04/11/three-corners-council-seen-backing-clearpath/', date: '2025-04-11' } },
+            { type: 'vote', claim: 'Supported a second 30-day extension on Three Corners ground-lease negotiations in August 2026, while signaling she would not support a third.',
+              quote: "I'm okay with this extension, but I don't think I'd be okay with another one. It feels like we're stalling a little bit.",
+              date: '2026-08-13', source: { title: 'WQCS — "Three Corners project gets additional 30 day extension in Vero Beach"', url: 'https://www.wqcs.org/wqcs-news/2026-08-13/three-corners-project-gets-additional-30-day-extension-in-vero-beach', date: '2026-08-13' } },
+            { type: 'vote', claim: 'Voted with Mayor Cotugno (the losing side of a 2-3 split) to use a 14-acre city-owned "old nursery site" for affordable housing under the state Live Local Act; Vos, Dingle, and Carroll voted it down.',
+              quote: "This is making me crazy, that we're not going to do affordable housing because of hurricane debris.",
+              date: '2025-12-30', source: { title: 'Vero News — "On housing site, Vero\'s tough call was right one"', url: 'https://veronews.com/2025/12/30/on-housing-site-veros-tough-call-was-right-one/', date: '2025-12-30' } },
+            { type: 'fact', claim: 'Raised a concern that a state zoning provision letting religious institutions build workforce housing on their property could create religious-discrimination questions, while still voting with the full council to direct staff to incorporate it into the city\'s zoning rewrite.',
+              quote: "open that can of worms",
+              date: '2026-01-27', source: { title: 'Hometown News — "Vero Beach updates zoning for Live Local rules"', url: 'https://www.hometownnewstc.com/news/indian_river/vero-beach-updates-zoning-for-live-local-rules/article_70137709-1754-55c1-a42d-0c8edfe1d7a9.html', date: '2026-01-27' } },
+            { type: 'fact', claim: 'In summer 2025, faced public calls to resign after a drag-themed event at her privately-owned restaurant drew a complaint filed with the Florida Attorney General\'s office; she stated publicly, in her capacity as the sitting Vice Mayor, that she would not resign. Of 24 speakers on the matter at a city council meeting, 17 spoke in support of her.',
+              detail: 'This guide reports only the public-record portion of this matter — her public statement as an officeholder and the council-meeting public comment. The private event\'s own programming and unrelated personal social-media activity are not reported here as they are not official public conduct.',
+              date: '2025-07-31', source: { title: 'Vero News — "Support for vice mayor, tolerance run deep in city"', url: 'https://veronews.com/2025/07/31/support-for-vice-mayor-tolerance-run-deep-in-city/', date: '2025-07-31' } },
+            { type: 'fact', claim: 'This guide could not locate a 2026-cycle campaign treasurer\'s report for Moore on the City of Vero Beach\'s filing system as of late August 2026 — only 2022- and 2024-cycle filings are indexed there. City council campaign finance is filed with the City Clerk, not the county Supervisor of Elections\' system used elsewhere in this guide.',
+              date: '2026-08-26', source: { title: 'City of Vero Beach DocumentCenter', url: 'https://www.covb.org/161/Election-Information', date: '2026-08-26' } }
+          ], finance: null, endorsements: [],
           links: { 'Campaign Facebook': 'https://www.facebook.com/Lindamoreismore/' } },
         { id: 'benedict', name: 'Davis Benedict', party: 'NONPARTISAN',
           occupation: 'Not yet documented by this guide',
@@ -3280,5 +3325,2174 @@ window.GUIDE = {
         }
       ]
     }
+
+,
+    {
+    id: 'fl-governor',
+    office: 'Florida Governor',
+    district: 'Statewide',
+    type: 'partisan',
+    ballot: 'general',
+    term: '4 years',
+    stakes: 'Florida\'s chief executive, term-limited after two terms; Ron DeSantis is not seeking re-election. The governor appoints agency heads and judges (subject to retention), signs or vetoes legislation including line-item budget vetoes, and sits atop the Florida Cabinet with the Attorney General, CFO, and Commissioner of Agriculture. The governor and lieutenant governor run as a single ticket. This was the most expensive primary cycle on the entire 2026 ballot: Donalds\' campaign and PAC combined raised more than $67 million, roughly ten times Jolly\'s total.',
+    whoVotes: 'Statewide. Registered Republicans and Democrats each had a contested primary on August 18; NPA and Libertarian candidates skipped the primary and go straight to the Nov 3 general ballot alongside the two major-party nominees. Every registered voter chooses among all qualified candidates on November 3.',
+    primaryResult: {
+        status: 'advanced',
+        summary: 'U.S. Rep. Byron Donalds won a crowded 11-candidate Republican primary with 47.79% (811,101 votes), well ahead of then-Lt. Gov. Jay Collins (25.16%) and former House Speaker Paul Renner (8.55%). Former U.S. Rep. David Jolly won the Democratic primary with 60.95% (762,109 votes) after Orange County Mayor Jerry Demings, his main rival, suspended his campaign in June 2026 following a cancer diagnosis. Results are unofficial, pending state certification. Donalds and Jolly advance to the Nov 3 general election ballot, along with a Libertarian nominee, six NPA candidates, and five qualified write-ins.',
+        source: {
+            title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+            url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+            date: '2026-08-25'
+          }
+      },
+    candidates: [
+        {
+          id: 'donalds',
+          name: 'Byron Donalds',
+          party: 'R',
+          age: 47,
+          residence: 'Naples',
+          occupation: 'U.S. Representative, FL-19 (Naples/Fort Myers)',
+          bio: 'Raised by a single mother in Crown Heights, Brooklyn, after she lost her city job when he was in middle school; his grandmother helped pay his Catholic-school tuition. Moved to Florida for college; background in finance, banking, and insurance before politics. Florida House 2016-2020, elected to the U.S. House (FL-19) in 2020 and re-elected twice; was on Donald Trump\'s 2024 vice-presidential shortlist and is widely described as one of the most prominent Black Republicans in the country. Selected Florida state Sen. Bryan Avila, a Hialeah-raised Florida Army National Guard veteran, as his Lt. Governor running mate.',
+          primary: {
+              result: 'won',
+              votes: 811101,
+              pct: 47.79,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+              amendment: {
+                  summary: 'Supports Amendment 3 (raising the homestead exemption) and wants to go further regardless of its outcome, eventually eliminating homestead property taxes entirely.',
+                  quote: 'Whether Amendment 3 passes or fails, we are going to reform property taxes in our state with a goal of eliminating homestead property taxes once and for all.',
+                  source: {
+                      title: 'WLRN — "Byron Donalds promotes his economic plans for Florida, defends Trump\'s record"',
+                      url: 'https://www.wlrn.org/government-politics/2026-08-21/byron-donalds-promotes-his-economic-plans-for-florida-defends-trumps-record',
+                      date: '2026-08-21'
+                    }
+                },
+              insurance: {
+                  summary: 'Wants tort reform and expanded "home hardening" programs for buildings constructed before 1992 (pre-Hurricane Andrew codes); has promised rate cuts heading into the general election.',
+                  source: {
+                      title: 'WLRN — "Byron Donalds promotes his economic plans for Florida, defends Trump\'s record"',
+                      url: 'https://www.wlrn.org/government-politics/2026-08-21/byron-donalds-promotes-his-economic-plans-for-florida-defends-trumps-record',
+                      date: '2026-08-21'
+                    }
+                },
+              growth: {
+                  summary: 'Wants to cut permitting costs and timelines, which he says add 20-30% to construction costs.',
+                  quote: 'modernize that entire process, shrink those timelines down.',
+                  source: {
+                      title: 'WLRN — "Byron Donalds promotes his economic plans for Florida, defends Trump\'s record"',
+                      url: 'https://www.wlrn.org/government-politics/2026-08-21/byron-donalds-promotes-his-economic-plans-for-florida-defends-trumps-record',
+                      date: '2026-08-21'
+                    }
+                }
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Supports continued data-center/AI infrastructure development and opposes bans or moratoriums, proposing safeguards (closed-loop water cooling, utility-customer protections, distance limits from homes) instead.',
+                quote: 'There ain\'t no bans coming.',
+                detail: 'Has received "dozens" of campaign contributions from AI companies, per reporting. Contrasts directly with Jolly, who wants a statewide moratorium.',
+                date: '2026-08-01',
+                source: {
+                    title: 'Florida Politics — "\'There ain\'t no bans coming\': Byron Donalds says critics can\'t stop AI data centers"',
+                    url: 'https://floridapolitics.com/archives/812893-there-aint-no-bans-donalds/',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Education platform proposes "customized career roadmaps" starting in 6th grade, a school-meal health initiative, and keeping what his platform calls "radical woke ideology" out of schools.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Immigration platform is a continuation of the Trump administration\'s enforcement agenda: securing the border and ending "taxpayer handouts to illegals."',
+                date: '2026-08-25',
+                source: {
+                    title: 'ByronDonalds.com — Issues',
+                    url: 'https://byrondonalds.com/issues/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'No Indian River Lagoon-specific statement was found for Donalds; his platform pledges to "complete Everglades Restoration, improve water quality, expand access to water supply" in general terms.',
+                detail: 'Stated explicitly as a gap rather than assumed — this guide could not locate Lagoon-specific comment from either general-election nominee.',
+                date: '2026-08-25',
+                source: {
+                    title: 'ByronDonalds.com — Issues',
+                    url: 'https://byrondonalds.com/issues/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Maintained an active U.S. House re-election campaign committee for more than 18 months after launching his governor bid; the FEC warned in August 2025 that contributions to the House account "must be refunded" since he was not an active House candidate. His campaign did not confirm he would not seek House re-election until Aug. 8, 2026.',
+                detail: 'His treasurer initially disputed that he\'d ended the House campaign, directly contradicting an earlier FEC filing from February 2025 stating he would not seek re-election.',
+                date: '2026-08-20',
+                source: {
+                    title: 'WUSF — "Byron Donalds kept House reelection campaign alive during run for governor"',
+                    url: 'https://www.wusf.org/politics-issues/2026-08-20/byron-donalds-kept-house-re-election-campaign-alive-during-run-for-florida-governor',
+                    date: '2026-08-20'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'The nonpartisan Campaign Legal Center filed a 2024 ethics complaint alleging Donalds and his wife failed to timely disclose more than 100 stock trades worth up to $1.6 million under the STOCK Act.',
+                response: 'A campaign spokesperson said Donalds does not personally initiate trades (his broker has third-party authorization) and that the campaign was "working to reconcile any outstanding infractions."',
+                date: '2025-01-01',
+                source: {
+                    title: 'Campaign Legal Center — "Rep. Byron Donalds of Florida Fails to Disclose up to $1.6 Million in Stock Trades"',
+                    url: 'https://campaignlegal.org/press-releases/rep-byron-donalds-florida-fails-disclose-16-million-stock-trades-campaign-legal',
+                    date: '2025-01-01'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'Reporting noted Donalds and his wife purchased up to $100,000 in Bitcoin the same day he and other lawmakers sent a letter to the IRS seeking more favorable crypto tax rules, raising conflict-of-interest questions given his seat on the House Digital Assets Subcommittee.',
+                response: 'Donalds says his investments are handled by a financial advisor and has called the attacks "politically motivated."',
+                date: '2025-06-01',
+                source: {
+                    title: 'NOTUS — "Rep. Byron Donalds Pressed the IRS for Favorable Crypto Rules. His Wife Bought Bitcoin the Same Day."',
+                    url: 'https://www.notus.org/congress/byron-donalds-crypto-rules-bitcoin',
+                    date: '2025-06-01'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'At a June 2024 campaign event, Donalds said "during Jim Crow, the Black family was together," pointing to Great Society programs as having since weakened Black family structure — widely criticized by Democratic leaders including the Congressional Black Caucus chairman.',
+                response: 'Donalds pushed back on the "he said Jim Crow was better" characterization in a televised exchange with MSNBC\'s Joy Reid, saying "I never said that it was better for Black people in Jim Crow" while maintaining that Black marriage rates were statistically higher in that era.',
+                detail: 'Independent fact-checks (PolitiFact, Tampa Bay Times) found the "Jim Crow was better" framing an overstatement of what he literally said, while also finding his own comments "thorny in their own right" and his implied causal argument weakly supported.',
+                date: '2024-06-10',
+                source: {
+                    title: 'PolitiFact — "Fact-checking Byron Donalds\' \'Jim Crow\' comments on Black families"',
+                    url: 'https://www.politifact.com/article/2024/jun/10/fact-checking-byron-donalds-jim-crow-comments/',
+                    date: '2024-06-10'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Outgoing Gov. Ron DeSantis has notably NOT endorsed Donalds, before or after the primary, and at points questioned his fitness for the office and floated his own wife Casey DeSantis as a preferable candidate.',
+                quote: 'You got a guy like Byron. He just hasn\'t been a part of any of the victories that we\'ve had here over the left over these last few years.',
+                date: '2025-02-24',
+                source: {
+                    title: 'Florida Phoenix — "DeSantis disses Donalds, touts First Lady, when asked about 2026 governor race"',
+                    url: 'https://floridaphoenix.com/2025/02/24/desantis-disses-donalds-touts-first-lady-when-asked-about-2026-governor-race/',
+                    date: '2025-02-24'
+                  }
+              }
+            ],
+          finance: {
+              raised: 67000000,
+              spent: null,
+              asOf: '2026-06-01',
+              note: 'Campaign account plus political committee combined; $65.8 million cash on hand as of June 1, 2026. A direct FL Division of Elections database query returned individual contribution records but not a computed grand total (the tool\'s "totals" mode errored on every attempted date range) — this figure is secondary-sourced to reporting that itself cites DOE filings, not a raw database pull. Major PAC donors include Palm Beach billionaire Thomas Peterffy and shipping magnate Richard Uihlein ($1 million each) and the Florida Club for Growth ($975,000).',
+              source: {
+                  title: 'Florida Politics — "Byron Donalds posts record $22M quarter to kick off 2026 Governor\'s race"',
+                  url: 'https://floridapolitics.com/archives/788293-byron-donalds-posts-record-22m-quarter-to-kick-off-2026-governors-race/',
+                  date: '2026-04-01'
+                }
+            },
+          endorsements: [
+              {
+                name: 'President Donald Trump — "As Governor, Byron would have a BIG Voice and would work closely with me to advance our America First Agenda."',
+                source: {
+                    title: 'Time — "Who Is Byron Donalds, the Trump-Backed Favorite for Florida Governor"',
+                    url: 'https://time.com/article/2026/08/18/byron-donalds-congressman-trump-republican-governor-florida/',
+                    date: '2026-08-18'
+                  }
+              },
+              {
+                name: 'House Speaker Mike Johnson',
+                source: {
+                    title: 'Fox News — "Top House Republican backs Byron Donalds for Florida governor"',
+                    url: 'https://www.foxnews.com/politics/top-house-republican-backs-byron-donalds-florida-governor',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'A group of DeSantis political allies, including Florida GOP chair/Attorney General James Uthmeier, who broke from DeSantis to endorse Donalds in July 2026',
+                source: {
+                    title: 'Tampa Bay Times — "DeSantis allies break away, endorse Byron Donalds for Florida governor"',
+                    url: 'https://www.tampabay.com/news/florida-politics/elections/2026/07/06/florida-desantis-byron-donalds-trump-uthmeier-endorse-2026-governor/',
+                    date: '2026-07-06'
+                  }
+              }
+            ],
+          links: {
+              'Campaign website': 'https://byrondonalds.com/',
+              'Running mate (Bryan Avila) announcement': 'https://www.cbsnews.com/miami/news/florida-republican-byron-donalds-gubernatorial-candidate-lieutenant-governor-running-mate-2026/'
+            }
+        },
+        {
+          id: 'jolly',
+          name: 'David Jolly',
+          party: 'D',
+          age: 53,
+          residence: 'Pinellas County',
+          occupation: 'Attorney; television political analyst',
+          bio: 'Attorney and nationally recognized MSNBC political analyst who describes himself as a devout Christian. Won a March 2014 special election to the U.S. House (FL-13, Pinellas County) as a Republican, then lost his 2016 re-election bid to Charlie Crist. Left the Republican Party in 2018 over opposition to Donald Trump, spent several years as a registered independent building a national profile as an anti-Trump former-Republican commentator, then registered as a Democrat in mid-2025 and launched this campaign shortly after. Selected Gwen Graham — daughter of former Gov./Sen. Bob Graham, a former one-term U.S. Representative who ran for governor herself in 2018 and later served in the Biden administration\'s Education Department — as his Lt. Governor running mate.',
+          primary: {
+              result: 'won',
+              votes: 762109,
+              pct: 60.95,
+              source: {
+                  title: 'WLRN — "David Jolly wins Democratic nomination for governor, will face Republican Byron Donalds"',
+                  url: 'https://www.wlrn.org/government-politics/2026-08-18/david-jolly-governors-race-florida',
+                  date: '2026-08-18'
+                }
+            },
+          positions: {
+              amendment: {
+                  summary: 'Opposes Amendment 3, arguing local communities should retain control over property-tax exemption policy rather than have it set by state constitutional mandate.',
+                  source: {
+                      title: 'Yahoo News/Newsweek — "Byron Donalds to Face David Jolly in Florida Governor\'s Race: What They Say on Property Taxes"',
+                      url: 'https://www.yahoo.com/news/politics/articles/byron-donalds-face-david-jolly-155152696.html',
+                      date: '2026-08-19'
+                    }
+                },
+              insurance: {
+                  summary: 'Central campaign theme is "historic homeowner\'s insurance reform"; has floated shifting some catastrophic-risk coverage to a state-assumed model, potentially funded by a new real-estate-transaction tax or reallocated tourism revenue.',
+                  quote: 'Floridians are being squeezed by an affordability crisis.',
+                  source: {
+                      title: 'WTSP — "Who is David Jolly? Meet the Democratic nominee for Florida governor"',
+                      url: 'https://www.wtsp.com/article/news/politics/elections/who-is-david-jolly-democrat-florida-governor-2026-race/67-9baa25b9-1a5d-4da0-ae1c-0168ff555583',
+                      date: '2026-08-18'
+                    }
+                }
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Calls for a statewide moratorium on new data centers pending study of environmental, economic, and privacy/security impacts of AI infrastructure — a direct contrast with Donalds, who opposes any ban.',
+                date: '2026-07-01',
+                source: {
+                    title: 'Florida Politics — "David Jolly calls for a halt to data centers, betting Byron Donalds is vulnerable"',
+                    url: 'https://floridapolitics.com/archives/808692-david-jolly-calls-for-data-center-moratorium/',
+                    date: '2026-07-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Called the Everglades immigration-detention facility known as "Alligator Alcatraz" a "callous political stunt" and supports closing it and returning the land to Miami-Dade County, while saying this doesn\'t make him soft on crime.',
+                quote: 'if you violate the law in Florida, you should be held accountable regardless of where you were born.',
+                date: '2026-07-01',
+                source: {
+                    title: 'CBS Miami — "David Jolly, leading Democratic candidate for 2026 governor, shares views on abortion and Alligator Alcatraz"',
+                    url: 'https://www.cbsnews.com/amp/miami/news/democratic-candidate-governor-david-jolly-abortion-rights-alligator-alcatraz',
+                    date: '2026-07-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Now supports abortion rights, a shift from his time as a Republican member of Congress, which he frames as part of a broader personal "evolution" since leaving the GOP.',
+                date: '2026-07-01',
+                source: {
+                    title: 'CBS Miami — "David Jolly, leading Democratic candidate for 2026 governor, shares views on abortion and Alligator Alcatraz"',
+                    url: 'https://www.cbsnews.com/amp/miami/news/democratic-candidate-governor-david-jolly-abortion-rights-alligator-alcatraz',
+                    date: '2026-07-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Education platform centers on a "renaissance" in public education, reinvestment in community public schools, and higher teacher pay, citing Florida\'s ranking as near-last nationally on teacher pay.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'No Indian River Lagoon-specific statement was found for Jolly; his platform references investing in "climate resiliency" in general terms. This appears to be a genuine gap in campaign-trail coverage of the race, not one-sided reporting — the same gap exists for Donalds.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WTSP — "Who is David Jolly? Meet the Democratic nominee for Florida governor"',
+                    url: 'https://www.wtsp.com/article/news/politics/elections/who-is-david-jolly-democrat-florida-governor-2026-race/67-9baa25b9-1a5d-4da0-ae1c-0168ff555583',
+                    date: '2026-08-18'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'Republicans and some conservative commentary characterize Jolly\'s political trajectory — GOP congressman (2014-2017) to independent (2018-2025) to Democratic gubernatorial nominee — as career opportunism rather than principled evolution.',
+                response: 'Jolly frames his shift as a genuine break with a Trump-era GOP he came to oppose; during his House tenure he notably forwent PAC contributions and campaigned on reducing special-interest money in politics, a position his campaign cites as evidence of consistency.',
+                date: '2026-05-29',
+                source: {
+                    title: 'The Florida Pundit — "David Jolly Faces Criticism Over Political Switch in Florida Governor Race"',
+                    url: 'https://thefloridapundit.com/2026/05/29/david-jolly-criticism-florida-governor-race/',
+                    date: '2026-05-29'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'In April 2016, during a U.S. Senate campaign, edits were made to Jolly\'s Wikipedia page removing references to his prior lobbying work, which his campaign said presented a "public negative narrative" — drawing press scrutiny at the time as an apparent attempt to obscure part of his record.',
+                detail: 'This is 2016-era conduct, over a decade before this campaign; no comparable 2026-cycle controversy was found for Jolly.',
+                date: '2016-04-01',
+                source: {
+                    title: 'GovTrack.us — "Rep. David Jolly [R-FL13, 2014-2016]"',
+                    url: 'https://www.govtrack.us/congress/members/david_jolly/412603',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'No financial-disclosure or ethics-complaint controversy comparable to Donalds\' STOCK Act complaint or dual-campaign FEC warning was found for Jolly in this guide\'s research.',
+                detail: 'This guide searched specifically; the absence may reflect a genuinely thinner record (Jolly left elected office in 2017) rather than one-sided reporting, and readers should treat it as "not found," not "does not exist."',
+                date: '2026-08-25',
+                source: {
+                    title: 'GovTrack.us — "Rep. David Jolly [R-FL13, 2014-2016]"',
+                    url: 'https://www.govtrack.us/congress/members/david_jolly/412603',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: {
+              raised: 6400000,
+              spent: null,
+              asOf: '2026-08-18',
+              note: 'Includes $1.6 million from Florida\'s public campaign-finance matching-funds program. Roughly one-tenth of Donalds\' reported $67M+. Top donors in one recent quarter were investment advisor Donald Sussman and heiress Barbara Stiefel, $100,000 each; campaign says its broader donor base is mostly grassroots. A direct FL DOE database query for a grand total could not be completed in this research pass; this figure is secondary-sourced to reporting that itself cites DOE filings.',
+              source: {
+                  title: 'WLRN — "David Jolly wins Democratic nomination for governor"',
+                  url: 'https://www.wlrn.org/government-politics/2026-08-18/david-jolly-governors-race-florida',
+                  date: '2026-08-18'
+                }
+            },
+          endorsements: [
+              {
+                name: 'Florida Education Association (the state\'s largest teachers\' union), in coordination with the Florida AFL-CIO',
+                source: {
+                    title: 'Florida Politics — "Florida Education Association backs David Jolly for Governor"',
+                    url: 'https://floridapolitics.com/archives/804118-florida-education-association-backs-david-jolly-for-governor/',
+                    date: '2026-06-01'
+                  }
+              },
+              {
+                name: 'Became the de facto Democratic frontrunner after Orange County Mayor Jerry Demings — his chief rival, previously the better-funded of the two — suspended his campaign June 5, 2026 following a prostate cancer diagnosis',
+                source: {
+                    title: 'Tampa Bay Times — "What does Jerry Demings dropping out mean for Florida governor\'s race?"',
+                    url: 'https://www.tampabay.com/news/florida-politics/elections/2026/06/05/jerry-demings-drops-out-governors-race-cancer-diagnosis-democrat-david-jolly/',
+                    date: '2026-06-05'
+                  }
+              }
+            ],
+          links: {
+              'Campaign website': 'https://www.jollyforflorida.com/'
+            }
+        },
+        {
+          id: 'collins',
+          name: 'Jay Collins',
+          party: 'R',
+          occupation: 'Lieutenant Governor of Florida (2025-2026, resigned to run); Florida Senate 2022-2025',
+          bio: 'Army Special Forces (Green Beret) combat veteran, 23+ years of service including deployments to Afghanistan, Iraq, and twice to South America as a medical specialist. Lost a leg to combat injuries, then continued serving as a Green Beret for five more years before retiring; decorations include the Legion of Merit, Bronze Star, and Purple Heart. Gov. DeSantis appointed him the 21st Lt. Governor of Florida in August 2025, making him the sitting Lt. Governor when he entered this race against Trump-backed frontrunner Donalds — widely read as DeSantis\'s implicit signal of support.',
+          primary: {
+              result: 'lost',
+              votes: 427000,
+              pct: 25.16,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Campaigned on protecting Florida\'s waters from PFAS contamination, protecting farmland and the food supply, immigration enforcement, and "immediate property-tax relief."',
+                quote: 'We have to protect Florida as it is. Growth is part of life...but that will never come at the expense of our agriculture, our green zones, our waterways.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'This guide found no specific controversies for Collins beyond the ordinary scrutiny of a competitive primary.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Ballotpedia News — "Byron Donalds defeated 10 other candidates in the Republican primary for governor of Florida on Aug. 18"',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-20'
+                  }
+              }
+            ],
+          finance: {
+              raised: null,
+              spent: null,
+              asOf: '2026-08-25',
+              note: 'Not separately itemized in available reporting beyond his distant 2nd-place primary finish; not confirmed against a direct FL DOE pull.',
+              source: {
+                  title: 'Ballotpedia News — "Byron Donalds defeated 10 other candidates in the Republican primary for governor of Florida on Aug. 18"',
+                  url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                  date: '2026-08-20'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'renner',
+          name: 'Paul Renner',
+          party: 'R',
+          occupation: 'Speaker of the Florida House, 2022-2024; Florida House 2015-2024',
+          bio: 'Navy veteran; prosecutor and business attorney by background. Served as Florida House Speaker 2022-2024, during which he says over $2 billion in conservation easements were funded.',
+          primary: {
+              result: 'lost',
+              votes: 145055,
+              pct: 8.55,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Proposed eliminating property taxes by shifting the burden toward new residents, tourists, and international real-estate speculators; promised to reduce homeowners\' insurance premiums by 20%.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'The only candidate in either 2026 gubernatorial primary this guide found to have made an Indian River Lagoon-specific statement: wanted to protect the Lagoon\'s wildlife corridor and allow aquifer recharge.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'On criminal justice, supported the death penalty for human trafficking of minors and wanted to limit death-penalty appeals to three years; opposed Flock automated license-plate-reader cameras.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              }
+            ],
+          finance: {
+              raised: 6700000,
+              spent: null,
+              asOf: '2026-08-17',
+              note: '$6.2 million through his political committee plus roughly $490,000 in his regular campaign account — a distant second to Donalds but well ahead of Fishback.',
+              source: {
+                  title: 'WLRN/Florida Phoenix fundraising-gap coverage',
+                  url: 'https://www.wlrn.org/government-politics/2026-08-17/will-byron-donalds-dominance-in-fundraising-result-in-a-gop-victory',
+                  date: '2026-08-17'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'fishback',
+          name: 'James Fishback',
+          party: 'R',
+          occupation: 'Founder, investment firm Azoria and nonprofit Incubate Debate; DOGE consultant',
+          bio: 'Founder of investment firm Azoria and the nonprofit Incubate Debate; served as a consultant to the Department of Government Efficiency (DOGE) during the Trump administration.',
+          primary: {
+              result: 'lost',
+              votes: 177796,
+              pct: 10.48,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Supported eliminating property taxes; on homelessness, advocated "structure, care and treatment" over what he called "free needles, encampments"; pro-life, pledging to "shut down the 53 abortion clinics in Florida" while also advocating paid maternity leave.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              }
+            ],
+          finance: {
+              raised: 1905000,
+              spent: null,
+              asOf: '2026-08-17',
+              note: 'More than $1.2 million in his "Florida First" PAC and more than $705,000 in his regular campaign account, including a $100,000 personal loan on Aug. 13, 2026 — but had just $2,371 left in the campaign account, reflecting a fundraising struggle relative to Donalds and Renner.',
+              source: {
+                  title: 'Florida Politics — "James Fishback\'s fundraising continues to flounder; campaign has less than $28K left in bank"',
+                  url: 'https://floridapolitics.com/archives/790153-fishback-fundraising-flounders/',
+                  date: '2026-08-17'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'williams',
+          name: 'Bobby Williams',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 69101,
+              pct: 4.07,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Described in earlier national coverage as an activist.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'rodriguezr',
+          name: 'Rachel Rodriguez',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 27623,
+              pct: 1.63,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'An attorney by profession per aggregated candidate listings.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'holcomb',
+          name: 'Jim Holcomb',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 13183,
+              pct: 0.78,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'shaw',
+          name: 'James W. Shaw',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 7888,
+              pct: 0.46,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Described as a farmer in aggregated candidate listings.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'mccaffrey',
+          name: 'Arthur Joseph McCaffrey',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 7048,
+              pct: 0.42,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'succe',
+          name: 'Caneste Succe',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 6275,
+              pct: 0.37,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Described in aggregated listings as a "public representative."',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'nokovich',
+          name: 'Daniel Nokovich',
+          party: 'R',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 5192,
+              pct: 0.31,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'foster',
+          name: 'Dayna Marie Foster',
+          party: 'D',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 189393,
+              pct: 15.15,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'joseph',
+          name: 'Dotie Joseph',
+          party: 'D',
+          occupation: 'Member, Florida House of Representatives (North Miami-area district)',
+          bio: 'A sitting Florida state representative at the time of her campaign, running on an affordability-focused platform.',
+          primary: {
+              result: 'lost',
+              votes: 119950,
+              pct: 9.59,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Focused on "lowering costs, including housing, groceries, gas, insurance and healthcare"; supported raising the minimum wage for state workers to $20/hour; platform included expanding Medicaid and lowering prescription drug costs; explicitly positioned herself against "culture war" and "fear mongering" politics.',
+                date: '2026-08-01',
+                source: {
+                    title: 'FOX 13 Tampa Bay — "Florida 2026 primary: Where governor candidates stand on property taxes, immigration, housing"',
+                    url: 'https://www.fox13news.com/news/florida-2026-primary-where-governor-candidates-stand-property-taxes-immigration-housing',
+                    date: '2026-08-01'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'castillobach',
+          name: 'Evelyn Castillo-Bach',
+          party: 'D',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 96695,
+              pct: 7.73,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'fernandez',
+          name: 'Thomas Eloy Fernandez',
+          party: 'D',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 47320,
+              pct: 3.78,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'norman',
+          name: 'Stephann Norman',
+          party: 'D',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'lost',
+              votes: 34964,
+              pct: 2.8,
+              source: {
+                  title: 'Florida Election Watch (FL Division of Elections results portal) — "2nd Set of Unofficial Returns," not yet certified',
+                  url: 'https://floridaelectionwatch.gov/StateOffices/Governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance detail, or policy platform for this candidate beyond their name and primary vote total — a genuine reporting gap in a crowded field, not a research shortfall specific to this candidate.',
+                date: '2026-08-25',
+                source: {
+                    title: 'This guide\'s review of Florida Election Watch results and Ballotpedia\'s primary coverage',
+                    url: 'https://news.ballotpedia.org/2026/08/20/byron-donalds-defeated-10-other-candidates-in-the-republican-primary-for-governor-of-florida-on-aug-18/',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'jewett',
+          name: 'Scott Eckhard Jewett',
+          party: 'L',
+          occupation: 'Not documented by this guide',
+          bio: 'The Libertarian Party of Florida\'s nominee for governor, confirmed on the Nov 3 general election ballot. No biography, finance, or platform detail was located.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WFSU — "Donalds and Jolly will face off for Florida governor"',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-19'
+                }
+            },
+          positions: {
+
+            },
+          record: [],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'meade',
+          name: 'Desmond Meade',
+          party: 'NPA',
+          occupation: 'President/CEO, Florida Rights Restoration Coalition',
+          bio: 'A nationally known voting-rights advocate who led the successful grassroots campaign behind Florida\'s 2018 Amendment 4, which restored voting rights to an estimated 1.4 million Floridians with past felony convictions — the largest expansion of voting rights in the U.S. in decades. A MacArthur "Genius Grant" Fellow who has spoken publicly about his own past conviction, homelessness, and addiction, and about earning a law degree afterward. Running as a No Party Affiliation candidate for governor.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WSLR+Fogartyville — "The race for Florida governor: Desmond Meade"',
+                  url: 'https://wslr.org/the-race-for-florida-governor-desmond-meade/',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'burkett',
+          name: 'Charles Burkett',
+          party: 'NPA',
+          occupation: 'Mayor, Town of Surfside (Miami-Dade County)',
+          bio: 'Mayor of the Town of Surfside at the time of his candidacy for governor. No further biography, finance, or platform detail was located.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'abrams',
+          name: 'Dean Ocean Abrams',
+          party: 'NPA',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'datto',
+          name: 'Jeffrey Peter "Dr. Jeff" Datto',
+          party: 'NPA',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'dimanche',
+          name: 'Moliere "Moe" Dimanche',
+          party: 'NPA',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'russo',
+          name: 'Frank J. Russo',
+          party: 'NPA',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'anderson_wi',
+          name: 'Kathy Anderson',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'dejesus_wi',
+          name: 'David "DJ" DeJesus',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'dembinsky_wi',
+          name: 'Richard Paul Dembinsky',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'khan_wi',
+          name: 'M.W. Khan',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'morris_wi',
+          name: 'Erik Morris',
+          party: 'WRITE-IN',
+          occupation: 'Not documented by this guide',
+          bio: 'A minor candidate in a crowded 2026 gubernatorial primary; see record section for what this guide could and could not confirm.',
+          primary: {
+              result: 'advanced',
+              source: {
+                  title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                  url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                  date: '2026-08-25'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide found no biography, campaign finance, or platform detail for this candidate beyond their name on a general-election qualified-candidate list. That list itself is provisional and should be re-verified against a primary FL Division of Elections source before publication.',
+                date: '2026-08-25',
+                source: {
+                    title: 'WebSearch aggregation of qualified-candidate listings (provisional — not cross-verified against a single FL DOE or Ballotpedia primary source; recheck before treating as final)',
+                    url: 'https://news.wfsu.org/state-news/2026-08-19/donalds-and-jolly-will-face-off-for-florida-governor',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        }
+      ]
+  }
+,
+    {
+    id: 'fl-attorney-general',
+    office: 'Florida Attorney General',
+    district: 'Statewide',
+    type: 'partisan',
+    ballot: 'general',
+    term: '4 years',
+    stakes: 'Florida\'s chief legal officer: represents the state in litigation, enforces consumer-protection and antitrust law, oversees Medicaid fraud investigations, and sits on the Florida Cabinet with the Governor, CFO, and Commissioner of Agriculture. Incumbent James Uthmeier was appointed by Gov. DeSantis in January 2025 after Ashley Moody moved to the U.S. Senate. Notably, NEITHER party held an actual primary election for this office — only one candidate per party qualified by the June 12, 2026 deadline, so both nominations were decided without a single vote being cast.',
+    whoVotes: 'Statewide, on the November 3, 2026 general election ballot only. No primary was held for this race in either party — see the primary-result note below for why.',
+    primaryResult: {
+        status: 'decided',
+        summary: 'No primary was held. Under Florida law, when only one candidate qualifies within a party, that candidate is automatically the nominee. Incumbent Republican James Uthmeier\'s only announced rival, Steven Leskovich, withdrew before the June 12, 2026 qualifying deadline (and then endorsed the Democrat rather than Uthmeier). Democrat José Javier Rodríguez\'s would-be rival, perennial candidate Jim Lewis, was ruled not legally qualified by the state over a paperwork issue. Uthmeier and Rodríguez advance directly to the Nov 3 general election ballot; no NPA or write-in candidates were identified for this race.',
+        source: {
+            title: 'Ballotpedia — "Florida Attorney General election, 2026"',
+            url: 'https://ballotpedia.org/Florida_Attorney_General_election,_2026',
+            date: '2026-08-25'
+          }
+      },
+    candidates: [
+        {
+          id: 'uthmeier',
+          name: 'James Uthmeier',
+          party: 'R',
+          incumbent: true,
+          age: 38,
+          occupation: 'Attorney General of Florida (appointed Feb. 2025)',
+          bio: 'Born in Destin, FL; competed in track and field at the University of Florida; J.D., Georgetown University Law Center. Associate at Jones Day, then senior counsel/advisor at the U.S. Dept. of Commerce under the first Trump administration. Joined Gov. DeSantis\'s office in 2019, rising to chief of staff in 2021 and serving as campaign manager for DeSantis\'s 2024 presidential run. DeSantis appointed him Attorney General in Jan. 2025, succeeding Ashley Moody; sworn in Feb. 17, 2025 at age 37, among the youngest state AGs in the country.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Proposed and became the public face of "Alligator Alcatraz," the Everglades immigration-detention facility that opened July 1, 2025 with Trump, DeSantis, and DHS Secretary Kristi Noem attending.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Wikipedia — James Uthmeier',
+                    url: 'https://en.wikipedia.org/wiki/James_Uthmeier',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'vote',
+                claim: 'Held in contempt of federal court in June 2025 by U.S. District Judge Kathleen M. Williams for continuing to enforce a state immigration law (SB 4-C) after it had been preliminarily blocked by federal court order; separately reported to have directed Florida law enforcement to keep enforcing it anyway.',
+                quote: 'If being held in contempt is what it costs to ... stand firmly behind [Trump\'s immigration agenda, he accepted the consequences].',
+                date: '2025-06-01',
+                source: {
+                    title: 'Wikipedia — James Uthmeier',
+                    url: 'https://en.wikipedia.org/wiki/James_Uthmeier',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Opened high-profile criminal investigations into Roblox (child-safety/grooming concerns), the Tate brothers, JPMorgan Chase (alleged coordination with Special Counsel Jack Smith over Trump Media account terminations), and reopened a 1996 Brothers to the Rescue shootdown probe into Raúl Castro.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Wikipedia — James Uthmeier',
+                    url: 'https://en.wikipedia.org/wiki/James_Uthmeier',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'During the 2025 legislative session, $10 million from a Centene Corp. Medicaid settlement was directed to the Hope Florida Foundation (a charity affiliated with First Lady Casey DeSantis), which then funneled a combined $8.5 million through two nonprofits to "Keep Florida Clean," a political committee Uthmeier chaired that opposed the 2024 marijuana legalization amendment. State Rep. Alex Andrade (R) accused Uthmeier and Foundation counsel of "a conspiracy to commit money laundering and wire fraud."',
+                response: 'Uthmeier denied wrongdoing, characterizing the $10 million as a voluntary donation from Centene and arguing gifts to a 501(c)(3) were not state funds subject to the same restrictions.',
+                detail: 'A criminal investigation was announced May 2025; a Tallahassee grand jury returned a presentment around Feb. 25, 2026, but neither Uthmeier\'s office nor the State Attorney had publicly detailed its contents as of this guide\'s research. No criminal charges against Uthmeier personally have been confirmed.',
+                date: '2026-02-25',
+                source: {
+                    title: 'Wikipedia — James Uthmeier',
+                    url: 'https://en.wikipedia.org/wiki/James_Uthmeier',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Issued a legal opinion declining to enforce some state laws he deemed unconstitutional, including those establishing the Black Business Loan Program.',
+                detail: 'Reported by Yahoo News; this guide could not independently retrieve the underlying legal opinion text.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Yahoo News — "Florida AG James Uthmeier embraces ultimate culture warrior role"',
+                    url: 'https://www.yahoo.com/news/politics/articles/florida-ag-james-uthmeier-embraces-211711468.html',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: {
+              raised: 1754115.52,
+              spent: null,
+              asOf: '2026-08-26',
+              note: 'Candidate account only, pulled live from the FL DOE database. Separately, his affiliated PAC "Friends of James Uthmeier" raised $9,806,527.85 (also DOE, 2026-08-26) — combined total $11.56 million. Top PAC donors include the Republican Party of Florida ($1.8 million across four checks), First Principles PAC ($325,000), and CDR Enterprises ($250,000 — a firm that separately holds over $537 million in no-bid state contracts).',
+              source: {
+                  title: 'FL Division of Elections Campaign Finance Database — Candidate Search, Office=Attorney General, 2026',
+                  url: 'https://dos.elections.myflorida.com/campaign-finance/contributions/',
+                  date: '2026-08-26'
+                }
+            },
+          endorsements: [
+              {
+                name: 'President Donald Trump — "James Uthmeier is a Strong Conservative Fighter and Prosecutor, and has my Complete and Total Endorsement."',
+                source: {
+                    title: 'Tampa Bay Times',
+                    url: 'https://www.tampabay.com/news/florida-politics/elections/2025/10/08/uthmeier-attorney-general-race-trump-desantis-endorsement/',
+                    date: '2025-10-08'
+                  }
+              },
+              {
+                name: 'Florida Sheriffs Association (all 67 sheriffs) plus 51 individual sheriffs separately',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/810185-he-has-stepped-up-to-the-plate-florida-sheriffs-association-backs-james-uthmeier-for-attorney-general/',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'Republican Party of Florida; Club for Growth PAC',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/761780-a-proven-leader-club-for-growth-pac-endorses-james-uthmeir-for-attorney-general/',
+                    date: '2026-01-01'
+                  }
+              }
+            ],
+          links: {
+              'Campaign website': 'https://www.jamesuthmeier.com/'
+            }
+        },
+        {
+          id: 'rodriguez_ag',
+          name: 'José Javier Rodríguez',
+          party: 'D',
+          age: 48,
+          residence: 'Miami',
+          occupation: 'Attorney; former Assistant U.S. Secretary of Labor',
+          bio: 'Born in High Point, NC; raised in Miami, son of a Cuban refugee who came via Operation Pedro Pan. Eagle Scout; B.A., Brown University; Peace Corps 2000-2003; J.D., Harvard Law School. Worked as a legal-aid attorney on wage-theft cases. Florida House 2012-2016 (upset win over a veteran incumbent); Florida Senate 2016-2020, sitting on the Judiciary and Appropriations committees. Nominated by President Biden as Assistant Secretary of Labor for Employment and Training in 2021; confirmation was repeatedly delayed before finally passing 50-48 in March 2024, and he served in the role through Jan. 2025.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Lost re-election to his Senate seat in 2020 by just 32 votes after a spoiler "ghost candidate" also named Alex Rodriguez (no relation) drew over 6,000 votes, funded through dark money tied to GOP strategists. Former GOP state Sen. Frank Artiles later admitted orchestrating the scheme, paying the sham candidate $44,708.03, and was arrested.',
+                detail: 'One of Florida\'s best-documented "ghost candidate" scandals; Rodríguez now cites it on the campaign trail as personal motivation for an anti-corruption, election-integrity focus. He was the target of the scheme, not a participant.',
+                date: '2020-11-01',
+                source: {
+                    title: 'Wikipedia — José Javier Rodríguez (Florida politician)',
+                    url: 'https://en.wikipedia.org/wiki/Jos%C3%A9_Javier_Rodr%C3%ADguez_(Florida_politician)',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Campaign centers on "the three C\'s" — crime, costs, and corruption — arguing the AG\'s office under Uthmeier has "gone very far afield" from its proper mission.',
+                quote: 'the attorney general is like the governor\'s personal lawyer... a press secretary for the governor.',
+                date: '2026-03-31',
+                source: {
+                    title: 'WUSF — "Florida attorney general candidate José Javier Rodríguez on \'fighting for the little guy\' and more"',
+                    url: 'https://www.wusf.org/politics-issues/2026-03-31/florida-matters-florida-attorney-general-candidate-jose-javier-rodriguez-talks-priorities',
+                    date: '2026-03-31'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Emphasizes consumer protection on utilities and insurance, criticizing FPL rate proposals, plus pledges on fentanyl distribution, opioid-manufacturer accountability, and defending voting rights.',
+                date: '2026-03-31',
+                source: {
+                    title: 'WUSF — "Florida attorney general candidate José Javier Rodríguez on \'fighting for the little guy\' and more"',
+                    url: 'https://www.wusf.org/politics-issues/2026-03-31/florida-matters-florida-attorney-general-candidate-jose-javier-rodriguez-talks-priorities',
+                    date: '2026-03-31'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'No independent controversies, ethics complaints, or negative record items were found for Rodríguez himself in this guide\'s research — searched specifically. This is a genuine asymmetry with Uthmeier\'s record (Hope Florida, the federal contempt finding), not a research shortfall unique to one candidate.',
+                date: '2026-08-26',
+                source: {
+                    title: 'Wikipedia — José Javier Rodríguez (Florida politician)',
+                    url: 'https://en.wikipedia.org/wiki/Jos%C3%A9_Javier_Rodr%C3%ADguez_(Florida_politician)',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: {
+              raised: 1101843.38,
+              spent: null,
+              asOf: '2026-08-26',
+              note: 'Candidate account, pulled live from the FL DOE database. He has no affiliated PAC — a DOE committee search for his name returned zero results — and is enrolled in Florida\'s public matching-funds program, which caps individual contributions at $3,000. Confirmed matching-fund disbursements: $240,896.70 and $18,274.68.',
+              source: {
+                  title: 'FL Division of Elections Campaign Finance Database — Candidate Search, Office=Attorney General, 2026',
+                  url: 'https://dos.elections.myflorida.com/campaign-finance/contributions/',
+                  date: '2026-08-26'
+                }
+            },
+          endorsements: [
+              {
+                name: 'Florida AFL-CIO (unanimous COPE vote — its first "Labor 2026" endorsement); SEIU Florida',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/798721-florida-afl-cio-endorses-principled-jose-javier-rodriguez-for-attorney-general/',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'Steven Leskovich — the Republican primary withdrawee — endorsed Rodríguez rather than Uthmeier, a cross-party endorsement',
+                source: {
+                    title: 'Yoursun.com/Port Charlotte News',
+                    url: 'https://www.yoursun.com/charlotte/news/leskovich-pulls-out-of-state-ag-race-endorses-democrat-candidate/article_f514d561-61f1-45e1-8b9b-b178e8cc42e6.html',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'U.S. Rep. Maxwell Frost; former U.S. Sen. Bill Nelson; former FL AG Bob Butterworth (individual endorsements, per aggregated reporting)',
+                source: {
+                    title: 'The Floridian',
+                    url: 'https://floridianpress.com/2026/06/congressman-maxwell-frost-endorses-jose-javier-rodriguez-for-attorney-general/',
+                    date: '2026-06-01'
+                  }
+              }
+            ],
+          links: {
+              'Campaign website': 'https://www.jjr.vote/'
+            }
+        },
+        {
+          id: 'leskovich',
+          name: 'Steven S. Leskovich',
+          party: 'R',
+          occupation: 'Interim City Attorney, Punta Gorda; criminal-defense attorney',
+          bio: 'A Punta Gorda-based attorney who began as an assistant public defender before moving into private criminal-defense and family-law practice. Announced a primary challenge to Uthmeier but withdrew before the June 12, 2026 qualifying deadline, citing "nefarious guidelines" and "unwritten rules where if you\'re not part of the establishment they will give you no time of day." He then endorsed Democrat José Javier Rodríguez rather than Uthmeier — a notable cross-party move. Never appeared on the primary ballot, so no primary vote total exists for him.',
+          primary: {
+              result: 'withdrew',
+              source: {
+                  title: 'Yoursun.com/Port Charlotte News — "Leskovich pulls out of state AG race, endorses Democrat candidate"',
+                  url: 'https://www.yoursun.com/charlotte/news/leskovich-pulls-out-of-state-ag-race-endorses-democrat-candidate/article_f514d561-61f1-45e1-8b9b-b178e8cc42e6.html',
+                  date: '2026-01-01'
+                }
+            },
+          positions: {
+
+            },
+          record: [],
+          finance: {
+              raised: 123103.31,
+              spent: null,
+              asOf: '2026-08-26',
+              note: 'Candidate account, pulled live from the FL DOE database.',
+              source: {
+                  title: 'FL Division of Elections Campaign Finance Database — Candidate Search, Office=Attorney General, 2026',
+                  url: 'https://dos.elections.myflorida.com/campaign-finance/contributions/',
+                  date: '2026-08-26'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'lewis_ag',
+          name: 'Jim Lewis',
+          party: 'D',
+          occupation: 'Criminal-defense attorney, Fort Lauderdale',
+          bio: 'An extensively documented perennial candidate who has run roughly ten prior campaigns for local, state, and judicial office — including twice before for Attorney General (2022, where he placed third with 27% in a three-way Democratic primary). Career included work as an Assistant State Attorney and Special Prosecutor to the Statewide Grand Jury under then-Gov. Bob Graham. For 2026, the Florida Division of Elections ruled he did not legally qualify for the ballot by the June 12, 2026 deadline over a paperwork issue, which he attributed to the Department of State. Never appeared on the primary ballot.',
+          primary: {
+              result: 'disqualified',
+              source: {
+                  title: 'Yahoo News — "Jim Lewis won\'t be on 2026 ballot. Perennial candidate blames Florida election paperwork issue"',
+                  url: 'https://www.yahoo.com/news/politics/articles/jim-lewis-won-t-2026-213500037.html',
+                  date: '2026-01-01'
+                }
+            },
+          positions: {
+
+            },
+          record: [],
+          finance: {
+              raised: 14600.0,
+              spent: null,
+              asOf: '2026-08-26',
+              note: 'Candidate account, pulled live from the FL DOE database.',
+              source: {
+                  title: 'FL Division of Elections Campaign Finance Database — Candidate Search, Office=Attorney General, 2026',
+                  url: 'https://dos.elections.myflorida.com/campaign-finance/contributions/',
+                  date: '2026-08-26'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        }
+      ]
+  }
+,
+    {
+    id: 'fl-cfo',
+    office: 'Florida Chief Financial Officer',
+    district: 'Statewide',
+    type: 'partisan',
+    ballot: 'general',
+    term: '4 years',
+    stakes: 'One of three statewide-elected Florida Cabinet members alongside the Governor and Attorney General. The CFO heads the Department of Financial Services: regulates insurance solvency and agent licensing, houses the State Fire Marshal, runs the State Treasury, investigates insurance and workers\'-comp fraud, and serves as the state\'s chief accounting officer auditing state contracts. Directly relevant to Florida\'s property-insurance affordability crisis. Incumbent Blaise Ingoglia was appointed by Gov. DeSantis in July 2025 — notably passing over Sen. Joe Gruters, whom President Trump had already endorsed for the seat, a move covered as DeSantis "snubbing" Trump\'s pick.',
+    whoVotes: 'Statewide. Registered Republicans and Democrats each had a contested primary on August 18. Every voter chooses between the two nominees on November 3 — no third-party or write-in candidates were identified for this race.',
+    primaryResult: {
+        status: 'advanced',
+        summary: 'Incumbent Blaise Ingoglia won the Republican primary over Frank Collige, roughly 61% to 39% (968,183 to 610,837 votes). Former state Sen. Annette Taddeo won the Democratic primary over Earle Ford, roughly 66% to 34% (796,647 to 416,960 votes). Results are the best available unofficial figures (99% of precincts reporting per News4Jax); formal certification was not independently confirmed as of this guide\'s research. Ingoglia and Taddeo advance to the Nov 3 general election ballot.',
+        source: {
+            title: 'News4Jax — "Vote 2026: Primary election results for Florida\'s chief financial officer, agriculture commissioner" (99% precincts reporting, unofficial)',
+            url: 'https://www.news4jax.com/vote-2026/2026/08/17/vote-2026-primary-election-results-for-floridas-chief-financial-officer-agriculture-commissioner-on-aug-18-2026/',
+            date: '2026-08-18'
+          }
+      },
+    candidates: [
+        {
+          id: 'ingoglia',
+          name: 'Blaise Ingoglia',
+          party: 'R',
+          incumbent: true,
+          age: 55,
+          residence: 'Spring Hill',
+          occupation: 'Chief Financial Officer of Florida (appointed July 2025); homebuilder',
+          bio: 'Born in Queens, NYC; attended Queens College and Brooklyn College without completing a degree. Relocated to Spring Hill, FL in 1996 and founded two companies, America One Mortgage and homebuilder Hartland Homes (reported net worth $28.3 million as of a 2022 disclosure). Entered politics in 2008; chaired the Hernando County GOP, then the Republican Party of Florida (2015-2019). Florida House 2014-2022, Florida Senate 2022-2025. Appointed CFO by Gov. DeSantis in July 2025, succeeding Jimmy Patronis — bypassing Trump-endorsed state Sen. Joe Gruters for the post.',
+          positions: {
+              insurance: {
+                  summary: 'Names pushing down property-insurance rates as a top-3 priority (with property-tax relief and government-efficiency/waste reduction), framing his fraud-enforcement record as accountability without "protecting the profits of insurance companies."',
+                  quote: 'I am not here to protect the profits of insurance companies... What I am here to do is protect you, the policyholders.',
+                  source: {
+                      title: 'ClickOrlando 2026 Voter\'s Guide, Republican primary',
+                      url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-chief-financial-officer-race-republican-primary/',
+                      date: '2026-07-31'
+                    }
+                }
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'As a state senator, filed SB 1248 in Feb. 2023 (the "Ultimate Cancel Act"), which would have canceled the registration of any political party that "historically supported slavery or involuntary servitude" — aimed at the Florida Democratic Party. Called it satire of "cancel culture." The bill did not advance.',
+                date: '2023-02-01',
+                source: {
+                    title: 'Wikipedia — Blaise Ingoglia',
+                    url: 'https://en.wikipedia.org/wiki/Blaise_Ingoglia',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'As CFO, touts his office\'s fraud-enforcement record: 1,219 arrests and $38 million in restitution since his July 2025 appointment, per his office\'s own figures.',
+                date: '2026-08-25',
+                source: {
+                    title: 'CBS12 — "Florida CFO Ingoglia touts 1,219 financial fraud arrests"',
+                    url: 'https://cbs12.com/news/local/florida-cfo-blaise-ingoglia-touts-1219-financial-fraud-arrests-defends-end-of-haitian-tps-temporary-protected-status-immigration-enforcement-illegal-workforce-crime-news',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'A Largo resident mailed Ingoglia\'s office a postcard reading "You lack values" in fall 2025. Within four minutes, a DFS colonel requested a "threat assessment," and two armed DFS agents subsequently visited the resident\'s home in October 2025.',
+                response: 'The recorded encounter shows agents reassuring the resident he "wasn\'t in trouble," finding "No credible threat." Ingoglia defended the response, saying outspoken officials are unfortunately targets, while acknowledging offices "should always be better safe than sorry, but at the same time also protect free speech."',
+                detail: 'After the story became public, 341 additional people reportedly mailed similar postcards to Ingoglia in protest.',
+                date: '2026-07-15',
+                source: {
+                    title: 'Bay News 9 — "Why Blaise Ingoglia\'s office sent agents to a Largo home"',
+                    url: 'https://baynews9.com/fl/tampa/news/2026/07/15/armed-agents-largo-home-protest',
+                    date: '2026-07-15'
+                  }
+              },
+              {
+                type: 'allegation',
+                claim: 'A Florida Bulldog investigation found 200 DFS purchase orders over $500,000 each — together worth more than $342 million — lacking transparency documentation required by the Transparency Florida Act. The investigation also noted CDR Enterprises, a firm with over $537 million in no-bid state contracts, donated $100,000 to Ingoglia\'s political committee.',
+                response: 'A DFS spokeswoman argued one such flagged item was "different from a contract" — a purchase order not subject to the same disclosure rule.',
+                detail: 'The donor/contract pairing is presented by the investigation as an appearance-of-conflict, not an adjudicated finding of wrongdoing.',
+                date: '2026-03-08',
+                source: {
+                    title: 'Florida Bulldog — "CFO Ingoglia talks transparency; $342 million in contracts hidden"',
+                    url: 'https://www.floridabulldog.org/2026/03/florida-cfo-ingoglia-talks-transparency-accountability-fails-deliver-342-million-contracts-hidden/',
+                    date: '2026-03-08'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'No public Trump endorsement of Ingoglia for the 2026 CFO race was found despite specific searching — notable given Trump had originally backed Joe Gruters (who withdrew) for this same seat.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Wikipedia — Blaise Ingoglia',
+                    url: 'https://en.wikipedia.org/wiki/Blaise_Ingoglia',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: {
+              raised: 6500000,
+              spent: null,
+              asOf: '2026-07-01',
+              note: 'Combined campaign account + "Friends of Blaise Ingoglia" PAC + a largely dormant second PAC. A direct FL DOE database pull could not be completed (the legacy query tool resisted automated submission); figures are secondary-sourced to reporting that itself cites DOE records. Notable PAC donors: U.S. Sugar ($50,000), CDR Enterprises ($100,000), Florida League of Credit Unions ($50,000).',
+              source: {
+                  title: 'Florida Politics — "Qualified for ballot, Blaise Ingoglia carries more than $6M into first CFO campaign"',
+                  url: 'https://floridapolitics.com/archives/801365-blaise-ingoglia-qualifies-6m/',
+                  date: '2026-07-01'
+                }
+            },
+          endorsements: [
+              {
+                name: 'Gov. Ron DeSantis; Republican Party of Florida; Florida Chamber of Commerce; Gun Owners of America',
+                source: {
+                    title: 'Ingoglia campaign site, Endorsements',
+                    url: 'https://blaiseforflorida.com/endorsements/',
+                    date: '2026-08-01'
+                  }
+              },
+              {
+                name: 'U.S. Sen. Ashley Moody — "leading the charge to make Florida affordable"',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/809714-leading-the-charge-to-make-florida-affordable-ashley-moody-backs-blaise-ingoglia-for-cfo/',
+                    date: '2026-01-01'
+                  }
+              }
+            ],
+          links: {
+              'Campaign website': 'https://blaiseforflorida.com/'
+            }
+        },
+        {
+          id: 'taddeo',
+          name: 'Annette Taddeo',
+          party: 'D',
+          age: 59,
+          residence: 'Miami',
+          occupation: 'Small-business owner (LanguageSpeak translation company); former state senator',
+          bio: 'Born in Barrancabermeja, Colombia; moved to Huntsville, Alabama at 17, then to Miami, where she founded a translation business in 1995. A small-business owner who says she\'s personally paid Florida insurance premiums for over 30 years. Florida Senate 2017-2022 (won a 2017 special election, re-elected 2018), serving five years on the Banking and Insurance Committee — the committee most directly relevant to the CFO\'s insurance portfolio. Recruited into this race by Ruth\'s List Florida. Has run for office roughly ten times since 2008, including a 2014 run as Charlie Crist\'s Lt. Governor pick and a 2022 U.S. House bid she lost to Rep. María Elvira Salazar.',
+          positions: {
+              insurance: {
+                  summary: 'Makes property-insurance oversight the explicit centerpiece of her campaign, arguing Tallahassee has for decades prioritized insurers over homeowners; wants insurers to justify rate hikes and faster, fairer claims handling.',
+                  quote: 'we have had now for decades in Tallahassee, the elected [officials] doing the bidding for the insurance companies... We have not had somebody that\'s truly going to be there to look out for the homeowners.',
+                  source: {
+                      title: 'CBS News Miami — "Annette Taddeo says she\'s running for Florida CFO to hold insurance companies accountable"',
+                      url: 'https://www.cbsnews.com/miami/news/annette-taddeo-florida-cfo-race-insurance-oversight-homeowners/',
+                      date: '2026-06-14'
+                    }
+                }
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'During her 2022 U.S. House run, an opponent\'s attack ad accused her of associating with Democratic socialists at a community forum; Taddeo and Black faith leaders publicly rebuked the ad, and a Miami New Times report found the underlying forum had actually focused on expanding health-care access.',
+                detail: 'Included for completeness/balance — this was an attack made against her that was substantively rebutted, not a substantiated finding against her. No other ethics or personal-conduct controversies were found in this guide\'s research.',
+                date: '2022-01-01',
+                source: {
+                    title: 'Wikipedia — Annette Taddeo',
+                    url: 'https://en.wikipedia.org/wiki/Annette_Taddeo',
+                    date: '2026-08-25'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Directly criticizes Ingoglia\'s tenure, saying the CFO office has become "a lap dog for the governor" rather than "the watchdog for Floridians."',
+                date: '2026-07-24',
+                source: {
+                    title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"',
+                    url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november',
+                    date: '2026-07-24'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Criticizes Ingoglia\'s auditing focus on local governments while citing the roughly $1.2 billion "Alligator Alcatraz" facility and $92 million-plus in state payments to a portable-toilet vendor as examples of state-level spending she says warrants scrutiny.',
+                date: '2026-07-24',
+                source: {
+                    title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"',
+                    url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november',
+                    date: '2026-07-24'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Has run for office roughly ten times since 2008, winning some legislative and special-election races but losing several bids for higher office (U.S. House three times, Lt. Governor once, state party chair once, county clerk once).',
+                detail: 'A matter of public record documented for a full picture of her political history, not a finding against her.',
+                date: '2026-08-25',
+                source: {
+                    title: 'Wikipedia — Annette Taddeo',
+                    url: 'https://en.wikipedia.org/wiki/Annette_Taddeo',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: {
+              raised: 52000,
+              spent: null,
+              asOf: '2026-07-27',
+              note: '$45,959 in outside contributions from 192 donors plus a $6,000 personal loan and $374 in-kind, 85% from Florida-based donors. Over 100 times smaller than Ingoglia\'s combined war chest.',
+              source: {
+                  title: 'WMNF — "Get to know the 2026 Florida candidates for Agriculture Commissioner and Chief Financial Officer," compiled from FL DOE records',
+                  url: 'https://www.wmnf.org/2026-florida-candidates-agriculture-commissioner-chief-financial-officer/',
+                  date: '2026-07-27'
+                }
+            },
+          endorsements: [
+              {
+                name: 'Florida AFL-CIO and multiple constituent unions (AFSCME-FL, CWA-FL, SEIU Florida, SEIU Local 1991, Teamsters)',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/812596-she-has-consistently-stood-with-the-people-florida-afl-cio-backs-annette-taddeo-for-cfo/',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'Equality Florida Action PAC, citing her record "defending the LGBTQ+ community"',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/813902-a-fearless-voice-equality-florida-backs-annette-taddeo-for-cfo/',
+                    date: '2026-01-01'
+                  }
+              },
+              {
+                name: 'Miami-Dade Mayor Daniella Levine Cava; Orange County Mayor Jerry Demings; Miami Times editorial board',
+                source: {
+                    title: 'Florida Politics',
+                    url: 'https://floridapolitics.com/archives/807786-daniella-levine-cava-jerry-demings-endorse-annette-taddeo-for-cfo/',
+                    date: '2026-01-01'
+                  }
+              }
+            ],
+          links: {
+
+            }
+        },
+        {
+          id: 'collige',
+          name: 'Frank W. Collige',
+          party: 'R',
+          occupation: 'Founder, Property Pros Consulting (public-adjusting firm)',
+          bio: 'Born in Michigan; U.S. Air Force veteran (1999-2010). Founded a public-adjusting firm representing policyholders in insurance claims across eight states, handling over 1,000 claims annually. This was his first run for statewide office.',
+          primary: {
+              result: 'lost',
+              votes: 610837,
+              pct: 39,
+              source: {
+                  title: 'News4Jax — "Vote 2026: Primary election results for Florida\'s chief financial officer, agriculture commissioner" (99% precincts reporting, unofficial)',
+                  url: 'https://www.news4jax.com/vote-2026/2026/08/17/vote-2026-primary-election-results-for-floridas-chief-financial-officer-agriculture-commissioner-on-aug-18-2026/',
+                  date: '2026-08-18'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Ran on stronger financial oversight of insurers, greater rate-filing transparency, and treating fraud symmetrically.',
+                quote: 'Fraud is fraud, whether it is committed against an insurance company or by one.',
+                date: '2026-07-31',
+                source: {
+                    title: 'ClickOrlando 2026 Voter\'s Guide, Republican primary',
+                    url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-chief-financial-officer-race-republican-primary/',
+                    date: '2026-07-31'
+                  }
+              }
+            ],
+          finance: {
+              raised: 15970,
+              spent: null,
+              asOf: '2026-07-03',
+              note: 'From 31 donors — a small fraction of Ingoglia\'s resources.',
+              source: {
+                  title: 'Florida Politics fundraising coverage',
+                  url: 'https://floridapolitics.com/archives/803141-ingoglia-cfo-fundraising/',
+                  date: '2026-07-01'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'ford_cfo',
+          name: 'Earle Ford',
+          party: 'D',
+          age: 40,
+          occupation: 'Attorney; former IRS estate/gift-tax attorney',
+          bio: 'Born on a U.S. Air Force base, raised in small-town Wyoming; moved to Florida in 2015. U.S. Army veteran (Airborne Infantry, 3 years); J.D., Barry University. Served as an Assistant State Attorney in Orange/Osceola counties, then as a federal IRS attorney auditing trusts and estates exceeding $100 million (2021-2025). Originally entered the 2026 cycle as a candidate for a U.S. House seat, then withdrew about two weeks before the June 12 qualifying deadline to run for CFO instead. Describes himself as a "non-career politician," father of two.',
+          primary: {
+              result: 'lost',
+              votes: 416960,
+              pct: 34,
+              source: {
+                  title: 'News4Jax — "Vote 2026: Primary election results for Florida\'s chief financial officer, agriculture commissioner" (99% precincts reporting, unofficial)',
+                  url: 'https://www.news4jax.com/vote-2026/2026/08/17/vote-2026-primary-election-results-for-floridas-chief-financial-officer-agriculture-commissioner-on-aug-18-2026/',
+                  date: '2026-08-18'
+                }
+            },
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'Campaigned on forcing insurers to open their books before rate hikes, investigating bad-faith claim denials, and combating what he called algorithmic-bias-driven "modern redlining" in lending.',
+                quote: 'Florida\'s property insurance market is broken because Tallahassee has consistently allowed the insurance lobby to write the rules.',
+                date: '2026-07-24',
+                source: {
+                    title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"',
+                    url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november',
+                    date: '2026-07-24'
+                  }
+              },
+              {
+                type: 'fact',
+                claim: 'Called Ingoglia\'s property-tax-relief push "a distraction" designed to "unify power in Tallahassee."',
+                date: '2026-07-24',
+                source: {
+                    title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"',
+                    url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november',
+                    date: '2026-07-24'
+                  }
+              }
+            ],
+          finance: {
+              raised: 13744,
+              spent: null,
+              asOf: '2026-07-03',
+              note: '$8,000 of the total came from self-loans. Separately raised roughly $600,000 for his earlier, abandoned congressional bid — that money does not carry over to this race.',
+              source: {
+                  title: 'Yahoo News — "2026 Florida primary voter guide to chief financial officer candidates"',
+                  url: 'https://www.yahoo.com/news/politics/articles/2026-florida-primary-voter-guide-090350188.html',
+                  date: '2026-07-01'
+                }
+            },
+          endorsements: [],
+          links: {
+
+            }
+        }
+      ]
+  }
+,
+    {
+    id: 'fellsmere-council',
+    office: 'Fellsmere City Council',
+    district: 'At-large',
+    type: 'nonpartisan',
+    ballot: 'general',
+    term: '2 years',
+    stakes: 'Added Aug 26, 2026 — this guide originally missed this race entirely. ONLY relevant if you live within Fellsmere city limits. Three seats are up, decided in a single nonpartisan "vote for 3" election on November 3, 2026, the same day as the county and state general election. Four candidates qualified.',
+    whoVotes: 'Only registered voters residing within Fellsmere city limits, on the November 3, 2026 general election ballot. Vote for up to three; the top three finishers win the three open seats.',
+    candidates: [
+        {
+          id: 'herrera_fellsmere',
+          name: 'Fernando Herrera',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/4/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
+                date: '2026-08-26',
+                source: {
+                    title: 'City of Fellsmere — Election Information',
+                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'murillo_fellsmere',
+          name: 'Javi Murillo',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/12/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
+                date: '2026-08-26',
+                source: {
+                    title: 'City of Fellsmere — Election Information',
+                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'macias_fellsmere',
+          name: 'Shayla Macias',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/12/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
+                date: '2026-08-26',
+                source: {
+                    title: 'City of Fellsmere — Election Information',
+                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        },
+        {
+          id: 'zamarripa_fellsmere',
+          name: 'Jose M. Zamarripa',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/13/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          positions: {
+
+            },
+          record: [
+              {
+                type: 'fact',
+                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
+                date: '2026-08-26',
+                source: {
+                    title: 'City of Fellsmere — Election Information',
+                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
+                    date: '2026-08-25'
+                  }
+              }
+            ],
+          finance: null,
+          endorsements: [],
+          links: {
+
+            }
+        }
+      ]
+  }
+
   ]
 };

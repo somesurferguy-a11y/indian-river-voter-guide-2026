@@ -32,6 +32,7 @@
   --p-d:        #21618c;
   --p-n:        #5d6d7e;
   --p-w:        #7d6608;
+  --p-l:        #6b4c9a;
 
   --radius:     10px;
   --radius-sm:  6px;
@@ -71,6 +72,7 @@
     --p-d: #7fb3dd;
     --p-n: #a9b7c6;
     --p-w: #d9c26a;
+    --p-l: #b79fe0;
 
     --shadow:    0 1px 2px rgba(0,0,0,.4), 0 4px 12px rgba(0,0,0,.3);
     --shadow-lg: 0 2px 6px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.4);
@@ -281,6 +283,7 @@ a.card:hover { box-shadow: var(--shadow-lg); border-color: var(--brand-2); }
 .cand-card__stripe[data-party="R"] { background: var(--p-r); }
 .cand-card__stripe[data-party="D"] { background: var(--p-d); }
 .cand-card__stripe[data-party="WRITE-IN"] { background: var(--p-w); }
+.cand-card__stripe[data-party="L"] { background: var(--p-l); }
 .cand-card__body { padding: 20px; }
 
 .cand-name { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; margin-bottom: 3px; }
@@ -295,6 +298,7 @@ a.card:hover { box-shadow: var(--shadow-lg); border-color: var(--brand-2); }
 .pill--D { color: var(--p-d); }
 .pill--NPA, .pill--NONPARTISAN { color: var(--p-n); }
 .pill--WRITE-IN { color: var(--p-w); }
+.pill--L { color: var(--p-l); }
 .pill--incumbent { color: var(--ok); background: var(--ok-bg); border-color: transparent; }
 .pill--won { color: var(--ok); background: var(--ok-bg); border-color: transparent; }
 .pill--eliminated { color: var(--ink-3); background: var(--bg-3); border-color: transparent; }
