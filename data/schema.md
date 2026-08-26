@@ -57,16 +57,43 @@ GUIDE = {
       office: "County Commission",
       district: "District 2",
       type: "partisan" | "nonpartisan",
-      ballot: "primary" | "general" | "both",
+      ballot: "primary" | "general" | "decided" | "both",
       whoVotes: "Plain-English: exactly who is eligible to vote in this race",
       stakes: "Why this race matters / what the board controls",
       term: "4 years",
       salary: "...",
+
+      // OPTIONAL. Added once the Aug 18 primary has results. See "Primary
+      // results" below.
+      primaryResult: {
+        status: "decided" | "advanced",
+        summary: "Plain-English account of what happened and what's next",
+        source: { title, url, date }
+      },
+
       candidates: [ Candidate ]
     }
   ]
 }
 ```
+
+## Primary results (post-Aug-18 update)
+
+Once primary results exist, `race.ballot` gains a third value: `"decided"` means
+the office was fully settled on August 18 — no Nov 3 contest for voters on this
+office (e.g. a nonpartisan race a candidate won outright with a majority, or an
+office that drew only one candidate and needed no election). `"general"` still
+means the office is headed to the Nov 3 ballot — including races where a party
+primary just narrowed the field.
+
+`race.primaryResult` (optional, added once results exist) carries the plain-
+English account of what happened, always with a `source`. `status: "decided"`
+races render it as good news (no more action needed from the voter on this
+office); `status: "advanced"` races render it as informational (who's left, who
+they'll face in November).
+
+Each candidate MAY carry a `primary` block once results exist — see the
+Candidate object below.
 
 ## Candidate object
 
@@ -106,6 +133,20 @@ GUIDE = {
   endorsements: [ {name, source} ],
   links: { website, facebook, filing },
   contacted: bool,                 // did the guide attempt to reach them
+
+  // OPTIONAL. Added once Aug 18 primary results exist for this candidate.
+  primary: {
+    result: "won" | "lost" | "advanced" | "unopposed",
+    // won/lost: this candidate was in a contested primary.
+    // advanced: faced no primary themselves (unopposed member of the
+    //   opposite party, an NPA candidate, or a qualified write-in) but is
+    //   confirmed on the Nov 3 ballot.
+    // unopposed: the whole office drew one candidate; already elected/seated,
+    //   no election held at all.
+    votes: 1234,          // optional — omit if not found, never invent one
+    pct: 41.2,             // optional — percentage of the primary vote
+    source: { title, url, date }   // REQUIRED whenever result is "won" or "lost"
+  },
 
   // OPTIONAL. Omit entirely unless rights are cleared — see below.
   photo: {

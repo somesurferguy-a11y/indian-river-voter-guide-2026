@@ -114,7 +114,7 @@ window.MEDIA_RATINGS = {
 window.GUIDE = {
 
   meta: {
-    updated: '2026-08-05',
+    updated: '2026-08-25',
     primaryDate: '2026-08-18',
     generalDate: '2026-11-03',
     disclaimer: 'Independent, nonpartisan, and not affiliated with any candidate, party, or government agency.'
@@ -579,12 +579,21 @@ window.GUIDE = {
       office: 'County Commission',
       district: 'District 2',
       type: 'partisan',
-      ballot: 'primary',
+      ballot: 'general',
       term: '4 years',
       stakes:
         'An OPEN SEAT: four-term incumbent Joe Flescher, first elected in 2006, is not seeking re-election. The Board of County Commissioners sets the county property tax rate, approves the budget, and controls zoning, density, and the comprehensive plan — the single most consequential local body for growth and taxes. Note that county commissioners are elected COUNTYWIDE but must live in their district. The three-way Republican money race is unusually tight: all three are within about $4,100 of each other and have each spent roughly 90% of what they raised.',
       whoVotes:
         'On August 18 this is a CLOSED REPUBLICAN primary: only registered Republicans may vote it, choosing among McPartlan, Pippin, and Robinson. Democrat Robert Hardingham is unopposed for his party\'s nomination, so there is no Democratic contest here. NPA and minor-party voters do NOT see this race on their August ballot — but they do get School Board, the special districts, and any referendum questions. On November 3 EVERY registered voter in District 2 votes: the Republican winner vs. Hardingham vs. a blank write-in line. November is what actually decides this seat.',
+      primaryResult: {
+        status: 'advanced',
+        summary: 'Jennifer Pippin won the three-way Republican primary with 41.57% (8,713 votes), ahead of Bob McPartlan (34.48%, 7,228) and Daniel "Brooks" Robinson (23.95%, 5,019) — official county results, unofficial until certified. Pippin advances to face Democrat Robert "Robbie" Hardingham (unopposed in his primary) and qualified write-in Nicole Paradiso on the Nov 3 general election ballot.',
+        source: {
+          title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+          url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'mcpartlan',
@@ -593,6 +602,16 @@ window.GUIDE = {
           residence: 'Sebastian',
           occupation: 'Sebastian City Council member (currently Vice Mayor); 25+ years, Florida Dept. of Children and Families',
           bio: 'On the Sebastian City Council since 2011, having served as Mayor and currently as Vice Mayor. U.S. Army veteran and former Explosive Ordnance Disposal technician who rose to sergeant, serving in the Army Reserves during Operation Desert Storm. Spent 25+ years with the Florida Department of Children and Families, advancing to leadership overseeing child protective investigations across multiple counties.',
+          primary: {
+            result: 'lost',
+            votes: 7228,
+            pct: 34.48,
+            source: {
+              title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+              url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
@@ -651,6 +670,16 @@ window.GUIDE = {
           residence: 'Indian River County',
           occupation: 'Former chair, Moms for Liberty Indian River County; chair, Family First Indian River',
           bio: 'Founding chair of Moms for Liberty Indian River County (2020–2025) and its legislative chair. Led the campaign that removed books from county school libraries. Married with two children; a 2003 graduate of Martin County High School who lists Indian River State College without stating a degree. Her campaign lists her employment as "Current Property Management Company CEO / Orthopedic Practice (Bones) / Outpatient Surgical Center / Indian River Medical Center — Operating Room — 2007." Served on the Florida Dept. of Education Library Media Review Committee (2023–24) and the district Code of Conduct Committee (2022–25). This is her first run for elected office.',
+          primary: {
+            result: 'won',
+            votes: 8713,
+            pct: 41.57,
+            source: {
+              title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+              url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'Her campaign site banner declares blanket support for the amendment. See her record below for a more hedged position stated in a later interview.',
@@ -743,6 +772,16 @@ window.GUIDE = {
           residence: 'Indian River County (lifelong)',
           occupation: 'Attorney; leads his family\'s multi-generational logistics business',
           bio: 'Born and raised in Indian River County — Rosewood Magnet, Gifford Middle, Vero Beach High School. Earned both undergraduate and law degrees at Stetson University. Alongside practicing law he leads the family logistics business founded in the county in 1974, where he has worked since age 16. Joined the Republican Executive Committee at 16 as its youngest member.',
+          primary: {
+            result: 'lost',
+            votes: 5019,
+            pct: 23.95,
+            source: {
+              title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+              url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
@@ -795,6 +834,14 @@ window.GUIDE = {
           residence: 'Indian River County (since age 5)',
           occupation: 'Long-haul truck driver',
           bio: 'Has lived in Indian River County since age 5 — roughly 45 years. Graduate of Vero Beach High School. Served two years in the U.S. Army driving a fuel truck. Career long-haul truck driver, currently running routes between Fort Pierce and Jacksonville. The sole Democrat qualified for District 2, advancing automatically to the November 3 general election.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
@@ -832,6 +879,14 @@ window.GUIDE = {
           residence: 'Indian River County',
           occupation: 'Not yet documented by this guide',
           bio: 'Qualified as a write-in candidate for the November 3 general election. Write-in candidates are never printed on the ballot — a voter choosing her must physically write her name on the blank line provided. Note: her candidacy is NOT what closes the August Republican primary. That is caused by Democrat Robert Hardingham qualifying, which guarantees November opposition regardless of any write-in.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {},
           record: [
             {
@@ -1055,12 +1110,21 @@ window.GUIDE = {
       office: 'School Board',
       district: 'District 2',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'decided',
       term: '4 years',
       stakes:
         'The School Board sets district policy, approves the budget, hires and evaluates the superintendent, and decides challenges to library books — the issue that put this district in national news. District 2 covers the southern half of Sebastian south to the city of Vero Beach, plus the northern tip of the barrier island.',
       whoVotes:
         'EVERY registered voter in District 2 may vote in this race on August 18, including No Party Affiliation and third-party voters — school board races in Florida are nonpartisan and not restricted by party. With only two candidates, August 18 decides this seat. Worth knowing: as of July 20, 2026 the county had 26,072 registered Democrats and 24,003 NPA voters — about 50,000 people who have few or no partisan primaries pulling them to the polls, but who can all vote this race.',
+      primaryResult: {
+        status: 'decided',
+        summary: 'Incumbent Jacqueline "Jackie" Rosario won outright with 51.84% of the vote (17,069) over Thomas "Tom" Lange (48.16%, 15,856) — a margin of 1,213 votes, official county results, unofficial until certified. Because this is a nonpartisan universal primary and she cleared 50%, the race is fully decided; it does not appear on the Nov 3 general ballot.',
+        source: {
+          title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+          url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'rosario',
@@ -1071,6 +1135,16 @@ window.GUIDE = {
           residence: 'Vero Beach',
           occupation: 'School Board member since 2018; former ESL teacher and assistant principal',
           bio: 'Elected in 2018 and re-elected in 2022, now in her eighth year on the board. Began her career teaching English as a Second Language, later serving as assistant principal, professional learning facilitator and instructional leader. Holds graduate degrees from CUNY Hunter College (special education/deaf education) and CUNY Baruch College (education leadership), and a PhD in Educational Law from Liberty University. A Florida School Boards Association Certified Board Member. She homeschools her 17-year-old son and describes herself as "the common-sense conservative voice on the school board."',
+          primary: {
+            result: 'won',
+            votes: 17069,
+            pct: 51.84,
+            source: {
+              title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+              url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             schools: {
               summary: 'Centers post-secondary readiness — every graduate leaving with a plan via CTE, dual enrollment and the PATH program. Cites district improvement from 38th to 5th in the state since 2018.',
@@ -1134,6 +1208,16 @@ window.GUIDE = {
           residence: 'Sebastian',
           occupation: 'Former English teacher and district career/technical education specialist',
           bio: 'Nearly two decades in Indian River County education. Taught English at Sebastian River High School from 2006 to 2018, serving as English department chair, then worked as the district\'s career and technical education specialist from 2018 to 2023. Founded Sebastian River Rowing in 2006; the program has won numerous scholastic state championships (outlets differ — Vero News reported 24, Sebastian Daily 27 plus $2M+ in scholarships, four days apart). Has two children attending district schools. First run for office.',
+          primary: {
+            result: 'lost',
+            votes: 15856,
+            pct: 48.16,
+            source: {
+              title: 'Indian River County Election Night Reporting — 2026 Primary Election (official, county-hosted; unofficial until certified)',
+              url: 'https://enr.electionsfl.org/IND/4032/Summary/',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             schools: {
               summary: 'Six pillars: academic excellence and accountability, student opportunity and career pathways, data-informed decisions, fiscal transparency, community partnerships, and teacher support.',
@@ -1185,9 +1269,18 @@ window.GUIDE = {
       office: 'School Board',
       district: 'District 1',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'decided',
       stakes: 'Unopposed. Ryan Matthews qualified without opposition and is elected to the seat.',
       whoVotes: 'Unopposed races may not appear on your ballot.',
+      primaryResult: {
+        status: 'decided',
+        summary: 'Ryan Matthews qualified with no opponent and is elected without a ballot contest — no primary or general-election vote occurs for this seat.',
+        source: {
+          title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+          url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'matthews',
@@ -1197,6 +1290,14 @@ window.GUIDE = {
           residence: 'Sebastian',
           occupation: 'Former Marine Corps officer and federal law enforcement officer',
           bio: 'Sebastian native and 2004 graduate of Sebastian River High School. Bachelor\'s in criminal justice from the University of North Florida; currently pursuing an aerospace engineering degree at Florida Institute of Technology. Commissioned as a Marine Corps artillery officer in 2010, later a federal law enforcement officer with the Defense Intelligence Agency and an officer with the Florida Fish and Wildlife Conservation Commission; medically separated in 2019 after an injury. Three sons at Liberty Magnet Elementary. Coaches Sebastian Little League. Running unopposed for the seat currently held by Gene Posca. His four stated priorities: child education and safety first; making public schools the preferred choice for local families; making the district Florida\'s most desirable employer for educators; and fiscal transparency.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [],
           finance: {
             raised: 17906,
@@ -1217,9 +1318,18 @@ window.GUIDE = {
       office: 'School Board',
       district: 'District 4',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'decided',
       stakes: 'Unopposed. Incumbent Teri Barenborg qualified without opposition and returns to the seat.',
       whoVotes: 'Unopposed races may not appear on your ballot.',
+      primaryResult: {
+        status: 'decided',
+        summary: 'Teri L. Barenborg qualified with no opponent and is elected without a ballot contest — no primary or general-election vote occurs for this seat.',
+        source: {
+          title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+          url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'barenborg',
@@ -1230,6 +1340,14 @@ window.GUIDE = {
           residence: 'Indian River County',
           occupation: 'School Board member since 2018; veteran educator',
           bio: 'Represents the southeastern corner of the county and has served on the board since 2018. Previously taught at Dodgertown Elementary and served as assistant principal at Indian River Academy. Currently the board\'s legislative liaison. On the district\'s trajectory: "We want to maintain the upward spiral that we\'ve got going." On school choice and unfunded mandates: "I am all for school choice. But that\'s just not fair." Unopposed.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [],
           finance: {
             raised: 15430,
@@ -1250,10 +1368,19 @@ window.GUIDE = {
       office: 'Mosquito Control District',
       district: 'Seat 2',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'decided',
       term: '4 years',
       stakes: 'The ONLY contested special-district race on the August 18 ballot, and one of just two races open to every voter regardless of party. This is a separate government you already pay taxes to: an independent special district created by the Legislature in 1925, governed by just THREE commissioners elected countywide, levying its own property tax of about 0.25 mills — roughly $75 a year on a home with $300,000 of taxable value, paid by about 93,000 parcels. It raises around $5.4 million a year. With only three seats, this one is a third of the entire governing body.',
       whoVotes: 'EVERY registered voter in Indian River County, including No Party Affiliation voters. It is nonpartisan, and with two candidates it is decided outright on August 18 — it does not appear again in November. Worth noting: roughly 24,000 NPA and 26,000 Democratic voters are eligible here, and neither candidate has made a documented campaign expenditure aimed at them. Both candidates\' only political-organization spending was at Republican Party events. That is a sourced observation about spending, not a claim about either candidate\'s registration, which this guide did not verify.',
+      primaryResult: {
+        status: 'decided',
+        summary: 'This is a two-candidate nonpartisan race, so Florida\'s universal-primary rule means it was decided outright on Aug 18 regardless of margin — it will not appear on the Nov 3 ballot. However, despite an extensive search of the state\'s Election Night Reporting system, local news coverage, and official county sources, this guide could not confirm a winner or vote totals as of its last update (Aug 25, 2026). Confirm directly with the Indian River County Supervisor of Elections at (772) 226-4700.',
+        source: {
+          title: 'This guide\'s review of official and news sources — winner not located as of last update',
+          url: 'https://www.voteindianriver.gov/',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'kirkland',
@@ -1395,39 +1522,88 @@ window.GUIDE = {
       office: 'Elected without opposition',
       district: 'Six local seats',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'decided',
       stakes:
         'Six local seats drew only one qualified candidate each and are therefore filled automatically. Unopposed candidates generally do not appear on the ballot. Listed here so voters know these offices were decided — and by whom — even though no vote was taken: Hospital District Seats 2 (Michael Kint), 4 (Wayne L. Creelman) and 6 (Kerry Ann Bartlett); Soil & Water Conservation District Seat 1 (Bob Adair); Mosquito Control District Seat 3 (Thomas S. Lowther). Note also that Soil & Water Seats 3 and 5 were listed as up for election but drew no qualified candidate at all; such vacancies are typically filled by appointment.',
       whoVotes: 'No vote is taken in these races. They are included for transparency only.',
+      primaryResult: {
+        status: 'decided',
+        summary: 'All five candidates qualified with no opponent and are elected without a ballot contest — no primary or general-election vote occurs for any of these seats.',
+        source: {
+          title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+          url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'kint', name: 'Michael Kint', party: 'NONPARTISAN',
           occupation: 'Hospital District, Seat 2 — elected unopposed',
           bio: 'Elected without opposition to the Indian River County Hospital District, Seat 2. The Hospital District levies its own property tax — see the issues section on its budget growth.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [], finance: null, endorsements: [], links: {}
         },
         {
           id: 'creelman', name: 'Wayne L. Creelman', party: 'NONPARTISAN',
           occupation: 'Hospital District, Seat 4 — elected unopposed',
           bio: 'Elected without opposition to the Indian River County Hospital District, Seat 4.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [], finance: null, endorsements: [], links: {}
         },
         {
           id: 'bartlett', name: 'Kerry Ann Bartlett', party: 'NONPARTISAN', incumbent: true,
           occupation: 'Hospital District, Seat 6 — elected unopposed; current board chair',
           bio: 'Elected without opposition to the Indian River County Hospital District, Seat 6. As board chair she favored "strategic" funding over frugality in the budget debate that took the District\'s proposed budget to $25.37 million — roughly double FY2021-22 — at a millage above the rolled-back rate.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [], finance: null, endorsements: [], links: {}
         },
         {
           id: 'adair', name: 'Bob Adair', party: 'NONPARTISAN',
           occupation: 'Soil & Water Conservation District, Seat 1 — elected unopposed',
           bio: 'Elected without opposition to the Indian River Soil & Water Conservation District, Seat 1.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [], finance: null, endorsements: [], links: {}
         },
         {
           id: 'lowther', name: 'Thomas S. Lowther', party: 'NONPARTISAN',
           occupation: 'Mosquito Control District, Seat 3 — elected unopposed',
           bio: 'Elected without opposition to the Indian River Mosquito Control District, Seat 3.',
+          primary: {
+            result: 'unopposed',
+            source: {
+              title: 'Indian River County Supervisor of Elections — candidate list (VoterFocus campaign finance system)',
+              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian',
+              date: '2026-08-25'
+            }
+          },
           positions: {}, record: [], finance: null, endorsements: [], links: {}
         }
       ]
@@ -1438,11 +1614,11 @@ window.GUIDE = {
       office: 'Vero Beach City Council',
       district: 'At-large',
       type: 'nonpartisan',
-      ballot: 'primary',
+      ballot: 'general',
       stakes:
-        'ONLY relevant if you live within Vero Beach city limits — this is a municipal race, not a countywide one. The City of Vero Beach\'s own election page confirms a 2026 City Council election tied to the county\'s August 18 primary date, administered through the city clerk. Seven candidates qualified, and the council itself has 5 members serving 2-year terms — several of these candidates have run in back-to-back cycles (2024, 2025), which suggests seats come up on a rolling basis rather than all 5 at once. The city\'s own page does not state exactly how many seats are up this specific cycle — confirm directly with the City Clerk (772-978-4500) or at covb.org if this affects your ballot. Several candidates here have long, multi-cycle Vero Beach political histories; this guide is deliberately not importing older-cycle campaign statements as current 2026 positions unless independently confirmed as still current.',
+        'CORRECTION (added Aug 25, 2026): this guide originally described this race as tied to the county\'s August 18 primary date. That was wrong. The city\'s own official candidate-treasurer schedule confirms there is no separate August contest for City Council — it is a single nonpartisan "vote for 3" plurality election on November 3, 2026, the same day as the county general election. ONLY relevant if you live within Vero Beach city limits. Three of the council\'s five seats are up this cycle — those held by Linda Moore, John Carroll, and Aaron Vos (each elected Nov. 2024 to 2-year terms). John Carroll is not on the 2026 candidate list and appears not to be seeking re-election, leaving his seat open. Eight candidates qualified for the three seats; the top three vote-getters win. Several candidates here have long, multi-cycle Vero Beach political histories; this guide is deliberately not importing older-cycle campaign statements as current 2026 positions unless independently confirmed as still current.',
       whoVotes:
-        'Only registered voters residing within Vero Beach city limits. It is nonpartisan, administered by the city clerk, and tied to the county\'s August 18 primary date. If you live in unincorporated Indian River County, in Sebastian, Fellsmere, Indian River Shores, or Orchid, this race is not on your ballot at all.',
+        'Only registered voters residing within Vero Beach city limits, on the November 3, 2026 general election ballot — there is no separate August primary for this race. Vote for up to three; the top three finishers win the three open seats. If you live in unincorporated Indian River County, in Sebastian, Fellsmere, Indian River Shores, or Orchid, this race is not on your ballot at all.',
       candidates: [
         { id: 'oconnor', name: "John O'Connor", party: 'NONPARTISAN',
           occupation: 'Retired Indian River County firefighter/paramedic; former union president',
@@ -1483,7 +1659,15 @@ window.GUIDE = {
           occupation: 'Vero Beach Vice Mayor',
           bio: 'Sitting Vice Mayor, elected to the council and previously confirmed seeking a second term as of the 2024 cycle. This guide has not yet confirmed her specific 2026 platform and is not importing 2024 statements as current.',
           positions: {}, record: [], finance: null, endorsements: [],
-          links: { 'Campaign Facebook': 'https://www.facebook.com/Lindamoreismore/' } }
+          links: { 'Campaign Facebook': 'https://www.facebook.com/Lindamoreismore/' } },
+        { id: 'benedict', name: 'Davis Benedict', party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Added Aug 25, 2026 after this guide found it had missed him in an earlier pass — he was confirmed as the 8th qualified candidate via the City of Vero Beach\'s official candidate page. This guide has not yet researched his background, occupation, or platform.',
+          positions: {}, record: [
+            { type: 'fact', claim: 'This guide has not yet completed research on this candidate beyond confirming his name on the official qualified-candidate list.',
+              detail: 'Added late after an initial gap in this guide\'s research; flagged honestly rather than left off the ballot entirely.',
+              date: '2026-08-25', source: { title: 'City of Vero Beach — official candidate list', url: 'https://www.covb.org/659/Candidates-For-City-Council-2026', date: '2026-08-25' } }
+          ], finance: null, endorsements: [], links: {} }
       ]
     },
 
@@ -1492,10 +1676,19 @@ window.GUIDE = {
       office: 'Florida House',
       district: 'District 34',
       type: 'partisan',
-      ballot: 'primary',
+      ballot: 'general',
       term: '2 years',
       stakes: 'ALL of Indian River County sits inside House District 34, which also takes in part of southern Brevard (Micco, Barefoot Bay, Grant-Valkaria). The county is NOT split among state House districts — the district is what crosses the county line. The seat has gone Republican by about 35 points in each of the last two general elections, so on recent history the August 18 Republican primary is the decisive contest. State representatives vote on property taxes, insurance regulation, school funding, lagoon appropriations, and state preemption of local land-use control.',
       whoVotes: 'Only registered Republicans may vote the contested August 18 primary: incumbent Robbie Brackett vs. Paul Sohi. There is NO Democratic primary — it was cancelled and Jordyn Balderas advances unopposed. Every voter chooses between the Republican nominee and Balderas on November 3.',
+      primaryResult: {
+        status: 'advanced',
+        summary: 'Robert "Robbie" Brackett won the Republican primary over Paul Sohi, 85.7% to 14.3% (20,443 to 3,398 votes district-wide; unofficial results, pending certification). He advances to face unopposed Democrat Jordyn Balderas on the Nov 3 general election ballot.',
+        source: {
+          title: 'Ballotpedia — Florida House of Representatives District 34 (unofficial, pending certification)',
+          url: 'https://ballotpedia.org/Florida_House_of_Representatives_District_34',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'brackett',
@@ -1506,6 +1699,16 @@ window.GUIDE = {
           residence: 'Vero Beach (born there)',
           occupation: 'State Representative, House District 34; former Mayor of Vero Beach',
           bio: 'Born in Vero Beach on April 9, 1963, and a lifelong resident. Previously Mayor of Vero Beach. Has held House District 34 since 2022, winning the general election by roughly 35 points in both 2022 and 2024. On that history, the August 18 Republican primary — not November — is the contest that decides this seat.',
+          primary: {
+            result: 'won',
+            votes: 20443,
+            pct: 85.7,
+            source: {
+              title: 'Ballotpedia — Florida House of Representatives District 34 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida_House_of_Representatives_District_34',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'Voted YES on the property tax amendment that voters actually decide in November. Did not cast a vote on the earlier, more sweeping February version.',
@@ -1608,6 +1811,16 @@ window.GUIDE = {
           residence: 'Vero Beach',
           occupation: 'Pediatric dentist and oral surgeon, 30+ years',
           bio: 'A pediatric dentist licensed in Ohio since 1990, who also lists a real estate group on his professional profile. He campaigns as Paul Sohi; state campaign finance records and Ohio court records use the name Parneet Sohi. His campaign site claims "more than 15 years" in Vero Beach — a claim that has been publicly disputed. He has never held elective office. Campaign slogan: "Faith, Family, Freedom."',
+          primary: {
+            result: 'lost',
+            votes: 3398,
+            pct: 14.3,
+            source: {
+              title: 'Ballotpedia — Florida House of Representatives District 34 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida_House_of_Representatives_District_34',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             growth: {
               summary: 'The most home-rule-favorable stated position among the Republicans: wants the Live Local Act amended to focus on homeownership rather than rental loopholes, and to restore local community oversight.',
@@ -1711,6 +1924,14 @@ window.GUIDE = {
           residence: 'Vero Beach',
           occupation: 'Community organizer',
           bio: 'At 21 he is at or barely above the constitutional minimum age for a Florida legislator. He openly discusses leaving high school to work full time and care for his mother, a nurse raising six children alone who was diagnosed with amyloidosis, and says he experienced homelessness as a teenager and is currently uninsured. Treasurer of the Young Democrats of Indian River and a Democratic precinct captain. No prior elective office. The Democratic primary was cancelled; he advances directly to November. He uses he/him pronouns.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'Ballotpedia — Florida House of Representatives District 34 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida_House_of_Representatives_District_34',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             growth: {
               summary: 'Names home rule his top priority — opposing state preemption bills that strip local authority over growth management, environmental protection, and tenant rights.',
@@ -1807,10 +2028,19 @@ window.GUIDE = {
       office: 'U.S. House',
       district: 'District 9',
       type: 'partisan',
-      ballot: 'primary',
+      ballot: 'general',
       term: '2 years',
       stakes: 'IMPORTANT: Indian River County CHANGED congressional districts. Under the map signed in May 2026 the county moved from District 8 to District 9, which now runs from the Orlando area south through Indian River, Okeechobee, Highlands and Glades counties — roughly 769,000 residents. The partisan character flipped with it: under the old lines this was territory where over 51% backed Kamala Harris in 2024; under the new lines it is territory that voted over 58% for Donald Trump. The district is also no longer majority-Hispanic, its Hispanic share falling from 54% to 41%. On those numbers the August 18 Republican primary is now the most consequential contest here.',
       whoVotes: 'Registered Republicans vote a seven-way primary on August 18; incumbent Democrat Darren Soto has no filed primary opponent. CHECK YOUR SAMPLE BALLOT: the elections office homepage announces District 9 while its own maps page still referenced the old District 8. If the map and your ballot disagree, the ballot governs. Note also that the new map is under active legal challenge on Fair Districts grounds — a judge declined to block it in May 2026 and the Florida Supreme Court declined to enjoin it in June without ruling on the merits. The litigation does not change that Indian River County votes in District 9 this year; it may change future maps.',
+      primaryResult: {
+        status: 'advanced',
+        summary: 'In a crowded 7-way Republican primary, Dan Green won a narrow plurality with 25.4% (14,748 votes), edging out Ben Butler by just 587 votes (24.4%, 14,161). Thomas Chalifoux Jr. (20.3%), Jorge Martinez (19.5%), Justin Story (4.3%), Marcus Carter (3.9%), and Steve Rance (2.3%) trailed further behind. Results are unofficial, pending certification. Green\'s strongest showing was his home county, Indian River (35.7%) — the single biggest reason he won district-wide. He advances to face unopposed Democratic incumbent Darren Soto on the Nov 3 general election ballot.',
+        source: {
+          title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+          url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+          date: '2026-08-25'
+        }
+      },
       candidates: [
         {
           id: 'soto',
@@ -1821,6 +2051,14 @@ window.GUIDE = {
           residence: 'Kissimmee',
           occupation: 'U.S. Representative; attorney',
           bio: 'In Congress since 2017 and now a five-term incumbent, the first Floridian of Puerto Rican descent elected to Congress. Previously served in the Florida House (2007-2012) and Florida Senate (2012-2016). Rutgers undergraduate, George Washington University law degree; ran his own Central Florida practice in family law, civil litigation and real estate. Sits on the House Energy and Commerce Committee, where he points to work expanding access to affordable health care. He now runs in a district redrawn to lean Republican, and has confirmed he is running for re-election despite the less favorable map.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             lagoon: { summary: 'Sits on the House Natural Resources Committee and points to work preserving Florida\'s natural resources and securing federal disaster relief after storms.',
               source: { title: 'Congressional committee assignments and campaign material', url: 'https://soto.house.gov/', date: '2026-08-17' } },
@@ -1872,6 +2110,16 @@ window.GUIDE = {
           residence: 'Vero Beach (Indian River County)',
           occupation: 'Former Deputy Assistant Secretary of Defense; U.S. Navy Reserve captain; author',
           bio: 'The ONLY candidate in this race, either party, whose address of record is in Indian River County. A Vero Beach High School graduate with degrees from American University, Florida State and George Washington, and a Ph.D. He was working as a civilian in the Pentagon on September 11, 2001 when the plane struck the building. Twenty-three years in uniform as a Navy Reserve captain, mobilized four times for Iraq and Afghanistan, most recently as a tribal and political engagement officer in Baghdad (2015-2016); also served with the State Department as a political advisor in southern Afghanistan. Appointed by President Trump in 2019 as Deputy Assistant Secretary of Defense for Strategy and Force Development, where his office developed the National Defense Strategy. Previously a defense fellow at The Washington Institute, and a published author on the Afghanistan and Iraq wars. Campaign slogan: "Make America Affordable Again."',
+          primary: {
+            result: 'won',
+            votes: 14748,
+            pct: 25.4,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             amendment: {
               summary: 'Supports the Florida property tax amendment, arguing tax cuts promote responsible budgets and reduce waste and fraud.',
@@ -1946,6 +2194,16 @@ window.GUIDE = {
           residence: 'Lorida (Highlands County)',
           occupation: 'Farmer; member, South Florida Water Management District Governing Board',
           bio: 'A 22-year dairy farmer whose family has milked cows in Florida for 85 years; now also a cattle rancher. Attended the University of Florida, then returned to manage the family farm. Has served seven years on the South Florida Water Management District Governing Board, a taxing authority. Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 14161,
+            pct: 24.4,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             growth: { summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience. At a July 29 candidate forum he named regulatory permitting delays — citing Army Corps of Engineers 404 permits with no enforced time limit — as a direct driver of higher costs.',
               quote: 'As a farmer, conservation advocate, and leader on the South Florida Water Management District Governing Board, Ben understands the balance between protecting our natural resources, supporting agriculture, and keeping our economy strong.',
@@ -1997,6 +2255,16 @@ window.GUIDE = {
           residence: 'Kissimmee',
           occupation: 'Not documented by this guide',
           bio: 'Describes his campaign as volunteer-powered and self-consciously anti-corporate-money. Says he and volunteers have knocked on more than 30,000 doors over an 18-month campaign, which began in three counties before redistricting expanded the district. Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 2248,
+            pct: 3.9,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
 
           },
@@ -2043,6 +2311,16 @@ window.GUIDE = {
           residence: 'Orlando',
           occupation: 'Retired U.S. Army Colonel; businessman',
           bio: 'A retired Army Colonel and businessman who previously ran for this seat in 2024. Describes himself as a man of faith, husband and father. Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 11802,
+            pct: 20.3,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             schools: { summary: 'Supports school choice — public, charter, private, or homeschool, whichever fits the family — plus veterans\' benefits, growth-driven infrastructure, and food/health transparency.',
               quote: 'Empowering Florida families with the freedom to choose the school — public, charter, private, or homeschool — that fits their child best.',
@@ -2096,6 +2374,16 @@ window.GUIDE = {
           residence: 'Orlando',
           occupation: 'Certified public accountant; ran an Orlando accounting firm for 32 years',
           bio: 'A Cuban immigrant who arrived in the U.S. in 1973 and has lived in the Orlando area for nearly 50 years. Describes himself as the only immigrant and only Hispanic candidate in the race, and frames his general-election pitch around reaching the district\'s roughly 35% Hispanic vote share. Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 11324,
+            pct: 19.5,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             housing: { summary: 'Says he has developed legislative proposals to reduce closing and ownership costs for first-time homebuyers, and separately supports expanding U.S. oil and gas production to lower energy costs.',
               quote: 'I\'ve developed legislative ideas to help first-time home buyers lower the cost of purchasing a home by reducing unnecessary expenses for home ownership, making home ownership more attainable.',
@@ -2137,6 +2425,16 @@ window.GUIDE = {
           residence: 'Ocoee',
           occupation: 'Not documented by this guide',
           bio: 'Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 1335,
+            pct: 2.3,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
 
           },
@@ -2185,6 +2483,16 @@ window.GUIDE = {
           residence: 'St. Cloud',
           occupation: 'Commercial airline pilot; former Marine Corps F-18 fighter pilot',
           bio: 'A sixth-generation Floridian, born and raised in St. Cloud, where he still lives. Commissioned into the Marine Corps in 2001 as an F-18 fighter pilot, flying combat missions over Iraq and Afghanistan across multiple deployments as both active duty and reserve. Now a commercial airline pilot. His wife is a Venezuelan immigrant who left the country six years ago. Qualified for the August 18 Republican primary in District 9.',
+          primary: {
+            result: 'lost',
+            votes: 2484,
+            pct: 4.3,
+            source: {
+              title: 'Ballotpedia — Florida\'s 9th Congressional District election, 2026 (unofficial, pending certification)',
+              url: 'https://ballotpedia.org/Florida%27s_9th_Congressional_District_election,_2026',
+              date: '2026-08-25'
+            }
+          },
           positions: {
             schools: { summary: 'Supports eliminating the U.S. Department of Education, arguing education policy should be set at the state, local, and school-board level rather than by the federal government.',
               quote: 'I do not believe the federal government should have a hand in our education. This is a state function, ladies and gentlemen. It\'s a local function and it\'s a city function... every state should set its own policy, and we take best practices.',
@@ -2227,10 +2535,19 @@ window.GUIDE = {
       office: 'Florida Commissioner of Agriculture',
       district: 'Statewide',
       type: 'partisan',
-      ballot: 'primary',
+      ballot: 'general',
       term: '4 years',
       stakes: 'A statewide cabinet office overseeing the Department of Agriculture and Consumer Services — 12 divisions regulating farm products, animal and forestry industries, state forests and wildfire response, concealed-weapons licensing, the hemp industry, and consumer-fraud enforcement, over a roughly $13 billion agricultural sector. Directly relevant to Indian River County given its citrus and agricultural industry, and connected to Amendment 2 on this same ballot (the agricultural equipment tax exemption). No public polling exists for either primary in this race.',
       whoVotes: 'Registered Republicans and registered Democrats each vote a contested primary today. All voters choose in the November 3 general election, where a qualified write-in candidate, Kyle Gibson, also appears regardless of the primary outcome.',
+      primaryResult: {
+        status: 'advanced',
+        summary: 'Wilton Simpson won the Republican primary over Matt Taylor, 68.9% to 31.1% (1,110,689 to 501,100 votes). Joey Mendoza Atkins won the Democratic primary over Don Prichard, 60.3% to 39.7% (716,467 to 472,100 votes). All three advance to the Nov 3 general election ballot: Simpson (R) vs. Atkins (D) vs. write-in Kyle "KC" Gibson.',
+        source: {
+          title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+          url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+          date: '2026-08-18'
+        }
+      },
       candidates: [
         {
           id: 'simpson',
@@ -2239,6 +2556,16 @@ window.GUIDE = {
           incumbent: true,
           occupation: 'Florida Commissioner of Agriculture; former Florida Senate President',
           bio: 'Began working on his father\'s egg farm in Trilby as a teenager and built it into a large-scale operation now housing roughly 1 million chickens, alongside Simpson Environmental Services and Simpson Farms; net worth $31.5 million per his state financial disclosure. Served in the Florida Senate 2012-2022, as Majority Leader 2016-2018 and Senate President 2020-2022, backing the Florida Wildlife Corridor Act and school-choice expansion. Won the OPEN Commissioner of Agriculture seat outright in the November 2022 general election with 59.3% over Democrat Naomi Blemur — not an appointment — taking office January 2023 as Florida\'s 13th Commissioner of Agriculture. Now seeks a second term with endorsements from President Trump, Gov. DeSantis, the Florida Chamber of Commerce, and 61 of Florida\'s 67 sheriffs.',
+          primary: {
+            result: 'won',
+            votes: 1110689,
+            pct: 68.9,
+            source: {
+              title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+              url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
             growth: {
               summary: 'Supports preserving legacy farming operations against residential development encroachment and protecting agricultural communities from "frivolous lawsuits." Cites Cabinet-level approval of nearly $58 million in conservation easements protecting about 18,279 acres of working farmland through the Rural and Family Lands Protection Program — which he has expanded roughly 243% during his tenure — rather than Florida Forever, which prioritizes public-access conservation.',
@@ -2349,6 +2676,16 @@ window.GUIDE = {
           party: 'R',
           occupation: '"Matt the Welder" — welder and tractor mechanic',
           bio: 'A Plant City native who built a following of over 474,000 Instagram followers through his campaign\'s social media presence. Runs as a tradesman challenger to the sitting commissioner, calling FDACS under Simpson a "giant bureaucracy."',
+          primary: {
+            result: 'lost',
+            votes: 501100,
+            pct: 31.1,
+            source: {
+              title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+              url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
             growth: {
               summary: 'Opposes converting farmland to subdivisions and solar projects; proposes expanded programs to keep farmers farming rather than selling to developers, tax relief for family farms and timber owners, a "Florida Grown First" state-purchasing program, faster disaster relief and crop insurance for small farms, farm-to-school programs, and cracking down on price gouging. Prefers Florida Forever-style public-access conservation over Simpson\'s working-farm easements, citing the state\'s $68 million June 2026 purchase of the 4G Ranch easement as land the public still can\'t use.',
@@ -2401,6 +2738,16 @@ window.GUIDE = {
           party: 'D',
           occupation: 'Trial attorney (Barnes Trial Group); former sports agent',
           bio: 'A Miami trial attorney and Florida Bar member who previously worked at a legal-aid foundation representing migrant farmworkers, which he cites as formative to his views on agriculture policy. Frames his campaign as "David vs. Goliath" against the far-better-funded incumbent.',
+          primary: {
+            result: 'won',
+            votes: 716467,
+            pct: 60.3,
+            source: {
+              title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+              url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
             growth: {
               summary: 'Supports conservation easements as a tool but argues their success should be measured by public benefit rather than acres protected — an implicit critique of Simpson\'s working-farm easement approach that echoes Taylor\'s public-access argument from the opposite party.',
@@ -2455,6 +2802,16 @@ window.GUIDE = {
           age: 45,
           occupation: 'Captain, Pembroke Park Police Department',
           bio: 'A native Floridian who joined the Florida Army National Guard at 17 in 1998, serving as a sergeant through 2006, then joined the Broward Sheriff\'s Office at 19 and served there until 2025; now a captain with the Pembroke Park Police Department. Served as Vice President then President of the Broward Deputy Sheriffs Association, 2022-2025, and chaired the Broward County Farm Bureau\'s Young Farmers and Ranchers, 2018-2021. Filed to run only weeks before the qualifying deadline after concluding no other Democrat had entered the race, and campaigns nights and weekends around his police schedule.',
+          primary: {
+            result: 'lost',
+            votes: 472100,
+            pct: 39.7,
+            source: {
+              title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+              url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
             lagoon: {
               summary: 'His top stated issue: opposes Florida\'s 2026 data-center legislation (SB 484) for not addressing the long-term water impact of AI data centers, citing existing Central Florida droughts, and calls for self-sufficient systems that protect aquifers.',
@@ -2513,6 +2870,14 @@ window.GUIDE = {
           party: 'WRITE-IN',
           occupation: 'Not documented by this guide',
           bio: 'Qualified write-in candidate; appears on the November 3 general election ballot regardless of the primary outcome. Previously ran for Florida Governor in 2018 under the same name, suggesting a pattern of perennial candidacy rather than a first-time entry into politics — though that 2018 run is documented only via his own campaign Facebook page, not independent news coverage.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'Florida Politics — Simpson runs away with GOP nomination; Atkins advances for Democrats',
+              url: 'https://floridapolitics.com/archives/814743-wilton-simpson-runs-away-with-gop-nomination-for-agriculture-commissioner-democrat-joey-mendoza-atkins-advances-to-general-election/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2552,10 +2917,19 @@ window.GUIDE = {
       office: 'U.S. Senate',
       district: 'Florida — special election',
       type: 'partisan',
-      ballot: 'primary',
+      ballot: 'general',
       term: 'Remainder of term (2 years)',
       stakes: 'A special election for the final two years of the U.S. Senate term vacated by Marco Rubio. Ashley Moody was appointed to the seat by Gov. DeSantis and must now win it at the ballot box. This is by far the most expensive race on your ballot: two candidates have together raised over $25 million, while four of the seven have raised under $20,000 each.',
       whoVotes: 'Statewide. Registered Republicans and registered Democrats each vote their own contested primary on August 18. Every voter, including NPA, chooses in the November 3 general election. Note: no public polling of either primary has been published — the available polls test general-election matchups only.',
+      primaryResult: {
+        status: 'advanced',
+        summary: 'Ashley Moody won the Republican primary with 79.6% over Chris Gleason (13.7%), Ernest Rivera (4.8%), and Neelam Perry (1.9%). Angie Nixon won the Democratic primary in an upset over Alexander Vindman, 56.1% to 43.9%, despite being outspent roughly 16-to-1. All three advance to the Nov 3 general election ballot: Moody (R) vs. Nixon (D) vs. Neil Gillespie (NPA).',
+        source: {
+          title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+          url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+          date: '2026-08-18'
+        }
+      },
       candidates: [
         {
           id: 'moody',
@@ -2565,6 +2939,16 @@ window.GUIDE = {
           residence: 'Tampa',
           occupation: 'U.S. Senator (appointed); former Florida Attorney General',
           bio: 'Appointed by Gov. Ron DeSantis to the U.S. Senate seat vacated by Marco Rubio. Previously served as Florida Attorney General, and before that as a state circuit judge. She must win this special election to serve the remainder of the term.',
+          primary: {
+            result: 'won',
+            votes: 1320048,
+            pct: 79.6,
+            source: {
+              title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+              url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2621,6 +3005,16 @@ window.GUIDE = {
           residence: 'Largo',
           occupation: 'Not documented by this guide',
           bio: 'Qualified for the August 18 Republican primary.',
+          primary: {
+            result: 'lost',
+            votes: 227843,
+            pct: 13.7,
+            source: {
+              title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+              url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2659,6 +3053,16 @@ window.GUIDE = {
           residence: 'St. Petersburg',
           occupation: 'Not documented by this guide',
           bio: 'Qualified for the August 18 Republican primary.',
+          primary: {
+            result: 'lost',
+            votes: 31217,
+            pct: 1.9,
+            source: {
+              title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+              url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2696,6 +3100,16 @@ window.GUIDE = {
           residence: 'Temple Terrace',
           occupation: 'Not documented by this guide',
           bio: 'Qualified for the August 18 Republican primary.',
+          primary: {
+            result: 'lost',
+            votes: 79915,
+            pct: 4.8,
+            source: {
+              title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+              url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2732,6 +3146,16 @@ window.GUIDE = {
           residence: 'Jacksonville',
           occupation: 'Florida state legislator',
           bio: 'A member of the Florida House from Jacksonville, running in the August 18 Democratic primary.',
+          primary: {
+            result: 'won',
+            votes: 705192,
+            pct: 56.1,
+            source: {
+              title: 'NBC News — Angie Nixon wins Florida Senate Democratic primary, defeating Alex Vindman',
+              url: 'https://www.nbcnews.com/politics/2026-election/angie-nixon-winner-florida-senate-primary-democrat-alex-vindman-moody-rcna593255',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2769,6 +3193,16 @@ window.GUIDE = {
           party: 'D',
           occupation: 'Retired U.S. Army lieutenant colonel',
           bio: 'Retired Army lieutenant colonel who served on the National Security Council and testified as a witness in the 2019 impeachment inquiry. His identity was independently confirmed across multiple outlets for this guide — this is that Alexander Vindman, not a different person with the same name.',
+          primary: {
+            result: 'lost',
+            votes: 552774,
+            pct: 43.9,
+            source: {
+              title: 'NBC News — Angie Nixon wins Florida Senate Democratic primary, defeating Alex Vindman',
+              url: 'https://www.nbcnews.com/politics/2026-election/angie-nixon-winner-florida-senate-primary-democrat-alex-vindman-moody-rcna593255',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },
@@ -2807,6 +3241,14 @@ window.GUIDE = {
           residence: 'Ocala',
           occupation: 'Not documented by this guide',
           bio: 'Qualified as a no-party-affiliation candidate for the November 3 general election. He does not appear on an August primary ballot.',
+          primary: {
+            result: 'advanced',
+            source: {
+              title: 'CBS News — Florida Senate race set between Ashley Moody and Angie Nixon after projected primary wins',
+              url: 'https://www.cbsnews.com/news/florida-senate-primary-results-ashley-moody-angie-nixon/',
+              date: '2026-08-18'
+            }
+          },
           positions: {
 
           },

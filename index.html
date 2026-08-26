@@ -9,7 +9,7 @@
 <meta property="og:title" content="Indian River County Voter Guide 2026">
 <meta property="og:description" content="Nonpartisan, sourced side-by-side comparisons of every candidate on your ballot.">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="css/styles.css?v=20260818e">
+<link rel="stylesheet" href="css/styles.css?v=20260825a">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗳️</text></svg>">
 </head>
 <body>
@@ -50,10 +50,10 @@
       <span class="hero__eyebrow">Nonpartisan · Sourced · Independent</span>
       <h1>Everything on your ballot,<br>side by side.</h1>
       <p class="hero__lede">
-        Indian River County votes in the <strong>primary on August&nbsp;18</strong> and the
-        <strong>general on November&nbsp;3</strong>. This guide compares every candidate on the
-        issues, documents their records, follows the money, and shows you exactly how to vote —
-        with a source link on every claim.
+        The <strong>August&nbsp;18 primary is decided</strong> — see who won and who's headed to the
+        <strong>general election on November&nbsp;3</strong> below. This guide compares every
+        remaining candidate on the issues, documents their records, follows the money, and shows
+        you exactly how to vote — with a source link on every claim.
       </p>
       <div id="heroCountdown"></div>
       <div class="btn-row">
@@ -86,25 +86,45 @@
     </div>
   </section>
 
-  <section class="section" id="closed-primary">
+  <section class="section" id="primary-results">
     <div class="wrap wrap--narrow">
+      <div class="section__head">
+        <h2>August 18 primary results</h2>
+        <p>Unofficial results as reported by county and state sources, pending certification. Every
+           figure below links to its source — see the full <a href="races.html">race-by-race
+           breakdown</a> for details.</p>
+      </div>
+
+      <div class="callout callout--ok">
+        <h4>Decided outright — no Nov 3 contest for these offices</h4>
+        <ul style="margin:0;padding-left:20px">
+          <li><strong>School Board District 2:</strong> Jackie Rosario re-elected, 51.84% over Tom Lange</li>
+          <li><strong>School Board District 1:</strong> Ryan Matthews — unopposed</li>
+          <li><strong>School Board District 4:</strong> Teri Barenborg — unopposed</li>
+          <li><strong>Mosquito Control Seat 2:</strong> a two-candidate nonpartisan race is decided outright by rule, but this guide could not confirm a winner between Kirkland and MacCoy as of its last update — see <a href="races.html#race-mosquito-2">this race's page</a> for detail</li>
+          <li><strong>Five other local seats</strong> (Hospital District, Soil &amp; Water, Mosquito Control Seat 3) — all unopposed, already seated</li>
+        </ul>
+      </div>
+
+      <div class="callout callout--info">
+        <h4>Advancing to the Nov 3 general election</h4>
+        <ul style="margin:0;padding-left:20px">
+          <li><strong>County Commission District 2:</strong> Jennifer Pippin (R) won the Republican primary — faces Robert Hardingham (D) and write-in Nicole Paradiso</li>
+          <li><strong>Florida House District 34:</strong> Robbie Brackett (R) won the Republican primary — faces Jordyn Balderas (D)</li>
+          <li><strong>U.S. House District 9:</strong> Dan Green (R) won a narrow 7-way Republican primary — faces incumbent Darren Soto (D)</li>
+          <li><strong>Florida Commissioner of Agriculture:</strong> Wilton Simpson (R, incumbent) and Joey Mendoza Atkins (D) won their primaries — face write-in Kyle "KC" Gibson</li>
+          <li><strong>U.S. Senate:</strong> Ashley Moody (R, incumbent) and Angie Nixon (D) won their primaries — face Neil Gillespie (NPA)</li>
+        </ul>
+      </div>
+
       <div class="callout callout--warn">
-        <h4>Florida has a closed primary — but that doesn't mean you sit August 18 out</h4>
-        <p>
-          Only voters registered with a party may vote in that party's primary contests.
-          <strong>However, nonpartisan races and ballot questions are open to every registered
-          voter</strong>, including No&nbsp;Party&nbsp;Affiliation (NPA) voters. In Indian River County
-          that means two contested races anyone can vote on August 18:
-          <strong>School Board District 2</strong> (Rosario vs. Lange) and
-          <strong>Mosquito Control Seat 2</strong> (Kirkland vs. MacCoy).
-        </p>
-        <p>
-          Both are <strong>decided outright in August</strong> — they do not continue to November.
-          The county has about 26,000 registered Democrats and 24,000 NPA voters who have little or
-          nothing else pulling them to the polls that day.
-        </p>
+        <h4>Correction: Vero Beach City Council was never an August race</h4>
         <p class="mb-0">
-          <a href="how-to-vote.html#closed-primary">See exactly what's on your ballot →</a>
+          This guide previously and incorrectly described this race as tied to the August 18 date.
+          It is a single nonpartisan "vote for 3" election on <strong>November 3</strong> for the
+          three seats currently held by Linda Moore, John Carroll, and Aaron Vos — eight candidates
+          qualified for those three seats. See the <a href="races.html#race-vero-beach-council">corrected
+          race page</a>.
         </p>
       </div>
     </div>
@@ -179,8 +199,8 @@
   </div>
 </footer>
 
-<script src="data/guide.js?v=20260818e"></script>
-<script src="js/render.js?v=20260818e"></script>
+<script src="data/guide.js?v=20260825a"></script>
+<script src="js/render.js?v=20260825a"></script>
 <script>
 (function () {
   var G = window.GUIDE;
@@ -216,9 +236,7 @@
   document.getElementById('raceList').innerHTML = (G.races || []).map(function (r) {
     var n = (r.candidates || []).length;
     return '<a class="card" href="races.html#race-' + VG.escAttr(r.id) + '">' +
-      '<span class="card__tag ' + (r.ballot === 'primary' ? 'card__tag--primary' : 'card__tag--general') + '">' +
-        (r.ballot === 'primary' ? 'Aug 18 primary' : r.ballot === 'general' ? 'Nov 3 general' : 'Primary & general') +
-      '</span>' +
+      '<span class="card__tag ' + VG.raceTagClass(r.ballot) + '">' + VG.raceTagLabel(r.ballot) + '</span>' +
       '<h3>' + VG.esc(r.office) + (r.district ? ' — ' + VG.esc(r.district) : '') + '</h3>' +
       '<p>' + VG.esc(r.stakes || '') + '</p>' +
       '<div class="card__meta"><span>' + n + ' candidate' + (n === 1 ? '' : 's') + '</span>' +

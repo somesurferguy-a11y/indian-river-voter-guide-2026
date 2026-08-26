@@ -96,6 +96,21 @@ function partyPill(p) {
   return `<span class="pill pill--${escAttr(p)}">${esc(PARTY_LABEL[p] || p)}</span>`;
 }
 
+/* ---------- primary result pill ---------- */
+
+// Renders nothing until data/guide.js actually carries a `primary` block for
+// this candidate — pre-Aug-18 candidates render exactly as before.
+function primaryBadge(c) {
+  const p = c.primary;
+  if (!p) return '';
+  const pct = (p.pct !== undefined && p.pct !== null) ? ` — ${esc(p.pct)}%` : '';
+  if (p.result === 'won') return `<span class="pill pill--won">Won primary${pct}</span>`;
+  if (p.result === 'lost') return `<span class="pill pill--eliminated">Eliminated in primary${pct}</span>`;
+  if (p.result === 'advanced') return `<span class="pill pill--advanced">Advances to Nov 3 — no primary needed</span>`;
+  if (p.result === 'unopposed') return `<span class="pill pill--won">Elected — unopposed</span>`;
+  return '';
+}
+
 /* ---------- claim rendering (record / opposition research) ---------- */
 
 const CLAIM_LABEL = {
@@ -277,8 +292,10 @@ function renderCandidate(c, issues) {
         `<a href="${escAttr(v)}" target="_blank" rel="noopener noreferrer">${esc(k)}</a>`).join('')}</div>`
     : '';
 
+  const eliminated = c.primary && c.primary.result === 'lost';
+
   return `
-    <article class="cand-card" id="cand-${escAttr(c.id)}">
+    <article class="cand-card${eliminated ? ' cand-card--eliminated' : ''}" id="cand-${escAttr(c.id)}">
       <div class="cand-card__stripe" data-party="${escAttr(c.party || '')}"></div>
       <div class="cand-card__body">
         <div style="display:flex;gap:14px;align-items:flex-start">
@@ -288,6 +305,7 @@ function renderCandidate(c, issues) {
               <h3>${esc(c.name)}</h3>
               ${partyPill(c.party)}
               ${c.incumbent ? '<span class="pill pill--incumbent">Incumbent</span>' : ''}
+              ${primaryBadge(c)}
             </div>
             ${meta ? `<div class="cand-meta" style="margin-bottom:0">${meta}</div>` : ''}
             ${photoCredit(c)}
@@ -335,7 +353,7 @@ function renderCompareTable(race, issues) {
     cands.map(c => `<th scope="col"><div class="compare__cand">
       ${renderAvatar(c, 34)}
       <span class="compare__cand-name">${esc(c.name)}</span>
-      <span>${partyPill(c.party)}${c.incumbent ? ' <span class="pill pill--incumbent">Incumbent</span>' : ''}</span>
+      <span>${partyPill(c.party)}${c.incumbent ? ' <span class="pill pill--incumbent">Incumbent</span>' : ''}${primaryBadge(c)}</span>
     </div></th>`).join('')}</tr></thead>`;
 
   const body = `<tbody>${rows.map(iss => `
@@ -358,17 +376,34 @@ function renderCompareTable(race, issues) {
 
 /* ---------- race section ---------- */
 
+function raceTagClass(ballot) {
+  if (ballot === 'decided') return 'card__tag--decided';
+  if (ballot === 'primary') return 'card__tag--primary';
+  return 'card__tag--general';
+}
+
+function raceTagLabel(ballot) {
+  if (ballot === 'decided') return 'Decided Aug 18 — no Nov 3 contest';
+  if (ballot === 'primary') return 'On the Aug 18 primary ballot';
+  if (ballot === 'general') return 'On the Nov 3 general ballot';
+  return 'Primary &amp; general';
+}
+
 function renderRace(race, issues) {
   return `
     <section class="section" id="race-${escAttr(race.id)}">
       <div class="wrap">
         <div class="section__head">
-          <span class="card__tag ${race.ballot === 'primary' ? 'card__tag--primary' : 'card__tag--general'}">${
-            race.ballot === 'primary' ? 'On the Aug 18 primary ballot' :
-            race.ballot === 'general' ? 'On the Nov 3 general ballot' : 'Primary &amp; general'}</span>
+          <span class="card__tag ${raceTagClass(race.ballot)}">${raceTagLabel(race.ballot)}</span>
           <h2>${esc(race.office)}${race.district ? ' — ' + esc(race.district) : ''}</h2>
           ${race.stakes ? `<p>${esc(race.stakes)}</p>` : ''}
         </div>
+
+        ${race.primaryResult ? `<div class="callout ${race.primaryResult.status === 'decided' ? 'callout--ok' : 'callout--info'}">
+          <h4>${race.primaryResult.status === 'decided' ? 'Decided in the Aug 18 primary' : 'Aug 18 primary result'}</h4>
+          <p class="mb-0">${esc(race.primaryResult.summary)}</p>
+          ${srcLink(race.primaryResult.source)}
+        </div>` : ''}
 
         ${race.whoVotes ? `<div class="who-votes"><strong>Who can vote in this race:</strong> ${esc(race.whoVotes)}</div>` : ''}
 
@@ -457,7 +492,11 @@ function validateGuide(G) {
           errs.push(`${c.name}: record[${i}] is an allegation with no candidate response`);
       });
       if (c.finance && !c.finance.asOf) errs.push(`${c.name}: finance block missing asOf date`);
+      if (c.primary && (c.primary.result === 'won' || c.primary.result === 'lost') && !c.primary.source)
+        errs.push(`${c.name}: primary result missing source`);
     });
+    if (race.primaryResult && !race.primaryResult.source)
+      errs.push(`${race.office}: primaryResult missing source`);
   });
 
   if (errs.length) {
@@ -474,9 +513,9 @@ function validateGuide(G) {
 
 /* export for pages */
 window.VG = {
-  esc, escAttr, fmtDate, daysUntil, parseISO, srcLink, partyPill,
+  esc, escAttr, fmtDate, daysUntil, parseISO, srcLink, partyPill, primaryBadge,
   renderClaim, renderPosition, renderFinance, renderCandidate,
   renderCompareTable, renderRace, renderDeadlines, renderCountdown,
   renderAvatar, photoCredit, initials, avatarColor,
-  initNav, validateGuide
+  initNav, validateGuide, raceTagClass, raceTagLabel
 };
