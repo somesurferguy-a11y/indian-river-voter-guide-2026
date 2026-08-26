@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Candidate Match Quiz — Indian River County Voter Guide 2026</title>
+<meta name="description" content="Answer a few issue questions and see how each candidate's own public statements line up with your answers — sourced, not an endorsement.">
+<link rel="stylesheet" href="css/styles.css?v=20260826b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗳️</text></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">IRC</span>
+      <span class="brand__text">
+        <span class="brand__title">Voter Guide 2026</span>
+        <span class="brand__sub">Indian River County, Florida</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="races.html">Races</a>
+      <a href="compare.html">Compare</a>
+      <a href="quiz.html">Match Quiz</a>
+      <a href="issues.html">Issues</a>
+      <a href="money.html">Money</a>
+      <a href="measures.html">Measures</a>
+      <a href="how-to-vote.html">How to Vote</a>
+      <a href="methodology.html">Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="race-head">
+    <div class="wrap wrap--narrow">
+      <h1>Candidate match quiz</h1>
+      <p class="hero__lede" id="quizDisclaimer"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <form id="quizForm">
+        <div id="quizQuestions" class="stack"></div>
+        <div class="btn-row" style="margin-top:24px">
+          <button type="submit" class="btn btn--primary">See my matches</button>
+          <button type="button" class="btn btn--ghost" id="quizReset">Clear answers</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="quizResultsSection" hidden>
+    <div class="wrap wrap--narrow">
+      <div class="section__head">
+        <h2>Your matches</h2>
+        <p>Pick a race to see how each candidate lines up with your answers.</p>
+      </div>
+      <div style="margin-bottom:22px">
+        <label for="quizRaceSelect" style="display:block;font-weight:700;margin-bottom:7px">Choose a race</label>
+        <select id="quizRaceSelect" style="font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-width:min(100%,420px)"></select>
+      </div>
+      <div id="quizResults"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap--narrow">
+      <div class="callout callout--info">
+        <h4>How this works</h4>
+        <p>Each answer is compared against a candidate's own already-published position on that issue —
+           the same sourced statement you'd find on their full profile. A question is only counted for a
+           candidate if they have a stated position on it; otherwise it's left out of their score rather
+           than counted as a mismatch. Skip anything you don't have a strong view on.</p>
+        <p class="mb-0">Candidates are always shown in full — none are hidden — sorted by your personal
+           match score. That ordering reflects your answers only, not this guide's opinion.
+           <a href="methodology.html">Read the full methodology</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="mb-0">Nonpartisan and independent. Not affiliated with any candidate, party, or government agency.
+       <a href="methodology.html">Methodology &amp; corrections</a></p>
+  </div>
+</footer>
+
+<script src="data/guide.js?v=20260826b"></script>
+<script src="js/render.js?v=20260826b"></script>
+<script src="js/quiz.js?v=20260826b"></script>
+</body>
+</html>

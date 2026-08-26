@@ -26,6 +26,26 @@
         }).join('') + '</div>'
       : '';
 
+    // A multi-year registration trend, where present — shows direction of
+    // change rather than just a single snapshot.
+    var trend = (iss.trend && iss.trend.rows && iss.trend.rows.length)
+      ? '<h3 style="margin-top:26px">' + VG.esc(iss.trend.title || 'Registration trend') + '</h3>' +
+        (iss.trend.intro ? '<p class="muted" style="max-width:70ch">' + VG.esc(iss.trend.intro) + '</p>' : '') +
+        '<div class="compare-scroll" tabindex="0"><table class="compare"><thead><tr>' +
+        '<th scope="col">Snapshot</th><th scope="col">Republican</th><th scope="col">Democrat</th>' +
+        '<th scope="col">No Party Affiliation</th><th scope="col">Other</th><th scope="col">Total</th></tr></thead><tbody>' +
+        iss.trend.rows.map(function (row) {
+          return '<tr><th scope="row">' + VG.esc(row.label) + '</th>' +
+            '<td>' + row.r.toLocaleString('en-US') + ' (' + row.rPct + '%)</td>' +
+            '<td>' + row.d.toLocaleString('en-US') + ' (' + row.dPct + '%)</td>' +
+            '<td>' + row.npa.toLocaleString('en-US') + ' (' + row.npaPct + '%)</td>' +
+            '<td>' + row.other.toLocaleString('en-US') + ' (' + row.otherPct + '%)</td>' +
+            '<td>' + row.total.toLocaleString('en-US') + '</td></tr>';
+        }).join('') + '</tbody></table></div>' +
+        '<div class="small muted" style="margin-top:8px">' +
+        iss.trend.rows.map(function (row) { return VG.srcLink(row.source); }).join(' &nbsp;·&nbsp; ') + '</div>'
+      : '';
+
     // Which candidates have said something about this issue — the bridge from
     // "here's the problem" to "here's who says what about it".
     var withPos = [];
@@ -61,7 +81,7 @@
       '<div style="max-width:72ch">' + (iss.background || '').split('\n\n').map(function (p) {
         return '<p>' + VG.esc(p) + '</p>';
       }).join('') + '</div>' +
-      numbers + positions + sources +
+      numbers + trend + positions + sources +
       '</div></section>';
   }).join('');
 })();

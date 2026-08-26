@@ -384,6 +384,91 @@ window.GUIDE = {
     }
   ],
 
+  /* ----------------------------------------------------------------- quiz */
+
+  // A candidate-match quiz. IMPORTANT — this is not an endorsement engine:
+  // match percentages are computed entirely from the reader's own answers
+  // against each candidate's already-published, already-sourced positions
+  // (see the `stance` field alongside `summary`/`quote`/`source` on each
+  // position in the races above). No candidate is hidden or reordered by
+  // this guide's own judgment — every candidate in a race is always shown,
+  // sorted by the reader's personal match score, with "not enough data"
+  // shown honestly where a candidate hasn't stated a position.
+  quiz: {
+    disclaimer: 'This tool matches you to candidates using their own public statements on the issues below — it does not reflect this guide\'s opinion, and it is not an endorsement. A high match score means a candidate\'s stated position lines up with your answer, sourced exactly like everywhere else in this guide. Skip any question you don\'t have a strong view on; skipped questions are excluded from scoring rather than counted against anyone.',
+    questions: [
+      {
+        issueId: 'amendment',
+        text: 'Amendment 3 on the November ballot would raise the homestead property tax exemption. Do you support it?',
+        options: [
+          { value: 'support', label: 'Support it' },
+          { value: 'oppose', label: 'Oppose it' }
+        ]
+      },
+      {
+        issueId: 'growth',
+        text: 'How should growth and development be handled here?',
+        options: [
+          { value: 'restrict-slow-growth', label: 'Slow it down — manage tightly, preserve existing character' },
+          { value: 'balanced-managed', label: 'Balanced, case-by-case management' },
+          { value: 'streamline-development', label: 'Streamline permitting — reduce barriers to building' }
+        ]
+      },
+      {
+        issueId: 'taxes',
+        text: 'What should local government prioritize on taxes and spending?',
+        options: [
+          { value: 'cut-taxes', label: 'Fiscal discipline — keep taxes and spending low' },
+          { value: 'transparency-oversight', label: 'Spending transparency and oversight' },
+          { value: 'diversify-revenue', label: 'Diversify revenue so it relies less on property taxes' }
+        ]
+      },
+      {
+        issueId: 'lagoon',
+        text: 'What approach to the Indian River Lagoon do you prefer?',
+        options: [
+          { value: 'infrastructure-investment', label: 'Invest in infrastructure — septic-to-sewer, stormwater' },
+          { value: 'regulatory-accountability', label: 'Hold polluters and industry accountable through regulation' },
+          { value: 'general-stewardship', label: 'General environmental stewardship, no strong mechanism preference' }
+        ]
+      },
+      {
+        issueId: 'insurance',
+        text: "How should Florida address the property insurance crisis?",
+        options: [
+          { value: 'market-based-reform', label: 'Market-based reform — tort reform, hardening incentives' },
+          { value: 'stronger-regulation-oversight', label: 'Stronger state regulation and oversight of insurers' }
+        ]
+      },
+      {
+        issueId: 'housing',
+        text: "What's the best way to address housing affordability?",
+        options: [
+          { value: 'expand-affordable-mandate', label: 'Mandates/programs to expand affordable and workforce housing' },
+          { value: 'reduce-regulatory-cost', label: 'Reduce the regulatory costs that drive up home prices' },
+          { value: 'targeted-financing-tools', label: 'Targeted financing tools — loans, closing-cost help' }
+        ]
+      },
+      {
+        issueId: 'schools',
+        text: 'What should be the priority for public education?',
+        options: [
+          { value: 'school-choice-expansion', label: 'Expand school choice — charter, private, homeschool' },
+          { value: 'public-school-investment', label: 'Invest more in traditional public schools' },
+          { value: 'local-state-control', label: 'Keep control at the state, local, and school-board level' }
+        ]
+      },
+      {
+        issueId: 'sheriff-budget',
+        text: 'In a funding dispute between the Sheriff and county commission, where do you lean?',
+        options: [
+          { value: 'back-sheriff-funding', label: 'Prioritize the Sheriff\'s requested public-safety funding' },
+          { value: 'process-reform', label: 'Neither side — fix the budget process itself' }
+        ]
+      }
+    ]
+  },
+
   /* --------------------------------------------------------------- issues */
 
   issues: [
@@ -394,6 +479,18 @@ window.GUIDE = {
         'As of July 20, 2026, Indian River County had 118,078 active registered voters: 62,760 Republicans (53.2%), 26,072 Democrats (22.1%), 24,003 No Party Affiliation (20.3%), and 5,243 registered with other parties (4.4%). That Republican registration advantage is a large part of why most seriously contested local races are Republican primaries — and why the roughly 50,000 Democratic and NPA voters are the group county races most often overlook, even though several 2026 contests are decided by all of them together.\n\n' +
         'The county is older than the nation as a whole: about 36.1% of residents are 65 or older, against roughly 18% nationally, while 14.7% are under 18. That skews what issues carry weight locally — healthcare access, prescription costs, and property tax burden on fixed incomes tend to matter more here than in a younger county. Population has grown from about 160,000 at the 2020 Census to a 2025 estimate near 172,800, which is also the raw material behind the growth-and-development fights described elsewhere in this guide.\n\n' +
         'Economically, median household income is $57,945 and about 10.3% of residents live below the poverty line. Educational attainment: a 90.1% high school graduation rate and 30.6% with a bachelor\'s degree or higher. By race and ethnicity: 72.8% White non-Hispanic, 14.8% Hispanic, 8.7% Black non-Hispanic, and 1.8% Asian non-Hispanic.',
+      trend: {
+        title: 'Registration trend, 2022-2026',
+        intro: 'Added Aug 26, 2026. Official book-closing snapshots pulled directly from the Florida Division of Elections, not a single "current" pull — each row is a real point-in-time count as of that election\'s registration deadline. Over these four years, the county\'s Republican registration edge has widened (48.3% to 53.2% of all registered voters) while both the Democratic and NPA shares have shrunk, and minor-party registration has more than doubled in raw share (2.3% to 4.4%). Total registration is roughly flat; the 2026 row is a primary-cycle snapshot (before the pre-general registration deadline), not directly comparable in raw totals to the two October general-election snapshots above it.',
+        rows: [
+          { label: 'Oct 2022 general', r: 57745, rPct: 48.35, d: 30489, dPct: 25.53, npa: 28439, npaPct: 23.81, other: 2760, otherPct: 2.31, total: 119433,
+            source: { title: 'FL Division of Elections — 2022 General Election, Active Registered Voters By Party (book closing Oct 11, 2022)', url: 'https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/bookclosing/bookclosing-reports-regular/', date: '2022-10-11' } },
+          { label: 'Oct 2024 general', r: 61833, rPct: 51.15, d: 28221, dPct: 23.35, npa: 26654, npaPct: 22.05, other: 4172, otherPct: 3.45, total: 120880,
+            source: { title: 'FL Division of Elections — 2024 General Election, Active Registered Voters by Party (book closing Oct 7, 2024)', url: 'https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/bookclosing/bookclosing-reports-regular/', date: '2024-10-07' } },
+          { label: 'Jul 2026 primary', r: 62760, rPct: 53.15, d: 26072, dPct: 22.08, npa: 24008, npaPct: 20.33, other: 5238, otherPct: 4.44, total: 118078,
+            source: { title: 'FL Division of Elections — 2026 Primary Election, Active Registered Voters by Party (book closing Jul 20, 2026)', url: 'https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-registration-reports/voter-registration-by-county-and-party/', date: '2026-07-20' } }
+        ]
+      },
       numbers: [
         { label: 'Registered Republican', value: '62,760 (53.2%)', source: { title: 'IRC Supervisor of Elections registration report', url: 'https://voteindianriver.gov/', date: '2026-07-20' } },
         { label: 'Registered Democrat', value: '26,072 (22.1%)', source: { title: 'IRC Supervisor of Elections registration report', url: 'https://voteindianriver.gov/', date: '2026-07-20' } },
@@ -619,20 +716,24 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'oppose',
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
               source: { title: 'Vero News — District 2 candidate forum', url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-07' }
             },
             lagoon: {
+              stance: 'general-stewardship',
               summary: 'Names the lagoon his first priority; points to work on it during 15 years on the Sebastian council. In a separate candidate Q&A he reportedly proposed membership on a lagoon council as his specific mechanism, distinct from his opponents\' approaches.',
               quote: 'The Indian River Lagoon is the heart of our community — our economy, our recreation, and our way of life all depend on it.',
               source: { title: 'Campaign website — Issues', url: 'https://votebobmcpartlan.com/', date: '2026-08-05' }
             },
             growth: {
+              stance: 'balanced-managed',
               summary: 'Manage growth responsibly while preserving small-town character; frames it around infrastructure delivery.',
               quote: 'Indian River County is growing, and growth has to be managed responsibly.',
               source: { title: 'Campaign website — Issues', url: 'https://votebobmcpartlan.com/', date: '2026-08-05' }
             },
             taxes: {
+              stance: 'cut-taxes',
               summary: 'Emphasizes "disciplined budgeting" to keep taxes reasonable. Has NOT stated a public position on the November property tax amendment.',
               quote: 'Through disciplined budgeting on the Sebastian City Council, Bob has worked to keep taxes reasonable while still delivering the services residents count on.',
               source: { title: 'Campaign website — Issues', url: 'https://votebobmcpartlan.com/', date: '2026-08-05' }
@@ -687,21 +788,25 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'support',
               summary: 'Her campaign site banner declares blanket support for the amendment. See her record below for a more hedged position stated in a later interview.',
               quote: 'I\'m YOUR County Commission District 2 Candidate that Supports the proposed constitutional amendment "Save Our Homes from Excessive Property Taxes" that will appear on Florida\'s November 2026 ballot.',
               source: { title: 'Campaign website homepage', url: 'https://votejenniferpippin.com/', date: '2026-08-05' }
             },
             growth: {
+              stance: 'balanced-managed',
               summary: 'Manage growth responsibly to protect roads, environment and communities.',
               quote: 'Growth should be managed responsibly so our roads, environment, and communities are protected for future generations.',
               source: { title: 'Campaign website', url: 'https://votejenniferpippin.com/', date: '2026-08-05' }
             },
             taxes: {
+              stance: 'transparency-oversight',
               summary: 'Frames county government around spending transparency; carries her school-board activism into county government.',
               quote: 'The same accountability I brought to our schools, I am bringing to county government. Same fight. Bigger arena.',
               source: { title: 'Campaign website', url: 'https://votejenniferpippin.com/', date: '2026-08-05' }
             },
             'sheriff-budget': {
+              stance: 'back-sheriff-funding',
               summary: 'Says the county and sheriff should have settled their budget dispute earlier through tougher public discussion, and that she would back full funding for the sheriff\'s office if needed for safety.',
               quote: 'If I was a county commissioner at that time, I would have tried to settle it prior. I would have said, listen, we need to have longer, harder conversations. Do it in the sunshine, do it in the public... if the sheriff and the Indian River County Sheriff\'s Office needs more money to do that, I would absolutely back the blue and make sure that they have the funding for what they need.',
               detail: 'This guide\'s own transcription (via YouTube auto-captions) of a candidate interview recorded April 17, 2026.',
@@ -789,20 +894,24 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'oppose',
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
               source: { title: 'Vero News — District 2 candidate forum', url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-07' }
             },
             growth: {
+              stance: 'restrict-slow-growth',
               summary: 'Update the comprehensive plan and plan growth deliberately; explicitly rejects becoming a dense South Florida city.',
               quote: 'The goal is not to become another crowded South Florida city, but to remain a thriving, less-dense community where families can live, work, and play locally.',
               source: { title: 'Campaign website', url: 'https://votebrooksrobinson.com/', date: '2026-08-05' }
             },
             taxes: {
+              stance: 'diversify-revenue',
               summary: 'Reduce reliance on residential property taxes by broadening the local economy — tax diversification rather than a stated position on the amendment.',
               quote: 'Indian River County must reduce its reliance on residential property taxes by building a more balanced local economy.',
               source: { title: 'Campaign website', url: 'https://votebrooksrobinson.com/', date: '2026-08-05' }
             },
             lagoon: {
+              stance: 'infrastructure-investment',
               summary: 'The only candidate in this race offering a specific septic-to-sewer mechanism.',
               quote: 'This means improving water quality and responsibly advancing septic-to-sewer solutions through smart public-private partnerships.',
               source: { title: 'Campaign website', url: 'https://votebrooksrobinson.com/', date: '2026-08-05' }
@@ -849,10 +958,12 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'oppose',
               summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
               source: { title: 'Vero News — District 2 candidate forum', url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-07' }
             },
             lagoon: {
+              stance: 'regulatory-accountability',
               summary: 'In a candidate Q&A he reportedly favors holding polluters accountable as his approach to lagoon health, a different emphasis than the infrastructure-focused proposals from the Republicans in this race.',
               source: { title: 'Hometown News Treasure Coast — District 2 candidate Q&A', url: 'https://www.hometownnewstc.com/news/indian_river/irc-district-2-commission-candidates-speak-out/article_40c05ea4-92bf-5a8a-9f4c-49cdae761f0d.html', date: '2026-08-08' }
             }
@@ -935,6 +1046,7 @@ window.GUIDE = {
           bio: 'Elected to the County Commission in 2022. Previously Sheriff of Indian River County, elected in 2008 and re-elected in 2012 and 2016. Before that, District Commander for the Florida Highway Patrol on the Treasure Coast from 1989 to 2008. Holds a BA in public administration. Describes himself as "a public servant for over 36 years." Serves with VNA Hospice and other community organizations.',
           positions: {
             'sheriff-budget': {
+              stance: 'process-reform',
               summary: 'Described the sheriff\'s lawsuit against the commission as unprecedented in county history. After the April 2026 settlement, as Board Chairman, framed it as a reset toward cooperation rather than relitigating who was right.',
               quote: 'The Board affirms its commitment to putting recent conflicts behind and moving forward in a cooperative, professional partnership with the Sheriff\'s Office for the benefit of all residents.',
               source: {
@@ -944,6 +1056,7 @@ window.GUIDE = {
               }
             },
             taxes: {
+              stance: 'cut-taxes',
               summary: 'Names fiscal responsibility as his first stated priority, alongside public safety and a professional legislative body focused on policy and budget.',
               source: {
                 title: 'TCPalm candidate questionnaire, via AOL',
@@ -1031,6 +1144,7 @@ window.GUIDE = {
           bio: 'A Florida resident since 1996 who bought his first Vero Beach home at 18 and is married to his high school sweetheart; they have two sons. Holds an associate degree in business administration earned through dual enrollment, with a career in business development, technology sales and marketing before running his own businesses. Active in Temple Beth Shalom leadership. Cites Hurricanes Frances and Jeanne in 2004 as formative on emergency preparedness. No prior elected office. Notably, he qualified for the ballot by CITIZEN PETITION — gathering 1,281 verified signatures — rather than by paying the qualifying fee.',
           positions: {
             growth: {
+              stance: 'balanced-managed',
               summary: 'Supports development that funds its own infrastructure, and weighing cumulative environmental impact rather than project-by-project.',
               quote: 'Growth is coming whether we plan for it or not. The question is whether we will manage that growth responsibly.',
               source: {
@@ -1040,6 +1154,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'infrastructure-investment',
               summary: 'Frames lagoon health as an economic necessity, calling for science-based decisions and better stormwater management.',
               quote: 'A healthy lagoon is not just an environmental goal — it\'s an economic necessity and a quality-of-life issue.',
               source: {
@@ -1049,6 +1164,7 @@ window.GUIDE = {
               }
             },
             taxes: {
+              stance: 'transparency-oversight',
               summary: 'Calls for transparent spending, competitive contract oversight, and prioritizing infrastructure and public safety over what he calls wasteful projects. His signature proposal is a public-facing departmental dashboard and scorecard.',
               quote: 'Measure Results. Publish the Score. Earn the Trust.',
               source: {
@@ -1152,6 +1268,7 @@ window.GUIDE = {
           },
           positions: {
             schools: {
+              stance: 'public-school-investment',
               summary: 'Centers post-secondary readiness — every graduate leaving with a plan via CTE, dual enrollment and the PATH program. Cites district improvement from 38th to 5th in the state since 2018.',
               quote: 'I believe every graduating senior should leave our school district with a clear post-secondary plan, whether that path leads to college, a university, military service, or a career and technical profession.',
               source: { title: 'Ballotpedia Candidate Connection survey', url: 'https://ballotpedia.org/Jacqueline_Rosario_(School_District_of_Indian_River_County_school_board_District_2,_Florida,_candidate_2026)', date: '2026-06-25' }
@@ -1225,6 +1342,7 @@ window.GUIDE = {
           },
           positions: {
             schools: {
+              stance: 'public-school-investment',
               summary: 'Six pillars: academic excellence and accountability, student opportunity and career pathways, data-informed decisions, fiscal transparency, community partnerships, and teacher support.',
               quote: 'I\'m committed to academic excellence, expanding student opportunity, supporting teachers, and making data-driven, transparent decisions that put students first.',
               source: { title: 'Campaign website', url: 'https://votetomlange.com/', date: '2026-08-05' }
@@ -1397,6 +1515,7 @@ window.GUIDE = {
           bio: 'The sitting Seat 2 commissioner, elected in 2022. By her own filed candidate statement: a third-generation Floridian and lifelong Indian River County resident, Vero Beach High School graduate, with an associate degree from Indian River State College and a bachelor\'s in business administration anticipated January 2027. Career in executive-level administration and estate management. Founded the Indian River County Cattlewomen chapter in 2019 and serves as its president. Has served on the Agriculture Advisory Committee, Economic Development Council, Environmental Control Hearing Board, and the Treasure Coast Regional Planning Council CEDS committee. Her campaign\'s public Facebook page describes her: "Born and raised in Indian River County. Proud to serve as your Mosquito Control Commissioner, committed to protecting our community through responsible leadership."',
           positions: {
             taxes: {
+              stance: 'transparency-oversight',
               summary: 'Frames her candidacy around fiscal oversight and stewardship of taxpayer money, without naming a specific policy.',
               quote: 'Responsible governance, fiscal oversight, and ensuring that taxpayer resources are managed effectively.',
               source: {
@@ -1668,7 +1787,8 @@ window.GUIDE = {
           occupation: 'Owner, Exit Right Realty (downtown Vero Beach)',
           bio: 'Spent much of his youth in Vero Beach before a career in sports promotion and marketing, including work for Major League Soccer\'s Real Salt Lake, and later launched an insurance business in Massachusetts. He and his wife Colleen started their downtown realty company. Filed his candidacy in June 2026.',
           positions: {
-            growth: { summary: 'Frames the council term as a pivotal moment for shaping the city\'s next 30 years, citing his business and leadership background.',
+            growth: {
+              stance: 'balanced-managed', summary: 'Frames the council term as a pivotal moment for shaping the city\'s next 30 years, citing his business and leadership background.',
               quote: 'I live, work, and raise my family in this city, and I believe we have a tremendous opportunity to shape what our community becomes over the next 30 years. I believe this is a pivotal moment in our city\'s history.',
               source: { title: 'The Sunshine Journal (partisan Substack) — reporting his candidacy filing', url: 'https://thomasaugustus.substack.com/p/breaking-rob-maccallum-files-candidacy', date: '2026-06-01' } }
           }, record: [], finance: null, endorsements: [], links: {} },
@@ -1756,6 +1876,7 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'support',
               summary: 'Voted YES on the property tax amendment that voters actually decide in November. Did not cast a vote on the earlier, more sweeping February version.',
               source: {
                 title: 'Florida House roll call, CS/HJR 1-F',
@@ -1764,6 +1885,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'infrastructure-investment',
               summary: 'Sponsored two local Indian River County water district bills that became law, and co-sponsored PFAS legislation — his clearest water-quality-related actions.',
               source: {
                 title: 'Florida House sponsored bills',
@@ -1868,6 +1990,7 @@ window.GUIDE = {
           },
           positions: {
             growth: {
+              stance: 'restrict-slow-growth',
               summary: 'The most home-rule-favorable stated position among the Republicans: wants the Live Local Act amended to focus on homeownership rather than rental loopholes, and to restore local community oversight.',
               quote: 'Opposes overdevelopment without infrastructure planning.',
               source: {
@@ -1877,6 +2000,7 @@ window.GUIDE = {
               }
             },
             amendment: {
+              stance: 'no-position',
               summary: 'Supports "property tax relief, insurance reform, and greater accountability in government spending," but states no position on the specific November amendment.',
               source: {
                 title: 'Campaign website',
@@ -1885,6 +2009,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'general-stewardship',
               summary: 'Calls for "responsible environmental stewardship based on science, accountability, and common sense." No dollar figure, program, or specific lagoon proposal stated.',
               source: {
                 title: 'Campaign website',
@@ -1979,6 +2104,7 @@ window.GUIDE = {
           },
           positions: {
             growth: {
+              stance: 'restrict-slow-growth',
               summary: 'Names home rule his top priority — opposing state preemption bills that strip local authority over growth management, environmental protection, and tenant rights.',
               source: {
                 title: 'Campaign website',
@@ -1987,6 +2113,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'infrastructure-investment',
               summary: 'The most specific lagoon plan in this race: mangrove planting and living shorelines, protecting wetlands as flood barriers, and funding septic-to-sewer conversions through the state budget rather than homeowner assessments.',
               source: {
                 title: 'Campaign website',
@@ -1995,6 +2122,7 @@ window.GUIDE = {
               }
             },
             housing: {
+              stance: 'expand-affordable-mandate',
               summary: 'Prioritize restoring vacant properties over luxury complexes, expand workforce and affordable housing, and protect tenant organizing rights.',
               source: {
                 title: 'Campaign website',
@@ -2003,6 +2131,7 @@ window.GUIDE = {
               }
             },
             schools: {
+              stance: 'public-school-investment',
               summary: 'Repeal the charter school co-location law and "keep public dollars in public schools"; move teaching toward a six-figure profession; fund counselors and mental health staff.',
               source: {
                 title: 'Campaign website',
@@ -2011,6 +2140,7 @@ window.GUIDE = {
               }
             },
             amendment: {
+              stance: 'no-position',
               summary: 'Has NOT stated an explicit position on the November amendment, but warns against "state revenue shifts that reduce local budgets" — implicitly a caution about its effect on county and municipal revenue.',
               source: {
                 title: 'Campaign website',
@@ -2105,9 +2235,11 @@ window.GUIDE = {
             }
           },
           positions: {
-            lagoon: { summary: 'Sits on the House Natural Resources Committee and points to work preserving Florida\'s natural resources and securing federal disaster relief after storms.',
+            lagoon: {
+              stance: 'general-stewardship', summary: 'Sits on the House Natural Resources Committee and points to work preserving Florida\'s natural resources and securing federal disaster relief after storms.',
               source: { title: 'Congressional committee assignments and campaign material', url: 'https://soto.house.gov/', date: '2026-08-17' } },
-            housing: { summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions.',
+            housing: {
+              stance: 'expand-affordable-mandate', summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions.',
               source: { title: 'Congress.gov / campaign material', url: 'https://www.congress.gov/member/darren-soto/S001200', date: '2026-08-17' } }
           },
           record: [
@@ -2167,6 +2299,7 @@ window.GUIDE = {
           },
           positions: {
             amendment: {
+              stance: 'support',
               summary: 'Supports the Florida property tax amendment, arguing tax cuts promote responsible budgets and reduce waste and fraud.',
               source: {
                 title: 'ClickOrlando voter guide questionnaire',
@@ -2175,6 +2308,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'general-stewardship',
               summary: 'Speaks generally to protecting "the Florida aquifer, our waterways, and lakes." NOTE: this guide found no on-the-record position from him on the Indian River Lagoon BY NAME, on Lake Okeechobee discharges, or on Everglades restoration funding.',
               source: {
                 title: 'ClickOrlando voter guide questionnaire',
@@ -2250,10 +2384,12 @@ window.GUIDE = {
             }
           },
           positions: {
-            growth: { summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience. At a July 29 candidate forum he named regulatory permitting delays — citing Army Corps of Engineers 404 permits with no enforced time limit — as a direct driver of higher costs.',
+            growth: {
+              stance: 'streamline-development', summary: 'Frames his platform around balancing conservation, agriculture, and economic growth, drawing on his water-district board experience. At a July 29 candidate forum he named regulatory permitting delays — citing Army Corps of Engineers 404 permits with no enforced time limit — as a direct driver of higher costs.',
               quote: 'As a farmer, conservation advocate, and leader on the South Florida Water Management District Governing Board, Ben understands the balance between protecting our natural resources, supporting agriculture, and keeping our economy strong.',
               source: { title: 'Campaign website', url: 'https://www.butlerforflorida.com/', date: '2026-08-17' } },
-            housing: { summary: 'Proposed extending the VA home-loan guarantee model — which backs veteran home loans at no cost to government — to all U.S. citizens as a way to expand home ownership access.',
+            housing: {
+              stance: 'targeted-financing-tools', summary: 'Proposed extending the VA home-loan guarantee model — which backs veteran home loans at no cost to government — to all U.S. citizens as a way to expand home ownership access.',
               quote: 'This is a program that has been wildly successful for veterans that has not cost the government a penny. It\'s a free program essentially... we can offer that to all US citizens.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
               source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
@@ -2367,10 +2503,12 @@ window.GUIDE = {
             }
           },
           positions: {
-            schools: { summary: 'Supports school choice — public, charter, private, or homeschool, whichever fits the family — plus veterans\' benefits, growth-driven infrastructure, and food/health transparency.',
+            schools: {
+              stance: 'school-choice-expansion', summary: 'Supports school choice — public, charter, private, or homeschool, whichever fits the family — plus veterans\' benefits, growth-driven infrastructure, and food/health transparency.',
               quote: 'Empowering Florida families with the freedom to choose the school — public, charter, private, or homeschool — that fits their child best.',
               source: { title: 'Campaign website', url: 'https://thomas4fl.com/issues', date: '2026-08-17' } },
-            housing: { summary: 'A homebuilder by background who says local government regulation adds 25-30% to the cost of a home, and points to a shortage of skilled trades labor (carpenters, welders, masons, electricians) as a second driver of housing costs.',
+            housing: {
+              stance: 'reduce-regulatory-cost', summary: 'A homebuilder by background who says local government regulation adds 25-30% to the cost of a home, and points to a shortage of skilled trades labor (carpenters, welders, masons, electricians) as a second driver of housing costs.',
               quote: 'The cost of regulation, government regulation locally is running between 25 and 30% of the cost of a home... we have a significant shortage of untrained, skilled labor.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
               source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
@@ -2430,7 +2568,8 @@ window.GUIDE = {
             }
           },
           positions: {
-            housing: { summary: 'Says he has developed legislative proposals to reduce closing and ownership costs for first-time homebuyers, and separately supports expanding U.S. oil and gas production to lower energy costs.',
+            housing: {
+              stance: 'targeted-financing-tools', summary: 'Says he has developed legislative proposals to reduce closing and ownership costs for first-time homebuyers, and separately supports expanding U.S. oil and gas production to lower energy costs.',
               quote: 'I\'ve developed legislative ideas to help first-time home buyers lower the cost of purchasing a home by reducing unnecessary expenses for home ownership, making home ownership more attainable.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach; livestreamed via IRC Media. This guide has not yet obtained the specific text of his proposed legislation.',
               source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
@@ -2539,7 +2678,8 @@ window.GUIDE = {
             }
           },
           positions: {
-            schools: { summary: 'Supports eliminating the U.S. Department of Education, arguing education policy should be set at the state, local, and school-board level rather than by the federal government.',
+            schools: {
+              stance: 'local-state-control', summary: 'Supports eliminating the U.S. Department of Education, arguing education policy should be set at the state, local, and school-board level rather than by the federal government.',
               quote: 'I do not believe the federal government should have a hand in our education. This is a state function, ladies and gentlemen. It\'s a local function and it\'s a city function... every state should set its own policy, and we take best practices.',
               detail: 'This guide\'s own transcription of a July 29, 2026 candidate forum hosted by the Republican Club of Indian River at the Heritage Center, Vero Beach, livestreamed via IRC Media.',
               source: { title: 'Republican Club of Indian River — U.S. House District 9 Candidate Forum (video)', url: 'https://www.youtube.com/live/6p96QhR5Uck', date: '2026-07-29' } }
@@ -2613,6 +2753,7 @@ window.GUIDE = {
           },
           positions: {
             growth: {
+              stance: 'restrict-slow-growth',
               summary: 'Supports preserving legacy farming operations against residential development encroachment and protecting agricultural communities from "frivolous lawsuits." Cites Cabinet-level approval of nearly $58 million in conservation easements protecting about 18,279 acres of working farmland through the Rural and Family Lands Protection Program — which he has expanded roughly 243% during his tenure — rather than Florida Forever, which prioritizes public-access conservation.',
               source: {
                 title: 'ClickOrlando voter guide (from his campaign site; did not respond to survey)',
@@ -2733,6 +2874,7 @@ window.GUIDE = {
           },
           positions: {
             growth: {
+              stance: 'restrict-slow-growth',
               summary: 'Opposes converting farmland to subdivisions and solar projects; proposes expanded programs to keep farmers farming rather than selling to developers, tax relief for family farms and timber owners, a "Florida Grown First" state-purchasing program, faster disaster relief and crop insurance for small farms, farm-to-school programs, and cracking down on price gouging. Prefers Florida Forever-style public-access conservation over Simpson\'s working-farm easements, citing the state\'s $68 million June 2026 purchase of the 4G Ranch easement as land the public still can\'t use.',
               source: {
                 title: 'Ballotpedia / campaign site (did not respond to survey)',
@@ -2741,6 +2883,7 @@ window.GUIDE = {
               }
             },
             lagoon: {
+              stance: 'regulatory-accountability',
               summary: 'Wants tighter oversight of phosphate-mining runoff and pesticide spraying, and says he would use the Commissioner\'s existing statewide pesticide-regulatory authority to protect rivers, springs, and wetlands.',
               source: {
                 title: 'Mindful SWFL interview / campaign bio',
@@ -2795,6 +2938,7 @@ window.GUIDE = {
           },
           positions: {
             growth: {
+              stance: 'balanced-managed',
               summary: 'Supports conservation easements as a tool but argues their success should be measured by public benefit rather than acres protected — an implicit critique of Simpson\'s working-farm easement approach that echoes Taylor\'s public-access argument from the opposite party.',
               quote: 'It should be measured by public benefit.',
               source: {
@@ -2859,6 +3003,7 @@ window.GUIDE = {
           },
           positions: {
             lagoon: {
+              stance: 'infrastructure-investment',
               summary: 'His top stated issue: opposes Florida\'s 2026 data-center legislation (SB 484) for not addressing the long-term water impact of AI data centers, citing existing Central Florida droughts, and calls for self-sufficient systems that protect aquifers.',
               source: {
                 title: 'WLRN',
@@ -2866,6 +3011,7 @@ window.GUIDE = {
               }
             },
             taxes: {
+              stance: 'transparency-oversight',
               summary: 'Says he won\'t be a "rubber stamp for the governor" and would prioritize Floridians over special interests and corporate groups; says he\'d aggressively use FDACS\'s existing consumer-protection authority against phone scams and consumer fraud.',
               source: {
                 title: 'WLRN',
@@ -3366,6 +3512,7 @@ window.GUIDE = {
             },
           positions: {
               amendment: {
+                stance: 'support',
                   summary: 'Supports Amendment 3 (raising the homestead exemption) and wants to go further regardless of its outcome, eventually eliminating homestead property taxes entirely.',
                   quote: 'Whether Amendment 3 passes or fails, we are going to reform property taxes in our state with a goal of eliminating homestead property taxes once and for all.',
                   source: {
@@ -3375,6 +3522,7 @@ window.GUIDE = {
                     }
                 },
               insurance: {
+                stance: 'market-based-reform',
                   summary: 'Wants tort reform and expanded "home hardening" programs for buildings constructed before 1992 (pre-Hurricane Andrew codes); has promised rate cuts heading into the general election.',
                   source: {
                       title: 'WLRN — "Byron Donalds promotes his economic plans for Florida, defends Trump\'s record"',
@@ -3383,6 +3531,7 @@ window.GUIDE = {
                     }
                 },
               growth: {
+                stance: 'streamline-development',
                   summary: 'Wants to cut permitting costs and timelines, which he says add 20-30% to construction costs.',
                   quote: 'modernize that entire process, shrink those timelines down.',
                   source: {
@@ -3555,6 +3704,7 @@ window.GUIDE = {
             },
           positions: {
               amendment: {
+                stance: 'oppose',
                   summary: 'Opposes Amendment 3, arguing local communities should retain control over property-tax exemption policy rather than have it set by state constitutional mandate.',
                   source: {
                       title: 'Yahoo News/Newsweek — "Byron Donalds to Face David Jolly in Florida Governor\'s Race: What They Say on Property Taxes"',
@@ -3563,6 +3713,7 @@ window.GUIDE = {
                     }
                 },
               insurance: {
+                stance: 'stronger-regulation-oversight',
                   summary: 'Central campaign theme is "historic homeowner\'s insurance reform"; has floated shifting some catastrophic-risk coverage to a state-assumed model, potentially funded by a new real-estate-transaction tax or reallocated tourism revenue.',
                   quote: 'Floridians are being squeezed by an affordability crisis.',
                   source: {
@@ -5061,6 +5212,7 @@ window.GUIDE = {
           bio: 'Born in Queens, NYC; attended Queens College and Brooklyn College without completing a degree. Relocated to Spring Hill, FL in 1996 and founded two companies, America One Mortgage and homebuilder Hartland Homes (reported net worth $28.3 million as of a 2022 disclosure). Entered politics in 2008; chaired the Hernando County GOP, then the Republican Party of Florida (2015-2019). Florida House 2014-2022, Florida Senate 2022-2025. Appointed CFO by Gov. DeSantis in July 2025, succeeding Jimmy Patronis — bypassing Trump-endorsed state Sen. Joe Gruters for the post.',
           positions: {
               insurance: {
+                stance: 'stronger-regulation-oversight',
                   summary: 'Names pushing down property-insurance rates as a top-3 priority (with property-tax relief and government-efficiency/waste reduction), framing his fraud-enforcement record as accountability without "protecting the profits of insurance companies."',
                   quote: 'I am not here to protect the profits of insurance companies... What I am here to do is protect you, the policyholders.',
                   source: {
@@ -5169,6 +5321,7 @@ window.GUIDE = {
           bio: 'Born in Barrancabermeja, Colombia; moved to Huntsville, Alabama at 17, then to Miami, where she founded a translation business in 1995. A small-business owner who says she\'s personally paid Florida insurance premiums for over 30 years. Florida Senate 2017-2022 (won a 2017 special election, re-elected 2018), serving five years on the Banking and Insurance Committee — the committee most directly relevant to the CFO\'s insurance portfolio. Recruited into this race by Ruth\'s List Florida. Has run for office roughly ten times since 2008, including a 2014 run as Charlie Crist\'s Lt. Governor pick and a 2022 U.S. House bid she lost to Rep. María Elvira Salazar.',
           positions: {
               insurance: {
+                stance: 'stronger-regulation-oversight',
                   summary: 'Makes property-insurance oversight the explicit centerpiece of her campaign, arguing Tallahassee has for decades prioritized insurers over homeowners; wants insurers to justify rate hikes and faster, fairer claims handling.',
                   quote: 'we have had now for decades in Tallahassee, the elected [officials] doing the bidding for the insurance companies... We have not had somebody that\'s truly going to be there to look out for the homeowners.',
                   source: {
