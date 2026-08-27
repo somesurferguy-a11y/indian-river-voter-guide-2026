@@ -490,6 +490,22 @@ window.GUIDE = {
           { value: 'back-sheriff-funding', label: 'Prioritize the Sheriff\'s requested public-safety funding' },
           { value: 'process-reform', label: 'Neither side — fix the budget process itself' }
         ]
+      },
+      {
+        issueId: 'immigration-enforcement',
+        text: 'What approach to immigration enforcement do you prefer?',
+        options: [
+          { value: 'aggressive-enforcement', label: 'Aggressive enforcement — expanded detention, close cooperation with federal authorities' },
+          { value: 'reform-or-limit-enforcement', label: 'Reform or limit current enforcement approaches' }
+        ]
+      },
+      {
+        issueId: 'independent-watchdog',
+        text: 'Should this office act as an independent check on the Governor, or is alignment with the Governor\'s agenda a plus?',
+        options: [
+          { value: 'independent-check-on-power', label: 'Independent watchdog, even against the Governor\'s own party' },
+          { value: 'aligned-with-governor', label: 'Alignment with the Governor\'s agenda is a feature, not a problem' }
+        ]
       }
     ]
   },
@@ -695,6 +711,20 @@ window.GUIDE = {
       background:
         'Property insurance costs and hurricane risk shape household budgets across the Treasure Coast and increasingly drive decisions about where people can afford to live. Local officials have limited control over rates, but do control resilience spending, building standards within state limits, and beach renourishment.',
       researchPending: true
+    },
+    {
+      id: 'immigration-enforcement',
+      name: 'Immigration Enforcement Authority',
+      background:
+        'Added Aug 2026. Primarily a state and federal question, but directly relevant here: Florida\'s SB 4-C immigration-enforcement law and the Everglades "Alligator Alcatraz" detention facility became live legal and political fights in 2025-2026, and county law enforcement cooperation with state and federal immigration authorities is a real local-impact question, not just an abstract national debate.',
+      sources: []
+    },
+    {
+      id: 'independent-watchdog',
+      name: 'Independence from the Governor',
+      background:
+        'Added Aug 2026. Several statewide Cabinet offices (Attorney General, CFO) are held by close allies of the sitting or outgoing governor who appointed them, raising a real structural question voters can weigh: should these offices operate as an independent check on executive power, or is alignment with the governor\'s agenda itself a legitimate voter preference? This guide takes no position on which answer is correct — only documents what each candidate has said about their own approach.',
+      sources: []
     }
   ],
 
@@ -3598,7 +3628,12 @@ window.GUIDE = {
                       url: 'https://www.wlrn.org/government-politics/2026-08-21/byron-donalds-promotes-his-economic-plans-for-florida-defends-trumps-record',
                       date: '2026-08-21'
                     }
-                }
+                },
+              'immigration-enforcement': {
+                stance: 'aggressive-enforcement',
+                summary: 'Immigration platform is a continuation of the Trump administration\'s enforcement agenda: securing the border and ending "taxpayer handouts to illegals."',
+                source: { title: 'ByronDonalds.com — Issues', url: 'https://byrondonalds.com/issues/', date: '2026-08-25' }
+              }
             },
           record: [
               {
@@ -3780,7 +3815,13 @@ window.GUIDE = {
                       url: 'https://www.wtsp.com/article/news/politics/elections/who-is-david-jolly-democrat-florida-governor-2026-race/67-9baa25b9-1a5d-4da0-ae1c-0168ff555583',
                       date: '2026-08-18'
                     }
-                }
+                },
+              'immigration-enforcement': {
+                stance: 'reform-or-limit-enforcement',
+                summary: 'Called the Everglades immigration-detention facility known as "Alligator Alcatraz" a "callous political stunt" and supports closing it and returning the land to Miami-Dade County, while saying this doesn\'t make him soft on crime.',
+                quote: 'if you violate the law in Florida, you should be held accountable regardless of where you were born.',
+                source: { title: 'CBS Miami — "David Jolly, leading Democratic candidate for 2026 governor, shares views on abortion and Alligator Alcatraz"', url: 'https://www.cbsnews.com/amp/miami/news/democratic-candidate-governor-david-jolly-abortion-rights-alligator-alcatraz', date: '2026-07-01' }
+              }
             },
           record: [
               {
@@ -4975,7 +5016,12 @@ window.GUIDE = {
           occupation: 'Attorney General of Florida (appointed Feb. 2025)',
           bio: 'Born in Destin, FL; competed in track and field at the University of Florida; J.D., Georgetown University Law Center. Associate at Jones Day, then senior counsel/advisor at the U.S. Dept. of Commerce under the first Trump administration. Joined Gov. DeSantis\'s office in 2019, rising to chief of staff in 2021 and serving as campaign manager for DeSantis\'s 2024 presidential run. DeSantis appointed him Attorney General in Jan. 2025, succeeding Ashley Moody; sworn in Feb. 17, 2025 at age 37, among the youngest state AGs in the country.',
           positions: {
-
+            'immigration-enforcement': {
+              stance: 'aggressive-enforcement',
+              summary: 'Architect of "Alligator Alcatraz" and continued enforcement of a state immigration law after a federal court preliminarily blocked it, prioritizing aggressive enforcement even at legal risk.',
+              quote: 'If being held in contempt is what it costs to ... stand firmly behind [Trump\'s immigration agenda, he accepted the consequences].',
+              source: { title: 'Wikipedia — James Uthmeier', url: 'https://en.wikipedia.org/wiki/James_Uthmeier', date: '2026-08-25' }
+            }
             },
           record: [
               {
@@ -5083,7 +5129,12 @@ window.GUIDE = {
           occupation: 'Attorney; former Assistant U.S. Secretary of Labor',
           bio: 'Born in High Point, NC; raised in Miami, son of a Cuban refugee who came via Operation Pedro Pan. Eagle Scout; B.A., Brown University; Peace Corps 2000-2003; J.D., Harvard Law School. Worked as a legal-aid attorney on wage-theft cases. Florida House 2012-2016 (upset win over a veteran incumbent); Florida Senate 2016-2020, sitting on the Judiciary and Appropriations committees. Nominated by President Biden as Assistant Secretary of Labor for Employment and Training in 2021; confirmation was repeatedly delayed before finally passing 50-48 in March 2024, and he served in the role through Jan. 2025.',
           positions: {
-
+            'independent-watchdog': {
+              stance: 'independent-check-on-power',
+              summary: 'Central campaign message: the AG\'s office under Uthmeier has become an extension of the Governor\'s office rather than an independent check, and he would restore that independence.',
+              quote: 'the attorney general is like the governor\'s personal lawyer... a press secretary for the governor.',
+              source: { title: 'WUSF — "Florida attorney general candidate José Javier Rodríguez on \'fighting for the little guy\' and more"', url: 'https://www.wusf.org/politics-issues/2026-03-31/florida-matters-florida-attorney-general-candidate-jose-javier-rodriguez-talks-priorities', date: '2026-03-31' }
+            }
             },
           record: [
               {
@@ -5388,7 +5439,13 @@ window.GUIDE = {
                       url: 'https://www.cbsnews.com/miami/news/annette-taddeo-florida-cfo-race-insurance-oversight-homeowners/',
                       date: '2026-06-14'
                     }
-                }
+                },
+              'independent-watchdog': {
+                stance: 'independent-check-on-power',
+                summary: 'Directly criticizes Ingoglia\'s tenure, saying the CFO office has become "a lap dog for the governor" rather than "the watchdog for Floridians."',
+                quote: 'If you were to describe what is the one job of the CFO, it is to be the watchdog for our money.',
+                source: { title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"', url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november', date: '2026-07-24' }
+              }
             },
           record: [
               {
