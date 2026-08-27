@@ -514,6 +514,49 @@ window.GUIDE = {
           { value: 'expand-aca-access', label: 'Yes — extend or expand ACA subsidies and coverage' },
           { value: 'oppose-expanding-aca', label: 'No — let the expanded subsidies expire' }
         ]
+      },
+      {
+        issueId: 'abortion',
+        text: 'What approach to abortion policy do you prefer?',
+        options: [
+          { value: 'restrict', label: 'Restrict abortion access — bans or narrow exceptions' },
+          { value: 'protect-access', label: 'Protect or expand abortion access' }
+        ]
+      },
+      {
+        issueId: 'guns',
+        text: 'What approach to gun policy do you prefer?',
+        options: [
+          { value: 'expand-access', label: 'Loosen restrictions on gun ownership and carry' },
+          { value: 'gun-safety-reform', label: 'New gun-safety measures — background checks, assault-weapons limits' },
+          { value: 'targeted-restrictions', label: 'Narrow, targeted restrictions — e.g. youth access, safe storage' }
+        ]
+      },
+      {
+        issueId: 'lgbtq',
+        text: 'What approach to LGBTQ+ policy do you prefer?',
+        options: [
+          { value: 'expand-protections', label: 'Expand LGBTQ+ legal protections' },
+          { value: 'restrict', label: 'Restrict LGBTQ+-related policies — e.g. gender-transition care for minors, trans athletes' }
+        ]
+      },
+      {
+        issueId: 'data-centers',
+        text: 'How should AI data centers be handled?',
+        options: [
+          { value: 'oppose-bans', label: 'Keep developing them — favor safeguards over bans or moratoriums' },
+          { value: 'support-regulation', label: 'Allow them, but protect local zoning control, ratepayers, and water resources' },
+          { value: 'concerned', label: 'General concern about grid and water impact, without a specific policy yet' },
+          { value: 'moratorium-or-stop', label: 'Pause, moratorium, or stop new data centers' }
+        ]
+      },
+      {
+        issueId: 'drugs',
+        text: 'What approach to recreational marijuana legalization do you prefer?',
+        options: [
+          { value: 'legalize-regulate', label: 'Legalize, tax, and regulate it' },
+          { value: 'oppose-legalization', label: 'Oppose recreational legalization' }
+        ]
       }
     ]
   },
@@ -899,6 +942,27 @@ window.GUIDE = {
             },
             {
               type: 'fact',
+              claim: 'At an Aug. 2026 candidate forum, said affordable housing is primarily driven by the private sector, not government mandates.',
+              detail: 'A limited-government/market-oriented framing on housing policy, consistent with her "less government" statement in the April 2026 interview above.',
+              date: '2026-08-07',
+              source: { title: 'Hometown News — District 2 candidate forum recap', url: 'https://www.hometownnewstc.com/news/indian_river/irc-district-2-commission-candidates-speak-out/article_40c05ea4-92bf-5a8a-9f4c-49cdae761f0d.html', date: '2026-08-07' }
+            },
+            {
+              type: 'fact',
+              claim: 'Resigned as founding chapter chair of the Indian River County Moms for Liberty chapter in Aug. 2026, saying the national organization was emphasizing federal issues over local, grassroots ones.',
+              quote: 'We wanted to be more grassroots and local... It was getting to be too much at the White House.',
+              detail: 'She remains active locally, chairing "Family First Indian River." Self-describes as a "family-first conservative leader."',
+              date: '2026-08-18',
+              source: { title: 'Moms for Liberty portal — news item', url: 'https://portal.momsforliberty.org/news/jennifer-pippin-commissioner-district-2-candidate-advances-to-general-election/', date: '2026-08-18' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide asked whether any County Commission District 2 candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development — both genuinely live regional issues. No statement from Pippin on either topic was found, despite two separate multi-topic candidate forums being reviewed.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
               claim: 'Led the campaign that removed books from Indian River County school libraries.',
               detail: 'Her own framing: "No books are banned in the USA. Our school district has removed over 300 pornographic and sexually explicit content books following local, state and federal laws." Critics note the challenges included a graphic-novel adaptation of The Diary of Anne Frank and Alan Gratz\'s "Ban This Book," a novel about book banning — the latter drew national coverage.',
               date: '2025-10-13',
@@ -1028,12 +1092,13 @@ window.GUIDE = {
           positions: {
             amendment: {
               stance: 'oppose',
-              summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum.',
+              summary: 'OPPOSED Amendment 3, the November property tax measure, at a pre-primary candidate forum, saying it would defund police, EMS, fire rescue, parks/recreation, and the Go-Line bus system.',
               source: { title: 'Vero News — District 2 candidate forum', url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-07' }
             },
             lagoon: {
               stance: 'regulatory-accountability',
               summary: 'In a candidate Q&A he reportedly favors holding polluters accountable as his approach to lagoon health, a different emphasis than the infrastructure-focused proposals from the Republicans in this race.',
+              quote: 'stormwater runoff and pollution from nitrates, phosphorus and algae blooms are causing an ecological disaster.',
               source: { title: 'Hometown News Treasure Coast — District 2 candidate Q&A', url: 'https://www.hometownnewstc.com/news/indian_river/irc-district-2-commission-candidates-speak-out/article_40c05ea4-92bf-5a8a-9f4c-49cdae761f0d.html', date: '2026-08-08' }
             }
           },
@@ -1044,6 +1109,12 @@ window.GUIDE = {
               detail: 'His answers to TCPalm\'s candidate questionnaire exist but sit behind that outlet\'s paywall. This is a real information deficit for voters and is stated plainly rather than left as an empty section. No criminal record, litigation, ethics matter, or controversy was located either — there is very little independent coverage of him in any direction.',
               date: '2026-08-05',
               source: { title: 'Sebastian Daily — the one substantive profile located', url: 'https://www.sebastiandaily.com/business/multiple-candidates-enter-race-for-indian-river-county-commission-district-2-seat-90632/' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide asked whether any County Commission District 2 candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development — both genuinely live regional issues. No statement from Hardingham on either topic was found.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://veronews.com/2026/08/07/district-2-commissioner-candidates-discuss-key-issues-before-primary/', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -1184,6 +1255,12 @@ window.GUIDE = {
                 title: 'This guide verification standard',
                 url: 'methodology.html'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'No commission-meeting record, news article, or campaign statement was found connecting Loar to a position on automated license-plate-reader ("Flock") surveillance cameras, despite his 12 years as Sheriff. On AI data centers, county zoning currently prohibits the use (a July 2026 Planning Director ruling), the county has no formal regulatory framework in place, and — despite Loar chairing the Board that will eventually have to vote on any zoning change — this guide found no recorded position from him.',
+              date: '2026-08-27',
+              source: { title: 'WQCS — "Indian River County: No Path Yet for Data Centers"', url: 'https://www.wqcs.org/wqcs-news/2026-08-04/indian-river-county-no-path-yet-for-data-centers?_amp=true', date: '2026-08-04' }
             }
           ],
           finance: {
@@ -1273,6 +1350,12 @@ window.GUIDE = {
                 title: 'This guide review of public sources',
                 url: 'https://www.aol.com/articles/indian-river-county-commission-district-090321000.html'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'No commission-meeting record, news article, or campaign statement was found connecting Jaffe to a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development, though the latter is a genuinely live county zoning question his opponent will help decide if elected.',
+              date: '2026-08-27',
+              source: { title: 'This guide review of public sources', url: 'https://votemarcjaffe.com/issues', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -1374,6 +1457,19 @@ window.GUIDE = {
               detail: 'Her concern: charter operators occupy public facilities without contributing financially while the district still pays maintenance, custodial, safety, food, nursing and transportation costs. IMPORTANT NUANCE: Rosario campaigns as a school choice supporter (magnet and classical programs, homeschooling) while opposing charter operators taking district buildings. These are not contradictory but are easily conflated.',
               date: '2025-10-24',
               source: { title: 'WQCS', url: 'https://www.wqcs.org/wqcs-news/2025-10-24/indian-river-county-school-board-pleads-push-back-against-charter-schools-moving-in' }
+            },
+            {
+              type: 'fact',
+              claim: 'Her campaign site states her "core principles are rooted in limited government, local control, fiscal responsibility, transparency, and equal opportunities for ALL students," and says she opposes "any curriculum or policies that do not reflect the values of Indian River County, Florida State Statutes, the Florida Constitution, or the rules and directives of the Florida Department of Education."',
+              detail: 'This is unusually explicit ideological self-labeling for an officially nonpartisan office, worth noting for exactly that reason. She is endorsed by Gov. Ron DeSantis (added to the endorsements list below).',
+              date: '2026-08-27',
+              source: { title: 'ReElectJackieRosario campaign site — "About Jackie"', url: 'https://www.reelectjackie.com/copy-of-about-jackie', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide asked whether any School Board District 2 statement addresses automated license-plate-reader ("Flock") surveillance cameras or AI data-center development — both genuinely live regional issues, though outside this office\'s authority. No relevant statement from Rosario was found, and the topics are not within School Board jurisdiction in any source located.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://www.reelectjackie.com/copy-of-about-jackie', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -1624,6 +1720,12 @@ window.GUIDE = {
                 title: 'This guide review of public sources',
                 url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=562&rellevel=4&committee=N'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'Her campaign site pledges to "work with taxpayers and staff to provide the best services, a fiscally sound program, and an environmentally stable future," and says "communication and transparency are the keys to a successful future." No left/right ideological label found, and neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located — neither candidate has commented on either topic.',
+              date: '2026-08-27',
+              source: { title: 'Anna Kirkland campaign site', url: 'https://annakirklandmosquitocontrol.com/', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -1688,6 +1790,13 @@ window.GUIDE = {
                 title: 'This guide review of public sources',
                 url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N'
               }
+            },
+            {
+              type: 'unverified',
+              claim: 'A source describes a Craig MacCoy prioritizing "the Lagoon and wetlands first," then public education, "while being good stewards for taxpayers," and favoring integrated pest management.',
+              detail: 'This guide could not confirm this statement is specific to his 2026 Seat 2 candidacy — it may date to an earlier MacCoy candidacy for a different seat (he previously ran for Seat 1 in 2020). Flagged as uncertain rather than presented as a confirmed current position. Neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources (date/seat uncertain)", url: 'https://www.irmosquito.com/', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -1822,7 +1931,10 @@ window.GUIDE = {
         { id: 'oconnor', name: "John O'Connor", party: 'NONPARTISAN',
           occupation: 'Retired Indian River County firefighter/paramedic; former union president',
           bio: 'A lifelong Vero Beach resident who attended St. Helen Catholic School, Vero Beach Junior High, and Vero Beach High School before earning a bachelor\'s in psychology from the University of Central Florida. Served over two decades as an Indian River County firefighter and paramedic, and led the Professional Firefighters and Paramedics of Indian River County as president for 12 years. Also led the Vero Velo Bicycle Club and directed the Tour de Vero charity cycling event for three years.',
-          positions: {}, record: [], finance: null, endorsements: [],
+          positions: {}, record: [
+            { type: 'fact', claim: 'This guide asked whether any Vero Beach City Council candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development. No statement from O\'Connor on either topic was found — his public framing throughout is public-safety/community-service oriented rather than fiscal or culture-war, and no ideological self-label was found.',
+              date: '2026-08-27', source: { title: "This guide's review of public sources", url: 'https://www.votejohnoconnor.com/', date: '2026-08-27' } }
+          ], finance: null, endorsements: [],
           links: { 'Campaign website': 'https://www.votejohnoconnor.com/' } },
         { id: 'zudans', name: 'Tracey Lockwood Zudans', party: 'NONPARTISAN',
           occupation: 'Former Vero Beach City Council member',
@@ -1838,7 +1950,12 @@ window.GUIDE = {
             { type: 'vote', claim: 'On May 28, 2024, voted with a 3-2 council majority to pursue the "SuDa" Three Corners redevelopment proposal over "Clearpath." After that vote, she received an email from Brian Barefoot suggesting his support for her county-commission campaign was contingent on how she voted — which she has publicly cited as the basis for recusing herself from the subsequent June 7, 2024 vote to disqualify SuDa, even though the city attorney had advised her the email did not meet Florida\'s statutory recusal requirements.',
               quote: 'support for my run for county commission was based on my vote, or not on my vote.',
               detail: 'The June 7, 2024 vote tallies (reported as 3-1 with one abstention to disqualify SuDa, and 4-1 to restart the developer-selection process) are sourced only to a partisan Substack in this guide\'s research; an independent read of the city\'s own council minutes would corroborate the exact tallies.',
-              date: '2024-06-07', source: { title: 'The Sunshine Journal (partisan Substack) — reporting on the Three Corners recusal', url: 'https://thomasaugustus.substack.com/p/update-mayor-cotugnos-political-failure', date: '2024-06-07' } }
+              date: '2024-06-07', source: { title: 'The Sunshine Journal (partisan Substack) — reporting on the Three Corners recusal', url: 'https://thomasaugustus.substack.com/p/update-mayor-cotugnos-political-failure', date: '2024-06-07' } },
+            { type: 'fact', claim: 'Was named "Fiscal Conservative of the Year" by the Taxpayers Association of Indian River County — a clear, sourced ideological marker for an officially nonpartisan race.',
+              detail: 'The exact award date was not confirmed in this guide\'s research pass.',
+              date: '2026-08-27', source: { title: "Tracey Zudans campaign site", url: 'https://traceyzudans.com/', date: '2026-08-27' } },
+            { type: 'fact', claim: 'This guide asked whether any Vero Beach City Council candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development. No statement from Zudans on either topic was found.',
+              date: '2026-08-27', source: { title: "This guide's review of public sources", url: 'https://traceyzudans.com/', date: '2026-08-27' } }
           ], finance: null, endorsements: [],
           links: { 'Campaign website': 'https://traceyzudans.com/' } },
         { id: 'vos', name: 'Aaron Vos', party: 'NONPARTISAN', incumbent: true,
@@ -1857,7 +1974,11 @@ window.GUIDE = {
               quote: 'Probably a little more rigor on the next round. Maybe have more of a briefing or an update that helps qualify another extension.',
               date: '2026-08-13', source: { title: 'WQCS — "Three Corners project gets additional 30 day extension in Vero Beach"', url: 'https://www.wqcs.org/wqcs-news/2026-08-13/three-corners-project-gets-additional-30-day-extension-in-vero-beach', date: '2026-08-13' } },
             { type: 'fact', claim: 'This guide could not locate a 2026-cycle campaign treasurer\'s report for Vos on the City of Vero Beach\'s filing system as of late August 2026 — only 2024-cycle filings are indexed there.',
-              date: '2026-08-26', source: { title: 'City of Vero Beach DocumentCenter', url: 'https://www.covb.org/161/Election-Information', date: '2026-08-26' } }
+              date: '2026-08-26', source: { title: 'City of Vero Beach DocumentCenter', url: 'https://www.covb.org/161/Election-Information', date: '2026-08-26' } },
+            { type: 'fact', claim: 'His campaign site states he supports "promoting frugality while ensuring that critical maintenance, upgrades, and safety investments are not overlooked," and wants to "strengthen the relationship between Vero Beach and Indian River County" on growth, traffic, and community-venue issues — a fiscally-moderate general philosophy distinct from his specific FY2025-26 budget vote recorded above.',
+              date: '2026-08-27', source: { title: 'Aaron Vos campaign site', url: 'https://www.vosforvero.com/', date: '2026-08-27' } },
+            { type: 'fact', claim: 'This guide asked whether any Vero Beach City Council candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development. No statement from Vos on either topic was found.',
+              date: '2026-08-27', source: { title: "This guide's review of public sources", url: 'https://www.vosforvero.com/', date: '2026-08-27' } }
           ], finance: null, endorsements: [],
           links: { 'Campaign website': 'https://www.vosforvero.com/' } },
         { id: 'maccallum', name: 'Robert MacCallum', party: 'NONPARTISAN',
@@ -1998,6 +2119,33 @@ window.GUIDE = {
                 url: 'https://www.flhouse.gov/Sections/Representatives/sponsoredbills.aspx?MemberId=4870&SessionId=113',
                 date: '2026-08-05'
               }
+            },
+            abortion: {
+              stance: 'restrict',
+              summary: 'Voted for Florida\'s ban on abortion after 6 weeks gestation. No 2026-cycle campaign statement on abortion was located — this vote is the only documented record.',
+              source: {
+                title: 'Florida House roll call, SB 300 (2023)',
+                url: 'https://www.flsenate.gov/Session/Bill/2023/300/Vote/HouseVote_s00300e1107.PDF',
+                date: '2023-04-13'
+              }
+            },
+            guns: {
+              stance: 'expand-access',
+              summary: 'Voted for Florida\'s permitless concealed-carry ("constitutional carry") law.',
+              source: {
+                title: 'Florida House roll call, CS/HB 543 (2023)',
+                url: 'https://www.flsenate.gov/Session/Bill/2023/543/Vote/HouseVote_h00543e1046.PDF',
+                date: '2023-03-24'
+              }
+            },
+            'data-centers': {
+              stance: 'support-regulation',
+              summary: 'Voted for Florida\'s 2026 data-center regulation bill, which preserves local zoning authority over data centers, sets utility service standards for them, and restricts water-management-district permits tied to large-scale facilities — a bill aimed at protecting local control and ratepayers/water resources rather than one that blocks data centers outright.',
+              source: {
+                title: 'Florida House roll call, CS/CS/SB 484 (2026)',
+                url: 'https://www.flsenate.gov/Session/Bill/2026/484/Vote/HouseVote_s00484e1809.PDF',
+                date: '2026-03-11'
+              }
             }
           },
           record: [
@@ -2059,6 +2207,26 @@ window.GUIDE = {
                 title: 'This guide review of news and public records',
                 url: 'https://ballotpedia.org/Florida_House_of_Representatives_District_34'
               }
+            },
+            {
+              type: 'vote',
+              claim: 'Did NOT VOTE on CS/CS/HB 1069 (2023), the expansion of Florida\'s "Parental Rights in Education" law ("Don\'t Say Gay") to grades 4-12 and additional restrictions on preferred-pronoun use in schools. It passed the House 77-35; he was one of only 7 members not voting.',
+              detail: 'A second instance in his record of not casting a vote on a marquee, party-line bill (alongside the February 2026 property-tax non-vote documented above). No public explanation for either missed vote was located. This guide is not characterizing the non-vote as a hidden position in either direction — it is reported as what it is, a non-vote on his own party\'s bill.',
+              date: '2023-03-31',
+              source: { title: 'Florida House roll call PDF, CS/CS/HB 1069', url: 'https://flsenate.gov/Session/Bill/2023/1069/Vote/HouseVote_h01069c2059.PDF', date: '2023-03-31' }
+            },
+            {
+              type: 'fact',
+              claim: 'Was the primary sponsor of HB 801 (2026), which would have licensed retail sale of THC-infused beverages through Florida\'s Division of Alcoholic Beverages and Tobacco. It died in committee without a floor vote.',
+              detail: 'This is a narrow commerce-licensing bill for a specific beverage category, not a marijuana-legalization measure — this guide is not characterizing it as one. No Brackett statement or vote was found on the 2024 recreational-marijuana ballot initiative or on opioid policy.',
+              date: '2026-03-13',
+              source: { title: 'Florida Senate bill history, HB 801', url: 'https://www.flsenate.gov/Session/Bill/2026/801', date: '2026-03-13' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide asked whether Brackett has taken a position on automated license-plate-reader ("Flock") surveillance cameras — a live August 2026 statewide controversy after Gov. DeSantis called the technology "out of control" and warned of a "surveillance state." No statement, bill, or committee action was found, despite Brackett\'s seat on the House Criminal Justice Subcommittee, which gives him direct jurisdiction over the issue.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4870', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -2253,6 +2421,12 @@ window.GUIDE = {
                 url: 'https://jordynforfl.com/',
                 date: '2026-08-05'
               }
+            },
+            guns: {
+              stance: 'targeted-restrictions',
+              summary: 'Under a "Tackling Youth Gun Violence" platform plank, supports making clear that minors cannot legally purchase or carry firearms, and requiring adults to safely store firearms in the presence of minors. A narrow position focused on youth access and safe storage, not a general gun-control platform — no assault-weapons, red-flag-law, or universal-background-check position was found.',
+              quote: "He is not interested in taking anyone's Second Amendment rights away. He is interested in making sure that right comes with the responsibility to keep weapons out of children's hands.",
+              source: { title: 'Campaign website', url: 'https://jordynforfl.com/', date: '2026-08-27' }
             }
           },
           record: [
@@ -2283,6 +2457,20 @@ window.GUIDE = {
                 title: 'Campaign website',
                 url: 'https://jordynforfl.com/'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'Abortion and LGBTQ+ policy are not addressed anywhere on his platform. On drug policy, marijuana and opioid policy are also not addressed. On surveillance, a platform plank titled "Standing Up to Corporate Projects That Harm Our Future" states he will "oppose surveillance technologies and industrial installations that threaten environmental health and civil liberties without meaningful community input" — but that plank sits in his environmental/land-use section, pairs surveillance with industrial development, and does not name Flock cameras, license plate readers, or AI data centers specifically. This guide presents the plank as written rather than characterizing it as a position on either topic without further confirmation from the campaign.',
+              date: '2026-08-27',
+              source: { title: 'Campaign website', url: 'https://jordynforfl.com/', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
+              claim: 'Frames his candidacy in class/populist terms rather than a formal ideological label.',
+              quote: "tired of watching politicians who have never missed a meal decide who deserves help... written by someone who has been uninsured, who has been homeless, and who has watched the people in power build their portfolios while his neighbors lost their homes.",
+              detail: 'He does not use a term like "progressive," "democratic socialist," or "moderate" to describe himself anywhere located by this guide.',
+              date: '2026-08-27',
+              source: { title: 'Campaign website', url: 'https://jordynforfl.com/', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -2346,7 +2534,25 @@ window.GUIDE = {
               source: { title: 'Congressional committee assignments and campaign material', url: 'https://soto.house.gov/', date: '2026-08-17' } },
             housing: {
               summary: 'Introduced the "Protect Our Homes Act" in 2026, a federal housing bill — this guide has not yet obtained the bill\'s specific provisions. Correction, Aug 2026: this had been tagged with an "expand affordable housing" stance for the match quiz based on the bill\'s name alone — since this guide has not actually verified what the bill does, no quiz stance is assigned; it will show as "no data" rather than a guessed match.',
-              source: { title: 'Congress.gov / campaign material', url: 'https://www.congress.gov/member/darren-soto/S001200', date: '2026-08-17' } }
+              source: { title: 'Congress.gov / campaign material', url: 'https://www.congress.gov/member/darren-soto/S001200', date: '2026-08-17' } },
+            abortion: {
+              stance: 'protect-access',
+              summary: 'Campaign site states he supports abortion rights and that reproductive-health decisions should be between a woman and her doctor.',
+              source: { title: 'Campaign website', url: 'https://www.darrensoto.com/reproductiverights', date: '2026-08-05' } },
+            guns: {
+              stance: 'gun-safety-reform',
+              summary: 'Endorsed by GIFFORDS for 2026, citing his vote for the Bipartisan Safer Communities Act (2022) and support for expanded background checks, "red flag"-style laws, and banning assault weapons, large-capacity magazines, and bump stocks. Notable reversal: as a Florida state legislator he held an NRA "A" rating; in Congress his record and endorsements moved toward gun-safety-group alignment instead.',
+              quote: "I'll fight for commonsense gun safety reforms that respect Second Amendment rights while keeping guns out of dangerous hands.",
+              source: { title: 'GIFFORDS 2026 candidate page', url: 'https://giffords.org/candidates/darren-soto/', date: '2026-08-27' } },
+            lgbtq: {
+              stance: 'expand-protections',
+              summary: 'Voted for the Respect for Marriage Act, which requires federal recognition of same-sex and interracial marriages. Serves as Vice Chair of the Congressional Equality Caucus, and has stated support for the Equality Act (nationwide LGBTQ nondiscrimination protections).',
+              quote: 'I am proud to have voted for the Respect for Marriage Act to protect same-sex and interracial marriages in Central Florida and across America.',
+              source: { title: 'House Clerk roll call 513, 117th Congress', url: 'https://clerk.house.gov/Votes/2022513', date: '2022-12-08' } },
+            drugs: {
+              stance: 'legalize-regulate',
+              summary: 'NORML rates his record "Legalize, Tax, and Regulate." Cosponsored multiple federal marijuana-descheduling and cannabis-banking bills 2019-2021 and voted for the MORE Act and SAFE Banking Act — this guide\'s most thoroughly documented position of any candidate on this issue.',
+              source: { title: "NORML congressional vote tracker", url: 'https://vote.norml.org/politicians/67618', date: '2026-08-27' } }
           },
           record: [
             {
@@ -2368,6 +2574,27 @@ window.GUIDE = {
                 title: 'This guide verification standard',
                 url: 'methodology.html'
               }
+            },
+            {
+              type: 'vote',
+              claim: 'Voted YES on both House-passed versions of the George Floyd Justice in Policing Act (2020 and again 3/4/2021), which would have banned chokeholds and no-knock drug warrants, ended racial profiling, eliminated qualified immunity for officers, and created a national police-misconduct registry. Neither version cleared the Senate.',
+              detail: 'No statement, bill, or vote from Soto on automated license-plate-reader ("Flock") surveillance specifically was found, despite bipartisan federal bills addressing ALPR/facial-recognition searches being introduced in the current Congress. State this as a verified absence.',
+              date: '2021-03-04',
+              source: { title: 'House Clerk roll call; The Hill coverage', url: 'https://clerk.house.gov/Votes/2022513', date: '2021-03-04' }
+            },
+            {
+              type: 'fact',
+              claim: 'Despite AI data centers being one of the most active Florida policy stories of 2026, this guide found no Soto statement, press release, or bill on data centers or their water/power impact.',
+              detail: 'soto.house.gov\'s press-release archive could not be crawled directly (HTTP 403) — this is a verified absence for this research pass, not a confirmed lack of position.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://soto.house.gov/', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
+              claim: 'Holds simultaneous membership in five congressional caucuses spanning the Democratic Party\'s range: the New Democrat Coalition (pragmatic/centrist-leaning), the Congressional Progressive Caucus (the party\'s left flank), the bipartisan Problem Solvers Caucus, the Congressional Hispanic Caucus (Deputy Chair), and the Congressional Equality Caucus (Vice Chair).',
+              detail: 'No first-person Soto quote applying an ideological label like "progressive" or "moderate" to himself was located — this guide presents the caucus memberships as a documented fact and lets readers draw their own conclusion rather than asserting a label on his behalf.',
+              date: '2026-08-27',
+              source: { title: 'Wikipedia, sourced summary of official biography', url: 'https://en.wikipedia.org/wiki/Darren_Soto', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -2421,7 +2648,23 @@ window.GUIDE = {
                 url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-us-house-district-9-republican-primary/',
                 date: '2026-07-31'
               }
-            }
+            },
+            abortion: {
+              stance: 'restrict',
+              summary: 'Self-reported questionnaire answers: opposes elective abortion except in cases of rape, incest, or life of the mother; supports enforcing the federal Comstock Act; opposes taxpayer funding for abortion providers; and says embryos created through IVF/artificial methods should be protected from purposeful destruction.',
+              source: { title: 'iVoterGuide candidate questionnaire (AFA Action) — a conservative Christian advocacy source; used here only as Green\'s own self-reported answers, not for its rating label', url: 'https://ivoterguide.com/candidate/77073/race/28518/election/1431', date: '2026-08-22' } },
+            guns: {
+              stance: 'expand-access',
+              summary: 'Self-reported questionnaire answer: current gun-ownership restrictions are "too many," i.e. favors fewer restrictions. A widely circulated claim that he holds a specific NRA "AQ" rating could not be independently confirmed by this guide and does not appear on his own campaign site — not printed here as confirmed fact.',
+              source: { title: 'iVoterGuide candidate questionnaire (AFA Action)', url: 'https://ivoterguide.com/candidate/77073/race/28518/election/1431', date: '2026-08-22' } },
+            lgbtq: {
+              stance: 'restrict',
+              summary: 'Self-reported questionnaire answers — the most specific LGBTQ-policy statements of any candidate in this guide\'s state/federal research: "strongly agrees" that gender-transition care for minors constitutes child abuse, that marriage is a "God-ordained... union of one man and one woman," and that biological males should not participate in women\'s sports or use women\'s facilities.',
+              source: { title: 'iVoterGuide candidate questionnaire (AFA Action)', url: 'https://ivoterguide.com/candidate/77073/race/28518/election/1431', date: '2026-08-22' } },
+            'data-centers': {
+              stance: 'concerned',
+              summary: 'States he is "greatly concerned about the impact of data centers on the electrical grid, water usage" — a general concern rather than a specific regulatory proposal.',
+              source: { title: 'ClickOrlando/Osceola News-Gazette voter guide questionnaire', url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-us-house-district-9-republican-primary/', date: '2026-07-31' } }
           },
           record: [
             {
@@ -2453,6 +2696,20 @@ window.GUIDE = {
                 title: 'ClickOrlando voter guide questionnaire',
                 url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-us-house-district-9-republican-primary/'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'No statement, position, or mention was found connecting Green to Florida\'s live August 2026 Flock-camera/license-plate-reader surveillance controversy. No statement was located on marijuana legalization/decriminalization, hemp/THC regulation, or opioid policy either, in his campaign site, the iVoterGuide questionnaire, or news search.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://dangreenfl.com/', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
+              claim: 'Asked to self-identify his overall political position on the iVoterGuide questionnaire, selected "Very Conservative" — the only candidate across this guide\'s state and federal research to put a direct, first-person ideological label on himself in a located source.',
+              detail: 'Endorsed by Rep. Jim Jordan (R-OH), who called him "the conservative leader we can count on to stand up to the radicals," and by former Sen. Connie Mack III, who called him "the true conservative fighter we need in Congress." His campaign slogan is "Make America Affordable Again."',
+              quote: "I didn't fight radical extremists overseas just to stand by and watch left-wing extremists attack our freedoms here at home.",
+              date: '2026-07-30',
+              source: { title: 'iVoterGuide questionnaire; Lakeland Ledger; dangreenfl.com/endorsements', url: 'https://ivoterguide.com/candidate/77073/race/28518/election/1431', date: '2026-08-22' }
             }
           ],
           finance: {
@@ -2929,6 +3186,30 @@ window.GUIDE = {
                 title: 'WLRN',
                 url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'On abortion, posted in 2022: "Every abortion kills a child who deserves protection and a chance to grow in a loving family. As an adopted child in a family that fostered children, I know that adoption is the alternative to abortion." No 2026-campaign-specific restatement of this position was found — this guide treats it as his established general position absent any documented reversal, but flags that it predates this campaign cycle.',
+              date: '2022-04-01',
+              source: { title: 'Wilton Simpson on X/Twitter', url: 'https://twitter.com/WiltonSimpson/status/1514644895377637381', date: '2022-04-01' }
+            },
+            {
+              type: 'fact',
+              claim: 'As a state senator, championed and later as Commissioner touted the "Florida Arms and Ammo Act" (2023), which bars collection of Floridians\' financial/purchase data tied to firearm and ammunition sales, to prevent what he called a "back-door firearm registry." Separately, as a senator in 2018 he voted FOR the post-Parkland Marjory Stoneman Douglas Public High School Safety Act (SB 7026), which raised the minimum purchase age for long guns from 18 to 21 — a more restrictive vote than fellow Republicans Donalds and Ingoglia elsewhere in this guide, who voted against it. This guide is not tagging a single directional "guns" stance for Simpson because his record combines a 2018 age-restriction vote with a 2023 gun-purchase-privacy law — two different dimensions of gun policy, not a consistent single direction.',
+              date: '2023-01-01',
+              source: { title: 'FDACS press release; WLRN critique via opponent Matt Taylor', url: 'https://www.fdacs.gov/News-Events/Press-Releases/2023-Press-Releases/Commissioner-Wilton-Simpson-Applauds-Legislature-for-Passing-Florida-Arms-and-Ammo-Act', date: '2023-01-01' }
+            },
+            {
+              type: 'fact',
+              claim: 'No on-the-record Simpson statement was found on LGBTQ+ policy or on automated license-plate-reader ("Flock") surveillance cameras — a live 2026 issue. He did not respond to News4JAX\'s 2026 candidate questionnaire, which would have solicited statements on both.',
+              date: '2026-08-27',
+              source: { title: 'News4JAX 2026 Voter\'s Guide, Florida Agriculture Commissioner', url: 'https://www.news4jax.com/voters-guide/2026/07/31/2026-voters-guide-florida-agriculture-commissioner/', date: '2026-08-27' }
+            },
+            {
+              type: 'fact',
+              claim: 'On drug policy, pushed legislation (through his hemp-regulating agency) to restrict hemp-derived THC products that target children or produce intoxicating effects — Gov. DeSantis vetoed that specific bill, so it did not become law as written, but it documents his restrictive policy direction on hemp/THC. Separately praised a state appellate ruling that stopped a "back-door effort to legalize recreational marijuana" via the ballot process. No AI-data-center-specific statement was found, though SB 484 (2026, passed by the Legislature, not authored by Simpson) requires data centers to pay their own utility costs and allows water districts to require reclaimed water use in their permits.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://wiltonsimpson.com', date: '2026-08-27' }
             }
           ],
           finance: {
@@ -3051,7 +3332,15 @@ window.GUIDE = {
                 title: 'WLRN',
                 url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
               }
-            }
+            },
+            'data-centers': {
+              stance: 'moratorium-or-stop',
+              summary: 'Pledged to "stop AI data centers in Florida" as part of protecting water and farmland from overdevelopment — a harder line than any other candidate in this guide\'s agriculture-commissioner or governor research.',
+              source: { title: 'News4JAX voter guide; campaign website', url: 'https://www.joeyforflorida.com/', date: '2026-08-27' } },
+            drugs: {
+              stance: 'legalize-regulate',
+              summary: 'Supports "cannabis legalization to support our veterans and help tackle the opioid crisis" — an explicit position linking marijuana legalization to opioid policy.',
+              source: { title: 'News4JAX voter guide', url: 'https://www.news4jax.com/voters-guide/2026/07/31/2026-voters-guide-florida-agriculture-commissioner/', date: '2026-08-27' } }
           },
           record: [
             {
@@ -3062,6 +3351,12 @@ window.GUIDE = {
                 title: 'WLRN',
                 url: 'https://www.wlrn.org/government-politics/2026-08-10/election-2026-floridas-primary-races-for-commissioner-of-agriculture'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'Pledged to "fight to stop Flock surveillance cameras as an invasion of privacy and illegal data collection," and separately said she opposes "increased surveillance of US citizens." On abortion and gun policy, she did not address either in the News4JAX candidate questionnaire and no other on-the-record statement was located — stated as a verified absence, not inferred. One biographical detail: her mother is described as a "firearms specialist and trainer," which is family biography, not a stated Atkins policy position. On LGBTQ+ policy, she has received an endorsement from the Jacksonville LGBT Chamber, but no detailed policy statement beyond that endorsement was located.',
+              date: '2026-08-27',
+              source: { title: 'News4JAX 2026 Voter\'s Guide, Florida Agriculture Commissioner', url: 'https://www.news4jax.com/voters-guide/2026/07/31/2026-voters-guide-florida-agriculture-commissioner/', date: '2026-08-27' }
             },
             {
               type: 'fact',
@@ -3255,7 +3550,23 @@ window.GUIDE = {
               stance: 'oppose-expanding-aca',
               summary: 'Voted against extending enhanced ACA premium subsidies in December 2025, alongside Sen. Rick Scott. This guide could not locate a direct quote from Moody defending that vote on healthcare-policy grounds — her public remarks from that period focus on blaming Democrats for the government shutdown, not the subsidies\' merits.',
               source: { title: 'Florida Politics — "Ashley Moody, Rick Scott vote to kill extension of health care subsidies"', url: 'https://floridapolitics.com/archives/769482-ashley-moody-rick-scott-vote-to-kill-extension-of-health-care-subsidies/', date: '2025-12-01' }
-            }
+            },
+            abortion: {
+              stance: 'restrict',
+              summary: 'Opposes broad abortion rights. Cosponsored the Born-Alive Abortion Survivors Protection Act and introduced the Child Interstate Abortion Notification Act (Jan. 2026). As Attorney General, challenged the 2024 abortion-rights ballot amendment (Amendment 4, which got 57%, short of the 60% threshold needed) before the Florida Supreme Court.',
+              source: { title: "This guide's review of public sources", url: 'https://www.moody.senate.gov/', date: '2026-08-27' } },
+            guns: {
+              stance: 'expand-access',
+              summary: 'Holds an "A" rating from the NRA, which the organization describes as "solidly pro-gun."',
+              source: { title: "This guide's review of public sources, cross-referenced with historical NRA/Florida Politics coverage of her AG tenure", url: 'https://www.moody.senate.gov/', date: '2026-08-27' } },
+            lgbtq: {
+              stance: 'restrict',
+              summary: 'Gov. DeSantis cited her record opposing gender-affirming care for minors — saying she "sued the Biden administration to prevent...transgender surgeries on these minor kids" — as a factor in appointing her to the Senate seat. In a June 2026 Senate hearing, sharply questioned an LGBTQ-rights advocate over gender care for minors.',
+              source: { title: 'The Advocate — DeSantis appoints Ashley Moody to the Senate', url: 'https://www.advocate.com/politics/ashley-moody-florida-senate', date: '2026-08-27' } },
+            drugs: {
+              stance: 'oppose-legalization',
+              summary: 'As Attorney General, twice (2019 and 2023) urged the Florida Supreme Court to keep recreational-marijuana ballot initiatives off the ballot, arguing federal illegality meant voters could not actually be granted the rights the amendments described — a consistent, twice-repeated position across two separate ballot cycles.',
+              source: { title: 'Florida Politics — "Ashley Moody urges Florida Supreme Court to snuff out marijuana ballot initiative"', url: 'https://floridapolitics.com/archives/612278-ashley-moody-urges-florida-supreme-court-to-snuff-out-marijuana-amendment/', date: '2026-08-27' } }
           },
           record: [
             {
@@ -3266,6 +3577,12 @@ window.GUIDE = {
                 title: 'U.S. Senate roll call votes',
                 url: 'https://www.senate.gov/legislative/votes.htm'
               }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide asked whether Moody has taken a position on automated license-plate-reader ("Flock") surveillance cameras or on AI data centers. No statement was found on either topic, despite a Senate-level investigation into Flock led by Sen. Josh Hawley (R) being an active 2026 story and Gov. DeSantis publicly calling license-plate readers "out of control" in the same window — a notable silence given her law-enforcement background as a former Attorney General.',
+              date: '2026-08-27',
+              source: { title: "This guide's review of public sources", url: 'https://www.moody.senate.gov/', date: '2026-08-27' }
             },
             {
               type: 'vote',
@@ -3479,7 +3796,23 @@ window.GUIDE = {
               summary: 'Calls for federal action on the property insurance crisis, including reinsurance backstops and stronger consumer protections, citing Florida homeowners paying among the highest premiums in the nation.',
               quote: "Federal action on the property insurance crisis, including reinsurance backstops and stronger consumer protections, so Floridians aren't priced out of their own homes by an insurance market that keeps failing them.",
               source: { title: 'Angie Nixon campaign website — Priorities', url: 'https://angienixon.com/priorities/', date: '2026-08-26' }
-            }
+            },
+            abortion: {
+              stance: 'protect-access',
+              summary: 'Supports abortion access, consistent with her Florida House record and her endorsers.',
+              source: { title: "This guide's review of public sources", url: 'https://angienixon.com/priorities/', date: '2026-08-27' } },
+            guns: {
+              stance: 'gun-safety-reform',
+              summary: 'Supports gun-safety measures, consistent with her legislative record and endorsers. No specific NRA/Giffords rating was located.',
+              source: { title: "This guide's review of public sources", url: 'https://angienixon.com/priorities/', date: '2026-08-27' } },
+            lgbtq: {
+              stance: 'expand-protections',
+              summary: 'Strongly favors LGBTQ+ rights protections and supports classroom instruction on sexual orientation/gender identity — i.e. opposes the "Don\'t Say Gay" framework. In 2020, unseated an incumbent Democrat described as "anti-abortion, anti-LGBTQ" in her own party\'s primary. Owns and runs Cafe Resistance, a Jacksonville bookstore/community hub that hosts LGBTQ-community conversations.',
+              source: { title: 'OnTheIssues.org — Angie Nixon on the Issues', url: 'https://ontheissues.org/Senate/Angie_Nixon.htm', date: '2026-08-27' } },
+            drugs: {
+              stance: 'legalize-regulate',
+              summary: 'As a state representative, sponsored a bill protecting medical-marijuana patients\' parental rights. As a Senate candidate, expressed support for federal cannabis-reform legislation — expungement, resentencing, employment protections — framing it primarily through a drug-war-harm-repair lens ("legalization as justice") rather than a commercial-industry one.',
+              source: { title: 'Suncoast NORML interview', url: 'https://www.suncoastnorml.org/post/angie-nixon-jumps-in-the-rotation-florida-u-s-senate-candidate-talks-cannabis-protest-and-people', date: '2026-08-27' } }
           },
           record: [
             {
@@ -3491,6 +3824,20 @@ window.GUIDE = {
                 url: 'https://ballotpedia.org/Angie_Nixon'
               },
               detail: 'The charges are contested and unresolved. A criminal charge is an accusation, not a finding of guilt.'
+            },
+            {
+              type: 'fact',
+              claim: '"I want to defund Flock cameras, so that bad cops don\'t have the ability to stalk their ex-girlfriends or their ex-boyfriends" — explicitly distinguished from a broader "defund the police" position: "I don\'t want to defund the police. I want to defund Flock cameras." One of the clearest, most specific statements on automated license-plate-reader surveillance of any candidate in this guide\'s state or federal research.',
+              detail: 'No statement on AI data centers was located, including in the same interview, which covered Flock cameras, policing, and her Democratic Socialists of America membership without touching data centers.',
+              date: '2026-08-24',
+              source: { title: 'Democracy Now! — "Angie Nixon on Winning Democratic Senate Race in Florida, DSA Membership & More"', url: 'https://www.democracynow.org/2026/8/24/angie_nixon', date: '2026-08-24' }
+            },
+            {
+              type: 'fact',
+              claim: 'Joined the Democratic Socialists of America (DSA) during the campaign, but has been notably careful about the label: "I just recently joined the DSA... I appreciate certain parts of their platform. Do I agree with all of it? No, I don\'t," while also saying "I am not an active member of DSA." Also a Working Families Party member. Says "It\'s not necessarily a socialist message or a progressive message. It\'s actually just about the needs of people," and has sought to reassure voters: "I want folks to know they don\'t have to worry about me pushing some type of authoritarianism or any type of dictatorship."',
+              detail: 'The only candidate in this guide\'s state/federal hot-button research to have an extended, on-the-record, first-person conversation specifically about how she identifies ideologically, including real ambivalence about the "socialist" label itself.',
+              date: '2026-08-24',
+              source: { title: 'Democracy Now!; CBS News — "Democratic socialist candidate Angie Nixon says \'it\'s not about labels\'"', url: 'https://www.cbsnews.com/news/angie-nixon-interview-democratic-socialist-victory-florida/', date: '2026-08-24' }
             }
           ],
           finance: {
@@ -3675,6 +4022,27 @@ window.GUIDE = {
                 stance: 'aggressive-enforcement',
                 summary: 'Immigration platform is a continuation of the Trump administration\'s enforcement agenda: securing the border and ending "taxpayer handouts to illegals."',
                 source: { title: 'ByronDonalds.com — Issues', url: 'https://byrondonalds.com/issues/', date: '2026-08-25' }
+              },
+              'data-centers': {
+                stance: 'oppose-bans',
+                summary: 'Supports continued data-center/AI infrastructure development and opposes bans or moratoriums, proposing safeguards (closed-loop water cooling, utility-customer protections, distance limits from homes) instead. Has received "dozens" of campaign contributions from AI companies, per reporting. Contrasts directly with Jolly, who wants a statewide moratorium.',
+                quote: 'There ain\'t no bans coming.',
+                source: { title: 'Florida Politics — "\'There ain\'t no bans coming\': Byron Donalds says critics can\'t stop AI data centers"', url: 'https://floridapolitics.com/archives/812893-there-aint-no-bans-donalds/', date: '2026-08-01' }
+              },
+              guns: {
+                stance: 'expand-access',
+                summary: 'As a Florida House freshman, voted against SB 7026, the major post-Parkland gun-control bill, breaking with GOP leadership. Endorsed by Gun Owners of America; in its 2026 candidate survey, pledged to expand Constitutional Carry to all law-abiding adults 18+, repeal Florida\'s Red Flag law, and repeal the bump-stock ban.',
+                source: { title: 'GOA — "Gun Owners of America Endorses Byron Donalds for Florida Governor"', url: 'https://www.gunowners.org/780519-2/', date: '2026-08-27' }
+              },
+              lgbtq: {
+                stance: 'restrict',
+                summary: 'Supported Florida\'s 2022 "Parental Rights in Education" law ("Don\'t Say Gay"), posting that "schools have NO right to sexualize the education of young children." His campaign ran an ad attacking Jolly over transgender rights that PolitiFact rated deceptively edited.',
+                source: { title: 'LGBTQ Nation — "Byron Donalds\' LGBTQ+ record"', url: 'https://www.lgbtqnation.com/2026/08/byron-donalds-lgbtq-record/', date: '2026-08-27' }
+              },
+              drugs: {
+                stance: 'oppose-legalization',
+                summary: 'Opposes recreational marijuana legalization; says the current medical-marijuana framework is adequate and any future legalization should go through the Legislature rather than a constitutional ballot amendment. Voted against marijuana-legalization legislation in Congress in 2022 and against the 2024 state ballot amendment.',
+                source: { title: 'WLRN — "Most major FL gubernatorial candidates say state should never legalize recreational marijuana"', url: 'https://www.wlrn.org/government-politics/2026-05-07/most-major-fl-gubernatorial-candidates-say-state-should-never-legalize-recreational-marijuana', date: '2026-05-07' }
               }
             },
           record: [
@@ -3689,6 +4057,26 @@ window.GUIDE = {
                     url: 'https://floridapolitics.com/archives/812893-there-aint-no-bans-donalds/',
                     date: '2026-08-01'
                   }
+              },
+              {
+                type: 'fact',
+                claim: 'Refused to answer, in a nationally televised 2023 interview, whether he would have signed Florida\'s six-week abortion ban had he been governor at the time — sidestepping rather than affirming or denying it, despite a pro-life primary-campaign posture and an endorsement from Susan B. Anthony Pro-Life America.',
+                detail: 'Voters should not assume he has explicitly committed to keeping the six-week ban — he has avoided saying so directly. This guide is not tagging a directional abortion stance for him given that evasiveness.',
+                date: '2023-01-01',
+                source: { title: 'NBC News/Meet the Press — "Byron Donalds sidesteps his stance on six-week abortion ban in Florida"', url: 'https://www.nbcnews.com/meet-the-press/video/byron-donalds-sidesteps-his-stance-on-six-week-abortion-ban-in-florida-175420997710', date: '2023-01-01' }
+              },
+              {
+                type: 'fact',
+                claim: 'On Flock/ALPR surveillance cameras, initially called for a "full and immediate pause" on statewide Flock contracts and proposed 5 years in prison and a $500,000 fine per occurrence for data misuse — then walked that back after meeting with the Florida Sheriffs Association, shifting to working "with law enforcement leadership...to set parameters" around the technology rather than pausing or banning it outright.',
+                quote: 'Florida will not become a surveillance state.',
+                date: '2026-08-01',
+                source: { title: 'Florida Politics — "Byron Donalds says he\'ll set Flock camera rules with Sheriffs, police chiefs"', url: 'https://floridapolitics.com/archives/811129-byron-donalds-wants-to-work-with-sheriffs-police-chiefs-on-flock-camera-policy/', date: '2026-08-01' }
+              },
+              {
+                type: 'fact',
+                claim: 'Self-description: "Trump-supporting, gun-owning, liberty-loving, pro-life, politically incorrect Black man." Campaign platform headline: "Enact the Trump Agenda." American Conservative Union gave him a 100% rating for his conservative voting record.',
+                date: '2026-08-27',
+                source: { title: 'Aggregated in Yahoo News/Britannica profile coverage', url: 'https://www.yahoo.com/news/politics/article/who-is-byron-donalds-the-trump-ally-is-favored-to-become-floridas-next-governor-222405392.html', date: '2026-08-27' }
               },
               {
                 type: 'fact',
@@ -3863,6 +4251,28 @@ window.GUIDE = {
                 summary: 'Called the Everglades immigration-detention facility known as "Alligator Alcatraz" a "callous political stunt" and supports closing it and returning the land to Miami-Dade County, while saying this doesn\'t make him soft on crime.',
                 quote: 'if you violate the law in Florida, you should be held accountable regardless of where you were born.',
                 source: { title: 'CBS Miami — "David Jolly, leading Democratic candidate for 2026 governor, shares views on abortion and Alligator Alcatraz"', url: 'https://www.cbsnews.com/amp/miami/news/democratic-candidate-governor-david-jolly-abortion-rights-alligator-alcatraz', date: '2026-07-01' }
+              },
+              'data-centers': {
+                stance: 'moratorium-or-stop',
+                summary: 'Calls for a statewide moratorium on new data centers pending study of environmental, economic, and privacy/security impacts of AI infrastructure — a direct contrast with Donalds, who opposes any ban.',
+                source: { title: 'Florida Politics — "David Jolly calls for a halt to data centers, betting Byron Donalds is vulnerable"', url: 'https://floridapolitics.com/archives/808692-david-jolly-calls-for-data-center-moratorium/', date: '2026-07-01' }
+              },
+              abortion: {
+                stance: 'protect-access',
+                summary: 'Now supports abortion rights, a shift from his time as a Republican member of Congress, framed as part of a broader personal "evolution" since leaving the GOP. Pledges to support enacting Amendment 4 (the 2024 reproductive-freedom amendment, which got 57% but fell short of Florida\'s 60% threshold).',
+                quote: "I think the governor's role is to represent the majority of the state, and the majority of the state asked for it, and I think that we should do it.",
+                source: { title: 'davidjolly.com/issues/home-rule', url: 'https://davidjolly.com/issues/home-rule/', date: '2026-08-27' }
+              },
+              lgbtq: {
+                stance: 'expand-protections',
+                summary: 'Announced support for marriage equality in 2014; joined the bipartisan effort to protect LGBTQ workplace-nondiscrimination protections in Congress. Has "vocally defended the rights of parents to access health care for their transgender children without politicians inserting themselves into the doctor\'s office," and opposes book bans. Endorsed by Equality Florida Action PAC.',
+                source: { title: 'Equality Florida Action PAC endorsement announcement', url: 'https://eqfl.org/newsroom/equality-florida-action-pac-endorses-david-jolly-for-governor/', date: '2026-08-27' }
+              },
+              drugs: {
+                stance: 'legalize-regulate',
+                summary: 'Supports recreational marijuana legalization explicitly because the 2024 ballot amendment won a majority (nearly 56%) of the statewide vote even though it fell short of the 60% constitutional-amendment threshold — one of only a few major 2026 gubernatorial candidates in either party to take this position.',
+                quote: "I think the governor's role is to represent the majority of the state, and the majority of the state asked for it, and I think that we should do it.",
+                source: { title: 'Florida Phoenix — "Most major FL gubernatorial candidates say state should never legalize recreational marijuana"', url: 'https://floridaphoenix.com/2026/05/06/most-major-fl-gubernatorial-candidates-say-state-should-never-legalize-recreational-marijuana/', date: '2026-05-06' }
               }
             },
           record: [
@@ -3875,6 +4285,18 @@ window.GUIDE = {
                     url: 'https://floridapolitics.com/archives/808692-david-jolly-calls-for-data-center-moratorium/',
                     date: '2026-07-01'
                   }
+              },
+              {
+                type: 'fact',
+                claim: 'On guns, says he wants new gun-safety measures while also trying to retain support among Florida gun owners — a "both/and" positioning without further specificity (e.g. no stated assault-weapons or red-flag-law position located). On Flock/ALPR surveillance, initially called for warrant requirements before law enforcement could access Flock data; more recently (Aug. 2026) hardened his position, calling for a special legislative session and saying "dramatic reforms or elimination of Flock altogether should be under consideration" — a step further than Donalds\' current "work with sheriffs" position.',
+                date: '2026-08-27',
+                source: { title: 'Florida Politics — "David Jolly calls for Special Session on Flock Cameras"', url: 'https://floridapolitics.com/archives/817003-david-jolly-calls-for-special-session-on-flock-cameras-proposes-dramatic-reforms-or-elimination-of-the-controversial-surveillance-tech/', date: '2026-08-27' }
+              },
+              {
+                type: 'fact',
+                claim: 'Media coverage characterizes his campaign as that of a "moderate Democrat." He has explicitly stated he is a capitalist in favor of the private economy and has rejected any tie to socialism, while frames his campaign as "not...driven by anger and division but by optimism and solutions." Former Republican (U.S. House, 2014-2017) who left the GOP in 2018 over opposition to Trump, was independent for years, then registered Democrat in 2025.',
+                date: '2026-08-27',
+                source: { title: 'The Hill — "David Jolly rejects partisan split to focus on Florida economic issues"', url: 'https://thehill.com/homenews/campaign/6041281-david-jolly-florida-democrat/', date: '2026-08-27' }
               },
               {
                 type: 'fact',
@@ -5063,6 +5485,29 @@ window.GUIDE = {
               summary: 'Architect of "Alligator Alcatraz" and continued enforcement of a state immigration law after a federal court preliminarily blocked it, prioritizing aggressive enforcement even at legal risk.',
               quote: 'If being held in contempt is what it costs to ... stand firmly behind [Trump\'s immigration agenda, he accepted the consequences].',
               source: { title: 'Wikipedia — James Uthmeier', url: 'https://en.wikipedia.org/wiki/James_Uthmeier', date: '2026-08-25' }
+            },
+            abortion: {
+              stance: 'restrict',
+              summary: 'The clearest and most aggressively pro-restriction record of any candidate in this guide\'s state/federal research — active litigation, not just rhetoric. Filed a $354 million lawsuit against Planned Parenthood alleging racketeering and deceptive practices; had his office intervene in a legal challenge to the FDA\'s approval of mifepristone; chaired the "Keep Florida Clean" PAC that raised $1 million+ to help defeat the 2024 abortion-rights ballot amendment (Amendment 4, which got 57%, short of the 60% threshold).',
+              quote: 'We will fight the activists that try to weaken our duly enacted law, that try to challenge our constitutional order and try to harm the unborn.',
+              source: { title: 'Florida Phoenix — "Uthmeier files $354 million lawsuit against Planned Parenthood"', url: 'https://floridaphoenix.com/2025/11/07/uthmeier-files-354-million-lawsuit-against-planned-parenthood-for-alleged-racketeering-deception/', date: '2025-11-07' }
+            },
+            guns: {
+              stance: 'expand-access',
+              summary: 'Notably pro-2A even where it complicates a "tough on crime" frame: publicly took the position, aligned with the NRA, that nonviolent felons retain their Second Amendment rights, and his office filed a brief urging the U.S. Supreme Court to strike down Florida\'s own 2018 law barring under-21-year-olds from buying rifles/long guns.',
+              quote: 'Firearm ownership is an American tradition, and the God-given right to self-defense is enshrined in our Constitution through the Second Amendment.',
+              source: { title: 'NRA-ILA — "Florida Attorney General Says Nonviolent Felons Retain Second Amendment Rights"', url: 'https://www.nraila.org/articles/20260326/florida-attorney-general-says-nonviolent-felons-retain-second-amendment-rights', date: '2026-03-26' }
+            },
+            lgbtq: {
+              stance: 'restrict',
+              summary: 'Extensive, active record: intervened to exclude a transgender competitor from an Irish step-dancing competition; held a press conference on transgender athletes and women\'s sports and sent letters warning dance/swimming organizations their policies "may violate Florida law"; threatened legal action against the Gainesville Police Department over a transgender-inclusive detainee-search policy (the department rescinded it after the threat); filed a 75-page lawsuit against the American Academy of Pediatrics to block gender-affirming care for transgender minors.',
+              quote: 'A policy that allows men to compete in women\'s swimming competitions also constitutes a public nuisance.',
+              source: { title: 'WCJB — "AG Uthmeier demands Gainesville PD change policy on \'gender expression\'"', url: 'https://www.wcjb.com/video/2026/07/31/ag-uthmeier-demands-gainesville-pd-change-policy-gender-expression-during-detainee-searches/', date: '2026-07-31' }
+            },
+            drugs: {
+              stance: 'oppose-legalization',
+              summary: 'Argued to the Florida Supreme Court against placing both the 2022 and 2024 recreational-cannabis initiatives on the ballot, on the grounds that ballot summaries were misleading about continued federal illegality. Also chaired the "Keep Florida Clean" PAC (above), which opposed the 2024 recreational-marijuana amendment.',
+              source: { title: "This guide's review of public sources", url: 'https://www.jamesuthmeier.com/', date: '2026-08-27' }
             }
             },
           record: [
@@ -5119,6 +5564,18 @@ window.GUIDE = {
                     url: 'https://www.yahoo.com/news/politics/articles/florida-ag-james-uthmeier-embraces-211711468.html',
                     date: '2026-08-25'
                   }
+              },
+              {
+                type: 'fact',
+                claim: 'No direct Uthmeier statement specifically on Flock/ALPR surveillance-camera policy was found, despite this being a live, high-profile 2026 issue that both gubernatorial nominees and Gov. DeSantis himself have weighed in on — a notable, specific silence for a sitting Attorney General on a topic squarely within his office\'s law-enforcement purview. No direct statement on AI data centers was found either; his office created a "Consumer Harm from International Nefarious Actors Prevention Unit" focused on foreign-adversary data-privacy threats, a related but distinct issue from the AI-data-center water/power/zoning debate other candidates have addressed.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://www.jamesuthmeier.com/', date: '2026-08-27' }
+              },
+              {
+                type: 'fact',
+                claim: 'Describes himself as "a strong conservative who champions the rule of law, originalism, and free markets." President Trump described him as "an America First warrior, who is a true champion for \'MAGA.\'" Widely characterized in press coverage as DeSantis\'s "hammer" for his role as chief of staff before becoming AG.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://www.jamesuthmeier.com/', date: '2026-08-27' }
               }
             ],
           finance: {
@@ -5210,6 +5667,26 @@ window.GUIDE = {
                     url: 'https://www.wusf.org/politics-issues/2026-03-31/florida-matters-florida-attorney-general-candidate-jose-javier-rodriguez-talks-priorities',
                     date: '2026-03-31'
                   }
+              },
+              {
+                type: 'fact',
+                claim: 'No on-the-record Rodríguez statement on abortion, guns, or LGBTQ+ policy specific to his 2026 campaign was found, despite direct review of his campaign website and a lengthy March 2026 WUSF radio interview covering his platform in depth. This is a striking gap given how central exactly these issues are to his opponent Uthmeier\'s record and to the office generally — stated as a verified absence, not an assumption that he lacks views, and voters should press him directly.',
+                detail: 'No Rodríguez statement on Flock/ALPR surveillance cameras or AI data centers was found either. Caution for future research: a general web search surfaces a different person, also named "Jose Rodriguez," who made public-records requests for Flock camera images in Washington State — that is very likely an unrelated individual and should not be attributed to this candidate.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://www.jjr.vote/about', date: '2026-08-27' }
+              },
+              {
+                type: 'allegation',
+                claim: 'The Florida GOP\'s official attack page claims Rodríguez "filed a bill that would have gutted the death penalty in Florida" (identified as HB 6045, 2021) and labels him a "soft-on-crime liberal."',
+                response: 'No direct Rodríguez response to this specific characterization was found. This guide has not independently verified the bill number or its contents against the Florida Legislature\'s bill-tracking site, and the source is a partisan opponent page, not independent reporting — framing language like "gutted" and "coddling criminals" is the Florida GOP\'s characterization, not this guide\'s.',
+                date: '2026-08-27',
+                source: { title: 'Florida GOP — "José Javier Rodríguez: A Soft-on-Crime Liberal Looking for His Next Job"', url: 'https://florida.gop/jose-javier-rodriguez-a-soft-on-crime-liberal-looking-for-his-next-job/', date: '2026-08-27' }
+              },
+              {
+                type: 'fact',
+                claim: 'Describes his own values as faith, personal responsibility, service to others, and standing "up to bullies" and "powerful interests," positioning himself as "steady, professional and independent-minded" rather than "hyper-political." Separately, received a 100% "A" progressive rating from Progress Florida in 2018 for his state Senate voting record — a dated, objective indicator that contrasts with his 2026 campaign\'s more centrist "people\'s lawyer" framing.',
+                date: '2026-08-27',
+                source: { title: 'jjr.vote/about', url: 'https://www.jjr.vote/about', date: '2026-08-27' }
               },
               {
                 type: 'fact',
@@ -5372,9 +5849,41 @@ window.GUIDE = {
                       url: 'https://www.clickorlando.com/voters-guide/2026/07/31/2026-voters-guide-florida-chief-financial-officer-race-republican-primary/',
                       date: '2026-07-31'
                     }
-                }
+                },
+              abortion: {
+                stance: 'restrict',
+                summary: 'Supports the Born Alive Abortion Survivors Protection Act, requiring providers to give life-saving treatment to infants who survive an attempted abortion. Personally pledged $25,000 of his own money to fight the 2024 abortion-rights ballot amendment (Amendment 4).',
+                source: { title: "This guide's review of public sources, cross-referenced with iVoterGuide profile", url: 'https://ivoterguide.com/candidate/26694/race/4501/election/715', date: '2026-08-27' }
+              },
+              guns: {
+                stance: 'expand-access',
+                summary: 'Voted against the post-Parkland gun-control bill (SB 7026) as a state legislator; fought for Constitutional Carry and Open Carry and sponsored legislation to repeal Florida\'s emergency gun-sale ban. Endorsed by Gun Owners of America for CFO in 2026.',
+                source: { title: 'The Floridian — "Gun Owners of America Endorses Blaise Ingoglia for CFO"', url: 'https://floridianpress.com/2026/07/gun-owners-of-america-endorses-blaise-ingoglia-for-cfo/', date: '2026-08-27' }
+              },
+              lgbtq: {
+                stance: 'restrict',
+                summary: 'Believes government should define marriage as between one man and one woman, and that "no other definition of marriage should be legalized or supported with taxpayer or public funds."',
+                source: { title: "This guide's review of public sources, cross-referenced with iVoterGuide/VoteSmart profiles", url: 'https://justfacts.votesmart.org/candidate/149443/blaise-ingoglia', date: '2026-08-27' }
+              },
+              drugs: {
+                stance: 'oppose-legalization',
+                summary: 'Opposed the 2024 recreational-marijuana ballot amendment (Amendment 3) as part of his broader alignment with DeSantis administration priorities.',
+                source: { title: "This guide's review of public sources", url: 'https://blaiseforflorida.com/', date: '2026-08-27' }
+              }
             },
           record: [
+              {
+                type: 'fact',
+                claim: 'No Ingoglia statement specifically on Flock/ALPR surveillance cameras or AI data centers was found in this guide\'s research, despite both being live 2026 Florida issues that Gov. DeSantis and both gubernatorial nominees have addressed — stated as a verified absence, not inferred.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://blaiseforflorida.com/', date: '2026-08-27' }
+              },
+              {
+                type: 'fact',
+                claim: 'Launched his CFO campaign explicitly calling himself "unapologetically conservative," and has self-styled a "conservative pitbull" on government spending. Gov. DeSantis has called him "the most conservative Senator in the state of Florida." Notably, his political identity is more DeSantis-aligned than Trump-aligned — DeSantis picked him for CFO specifically over Trump-endorsed rival Joe Gruters.',
+                date: '2026-08-27',
+                source: { title: 'Florida Phoenix — "Calling himself \'unapologetically conservative,\' Blaise Ingoglia kicks off his campaign for CFO"', url: 'https://floridaphoenix.com/2025/09/23/calling-himself-unapologetically-conservative-blaise-ingoglia-kicks-off-his-campaign-for-cfo/', date: '2025-09-23' }
+              },
               {
                 type: 'fact',
                 claim: 'As a state senator, filed SB 1248 in Feb. 2023 (the "Ultimate Cancel Act"), which would have canceled the registration of any political party that "historically supported slavery or involuntary servitude" — aimed at the Florida Democratic Party. Called it satire of "cancel culture." The bill did not advance.',
@@ -5487,9 +5996,37 @@ window.GUIDE = {
                 summary: 'Directly criticizes Ingoglia\'s tenure, saying the CFO office has become "a lap dog for the governor" rather than "the watchdog for Floridians."',
                 quote: 'If you were to describe what is the one job of the CFO, it is to be the watchdog for our money.',
                 source: { title: 'WLRN — "Democrats Annette Taddeo and Earle Ford compete to face CFO Blaise Ingoglia in November"', url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november', date: '2026-07-24' }
+              },
+              abortion: {
+                stance: 'protect-access',
+                summary: 'Personally recounted having to end a wanted pregnancy during a Florida Senate floor debate over an abortion bill, a widely covered moment. During debate on HB 5 (the 15-week abortion ban), filed 15 amendments opposing it. Ran a six-figure ad buy as a 2022 congressional candidate criticizing her opponent\'s anti-abortion stance.',
+                quote: "We will continue the fight for women['s] rights.",
+                source: { title: 'Florida Politics — "Annette Taddeo recounts having to end her wanted pregnancy during abortion bill debate"', url: 'https://floridapolitics.com/archives/503264-annette-taddeo-recounts-having-to-end-her-wanted-pregnancy-during-abortion-bill-debate/', date: '2026-08-27' }
+              },
+              guns: {
+                stance: 'gun-safety-reform',
+                summary: 'As a state senator, backed a proposed ban on assault-style rifles and large-capacity magazines, and introduced legislation to repeal Florida\'s firearm-preemption law so municipalities could pass stricter local gun regulations. Named a "Gun Sense Candidate" by Moms Demand Action; endorsed by Giffords during a prior U.S. House run.',
+                source: { title: 'Florida Politics — "Annette Taddeo, Dan Daley bills would allow local governments to pass stricter gun laws"', url: 'https://floridapolitics.com/archives/464801-taddeo-daley-local-gun-laws/', date: '2026-08-27' }
+              },
+              lgbtq: {
+                stance: 'expand-protections',
+                summary: 'Opposed the Parental Rights in Education law ("Don\'t Say Gay"); fought to end conversion therapy; worked to strengthen LGBTQ+ nondiscrimination statutes. Endorsed by Equality Florida Action PAC, which described her as "a fearless voice" defending the LGBTQ+ community.',
+                source: { title: 'Florida Politics — "\'A fearless voice\': Equality Florida backs Annette Taddeo for CFO"', url: 'https://floridapolitics.com/archives/813902-a-fearless-voice-equality-florida-backs-annette-taddeo-for-cfo/', date: '2026-08-27' }
               }
             },
           record: [
+              {
+                type: 'fact',
+                claim: 'No direct personal Taddeo statement endorsing recreational marijuana legalization was found, though her campaign has cited Hope Florida-linked political committees\' spending to defeat the 2024 marijuana amendment (Amendment 3) as part of a corruption-in-government critique of the DeSantis administration — a related but distinct claim from a personal "I support legalization" statement. No Taddeo statement on Flock/ALPR surveillance cameras or AI data centers was found either, despite both being live 2026 issues and despite the CFO office touching state financial/insurance regulation that intersects with data-center utility costs.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://www.wlrn.org/2026-07-24/democrats-annette-taddeo-and-earle-ford-compete-to-face-cfo-blaise-ingoglia-in-november', date: '2026-08-27' }
+              },
+              {
+                type: 'fact',
+                claim: 'Describes herself as "a moderate person who has understood that in order to move forward, it is more important to reach agreements than to confront." A 2026 campaign strategist described her as a "moderate, pro-business Democrat"; her campaign emphasizes an "accountability watchdog" role over "traditional ideological warrior" positioning.',
+                date: '2026-08-27',
+                source: { title: 'Florida Politics — "A \'watchdog,\' not a \'lapdog\': Annette Taddeo is running to unseat Blaise Ingoglia as CFO"', url: 'https://floridapolitics.com/archives/800648-a-watchdog-not-a-lapdog-annette-taddeo-is-running-to-unseat-blaise-ingoglia-as-cfo/', date: '2026-08-27' }
+              },
               {
                 type: 'fact',
                 claim: 'During her 2022 U.S. House run, an opponent\'s attack ad accused her of associating with Democratic socialists at a community forum; Taddeo and Black faith leaders publicly rebuked the ad, and a Miami New Times report found the underlying forum had actually focused on expanding health-care access.',
@@ -5698,21 +6235,25 @@ window.GUIDE = {
           id: 'herrera_fellsmere',
           name: 'Fernando Herrera',
           party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/4/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          occupation: 'Fellsmere Vice Mayor (sitting)',
+          bio: 'Sitting Fellsmere Vice Mayor, seeking a further term on the council. Qualified for the ballot 8/4/2026.',
           positions: {
 
             },
           record: [
               {
+                type: 'vote',
+                claim: 'On May 7, 2026, cast the lone vote in favor of "Legacy Landing," a proposed 231-unit development (48 single-family homes, 183 townhouses) on 34 acres off County Road 512, which the rest of the council rejected 3-1 after more than 20 residents spoke against it over traffic and evacuation-safety concerns.',
+                quote: 'giving people the chance to buy a home instead of being lifelong renters.',
+                detail: 'Argued the project would bring affordable housing to the city (proposed pricing: townhouses around $260,000, single-family homes around $350,000) — a clear, sourced pro-housing-supply position distinguishing him from the rest of the council.',
+                date: '2026-05-08',
+                source: { title: 'USA Today Network/TCPalm via AOL — "Florida city rejects proposal for 231-unit development"', url: 'https://www.aol.com/articles/florida-city-rejects-proposal-231-043730701.html', date: '2026-05-08' }
+              },
+              {
                 type: 'fact',
-                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
-                date: '2026-08-26',
-                source: {
-                    title: 'City of Fellsmere — Election Information',
-                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
-                    date: '2026-08-25'
-                  }
+                claim: 'This guide asked (see the guide\'s Aug 2026 hot-button research pass) whether any Fellsmere council candidate has taken a position on automated license-plate-reader ("Flock") surveillance cameras or AI data-center development — a genuinely live regional issue. No statement from Herrera on either topic was found.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources", url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information', date: '2026-08-27' }
               }
             ],
           finance: null,
@@ -5726,20 +6267,17 @@ window.GUIDE = {
           name: 'Javi Murillo',
           party: 'NONPARTISAN',
           occupation: 'Not yet documented by this guide',
-          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/12/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          bio: 'A newcomer/challenger who has served on the city\'s Day/Beautification Committee. Qualified for the ballot 8/12/2026.',
           positions: {
 
             },
           record: [
               {
-                type: 'fact',
-                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
-                date: '2026-08-26',
-                source: {
-                    title: 'City of Fellsmere — Election Information',
-                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
-                    date: '2026-08-25'
-                  }
+                type: 'unverified',
+                claim: 'Reportedly said, in what this guide believes was public comment at a growth-related city meeting: "Supporting thoughtful development does not lose that identity" — a cautious pro-development framing.',
+                detail: 'The exact date and venue of this quote could not be independently confirmed by this guide as of Aug 2026 — included as unverified rather than omitted, consistent with this guide\'s practice of flagging uncertain material rather than silently dropping it or silently treating it as confirmed.',
+                date: '2026-08-27',
+                source: { title: "This guide's review of public sources — needs re-verification", url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information', date: '2026-08-27' }
               }
             ],
           finance: null,
@@ -5752,21 +6290,18 @@ window.GUIDE = {
           id: 'macias_fellsmere',
           name: 'Shayla Macias',
           party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Added Aug 26, 2026 after this guide discovered it had missed the entire Fellsmere City Council race in earlier passes. Qualified for the ballot on 8/12/2026, confirmed via the city\'s own election page. This guide has not yet researched this candidate\'s background, occupation, or platform.',
+          occupation: 'Fellsmere City Councilmember (sitting)',
+          bio: 'Sitting Fellsmere councilmember, elected Nov. 2024, seeking a further term. Qualified for the ballot 8/12/2026.',
           positions: {
 
             },
           record: [
               {
-                type: 'fact',
-                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
-                date: '2026-08-26',
-                source: {
-                    title: 'City of Fellsmere — Election Information',
-                    url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
-                    date: '2026-08-25'
-                  }
+                type: 'vote',
+                claim: 'Was one of three council members who voted against "Legacy Landing," a proposed 231-unit development, on May 7, 2026 (the final tally was 3-1, with Fernando Herrera casting the lone vote in favor).',
+                detail: 'This guide could not locate a source attributing an individually-quoted rationale to Macias specifically for this vote — only Mayor Salgado, Councilmember Ben Baker (neither a 2026 candidate), and Herrera were quoted by name in coverage reviewed.',
+                date: '2026-05-08',
+                source: { title: 'USA Today Network/TCPalm via AOL — "Florida city rejects proposal for 231-unit development"', url: 'https://www.aol.com/articles/florida-city-rejects-proposal-231-043730701.html', date: '2026-05-08' }
               }
             ],
           finance: null,
@@ -5787,8 +6322,8 @@ window.GUIDE = {
           record: [
               {
                 type: 'fact',
-                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list.',
-                date: '2026-08-26',
+                claim: 'This guide has not yet completed research on this candidate beyond confirming their name and qualifying date on the City of Fellsmere\'s official candidate list — a good-faith search for growth, public-safety, or general-philosophy statements found nothing.',
+                date: '2026-08-27',
                 source: {
                     title: 'City of Fellsmere — Election Information',
                     url: 'https://www.cityoffellsmere.org/city-clerk/page/election-information',
