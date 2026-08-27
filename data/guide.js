@@ -152,8 +152,28 @@ window.GUIDE = {
       'Florida judges above the trial-court level are not elected in a contest between candidates. Instead, voters get a straight YES or NO on each sitting judge: "Should this judge be retained in office?" A majority YES keeps the judge for another six-year term. A majority NO creates a vacancy that the governor fills by appointment. No Florida Supreme Court or District Court of Appeal judge has ever been removed by a retention vote. Because Florida\'s judicial ethics rules bar judges from campaigning on how they would rule in future cases, retention races carry almost no campaign material by design — that is a feature of the system, not a gap in this guide\'s research.',
     localRaces: {
       status: 'Indian River County has NO circuit or county judge races on the 2026 ballot — contested or otherwise.',
-      detail: 'Every 19th Judicial Circuit judge up in 2026 — covering Indian River, Martin, Okeechobee, and St. Lucie counties — was returned to office unopposed, including Michael C. Heisey, Michael Linn, Steven J. Levin, Michael David Porter, Laurie Buchanan, Victoria L. Griffin, Lillian B. Ewen, Cynthia L. Cox, and Elizabeth Ann Metzger. No Indian River County judge seat drew a challenger, and the Florida Bar reports no county judge races were even filed for Indian River County this cycle.',
-      source: { title: 'The Florida Bar — Dozens of trial court races set for August primary', url: 'https://www.floridabar.org/the-florida-bar-news/dozens-of-trial-court-races-set-for-august-primary/', date: '2026-08-01' }
+      detail: 'Every 19th Judicial Circuit judge up in 2026 — covering Indian River, Martin, Okeechobee, and St. Lucie counties — was returned to office unopposed, including Michael C. Heisey, Michael Linn, Steven J. Levin, Michael David Porter, Laurie Buchanan, Victoria L. Griffin, Lillian B. Ewen, Cynthia L. Cox, and Elizabeth Ann Metzger. No Indian River County judge seat drew a challenger, and the Florida Bar reports no county judge races were even filed for Indian River County this cycle. Added Aug 26, 2026: most reached the bench through a governor\'s appointment rather than a contested election — see below for each judge.',
+      source: { title: 'The Florida Bar — Dozens of trial court races set for August primary', url: 'https://www.floridabar.org/the-florida-bar-news/dozens-of-trial-court-races-set-for-august-primary/', date: '2026-08-01' },
+      judges: [
+        { name: 'Michael C. Heisey', appointed: 'Won a contested 2014 election (53.62% vs. Steven Ziskinder) — not appointed by a governor.',
+          source: { title: 'Ballotpedia — Michael C. Heisey', url: 'https://ballotpedia.org/Michael_C._Heisey', date: '2026-08-26' } },
+        { name: 'Michael Linn', appointed: 'Appointed by Gov. Rick Scott, July 2018, filling the vacancy from Judge Paul B. Kanarek\'s retirement.',
+          source: { title: 'Circuit19 — Judge Michael J. Linn', url: 'https://www.circuit19.org/judges/judge-michael-j-linn/', date: '2026-08-26' } },
+        { name: 'Steven J. Levin', appointed: 'Appointed by Gov. Jeb Bush, 1999. Later elected Chief Judge of the 19th Circuit (2009-2015).',
+          source: { title: 'Ballotpedia — Steven J. Levin', url: 'https://ballotpedia.org/Steven_J._Levin', date: '2026-08-26' } },
+        { name: 'Michael David Porter', appointed: 'Appointed by Gov. Ron DeSantis, July 2025.',
+          source: { title: 'The Florida Bar — "Governor makes a 19th Circuit judicial appointment"', url: 'https://www.floridabar.org/the-florida-bar-news/governor-makes-a-19th-circuit-judicial-appointment-3/', date: '2026-08-26' } },
+        { name: 'Laurie Buchanan', appointed: 'Won an open seat unopposed in the 2014 general election — not appointed by a governor.',
+          source: { title: 'Ballotpedia — Laurie Ehler Buchanan', url: 'https://ballotpedia.org/Laurie_Ehler_Buchanan', date: '2026-08-26' } },
+        { name: 'Victoria L. Griffin', appointed: 'Won an open seat unopposed in the 2014 general election — not appointed by a governor.',
+          source: { title: 'Ballotpedia — Victoria L. Griffin', url: 'https://ballotpedia.org/Victoria_L._Griffin', date: '2026-08-26' } },
+        { name: 'Lillian B. Ewen', appointed: 'Appointed by Gov. Ron DeSantis, June 2024.',
+          source: { title: 'The Florida Bar — "Governor makes five judicial appointments in June"', url: 'https://www.floridabar.org/the-florida-bar-news/governor-makes-five-judicial-appointments-in-june/', date: '2026-08-26' } },
+        { name: 'Cynthia L. Cox', appointed: 'Won election to the seat in 1996 — not appointed by a governor. This guide could not confirm whether that original race was contested.',
+          source: { title: 'Ballotpedia — Cynthia Cox (Florida)', url: 'https://ballotpedia.org/Cynthia_Cox_(Florida)', date: '2026-08-26' } },
+        { name: 'Elizabeth Ann Metzger', appointed: 'Appointed by Gov. Jeb Bush, April 2006. Later served a term as Chief Judge of the 19th Circuit.',
+          source: { title: 'Ballotpedia — Elizabeth A. Metzger', url: 'https://ballotpedia.org/Elizabeth_A._Metzger', date: '2026-08-26' } }
+      ]
     },
     retention: [
       {
@@ -165,27 +185,32 @@ window.GUIDE = {
       {
         name: 'Judge Alan O. Forst',
         court: 'Fourth District Court of Appeal', level: 'Covers Indian River County',
-        source: { title: 'The Florida Bar — Justice Muñiz and 22 DCA judges to stand for merit retention', url: 'https://www.floridabar.org/the-florida-bar-news/justice-muniz-and-22-dca-judges-to-stand-for-merit-retention/', date: '2026-08-01' }
+        appointed: 'Appointed by Gov. Rick Scott (R), March 2013. Retained by voters in 2014 (75.1%) and 2020 (64.1%).',
+        source: { title: 'Ballotpedia — Alan O. Forst', url: 'https://ballotpedia.org/Alan_O._Forst', date: '2026-08-26' }
       },
       {
         name: 'Judge Mark W. Klingensmith',
         court: 'Fourth District Court of Appeal', level: 'Covers Indian River County',
-        source: { title: 'The Florida Bar — Justice Muñiz and 22 DCA judges to stand for merit retention', url: 'https://www.floridabar.org/the-florida-bar-news/justice-muniz-and-22-dca-judges-to-stand-for-merit-retention/', date: '2026-08-01' }
+        appointed: 'Appointed by Gov. Rick Scott (R), June 2013. Later served as Chief Judge of the 4th DCA.',
+        source: { title: 'Ballotpedia — Mark W. Klingensmith', url: 'https://ballotpedia.org/Mark_W._Klingensmith', date: '2026-08-26' }
       },
       {
         name: 'Judge Johnathan D. Lott',
         court: 'Fourth District Court of Appeal', level: 'Covers Indian River County',
-        source: { title: 'The Florida Bar — Justice Muñiz and 22 DCA judges to stand for merit retention', url: 'https://www.floridabar.org/the-florida-bar-news/justice-muniz-and-22-dca-judges-to-stand-for-merit-retention/', date: '2026-08-01' }
+        appointed: 'Appointed by Gov. Ron DeSantis, Nov. 2025. Previously a 17th Circuit (Broward) judge, also a DeSantis appointee (Nov. 2024).',
+        source: { title: 'The Florida Bar — "Judge Jonathan D. Lott appointed to the Fourth DCA"', url: 'https://www.floridabar.org/the-florida-bar-news/judge-jonathan-d-lott-appointed-to-the-fourth-dca/', date: '2026-08-26' }
       },
       {
         name: 'Judge Shannon K. Shaw',
         court: 'Fourth District Court of Appeal', level: 'Covers Indian River County',
-        source: { title: 'The Florida Bar — Justice Muñiz and 22 DCA judges to stand for merit retention', url: 'https://www.floridabar.org/the-florida-bar-news/justice-muniz-and-22-dca-judges-to-stand-for-merit-retention/', date: '2026-08-01' }
+        appointed: 'Appointed by Gov. Ron DeSantis, July 2025.',
+        source: { title: 'Executive Office of the Governor — "Governor Ron DeSantis Makes Four Judicial Appointments"', url: 'https://www.flgov.com/eog/news/press/2025/governor-ron-desantis-makes-four-judicial-appointments-0', date: '2026-08-26' }
       },
       {
         name: 'Judge Caroline Cahill Shepherd',
         court: 'Fourth District Court of Appeal', level: 'Covers Indian River County',
-        source: { title: 'The Florida Bar — Justice Muñiz and 22 DCA judges to stand for merit retention', url: 'https://www.floridabar.org/the-florida-bar-news/justice-muniz-and-22-dca-judges-to-stand-for-merit-retention/', date: '2026-08-01' }
+        appointed: 'Appointed by Gov. Ron DeSantis, Oct. 2025. Previously a 15th Circuit (Palm Beach) judge since 2019.',
+        source: { title: 'Executive Office of the Governor — vacancy announcement', url: 'https://www.flgov.com/eog/node/5160', date: '2026-08-26' }
       }
     ],
     districtNote: 'Confirmed independently: the Fourth District Court of Appeal, headquartered in West Palm Beach, covers Broward, Palm Beach, Martin, St. Lucie, Indian River, and Okeechobee counties — hearing appeals from the 15th, 17th, and 19th Judicial Circuits.'

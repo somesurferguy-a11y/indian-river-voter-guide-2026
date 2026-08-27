@@ -110,8 +110,12 @@ function renderJudicial(j) {
 
     '<div class="callout callout--info" style="margin-top:22px"><h4>No circuit or county judge race in Indian River County this year</h4>' +
     '<p>' + VG.esc(j.localRaces.status) + '</p>' +
-    '<p class="mb-0">' + VG.esc(j.localRaces.detail) + '</p>' +
-    VG.srcLink(j.localRaces.source) +
+    '<p' + (j.localRaces.judges && j.localRaces.judges.length ? '' : ' class="mb-0"') + '>' + VG.esc(j.localRaces.detail) + '</p>' +
+    (j.localRaces.judges && j.localRaces.judges.length
+      ? '<ul class="small" style="margin:10px 0 0;padding-left:18px">' + j.localRaces.judges.map(function (jd) {
+          return '<li><strong>' + VG.esc(jd.name) + ':</strong> ' + VG.esc(jd.appointed) + ' ' + VG.srcLink(jd.source) + '</li>';
+        }).join('') + '</ul>'
+      : VG.srcLink(j.localRaces.source)) +
     '</div>' +
 
     '<div class="callout callout--warn" style="margin-top:16px"><h4>Why judicial candidates say so little</h4>' +
