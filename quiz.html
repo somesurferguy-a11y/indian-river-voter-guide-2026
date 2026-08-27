@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Candidate Match Quiz — Indian River County Voter Guide 2026</title>
-<meta name="description" content="Answer a few issue questions and see how each candidate's own public statements line up with your answers — sourced, not an endorsement.">
+<meta name="description" content="Pick a race and answer a few issue questions to see how each candidate's own public statements line up with your answers — sourced, not an endorsement.">
 <link rel="stylesheet" href="css/styles.css?v=20260826h">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗳️</text></svg>">
 </head>
@@ -47,6 +47,15 @@
 
   <section class="section">
     <div class="wrap wrap--narrow">
+      <label for="quizRaceSelect" style="display:block;font-weight:700;margin-bottom:7px">1. Choose a race</label>
+      <select id="quizRaceSelect" style="font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-width:min(100%,420px)"></select>
+      <p class="small muted" id="quizExcludedNote" style="margin-top:10px"></p>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="quizQuestionsSection" hidden>
+    <div class="wrap wrap--narrow">
+      <h2 style="margin-bottom:14px">2. Answer what this race's candidates actually addressed</h2>
       <form id="quizForm">
         <div id="quizQuestions" class="stack"></div>
         <div class="btn-row" style="margin-top:24px">
@@ -57,28 +66,24 @@
     </div>
   </section>
 
-  <section class="section section--alt" id="quizResultsSection" hidden>
+  <section class="section" id="quizResultsSection" hidden>
     <div class="wrap wrap--narrow">
       <div class="section__head">
-        <h2>Your matches</h2>
-        <p>Pick a race to see how each candidate lines up with your answers.</p>
-      </div>
-      <div style="margin-bottom:22px">
-        <label for="quizRaceSelect" style="display:block;font-weight:700;margin-bottom:7px">Choose a race</label>
-        <select id="quizRaceSelect" style="font:inherit;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-width:min(100%,420px)"></select>
+        <h2>3. Your matches</h2>
       </div>
       <div id="quizResults"></div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--alt">
     <div class="wrap wrap--narrow">
       <div class="callout callout--info">
         <h4>How this works</h4>
-        <p>Each answer is compared against a candidate's own already-published position on that issue —
-           the same sourced statement you'd find on their full profile. A question is only counted for a
-           candidate if they have a stated position on it; otherwise it's left out of their score rather
-           than counted as a mismatch. Skip anything you don't have a strong view on.</p>
+        <p>Each race shows only the questions its own candidates actually addressed — a Sheriff-budget
+           question won't show up for a race about school policy. Your answer is compared against each
+           candidate's own already-published, already-sourced position on that question; a candidate who
+           never stated a position on a question you answered is left out of their score rather than
+           counted as a mismatch.</p>
         <p class="mb-0">Candidates are always shown in full — none are hidden — sorted by your personal
            match score. That ordering reflects your answers only, not this guide's opinion.
            <a href="methodology.html">Read the full methodology</a>.</p>

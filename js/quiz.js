@@ -1,7 +1,15 @@
-/* quiz.html — candidate-match quiz. Scores are computed entirely from the
-   reader's own answers against each candidate's already-sourced `stance`
-   field (see data/guide.js positions) — this is not an endorsement engine,
-   see the disclaimer rendered from GUIDE.quiz.disclaimer. */
+/* quiz.html — candidate-match quiz, scoped per race. Scores are computed
+   entirely from the reader's own answers against each candidate's
+   already-sourced `stance` field (see data/guide.js positions) — this is
+   not an endorsement engine, see the disclaimer rendered from
+   GUIDE.quiz.disclaimer.
+
+   Race-first flow: pick a race, then answer only the questions THAT race's
+   candidates actually addressed. A fixed global question bank looked
+   mismatched for races the bank wasn't designed around (e.g. a Sheriff-
+   budget question has no place in a school-board race) — this fixes that
+   by deriving each race's question set from its own candidates' stance-
+   tagged positions, rather than showing all questions everywhere. */
 (function () {
   var G = window.GUIDE;
   VG.initNav();
@@ -9,43 +17,11 @@
 
   var quiz = G.quiz;
   var races = G.races || [];
-  var issues = G.issues || [];
   var issueName = {};
-  issues.forEach(function (i) { issueName[i.id] = i.name; });
+  (G.issues || []).forEach(function (i) { issueName[i.id] = i.name; });
 
   document.getElementById('quizDisclaimer').textContent = quiz.disclaimer;
 
-  var qContainer = document.getElementById('quizQuestions');
-  qContainer.innerHTML = quiz.questions.map(function (q, qi) {
-    return '<div class="card">' +
-      '<h3 style="margin-bottom:12px">' + VG.esc(q.text) + '</h3>' +
-      '<div style="display:flex;flex-direction:column;gap:8px">' +
-      q.options.map(function (o, oi) {
-        var id = 'q' + qi + '_' + oi;
-        return '<label style="display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.95rem">' +
-          '<input type="radio" name="q_' + VG.escAttr(q.issueId) + '" value="' + VG.escAttr(o.value) + '" id="' + id + '">' +
-          '<span>' + VG.esc(o.label) + '</span></label>';
-      }).join('') +
-      '<label style="display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.95rem;margin-top:2px;color:var(--ink-3)">' +
-      '<input type="radio" name="q_' + VG.escAttr(q.issueId) + '" value="" checked>' +
-      '<span>No strong opinion — skip this one</span></label>' +
-      '</div></div>';
-  }).join('');
-
-  function getAnswers() {
-    var answers = {};
-    quiz.questions.forEach(function (q) {
-      var checked = document.querySelector('input[name="q_' + q.issueId + '"]:checked');
-      if (checked && checked.value) answers[q.issueId] = checked.value;
-    });
-    return answers;
-  }
-
-  // Races worth offering: at least one candidate has a `stance` on at least
-  // one quiz issue. Local nonpartisan races with no positions data (school
-  // board, mosquito control, etc.) are correctly excluded rather than shown
-  // empty.
-  //
   // A candidate eliminated in their primary (or who withdrew/didn't qualify)
   // is not on the Nov 3 ballot, so they're excluded from quiz matching
   // entirely — matching someone who can't actually be voted for would be
@@ -53,20 +29,73 @@
   function isOnGeneralBallot(c) {
     return !c.primary || !['lost', 'withdrew', 'disqualified'].includes(c.primary.result);
   }
-  function raceHasQuizData(race) {
-    return (race.candidates || []).some(function (c) {
-      if (!isOnGeneralBallot(c)) return false;
-      return Object.keys(c.positions || {}).some(function (iid) {
-        return c.positions[iid] && c.positions[iid].stance;
+
+  // The questions relevant to a given race: only the global quiz questions
+  // where at least one on-ballot candidate in THIS race has a stance. A
+  // race with no stance-tagged positions at all (school board, mosquito
+  // control, single-candidate seats) yields zero questions and is excluded
+  // from the race picker entirely.
+  function questionsForRace(race) {
+    var onBallot = (race.candidates || []).filter(isOnGeneralBallot);
+    return quiz.questions.filter(function (q) {
+      return onBallot.some(function (c) {
+        return c.positions && c.positions[q.issueId] && c.positions[q.issueId].stance;
       });
     });
   }
-  var quizRaces = races.filter(raceHasQuizData);
+
+  var quizRaces = races
+    .map(function (r) { return { race: r, questions: questionsForRace(r) }; })
+    .filter(function (x) { return x.questions.length > 0; });
 
   var raceSelect = document.getElementById('quizRaceSelect');
-  raceSelect.innerHTML = quizRaces.map(function (r, i) {
-    return '<option value="' + i + '">' + VG.esc(r.office) + (r.district ? ' — ' + VG.esc(r.district) : '') + '</option>';
+  raceSelect.innerHTML = '<option value="">— Select a race —</option>' + quizRaces.map(function (x, i) {
+    return '<option value="' + i + '">' + VG.esc(x.race.office) + (x.race.district ? ' — ' + VG.esc(x.race.district) : '') + '</option>';
   }).join('');
+
+  // Races left out: single-candidate/unopposed offices have nothing to
+  // match against by nature. Others (e.g. U.S. Senate, Attorney General)
+  // are left out because this guide hasn't yet tagged a discrete stance for
+  // their candidates' real positions — not because no research exists.
+  var excludedRaces = races.filter(function (r) { return questionsForRace(r).length === 0; });
+  if (excludedRaces.length) {
+    document.getElementById('quizExcludedNote').innerHTML = 'Not included: ' +
+      excludedRaces.map(function (r) { return VG.esc(r.office + (r.district ? ' — ' + r.district : '')); }).join(', ') +
+      ' — either single-candidate races with nothing to compare, or races whose candidates\' real positions haven\'t yet been tagged for this tool.';
+  }
+
+  var questionsSection = document.getElementById('quizQuestionsSection');
+  var resultsSection = document.getElementById('quizResultsSection');
+  var qContainer = document.getElementById('quizQuestions');
+  var currentQuestions = [];
+
+  function renderQuestions(questions) {
+    currentQuestions = questions;
+    qContainer.innerHTML = questions.map(function (q, qi) {
+      return '<div class="card">' +
+        '<h3 style="margin-bottom:12px">' + VG.esc(q.text) + '</h3>' +
+        '<div style="display:flex;flex-direction:column;gap:8px">' +
+        q.options.map(function (o, oi) {
+          var id = 'q' + qi + '_' + oi;
+          return '<label style="display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.95rem">' +
+            '<input type="radio" name="q_' + VG.escAttr(q.issueId) + '" value="' + VG.escAttr(o.value) + '" id="' + id + '">' +
+            '<span>' + VG.esc(o.label) + '</span></label>';
+        }).join('') +
+        '<label style="display:flex;align-items:center;gap:9px;cursor:pointer;font-size:.95rem;margin-top:2px;color:var(--ink-3)">' +
+        '<input type="radio" name="q_' + VG.escAttr(q.issueId) + '" value="" checked>' +
+        '<span>No strong opinion — skip this one</span></label>' +
+        '</div></div>';
+    }).join('');
+  }
+
+  function getAnswers() {
+    var answers = {};
+    currentQuestions.forEach(function (q) {
+      var checked = document.querySelector('input[name="q_' + q.issueId + '"]:checked');
+      if (checked && checked.value) answers[q.issueId] = checked.value;
+    });
+    return answers;
+  }
 
   function scoreCandidate(c, answers) {
     var matched = 0, applicable = 0, detail = [];
@@ -84,16 +113,13 @@
     return { matched: matched, applicable: applicable, pct: applicable ? Math.round(100 * matched / applicable) : null, detail: detail };
   }
 
-  function renderResults(answers) {
-    var race = quizRaces[+raceSelect.value];
-    if (!race) { document.getElementById('quizResults').innerHTML = '<p class="muted">No race selected.</p>'; return; }
-
+  function renderResults(race, answers) {
     var scored = (race.candidates || []).filter(isOnGeneralBallot).map(function (c) {
       return { c: c, s: scoreCandidate(c, answers) };
     });
-    // Sort by the reader's own match score — see the callout above this
-    // section: this ordering reflects the reader's answers, not an editorial
-    // ranking, and every candidate is still shown.
+    // Sort by the reader's own match score — see the callout on this page:
+    // this ordering reflects the reader's answers, not an editorial ranking,
+    // and every candidate is still shown.
     scored.sort(function (a, b) {
       if (a.s.pct === null && b.s.pct === null) return 0;
       if (a.s.pct === null) return 1;
@@ -130,27 +156,44 @@
     }).join('');
   }
 
+  raceSelect.addEventListener('change', function () {
+    resultsSection.hidden = true;
+    if (raceSelect.value === '') {
+      questionsSection.hidden = true;
+      return;
+    }
+    var entry = quizRaces[+raceSelect.value];
+    renderQuestions(entry.questions);
+    questionsSection.hidden = false;
+    questionsSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
   document.getElementById('quizForm').addEventListener('submit', function (e) {
     e.preventDefault();
+    if (raceSelect.value === '') return;
+    var entry = quizRaces[+raceSelect.value];
     var answers = getAnswers();
     if (!Object.keys(answers).length) {
       document.getElementById('quizResults').innerHTML = '<p class="muted">Answer at least one question to see matches.</p>';
-      document.getElementById('quizResultsSection').hidden = false;
-      document.getElementById('quizResultsSection').scrollIntoView({ behavior: 'smooth' });
-      return;
+    } else {
+      renderResults(entry.race, answers);
     }
-    document.getElementById('quizResultsSection').hidden = false;
-    renderResults(answers);
-    document.getElementById('quizResultsSection').scrollIntoView({ behavior: 'smooth' });
-  });
-
-  raceSelect.addEventListener('change', function () {
-    var answers = getAnswers();
-    if (Object.keys(answers).length) renderResults(answers);
+    resultsSection.hidden = false;
+    resultsSection.scrollIntoView({ behavior: 'smooth' });
   });
 
   document.getElementById('quizReset').addEventListener('click', function () {
     document.querySelectorAll('#quizQuestions input[value=""]').forEach(function (r) { r.checked = true; });
-    document.getElementById('quizResultsSection').hidden = true;
+    resultsSection.hidden = true;
   });
+
+  // Deep link support: /quiz.html#cc-d2
+  if (location.hash) {
+    var hashId = location.hash.replace('#', '');
+    var idx = quizRaces.findIndex(function (x) { return x.race.id === hashId; });
+    if (idx >= 0) {
+      raceSelect.value = idx;
+      raceSelect.dispatchEvent(new Event('change'));
+    }
+  }
 })();
