@@ -506,6 +506,14 @@ window.GUIDE = {
           { value: 'independent-check-on-power', label: 'Independent watchdog, even against the Governor\'s own party' },
           { value: 'aligned-with-governor', label: 'Alignment with the Governor\'s agenda is a feature, not a problem' }
         ]
+      },
+      {
+        issueId: 'healthcare-access',
+        text: 'Should Congress extend the expiring ACA premium subsidies?',
+        options: [
+          { value: 'expand-aca-access', label: 'Yes — extend or expand ACA subsidies and coverage' },
+          { value: 'oppose-expanding-aca', label: 'No — let the expanded subsidies expire' }
+        ]
       }
     ]
   },
@@ -724,6 +732,13 @@ window.GUIDE = {
       name: 'Independence from the Governor',
       background:
         'Added Aug 2026. Several statewide Cabinet offices (Attorney General, CFO) are held by close allies of the sitting or outgoing governor who appointed them, raising a real structural question voters can weigh: should these offices operate as an independent check on executive power, or is alignment with the governor\'s agenda itself a legitimate voter preference? This guide takes no position on which answer is correct — only documents what each candidate has said about their own approach.',
+      sources: []
+    },
+    {
+      id: 'healthcare-access',
+      name: 'Healthcare & the ACA',
+      background:
+        'Added Aug 2026. A federal question most directly relevant to the U.S. Senate and House races, but with real local stakes: Florida has roughly 4.7 million ACA marketplace enrollees relying on subsidies set to expire — more than any other state — and whether Congress extends them affects premiums for Indian River County residents directly.',
       sources: []
     }
   ],
@@ -3230,7 +3245,17 @@ window.GUIDE = {
             }
           },
           positions: {
-
+            'immigration-enforcement': {
+              stance: 'aggressive-enforcement',
+              summary: 'Has authored or co-authored multiple bills to expedite deportation and expand state immigration-enforcement authority, framing it as continuing Trump administration priorities.',
+              quote: 'Today we are finally putting common sense immigration policies first by introducing legislation to authorize the expedited removal of dangerous criminals and prevent activist-judges from keeping known terrorists, criminals and gang members on American soil and endangering our communities.',
+              source: { title: 'Senator Moody press release — "Expedited Removal of Criminal Aliens Act"', url: 'https://www.moody.senate.gov/press-releases/senator-ashley-moody-leads-efforts-to-codify-president-trumps-immigration-priorities-introduces-expedited-removal-of-criminal-aliens-act/', date: '2025-05-21' }
+            },
+            'healthcare-access': {
+              stance: 'oppose-expanding-aca',
+              summary: 'Voted against extending enhanced ACA premium subsidies in December 2025, alongside Sen. Rick Scott. This guide could not locate a direct quote from Moody defending that vote on healthcare-policy grounds — her public remarks from that period focus on blaming Democrats for the government shutdown, not the subsidies\' merits.',
+              source: { title: 'Florida Politics — "Ashley Moody, Rick Scott vote to kill extension of health care subsidies"', url: 'https://floridapolitics.com/archives/769482-ashley-moody-rick-scott-vote-to-kill-extension-of-health-care-subsidies/', date: '2025-12-01' }
+            }
           },
           record: [
             {
@@ -3437,7 +3462,24 @@ window.GUIDE = {
             }
           },
           positions: {
-
+            'immigration-enforcement': {
+              stance: 'reform-or-limit-enforcement',
+              summary: 'Campaigns explicitly on abolishing ICE and rebuilding immigration enforcement "from scratch" under civilian oversight, plus a moratorium on deportations pending a full audit and a citizenship path for Dreamers and undocumented residents — one of the most explicit positions of any candidate in either party this guide has documented.',
+              quote: 'Abolishing ICE and rebuilding immigration enforcement from scratch... an agency that has repeatedly shown it cannot be trusted with the power it has should not be reformed at the margins – it should be dismantled.',
+              source: { title: 'Angie Nixon campaign website — Priorities', url: 'https://angienixon.com/priorities/', date: '2026-08-26' }
+            },
+            'healthcare-access': {
+              stance: 'expand-aca-access',
+              summary: 'Pledges day-one legislation to reinstate expiring ACA premium subsidies, with Medicare for All as a longer-term goal.',
+              quote: "On day one, I'm going to file legislation to reextend the ACA subsidies.",
+              source: { title: 'Democracy Now! — "Angie Nixon on Winning Democratic Senate Race in Florida"', url: 'https://www.democracynow.org/2026/8/24/angie_nixon', date: '2026-08-24' }
+            },
+            insurance: {
+              stance: 'stronger-regulation-oversight',
+              summary: 'Calls for federal action on the property insurance crisis, including reinsurance backstops and stronger consumer protections, citing Florida homeowners paying among the highest premiums in the nation.',
+              quote: "Federal action on the property insurance crisis, including reinsurance backstops and stronger consumer protections, so Floridians aren't priced out of their own homes by an insurance market that keeps failing them.",
+              source: { title: 'Angie Nixon campaign website — Priorities', url: 'https://angienixon.com/priorities/', date: '2026-08-26' }
+            }
           },
           record: [
             {
