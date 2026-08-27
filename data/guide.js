@@ -496,7 +496,7 @@ window.GUIDE = {
         text: 'What approach to immigration enforcement do you prefer?',
         options: [
           { value: 'aggressive-enforcement', label: 'Aggressive enforcement — expanded detention, close cooperation with federal authorities' },
-          { value: 'reform-or-limit-enforcement', label: 'Reform or limit current enforcement approaches' }
+          { value: 'reform-or-limit-enforcement', label: 'Reform, limit, or abolish current enforcement agencies/approaches' }
         ]
       },
       {
