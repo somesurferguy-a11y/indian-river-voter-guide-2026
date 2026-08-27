@@ -4964,7 +4964,7 @@ window.GUIDE = {
                   }
               },
               {
-                type: 'vote',
+                type: 'fact',
                 claim: 'Held in contempt of federal court in June 2025 by U.S. District Judge Kathleen M. Williams for continuing to enforce a state immigration law (SB 4-C) after it had been preliminarily blocked by federal court order; separately reported to have directed Florida law enforcement to keep enforcing it anyway.',
                 quote: 'If being held in contempt is what it costs to ... stand firmly behind [Trump\'s immigration agenda, he accepted the consequences].',
                 date: '2025-06-01',
