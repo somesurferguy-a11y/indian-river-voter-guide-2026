@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 06:53",
+  "updated": "2026-09-22 06:59",
   "domains": [
     {
       "id": "research-workflows",
@@ -26,11 +26,17 @@
     {
       "id": "citation-management",
       "name": "Citation Management",
-      "status": "in review",
+      "status": "revising",
       "round": 1,
-      "scores": null,
-      "verdict": "-",
-      "gap": "Awaiting round 1 critic verdict"
+      "scores": {
+        "citation_formats": 6,
+        "source_evaluation": 8,
+        "timeline_accuracy": 7,
+        "relationship_clarity": 8,
+        "documentation_completeness": 8
+      },
+      "verdict": "FAIL",
+      "gap": "11 of 15 record-type templates carry no provenance chain, teaching the defect the file's own QA section condemns"
     },
     {
       "id": "timeline-building",
@@ -68,6 +74,10 @@
     {
       "t": "06:52",
       "msg": "Round 1 drafts complete (4,914 lines across 5 references + 6 templates); critics dispatched"
+    },
+    {
+      "t": "06:59",
+      "msg": "citation-management R1: FAIL 37/50 (citations 6). Layering rule contradicts its own example; fixer dispatched"
     }
   ]
 }
