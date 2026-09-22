@@ -31,7 +31,8 @@ adoptive, legal
    [county] court, [year]"
 adoptive, informal
   "raised in the household of, and called son by, [name];    "adopted son"
-   no adoption record found in [jurisdiction], [date span]"
+   no adoption record found in [jurisdiction], [date span], where adoption was
+   statutory from [date]. Before that date the absence is not a finding"
 fostered / bound out / apprenticed
   "bound to [name] by the overseers of the poor, [year]      any kinship term
    (indenture)"

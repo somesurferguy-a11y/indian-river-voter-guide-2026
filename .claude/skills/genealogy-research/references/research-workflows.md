@@ -87,10 +87,9 @@ men's records, and the result will not reconcile.
 
 ### Why a vague question produces unfalsifiable research
 
-"Where did the Crays come from?" has no wrong answer, so every finding confirms it and nothing refutes it:
-you accumulate Crays from six counties, none demonstrably yours, and the pile feels like progress. Three
-tests kill vague questions before they waste a month. **The record test:** name one record type that, if
-found and legible, would answer this question; if you cannot, it is a wish. **The refutation test:** name
+"Where did the Crays come from?" has no wrong answer, so every finding confirms it and nothing refutes it.
+Three tests kill vague questions before they waste a month. **The record test:** name one record type that,
+if found and legible, would answer this question; if you cannot, it is a wish. **The refutation test:** name
 one finding that would force the answer "no"; if nothing could, the question is unfalsifiable. **The stop
 test:** describe the state of the evidence at which you would call it closed; if you cannot describe it, you
 will never reach it. Write all three into the plan; the second is the **falsification condition**.
@@ -112,7 +111,7 @@ One question per plan; a plan covering "the Cray family" is a wish list. Six par
 **Priority order** is *Efficient sequence* in practice, expected information gain per unit cost, with three
 queue-jumpers: records at risk (a deteriorating original, a closing repository, an aging informant); cheap
 records that would reframe everything (the jurisdictional survey, a published county record inventory); and
-records that would resolve an identity ambiguity, since until identity is settled everything downstream is
+records resolving an identity ambiguity, since until identity is settled everything downstream is
 provisional. **Flexibility** is also a standard: amend the plan in writing, dated, rather than drifting.
 
 ## 4. Reasonably exhaustive research
@@ -203,8 +202,7 @@ your question. **Searching the records** means reading the record itself, the wh
 township's tax list, the whole grantor book for the span, the whole burial ground. A failed index search
 licenses one statement only, "this index, searched these ways, did not return this name," and not "he is not
 in this record set." Only a record search with stated coverage licenses that, and then only so far as the
-records are complete and legible. When the question matters and the index is thin, budget for reading the
-records; the *Extent* standard is where that budget comes from.
+records are complete and legible; when the question matters and the index is thin, budget for reading them.
 
 ## 5. Search strategy mechanics
 
@@ -217,7 +215,6 @@ wrote what he wrote. Generate variants systematically, not by inspiration.
 |---|---|
 | **Phonetic** | Soundex (crude, but built into some indexes), Daitch-Mokotoff (better for Slavic, German, and Jewish surnames), NYSIIS. Generate candidates with them; never decide identity with them. Cray / Crea / Creigh / Kray / Craigh / McCrea is one practical neighbourhood |
 | **Clerical corruption in the hand of the period** | Minims collide in secretary and early round hands (m / n / u / i / w), long s reads as f, doubled f stands for capital F, capital L / S / T confuse, thorn survives as y in "ye". Calibrate on the clerk's *other* entries on the same page before deciding what he wrote |
-| **Index corruption** | OCR and handwriting-recognition errors, keying errors, column misalignment attaching the right name to the wrong age or page |
 | **Translation and Anglicisation** | Schmidt to Smith, Zimmermann to Carpenter, Guilielmus to William. Latin forms are the norm in many Catholic and some Anglican registers |
 | **Naming systems** | Scandinavian -sen / -datter changes every generation; Welsh ap / verch; Iberian double surnames; Russian patronymics. A surname search is the wrong instrument here |
 | **Given-name diminutives** | Polly for Mary, Sally for Sarah, Nabby for Abigail, Patsy for Martha. Search the diminutive as a given name in its own right; that is how it was indexed |
@@ -228,12 +225,12 @@ which spellings were attempted is worth nothing later.
 ### 5.2 Wildcards and their limits
 
 Wildcards operate on the index string; they cannot recover what the indexer misread, and they do not reach
-browse-only images at all. Syntax and minimum-character rules are engine-specific, most requiring two or
-three leading characters and many rejecting a leading wildcard. Run wildcard *and* exact searches, which
-often return different, non-nested sets because exact search may invoke a fuzzy expansion that wildcard
-search disables. Truncation (`Cr*`) helps with suffix variation and a single-character wildcard (`Cr?a`)
-with a known ambiguous letter; neither helps when the first letter is wrong, the failure case for names
-beginning with a vowel, an H, or a silent consonant.
+browse-only images at all. Syntax is engine-specific, most engines requiring two or three leading characters
+and many rejecting a leading wildcard. Run wildcard *and* exact searches, which often return different,
+non-nested sets because exact search may invoke a fuzzy expansion that wildcard search disables. Truncation
+(`Cr*`) helps with suffix variation and a single-character wildcard (`Cr?a`) with a known ambiguous letter;
+neither helps when the first letter is wrong, the failure case for names beginning with a vowel, an H, or a
+silent consonant.
 
 ### 5.3 Indexed, image-only, browse-only, and offline
 
@@ -287,9 +284,9 @@ five names, and log each search against the *original* question so the log stays
 "Search the neighbours" is concrete: read the two census pages either side, noting every household head,
 because 1850 neighbours are often kin, in-laws, or fellow migrants from one origin parish; read the whole
 township tax list for consecutive years rather than looking up the surname, so you see who arrives and who
-vanishes; plat the parcel, identify the adjoiners, search the adjoiners; record the whole burial-ground
-section, since adjacent plots were bought together; read the entries surrounding a parish-register entry,
-because the same sponsors recur across a kin group.
+vanishes; plat the parcel, identify the adjoiners, and search the adjoiners; record the whole burial-ground
+section and the entries surrounding a parish-register entry, since plots were bought together and the same
+sponsors recur across a kin group.
 
 ## 6. Negative searches and negative evidence
 
@@ -364,8 +361,8 @@ cite the thing you searched, not the thing you found (`references/citation-manag
 
 Two costs, one fatal. The cheap one is duplication: in eighteen months you will check the orphans' court
 dockets again. The fatal one is that an unrecorded nil **cannot be cited**, and any conclusion resting on
-indirect or negative evidence depends on a completeness that can no longer be shown. A lineage society or
-portfolio judge who reads "no record found" with no coverage statement treats the argument as unsupported.
+indirect or negative evidence depends on a completeness that can no longer be shown; a lineage society or
+portfolio judge who reads "no record found" with no coverage treats the argument as unsupported.
 
 ## 7. Knowing when to stop
 
@@ -387,8 +384,8 @@ have. Run all seven tests; failing one means you are not finished.
 Most research stops before test 1. Normal, and not failure, *provided you record it as an open question
 rather than a conclusion*; the failure is the silent promotion of a hypothesis into a tree. The form is in
 `templates/research-plan.md` and a filled instance closes section 11. The field that goes wrong most often
-is **status**: unresolved, partially supported, or contradicted, never "probable" unless you can defend the
-word in writing. Park it in the log's open-question tab and on the person in whatever holds your tree.
+is **status**: unresolved, partially supported, or contradicted, never "probable" unless the word can be
+defended in writing. Park it in the log's open-question tab and on the person in whatever holds your tree.
 
 ## 8. The research log
 
@@ -569,8 +566,7 @@ cluster at 4.2 and 5.6; unlogged searching at section 8.
 ## 11. Worked example, end to end
 
 Illustrative people in structurally real records and jurisdictions. Verify every boundary and record-start
-date for your own county against the FamilySearch Research Wiki place page and the Newberry *Atlas of
-Historical County Boundaries*.
+date for your own county against the FamilySearch Research Wiki place page and the Newberry *Atlas*.
 
 ### Pass 1
 

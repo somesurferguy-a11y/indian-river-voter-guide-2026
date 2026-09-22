@@ -94,7 +94,7 @@ Record the decision, not just the outcome.
 
 ```
 IDENTITY NOTE - Bartholomew Cray of Bellwether Creek
-Question:   Is the B. Cray taxed in Sussex Co. 1819-1834 the man whose 1848 will
+Question:   Is the B. Cray taxed in Sussex Co. 1819-1848 the man whose 1848 will
             was proved there in 1851?
 For:        Same parcel (84 a., Bellwether Cr.) in the 1819 deed and the 1848 will
               (proved 1851). [S1][S2]
@@ -145,6 +145,10 @@ proof argument (`references/documentation-standards.md`).
 ```
 NAME UNDER STUDY: Bartholomew Cray (also Crey, Craye, Kray)
 UNIVERSE: Sussex County, Delaware, 1795-1860
+WIDENED:  3 May 2026 to Ohio, 1840-1860, after C's removal was established.
+          Lower bound 1795 predates no candidate's first record; A's ca. 1788
+          birth falls outside it and is carried from the identity note, not from
+          a record inside this universe.
 
 A  "of Bellwether Creek"  b. ca. 1788, d. 1851, cooper, m. Susannah Teale
 B  "of Slaughter Neck"    b. ca. 1790, d. 1839, farmer, m. (2) Dorcas (Wake) Kell
@@ -232,18 +236,16 @@ couple, see 5.4.
 Removal measures difference in generation and nothing else. In the grid below, rows and columns are
 generations down from the common ancestor, which is the same count as the arrows in a path chain.
 
-|  | child (1) | grandchild (2) | gt-grandchild (3) | 2x-gt-grandchild (4) |
-|---|---|---|---|---|
-| **child (1)** | siblings | aunt/uncle - niece/nephew | grandaunt/uncle - grandniece/nephew | gt-grandaunt/uncle - gt-grandniece/nephew |
-| **grandchild (2)** | | 1st cousins | 1st cousins once removed | 1st cousins twice removed |
-| **gt-grandchild (3)** | | | 2nd cousins | 2nd cousins once removed |
-| **2x-gt-grandchild (4)** | | | | 3rd cousins |
+|  | child (1) | grandchild (2) | gt-grandchild (3) | 2x-gt-grandchild (4) | 3x-gt-grandchild (5) |
+|---|---|---|---|---|---|
+| **child (1)** | siblings | aunt/uncle - niece/nephew | grandaunt/uncle - grandniece/nephew | gt-grandaunt/uncle - gt-grandniece/nephew | 2x-gt-grandaunt/uncle - 2x-gt-grandniece/nephew |
+| **grandchild (2)** | | 1st cousins | 1st cousins once removed | 1st cousins twice removed | 1st cousins three times removed |
+| **gt-grandchild (3)** | | | 2nd cousins | 2nd cousins once removed | 2nd cousins twice removed |
+| **2x-gt-grandchild (4)** | | | | 3rd cousins | 3rd cousins once removed |
+| **3x-gt-grandchild (5)** | | | | | 4th cousins |
 
-The grid stops at four generations for width, not for arithmetic. Each further column adds one removal and
-nothing else, so extending it one step puts both worked examples below in a fifth column: a
-great-grandchild (3) against a 3x-great-grandchild (5) is second cousins twice removed, and a child (1)
-against a 3x-great-grandchild (5) is a 2x-great-grandaunt or granduncle. The extended grid, out to that
-column, is in `templates/kinship-notation.md`.
+Each further column adds one removal and nothing else, so the grid extends indefinitely by the same rule.
+Both worked examples below read off its fifth column.
 
 ### 5.2 Worked example A
 
@@ -304,7 +306,7 @@ is a writing convention applied without exception.
 | **Step relation** | connection by a parent's marriage, no shared ancestry | "his stepdaughter Patience Kell, daughter of his wife Dorcas by her first husband Jabez Kell" | "his daughter" |
 | **Step in an older record** | the record may say "son-in-law" or "father-in-law" meaning step | quote the word, then give your reading: "described as his 'son-in-law', read here as stepson" | a silent modernisation |
 | **Adoptive (legal)** | adoption effected by court or statute | "adopted son, per the adoption decree entered in the [county] court, 1889" | "son" unqualified |
-| **Adoptive (informal)** | "taken to raise," no legal act | "raised in the household of, and called son by, Bartholomew Cray of Slaughter Neck; no adoption record found in [jurisdiction], [date span]" | "adopted son" |
+| **Adoptive (informal)** | "taken to raise," no legal act | "raised in the household of, and called son by, Bartholomew Cray of Slaughter Neck; no adoption record found in [jurisdiction], [date span], where adoption was statutory from [date]. Before that date the absence is not a finding" | "adopted son" |
 | **Fostered / bound out / apprenticed** | a labour or maintenance arrangement | "bound to Bartholomew Cray of Bellwether Creek by the overseers of the poor, 1827 (indenture)" | any kinship term |
 | **Guardianship** | a legal office, often held by kin, often not | "guardian (an office, not necessarily a blood relationship)" | "uncle," inferred from guardianship alone |
 | **Genetic vs. documentary parent** | when DNA and documents disagree | name both: "documentary father" and "genetic father," each defended | choosing one and deleting the other |
@@ -465,7 +467,7 @@ great-grandparents, 16 through 31 the 2x-great-grandparents.
 9's child is 4, male; 4's child is 2, male; 2's child is 1. Number 19 is the subject's father's father's
 mother's mother.
 - **Pedigree collapse is visible as arithmetic:** one person occupying two Ahnentafel numbers means
-two lines have converged. Flag it, because it changes DNA expectations (10.5).
+two lines have converged. Flag it, because it changes DNA expectations (10.6).
 - Ahnentafel cannot express siblings, multiple marriages, uncertainty or half relationships. It is
 an index, not an argument.
 
@@ -621,6 +623,8 @@ matches; reported matches are half-identical regions, so a match may be on eithe
 data are phased. **Testing the oldest generation available is the highest-value action in genetic
 genealogy**, because a parent's or aunt's results phase everything below them.
 
+### 10.4 Planning a DNA test
+
 **Plan the test before you order it.** A DNA test is a record you commission, so plan it like a search.
 
 ```
@@ -628,23 +632,28 @@ DNA TEST PLAN
 Hypothesis:  Levin Cray (1814-1889) was a son of Bartholomew Cray of Bellwether Creek.
              Alternatives: (a) son of Bartholomew Cray of Slaughter Neck; (b) neither.
 Recruit:     a living patrilineal descendant of Levin; one of Silas Cray (1825-1901)
-             for the Slaughter Neck line; one of Bartholomew the younger, the only
-             patrilineal line out of Bellwether Creek. Document each descent by
+             for the Slaughter Neck line. Bellwether Creek has NO usable patriline:
+             Hosea d. 1816 in infancy, and the only other male line runs through
+             Josiah Cray (b. 1840), whose Y is Purnell (section 11). Y-DNA therefore
+             cannot test the Bellwether Creek side at all. Document each descent by
              [record]. Y-STR first, Y-SNP if the STR result is ambiguous.
-Supports:    Levin matching Bellwether Creek and not Slaughter Neck supports the
-             hypothesis; the reverse pattern supports (a); matching neither supports (b).
-Falsifies:   a clear Y mismatch with Bellwether Creek defeats the hypothesis, and
-             defeats (a) only because the Slaughter Neck line is in the test group.
-             Recruit both comparison lines before testing rather than after.
-Watch for:   the Bellwether Creek recruit descends through Josiah Cray (b. 1840), the
-             misattributed-parentage case in section 11, so a mismatch on that line may
-             be testing his descent rather than Levin's.
+Supports:    Levin's line matching Slaughter Neck supports alternative (a).
+Falsifies:   a clear Y mismatch with Slaughter Neck defeats (a) and leaves the
+             hypothesis and (b) open, which Y-DNA alone cannot separate here.
+If both:     the two Cray lines may share a patriline, since no kinship between them
+             is proven and none is excluded. Test that first, with a Slaughter Neck
+             and a Purnell comparison, before reading any match between Levin's line
+             and either as evidence of descent from one.
+Then:        the Bellwether Creek question goes to autosomal work on Mary's
+             descendants (Reuben, Tabitha), where the broken patriline does not bite.
+Result cited as: [DNA citation, per references/citation-management.md]
+Plan dated:  3 May 2026 / [researcher]
 ```
 
 A plan that no result could falsify is not a plan. Write the falsifying result down before you look at a
 match list, and keep the plan with the research log (`references/research-workflows.md`).
 
-### 10.4 Y-DNA and mitochondrial DNA
+### 10.5 Y-DNA and mitochondrial DNA
 
 | | Y-DNA | Mitochondrial DNA |
 |---|---|---|
@@ -659,7 +668,7 @@ Both are strong as **exclusions** and as **line tests**, weak as generation-find
 a restricted inheritance path as well (a man inherits his X only from his mother), so X matching can
 exclude whole branches as the source of a match: useful as a filter, never a proof on its own.
 
-### 10.5 Endogamy and pedigree collapse
+### 10.6 Endogamy and pedigree collapse
 
 In a population that married within itself for generations, two people are related along many paths at
 once, so the DNA they share is the sum of many small contributions. Shared amounts are **inflated relative
@@ -672,7 +681,7 @@ shared-amount ranges as though calibrated for that population; lean harder on se
 documentary reconstruction of the whole community; and expect large, tangled clusters rather than clean
 per-line ones.
 
-### 10.6 Standards, citation and reporting
+### 10.7 Standards, citation and reporting
 
 The Board for Certification of Genealogists brought DNA evidence inside *Genealogy Standards* in the
 second edition, adding standards for DNA work and modifying existing ones, and the revised second edition
