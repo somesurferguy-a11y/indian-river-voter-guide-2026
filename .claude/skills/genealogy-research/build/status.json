@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 16:54",
+  "updated": "2026-09-22 17:04",
   "domains": [
     {
       "id": "research-workflows",
@@ -62,8 +62,8 @@
     {
       "id": "relationship-mapping",
       "name": "Relationship Mapping",
-      "status": "revising",
-      "round": 1,
+      "status": "in review",
+      "round": 2,
       "scores": {
         "citation_formats": 7,
         "source_evaluation": 8,
@@ -72,7 +72,7 @@
         "documentation_completeness": 6
       },
       "verdict": "FAIL",
-      "gap": "The worked cast is not individuated and contradicts itself, so no example can be checked; cousin chain shows 4 arrows for b=5"
+      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
     },
     {
       "id": "documentation-standards",
@@ -122,6 +122,10 @@
     {
       "t": "16:54",
       "msg": "SKILL.md router written; skill now registers and loads. Four fixers relaunched to audit and finish round 2."
+    },
+    {
+      "t": "17:04",
+      "msg": "relationship-mapping R2 complete (809 lines + 223-line kinship template); both it and citation-management now with fresh critics"
     }
   ]
 }
