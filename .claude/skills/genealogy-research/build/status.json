@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 11:53",
+  "updated": "2026-09-22 12:02",
   "domains": [
     {
       "id": "research-workflows",
@@ -32,8 +32,8 @@
     {
       "id": "citation-management",
       "name": "Citation Management",
-      "status": "revising",
-      "round": 1,
+      "status": "in review",
+      "round": 2,
       "scores": {
         "citation_formats": 6,
         "source_evaluation": 8,
@@ -42,7 +42,7 @@
         "documentation_completeness": 8
       },
       "verdict": "FAIL",
-      "gap": "Reference file fixed (11 Online layered variants added); quickref mirror in progress"
+      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
     },
     {
       "id": "timeline-building",
@@ -114,6 +114,10 @@
     {
       "t": "11:53",
       "msg": "Rate limit killed all 5 round-2 fixers; citation-management reference survived. All relaunched with incremental-save instructions."
+    },
+    {
+      "t": "12:02",
+      "msg": "citation-management R2 complete (ref 833 lines, quickref 478, in sync); fresh critic re-scoring"
     }
   ]
 }
