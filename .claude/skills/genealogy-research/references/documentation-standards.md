@@ -4,15 +4,15 @@ How to evaluate what a record is worth, write a conclusion a stranger can test, 
 survives you. This file operationalises the Genealogical Proof Standard: it is where "I think she was his
 daughter" becomes something a portfolio judge, a lineage society, or a hostile cousin can check.
 
-**When to load me:** you are writing up a conclusion, evaluating a source, resolving a conflict, producing a
-research report, deciding whether something is *proved*, naming and filing images, revising a published
-conclusion, or handling a finding that touches a living person, DNA, or enslavement.
+**When to load me:** writing up a conclusion, evaluating a source, resolving a conflict, producing a research
+report, deciding whether something is *proved*, naming and filing images, revising a published conclusion, or
+handling a finding that touches a living person, DNA, or enslavement.
 
-**Siblings, whose work I do not repeat.** Search strategy, planning, logs, and the "have I searched enough"
-judgement: `references/research-workflows.md`. Citation syntax and the layered templates:
-`references/citation-management.md`. Dates, calendars, place normalisation: `references/timeline-building.md`.
-Kinship, identity resolution, same-name separation, numbering, DNA correlation:
-`references/relationship-mapping.md`.
+**Siblings, whose work I do not repeat:** search strategy, planning, logs, when to stop
+(`references/research-workflows.md`); citation syntax and the layered templates
+(`references/citation-management.md`); dates, calendars, place normalisation
+(`references/timeline-building.md`); kinship, identity resolution, same-name separation, numbering, DNA
+correlation (`references/relationship-mapping.md`).
 
 > **Two conventions.** (1) Square brackets, like `[page]` or `[URL]`, mark a slot you fill from the record in
 > front of you; this file supplies no number it has not verified and neither should you. A wrong number is
@@ -51,22 +51,22 @@ indirect evidence actually looks like, see the census pair in §1.3.
 reproduction is *original* only if the thing reproduced is the record as created. Ask: **has a human re-keyed
 anything between the event and this page?** If yes it is derivative, however official the paper.
 
-- **Certified copy vs. image.** A certificate the clerk typed afresh and sealed in 2019 is a derivative. A
+- **Certified copy vs. image.** A certificate the clerk typed afresh and sealed in 2019 is a derivative; a
   microfilm frame or digital image of the 1921 certificate as filed is an image of an original. The seal
   certifies accuracy; it does not undo the copying.
-- **Recorded deeds and wills.** The deed book is an original record of the *recording act* but a derivative of
-  the signed deed. Where loose originals survive (US county estate files; in England and Wales, the probate
-  registry files behind the printed calendars), they outrank the bound volume.
-- **Re-recorded records** after a courthouse fire, sometimes decades later, sometimes from memory.
-- **Delayed birth certificates.** An original record of a *later* proceeding, carrying secondary information
+- **Recorded deeds and wills.** The deed book is an original record of the *recording act* and a derivative of
+  the signed deed. Loose originals (US county estate files; in England and Wales the probate registry files
+  behind the printed calendars) outrank the bound volume. **Re-recorded records** after a courthouse fire are
+  further removed still, sometimes by decades, sometimes from memory.
+- **Delayed birth certificates.** An original record of a *later* proceeding carrying secondary information
   about a birth decades earlier. Evaluate each supporting affidavit's informant separately.
 - **Database "records."** An index entry is derivative even when displayed beside the image. Cite what you
-  actually examined; if you read only the index, say so.
+  examined; if you read only the index, say so.
 
-**Tells that you hold a derivative:** one uniform hand or typeface across entries different people would have
-signed; signatures rendered `/s/` or in the clerk's hand; an added attestation clause; missing marginalia,
-amendments, and strike-throughs the record type normally carries; pagination not matching the original series;
-a database "source" naming a repository other than the one you queried.
+**Tells that you hold a derivative:** one hand or typeface across entries different people would have signed;
+signatures rendered `/s/` or in the clerk's hand; an added attestation clause; missing marginalia, amendments,
+and strike-throughs the record type normally carries; pagination not matching the original series; a database
+"source" naming a repository other than the one you queried.
 
 An **image** inherits the class of the thing imaged, but adds a layer the citation must show: website layer,
 film or image layer, underlying original, in that order (`references/citation-management.md`).
@@ -428,18 +428,17 @@ and 1839, and the administration bonds for the same span show none of the four, 
 to a man the bond describes by no relation to the decedent.[^9] **Negative evidence**, and it removes the
 third reading, leaving seven distributees as seven surviving children.
 
-*What it does not establish.* An absence licenses only what its expectation covers. These do not establish
-that Jesse Teale never married, that no child predeceased him without issue, or that a widow who herself died
-between 1838 and the 1839 division left no trace in some record group not searched. A volume with lost or
-unbound leaves produces the same silence as a bond never taken, so the condition of each volume examined is
-recorded in the apparatus with the search.
+*What it does not establish.* An absence licenses only what its expectation covers: not that Jesse Teale never
+married, not that no child predeceased him without issue, not that a widow who herself died before the 1839
+division left no trace in a record group not searched. A volume with lost leaves produces the same silence as
+a bond never taken, so each volume's condition is recorded in the apparatus beside the search.
 
 *Item F. The 1850 census.* Susannah Cray, age 46, born North Carolina, in Bartholomew Cray's household.[^10]
 Original source; secondary information from an undetermined informant, whoever answered the enumerator.
 **Indirect** for parentage; it supplies the census-derived birth estimate of about 1804 ‡ against which the
-other items are tested. It does not establish her birth year, which is in unresolved conflict with the family
-Bible (§4); it does not name a parent; and because the estimate it supplies is the one contested, every
-inference below that turns on her age is marked ‡ and would have to be re-run on a birth in 1799.
+other items are tested. It does not name a parent, and it does not establish her birth year, which is in
+unresolved conflict with the family Bible (§4) — which is why every inference turning on her age is marked
+‡ and would have to be re-run on a birth in 1799.
 
 **Correlation.**
 
@@ -453,10 +452,10 @@ inference below that turns on her age is marked ‡ and would have to be re-run 
 | 1839 | no guardian bond, no issue named | | she took as a child, not as a representative |
 | 1839 | no dower, no year's provision, no widow's receipt | | no widow took a child's part among the seven |
 
-‡ depends on the contested birth estimate of about 1804. On the Bible's 3 February 1799 she is 21 in 1820 and
-still inside the 16-to-25 bracket, so the 1820 and 1830 inferences survive either reading; her age at marriage
-changes from 17 to 22, which no item in this argument turns on. The mark stays because the dependency is real
-and a later reader must be able to see it, not because it breaks the argument. Rule: §4.
+‡ depends on the contested birth estimate of about 1804. On the Bible's 3 February 1799 she is 21 in 1820,
+still inside the 16-to-25 bracket, so these inferences survive either reading; her age at marriage moves from
+17 to 22, which nothing here turns on. The mark stays because the dependency is real and a later reader must
+see it, not because it breaks the argument. Rule: §4.
 
 No single item names Susannah as Jesse Teale's daughter. In sequence they describe a woman of the right age in
 his household, leaving it to marry under his suretyship, and taking a child's equal share of his intestate
@@ -467,13 +466,12 @@ register, 1815 to 1830; estates and loose estate papers, 1830 to 1845; guardian 
 bonds, 1830 to 1845; county court minutes, 1836 to 1842; deeds, grantor and grantee indexes, 1795 to 1845;
 wills, 1795 to 1845; and the federal census population schedules for the county, 1790 through 1860, read page
 by page for 1820, 1830, and 1850. Variants tried throughout: Teale, Teal, Teele, Tale; Cray, Crey, Craig. Nil
-results are set out in the report behind this argument and, where one carries part of the load, in Item E.
-**Not searched:** county tax lists, and the records of the adjoining counties into which Teales are known to
-have moved. **Known loss:** North Carolina required no civil registration of births until 1913; no baptismal
-register survives for any Rowan County congregation covering 1795 to 1810; and the guardian-bond volume for
-[span] is water-damaged for [leaves], which is stated because an absence found in a damaged volume is a weaker
-absence. This paragraph is the reasonably-exhaustive element made visible, and it is what lets a reader apply
-the first test in §2 without access to the files.
+results are in the report behind this argument and, where one carries load, in Item E. **Not searched:**
+county tax lists, and the adjoining counties into which Teales are known to have moved. **Known loss:** no
+civil registration of births in North Carolina until 1913; no baptismal register for any Rowan County
+congregation covering 1795 to 1810; and the guardian-bond volume for [span] water-damaged at [leaves], said
+because an absence found in a damaged volume is a weaker absence. This paragraph is the reasonably-exhaustive
+element made visible, and without it a reader cannot apply the first test in §2.
 
 **Conflicting evidence.**
 
@@ -510,14 +508,14 @@ County, North Carolina. The conclusion rests on indirect evidence correlated acr
 confirmed by negative evidence, and it survives the one direct statement to the contrary because that
 statement is undocumented, late, and inconsistent with the estate division.
 
-**Residual doubt, stated.** The estate division establishes that Susannah took a child's share. It does not by
-itself distinguish a natural daughter from a step-daughter or an adopted daughter treated as a child in the
-distribution, and Rowan County records disclose no wife for Jesse Teale before about 1795. A deed of gift from
-Jesse Teale to Susannah, a Bible record from the Teale line, or an identification of Jesse's wife would settle
-it. Until then the conclusion is that Susannah was treated as Jesse Teale's daughter in the eyes of the law and of
-the county, which is the sense in which the estate division speaks, and was probably his daughter by birth.
-(Period records often use *daughter-in-law* to mean step-daughter; the term is avoided here for that reason.
-Kinship-term drift: `references/relationship-mapping.md`.)
+**Residual doubt, stated.** The division establishes that Susannah took a child's share. It does not
+distinguish a natural daughter from a step-daughter, or from a daughter of a wife's earlier marriage treated
+as a child in the distribution, and Rowan County records disclose no wife for Jesse Teale before about 1795. A
+deed of gift from Jesse Teale to Susannah, a Teale Bible record, or an identification of Jesse's wife would
+settle it. Until then the conclusion is that Susannah was **treated as Jesse Teale's daughter in the eyes of
+the law and of the county**, which is the sense in which the estate division speaks, and was probably his
+daughter by birth. (Period records often use *daughter-in-law* to mean step-daughter; the term is avoided here
+for that reason. Kinship-term drift: `references/relationship-mapping.md`.)
 
 ```
 APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
@@ -530,22 +528,22 @@ APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
        [date]); imaged from National Archives microfilm publication [number], roll [number].
 [^8]:  Jesse Teale estate file (1838), Rowan County, North Carolina, estates records, report
        of division returned 9 May 1839; State Archives of North Carolina, Raleigh.
-[^9]:  Compound note for Item E; the expectation first, then the two searches that found
+[^9]:  Compound note for Item E: the expectation first, then the searches that found
        nothing, because an absence is only as good as the expectation cited for it.
-       (a) Expectation: Rowan County, North Carolina, estates records, reports of division
-       returned [date] and [date] in the same volume as the Teale return, each naming the
-       issue of a deceased child and awarding them their parent's part; and Rowan County
-       guardian bonds [volume], routine bonds for minor heirs of intestates throughout
-       1838 to 1841. State Archives of North Carolina, Raleigh.
-       (b) No representation: same guardian-bond volume, 1838 to 1841, examined leaf by
-       leaf; no bond for the heirs of Jesse Teale. Volume condition: [condition; note any
-       lost or unbound leaves, since a gap and an absence look identical].
-       (c) No widow: Jesse Teale estate file (1838), examined in full for a dower return,
+       (a) Expectation: Rowan County, N.C., estates records, reports of division returned
+       [date] and [date] in the same volume as the Teale return, each naming a deceased
+       child's issue and awarding them their parent's part; and Rowan County guardian
+       bonds [volume], routine bonds for minor heirs of intestates, 1838 to 1841. State
+       Archives of North Carolina, Raleigh.
+       (b) No representation: that guardian-bond volume examined leaf by leaf, 1838 to
+       1841; no bond for the heirs of Jesse Teale. Volume condition: [note lost or unbound
+       leaves; a gap and an absence look identical].
+       (c) No widow: Jesse Teale estate file (1838) examined in full for a dower return,
        year's provision, or widow's receipt; Rowan County administration bonds [volume],
        1838 to 1841; Rowan County court minutes, 1838 to 1839, [volume]. None names a
        widow of Jesse Teale.
-       Strands (b) and (c) are negative search results, cited as searched; read against
-       (a) they become the negative evidence argued in Item E.
+       (b) and (c) are negative search results, cited as searched; read against (a) they
+       become the negative evidence argued in Item E.
 [^11]: Ambrose Pell, Annals of Rowan County (Salisbury, N.C.: [publisher], 1897), [page].
        Authored narrative; no sources cited for the Teale sketch.
 
@@ -653,19 +651,12 @@ successor. Skeleton to copy: `templates/research-report.md`.
 | **Unresolved questions** | what remains open and *why* | stops the next researcher repeating your dead ends |
 | **Recommended next steps** | prioritised and specific: named record group, jurisdiction, span, repository, what each would establish, effort or cost | turns the report into a plan |
 
-**Client report vs. report to your future self.** Same sections; the audience changes the register only.
-
-| | To a client | To your future self |
-|---|---|---|
-| Register | gloss the record types and why they matter | shorthand and jargon fine |
-| Findings | transcriptions or abstracts included, images attached | pointers to archive filenames suffice |
-| Background | restate in full; they do not have your files | restate anyway, briefly; you will not remember |
-| Next steps | prioritised with effort and likely cost, so they can choose | prioritised with your reasoning for the priority |
-| Nil results | explain what a nil result does and does not mean | list them; otherwise you will re-search them |
-| Tone on doubt | plain: "probable, not proved, and here is why" | identical; do not flatter yourself either |
-
-"Write it for your future self" is not a lower bar. Your future self has forgotten everything and cannot ask
-you a question, which makes them harder to serve than a client.
+**Client report vs. report to your future self.** Same sections; only the register changes. For a client,
+gloss the record types, attach transcriptions and images, restate the background in full, and price the next
+steps so they can choose where to stop. For yourself, jargon and filename pointers are fine and the priority
+order carries your reasoning instead of a cost. Everything else is identical, including nil results and the
+tone on doubt: "probable, not proved, and here is why." **"Write it for your future self" is not a lower
+bar** — your future self has forgotten everything and cannot ask you a question.
 
 **Why the nil-results section is not optional**, any one reason being sufficient: positive findings show
 where you looked last, nil results show where you looked at all, so this is how *reasonably exhaustive*
@@ -778,9 +769,8 @@ ARCHIVE-ROOT/
   database-exports/        <- dated GEDCOM or equivalent, plus a dated PDF of current conclusions
 ```
 
-Whatever layout you choose, it must satisfy three tests: a stranger can tell from a folder name what is in it;
-nothing lives only inside the genealogy program; and every image can be reunited with its citation without
-opening the program (`index.csv` and sidecars, below).
+Three tests on any layout: a stranger can tell from a folder name what is in it; nothing lives only inside the
+genealogy program; every image can be reunited with its citation without opening it.
 
 **Image capture: capture the context, not just the entry.** The commonest archive failure is a folder of
 beautiful crops nobody can cite. Per record, in order: the **finding aid or catalog entry** that got you there
@@ -797,9 +787,7 @@ square to the sensor, with lighting or damage that defeated legibility noted.
 YYYY-MM-DD_jurisdiction_recordtype_volume-page_surname-given_descriptor.ext
 
 2026-03-04_rowan-co-nc_estate-file_1838_teale-jesse_division-p1.jpg
-2026-03-04_rowan-co-nc_estate-file_1838_teale-jesse_folder-label.jpg
 2026-03-04_rowan-co-nc_guardian-bonds_v3_nil-search_1838-1841.jpg
-1921-03-18_allegheny-co-pa_death-cert_vardy-susannah_full.jpg
 1921-03-18_allegheny-co-pa_death-cert_vardy-susannah_detail-informant.jpg
 ```
 

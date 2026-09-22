@@ -20,27 +20,17 @@ stop), `references/citation-management.md` (citation shape and the provenance ch
 A tree stores conclusions. Every node in it is already an answer, and the reasoning that
 produced it has been thrown away. You cannot audit a tree, you can only believe it.
 
-A timeline stores assertions in the order the world produced them, with each one still
-attached to the record it came from. That is what makes it the correlation engine:
-
-- **Conflicts become visible without being hunted.** Two rows that cannot both be true sit
-  next to each other once the table is sorted. Nothing else in a research file has that
-  property. A tree absorbs the same two records silently, because merging is what trees do.
-- **Same-named people separate.** Two people are one person until the chronology makes them
-  two. The impossibility that splits them is almost always a sequence fact (section 7).
-- **Indirect evidence assembles.** No single row says "Susannah was the daughter of Joseph."
-  A residence, a removal certificate, a marriage entry and a probate share-out in sequence
-  say it jointly. That joint statement is the raw material of a proof argument.
-- **Gaps are legible.** A four-year hole between two sibling births, or a decade in which a
-  taxable man vanishes from a complete run of tax lists, is a research question you would
-  never have thought to ask.
-
-This is the Genealogical Proof Standard's **thorough analysis and correlation** element in
-its most literal form. Correlation means putting items of information beside each other and
-asking what they jointly permit. The timeline is the furniture for doing that. The BCG
-standards on analysis and correlation, and on resolving conflicting evidence, both assume
-something like it exists; they do not prescribe its shape, which is why yours has to be
-deliberate.
+A timeline stores assertions in the order the world produced them, each still attached to the
+record it came from, and sorting it does four things a tree cannot: two rows that cannot both
+be true land next to each other instead of being silently merged; two same-named people come
+apart on a sequence impossibility (section 7); indirect evidence assembles, because no single
+row says "Susannah was the daughter of Joseph" but a residence, a removal certificate, a
+marriage entry and a probate share-out in sequence say it jointly; and gaps become legible,
+so a four-year hole between sibling births turns into a question you would never have asked.
+That is the Genealogical Proof Standard's **thorough analysis and correlation** element in its
+most literal form — the BCG standards on correlation and on resolving conflicting evidence
+both assume something like this exists and none of them prescribes its shape, which is why
+yours has to be deliberate.
 
 Build the timeline **before** you draw a chart or enter anything in a tree program. The tree
 is a publication format. The timeline is the workbench.
@@ -94,24 +84,22 @@ If a cell would need the word "and," you probably have two rows.
 
 Eighteen columns is not padding. Each one is load-bearing:
 
-- `src_class`, `info` and `ev` are three different axes and a row can be original / secondary
-  / indirect all at once. A death certificate is an original source; its "father's name" is
-  secondary information (the informant did not witness the birth); and for a question about
-  the decedent's parentage it is direct evidence, while for a question about the father's
-  residence it is indirect. Keeping them in separate columns stops the usual collapse into a
-  single vague "reliability" score.
-- `ev` is **question-relative** by definition. Write the research question in a header cell
-  above the table. When the question changes, that column is stale and must be recomputed;
-  the rest of the table survives untouched (section 10).
-- `subject` plus role is what lets you sort the whole file by person later, and what stops
-  you inventing a row for someone the record does not actually mention. A tax list naming
-  the householder asserts nothing about his wife. Do not create her row.
-- `rec_level` tells you where to look next and what a boundary change does to your search.
+- `src_class`, `info` and `ev` are **three different axes** and a row can be original /
+  secondary / indirect all at once. A death certificate is an original source; its "father's
+  name" is secondary information; and for a question about the decedent's parentage it is
+  direct evidence while for one about the father's residence it is indirect. Separate columns
+  stop the usual collapse into a single vague "reliability" score. `ev` is question-relative
+  by definition: change the question in the header and that column is stale and must be
+  recomputed, while the rest of the table survives untouched (section 10).
+- `subject` plus role lets you sort the file by person later and stops you inventing a row for
+  someone the record does not mention. A tax list naming the householder asserts nothing about
+  his wife. Do not create her row. `rec_level` tells you where to look next and what a
+  boundary change does to your search.
 
-**Minimum viable subset** if you are working in a notebook rather than a spreadsheet:
-`id`, `key_lo`, `key_hi`, `date_norm`, `juris_then`, `subject`, `assertion`, `info`, `ev`,
-`cite`. Drop the verbatim columns only if you have a transcript elsewhere; dropping them and
-having no transcript is how silent normalisation (section 10) starts.
+**Minimum viable subset** for notebook work: `id`, `key_lo`, `key_hi`, `date_norm`,
+`juris_then`, `subject`, `assertion`, `info`, `ev`, `cite`. Drop the verbatim columns only if
+you have a transcript elsewhere. Without one you have normalised silently: a conversion nobody
+can check, and an invisible error if the calendar regime was wrong.
 
 `templates/timeline.md` has the blank table, the CSV header, and the legend.
 
@@ -392,10 +380,9 @@ not identify the row. `id` does that.
 1. **Unknown components fill in opposite directions.** Unknown month: `01` in `key_lo`, `12` in
    `key_hi`. Unknown day: `01` in `key_lo`, the last day of that month in `key_hi`. So
    `abt 1735` becomes `1735010150` / `17351231`. **A bare year always fills this way**, however
-   tempting it is to guess at the season a tax list or a court term actually sat: if you know
-   the assessment date, the row is not a bare year and you should key the real date; if you do
-   not, key `0101` and put "assessment date not established" in `notes`. Never split the
-   difference — two bare years filled two different ways in one sheet is a silent sort bug.
+   tempting it is to guess the season a tax list or a court term actually sat. If you know the
+   assessment date the row is not a bare year; key the real date. If you do not, key `0101` and
+   say so in `notes`. Two bare years filled two different ways in one sheet is a silent sort bug.
 2. **One-sided bounds still need two keys, and the open end takes the FLOOR, not the bound.**
    For `bef 1799-11-26`, `key_hi` is 17991126 and `key_lo` is the tightest floor you can defend
    — a last known appearance, a marriage, a birth range — with `notes` saying where it came
@@ -404,7 +391,7 @@ not identify the row. `id` does that.
    is an analytic act, not bookkeeping. Only when there is genuinely no floor use the sentinel
    `0000000000`, which sorts to the top of the sheet where you will see it; mirror image
    `99999999` in `key_hi` for an unbounded `aft`. Either way set `prec = U`.
-3. **`SS` orders events inside a day.** Two digits, assigned with gaps so you can insert later:
+3. **`SS` orders events inside a day.** Assigned with gaps so you can insert later:
 
    ```
    00 birth          10 baptism        20 marriage          30 deed signed
@@ -412,32 +399,33 @@ not identify the row. `id` does that.
    80 death          90 burial         95 probate or administration granted
    ```
 
-   Use `50` whenever the row has no defined position inside a day: a period, a bare year, a
-   jurisdictional fact. `SS` is also how you order a same-day sequence *without shifting a
-   date*. A man alive when he signed his will on 1791-03-02 and possibly dead later that day
-   gives two rows keyed `1791030260` and `1791030280`, both dated 1791-03-02. Never add a day
-   to a key to force an order; that is a falsified date, and the next reader cannot tell.
+   Use `50` when the row has no position inside a day: a period, a bare year, a jurisdictional
+   fact. `SS` is how you order a same-day sequence *without shifting a date*: a man alive when
+   he signed his will on 1791-03-02 and possibly dead later that day gives two rows keyed
+   `1791030260` and `1791030280`, both still dated 1791-03-02. **Never add a day to a key to
+   force an order.** That is a falsified date and the next reader cannot tell.
 4. **Sort on `key_lo` ascending, then `key_hi` ascending.** That puts the tightest row first
    among rows that start together, which is what you want reading down the page.
 5. **Sort on `prec` to find your work.** Filtering to `Y+` and `U` gives you, in one click, the
    rows whose looseness is holding the argument back. That list is your research plan; hand it
    to `references/research-workflows.md`.
-6. **Keys live in one calendar.** Default to the calendar as recorded, which is fine when the
-   whole chronology sits in one regime. When it does not, for instance a family with records in
-   both Pennsylvania (Julian until 1752) and France (Gregorian since 1582), normalise every key
-   to proleptic Gregorian, mark the column header, and leave `date_rec` and `date_norm`
-   untouched. A Julian 20 February 1719/20 is 2 March 1720 Gregorian and keys `1720030250`, so
-   it now interleaves correctly with a French record of the same season. For three or more calendar
-   systems the Julian Day Number is a cleaner single key than any `YYYYMMDD` scheme.
-7. **Store the date columns as text and the key columns as integers.** Spreadsheet date types
-   commonly cannot represent dates before 1900 and will silently coerce, reformat, or reject
-   them. This is the mechanism behind most of the corruption in section 10.
+6. **Keys live in one calendar.** Default to the calendar as recorded. When the chronology
+   mixes regimes — a family with records in both Pennsylvania (Julian until 1752) and France
+   (Gregorian since 1582) — normalise every key to proleptic Gregorian, mark the column header,
+   and leave `date_rec` and `date_norm` untouched. A Julian 20 February 1719/20 is 2 March 1720
+   Gregorian and keys `1720030250`, interleaving correctly with a French record of the same
+   season. For three or more systems the Julian Day Number is a cleaner single key.
+7. **Date columns as text, key columns as integers.** Spreadsheet date types commonly cannot
+   represent dates before 1900 and will silently coerce, reformat or reject them; they will
+   also round a decimal key. Tree programs collapse `bet 1746 and 1750` to a single displayed
+   year and sometimes store it that way. Check what survived a round trip before trusting an
+   export. This is the mechanism behind most of the corruption in section 10.
 
 ### 3.10 Where to look it up
 
 This file tells you to look something up rather than assume it seven times. Here is where.
-Name the one you used in `notes`, with its edition or its access date; "looked it up" without
-a name is the same unverifiable claim as not looking it up at all.
+Name the one you used in `notes`, with its edition or access date; "looked it up" without a
+name is as unverifiable as not having looked.
 
 | The lookup | Where |
 |---|---|
@@ -895,22 +883,11 @@ proof summary almost without rewriting. Structure, register, and the proof triad
    said "aged 22" in 1770. The range is gone, the arithmetic is unverifiable, and the next
    person inherits a date that was never in any document. Every row must be recoverable to
    the words on the page.
-2. **Normalising silently.** Writing `1749-03-12` and discarding `ye 12th of March 1748`. The
-   conversion may be right, but nobody can check it, and if the calendar regime was wrong the
-   error is now invisible. Keep `date_rec` and `place_rec` verbatim, always.
-3. **Dropping the nil results that bound a range.** The searches that found nothing are what
+2. **Dropping the nil results that bound a range.** The searches that found nothing are what
    turn "no evidence he was there" into "he was not there," and only when the record set is
    complete. Unrecorded, they get repeated and the bound silently evaporates.
-4. **Letting the software rewrite your uncertainty.** Tree programs collapse `bet 1746 and
-   1750` to a single displayed year and sometimes store it that way. Spreadsheets coerce
-   `1748-03-12` into a serial number, refuse pre-1900 dates, or re-render them in the local
-   format on the next machine that opens the file. Store date columns as **text**, key columns
-   as **integers**, and check what survived a round trip before trusting an export.
-5. **One row per document.** Section 2. The tell is an `assertion` cell containing "and."
-6. **Copying a derivative's normalisation.** An abstract that already says "12 March 1749" has
+3. **Copying a derivative's normalisation.** An abstract that already says "12 March 1749" has
    made a calendar decision for you, and abstractors get the year-start window wrong
    routinely. Go to the image.
-7. **Rows without citations.** A row with no `cite` is a rumour occupying a slot in an
+4. **Rows without citations.** A row with no `cite` is a rumour occupying a slot in an
    argument. Delete it or source it; do not leave it.
-8. **Confusing negative evidence with a negative search result.** They look identical in a
-   table and mean opposite things. The `notes` cell must say which, and why.

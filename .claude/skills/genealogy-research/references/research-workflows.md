@@ -574,27 +574,70 @@ Research question **RQ-04**: *Was the Bartholomew Cray assessed in Cumberland To
 County, Pennsylvania, 1804 through 1812, the same man as the Bartholomew Crea who, with wife
 Mary, conveyed land in Washington County, Pennsylvania, in 1791?*
 
-| # | Date | Source searched (short) | Coverage | Finding aid | Terms tried | Result | Src / Info / Ev |
-|---|---|---|---|---|---|---|---|
-| 04-01 | 2026-03-02 | Greene Co., Pa., grantee index, deed bks 1-7 | 1796-1840, complete, all vols present | Original book index, direct name | Cray, Crea, Creigh, Kray, McCrea, Cr* | **Hit**: Bartholomew Cray, grantee, 1802, 150a Muddy Creek | Original / primary as to the conveyance / direct as to presence in 1802, indirect as to identity |
-| 04-02 | 2026-03-02 | Greene Co., Pa., county tax duplicates, Cumberland Twp. | 1813-1820; all 8 yrs present, legible | None; read line by line | 9 variants; also read every surname | **Nil** | Original / n.a. / **candidate negative evidence, see note** |
-| 04-03 | 2026-03-09 | Washington Co., Pa., grantor index, deed bks A-F | 1781-1800; bk C index pp. 3-4 torn, surnames Co- through Da- lost | Original book index | Cray, Crea, Creigh, Kray | **Hit**: Bartholomew Crea and wife Mary, grantors, 1791 | Original / primary as to the conveyance and Mary's dower release / indirect |
-| 04-04 | 2026-03-09 | Washington Co., Pa., tax list, township later divided between Washington and Greene | 1788 only; list damaged at foot of 2nd membrane | None; read line by line | All surnames | **Partial / ambiguous**: "Barthol'w Cray" present, but the township's territory was divided in 1796, so the entry does not by itself place him in later Greene territory | Original / primary as to the assessment / **cannot yet bear on RQ-04** |
-| 04-05 | 2026-03-14 | Greene Co., Pa., orphans' court dockets | 1796-1840, complete; index is a modern card index, creator and completeness unverified | Modern card index only; records **not** read | Cray + 8 variants | **Nil, index only** | Derivative (index) / n.a. / no weight; must re-run against the dockets themselves |
-| 04-06 | 2026-03-21 | Presbyterian congregation register, Cumberland Twp. (custody: denominational archive) | Marriages 1798-1840; 1809-1814 leaves missing | Archive's typescript calendar | Cray, Crea; Teale, Teal, Teele | **Hit**: marriage of Bartholomew Cray and Susannah Teale, 3 June 1816 | Original / primary as to the marriage / direct as to the 1816 marriage, indirect as to identity |
+Nine of the eighteen columns fit a page. The rest (objective, repository, informant, condition,
+filed as, analysis) live in each row's NOTE block below, which is also where the full citation
+goes; the table cell carries a genuine shortened note, not a description.
 
-Notes attached to the rows above (the log's second tier; keep them with the row, not in your head):
+| # | Date | By | Source searched (shortened note) | Coverage searched | Finding aid | Terms tried | Result | Src / Info / Ev |
+|---|---|---|---|---|---|---|---|---|
+| 04-01 | 2026-03-02 | J. Rowan | Greene Co., Pa., Grantee Index to Deeds, bks 1-7 | 1796-1840, all 7 vols present; index by initial letter; spans are **recording** dates, not instrument dates | Original book index, direct name | Cray, Crea, Creigh, Kray, McCrea, Cr* | **Hit**: Bartholomew Cray, grantee, Deed Bk 3: 214, instrument 12 Apr 1802, recorded 3 May 1802, 150a on Muddy Creek | **Derivative** (book index, then the clerk's recorded copy in the deed book; signed instrument not seen) / primary as to the conveyance, from the parties to it / direct as to presence in Greene Co. in 1802, indirect as to identity |
+| 04-02 | 2026-03-02 | J. Rowan | Greene Co., Pa., Tax Duplicates, Cumberland Twp., 1813-1820 | 8 annual duplicates, all present and legible, unpaginated; dated by assessment year | None; read line by line, every surname | 9 variants, then every surname on every membrane | **Nil** | Original / n.a., nothing retrieved / **n.a.** (nil result; the negative-evidence test is discharged in the note and in section 6) |
+| 04-03 | 2026-03-09 | J. Rowan | Washington Co., Pa., Grantor Index to Deeds, bks A-F | 1781-1800; Bk C index pp. 3-4 torn, surnames Co- through Da- lost; recording dates | Original book index | Cray, Crea, Creigh, Kray | **Hit**: Bartholomew Crea and wife Mary, grantors, Deed Bk D: 61, instrument 9 Nov 1791 | **Derivative** (book index, then the recorded copy; signed instrument not seen) / primary as to the conveyance and to Mary's dower release, from the parties and the examining official / indirect as to identity |
+| 04-04 | 2026-03-09 | J. Rowan | Washington Co., Pa., Tax List, Finley Twp., 1788 | 1788 only; Finley Twp. as erected 1788 from southern Donegal, part of whose territory passed to Greene Co. in 1796; 2 membranes, foot of membrane 2 damaged, last eight names illegible | None; read line by line | All surnames | **Partial / ambiguous**: "Barthol'w Cray", membrane 1; the township's territory was divided in 1796, so the entry does not by itself place him in later Greene territory | Original / primary as to the assessment, from the assessor who took it / **n.a.** (cannot bear on RQ-04 until the parcel is platted against the 1796 line) |
+| 04-05 | 2026-03-14 | J. Rowan | Card index to Greene Co., Pa., Orphans' Court Dockets, 1796-1840 | Dockets 1796-1840 complete; the index is modern, compiler and completeness unverified | Modern card index only; records **not** read | Cray + 8 variants | **Nil, index only** | Derivative (index) / n.a. / **n.a.**; no weight, must re-run against the dockets themselves |
+| 04-06 | 2026-03-21 | J. Rowan | Presbyterian Cong. of Cumberland Twp., Register of Marriages | Marriages 1798-1840; leaves for 1809-1814 missing | Archive's typescript calendar | Cray, Crea; Teale, Teal, Teele | **Hit**: marriage of Bartholomew Cray and Susannah Teale, 3 June 1816, p. 42 | Original / primary as to the marriage, entered by the officiating minister / direct as to the 1816 marriage, indirect as to identity |
 
-- **04-02.** Nil, not negative evidence, until completeness is demonstrated. The duplicates list
-  single freemen as well as landholders, which strengthens the expectation of presence; but the
-  claim that he did not leave the county needs 04-03 and 04-06 correlated first. See section 6.
-- **04-03.** The torn index leaves surnames Co- through Da- unrecoverable in Book C. "Cray" falls
-  in that range. **The grantor index is therefore incomplete for the target surname**, and this
-  row's coverage statement must say so wherever it is cited. Book C itself must be read.
-- **04-04.** Classic jurisdiction trap. Checked against the Newberry *Atlas of Historical County
-  Boundaries* before drawing any inference.
-- **04-05.** A nil against an index of unverified completeness is not a nil against the record
-  set. Queued for re-run.
+Second tier. The two nil rows carry full NOTE blocks, because a nil is precisely the row nobody
+can re-run from a nine-column extract.
+
+```
+NOTE 04-02
+Objective:        Whether Bartholomew Cray was assessed in Cumberland Twp. after 1812
+Searcher:         J. Rowan, on-site, duplicates read in person
+Repository:       Greene County Courthouse, Waynesburg, Pennsylvania
+Full citation:    Greene County, Pennsylvania, county tax duplicates, Cumberland Township,
+                  eight annual duplicates 1813 through 1820, unpaginated, read entry by entry;
+                  Greene County Courthouse, Waynesburg, Pennsylvania.
+Short note:       Greene Co., Pa., Tax Duplicates, Cumberland Twp., 1813-1820.
+Index or records: records, line by line. No index exists for this series
+Informant:        the township assessor, for every assertion in the series
+Condition:        all eight present, complete, legible
+Filed as:         CRAY-RQ04/04-02-tax-1813-1820/ (photographs of each membrane)
+Analysis:         Nil. It becomes negative evidence only on the four premises worked in
+                  section 6, and even then it supports non-assessment in THIS township,
+                  not departure from the county
+Next action:      read the adjoining townships' duplicates, 1813-1820
+```
+
+```
+NOTE 04-05
+Objective:        A Cray guardianship or administration in Greene Co. before 1840
+Searcher:         J. Rowan, at the counter; index consulted, dockets not called for
+Repository:       Clerk of Orphans' Court, Greene County Courthouse, Waynesburg, Pennsylvania
+Full citation:    Card index to Greene County, Pennsylvania, Orphans' Court dockets, 1796
+                  through 1840, compiler and date of compilation unstated, filed by surname;
+                  Clerk of Orphans' Court, Waynesburg, Pennsylvania. Dockets not examined.
+Short note:       Card index to Greene Co., Pa., Orphans' Court Dockets, 1796-1840.
+Index or records: index only
+Informant:        n.a. Nothing was retrieved, and the index's compiler is unidentified
+Condition:        index intact; its coverage of the dockets unverified
+Filed as:         CRAY-RQ04/04-05-oc-index/ (note of the search only; no images)
+Analysis:         A nil against an index of unverified completeness is not a nil against the
+                  record set (section 4.5). No weight
+Next action:      read the dockets themselves, 1796-1840. Queued
+```
+
+- **04-01 and 04-03.** Both rows searched an index and then read the clerk's **recorded copy** in
+  the deed book. Neither signed instrument was examined, so both are derivative, on the same
+  footing as a will book: see `references/citation-management.md` and
+  `references/documentation-standards.md` section 1.1. Where loose originals survive, call for
+  them and re-classify the row.
+- **04-03.** The torn index leaves surnames Co- through Da- unrecoverable in Book C, and "Cray"
+  falls in that range. **The grantor index is incomplete for the target surname**, and this row's
+  coverage statement must say so wherever it is cited. Book C itself must be read.
+- **04-04.** Classic jurisdiction trap, checked against the Newberry *Atlas of Historical County
+  Boundaries* before any inference was drawn. Note also that the row is dated by assessment year
+  while 04-01 and 04-03 are dated by recording: coverage spans of different kinds do not line up.
 
 ### Log hygiene
 
@@ -608,6 +651,21 @@ Notes attached to the rows above (the log's second tier; keep them with the row,
   belong to `references/timeline-building.md`.
 - Keep the log where the research report can reach it. Archiving and file-naming conventions are
   in `references/documentation-standards.md`.
+
+### Ethics and privacy in the log
+
+The log is a working record, not a publication, but it is what you hand to a successor and it
+fills up with living people. Four rules; the full protocol, including the consent register and
+the handling of misattributed parentage, is `references/documentation-standards.md` section 9.
+
+- **Living people.** Log only what the question needs. Identifying details of the living stay in
+  the private archive; in anything circulated the default is name withheld.
+- **Restricted-record content.** Log the restriction, its authority, and the conditions of
+  access, and cite the record normally. Where the access terms forbid reproduction, log the
+  citation and your finding rather than a transcript.
+- **DNA.** Nobody is tested, or asked to test, without informed consent recorded with a date:
+  what a result may reveal, who will see it, what becomes of the sample. A living descendant is
+  a person, not a record set, and consent to test is not consent to be named.
 
 ---
 
@@ -639,15 +697,14 @@ trigger.
 |---|---|---|---|
 | **Name collecting** | Adding every same-surname person in the county to the tree because the name matches | Name is not identity. In a county with three Bartholomew Crays you have built a chimera | Require a distinguishing identifier before any record is attached (section 2). Separate identities before merging them: `references/relationship-mapping.md` |
 | **Tree copying** | Importing an online tree's parents, dates, and places wholesale | You have inherited someone else's unexamined conclusions and their errors, and you cannot cite them | Treat any tree as an authored narrative and a finding aid, never a source. Harvest its *sources*, search those yourself, and cite what you saw |
-| **Index-only research** | "Not in the records" when you mean "not in the index" | Indexes are derivative, partial, and misread names (sections 4.5, 5.4) | Log index searches and record searches as different acts. Re-run important nils against the records |
-| **Confirmation bias** | Searching only for the surname you expect, in the county you expect, and stopping when it appears | You will find a match because matches are common; you never looked for the counter-evidence | Write the falsification condition into the plan and search for it deliberately. Run the hostile-reader test (section 7) |
-| **Single-source conclusions** | A date or a relationship resting on one document, usually a derivative one | No independent corroboration; a single clerical error becomes a permanent ancestor | Require independent corroboration where it can exist, and state explicitly where it cannot |
-| **Stopping at the first match** | The first plausible marriage record closes the question | You never discovered the second plausible one, so you never had a conflict to resolve | Search the full span and the full jurisdiction before evaluating any candidate. Sufficiency test 4 |
-| **Ignoring the cluster** | Only the direct ancestor's records are searched | The ancestor's own trail is the thinnest one available; the answer is usually in someone else's document | Build the FAN list from documents already in hand and search the top members (sections 4.2, 5.6) |
-| **Unlogged searching** | Working from memory and browser tabs | Nils cannot be cited, searches get re-run, and the exhaustiveness claim is unsupportable | Log before moving on (section 8) |
 | **Conclusion drift** | A hypothesis appears in the tree without its "hypothesis" label and hardens over months | Later work is built on it and cannot be unpicked | Keep hypotheses in the plan and open questions in the open-question register (section 7), never in the conclusions layer |
 | **Jurisdiction blindness** | Searching the modern county, the modern parish, the modern country | The record is in the parent jurisdiction and you will conclude it does not exist | Jurisdictional survey before record selection, every time (section 4.3) |
 | **Chasing the interesting** | Abandoning the plan for a shiny collateral discovery | The original question never gets answered and the log becomes incoherent | Amend the plan in writing or open a new question with its own plan. *Flexibility* means amending, not drifting |
+
+The other familiar pathologies are treated where they belong rather than twice: index-only
+research at 4.5 and 5.4; confirmation bias, single-source conclusions, and stopping at the first
+match at section 7 (tests 3, 4, and 7); ignoring the cluster at 4.2 and 5.6; unlogged searching
+at section 8.
 
 ---
 
@@ -663,59 +720,62 @@ FamilySearch Research Wiki place page and the Newberry *Atlas of Historical Coun
 
 | Assertion | Source | Class |
 |---|---|---|
-| Bartholomew Cray assessed in Cumberland Twp., Greene Co., Pa., 1804-1812 | County tax duplicates, courthouse | Original; primary as to the assessment; undetermined as to anything else |
-| Will of Bartholomew Cray proved Greene Co. 1834, naming wife Susannah and four children | Register of wills, will book | The will book entry is a **record copy**, hence derivative of the signed original; primary information for the testator's statements about his family |
+| Bartholomew Cray assessed in Cumberland Twp., Greene Co., Pa., 1804-1812 | County tax duplicates, courthouse | Original; primary as to the assessment, the assessor being the informant; undetermined as to anything else |
+| Will of Bartholomew Cray proved Greene Co. 1834, naming wife Susannah and children Abner, Levi, Rachel, and Nancy | Register of wills, will book | The will book entry is a **record copy**, hence derivative of the signed will exactly as a deed book is derivative of the signed deed; primary information for the testator's statements about his family, he being the informant |
 | "The Crays came from Virginia" | An undocumented online tree | Authored narrative; no information value until its own source is found |
 
-Note what step 1 already did: it demoted the Virginia tradition out of the known-facts set.
+Step 1 has already demoted the Virginia tradition out of the known-facts set.
 
-**Step 2, decide what to learn.** First attempt: *"Where did the Crays come from?"* This fails
-all three tests in section 2. No record would answer it; no finding would refute it; no state of
-evidence would close it. Reframed:
+**Step 2, decide what to learn.** First attempt: *"Where did the Crays come from?"* It fails all
+three tests in section 2. Reframed:
 
 > **RQ-04.** Was the Bartholomew Cray assessed in Cumberland Township, Greene County,
 > Pennsylvania, 1804 through 1812, the same man as the Bartholomew Crea who, with wife Mary,
 > conveyed land in Washington County, Pennsylvania, in 1791?
 
-Hypothesis: one man, who married twice. Falsification condition: a record placing both men
-alive in the same year in different jurisdictions, or a Washington County record showing the
-1791 grantor's death before 1804.
+Hypothesis: one man, who married twice.
+
+**Falsification condition, and how to get it wrong.** The tempting first limb is "a record
+placing a bearer of the name in both counties in the same year." It is worthless here, and
+worse than worthless: Greene County was erected out of Washington on 9 February 1796, so the
+same ground is recorded at Washington before that date and at Waynesburg after it, and a man
+living near the line can appear in both in one year without being two men. A reader applying
+that condition would refute a true identity. A falsification condition must name something **one
+man cannot satisfy**:
+
+> RQ-04's hypothesis dies if (1) two Bartholomew Crays execute instruments before different
+> officials on the same date, or a Washington County record names a Bartholomew Cray "Jr."
+> alongside a living senior of the name; or (2) a Washington County record shows the 1791
+> grantor dead before 1804.
 
 **Step 3, select records.** The jurisdictional survey pays for itself immediately. Greene County
 was created in 1796 out of Washington County, so any land transaction before 1796 on the same
 ground is recorded at Washington, not Waynesburg. Pennsylvania county marriage records generally
-begin in 1885, so an 1816 marriage must be sought in church records, not the courthouse. That
-one survey reorders the whole plan. Priority: Greene deed indexes; Greene tax duplicates
-1813-1820 (cheap, and the nil would be informative); Washington deed indexes pre-1796; Washington
-tax lists; Greene orphans' court; church registers.
+begin in 1885, so an 1816 marriage must be sought in church records, not the courthouse.
+Priority: Greene deed indexes; Greene tax duplicates 1813-1820 (cheap, and the nil would be
+informative); Washington deed indexes pre-1796; Washington tax lists; orphans' court; churches.
 
-**Step 4, obtain and search.** Log rows 04-01 through 04-06 in section 8.
-
-**Step 5, evaluate and record.** Three things fall out: continuity of land (an 1802 Greene
-purchase and a 1791 Washington sale, adjacent ground, one variant family of the name); a wife
-problem (Mary in 1791, Susannah in 1834, which reads naively as two men and competingly as one
-man widowed and remarried, with log row 04-06 supplying an 1816 marriage that fits); and an
-ambiguity that cannot be used at all, the 1788 tax entry at 04-04, sitting in territory divided
-in 1796.
+**Steps 4 and 5.** Log rows 04-01 through 04-06, section 8. Three things fall out: continuity of
+land (an 1802 Greene purchase and a 1791 Washington sale, adjacent ground); a wife problem (Mary
+in 1791, Susannah in 1834, which reads naively as two men and competingly as one man widowed and
+remarried, with 04-06 supplying an 1816 marriage that fits); and an ambiguity that cannot be used
+at all, the 1788 Finley Township entry at 04-04, in territory divided in 1796.
 
 **A wife's name is not an identity discriminator.** Remarriage after a wife's death was normal,
 and the gap between Mary's last appearance and Susannah's first is long enough to hold a death
-and a remarriage. This is exactly where the cycle re-enters at step 2 with a conflict-only
-question, rather than at step 3 with more searching.
+and a remarriage. The cycle re-enters at step 2 with a conflict-only question, not at step 3
+with more searching.
 
 ### Pass 2
-
-**Re-entry at step 2** (conflict, per the re-entry table):
 
 > **RQ-05.** Can the Bartholomew Cray of the 1791 Washington County deed and the Bartholomew
 > Cray whose will was proved in Greene County in 1834 be one man, given the ages, the land, and
 > the associates, and is any third bearer of the name in either county in 1791 through 1834?
 
-**Step 3, record selection, now cluster-first.** The 1791 deed names a grantee and two
-witnesses. The 1802 deed names adjoining owners. Those five names become the FAN list, and each
-gets the full record-type inventory run against it (section 5.6). Added to the plan: the 1850
-census of Cumberland Township, because Susannah, if living, will give an age; and Greene County
-orphans' court read against the dockets themselves, because 04-05's nil was index-only.
+**Step 3, cluster-first.** The 1791 deed names a grantee and two witnesses; the 1802 deed names
+adjoining owners. Those five become the FAN list, each run through the full record-type
+inventory (5.6). Added: the 1850 census of Cumberland Township, because Susannah, if living,
+will give an age; and the orphans' court dockets themselves, because 04-05's nil was index-only.
 
 **Step 4 and 5, what the cluster returns.**
 
