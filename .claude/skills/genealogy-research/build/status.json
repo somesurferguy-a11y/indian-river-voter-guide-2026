@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 17:10",
+  "updated": "2026-09-22 17:15",
   "domains": [
     {
       "id": "research-workflows",
@@ -32,17 +32,17 @@
     {
       "id": "citation-management",
       "name": "Citation Management",
-      "status": "in review",
+      "status": "revising",
       "round": 2,
       "scores": {
         "citation_formats": 6,
         "source_evaluation": 8,
-        "timeline_accuracy": 7,
+        "timeline_accuracy": 8,
         "relationship_clarity": 8,
         "documentation_completeness": 8
       },
       "verdict": "FAIL",
-      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
+      "gap": "Three FamilySearch Online templates delete the record's repository and put citing in front of the DGS images actually examined"
     },
     {
       "id": "timeline-building",
@@ -62,17 +62,17 @@
     {
       "id": "relationship-mapping",
       "name": "Relationship Mapping",
-      "status": "in review",
+      "status": "revising",
       "round": 2,
       "scores": {
-        "citation_formats": 7,
+        "citation_formats": 8,
         "source_evaluation": 8,
-        "timeline_accuracy": 7,
-        "relationship_clarity": 6,
-        "documentation_completeness": 6
+        "timeline_accuracy": 8,
+        "relationship_clarity": 7,
+        "documentation_completeness": 8
       },
       "verdict": "FAIL",
-      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
+      "gap": "DNA test plan recruits a Bellwether Creek tester whose Y the file says is Purnell, so no result can support the hypothesis"
     },
     {
       "id": "documentation-standards",
@@ -130,6 +130,14 @@
     {
       "t": "17:10",
       "msg": "documentation-standards + timeline-building R2 complete; 4 of 5 domains now with fresh critics"
+    },
+    {
+      "t": "17:14",
+      "msg": "relationship-mapping R2: FAIL 39/50 (was 34). Roster fixed and all arithmetic verified; DNA plan defect relocated not closed. R3 dispatched."
+    },
+    {
+      "t": "17:15",
+      "msg": "citation-management R2: FAIL 38/50 (was 37). Round-1 fix misapplied in the revision's own new content; R3 dispatched."
     }
   ]
 }
