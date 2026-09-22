@@ -172,5 +172,5 @@ Source-list entries (alphabetised by first element):
 
 ## Pre-submission check
 
-Run the GPS self-audit in `references/documentation-standards.md` §2.6 before marking this
+Run the GPS self-audit in `references/documentation-standards.md` §2.1 before marking this
 document Current. Fail any line and either fix it or downgrade the confidence language.

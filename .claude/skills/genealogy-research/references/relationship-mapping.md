@@ -10,6 +10,40 @@ match does and does not let you conclude. Date arithmetic and chronology are own
 `references/timeline-building.md`; citation shapes by `references/citation-management.md`; proof-argument
 prose by `references/documentation-standards.md`.
 
+## The exemplar cast
+
+Every example in this file comes from one roster, so any example can be checked against any other. The
+people are illustrative; the record types, jurisdictions and repositories around them are structurally
+real. Sussex County, Delaware, unless stated.
+
+```
+THREE MEN NAMED BARTHOLOMEW CRAY. Kept deliberately: section 3 works the separation problem on
+them, and each is tagged the same way in every example here. Nobody else in the cast shares a name.
+
+"of Bellwether Creek"  b. 1788, d. 1851, cooper. m. 1810 Susannah Teale (1791-1868), one
+    marriage each. 84 a. on Bellwether Creek by the 1819 deed. Will executed 1848, proved 1851.
+    ch. Mary Cray (1810-1884), m. Elias Stannard | Bartholomew "the younger" (1812-1880), below |
+        Hosea Cray (1815-1816), d. in infancy
+"of Slaughter Neck"    b. ca. 1790, d. 1839, farmer. No kinship to the above is proven.
+    m. (1) ca. 1812 Rachel [birth surname not established], d. 1821; m. (2) 1823 Dorcas (Wake)
+    Kell (1795-1871), widow of Jabez Kell.
+    ch. Levin Cray (1814-1889), by Rachel; an online tree makes him a Bellwether Creek son
+        instead, which is the negative-evidence case in 7.4 | Silas Cray (1825-1901), by Dorcas,
+        Levin's half brother
+    stepch. Patience Kell (1816-1893), Dorcas's daughter by Jabez Kell
+"the younger"          b. 1812, d. 1880, son of Bellwether Creek; removed to Ohio ca. 1840.
+    m. Verity Marchbank.  ch. Josiah Cray (b. 1840) | Ann Cray (b. 1843), m. a Teale
+
+LATER GENERATIONS (the cousin arithmetic in section 5 runs on these)
+    Reuben Stannard (1838-1901), son of Mary (Cray) Stannard
+    Tabitha Stannard (1871-1944), daughter of Reuben, great-granddaughter of Bellwether Creek
+    Josiah Teale (1919-1986), great-grandson of Ann (Cray) Teale, 3x-great-grandson of
+        Bellwether Creek
+    Nehemiah Cray (b. 1885), adopted 1889 into the household of Josiah Cray
+    Purnell: a surname absent from this pedigree, used in section 11 as the cluster a
+        misattributed-parentage result points to
+```
+
 ## 1. The order of operations
 
 ```
@@ -58,18 +92,26 @@ Record the decision, not just the outcome.
 
 ```
 IDENTITY NOTE - Bartholomew Cray of Bellwether Creek
-Question:   Is the B. Cray taxed in Sussex Co. 1819-1834 the man whose will was
-            proved there in 1851?
-For:        Same parcel (84 a., Bellwether Cr.) in the 1819 deed and the 1851 will.
-            Same two witnesses (Teale, Marchbank) to the 1819 deed and the 1848 will.
-            Age in 1850 census (62) consistent with age at 1810 marriage.
-Against:    1827 tax list shows two B. Crays in the same hundred.
+Question:   Is the B. Cray taxed in Sussex Co. 1819-1834 the man whose 1848 will
+            was proved there in 1851?
+For:        Same parcel (84 a., Bellwether Cr.) in the 1819 deed and the 1848 will
+              (proved 1851). [S1][S2]
+            Same two witnesses (Teale, Marchbank) to the 1819 deed and the 1848
+              will (proved 1851). [S1][S2]
+            Age in 1850 census (62) consistent with age at the 1810 marriage. [S3][S4]
+Against:    1827 tax list shows two B. Crays in the same hundred. [S5]
 Resolved:   The second is Bartholomew Cray of Slaughter Neck, taxed on a different
-            parcel, d. 1839 (adm. bond). Assignment of the 1827 entries follows
-            the parcel. See SEPARATION FILE: Cray, Bartholomew.
+              parcel, d. 1839 (adm. bond). [S5][S6] Assignment of the 1827 entries
+              follows the parcel. See SEPARATION FILE: Cray, Bartholomew.
 Conclusion: One man. Confidence strong. Revisit if a third parcel appears.
+Sources:    S1 [deed: full reference note]   S2 [will: full reference note]
+            S3 [1850 census: full note]      S4 [1810 marriage: full note]
+            S5 [1827 tax list: full note]    S6 [adm. bond: full note]
 3 May 2026 / [researcher]
 ```
+
+Every assertion carries its own citation slot, because the note is the thing a successor re-checks;
+shapes for what goes in the slots are owned by `references/citation-management.md`.
 
 Two rules keep this honest. **Never merge on a name plus one shared detail**; merging is destructive and
 hard to undo once it propagates into charts and online trees. And **record a split as carefully as a
@@ -103,16 +145,22 @@ NAME UNDER STUDY: Bartholomew Cray (also Crey, Craye, Kray)
 UNIVERSE: Sussex County, Delaware, 1795-1860
 
 A  "of Bellwether Creek"  b. ca. 1788, d. 1851, cooper, m. Susannah Teale
-B  "of Slaughter Neck"    b. ca. 1790, d. 1839, farmer, m. Verity Marchbank
+B  "of Slaughter Neck"    b. ca. 1790, d. 1839, farmer, m. (2) Dorcas (Wake) Kell
 C  "the younger"          b. ca. 1812, son of A, removed to Ohio ca. 1840
 
-RECORD                           ASSIGNED    BASIS
-1819 deed, 84 a. Bellwether Cr.  A           parcel; witnesses Teale, Marchbank
-1827 tax, Cedar Creek Hd.        B           hundred; no land matches A's parcel
-1830 census, Broadkill Hd.       A           household composition fits A's family
-1838 marr. bond, surety B. Cray  UNASSIGNED  A and C both plausible; hand unclear
-1841 Ohio deed, B. Cray          C           A taxed in Sussex in 1841
+RECORD                           ASSIGNED    BASIS                          CITATION
+1819 deed, 84 a. Bellwether Cr.  A           parcel; witnesses Teale,       [S1]
+                                               Marchbank
+1827 tax, Cedar Creek Hd.        B           hundred; no land matches A's   [S5]
+                                               parcel
+1830 census, Broadkill Hd.       A           household composition fits A   [S7]
+1838 marr. bond, surety B. Cray  UNASSIGNED  A and C both plausible; hand   [S8]
+                                               unclear
+1841 Ohio deed, B. Cray          C           A taxed in Sussex in 1841      [S9][S10]
 ```
+
+**A separation file with no citation column is a claim, not a record.** The bracketed keys resolve in
+the file's source list; a reader who cannot re-fetch the record cannot test the assignment.
 
 **Anti-patterns.** Assuming the eldest candidate is yours. Assigning the flattering records (the
 officeholder, the large estate) to your ancestor and the rest to a shadow candidate. Letting a record
@@ -133,7 +181,7 @@ usages are era-and-place specific; do not port a reading from an English will of
 | **nephew / niece** | child of a sibling | descendant generally, and specifically **grandson / granddaughter**, from Latin *nepos* | English, chiefly through c. 1600, attested into the 17th c.; check any pre-1700 English will |
 | **junior / senior (Jr, Sr)** | son and father | the younger and the older of two living men of one name **in the same community**: often kin, frequently uncle and nephew or cousins, sometimes unrelated. The labels are relative and they **move**: when the elder dies the younger becomes Senior and a third man becomes Junior | England and North America, 17th-19th c.; the father-son convention hardens only in the later 19th c. |
 | **"the third", "tertius"** | third in a line | the third living man of the name in the community, on the same relative logic | New England town and church records especially |
-| **"now wife"** | current wife, implying a former one | a scrivener's phrase distinguishing the wife living at the date of the will from any predecessor, usually to protect children of an earlier marriage or to define dower precisely. It does **not** imply divorce; a prior marriage would have ended at death. It does not reliably imply a prior wife at all, since some scriveners used it formulaically | English and American wills, 17th-19th c. |
+| **"now wife"** | current wife, implying a former one | **It is not evidence of a former wife.** It is a scrivener's phrase fixing the bequest on the wife living at the date of the will so that it cannot pass to a **later** wife should the testator remarry after executing it, and defining her life estate or dower precisely. Many scriveners wrote it formulaically. Where a prior marriage did exist it had most often ended at the first wife's death, but do not treat that as universal: divorce was available in some jurisdictions within this band, including colonial Massachusetts Bay and Connecticut, England by private act of Parliament and later by judicial divorce under the Matrimonial Causes Act, and many US states by statute during the nineteenth century | English and American wills, 17th-19th c. |
 | **father-in-law / mother-in-law** | parent of one's spouse | **stepfather / stepmother** | English and American, 17th to early 19th c. |
 | **son-in-law / daughter-in-law** | spouse of one's child | **stepson / stepdaughter** (sometimes alongside the modern sense in one document) | same |
 | **brother / sister** | sibling | sibling-in-law; fellow member of a church, meeting, lodge or company | widespread; in Quaker, Moravian and Baptist records the religious sense is the default |
@@ -153,10 +201,14 @@ usages are era-and-place specific; do not port a reading from an English will of
 reason. Never silently translate.
 
 ```
-Source says: "to my cousin Verity Teale"
-Read as:     probably niece (daughter of testator's sister Ann); the testator uses
-             "cousin" for two other known nieces in the same will
-Confidence:  moderate; the first-cousin reading is not excluded
+Record:      Bartholomew Cray of Bellwether Creek, will executed 1848 (proved 1851)
+Source says: "to my cousin Silas Cray"
+Read as:     an unspecified collateral kinsman. Silas Cray (1825-1901) is the son of
+             Bartholomew Cray of Slaughter Neck, whose kinship to the testator is not
+             established. Delaware in 1848 is late for the widest sense of "cousin"
+             but not outside it, so the row's era note applies: test it, do not assume it
+Confidence:  low; first cousin once removed, nephew and kin-by-marriage all remain open
+Effect:      the word is a lead into the separation file, not a link
 ```
 
 ## 5. Cousin arithmetic
@@ -174,7 +226,8 @@ couple, see 5.4.
 | `a = 1` | the shorter-path person is the sibling of an ancestor of the other: **sibling** if `b = 1`, **aunt/uncle** if `b = 2`, **granduncle/grandaunt** if `b = 3`, **great-granduncle/grandaunt** if `b = 4`, adding one "great" per further generation |
 | `a >= 2` | **cousin degree = `a - 1`**, **removal = `b - a`** |
 
-Removal measures difference in generation and nothing else.
+Removal measures difference in generation and nothing else. In the grid below, rows and columns are
+generations down from the common ancestor, which is the same count as the arrows in a path chain.
 
 |  | child (1) | grandchild (2) | gt-grandchild (3) | 2x-gt-grandchild (4) |
 |---|---|---|---|---|
@@ -183,26 +236,43 @@ Removal measures difference in generation and nothing else.
 | **gt-grandchild (3)** | | | 2nd cousins | 2nd cousins once removed |
 | **2x-gt-grandchild (4)** | | | | 3rd cousins |
 
+The grid stops at four generations for width, not for arithmetic. Each further column adds one removal and
+nothing else, so a great-grandchild (3) against a 3x-great-grandchild (5) is second cousins twice removed,
+and a child (1) against a 3x-great-grandchild (5) is a 2x-great-grandaunt or granduncle. Both worked
+examples below sit in that fifth column, and both can be read off the grid by extending it one step.
+
 ### 5.2 Worked example A
 
-Common ancestor **Bartholomew Cray (1788-1851)**. **Verity Marchbank (1871-1944)** is his
-great-granddaughter (Verity -> her mother -> her grandmother -> Bartholomew), so `a = 3`. **Josiah Teale
-(1919-1986)** is his 3x-great-grandson (Josiah -> father -> grandfather -> great-grandfather ->
-Bartholomew), so `b = 5`. Degree `= a - 1 = 2`; removal `= b - a = 2`. **Second cousins twice removed.**
+Common ancestor **Bartholomew Cray of Bellwether Creek (1788-1851)**. **Tabitha Stannard (1871-1944)** is
+his great-granddaughter, three generations down (Tabitha -> her father Reuben Stannard -> her grandmother
+Mary (Cray) Stannard -> Bartholomew), so `a = 3`. **Josiah Teale (1919-1986)** is his 3x-great-grandson,
+five generations down (Josiah -> his father -> his grandfather -> his great-grandmother Ann (Cray) Teale ->
+his 2x-great-grandfather Bartholomew the younger -> Bartholomew), so `b = 5`. Degree `= a - 1 = 2`;
+removal `= b - a = 2`. **Second cousins twice removed**, which is what the grid gives at row 3, column 5.
 
-Written out: "Josiah Teale (1919-1986) and Verity Marchbank (1871-1944) were second cousins twice removed,
-both descending from Bartholomew Cray (1788-1851): Verity through his daughter Ann, Josiah through his son
-Bartholomew the younger." Note what the bare label hides and the sentence supplies, namely *which child of
-the NCA each descends through*. Always supply it.
+**Count arrows, not names: each arrow is one generation.** A chain showing four arrows cannot support
+`b = 5`, and a chain miscounted by one is the commonest way this calculation fails. Count the chain, then
+check the label against the grid; if they disagree, the chain is usually right and the label wrong.
+
+Written out: "Josiah Teale (1919-1986) and Tabitha Stannard (1871-1944) were second cousins twice removed,
+both descending from Bartholomew Cray of Bellwether Creek (1788-1851): Tabitha through his daughter Mary,
+Josiah through his son Bartholomew the younger." Note what the bare label hides and the sentence supplies,
+namely *which child of the NCA each descends through*. Always supply it.
 
 ### 5.3 Worked example B (the `a = 1` case that breaks the cousin formula)
 
-Common ancestor **Susannah Teale (1791-1868)**. **Ann Cray (1815-1899)** is her daughter, `a = 1`. **Hosea
-Cray (1902-1977)** is her 3x-great-grandson, `b = 5`. Because `a = 1`, do not say "zeroth cousins four
-times removed." Ann is the sibling of Hosea's ancestor `b - 1 = 4` generations up, that is, of his
-2x-great-grandparent. **Ann is Hosea's 2x-great-grandaunt; Hosea is her 2x-great-grandnephew.** Prefer
-*grandaunt* and *granduncle* to *great-aunt* and *great-uncle*, which are also used loosely for any aunt
-or uncle of an older generation, and say which convention your document uses.
+Same family, one step sideways. Common ancestor **Susannah (Teale) Cray (1791-1868)**, wife of the
+Bartholomew in 5.2. **Mary (Cray) Stannard (1810-1884)** is her daughter, so `a = 1`. **Josiah Teale
+(1919-1986)** is her 3x-great-grandson by the same five-arrow chain used in 5.2, so `b = 5`. Because
+`a = 1`, do not say "zeroth cousins four times removed." Mary is the sibling of Josiah's ancestor
+`b - 1 = 4` generations up, that is, of his 2x-great-grandparent Bartholomew the younger. **Mary is
+Josiah's 2x-great-grandaunt; Josiah is her 2x-great-grandnephew**, which is row 1, column 5 of the grid.
+Prefer *grandaunt* and *granduncle* to *great-aunt* and *great-uncle*, which are also used loosely for any
+aunt or uncle of an older generation, and say which convention your document uses.
+
+The two examples share a cast deliberately: Tabitha in 5.2 is Mary's granddaughter, so if 5.2 and 5.3
+disagreed about where Mary sits, one of them would be wrong and you could see it. Build your own examples
+so they check against each other.
 
 **Direction is not optional.** "First cousin once removed" describes both *your parent's first cousin* and
 *your first cousin's child*. Write the direction, or name the path.
@@ -225,24 +295,24 @@ is a writing convention applied without exception.
 
 | Relationship | Definition | Write it as | Never write |
 |---|---|---|---|
-| **Half sibling** | one shared parent | "his half brother Josiah Cray (same father, Bartholomew Cray)" | "his brother" |
-| **Step relation** | connection by a parent's marriage, no shared ancestry | "his stepdaughter Verity Marchbank, daughter of his wife Susannah by her first husband Hosea Marchbank" | "his daughter" |
+| **Half sibling** | one shared parent | "his half brother Silas Cray (same father, Bartholomew Cray of Slaughter Neck)" | "his brother" |
+| **Step relation** | connection by a parent's marriage, no shared ancestry | "his stepdaughter Patience Kell, daughter of his wife Dorcas by her first husband Jabez Kell" | "his daughter" |
 | **Step in an older record** | the record may say "son-in-law" or "father-in-law" meaning step | quote the word, then give your reading: "described as his 'son-in-law', read here as stepson" | a silent modernisation |
 | **Adoptive (legal)** | adoption effected by court or statute | "adopted son, per the adoption decree entered in the [county] court, 1889" | "son" unqualified |
-| **Adoptive (informal)** | "taken to raise," no legal act | "raised in the household of, and called son by, Bartholomew Cray; no adoption record found in [jurisdiction], [date span]" | "adopted son" |
-| **Fostered / bound out / apprenticed** | a labour or maintenance arrangement | "bound to Bartholomew Cray by the overseers of the poor, 1827 (indenture)" | any kinship term |
+| **Adoptive (informal)** | "taken to raise," no legal act | "raised in the household of, and called son by, Bartholomew Cray of Slaughter Neck; no adoption record found in [jurisdiction], [date span]" | "adopted son" |
+| **Fostered / bound out / apprenticed** | a labour or maintenance arrangement | "bound to Bartholomew Cray of Bellwether Creek by the overseers of the poor, 1827 (indenture)" | any kinship term |
 | **Guardianship** | a legal office, often held by kin, often not | "guardian (an office, not necessarily a blood relationship)" | "uncle," inferred from guardianship alone |
 | **Genetic vs. documentary parent** | when DNA and documents disagree | name both: "documentary father" and "genetic father," each defended | choosing one and deleting the other |
 
-In charts that cannot express a qualifier, carry it as a bracketed tag on the name: `Verity Marchbank
-[step]`, `Josiah Cray [half, same father]`, `Hosea Cray [adopted 1889]`. Put the legend on the chart
+In charts that cannot express a qualifier, carry it as a bracketed tag on the name: `Patience Kell
+[step]`, `Silas Cray [half, same father]`, `Nehemiah Cray [adopted 1889]`. Put the legend on the chart
 itself, not in a separate file.
 
 ## 7. What proves a parent-child link
 
 ### 7.1 A stated relationship is an assertion by an informant
 
-When a record says "my son Josiah" or "father: Bartholomew Cray," it is not reporting a biological fact.
+When a record says "my son Josiah" or "father: Bartholomew Cray," it is not reporting a biological certainty.
 It is transmitting a claim made by a particular person, at a particular moment, for a particular purpose.
 Evaluate three things every time.
 
@@ -262,6 +332,12 @@ relationship word means something other than you assume (section 4); the "origin
 derivative copy.
 
 ### 7.2 Indirect evidence assembled into a relationship argument
+
+**Direct and indirect are not properties of a record.** The same item is direct evidence for one question
+and indirect for another, because evidence is a relationship between an information item and the question
+you are asking. A marriage bond naming a bride's father is direct evidence of that father-daughter link
+and indirect evidence of the bride's age, since consent implies minority. Type the evidence against the
+question, never against the document.
 
 Where no record states the relationship, the link is built from items that individually prove something
 else: land transferred for nominal consideration; a bondsman or surety who is a likely kinsman; naming
@@ -294,14 +370,14 @@ One citation, so the table has something to point at. Shapes and the layered/pro
 
 ```
 First (full) reference note:
-  Sussex County, Delaware, Deed Book K: 218-219, Bartholomew Cray to Verity
-  (Cray) Teale, deed of gift, 14 March 1831; Recorder of Deeds, Georgetown,
+  Sussex County, Delaware, Deed Book K: 218-219, Bartholomew Cray to Mary
+  (Cray) Stannard, deed of gift, 14 March 1831; Recorder of Deeds, Georgetown,
   Delaware; digital images, "[collection title exactly as the site gives it],"
   [website name] ([site URL] : accessed 3 May 2026), image [n] of [N], citing
   [the film or original the site names].
 
 Shortened note:
-  Sussex Co., Del., Deed Bk K: 218-219, Cray to Teale, 1831.
+  Sussex Co., Del., Deed Bk K: 218-219, Cray to Stannard, 1831.
 
 Source-list entry:
   Sussex County, Delaware. Deed Books. Recorder of Deeds, Georgetown, Delaware.
@@ -338,8 +414,11 @@ survivorship or intestacy.
 8. There is **another testator of the same name** (section 3).
 
 Only when those are eliminated in writing does the absence become evidence, and it is then stated as such:
-"The absence of Josiah from the 1848 will is negative evidence bearing on the relationship; explanations 1
-through 8 were tested and eliminated as follows..."
+"The absence of Levin Cray (1814-1889) from the 1848 will of Bartholomew Cray of Bellwether Creek (proved
+1851) is negative evidence bearing on the claimed relationship; explanations 1 through 8 were tested and
+eliminated as follows..." In the roster at the head of this file the answer is explanation 8 in its
+commonest form: Levin is the son of Bartholomew Cray of Slaughter Neck, and the tree that made him a
+Bellwether Creek son had merged two men of one name.
 
 ## 8. Charts, and when each earns its place
 

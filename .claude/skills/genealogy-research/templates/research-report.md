@@ -10,7 +10,7 @@ question, which makes them harder to serve than a client, not easier.
 
 A research report records an **episode of research**. It is not a compiled genealogy: it is
 organised by the process, it shows the failures, and it is superseded by the next report. See
-§5.3 of the reference file for the distinction.
+"Report vs. compiled genealogy" in §5 of the reference file for the distinction.
 
 ---
 
@@ -182,7 +182,7 @@ handled, or a pointer to the proof argument that handles it]
 
 > List every image, transcription, and chart supplied, with its archive filename, so the report
 > and the archive can be reunited later. Naming conventions:
-> `references/documentation-standards.md` §7.5.
+> "File naming" in `references/documentation-standards.md` §7.
 
 | Attachment | Archive filename | Citation |
 |---|---|---|

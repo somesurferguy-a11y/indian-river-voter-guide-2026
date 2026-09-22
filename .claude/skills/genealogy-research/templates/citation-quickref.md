@@ -10,6 +10,9 @@ LEGEND
 {slot}            replace with your data; nothing in braces is a real number or title
 [supplied]        keep the brackets; marks what you added, not what the record says
                   (in a finished citation brackets mean supplied, never "fill me in")
+_title_           underscores mark a published title (book, journal, newspaper, website)
+                  that must be set in italics; code fences cannot render italics, so strip
+                  the underscores and italicise the title when you paste
 ;                 separates provenance layers
 citing            everything after this word is the provider's claim, unverified by you
 ( : accessed )    website layer: (site root URL : accessed {date})
@@ -44,18 +47,19 @@ Examined the original in person
    {original, full Where-in}; {repository}, {city}.
 
 Examined an online image of an original
-   {original, full Where-in}; digital image, {Site} ({site root URL} : accessed {date});
+   {original, full Where-in}; digital image, _{Site}_ ({site root URL} : accessed {date});
    citing {film / publication / record group the site names}.
 
 Examined microfilm
-   {original, full Where-in}; {film publication and roll or film no.}, {film repository}.
+   {original, full Where-in}; FamilySearch microfilm {film no.}, item {no.}; digital folder
+   (DGS) {no.}, FamilySearch Library, Salt Lake City.
 
 Examined an index entry only
-   "{exact database title}," database, {Site} ({site root URL} : accessed {date}),
+   "{exact database title}," database, _{Site}_ ({site root URL} : accessed {date}),
    entry for {person}, {event date}; citing {source the site names}. {Original} not examined.
 
 Read it in someone else's book ("cited in")
-   {Author}, {Title} ({place}: {publisher}, {year}), {page}, citing {their source}
+   {Author}, _{Title}_ ({place}: {publisher}, {year}), {page}, citing {their source}
    [not examined by this researcher].
 ```
 
@@ -67,13 +71,20 @@ images. `digital images` = images, no index layer.
 ### Civil registration (US)
 
 ```
-Full   Indiana Department of Health, death certificate no. {cert. no.} ({year of cert.}),
-       Susannah Teale; Vital Records, Indianapolis.
+Full   Indiana, {state health agency as named on the certificate}, death certificate no.
+       {cert. no.} ({year of cert.}), Susannah Teale, informant {informant as named},
+       {relationship as stated}; Indiana Department of Health, Vital Records, Indianapolis.
 Short  Indiana death certificate no. {cert. no.} ({year}), Teale.
-List   Indiana. Department of Health. Death certificates, {year range}. Vital Records,
-       Indianapolis.
+List   Indiana. {State health agency as named on the certificates}. Death certificates,
+       {year range}. Indiana Department of Health, Vital Records, Indianapolis.
+Online Indiana, {state health agency as named on the certificate}, death certificate no.
+       {cert. no.} ({year of cert.}), Susannah Teale; digital image, _{Site Name}_
+       ({site root URL} : accessed {date}); citing {the series or digital folder (DGS)
+       number the site names}.
 ```
-Certificate numbers restart annually: always parenthesise the certificate year.
+Certificate numbers restart annually: always parenthesise the certificate year. Who is a
+slot filled from the certificate itself, not today's agency name; today's holder goes in
+Where-is (`references/citation-management.md` §2).
 
 ### County marriage record
 
@@ -88,14 +99,17 @@ List   Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circ
 ### US federal census
 
 ```
-Full   {year} U.S. census, Marion County, Indiana, population schedule, Indianapolis,
+Full   1880 U.S. census, Marion County, Indiana, population schedule, Indianapolis,
        enumeration district (ED) {ED no.}, sheet {no. and letter}, dwelling {no.},
-       family {no.}, Bartholomew Cray; NARA microfilm publication {pub. no.},
-       roll {roll no.}.
-Short  {year} U.S. census, Marion Co., Ind., pop. sch., ED {ED no.}, sheet {no.},
+       family {no.}, Bartholomew Cray; NARA microfilm publication T9, roll {roll no.}.
+Short  1880 U.S. census, Marion Co., Ind., pop. sch., ED {ED no.}, sheet {no.},
        fam. {no.}, Cray.
-List   Indiana. Marion County. {year} U.S. census, population schedule. NARA microfilm
-       publication {pub. no.}. National Archives, Washington, D.C.
+List   Indiana. Marion County. 1880 U.S. census, population schedule. NARA microfilm
+       publication T9. National Archives, Washington, D.C.
+Online 1880 U.S. census, Marion County, Indiana, population schedule, Indianapolis,
+       enumeration district (ED) {ED no.}, sheet {no. and letter}, dwelling {no.},
+       family {no.}, Bartholomew Cray; digital image, _{Site Name}_ ({site root URL} :
+       accessed {date}); citing NARA microfilm publication T9, roll {roll no.}.
 ```
 Verified publication numbers: M653 (1860), M593 (1870), T9 (1880), T623 (1900). All in
 Record Group 29. Look any other year up in NARA's microfilm catalog; do not guess.
@@ -110,6 +124,10 @@ Full   Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufre
 Short  St. John's Lutheran (Indianapolis), "Taufregister," p. {page}, entry {no.}, Teale.
 List   Saint John's Evangelical Lutheran Church (Indianapolis, Indiana). "Taufregister
        {year range}." Parish office, Indianapolis.
+Online Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufregister
+       {year range}," p. {page}, entry {no.}, baptism of Susannah Teale, {date}; digital
+       images, _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing
+       digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
 ```
 Always parenthesise the church's place. Baptism is not birth; burial is not death.
 
@@ -122,12 +140,20 @@ Full   Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded
 Short  Marion Co., Ind., Will Book {vol.}: {page}, Cray will.
 List   Marion County, Indiana. Probate Court. Will Books, {year range}. Clerk of the Circuit
        Court, Indianapolis.
+Online Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the
+       will of Bartholomew Cray, written {date}, proved {date}; digital images,
+       _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing digital
+       folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
 
 Full   Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray
        ({year}); Indiana State Archives, Indianapolis.
 Short  Marion Co., Ind., estate file no. {no.}, Cray.
 List   Marion County, Indiana. Probate Court. Estate files, {year range}. Indiana State
        Archives, Indianapolis.
+Online Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray
+       ({year}), {document within the file}, {date}; digital images, _{Site Name}_
+       ({site root URL} : accessed {date}); citing {the film or digital folder (DGS)
+       number the site names}, Indiana State Archives, Indianapolis.
 ```
 Will book = clerk's copy = DERIVATIVE. Loose estate packet = the originals. Never call a
 will book entry "the original will."
@@ -141,6 +167,10 @@ Full   Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Sus
 Short  Marion Co., Ind., Deed Book {vol.}: {page}, Cray to Teale.
 List   Marion County, Indiana. Deed Books, {year range}. County Recorder's Office,
        Indianapolis.
+Online Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale,
+       {date of instrument}, recorded {date of recording}; digital images, _FamilySearch_
+       (https://www.familysearch.org : accessed {date}); citing digital folder (DGS) {no.},
+       FamilySearch Library, Salt Lake City.
 ```
 Give BOTH dates. US federal land: cite the patent via General Land Office Records
 (https://glorecords.blm.gov) and the land entry case file separately, in Record Group 49,
@@ -154,13 +184,18 @@ Full   Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War
        finding aid gives it}," Records of the Department of Veterans Affairs, Record
        Group 15; National Archives, Washington, D.C.
 Short  Cray pension no. {cert. no.}, RG 15, NARA-Washington.
-List   Cray, Bartholomew. Pension file, certificate no. {cert. no.}. Records of the
-       Department of Veterans Affairs, Record Group 15. National Archives, Washington, D.C.
+List   United States. Department of Veterans Affairs. "{series title exactly as the finding
+       aid gives it}." Record Group 15. National Archives, Washington, D.C.
 
 Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana
        Infantry; Records of the Adjutant General's Office, 1780s-1917, Record Group 94;
        National Archives, Washington, D.C.
+Short  Cray CSR, Co. {co.}, {regiment} Ind. Inf., RG 94, NARA-Washington.
+List   United States. Adjutant General's Office. "{series title exactly as the finding aid
+       gives it}." Record Group 94. National Archives, Washington, D.C.
 ```
+The source-list entry is series-level, even for a discrete case file: it names the body of
+material searched, not one certificate number (`references/citation-management.md` §5).
 A pension file is a FILE. Name the document inside it when one paper carries your assertion:
 `..., certificate no. {cert. no.}, affidavit of Susannah Teale, {date}`.
 A compiled service record is itself a derivative, abstracted from muster rolls.
@@ -173,23 +208,36 @@ Full   Marion County, Indiana, Circuit Court, "Declarations of Intention," vol. 
 Short  Marion Co., Ind., Declarations of Intention {vol.}: {page}, Cray.
 List   Marion County, Indiana. Circuit Court. Declarations of Intention, {year range}.
        Indiana State Archives, Indianapolis.
+Online Marion County, Indiana, Circuit Court, "Declarations of Intention," vol. {vol.}:
+       {page}, Bartholomew Cray, {date}; digital images, _{Site Name}_ ({site root URL} :
+       accessed {date}); citing {the film or digital folder (DGS) number the site names},
+       Indiana State Archives, Indianapolis.
 
-Full   U.S. District Court, District of Indiana, petition for naturalization no. {no.},
-       Bartholomew Cray, {date}; Records of District Courts of the United States, Record
-       Group 21; National Archives at Chicago.
+Full   {U.S. district court as named on the record at the date of the petition}, petition
+       for naturalization no. {no.}, Bartholomew Cray, {date}; Records of District Courts
+       of the United States, Record Group 21; National Archives at Chicago.
+Short  {U.S. district court}, petition for naturalization no. {no.}, Cray.
+List   United States. {District court as named on the records}. Petitions for
+       naturalization, {year range}. Record Group 21. National Archives at Chicago.
 ```
-Pre-1906: any court of record, so the COURT is essential. Declaration and petition are
-separate records, often different courts and years apart.
+Pre-1906: any court of record, so the COURT is essential. It is also a slot, not a fixed
+name: federal districts split as populations grew (Indiana split into two in 1928), so read
+the court off the record itself. Declaration and petition are separate records, often
+different courts and years apart.
 
 ### Newspapers
 
 ```
-Full   "Death of B. Cray," Indianapolis Journal, {date}, p. {page}, col. {col.}.
-Short  "Death of B. Cray," Indianapolis Journal, {date}, p. {page}.
-List   Indianapolis Journal. Indianapolis, Indiana. {year range}.
+Full   "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}.
+Short  "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}.
+List   _Indianapolis Journal_. Indianapolis, Indiana. {year range}.
+Online "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}; digital
+       images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the title's LCCN
+       or the provider's own item identifier}.
 ```
 Untitled item: `[untitled death notice]`. Add the edition if the paper ran several a day.
-Digitised: add the image layer plus the title's LCCN or the provider's item identifier.
+The newspaper title is italicised (a published title); the headline stays in quotation
+marks. For a digitised paper carry the title's LCCN, since newspaper site URLs move often.
 
 ### Cemetery marker and sexton record
 
@@ -204,19 +252,27 @@ List   Crown Hill Cemetery. Indianapolis, Marion County, Indiana. Personal visit
 Full   Crown Hill Cemetery (Indianapolis, Marion County, Indiana), sexton's interment
        register {vol.}: {page}, entry for Bartholomew Cray, {date of interment}; cemetery
        office, Indianapolis.
+Short  Crown Hill Cemetery (Indianapolis), interment register {vol.}: {page}, Cray.
+List   Crown Hill Cemetery. Indianapolis, Marion County, Indiana. Sexton's interment
+       registers, {year range}. Cemetery office, Indianapolis.
+Online Crown Hill Cemetery (Indianapolis, Marion County, Indiana), sexton's interment
+       register {vol.}: {page}, entry for Bartholomew Cray, {date of interment}; digital
+       images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the film or
+       digital folder (DGS) number the site names}.
 ```
 Name who read the stone and when. Flag replacement markers: a modern stone is a modern
-assertion about an old burial.
+assertion about an old burial. Sexton records and plot cards are a separate, often better,
+source.
 
 ### Find A Grave and similar memorial databases
 
 ```
-Full   Find a Grave, database with images (https://www.findagrave.com : accessed {date}),
+Full   _Find a Grave_, database with images (https://www.findagrave.com : accessed {date}),
        memorial {memorial no.}, Bartholomew Cray ({birth year}-{death year}), Crown Hill
        Cemetery, Indianapolis, Marion County, Indiana; gravestone photograph by
        {contributor}, uploaded {date}.
-Short  Find a Grave, memorial {memorial no.}, Cray.
-List   Find a Grave. Database with images. https://www.findagrave.com : {year}.
+Short  _Find a Grave_, memorial {memorial no.}, Cray.
+List   _Find a Grave_. Database with images. https://www.findagrave.com : {year}.
 ```
 Two sources on one page: the typed dates are a contributor's authored narrative; the
 photograph is an image of an artifact. Cite them separately when they carry different
@@ -225,22 +281,22 @@ assertions.
 ### Online searchable database (index, no image)
 
 ```
-Full   "{exact database title as the site gives it}," database, {Site Name}
+Full   "{exact database title as the site gives it}," database, _{Site Name}_
        ({site root URL} : accessed {date}), entry for Susannah Teale, {event date};
        citing {repository and record series as the site states it}.
-Short  "{database title}," {Site Name}, entry for Teale.
-List   "{exact database title}." Database. {Site Name}. {site root URL} : {year}.
+Short  "{database title}," _{Site Name}_, entry for Teale.
+List   "{exact database title}." Database. _{Site Name}_. {site root URL} : {year}.
 ```
 Copy the database title exactly, including its date range and odd capitalisation.
 
 ### Digitised book
 
 ```
-Full   {Author first last}, {Title of the Book} ({place}: {publisher}, {year}), {page};
-       digital images, {Site Name} ({site root URL} : accessed {date}).
-Short  {Author surname}, {Short Title}, {page}.
-List   {Author surname}, {first}. {Title of the Book}. {Place}: {publisher}, {year}. Digital
-       images. {Site Name}. {site root URL} : {year}.
+Full   {Author first last}, _{Title of the Book}_ ({place}: {publisher}, {year}), {page};
+       digital images, _{Site Name}_ ({site root URL} : accessed {date}).
+Short  {Author surname}, _{Short Title}_, {page}.
+List   {Author surname}, {first}. _{Title of the Book}_. {Place}: {publisher}, {year}.
+       Digital images. _{Site Name}_. {site root URL} : {year}.
 ```
 Cite the page of the BOOK, not of the PDF. If the scan lacks the book's pagination:
 `[image {n} of {N}]`. Prefer a persistent handle or DOI over a session URL.
@@ -253,9 +309,12 @@ Full   {Collection Name}, box {no.}, folder {no.}, "{item description}," {date};
 Short  {Collection Name}, box {no.}, folder {no.}, {item}.
 List   {Collection Name}. {Collection number}. {Manuscript repository}, {city}.
 
-Full   Cray family Bible records, {Bible title} ({place}: {publisher}, {year}), "Births"
+Full   Cray family Bible records, _{Bible title}_ ({place}: {publisher}, {year}), "Births"
        page; privately held by {holder}, [address for private use], {city, state}, {year}.
-       {One sentence of provenance: how the item reached the present holder.}
+       {One sentence: how the item reached the present holder.}
+Short  Cray family Bible records, "Births" page.
+List   Cray family Bible records. _{Bible title}_. {Place}: {publisher}, {year}. Privately
+       held by {holder}, {city, state}.
 ```
 For private holdings the provenance sentence IS the Where-is. Cite the Bible's imprint date:
 entries written before the book was printed were written from memory.
@@ -299,6 +358,9 @@ List   {Company}. Autosomal DNA test results and match lists for {tester codes}.
 Full   {Tester code} and {Match code}, {nn} cM shared across {n} segments, {Company} match
        list ({site root URL} : accessed {date}); shared-match data downloaded {date} and
        retained in {researcher}'s files.
+Short  {Tester code} and {Match code}, {nn} cM, {Company} match list, accessed {date}.
+List   {Company}. Shared-match and shared-centimorgan data for {tester codes}. Database.
+       {site root URL} : {year}.
 ```
 Match lists are not reproducible: cite the retained snapshot and the access date. Use codes
 for living testers. Record the kit administrator separately from the tester. Cite the
@@ -314,6 +376,10 @@ Full   Saint Mary the Virgin (Ashwell, Hertfordshire), "Register of Baptisms {ye
 Short  Ashwell, Herts., baptisms, p. {page}, entry {no.}, Teale.
 List   Ashwell, Hertfordshire. Saint Mary the Virgin. "Register of Baptisms {year range}."
        Hertfordshire Archives and Local Studies, Hertford.
+Online Saint Mary the Virgin (Ashwell, Hertfordshire), "Register of Baptisms {year range},"
+       p. {page}, entry {no.}, baptism of Susannah Teale, {date}; digital images,
+       _{Site Name}_ ({site root URL} : accessed {date}); citing Hertfordshire Archives and
+       Local Studies, Hertford, {archive reference}.
 ```
 Post-1812 baptism and burial registers and post-1754 marriage registers carry NUMBERED
 ENTRIES. Use the entry number: it survives rebinding and refoliation.
@@ -325,6 +391,10 @@ Full   {year} census of England, {registration district}, {parish}, folio {folio
        {series}/{piece no.}.
 Short  {year} census, {parish}, {series}/{piece no.}, fol. {folio}, p. {page}, Cray.
 List   England. {County}. {year} census. {series}. The National Archives, Kew.
+Online {year} census of England, {registration district}, {parish}, folio {folio}, p.
+       {page}, schedule {no.}, Bartholomew Cray; digital image, _{Site Name}_
+       ({site root URL} : accessed {date}); citing The National Archives (TNA), Kew,
+       {series}/{piece no.}.
 ```
 TNA reference = department code / series / piece. Verified census series: HO 107 (1841,
 1851), RG 9 (1861), RG 10 (1871), RG 11 (1881), RG 12 (1891), RG 13 (1901), RG 14 (1911).
@@ -335,11 +405,16 @@ England and Wales, civil registration
 Full   General Register Office, England and Wales, marriage certificate for Bartholomew Cray
        and Susannah Teale, {date}, {registration district} registration district, {quarter}
        {year}, vol. {vol.}, p. {page}; certified copy issued {date}.
+Short  GRO marriage certificate, Cray-Teale, {date}, {registration district}, vol. {vol.},
+       p. {page}.
+List   England and Wales. General Register Office. Civil registration marriage records,
+       {year range}. Certified copies in {researcher}'s files.
 ```
-Same five elements elsewhere, different container names: Library and Archives Canada census
-returns (RG 31, district, sub-district, page); a German *Kirchenbuch* held at a
-*Landeskirchliches Archiv*; an Irish civil registration by superintendent registrar's
-district, volume, and page.
+Say certified copy and mean it: a GRO certificate is a modern transcription, a derivative,
+not an image of the register. Same five elements elsewhere, different container names:
+Library and Archives Canada census returns (RG 31, district, sub-district, page); a German
+*Kirchenbuch* held at a *Landeskirchliches Archiv*; an Irish civil registration by
+superintendent registrar's district, volume, and page.
 
 ## Hard-case snippets
 
@@ -372,45 +447,32 @@ Reproduced error     "Barthlomew" [sic]
 
 ## Software rules
 
+The two-level model, the round-trip rule, and source-splitting/merge discipline are
+explained in `references/citation-management.md` §7. Field-level paste sheet:
+
 ```
-ONE Source per body of material a reader goes to as a unit.
-ONE citation per entry inside it.
-   One Source:  Marion County, Indiana, Deed Books
-   Many cites:  each book, page, instrument
-
-ROUND-TRIP RULE: paste the rendered FULL NOTE as literal text into a free-form source or
-note field, in addition to the template fields. Template field-mappings are proprietary and
-the rendered note is generated at display time, never stored: neither survives a GEDCOM
-export. Free-form text does.
-
-Put the COMPLETE Where-in in the citation detail / GEDCOM PAGE field, written so it reads on
-its own ("Will Book 12: 340, will of Bartholomew Cray, proved 4 March 1868"), not a bare 340.
+PAGE field:      the COMPLETE Where-in, written so it reads on its own
+                 ("Will Book 12: 340, will of Bartholomew Cray, proved 4 March 1868"),
+                 not a bare 340.
 
 Survives GEDCOM: SOUR with TITL / AUTH / PUBL / REPO / NOTE / TEXT; citation PAGE.
 Does not:        template ids and field mapping, italics and styling, the rendered notes and
                  bibliography, custom fields, any reliable meaning for QUAY.
-
-Watch for SOURCE SPLITTING (a new Source per document -> 4,000 near-duplicate sources) and
-CITATION DUPLICATION after tree merges and GEDCOM imports. Run the source-merge utility
-after every import, and merge INTO the record with the most complete Where-is.
 ```
 
 ## QA checklist
 
-- [ ] Who = the actual creator or agency, not the website.
-- [ ] What = the item, in the right marks (quotes / italics / [description]).
-- [ ] When = the record or publication date, distinguished from the event date.
-- [ ] Where-in = the one entry. Present and specific.
-- [ ] Where-is = repository, collection, film, or site + persistent identifier.
-- [ ] The layer I EXAMINED leads; `citing` marks everything I did not see.
-- [ ] `database` / `database with images` / `digital images` is the correct descriptor.
-- [ ] Access date on every online item.
-- [ ] Square brackets around everything I supplied, and nothing the item states.
-- [ ] Shape matches position: full note first, short note after, source list with no locator.
-- [ ] Short note is unambiguous against every other source in this document.
-- [ ] A reader can classify it original / derivative / authored narrative from the citation
-      alone.
-- [ ] Every number, title, and identifier was read off the item, not remembered or assumed.
+Full checklist with commentary and the before/after defect table:
+`references/citation-management.md` §8. Quick pass before a citation leaves your file:
+
+- [ ] Who / What / When / Where-in / Where-is are all present, in the right marks.
+- [ ] Italics are actually on: strip `_underscores_` and italicise every published title
+      (book, journal, newspaper, website) when you paste; code fences cannot show italics.
+- [ ] The layer I EXAMINED leads; `citing` marks everything I did not see, with the correct
+      descriptor (`database` / `database with images` / `digital images`).
+- [ ] Access date on every online item; square brackets around everything I supplied.
+- [ ] Shape matches position (full / short / source list, no locator); short note
+      unambiguous; every number, title, and identifier was read off the item, not assumed.
 - [ ] Private holdings and interviews carry the provenance or informant sentence.
 
 Cite as you capture, never at write-up.

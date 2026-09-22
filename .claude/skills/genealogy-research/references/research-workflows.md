@@ -47,24 +47,21 @@ It is a **cycle**, not a checklist. Step 5 almost never ends the work; it re-ent
 a step determined by *what kind* of result you got. The discipline is in the re-entry rules,
 not in the five boxes.
 
-```
-  (1) know  -->  (2) ask  -->  (3) select  -->  (4) search  -->  (5) evaluate
-       ^          ^   ^             ^                                  |
-       |          |   +-------------+----------------------------------+   (result-dependent
-       +----------+------------------------------------------------------+  re-entry, below)
-```
-
 ### Where each BCG standard family bites
 
-| Cycle step | What you actually produce | Standards chapter that governs it | Named standards most in play |
+| Cycle step | What you actually produce | Standards section (ch. 3, *Standards for Researching*, except row 1) | Named standards most in play |
 |---|---|---|---|
-| 1. Identify what you know | A known-facts inventory: every assertion with the source it rests on and its source/information/evidence classification | Standards for Documenting | *Citation uses*, *Citation elements*, *Separation safeguards* (keep source, information, evidence, and conclusion visibly distinct) |
-| 2. Decide what to learn | One focused research question, plus a hypothesis and its falsification condition | Standards for Planning Research | *Effective research questions*, *Sound basis*, *Planned research* |
-| 3. Select records | A prioritised record-set list with expected yield, access route, and cost | Standards for Planning Research | *Broad context*, *Source-based content*, *Topical breadth*, *Efficient sequence*, *Extent* |
-| 4. Obtain and search | Images, transcripts, abstracts, and log rows including nil results | Standards for Collecting Data | Data-collection scope, careful handling of originals, respect for record custodians, sound use of others' work, reading the handwriting, understanding the terms, note-taking content; plus *Flexibility* from planning |
-| 5. Evaluate and record | Classified information, correlated evidence, resolved or flagged conflicts, an updated question set | Standards for Reasoning from Evidence (and back to Documenting) | Source/information/evidence classification, analysis, correlation, conflict resolution; *Terminating the plan* |
+| 1. Identify what you know | A known-facts inventory: every assertion with the source it rests on and its source/information/evidence classification | *Standards for Documenting* (a chapter in its own right, not a section of ch. 3) | *Citation uses*, *Citation elements*, *Separation safeguards* (keep source, information, evidence, and conclusion visibly distinct) |
+| 2. Decide what to learn | One focused research question, plus a hypothesis and its falsification condition | Planning Research | *Effective research questions*, *Sound basis*, *Planned research* |
+| 3. Select records | A prioritised record-set list with expected yield, access route, and cost | Planning Research | *Broad context*, *Source-based content*, *Topical breadth*, *Efficient sequence*, *Extent* |
+| 4. Obtain and search | Images, transcripts, abstracts, and log rows including nil results | Collecting Data | Data-collection scope, careful handling of originals, respect for record custodians, sound use of others' work, reading the handwriting, understanding the terms, note-taking content; plus *Flexibility* from planning |
+| 5. Evaluate and record | Classified information, correlated evidence, resolved or flagged conflicts, an updated question set | Reasoning from Evidence (then back to Documenting) | Source/information/evidence classification, analysis, correlation, conflict resolution |
 
-*Reasonably exhaustive research* is not a step. It is a property of steps 3 and 4 taken
+Planning Research, Collecting Data, and Reasoning from Evidence are **sections inside the
+researching chapter**, not chapters; only Documenting is its own chapter. *Terminating the plan*
+is a Planning Research standard even though you invoke it at step 5: you decide whether the
+*plan* is discharged, which is a planning judgement made with step 5's results in hand.
+*Reasonably exhaustive research* is not a step either. It is a property of steps 3 and 4 taken
 together, judged at step 5, and it is the thing the *Extent* standard is about.
 
 ### Re-entry conditions
@@ -87,16 +84,13 @@ Do not restart at step 1 by reflex. Re-enter where the result sends you.
 ## 2. Framing a focused research question
 
 A question that cannot fail cannot be researched. The planning standards call for *effective
-research questions*, and an effective one has four components.
+research questions*; an effective one names four things.
 
-**A research question must name:**
-
-1. **A person, with a distinguishing identifier.** Not a name. A name plus something that
-   separates this bearer of the name from every other bearer in that place and period: a dated
-   event, a parcel of land, an occupation and address, a spouse, a military unit, a sequence of
-   tax assessments.
-2. **A place**, at the jurisdictional level the records were kept at (see section 4.3).
-3. **A time window**, bounded at both ends, and defensible from what you already know.
+1. **A person, with a distinguishing identifier** — not a name, but a name plus something that
+   separates this bearer from every other bearer in that place and period: a dated event, a
+   parcel of land, an occupation and address, a spouse, a military unit, a run of tax assessments.
+2. **A place**, at the jurisdictional level the records were kept at (section 4.3).
+3. **A time window**, bounded at both ends and defensible from what you already know.
 4. **The thing to be established**, stated so that a specific finding could establish it and a
    specific finding could refute it.
 
@@ -140,9 +134,8 @@ condition**.
 
 ## 3. The research plan
 
-One question per plan. A plan covering "the Cray family" is a wish list.
-
-A plan has six parts. The copy-paste form is at `templates/research-plan.md`.
+One question per plan; a plan covering "the Cray family" is a wish list. Six parts, and the
+copy-paste form is at `templates/research-plan.md`.
 
 | Part | Contents | The discipline it enforces |
 |---|---|---|
@@ -155,13 +148,12 @@ A plan has six parts. The copy-paste form is at `templates/research-plan.md`.
 
 **Priority order** is *Efficient sequence* in practice: order by expected information gain per
 unit cost, but let three things jump the queue. Records at risk (a deteriorating original, a
-closing repository, an aging informant). Cheap records that would reframe everything (the
-jurisdictional survey, a published county record inventory). Records that would resolve an
+closing repository, an aging informant); cheap records that would reframe everything (the
+jurisdictional survey, a published county record inventory); and records that would resolve an
 identity ambiguity, because until identity is settled everything downstream is provisional.
 
-**Flexibility** is also a standard. A plan you refuse to abandon mid-session is worse than no
-plan. When step 4 hands you something unexpected, amend the plan in writing and date the
-amendment, rather than ignoring the finding or silently drifting.
+**Flexibility** is also a standard. When step 4 hands you something unexpected, amend the plan
+in writing and date the amendment, rather than ignoring the finding or silently drifting.
 
 ---
 
@@ -190,26 +182,24 @@ record-type inventory.
 
 **Whole family** means every child, not just your line; both spouses and their prior and later
 marriages; the household in every census year it survives for. The younger children's records
-are often better than the eldest's, because civil registration caught up with them. A
+are often better than the eldest's, because civil registration caught up with them, and a
 daughter's marriage record may name a father the son's does not.
 
 **FAN** is Elizabeth Shown Mills's term: **Friends, Associates, and Neighbours** (the "FAN
-club"), also called cluster or collateral research. The principle is that your ancestor's paper
-trail is thin but the trail of the people around them is not, and those people moved,
-witnessed, married, and litigated in patterns your ancestor shares.
+club"), also called cluster or collateral research. Your ancestor's paper trail is thin; the
+trail of the people around them is not, and those people moved, witnessed, married, and
+litigated in patterns your ancestor shares.
 
-Harvest the cluster systematically from every document you already hold: witnesses to deeds,
-wills, and marriages; bondsmen and sureties; executors, administrators, guardians, and estate
-appraisers; grantors, grantees, and the adjoining owners named in the metes-and-bounds
-description; chain carriers on a survey; jurors and petitioners on a road or court order;
-godparents, sponsors, and the officiating minister; informants on death certificates; census,
-tax-list, and plat neighbours; people who appear in both the origin and the destination
-records; fellow soldiers in the same company; fellow members of a congregation, lodge, or
-benefit society.
+Harvest the cluster from every document you already hold: witnesses to deeds, wills, and
+marriages; bondsmen and sureties; executors, administrators, guardians, and estate appraisers;
+grantors, grantees, and the adjoining owners in the metes-and-bounds description; chain carriers
+on a survey; jurors and petitioners on a road or court order; godparents, sponsors, and the
+officiating minister; informants on death certificates; census, tax-list, and plat neighbours;
+people appearing in both the origin and the destination records; fellow soldiers; fellow members
+of a congregation, lodge, or benefit society.
 
-The operational move: build the cluster list, then **search the cluster as though each member
-were your subject**. You are not looking for them; you are looking for your subject to surface
-in their records. See section 5.6.
+Then **search the cluster as though each member were your subject**. You are not looking for
+them; you are looking for your subject to surface in their records (section 5.6).
 
 ### 4.3 The jurisdictional survey
 
@@ -250,23 +240,23 @@ neighbouring-county records, and published abstracts made before the loss).
 
 ### 4.4 Record-type inventory by era and place
 
-Build this per place and period rather than from a generic list. The generic list is only a
-prompt to make sure you did not forget a class.
+Build this per place and period. The list below is only a prompt against forgetting a class,
+and it is deliberately half a list.
 
 | Class | Best at establishing | Era caution (US) |
 |---|---|---|
 | Civil vital registration | Dates and places of birth, marriage, death; parentage on the record's own terms | Start dates vary by state and often by county; early compliance is partial |
 | Church registers | Baptism, marriage, burial, and often parentage and sponsors, long before civil registration | Custody scattered; language may be Latin, German, Dutch, or Welsh |
 | Census | Household composition, approximate ages, birthplaces, migration timing | Pre-1850 federal schedules name only the head; ages are given in brackets; 1890 largely lost |
-| Land (deeds, patents, surveys) | Presence, residence, economic status, family transfers, and (via "of [county]" clauses) migration | Indexes are often alphabetised by first letter only, or arranged by an idiosyncratic county scheme; learn the scheme before concluding a nil |
-| Probate (wills, administrations, inventories, guardianships, distributions) | Relationships stated by the person best placed to know, and the whole family in one file | The will book is a record copy, not the signed original; ask for the loose estate packet |
-| Court (civil, criminal, equity, orphans') | Disputes that name kin, ages, and prior residences; guardianship gives minors' ages | Case papers are often separate from the docket and not indexed together |
+| Land (deeds, patents, surveys) | Presence, residence, economic status, family transfers, and (via "of [county]" clauses) migration | **The deed book is the clerk's recorded copy**: an original record of the recording act, a derivative of the signed deed. Classify it derivative unless you examined the instrument itself. Indexes are often alphabetised by first letter only, or on an idiosyncratic county scheme; learn the scheme before concluding a nil |
+| Probate and court (wills, administrations, inventories, guardianships, equity, orphans') | Relationships stated by the people best placed to know; the whole family in one file; minors' ages from guardianships | The will book stands on exactly the same footing as the deed book, a record copy and not the signed original; ask for the loose estate packet. Case papers are often separate from the docket and not indexed with it |
 | Tax | Annual presence, when a son comes of age, when a man dies or leaves | Coverage and content vary year to year; personal vs real property lists differ |
-| Military (service, pension, bounty land, draft) | Age, birthplace, physical description, residence over time, widow's and heirs' claims | Pension files are disproportionately rich; the application is often better than the service record |
-| Immigration and naturalisation | Origin place, arrival date, associates travelling together | Pre-1906 naturalisations could be filed in almost any court |
-| Newspapers | Obituaries, notices, legal advertisements, local movement | Coverage is uneven and OCR is unreliable; browse the issue, not just the search box |
-| Institutional and occupational | Almshouse, asylum, orphanage, school, employer, union, licence | Access may be restricted; often uncatalogued |
-| DNA | Biological relationship, which no document can assert | Integrates with documents, never replaces them; see `references/relationship-mapping.md` |
+| DNA | Biological relationship, which documents assert but cannot independently verify | DNA tests the biology; documents supply the identities. Integrate, never substitute: `references/relationship-mapping.md`. Testing a living person first requires recorded consent (section 8) |
+
+Not tabled, always on the list: military service, pension, and bounty-land files (the
+application is usually richer than the service record); immigration and naturalisation
+(pre-1906 naturalisations could be filed in almost any court); newspapers (browse the issue,
+not the search box); institutional and occupational records, often uncatalogued or restricted.
 
 ### 4.5 Searching an index versus searching the records
 
@@ -289,42 +279,38 @@ legible. When the question matters and the index is thin, budget for reading the
 ### 5.1 Name variants
 
 Spelling was not standardised and your ancestor usually did not control it. The clerk heard a
-sound and wrote what he wrote. Generate variants systematically rather than by inspiration:
+sound and wrote what he wrote. Generate variants systematically, not by inspiration:
 
 - **Phonetic.** Soundex (crude, but built into some indexes), Daitch-Mokotoff (better for
   Slavic, German, and Jewish surnames), NYSIIS. Use them to generate candidates, never to decide
-  identity. Cray / Crea / Creigh / Kray / Craigh / McCrea is one practical neighbourhood even
-  where the codes diverge.
+  identity. Cray / Crea / Creigh / Kray / Craigh / McCrea is one practical neighbourhood.
 - **Clerical corruption in the hand of the period.** In secretary and early round hands minims
-  collide (m / n / u / i / w), the long s reads as f, doubled f stands for a capital F, capital
-  L / S / T are confusable, and the thorn survives as y in "ye". Calibrate on the clerk's *other*
+  collide (m / n / u / i / w), the long s reads as f, doubled f stands for capital F, capital
+  L / S / T are confusable, the thorn survives as y in "ye". Calibrate on the clerk's *other*
   entries on the same page before deciding what he wrote.
 - **Index corruption.** OCR and handwriting-recognition errors, keying errors, and
-  column-misalignment errors that attach the right name to the wrong age or page.
+  column-misalignment errors attaching the right name to the wrong age or page.
 - **Translation and Anglicisation.** Schmidt to Smith, Zimmermann to Carpenter, Guilielmus to
-  William, Sean to John. Latin forms are the norm in many Catholic and some Anglican registers.
+  William. Latin forms are the norm in many Catholic and some Anglican registers.
 - **Naming systems.** Scandinavian -sen / -datter changes every generation; Welsh ap / verch;
-  Spanish and Portuguese double surnames; Russian patronymic middle names. A surname search is
-  the wrong instrument in these systems.
+  Iberian double surnames; Russian patronymics. A surname search is the wrong instrument here.
 - **Given-name diminutives.** Polly for Mary, Sally for Sarah, Nabby for Abigail, Patsy for
-  Martha, Betsey for Elizabeth. Search the diminutive as a given name in its own right, because
-  that is how it was indexed.
+  Martha. Search the diminutive as a given name in its own right; that is how it was indexed.
 
 Keep the variant list in the plan and log **which variants you actually tried**, per search. A
-nil result that does not say which spellings were attempted is worth nothing later.
+nil that does not say which spellings were attempted is worth nothing later.
 
 ### 5.2 Wildcards and their limits
 
 Wildcards operate on the index string. They cannot recover what the indexer misread.
 
 - Syntax and minimum-character rules are engine-specific; most require two or three leading
-  characters and many will not accept a leading wildcard.
-- A wildcard search and an exact search often return *different, non-nested* result sets on the
-  same engine, because exact search may invoke fuzzy expansion that wildcard search disables.
-  Run both.
+  characters and many reject a leading wildcard.
+- Wildcard and exact searches often return *different, non-nested* sets on the same engine,
+  because exact search may invoke a fuzzy expansion that wildcard search disables. Run both.
 - Truncation (`Cr*`) helps with suffix variation; a single-character wildcard (`Cr?a`) helps
-  with a known ambiguous letter. Neither helps when the first letter is wrong, which is exactly
-  the failure case for names beginning with a vowel, an H, or a silent consonant.
+  with a known ambiguous letter. Neither helps when the first letter is wrong, the failure case
+  for names beginning with a vowel, an H, or a silent consonant.
 - Wildcards do not reach browse-only images at all.
 
 ### 5.3 Indexed, image-only, browse-only, and offline
@@ -360,35 +346,32 @@ Only 9 and 10 are statements about the world. The other eight are statements abo
 
 ### 5.5 Searching by non-name fields
 
-The most productive move when a name search fails is to stop searching by name. Search by
-**spouse, parent, or child** with the target's surname left blank; by **place plus date range
-with no surname**, reading the whole result set, where the place is small enough; by **age plus
-birthplace** with only a given name; by **occupation, military unit, enumeration district,
-ship, regiment, parcel description, or case number**; by the **informant** on a death
-certificate, the **witness** on a marriage, the **bondsman** on a bond; and, in land records,
-by the **adjoining owner** named in the boundary description.
+When a name search fails, stop searching by name. Search by **spouse, parent, or child** with
+the target's surname left blank; by **place plus date range with no surname**, reading the whole
+result set, where the place is small enough; by **age plus birthplace** with only a given name;
+by **occupation, unit, enumeration district, ship, parcel description, or case number**; by the
+**informant** on a death certificate, the **witness** on a marriage, the **bondsman** on a bond;
+and, in land records, by the **adjoining owner** named in the boundary description.
 
 ### 5.6 Reverse and associative searching, and searching the neighbours
 
 Instead of searching for your subject, search a cluster member and read every document they
 generated, looking for your subject inside it. This is how people with no records of their own
-(women, minors, tenants, the enslaved, the landless) become visible: they appear in other
-people's paperwork. A woman with no deed of her own appears releasing dower in her husband's;
-a minor with no record of his own appears in his guardian's accounting. Practical form: take
-the cluster list from 4.2 and run, for the top five names, the same record-type inventory you
-would run for your subject, logging each search against the *original* research question so the
-log stays coherent.
+(women, minors, tenants, the enslaved, the landless) become visible: a woman with no deed of her
+own appears releasing dower in her husband's, a minor appears in his guardian's accounting. Take
+the cluster list from 4.2, run the full record-type inventory for the top five names, and log
+each search against the *original* research question so the log stays coherent.
 
 "Search the neighbours" is concrete, not metaphorical:
 
-- In a census, read the two pages before and the two pages after, noting every household head.
-  Neighbours in 1850 are often kin, in-laws, or fellow migrants from one origin parish.
-- On a tax duplicate, read the whole township list rather than looking up the surname, and do it
-  for consecutive years, so you can see who arrives and who vanishes.
+- In a census, read the two pages before and after, noting every household head. Neighbours in
+  1850 are often kin, in-laws, or fellow migrants from one origin parish.
+- On a tax duplicate, read the whole township list rather than looking up the surname, for
+  consecutive years, so you see who arrives and who vanishes.
 - In deeds, plat the parcel, identify the adjoiners, then search the adjoiners.
 - In a burial ground, record the whole section, not the one stone: adjacent plots were bought
-  together. In a parish register, read the surrounding entries, because the same sponsors recur
-  across a kin group.
+  together. In a parish register, read the surrounding entries; the same sponsors recur across a
+  kin group.
 
 ---
 
@@ -419,15 +402,35 @@ Worked contrast, same search, two different statements:
 > 1813 through 1820 (all eight years present and legible), were read line by line; no Cray
 > under any of nine spelling variants.
 >
-> **Negative evidence.** Because the Cumberland Township duplicates survive complete for
-> 1813 through 1820 and list every taxable inhabitant including single freemen, and because
-> Bartholomew Cray was assessed there in each year 1804 through 1812 and again appears in
-> Greene County records in 1816, his absence 1813 through 1820 indicates he was assessed in
-> another township or under a spelling not recovered by a line-by-line read, rather than that
-> he left the county.
+> **Negative evidence.** The Cumberland Township duplicates survive complete for 1813 through
+> 1820 and assess every taxable inhabitant, single freemen included; Bartholomew Cray was
+> assessed in this same township in each year 1804 through 1812; the eight duplicates were read
+> line by line, every surname, with no index between the reader and the page. On those premises
+> **his absence from those lists is evidence that he was not a taxable inhabitant of Cumberland
+> Township in those years.**
+>
+> That he remained in Greene County is *not* carried by the absence. It is carried by the 1816
+> marriage (04-06) and the 1834 probate, with which the absence is correlated: the positive
+> records place him in the county, the absence says where in the county he was not assessed, and
+> together they point at another township as the next search rather than at a conclusion.
+>
+> **Discharging the four premises.** (1) *Covered*: the same jurisdiction assessed him in each
+> of the eight preceding years, so the law reached this man in this township. (2) *Complete*:
+> all eight annual duplicates present and legible, no gap in the series. (3) *Searched
+> properly*: nine variants and then every surname read, with no index used, so reasons 1, 2, 4,
+> and 8 in section 5.4 cannot operate; the duplicates are dated by assessment year, not by a
+> filing date, so reason 5 does not bite. (4) *Better explained by his absence*: reasons 9 and
+> 10 fail, because the series survives and the law taxed him. **Reason 6 is not excluded, and
+> is not meant to be.** It is the limit that sets the scope of the claim, which is why the
+> statement says "not a taxable inhabitant of Cumberland Township" and not "not in Greene
+> County". **Residual:** a hand so corrupt that no reader would connect it to Cray, or an entry
+> under an alias (reason 7), survives a line-by-line read. That residual is why the claim is
+> non-assessment and not non-residence.
 
 The first is a log row. The second is an argument, and it is only available because the first
-was recorded with its coverage.
+was recorded with its coverage. Note what the repaired version does *not* do: it does not
+smuggle the positive evidence into the absence, and it does not claim more territory than the
+records searched can cover.
 
 ### Recording a nil result so it carries weight
 
@@ -451,15 +454,13 @@ you are citing the thing you searched, not the thing you found.
 
 ### Why an unrecorded nil search gets re-run
 
-Two costs, one of them fatal. The cheap cost is duplication: in eighteen months you will not
-remember whether you checked the orphans' court dockets, and you will check them again.
-
-The fatal cost is that an unrecorded nil search **cannot be cited**. Any conclusion resting on
-indirect or negative evidence depends on the completeness of the search, and completeness that
-is not documented cannot be shown. A reviewer, a lineage society, or a portfolio judge who
-reads "no record found" with no coverage statement will treat the whole argument as
-unsupported, and will be right to. You then redo the search under deadline, and sometimes the
-repository or collection is no longer available on the same terms.
+Two costs, one fatal. The cheap one is duplication: in eighteen months you will not remember
+whether you checked the orphans' court dockets, and you will check them again. The fatal one is
+that an unrecorded nil **cannot be cited**. Any conclusion resting on indirect or negative
+evidence depends on the completeness of the search, and completeness that is not documented
+cannot be shown; a lineage society or a portfolio judge who reads "no record found" with no
+coverage statement will treat the whole argument as unsupported, and will be right to. You then
+redo the search under deadline, when the collection may no longer be available on the same terms.
 
 ---
 
@@ -481,29 +482,23 @@ Run all seven. Failing any one of them means you are not finished.
    cannot, you have said so explicitly rather than leaving the gap silent.
 4. **Alternatives excluded.** Every competing candidate identity and every competing
    interpretation has been tested and eliminated on evidence, not on plausibility.
-5. **Conflicts resolved in writing.** No conflicting item is unaddressed. "I ignored the
-   outlier" is not resolution; see `references/documentation-standards.md` for what resolution
-   has to look like on the page, and `references/timeline-building.md` for detecting conflicts
-   by sequence.
-6. **Saturation.** Your last several searches returned only information you already had. Note
-   that saturation alone is a weak test, because it is also what confirmation bias feels like;
-   it counts only alongside tests 2 and 4.
+5. **Conflicts resolved in writing.** "I ignored the outlier" is not resolution; see
+   `references/documentation-standards.md` for what resolution looks like on the page, and
+   `references/timeline-building.md` for detecting conflicts by sequence.
+6. **Saturation.** Your last several searches returned only what you already had. Saturation
+   alone is weak, because it is also what confirmation bias feels like; it counts only alongside
+   tests 2 and 4.
 7. **The hostile-reader test.** A knowledgeable reader who wanted the conclusion to be wrong
    cannot name a record class you skipped, a variant you did not try, or an alternative you did
    not exclude.
 
 ### The honest alternative: a documented open question
 
-Most research stops before test 1. That is normal and it is not failure, *provided you record
-it as an open question rather than as a conclusion*. The failure is the silent promotion of a
-hypothesis into a tree.
-
-The open-question record has nine fields (blank form in `templates/research-plan.md`, filled
-instance in section 11): the question in four-component form; the current hypothesis as a
-claim; a status of unresolved, partially supported, or contradicted, and **not "probable"
-unless you can defend the word in writing**; the evidence for and against, with citations and
-classifications; the specific evidence that is missing; named next steps, each naming a record
-set and a repository; what blocks it; and the triggers that reopen it.
+Most research stops before test 1. That is normal and not failure, *provided you record it as an
+open question rather than as a conclusion*. The failure is the silent promotion of a hypothesis
+into a tree. The nine-field form is in `templates/research-plan.md` and a filled instance closes
+section 11; the field that goes wrong most often is **status**, which is unresolved, partially
+supported, or contradicted, and never "probable" unless you can defend the word in writing.
 
 Park it where you will find it: in the research log's open-question tab, and as a note on the
 person in whatever system holds your tree. An open question you cannot find again is a
@@ -528,25 +523,32 @@ The spreadsheet header is in `templates/research-log.md`.
 |---|---|---|
 | 1 | Search ID | Sequential, so log rows can be cited in a report |
 | 2 | Date searched | The date you searched, not the date of the record |
-| 3 | Question ref | Which research question this search serves |
-| 4 | Objective | What this specific search was expected to establish |
-| 5 | Repository / access | Where, and by what route (on-site, film, online indexed, browse images) |
-| 6 | Source searched | Full citation, or a shortened note pointing to the source list |
-| 7 | Coverage searched | Jurisdiction, volumes, exact date span, page span if browsed |
-| 8 | Finding aid | Named index or aid used, or "none, read line by line" |
-| 9 | Terms tried | Names, variants, wildcards, non-name fields |
-| 10 | Result | Nil / hit / partial / ambiguous / inaccessible |
-| 11 | Source type | Original / derivative / authored narrative |
-| 12 | Information type | Primary / secondary / undetermined, **per assertion**, not per document |
-| 13 | Evidence relation | Direct / indirect / negative, relative to the question in column 3 |
-| 14 | Condition | Legibility, damage, gaps, restriction |
-| 15 | Filed as | Where the image, transcript, or abstract lives |
-| 16 | Analysis and next action | What it means, what it forces, what to do next |
+| 3 | **Searcher** | Who ran the search, named. A nil is a claim about a pair of eyes at a date: a reader has to know whether you read the film, or an agent did a look-up for you (the access routes in `templates/research-log.md` include both), and whether the searcher could read the hand and the language |
+| 4 | Question ref | Which research question this search serves |
+| 5 | Objective | What this specific search was expected to establish |
+| 6 | Repository / access | Where, and by what route (on-site, film, online indexed, browse images, look-up by agent) |
+| 7 | Source searched | Full citation, or a genuine shortened note pointing to the source list |
+| 8 | Coverage searched | Jurisdiction, volumes, exact date span, page span if browsed, and **whether the span is event-dated or filing-dated**: a deed book covering recordings 1796-1840 does not cover the same instruments as one covering executions 1796-1840, and section 5.4's reason 5 lives in this gap |
+| 9 | Finding aid | Named index or aid used, or "none, read line by line" |
+| 10 | Terms tried | Names, variants, wildcards, non-name fields |
+| 11 | Result | Nil / hit / partial / ambiguous / inaccessible |
+| 12 | Source type | Original / derivative / authored narrative |
+| 13 | Information type | Primary / secondary / undetermined, **per assertion**, not per document |
+| 14 | **Informant / how they knew** | Who supplied *this* assertion and from what position: named on the record, constrained by the record type, or undetermined |
+| 15 | Evidence relation | Direct / indirect / negative, relative to the question in column 4 |
+| 16 | Condition | Legibility, damage, gaps, restriction |
+| 17 | Filed as | Where the image, transcript, or abstract lives |
+| 18 | Analysis and next action | What it means, what it forces, what to do next |
 
-Columns 11 through 13 are the ones people skip and the ones that make the log worth keeping. A
-single document routinely needs several rows' worth of classification: a death certificate is
-original as a source, primary information for the fact of death, secondary for the decedent's
-parents' names, and its evidence relation depends entirely on which question you asked.
+Columns 12 through 15 are the ones people skip and the ones that make the log worth keeping,
+and **column 14 is what makes column 13 defensible**. A death certificate is an original source;
+primary for the fact and date of death, which the attending physician certified; secondary for
+the decedent's parents' names, which the informant, a son-in-law, reported at second hand. One
+document, two classifications, because two different people supplied the two assertions. The
+procedure for pinning an informant down, and for saying "undetermined" properly when the record
+names none, is in `references/documentation-standards.md` section 1.2, which makes identifying
+the informant in writing a prerequisite for classifying at all. Column 14 is where that writing
+goes.
 
 Citation syntax for column 6 belongs to `references/citation-management.md`. The only rule this
 file imposes is that the citation cell must carry the full provenance chain when the item came

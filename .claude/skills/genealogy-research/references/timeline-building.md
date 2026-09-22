@@ -74,8 +74,8 @@ If a cell would need the word "and," you probably have two rows.
 | Column | What goes in it |
 |---|---|
 | `id` | Stable row label (`T-014`). Never reuse or renumber. The proof argument cites these. |
-| `key_lo` | Sortable earliest bound, `YYYYMMDD.SS` (section 3.9). |
-| `key_hi` | Sortable latest bound, `YYYYMMDD`. |
+| `key_lo` | Sortable earliest bound, the ten-digit integer `YYYYMMDDSS` (section 3.9). |
+| `key_hi` | Sortable latest bound, the eight-digit integer `YYYYMMDD`. No `SS`: nothing sorts inside the last day an assertion permits. |
 | `prec` | Precision bucket: `D` day, `M` month, `Y` year, `Y+` multi-year, `U` unbounded one side. |
 | `date_rec` | The date exactly as the record writes it, including the old spelling. Verbatim. |
 | `date_norm` | Your normalisation, in the section 3.8 notation, with calendar qualifiers. |
@@ -92,7 +92,7 @@ If a cell would need the word "and," you probably have two rows.
 | `cite` | Shortened citation, keyed to the full citation in your source list. |
 | `notes` | Arithmetic shown, conflicts flagged by `id`, alternative readings, why you chose a bound. |
 
-Seventeen columns is not padding. Each one is load-bearing:
+Eighteen columns is not padding. Each one is load-bearing:
 
 - `src_class`, `info` and `ev` are three different axes and a row can be original / secondary
   / indirect all at once. A death certificate is an original source; its "father's name" is
@@ -207,7 +207,11 @@ every interval check you later run against it.
    `4th d 4 mo 1752` enters as `bet 1752-04-04 and 1752-06-04`, `prec = M`. Diagnostic move:
    read the register's surrounding entries in sequence for the changeover, or find an entry
    giving both a numeral and a name.
-3. **Use the numbered weekday as a free check.** Quakers numbered weekdays too (First Day =
+3. **A 1752 date is still Julian until 14 September.** The year start moved on 1 January 1752
+   but the calendar did not change until September, so a British or colonial entry dated
+   anywhere from January to 13 September 1752 takes `[OS]` alongside `[Q]`, exactly like a
+   1751 entry. Do not let the new year start make you drop the old-style qualifier.
+4. **Use the numbered weekday as a free check.** Quakers numbered weekdays too (First Day =
    Sunday). Run your converted date through a perpetual calendar; if the weekdays disagree,
    your conversion, your reading, or the clerk is wrong, and it is worth knowing which.
 
@@ -274,11 +278,14 @@ cause of false precision in a chronology.
 A person stated to be `aged 22` on 1770-06-04 had completed 22 years and not 23:
 
 ```
-born bet 1747-06-05 and 1748-06-04     prec = Y     cal 1747-06-05 / 1748-06-04
+date_norm = bet 1747-06-05 and 1748-06-04      prec = Y
+notes     = calculated from "aged 22" on 1770-06-04; 22 completed years, not 23
 ```
 
 Both boundaries are inclusive: after the 23rd-birthday cut-off, on or before the 22nd-birthday
-date. An off-by-one here costs a full year.
+date. An off-by-one here costs a full year. A **derived range is written as `bet…and`, with
+the arithmetic in `notes`** — never as `cal`, which belongs to a calculation that lands on a
+single day (3.8).
 
 | Age statement | Range it actually supports |
 |---|---|
@@ -339,10 +346,16 @@ abt 1735                          approximate; the record itself is soft
 bef 1799-11-26                    on or before
 aft 1751-11-03                    on or after
 bet 1791-03-02 and 1793-02-28     inclusive at both ends
-cal 1747-06-05 / 1748-06-04       calculated; show the arithmetic in notes
+cal 1748-01-24                    calculated to a SINGLE date; arithmetic in notes
 est 1730s                         estimated from context only, no arithmetic; the weakest
 from 1752-04 to 1771-04           a period of time, not an event
 ```
+
+**There is exactly one way to write a calculated range, and it is `bet A and B`.** `cal` takes
+a single date and nothing else: `cal 1748-01-24` is what `aged 22 years, 4 months, 11 days` on
+1770-06-04 yields. A calculation that lands on a range — which is almost every age calculation
+— is `bet 1747-06-05 and 1748-06-04` with `calculated from age at X; see notes` in `notes`.
+Do not write `cal A / B`, do not write `cal bet A and B`, and do not stack the two constructs.
 
 Qualifiers append in square brackets and stack, e.g. `1735-02-08 [OS, 1734/5, Q]`:
 
@@ -352,31 +365,58 @@ Qualifiers append in square brackets and stack, e.g. `1735-02-08 [OS, 1734/5, Q]
 [R]   regnal, converted           [?]       the reading of the document is uncertain
 ```
 
-`abt`, `bef`, `aft`, `bet…and`, `cal`, `est` and `from…to` are also the date modifiers in
-GEDCOM's date grammar, so a chronology written this way survives export instead of being
-flattened. GEDCOM also carries an explicit calendar escape for Julian, French Republican and
-Hebrew dates; check your program's exact syntax before relying on it, because consumer software
-frequently drops it on import.
+`abt`, `bef`, `aft`, `bet…and`, `from…to`, `cal` and `est` map to GEDCOM's date modifiers, but
+**GEDCOM's `CAL` and `EST` apply to a single date only** — a calculated *range* has no GEDCOM
+equivalent and exports as `BET…AND` with the calculation demoted to a note. That is one more
+reason the calculation lives in `notes` rather than in the date string. GEDCOM also carries an
+explicit calendar escape for Julian, French Republican and Hebrew dates; check your program's
+exact syntax before relying on it, because consumer software frequently drops it on import.
+**Check what survived a round trip** rather than assuming any of this held.
 
 ### 3.9 The sortable date key
 
 A chronology of mixed precision will not sort on a text date column. Two integer columns fix it.
 
 ```
-key_lo = YYYYMMDD of the earliest date the assertion permits, plus .SS intra-day sequence
-key_hi = YYYYMMDD of the latest date the assertion permits
+key_lo = YYYYMMDDSS   10 digits: the earliest date the assertion permits, plus the
+                      two-digit intra-day sequence. 1735-02-08, a birth -> 1735020800
+key_hi = YYYYMMDD      8 digits: the latest date the assertion permits. No SS; nothing
+                      sorts inside the last day an assertion permits
 ```
+
+**Both are integers, not decimals.** `1735020800`, never `17350208.00`. A fractional part is
+the one thing a spreadsheet will round, reformat or coerce on you, and rule 7 exists to stop
+exactly that. Two rows may legitimately carry the same key; the key orders the sheet, it does
+not identify the row. `id` does that.
 
 1. **Unknown components fill in opposite directions.** Unknown month: `01` in `key_lo`, `12` in
    `key_hi`. Unknown day: `01` in `key_lo`, the last day of that month in `key_hi`. So
-   `abt 1735` becomes `17350101` / `17351231`.
-2. **One-sided bounds still need two keys.** For `bef 1799-11-26`, set `key_lo` to the tightest
-   floor you can defend (a last known appearance, a marriage, a birth range) and say in `notes`
-   where it came from. Choosing that floor is an analytic act, not bookkeeping. Only when there
-   is genuinely no floor use the sentinel `00000000`, which sorts to the top of the sheet where
-   you will see it; mirror image `99999999` for an unbounded `aft`. Set `prec = U`.
-3. **`.SS` orders events inside a day.** Two digits assigned in tens so you can insert later:
-   birth `00`, baptism `10`, marriage `20`, death `80`, burial `90`.
+   `abt 1735` becomes `1735010150` / `17351231`. **A bare year always fills this way**, however
+   tempting it is to guess at the season a tax list or a court term actually sat: if you know
+   the assessment date, the row is not a bare year and you should key the real date; if you do
+   not, key `0101` and put "assessment date not established" in `notes`. Never split the
+   difference — two bare years filled two different ways in one sheet is a silent sort bug.
+2. **One-sided bounds still need two keys, and the open end takes the FLOOR, not the bound.**
+   For `bef 1799-11-26`, `key_hi` is 17991126 and `key_lo` is the tightest floor you can defend
+   — a last known appearance, a marriage, a birth range — with `notes` saying where it came
+   from. Keying `bef` at its own ceiling is the standard error: it collapses the row to a point,
+   hides the window, and destroys the tightest-row-first property in rule 4. Choosing the floor
+   is an analytic act, not bookkeeping. Only when there is genuinely no floor use the sentinel
+   `0000000000`, which sorts to the top of the sheet where you will see it; mirror image
+   `99999999` in `key_hi` for an unbounded `aft`. Either way set `prec = U`.
+3. **`SS` orders events inside a day.** Two digits, assigned with gaps so you can insert later:
+
+   ```
+   00 birth          10 baptism        20 marriage          30 deed signed
+   40 deed ackn.     45 deed recorded  50 any other event   60 will signed
+   80 death          90 burial         95 probate or administration granted
+   ```
+
+   Use `50` whenever the row has no defined position inside a day: a period, a bare year, a
+   jurisdictional fact. `SS` is also how you order a same-day sequence *without shifting a
+   date*. A man alive when he signed his will on 1791-03-02 and possibly dead later that day
+   gives two rows keyed `1791030260` and `1791030280`, both dated 1791-03-02. Never add a day
+   to a key to force an order; that is a falsified date, and the next reader cannot tell.
 4. **Sort on `key_lo` ascending, then `key_hi` ascending.** That puts the tightest row first
    among rows that start together, which is what you want reading down the page.
 5. **Sort on `prec` to find your work.** Filtering to `Y+` and `U` gives you, in one click, the
@@ -386,12 +426,35 @@ key_hi = YYYYMMDD of the latest date the assertion permits
    whole chronology sits in one regime. When it does not, for instance a family with records in
    both Pennsylvania (Julian until 1752) and France (Gregorian since 1582), normalise every key
    to proleptic Gregorian, mark the column header, and leave `date_rec` and `date_norm`
-   untouched. A Julian 20 February 1719/20 is 2 March 1720 Gregorian and keys `17200302`, so it
-   now interleaves correctly with a French record of the same season. For three or more calendar
+   untouched. A Julian 20 February 1719/20 is 2 March 1720 Gregorian and keys `1720030250`, so
+   it now interleaves correctly with a French record of the same season. For three or more calendar
    systems the Julian Day Number is a cleaner single key than any `YYYYMMDD` scheme.
 7. **Store the date columns as text and the key columns as integers.** Spreadsheet date types
    commonly cannot represent dates before 1900 and will silently coerce, reformat, or reject
    them. This is the mechanism behind most of the corruption in section 10.
+
+### 3.10 Where to look it up
+
+This file tells you to look something up rather than assume it seven times. Here is where.
+Name the one you used in `notes`, with its edition or its access date; "looked it up" without
+a name is the same unverifiable claim as not looking it up at all.
+
+| The lookup | Where |
+|---|---|
+| **County formation and boundary chains** (US) | The Newberry Library's *Atlas of Historical County Boundaries*, which maps every change in every US county dated to the day and is built from the session laws that made them. The **FamilySearch Research Wiki** county pages, titled `<County> County, <State> Genealogy`, give the formation date, the parent counties, what survives and what burned. Thorndale and Dollarhide, *Map Guide to the U.S. Federal Censuses, 1790-1920*, for the census-year outlines |
+| **County and parish equivalents elsewhere** | The FamilySearch Research Wiki carries the same jurisdiction pages for England, Ireland, Germany and most of the rest. For England and Wales, the *Phillimore Atlas and Index of Parish Registers* for parish boundaries and register start dates; GENUKI for parish-level detail and registration districts |
+| **Regnal years** | C. R. Cheney, *A Handbook of Dates for Students of British History*, revised by Michael Jones (Royal Historical Society / Cambridge) — rulers, accession dates and regnal-year tables. The Royal Historical Society's *Handbook of British Chronology* for accessions in more detail |
+| **Movable feasts and saints' days** | Cheney's *Handbook of Dates* again: Easter tables old style 400-1752 and new style from 1583, plus the feast lists that turn "the Monday after the feast of St Michael" into a date |
+| **A perpetual calendar** (for the weekday check in 3.3, and for any date you converted) | Cheney's *Handbook of Dates* prints a calendar for every possible Easter, which is a perpetual calendar in both Julian and Gregorian reckoning |
+| **French Republican dates** | The FamilySearch Research Wiki page *French Republican Calendar* carries year-by-year conversion tables. French departmental archives publish concordance tables in their *état civil* guides. Never convert by hand |
+| **Calendar change dates generally** | The FamilySearch Research Wiki's *Dates and Calendars* page, and its country-specific dates pages, for which jurisdiction changed when |
+| **Colonial and state tithable, poll-tax, militia and majority ages** | The published session laws of the colony or state for that year. Virginia: Hening, *The Statutes at Large; Being a Collection of All the Laws of Virginia*. North Carolina: *The Colonial Records of North Carolina* and *The State Records of North Carolina*. Other jurisdictions published their own; the statute is the only authority, and it changed often |
+| **Court term sitting dates** | The act establishing that court's terms, again in the session laws; then the court's own minute book, whose first and last entries for a term give the days it actually sat, which is what you want for a `bet` bound |
+
+The Research Wiki is also where the research cycle itself lives — identify what you know,
+decide what you want to learn, select records, search them, then **evaluate and record** what
+you found. A timeline is the recording half of that step made auditable, and section 10 is
+what keeps it so.
 
 ---
 
@@ -556,7 +619,13 @@ them by finding a single row pair that cannot describe one life.
    `Bartholomew Cray, unassigned` for all of them. Resist assigning anything yet.
 2. Sort and read for the shapes in section 6, looking specifically for a hard impossibility:
    an event after a death, a conveyance of land already conveyed, two simultaneous presences.
-3. Split into three columns: **A**, **B**, **unassigned**. Every row goes into one.
+3. Tag every row in a `col` column with exactly one of four defined values. There are four,
+   not three, because "this row is about both men" and "I do not yet know which man" are
+   different claims and collapsing them loses the distinction:
+   **`A`** / **`B`** — assigned to one man; **`A+B`** — the row asserts something about both,
+   as a tax list naming both does, or something about ground or title that both held;
+   **`unassigned`** — not yet attributable. No other value. A bare `?` is `unassigned`
+   spelled worse.
 4. Anchor each column with a row that can belong to nobody else.
 5. Propagate outward using **linked evidence**, never similarity. Chain of title is the
    strongest chronological spine there is: the grantor in a later deed must be a person who
@@ -569,17 +638,35 @@ them by finding a single row pair that cannot describe one life.
 **Worked example.** Question: *which Bartholomew Cray sold 150 acres on Deep Creek, Guilford
 County, North Carolina, in 1786?*
 
-| id | key_lo | date_norm | assertion | col |
-|---|---|---|---|---|
-| C-01 | 17620401 | 1762 [tax] | Bartholomew Cray taxed, Rowan Co. | ? |
-| C-02 | 17710101 | 1771 | The Deep Creek land passes from Orange and Rowan to the new Guilford Co. | both |
-| C-03 | 17740412 | 1774-04-12 | Bartholomew Cray, grantor, acknowledges a deed in open court, Guilford Co. | ? |
-| C-04 | 17780401 | 1778 [tax] | **Two** entries on one list: Bartholomew Cray and Bartholomew Cray Junr. | both |
-| C-05 | 17810801 | bef 1781-08 | Administration granted on the estate of Bartholomew Cray, dec'd, Guilford Co. | A |
-| C-06 | 17860520 | 1786-05-20 | Bartholomew Cray, grantor, 150 a. on Deep Creek | B |
-| C-07 | 17910302 | 1791-03-02 | Bartholomew Cray signs his will, Guilford Co. | B |
+**Excerpt**, sorted on `key_lo` then `key_hi`. `subject` is `Bartholomew Cray, unassigned` on
+every row and is not repeated; `date_rec`, `place_rec`, `cal`, `juris_now` and `rec_level` are
+dropped for width. The full column set is section 2, and a real sheet carries all of it.
 
-The impossibility is C-05 against C-06 and C-07: a man whose estate was administered in 1781
+| id | key_lo | key_hi | prec | date_norm | juris_then | assertion | info | ev | cite | col |
+|---|---|---|---|---|---|---|---|---|---|---|
+| C-08 | 0000000000 | 17810831 | U | bef 1781-08-31 | Guilford Co. / N.C. | Died (bound derived from the grant in C-05) | secondary | direct | [admin bond] | A |
+| C-01 | 1762010150 | 17621231 | Y | 1762 | Rowan Co. / Prov. N.C. | Bartholomew Cray taxed | primary | indirect | [tax list, 1762] | unassigned |
+| C-02 | 1771010150 | 17711231 | Y | 1771 | Guilford Co. / Prov. N.C. | The Deep Creek land passes from Orange and Rowan to the new Guilford Co. | primary | indirect | [act of 1771] | A+B |
+| C-03 | 1774041240 | 17740412 | D | 1774-04-12 | Guilford Co. / Prov. N.C. | Bartholomew Cray, grantor, acknowledges a deed in open court | primary | direct | [deed bk] | unassigned |
+| C-04 | 1778010150 | 17781231 | Y | 1778 | Guilford Co. / N.C. | **Two** entries on one list: Bartholomew Cray and Bartholomew Cray Junr. | primary | direct | [tax list, 1778] | A+B |
+| C-05 | 1781080195 | 17810831 | M | 1781-08 | Guilford Co. / N.C. | Administration granted on the estate of Bartholomew Cray, dec'd | primary | indirect | [admin bond] | A |
+| C-06 | 1786052030 | 17860520 | D | 1786-05-20 | Guilford Co. / N.C. | Bartholomew Cray, grantor, 150 a. on Deep Creek | primary | direct | [deed bk] | B |
+| C-07 | 1791030260 | 17910302 | D | 1791-03-02 | Guilford Co. / N.C. | Bartholomew Cray signs his will | primary | direct | [will bk] | B |
+
+Three things to read off the keys. **C-01 and C-04 are bare years and both fill `0101`/`1231`**
+(3.9 rule 1); a tax list is taxable on an assessment date you have not looked up yet, and
+guessing a month to make the sort look tidier is how a fabricated date enters a sheet.
+**C-05 and C-08 are one document and two rows** (section 2, and 3.7): the grant is a dated
+record event with a month-precise date; the death is a derived one-sided bound, and it takes a
+separate row, `prec = U`, and `info = secondary` because no one in 1781 witnessed it and said
+so. **C-08's `key_lo` is the sentinel `0000000000`**, not 17810801: while the pool is still
+merged there is no row that defensibly shows *this* Bartholomew alive, so there is no floor to
+claim. The sentinel puts the row at the top of the sheet where its openness is visible, which
+is the whole point; once C-01 or C-03 is assigned to A, the floor tightens and the key moves.
+Note also that C-08 was numbered last and sorts first: **`id` records the order you found
+things, `key_lo` records the order the world produced them.** Never renumber to make them agree.
+
+The impossibility is C-05/C-08 against C-06 and C-07: a man whose estate was administered in 1781
 does not convey land in 1786 or sign a will in 1791. That alone establishes **at least two**
 men of the name in one county.
 
@@ -643,20 +730,30 @@ probate. Stages that are missing where they should be present are research quest
 
 ## 9. Worked example
 
-**Research question:** When was Susannah (Teale) Cray, who died in Guilford County, North
-Carolina, in 1799, born, and where?
+**Research question:** When and where was Susannah (Teale) Cray, wife of Bartholomew Cray of
+Guilford County, North Carolina, born, and when and where did she die?
 
-Eleven records, in the order they were found, which is not the order they happened.
+The question has two halves, and `ev` is computed against the question as stated: a burial
+entry is indirect evidence for a death, direct evidence of nothing but a burial, and for the
+birth half it is indirect at best. Change the question and that column is stale (section 10).
+
+Eleven records, in the order they were found, which is not the order they happened. **These
+are working shorthand, not citations.** Each `S`-number resolves to a full first reference note
+in the source list — who, what, when, where-in, where-is, and the provenance chain if you
+worked from an image rather than the book — built per `references/citation-management.md`.
+The bracketed blanks below are the volume, page and repository you must fill from the item in
+front of you; a `cite` column pointing at shorthand with no source list behind it fails the QA
+gate in `templates/timeline.md`.
 
 ```
-S1  New Garden MM, Chester Co., Pa., marriages: Joseph Teale & Mary Bowater, 5th d 9 mo 1730
+S1  New Garden MM (Chester Co., Pa.) marriages: Joseph Teale & Mary Bowater, 5th d 9 mo 1730
 S2  Same, births: "Susannah, daughter of Joseph & Mary Teale, born ye 8th d of ye 12 mo 1734"
 S3  Same, births: "Joseph, son of Joseph & Mary Teale, born ye 3rd d of ye 3 mo 1737"
-S4  Same, men's minutes, 1728-1740, complete run: no disciplinary minute naming Joseph or
-    Mary Teale
+S4  Same, men's minutes 1728-1740, run verified complete: no disciplinary minute naming
+    Joseph or Mary Teale
 S5  Same, certificate of removal to Friends in North Carolina, 3rd d 9 mo 1751, naming
     Joseph, Mary, and their children including Susannah
-S6  Cane Creek MM, N.C., certificate received and recorded, 4th d 4 mo 1752
+S6  Cane Creek MM (N.C.), certificate received and recorded, 4th d 4 mo 1752
 S7  Cane Creek MM marriages: Susannah Teale & Bartholomew Cray, 4th d 5 mo 1757
 S8  Cane Creek MM births: first child of Bartholomew and Susannah Cray, 2nd d 12 mo 1759
 S9  Act creating Guilford County from Rowan and Orange, effective 1771
@@ -664,28 +761,36 @@ S10 Guilford Co. will of Bartholomew Cray, signed 2 March 1791, proved at the co
     February 1793, naming "my wife Susannah"
 S11 Cane Creek MM burials: "Susannah Cray, wife of Bartholomew, buried 26th d 11 mo 1799,
     aged 69 years"
+
+Each carries, in the source list and not here: [volume and page or entry], [the repository
+or the digital image set and the film or item identifier], and [which layer you examined].
 ```
 
-Sorted chronology, core columns:
+Sorted on `key_lo` then `key_hi`. **Core columns**; `date_rec`, `place_rec`, `cal`, `juris_now`
+and `rec_level` are dropped for width and a real sheet carries them (section 2).
 
-| id | key_lo | key_hi | prec | date_norm | juris_then | subject | assertion | info | ev | src |
-|---|---|---|---|---|---|---|---|---|---|---|
-| T-01 | 17301105.00 | 17301105 | D | 1730-11-05 [OS, Q] | New Garden MM / Chester Co. / Prov. Pennsylvania | Joseph Teale; Mary Bowater | Married under the care of the meeting | primary | indirect | S1 |
-| T-02 | 17301106.00 | 17400101 | Y+ | from 1730-11 to 1740 | as above | Joseph & Mary Teale | No disciplinary minute in a complete run | undetermined | **negative** | S4 |
-| T-03 | 17350208.00 | 17350208 | D | 1735-02-08 [OS, 1734/5, Q] | as above | Susannah Teale | Born, daughter of Joseph & Mary | primary | direct | S2 |
-| T-04 | 17370503.00 | 17370503 | D | 1737-05-03 [OS, Q] | as above | Joseph Teale jr | Born, son of Joseph & Mary | primary | indirect | S3 |
-| T-05 | 17511103.00 | 17511103 | D | 1751-11-03 [OS, Q] | as above | Susannah Teale | Named as a child of Joseph & Mary on a removal certificate; present in Chester Co. | primary | direct | S5 |
-| T-06 | 17511104.00 | 17520604 | M | from 1751-11-03 to bet 1752-04-04 and 1752-06-04 [Q] | in transit | Teale household | Migration in progress | primary | indirect | S5, S6 |
-| T-07 | 17520404.00 | 17520604 | M | bet 1752-04-04 and 1752-06-04 [Q] | Cane Creek MM / Orange Co. (created 1752; check the parent for 1751) / Prov. North Carolina | Susannah Teale | Certificate received; present in North Carolina | primary | direct | S6 |
-| T-08 | 17570504.00 | 17570504 | D | 1757-05-04 [Q] | Cane Creek MM / Orange Co. / N.C. | Susannah Teale | Married Bartholomew Cray | primary | indirect | S7 |
-| T-09 | 17591202.00 | 17591202 | D | 1759-12-02 [Q] | as above | Susannah Cray | Bore a child | primary | indirect | S8 |
-| T-10 | 17710101.00 | 17711231 | Y | 1771 | Guilford Co. / N.C. | the Cray land | Passed from Orange and Rowan to Guilford jurisdiction. No move | secondary | indirect | S9 |
-| T-11 | 17910302.00 | 17910302 | D | 1791-03-02 | Guilford Co. / N.C. | Susannah Cray | Living, and wife of Bartholomew, on the day he signed his will | primary | direct | S10 |
-| T-12 | 17910303.00 | 17930228 | Y | bet 1791-03-02 and 1793-02-28 | as above | Bartholomew Cray | Died. Upper bound is the last sitting day of the February 1793 term: look it up | secondary | indirect | S10 |
-| T-13 | 17991126.00 | 17991126 | D | bef 1799-11-26 [Q] | Cane Creek MM / N.C. | Susannah Cray | Died, on or shortly before burial | secondary | direct | S11 |
-| T-14 | 17291127.00 | 17301126 | Y | cal bet 1729-11-27 and 1730-11-26 | as above | Susannah Cray | Birth range implied by "aged 69" at burial | secondary | direct | S11 |
+| id | key_lo | key_hi | prec | date_norm | juris_then | subject | assertion | src_class | info | ev | cite | notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| T-02 | 1728010150 | 17401231 | Y+ | from 1728 to 1740 | New Garden MM / Chester Co. / Prov. Pennsylvania | Joseph & Mary Teale (principals) | No disciplinary minute in a run verified complete | original | undetermined | **negative** | S4 | NEGATIVE EVIDENCE, not a nil search. Run deliberately widened to the start of the minute book so it covers the pre-marital window T-14 opens. Completeness verified [how]; source for the claim in S4 |
+| T-14 | 1729112700 | 17301126 | Y | bet 1729-11-27 and 1730-11-26 | not established (the burial register places the burial, not the birth) | Susannah Cray (principal) | Birth range implied by "aged 69" at burial | original | secondary | direct | S11 | Calculated: burial 1799-11-26 minus 69 completed years, not 70. Informant unidentified; the register does not name who reported the age. Age stated at BURIAL, and death precedes burial by days, so the true range opens a few days earlier than shown. Not material to the five-year conflict. REJECTED, see T-01/T-02 |
+| T-01 | 1730110520 | 17301105 | D | 1730-11-05 [OS, Q] | as T-02 | Joseph Teale; Mary Bowater (principals) | Married under the care of the meeting | original | primary | indirect | S1 | 9 mo pre-1752 = November. Outside the double-dating window, so no `[1730/1]`. Conflicts with T-14 |
+| T-03 | 1735020800 | 17350208 | D | 1735-02-08 [OS, 1734/5, Q] | as T-02 | Susannah Teale (principal) | Born, daughter of Joseph & Mary | original | primary | direct | S2 | 12 mo pre-1752 = February; February is inside the double-dating window. Conflicts with T-14 |
+| T-04 | 1737050300 | 17370503 | D | 1737-05-03 [OS, Q] | as T-02 | Joseph Teale jr (principal) | Born, son of Joseph & Mary | original | primary | indirect | S3 | 3 mo pre-1752 = May, not March |
+| T-05 | 1751110350 | 17511103 | D | 1751-11-03 [OS, Q] | as T-02 | Susannah Teale (named child) | Named as a child of Joseph & Mary on a removal certificate; present in Chester Co. | original | primary | direct | S5 | 9 mo = November. Ties the Susannah of T-03 to the household that moved |
+| T-06 | 1751110360 | 17520604 | M | from 1751-11-03 to bet 1752-04-04 and 1752-06-04 [OS, Q] | in transit | Teale household | Journey bracket: departed on or after the grant, arrived on or before the receipt | original | secondary | indirect | S5, S6 | DERIVED row, no record asserts it: bracket built from S5 and S6 per section 8. `info = secondary` for that reason. `SS` 60 sorts it after T-05 on the same day without shifting the date |
+| T-07 | 1752040450 | 17520604 | M | bet 1752-04-04 and 1752-06-04 [OS, Q] | Cane Creek MM / Orange Co. (created 1752 from Johnston, Bladen and Granville; for a 1751 date establish which parent held this ground) / Prov. North Carolina | Susannah Teale (named child) | Certificate received; present in North Carolina | original | primary | direct | S6 | 4 mo in 1752 is ambiguous April/June: unresolved. Still `[OS]` — Britain and colonies were Julian until 14 September 1752 |
+| T-08 | 1757050420 | 17570504 | D | 1757-05-04 [Q] | Cane Creek MM / Orange Co. / N.C. | Susannah Teale (principal) | Married Bartholomew Cray | original | primary | indirect | S7 | 5 mo post-1752 = May. No `[OS]`: after September 1752 |
+| T-09 | 1759120200 | 17591202 | D | 1759-12-02 [Q] | as T-08 | Susannah Cray (mother) | Bore a child | original | primary | indirect | S8 | 12 mo post-1752 = December. Same numeral as T-03, different month, same family |
+| T-10 | 1771010150 | 17711231 | Y | 1771 | Guilford Co. / N.C. | the Cray land | Passed from Orange and Rowan to Guilford jurisdiction. No move | original | primary | indirect | S9 | Boundary change as its own row (section 4). `info = primary`: the act is the record of its own enactment. Bare year fills `0101`/`1231`; key the effective date if the act gives one |
+| T-11 | 1791030260 | 17910302 | D | 1791-03-02 | Guilford Co. / N.C. | Susannah Cray (wife named in a will) | Living, and wife of Bartholomew, on the day he signed his will | original | primary | direct | S10 | `SS` 60 = will signed. Says nothing about the probate date: she is not shown alive in 1793 |
+| T-12 | 1791030280 | 17930228 | Y+ | bet 1791-03-02 and 1793-02-28 | as T-11 | Bartholomew Cray (principal) | Died | original | secondary | indirect | S10 | DERIVED bound: floor = the signing date, T-11, `SS` 80 places death after signing inside that day. Ceiling is a placeholder for the last sitting day of the February 1793 term: look it up |
+| T-15 | 1791030280 | 17991126 | U | bef 1799-11-26 | Cane Creek MM / Orange Co. / N.C. | Susannah Cray (principal) | Died | original | secondary | direct | S11 | DERIVED bound from the burial entry, T-13; lag is days. Floor = T-11, the last row showing her living; `prec = U` because the floor is inference, not record. Sorts on its floor, which is the point: the open window is visible |
+| T-13 | 1799112690 | 17991126 | D | 1799-11-26 [Q] | as T-15 | Susannah Cray (principal) | Buried | original | primary | indirect | S11 | 11 mo post-1752 = November. The register asserts a BURIAL. The death is T-15. Cane Creek is in present-day Alamance Co., carved from Orange in 1849; in 1799 the ground was Orange |
 
-**Calendar handling in this set.** Three rows need it and they demonstrate the whole problem:
+Two rows share `key_lo` 1791030280 and sort by `key_hi`: T-12 (ceiling 1793) before T-15
+(ceiling 1799). That is rule 4 doing its job — the tighter row first.
+
+**Calendar handling in this set.** Four rows need it and they demonstrate the whole problem:
 
 - T-03: `12 mo 1734` in a pre-1752 Quaker register is **February**, and February falls in the
   double-dating window, so the year is 1734/5. The date is 8 February 1734/5. Read as
@@ -709,27 +814,46 @@ retrospective. The chronology gives a harder one:
 T-01 places the parents' marriage on 5 November 1730. T-14's range runs from 27 November 1729
 to 26 November 1730, and **all but the last three weeks of it precedes the marriage**. A
 birth three weeks after a Quaker marriage, or at any point before it, would have produced a
-disciplinary minute in the men's minutes, and T-02 records that a complete run of those
-minutes for 1728 to 1740 contains none. That is **negative evidence**, absence where presence
-is required, and it is only worth anything because the run is complete. Had the volume been
-lost, T-02 would be a negative search result and would bound nothing at all. Note the
-completeness claim and its source in `notes`.
+disciplinary minute in the men's minutes, and T-02 records that a run of those minutes
+verified complete for 1728 to 1740 contains none. **T-02's window was set deliberately to
+1728, not to the marriage year**: a negative-evidence row has to cover the whole window the
+argument needs, and a row that began in November 1730 would have excluded the eleven months
+of T-14's range that fall before the wedding — that is, almost the entire thing it is being
+used to exclude. Check the coverage of every negative row against the claim it supports; this
+is the most common way a negative argument quietly fails. That is **negative evidence**,
+absence where presence is required, and it is only worth anything because the run is
+complete. Had the volume been lost, T-02 would be a negative search result and would bound
+nothing at all. Note the completeness claim and its source in `notes`.
 
 T-14 is therefore rejected: the age at burial is overstated by about five years, which is an
 ordinary error in a record whose informant was reporting rather than witnessing.
 
-**Conclusion, with its residue.** Susannah Teale was born 8 February 1734/5 in Chester
-County, Pennsylvania, and died on or shortly before 26 November 1799 in Guilford County,
-North Carolina.
+**Conclusion, with its residue.** Susannah Teale was born 8 February 1734/5 in Chester County,
+Pennsylvania, and died on or shortly before 26 November 1799 and was buried at Cane Creek
+Monthly Meeting, Orange County, North Carolina; **her residence at death is not established by
+this record set.**
+
+That last clause is not modesty, it is arithmetic. Read down the `juris_then` column: the only
+1799 row is a burial at Cane Creek, which sat in Orange County until Alamance was carved out of
+Orange in 1849. The Guilford rows are her husband's land (T-10) and his will (T-11, T-12).
+Burial at the meeting she joined in 1752 is entirely ordinary and tells you nothing about the
+county she was living in forty-seven years later. **A conclusion may not assert a jurisdiction
+no row carries.** If the draft conclusion names a place, find the row; if there is no row, the
+place goes in the residue and becomes a research task.
 
 What the timeline does **not** settle, and which must be stated rather than absorbed:
 
+- **Her residence at death.** Nothing in this set places her anywhere in 1799 but a grave. Next
+  steps: the Cane Creek membership and removal records for 1793-1799, the Guilford estate file
+  of Bartholomew Cray for a widow's dower or allotment, and the tax lists of both counties.
 - Whether the Susannah who married in 1757 is the Susannah born in 1734/5 rests on the
   removal certificate naming her among Joseph and Mary's children (T-05) and on the receiving
   meeting's record. If the 1757 marriage entry does not name her parents, a second Susannah
   Teale in the same meeting remains an open alternative, and section 7 is the next step.
 - T-07's month is unresolved.
 - T-12's upper bound is a placeholder until the court term's sitting dates are checked.
+- T-15's floor rests on T-11, eight years earlier. Anything showing Susannah alive after 1791
+  tightens it, and `prec = U` is what keeps that task on the list.
 
 **Do not delete T-14.** It is the conflict, it was resolved, and the resolution is part of the
 proof. Mark it `rejected, see T-01/T-02` in `notes` and leave it in the table.

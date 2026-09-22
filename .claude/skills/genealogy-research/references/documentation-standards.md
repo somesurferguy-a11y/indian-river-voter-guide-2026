@@ -35,7 +35,9 @@ Four stages, not four synonyms, each with its own question. You cannot skip one.
 
 The standard amateur failure collapses all four: "it's a good source, so it's true." A death certificate is an
 original source carrying primary information about the death and secondary information about the birth,
-offering direct evidence of the death date and indirect evidence of the parents. All true at once.
+offering direct evidence of the death date and direct evidence of the parents' names that is only as good as the
+secondary information carrying it. All true at once. Weak information does not make evidence indirect; for what
+indirect evidence actually looks like, see the census pair in §1.3.
 
 ### 1.1 Source: original, derivative, authored narrative
 
@@ -122,6 +124,9 @@ in 1820.
   was to be expected. Write the expectation first or it reads as hand-waving: *"Rowan County recorded guardian
   bonds for the minor heirs of every intestate decedent in this period, and the clerk's bond book for 1838 to
   1841 contains none for the Teale estate; therefore Jesse Teale left no minor children."*
+- **The expectation itself needs a citation.** An uncited expectation is an assumption wearing the clothes of
+  negative evidence. Cite the statute, the county practice, or two dated examples from the same series showing
+  that the record-keeper did record this when it applied (worked example: §3.4, Item E).
 
 ### 1.4 Worked evaluation: one death certificate, assertion by assertion
 
@@ -130,8 +135,9 @@ from 1906). The non-US analogue is a civil registration death entry (England and
 Scotland's statutory registers from 1855), which names the informant and their qualification explicitly and is
 correspondingly easier to analyse.
 
-**Decedent:** Susannah (Cray) Vardy, a great-granddaughter of the Bartholomew Cray and Susannah Teale used in
-§3, so the two worked examples sit in one family without being about the same woman.
+**Decedent:** Susannah (Cray) Vardy, a granddaughter of the Bartholomew Cray and Susannah Teale used in §3
+(her father, Jesse Cray, at row 10 below, was their son), so the two worked examples sit in one family without
+being about the same woman.
 **Artifact:** a digital image of the certificate as filed, so an image of an original. Had it been a typed
 certified copy, every line below would carry one more copying act between you and the informant.
 **Informants:** three, and the form distinguishes them. The attending physician signed the medical section;
@@ -164,6 +170,15 @@ What the same paper is evidence *of*, for three questions:
   test, not a conclusion.
 - *Was she a daughter rather than a step-daughter of Jesse Cray?* #10 is silent on the distinction, so here it
   is at best indirect and the question needs other records.
+
+**When the age and the date of birth do not agree.** Row 8 works only because 11 June 1848 to 14 March 1921 is
+exactly 72 years 9 months 3 days, so the age is derived and carries no weight of its own. That is the tidy
+case and not the common one. When the stated age and the stated date of birth do **not** agree, the age is not
+derived at all. It is a second statement by the same informant, and the disagreement is a conflict *inside one
+document*, to be stated and resolved under §4 like any other conflict. Check the arithmetic on every
+certificate before classifying row 8; that check is the only thing telling you which of the two cases you are
+in. Where they disagree, record both as written, say which you prefer and why, and never let software
+silently compute a third value. Arithmetic and "on or before" boundaries: `references/timeline-building.md`.
 
 Note what the table refuses to do: it never averages the lines into "a good document." Lines 1 and 7 sit on
 one sheet of paper and are worth entirely different amounts.
@@ -262,7 +277,9 @@ A sentence or two plus citation. The proof lives in the citation.
 > Pennsylvania.[^1]
 >
 > [^1]: Pennsylvania, death certificate no. [number] (1921), Susannah Vardy; Division of Vital Records, New
-> Castle. Digital image of the certificate as filed; date of death certified by the attending physician.
+> Castle. Digital image, [website name] ([URL] : accessed [date]); imaged from [film or image series], which
+> reproduces the certificate as filed. Certificate examined as an image, not as the paper original; date of
+> death certified by the attending physician.
 
 That last clause is the habit to copy: one phrase naming *which* informant carried the assertion turns a bare
 citation into an evaluated one.
@@ -291,8 +308,11 @@ knows the agreement was not achieved by stopping early.
 > 14 November 1821, Jesse Teale bondsman; Rowan County records, State Archives of North Carolina, Raleigh.
 > [^3]: Rowan County, North Carolina, marriage register [volume]: [page], Cray-Teale return; State Archives of
 > North Carolina, Raleigh.
-> [^4]: Cray family Bible records, 1821 to 1889, [Bible title and imprint], privately held by [owner],
-> [city, state], 2026. Entries in one hand; compiler unidentified.
+> [^4]: Cray family Bible records, 1821 to 1889, [Bible title and imprint]; privately held by [owner],
+> [city, state], 2026. [Owner] received the volume from [prior holder], [relationship to owner], in [year],
+> who had it from [prior holder], [relationship], of [place]. Entries in one hand; compiler unidentified;
+> title page and the page bearing the entries photographed [date]. The custody chain is not decoration: an
+> unprovenanced Bible is an unattributable manuscript.
 
 That "Scope" paragraph is what separates a proof summary from a pile of agreeing citations. It is the
 reasonably-exhaustive element made visible.
@@ -318,8 +338,12 @@ answer.
 4. **The correlation.** The items laid against each other, usually as a table or chronology. The argument is
    actually made here.
 5. **Conflicting evidence, stated and resolved.** Its own heading. Both sides at strength (§4).
-6. **The conclusion.** What, at what confidence, with residual doubt named.
-7. **The citation apparatus.** Full reference notes, shortened notes on repetition, and a source list if the
+6. **The extent of the research.** What was searched, with jurisdiction and span, nil results included, and
+   the known record loss for the period. This is the reasonably-exhaustive element made visible; without it
+   the reader cannot apply the test in §2. In `templates/proof-argument.md` it is section 8, placed after the
+   apparatus so the argument's prose runs unbroken. Either position works; absence does not.
+7. **The conclusion.** What, at what confidence, with residual doubt named.
+8. **The citation apparatus.** Full reference notes, shortened notes on repetition, and a source list if the
    argument circulates alone. Three shapes: `references/citation-management.md`.
 
 ### 3.4 Proof argument: worked example on indirect evidence
@@ -329,15 +353,24 @@ answer.
 **Who was the father of Susannah Teale, who married Bartholomew Cray in Rowan County, North Carolina, on
 14 November 1821?**
 
-**Background.** Susannah Teale, born in North Carolina about 1804, married Bartholomew Cray in Rowan County in
-1821, appeared with him there in 1830, 1840, and 1850, and last appears in 1860. North Carolina required no
-civil registration of births until 1913 and no baptismal register survives for any Rowan County congregation
-covering 1795 to 1810. No record states her parentage in words, so the question must be answered from indirect
-evidence, and it turns first on identity: the 1821 bride, the woman in Bartholomew Cray's household from 1830
-to 1860, and the "Susannah Cray" in a Teale estate division must be shown to be one woman before any
-parentage inference is available. Continuity of household, county, husband's name, and stated birth state
-across all five appearances, with no second Susannah Cray of comparable age recorded in Rowan County in the
-period, establishes that.
+**Background.** Susannah Teale, born in North Carolina about 1804 (the estimate is contested; see the
+unresolved conflict in §4, and every inference below that depends on it is marked ‡), married Bartholomew Cray
+in Rowan County in 1821, appeared with him there in 1830, 1840, and 1850, and last appears in 1860. North
+Carolina required no civil registration of births until 1913 and no baptismal register survives for any Rowan
+County congregation covering 1795 to 1810. No record states her parentage in words, so the question must be
+answered from indirect evidence, and it turns first on identity: the 1821 bride, the woman in Bartholomew
+Cray's household from 1830 to 1860, and the "Susannah Cray" in a Teale estate division must be shown to be one
+woman before any parentage inference is available.
+
+Continuity of household, county, husband's name, and stated birth state across all five appearances carries
+that identity. A competing candidate was searched for and not found: the Rowan County marriage bonds and the
+clerk's marriage register, the federal census population schedules for the county for 1820 through 1860 read
+page by page, and the county's estate and guardian records for 1821 through 1845 were searched under Cray,
+Crey, and Craig, and no second Susannah Cray of comparable age appears in any of them. That is a **negative
+search result with a stated scope**, not negative evidence (§1.3): it eliminates the candidates those record
+groups would have held, and no others. Rowan County tax lists for the 1820s were not searched, and a
+same-named woman who never married, never held land, and never took a share could still be invisible to all
+of the above.
 
 **The evidence.**
 
@@ -354,9 +387,12 @@ the groom's kin. This narrows the field; it does not close it.
 and consistent with several other things.
 
 *Item C. The 1830 census.* Jesse Teale's household in the same county holds no female in the bracket that
-would then contain Susannah, while Bartholomew Cray's does.[^7] **Indirect**, and meaningful only in sequence
-with Item B: a female of the right age left Jesse Teale's house in the decade a Susannah Teale left it to
-marry.
+would then contain Susannah, while Bartholomew Cray's does.[^7] Original source; information of undetermined
+origin, the enumerator's informant being unnamed here as in 1820. **Indirect**, and meaningful only in
+sequence with Item B: a female of the right age left Jesse Teale's house in the decade a Susannah Teale left
+it to marry. It does not establish that the female who left was Susannah, that she left to marry rather than
+to die or move, or that the two enumerations counted the same people accurately; age brackets in these
+schedules are the enumerator's arithmetic on a reported age.
 
 *Item D. The estate division.* Jesse Teale died intestate in Rowan County in 1838. The report of division
 returned 9 May 1839 divides his estate into seven equal shares, one of them to "Bartholomew Cray in right of
@@ -367,31 +403,78 @@ issue of a deceased child taking that parent's share by representation. Seven eq
 husband in his wife's right, is consistent with seven surviving children of whom one was a married daughter,
 and equally consistent with a distribution in which a share passed by representation to grandchildren.
 
-*Item E. Negative evidence on representation.* Rowan County recorded guardian bonds for the minor heirs of
-intestate decedents throughout this period, and the clerk's bonds for 1838 to 1841 contain none arising from
-the Teale estate.[^9] Nor does the estate file name any grandchild or use the language of representation these
-commissioners used when a deceased child's issue took a share. The absence signifies because presence was
-expected: they did record such language when it applied. This **negative evidence** removes the alternative
-reading of Item D, leaving seven distributees as seven surviving children.
+A third reading must also be excluded. Under North Carolina's act of distributions a widow took a child's part
+where the intestate left more than two children, so seven shares is equally consistent with a widow and six
+children. Read the act in force at the date of the division before relying on the fraction: the shares varied
+with the number of children, and later acts altered them. Three readings, one record: the count of shares
+alone decides nothing.
+
+*Item E. Negative evidence: no representation, and no widow.* Two absences carry part of the load here, and
+neither means anything until the expectation behind it is stated and cited.
+
+*The expectation, cited.* Rowan County took guardian bonds for the minor heirs of intestate decedents
+throughout this period, and the commissioners returning divisions in this county wrote representation into the
+return itself when a deceased child's issue took a share: two returns in the same volume as Jesse Teale's, one
+of [date] and one of [date], name the grandchildren and say they take their parent's part.[^9] The expectation
+is cited, not assumed, which is the only thing separating the two paragraphs below from hand-waving.
+
+*No representation.* The clerk's guardian bonds for 1838 to 1841 contain none arising from the Teale estate,
+and the estate file names no grandchild and uses none of that representation language.[^9] **Negative
+evidence**, and it removes the second reading of Item D.
+
+*No widow.* A widow in a Rowan County intestate estate of this period ordinarily leaves traces: a dower
+allotment returned by a jury, a year's provision laid off to her, her receipt among the vouchers in the estate
+file, and, where she administered, a bond in her own name. The estate file, the county court minutes for 1838
+and 1839, and the administration bonds for the same span show none of the four, and administration was granted
+to a man the bond describes by no relation to the decedent.[^9] **Negative evidence**, and it removes the
+third reading, leaving seven distributees as seven surviving children.
+
+*What it does not establish.* An absence licenses only what its expectation covers. These do not establish
+that Jesse Teale never married, that no child predeceased him without issue, or that a widow who herself died
+between 1838 and the 1839 division left no trace in some record group not searched. A volume with lost or
+unbound leaves produces the same silence as a bond never taken, so the condition of each volume examined is
+recorded in the apparatus with the search.
 
 *Item F. The 1850 census.* Susannah Cray, age 46, born North Carolina, in Bartholomew Cray's household.[^10]
-**Indirect** for parentage; it supplies the birth estimate of about 1804 against which the other items are
-tested, and it is secondary information from an undetermined informant.
+Original source; secondary information from an undetermined informant, whoever answered the enumerator.
+**Indirect** for parentage; it supplies the census-derived birth estimate of about 1804 ‡ against which the
+other items are tested. It does not establish her birth year, which is in unresolved conflict with the family
+Bible (§4); it does not name a parent; and because the estimate it supplies is the one contested, every
+inference below that turns on her age is marked ‡ and would have to be re-run on a birth in 1799.
 
 **Correlation.**
 
 | Year | Jesse Teale's household | Susannah | Inference available |
 |---|---|---|---|
-| 1820 | one female 16 to 25 | unmarried, est. age 16 to 21 | consistent with residence in the household |
+| 1820 | one female 16 to 25 | unmarried, est. age 16 to 21 ‡ | consistent with residence in the household ‡ |
 | 1821 | Jesse Teale stands bond | marries Bartholomew Cray | bondsman is close kin of the bride |
-| 1830 | that bracket now empty | in Bartholomew Cray's household | a female of that age left in the interval |
+| 1830 | that bracket now empty | in Bartholomew Cray's household | a female of that age left in the interval ‡ |
 | 1838 | dies intestate | married, living, in county | eligible as a distributee |
 | 1839 | estate divided seven ways | husband takes a share in her right | she is a distributee in her own right |
 | 1839 | no guardian bond, no issue named | | she took as a child, not as a representative |
+| 1839 | no dower, no year's provision, no widow's receipt | | no widow took a child's part among the seven |
+
+‡ depends on the contested birth estimate of about 1804. On the Bible's 3 February 1799 she is 21 in 1820 and
+still inside the 16-to-25 bracket, so the 1820 and 1830 inferences survive either reading; her age at marriage
+changes from 17 to 22, which no item in this argument turns on. The mark stays because the dependency is real
+and a later reader must be able to see it, not because it breaks the argument. Rule: §4.
 
 No single item names Susannah as Jesse Teale's daughter. In sequence they describe a woman of the right age in
 his household, leaving it to marry under his suretyship, and taking a child's equal share of his intestate
 estate eighteen years later.
+
+**Scope of research.** Searched in Rowan County, North Carolina: marriage bonds and the clerk's marriage
+register, 1815 to 1830; estates and loose estate papers, 1830 to 1845; guardian bonds and administration
+bonds, 1830 to 1845; county court minutes, 1836 to 1842; deeds, grantor and grantee indexes, 1795 to 1845;
+wills, 1795 to 1845; and the federal census population schedules for the county, 1790 through 1860, read page
+by page for 1820, 1830, and 1850. Variants tried throughout: Teale, Teal, Teele, Tale; Cray, Crey, Craig. Nil
+results are set out in the report behind this argument and, where one carries part of the load, in Item E.
+**Not searched:** county tax lists, and the records of the adjoining counties into which Teales are known to
+have moved. **Known loss:** North Carolina required no civil registration of births until 1913; no baptismal
+register survives for any Rowan County congregation covering 1795 to 1810; and the guardian-bond volume for
+[span] is water-damaged for [leaves], which is stated because an absence found in a damaged volume is a weaker
+absence. This paragraph is the reasonably-exhaustive element made visible, and it is what lets a reader apply
+the first test in §2 without access to the files.
 
 **Conflicting evidence.**
 
@@ -432,8 +515,10 @@ statement is undocumented, late, and inconsistent with the estate division.
 itself distinguish a natural daughter from a step-daughter or an adopted daughter treated as a child in the
 distribution, and Rowan County records disclose no wife for Jesse Teale before about 1795. A deed of gift from
 Jesse Teale to Susannah, a Bible record from the Teale line, or an identification of Jesse's wife would settle
-it. Until then the conclusion is that Susannah was Jesse Teale's daughter in law and in the eyes of the
-county, which is the sense in which the estate division speaks, and probably by birth.
+it. Until then the conclusion is that Susannah was treated as Jesse Teale's daughter in the eyes of the law and of
+the county, which is the sense in which the estate division speaks, and was probably his daughter by birth.
+(Period records often use *daughter-in-law* to mean step-daughter; the term is avoided here for that reason.
+Kinship-term drift: `references/relationship-mapping.md`.)
 
 ```
 APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
@@ -446,9 +531,22 @@ APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
        [date]); imaged from National Archives microfilm publication [number], roll [number].
 [^8]:  Jesse Teale estate file (1838), Rowan County, North Carolina, estates records, report
        of division returned 9 May 1839; State Archives of North Carolina, Raleigh.
-[^9]:  Rowan County, North Carolina, guardian bonds [volume], 1838 to 1841, examined in full;
-       no bond for the heirs of Jesse Teale. State Archives of North Carolina, Raleigh.
-       Negative search of a complete volume, cited as searched.
+[^9]:  Compound note for Item E; the expectation first, then the two searches that found
+       nothing, because an absence is only as good as the expectation cited for it.
+       (a) Expectation: Rowan County, North Carolina, estates records, reports of division
+       returned [date] and [date] in the same volume as the Teale return, each naming the
+       issue of a deceased child and awarding them their parent's part; and Rowan County
+       guardian bonds [volume], routine bonds for minor heirs of intestates throughout
+       1838 to 1841. State Archives of North Carolina, Raleigh.
+       (b) No representation: same guardian-bond volume, 1838 to 1841, examined leaf by
+       leaf; no bond for the heirs of Jesse Teale. Volume condition: [condition; note any
+       lost or unbound leaves, since a gap and an absence look identical].
+       (c) No widow: Jesse Teale estate file (1838), examined in full for a dower return,
+       year's provision, or widow's receipt; Rowan County administration bonds [volume],
+       1838 to 1841; Rowan County court minutes, 1838 to 1839, [volume]. None names a
+       widow of Jesse Teale.
+       Strands (b) and (c) are negative search results, cited as searched; read against
+       (a) they become the negative evidence argued in Item E.
 [^11]: Ambrose Pell, Annals of Rowan County (Salisbury, N.C.: [publisher], 1897), [page].
        Authored narrative; no sources cited for the Teale sketch.
 
@@ -532,6 +630,10 @@ resolve it, so the next researcher has somewhere to start.
 dates; citing the majority; silent omission; "sources disagree" with no analysis; or recording both values in
 the database with no note that they conflict.
 
+**And hedging is not analysis.** "It seems likely that perhaps she may have been his daughter" sounds
+cautious, proves and disproves nothing, and hides that no analysis happened. Say how strong the case is and
+why. Hedge once, precisely, with the reason attached.
+
 ---
 
 ## 5. The research report
@@ -566,21 +668,17 @@ successor. Skeleton to copy: `templates/research-report.md`.
 "Write it for your future self" is not a lower bar. Your future self has forgotten everything and cannot ask
 you a question, which makes them harder to serve than a client.
 
-**Why the negative results section is not optional.** Any one of these is sufficient. (1) It is how
-*reasonably exhaustive* becomes verifiable: positive findings show where you looked last, nil results show
-where you looked at all. (2) It prevents duplicated work; uncatalogued nil results are the largest source of
-wasted hours in long-running research, including your own. A source searched in 2019 and not recorded is a
-source you will search again in 2027. (3) It is the precondition for negative evidence (§1.3), which needs a
-documented search with a stated scope. (4) For a client it is most of what they paid for: eight hours that
-eliminated four record groups is real work, and a report that hides it looks like eight hours that found
-nothing.
+**Why the nil-results section is not optional**, any one reason being sufficient: positive findings show
+where you looked last, nil results show where you looked at all, so this is how *reasonably exhaustive*
+becomes verifiable; a source searched in 2019 and not recorded is a source you search again in 2027; negative
+evidence (§1.3) is unavailable without a documented search of stated scope; and for a client, eight hours that
+eliminated four record groups is real work that an unreported nil result makes look like nothing.
 
-Record each nil result so it is reusable: source, jurisdiction, exact span, index or page-by-page, name
-variants tried, condition of the source. "Searched the 1840 census, nothing" is nearly useless. "Searched 1840
-US census, Rowan and Davidson counties, N.C., every-name index plus page-by-page review of Rowan; variants
-Teale, Teal, Teele, Tale; no head of household of that surname in either county" is reusable for a decade.
-(*Strategy* for negative searching belongs to `references/research-workflows.md`; the obligation to write them
-down auditably is here.)
+Record each so it is reusable — source, jurisdiction, exact span, index or page-by-page, variants, condition.
+"Searched the 1840 census, nothing" is useless. "Searched 1840 US census, Rowan and Davidson counties, N.C.,
+every-name index plus page-by-page review of Rowan; variants Teale, Teal, Teele, Tale; no head of household of
+that surname in either county" is reusable for a decade. (*Strategy* for negative searching:
+`references/research-workflows.md`; the duty to record them auditably is here.)
 
 **Report vs. compiled genealogy.** Different documents, different jobs; do not let one masquerade as the other.
 
@@ -599,31 +697,25 @@ language into print as though settled. Do the proof pass.
 
 ## 6. Compiled genealogy conventions
 
-Narrative, arranged in a numbered descent system, documentation carried in notes rather than the narrative
-flow. Numbering mechanics, the choice of descent system, and unusual descents:
-`references/relationship-mapping.md`. The documentation side is here.
+Narrative in a numbered descent system, documentation carried in notes. Numbering mechanics, choice of descent
+system, and unusual descents: `references/relationship-mapping.md`. The documentation side is here.
 
-**In the narrative:** identity, vital events, residences, occupation, and dates; the relationship statements
-that structure the descent; conclusions at their actual confidence ("probably" in the text is a promise that
-the notes explain why only probably); enough context to make the person legible (the migration, the war, the
-epidemic, the land opening); and a short pointer where a conclusion rests on an argument ("the evidence for
-this relationship is set out in the proof argument at [location]").
+**In the narrative:** identity, vital events, residences, occupation, dates; the relationship statements that
+structure the descent; conclusions at their actual confidence ("probably" in the text is a promise that the
+notes explain why only probably); enough context to make the person legible; and a pointer wherever a
+conclusion rests on an argument ("the evidence for this relationship is set out in the proof argument at
+[location]"). **In the notes:** all citations; source and information evaluation where it affects weight;
+conflicts and their resolution unless central enough for the text; rejected alternative readings, with
+reasons; nil results explaining a gap the reader will notice; transcriptions where exact wording matters.
 
-**In the notes:** all citations; source and information evaluation where it affects weight; conflicts and
-their resolution unless central enough for the text; alternative readings rejected, with reasons; negative
-search results relevant to a gap the reader will notice; and transcriptions where exact wording matters.
-
-**Citation density.** The working expectation in scholarly compiled genealogy is a citation for every
-assertion of an event, date, place, relationship, or name variant, and for every direct quotation, so most
-sentences in a well-documented sketch carry a note. Two habits keep density high and the page readable:
-
-- **Bundle within a sentence, never across a paragraph.** One note covering that sentence's three assertions,
-  in the order they appear, is fine. One note at the end of a paragraph covering nine is not, because the
-  reader cannot tell which source supports which claim.
-- **Cite the inference too.** Where a statement is your conclusion rather than a record's assertion, the note
-  says so: "Estimated from her age in the 1850 census and her 1821 marriage; see [location]." An uncited
-  inference sitting among cited assertions reads as a sourced statement, which is misrepresentation even when
-  unintended.
+**Citation density.** The scholarly expectation is a note for every assertion of an event, date, place,
+relationship, or name variant, and for every quotation, so most sentences in a good sketch carry one. Two
+habits keep density high and the page readable. **Bundle within a sentence, never across a paragraph:** one
+note covering that sentence's three assertions in order is fine; one note at the end of a paragraph covering
+nine is not, because the reader cannot tell which source supports which claim. **Cite the inference too:**
+where a statement is your conclusion rather than a record's assertion, say so in the note — "Estimated from her
+age in the 1850 census and her 1821 marriage; see [location]" — because an uncited inference sitting among
+cited assertions reads as a sourced statement, which is misrepresentation even when unintended.
 
 **Test for a finished sketch:** a reader who disagrees with any single sentence can find, from the notes
 alone, the thing they would have to go and look at to check you.
@@ -645,45 +737,60 @@ surname the moment you export, and it sorts, indexes, and merges as one. Record 
 attached to the record it came from; variants are the raw material of later searching and later identity
 arguments.
 
-**Against ALL CAPS surnames.** The convention exists to mark which name is the surname, and there are better
-ways. It costs you: internal capitalisation carrying real information (`McDonald`, `MacLeod`, `FitzGerald`,
-`de la Vergne`, `van Wely`, `ffrench`) is destroyed and cannot be restored automatically; case-sensitive
-matching and sorting break; it reads as shouting in any narrative prose; and screen readers may spell it
-letter by letter. Use the dedicated surname field every genealogical data format already provides, which
-survives export intact. If a publisher's house style demands caps, apply it **at output**, never in the data.
+**Against ALL CAPS surnames.** The convention marks which name is the surname, and every data format already
+has a surname field that does the same job and survives export. Caps destroy internal capitalisation that
+carries information (`McDonald`, `FitzGerald`, `de la Vergne`, `van Wely`, `ffrench`) unrecoverably, break
+case-sensitive matching, read as shouting, and are spelled letter by letter by some screen readers. If a house
+style demands caps, apply them **at output**, never in the data.
 
-**Dates.** `3 February 1799` or `3 Feb 1799`: day, month by name, four-digit year. **Never all-numeric** —
-`3/2/1799` is 3 February to a British reader and 2 March to an American one, and neither can tell which you
-meant. Distinguish precision from estimate in the data, not in your memory: `abt 1804`, `bef 14 Nov 1821`,
-`aft 1860`, `bet 1799 and 1804`. An estimate entered as exact is a lie that propagates. Record the date as the
-record gives it alongside your interpretation wherever the form is ambiguous. Dual dating, Julian and
-Gregorian, quarter days, regnal years, Quaker numbered months, and date arithmetic:
-`references/timeline-building.md`.
+**Dates and places** belong to `references/timeline-building.md`: date forms, estimate notation, dual dating
+and calendars, date arithmetic, place normalisation, and the jurisdiction-as-at-the-event rule. Two archiving
+consequences are mine. **Never store an all-numeric date** — `3/2/1799` is 3 February to a British reader and
+2 March to an American one — with **ISO `YYYY-MM-DD` the one exception, and only where machine sorting is the
+point: filenames, logs, and record headers such as the conclusion record in §8**, never in narrative and never
+in a citation. And record date and place **as the record gives them** beside your standardised interpretation,
+keeping both permanently, for the same reason you keep the as-written name.
 
-**Places.** Smallest to largest, in the jurisdiction **as it was at the time of the event**: `Salisbury, Rowan
-County, North Carolina, United States`. Record the modern equivalent as a separate note, never as a
-replacement; a boundary change is historical information you will need. Use the full hierarchy every time,
-including the level that seems obvious: there is more than one Rowan County in the United States.
-Normalisation and the jurisdictional cascade: `references/timeline-building.md`.
+**Software migration.** Assume at least two more program changes. Once a year and before any migration,
+export, import into a different program, and **read the result**: what silently disappears is custom event
+types and tags, note formatting, media links, citation detail collapsed into one text blob, research logs, and
+to-do items. **Your archive of record is not the software.** It is the images, transcriptions, citations, log,
+reports, and proof documents, in open formats, in a folder structure you control; the database is a
+convenience for querying and charting. Keep one plain-text or PDF rendering of current conclusions with their
+citations, regenerated when they change. That is the copy that still opens in thirty years.
 
-**Software migration.** Assume you change programs at least twice more. Export your data, import it into a
-different program, and **read the result**, once a year and before any migration. What silently disappears is
-usually custom event types and tags, note formatting, media links, citation detail collapsed into one text
-blob, research logs, and to-do items. **Your archive of record is not the software**: it is the images,
-transcriptions, citations, log, reports, and proof documents, in open formats, in a folder structure you
-control. The database is a convenience for querying and charting. Keep at least one plain-text or PDF
-rendering of the current conclusions with their citations, regenerated when they change; it is the copy that
-will still open in thirty years.
+**The folder structure**, since the archive of record is a folder tree and "the filing scheme in plain
+language" has to refer to something. One workable layout, to adapt rather than copy:
+
+```
+ARCHIVE-ROOT/
+  START-HERE.md            <- read first: scope, filing scheme, current conclusions, open questions
+  images/                  <- one folder per jurisdiction+record group; sidecar .txt beside each image
+    rowan-co-nc_estates/   <- plus index.csv per folder: filename, citation, date captured
+  transcriptions/          <- full transcripts and abstracts, plain text or Markdown, one per record
+  proofs/                  <- proof statements, summaries, arguments; superseded versions kept, marked
+    superseded/
+  reports/                 <- research reports, numbered and dated; delivered versions never edited
+  logs/                    <- research log (incl. nil results), backup-restore log, consent register
+  correspondence/          <- letters and email that carry evidence or permissions, dated, as PDF
+  permissions/             <- what you asked, of whom, their reply, and the terms attached
+  conclusions/             <- the conclusion records of section 8, one per ID, plus a current index
+  dna/                     <- kit inventory, match correspondence, consent records; access-restricted
+  database-exports/        <- dated GEDCOM or equivalent, plus a dated PDF of current conclusions
+```
+
+Whatever layout you choose, it must satisfy three tests: a stranger can tell from a folder name what is in it;
+nothing lives only inside the genealogy program; and every image can be reunited with its citation without
+opening the program (`index.csv` and sidecars, below).
 
 **Image capture: capture the context, not just the entry.** The commonest archive failure is a folder of
-beautiful crops nobody can cite. For every record, capture in this order: (1) the **finding aid or catalog
-entry** that got you there, which is what makes the citation reconstructable; (2) the **title page or spine**
-with volume number and date span visible; (3) the **full page or opening**, uncropped, with page numbers,
-headings, and stamped foliation visible, including the facing page when the record crosses the gutter; (4) the
-**entry itself**, cropped, as a *second* file, never the only one; (5) the **preceding and following pages**,
-at least one each, since sequence, hand changes, and clerical patterns are evidence and you cannot go back;
-(6) the **index page** pointing to the entry. Shoot at the highest resolution available, lossless where the
-repository allows, square to the sensor, and note lighting or damage that made anything illegible.
+beautiful crops nobody can cite. Per record, in order: the **finding aid or catalog entry** that got you there
+(this is what makes the citation reconstructable); the **title page or spine** showing volume and date span;
+the **full page or opening**, uncropped, with page numbers and stamped foliation visible, plus the facing page
+where the record crosses the gutter; the **entry itself**, cropped, as a *second* file and never the only one;
+**one page either side**, because sequence, hand changes, and clerical patterns are evidence and you cannot go
+back; and the **index page** pointing to the entry. Highest resolution available, lossless where permitted,
+square to the sensor, with lighting or damage that defeated legibility noted.
 
 **File naming.** A filename is a handle, not a citation, but a good handle sorts usefully and never collides:
 
@@ -702,22 +809,19 @@ between; no spaces, `&`, `#`, `/`, or accented characters; surname before given 
 which part of the record this is. Pick one rule for whether the prefix is the record's date or the capture
 date and hold it. Note that the nil search gets a file too.
 
-**Metadata.** The filename cannot hold the citation, so attach it: a sidecar text file with the same basename
-holding the full reference note, repository and address, access date, call or file number, condition of the
-original, and anything you noticed that the image does not show; **and** embedded IPTC/XMP description and
-source fields written at import, which travel with the file but are invisible in a listing and lost by some
-conversion tools. Do both, plus one plain-text or CSV index per folder listing every image with its citation.
-The index is what a successor reads first.
+**Metadata.** The filename cannot hold the citation, so attach it twice: a sidecar text file of the same
+basename carrying the full reference note, repository and address, access date, call or file number, condition
+of the original, and what the image does not show; **and** embedded IPTC/XMP description and source fields
+written at import, which travel with the file but are invisible in a listing and stripped by some converters.
+Plus one plain-text or CSV index per folder listing every image with its citation. The index is what a
+successor reads first.
 
-**Backup: three copies, two media, one offsite, with a verified restore.** *Three copies* means the working
-copy plus two backups. *Two media* means the backups do not share a failure mode: a local drive and a cloud
-service qualify, two folders on one machine do not, and a synchronised cloud folder is not a backup at all
-because it faithfully propagates your deletions and your ransomware. *One offsite* means physically
-elsewhere; fire, flood, and theft take everything in one room, and archives lost that way are not recoverable
-at any price. *Verified restore* is the part everyone skips and the only part that proves the rest: quarterly,
-restore a random file to a scratch location and open it; annually, restore a whole folder; write the date and
-result in your log. **An untested backup is a hypothesis about a backup.** Keep backups in open formats, and
-encrypt any containing living people's data, recording where the key is in a way your executor can act on.
+**Backup: three copies, two media, one offsite, with a verified restore.** Two genealogy-specific points
+carry the rule. A synchronised cloud folder is **not** a backup: it propagates your deletions and your
+ransomware faithfully. And the verified restore is the only part that proves the rest — quarterly, restore a
+random file and open it; annually, restore a whole folder; log the date and result. **An untested backup is a
+hypothesis about a backup.** Keep backups in open formats and encrypt anything holding living people's data,
+recording where the key is in a way your executor can act on.
 
 **What a successor needs.** Keep a current `START-HERE` document at the archive root: what the archive covers
 (families, surnames, places, periods); the filing scheme in plain language; the current conclusions and where
@@ -726,6 +830,16 @@ open questions and prioritised next steps from the latest report; the research l
 the physical originals are, in whose custody, and what you promised about them; which subscription sites,
 societies, and repositories hold trees, DNA kits, or deposits, and how to reach them (name where credentials
 are held, never write them into the archive); and the privacy and consent register (§9).
+
+**The disposition plan**, in `START-HERE`, in two or three sentences, because an archive with no named
+destination is an archive that goes into a skip. Name the repository, genealogical or historical society,
+library, or family member the archive is to go to, with a contact and the date you last confirmed they will
+accept it; say whether a deed of gift, deposit agreement, or bequest already exists, where the signed copy is
+held, and what conditions it carries (access restrictions, the fate of living-people data, whether the
+depositor may be named); and say what happens to the digital archive specifically, since repositories that
+take paper often will not take files. If nothing is signed, write "no agreement yet" rather than leaving it
+blank, so a successor knows it is an open task and not a settled one. Revisit it whenever the archive's
+contents or the recipient's terms change.
 
 ---
 
@@ -782,19 +896,18 @@ documents disagree destroys it.
 Handling rules, not warnings.
 
 **Living people.** Treat a person as living unless you hold evidence of death or they were born before a
-documented cutoff you set and apply consistently; write the cutoff into `START-HERE` so your practice is
-reviewable. Keep **full data in the private archive** — privacy protection concerns publication, not your own
-research. In anything shared, the default for a living person is name withheld: `Living`, initials, or given
-name plus initial, and suppress birth dates, addresses, and identifiers useful for impersonation, for the
-living and the recently deceased. **Consent unlocks publication and nothing else does**, and it is specific:
-*this* information, in *this* publication, in *this* form, recorded in the consent register with date and
-wording. Consent to appear in a tree emailed to cousins is not consent to appear on a public website. Minors:
-parent or guardian consents, and a higher suppression default applies regardless. Jurisdiction: US practice is
-a patchwork of state law and site policy with no single standard; the UK and EU analogue is data protection
-law (UK GDPR and the GDPR), which treats identifiable living people's data as regulated personal data with
-rights of access and erasure attached, and which applies to your spreadsheet as much as to a company's
-database. If someone asks to be removed, remove them from the published product promptly, record the request,
-and do not argue.
+documented cutoff you set and apply consistently; write the cutoff into `START-HERE` so the practice is
+reviewable. Keep **full data in the private archive**: privacy protection concerns publication, not research.
+In anything shared, the default is name withheld — `Living`, initials, or given name plus initial — with birth
+dates, addresses, and identifiers useful for impersonation suppressed, for the living and the recently
+deceased. **Consent unlocks publication and nothing else does**, and it is specific: *this* information, in
+*this* publication, in *this* form, logged in the consent register with date and wording. Consent to appear in
+a tree emailed to cousins is not consent to appear on a public website. For minors a parent or guardian
+consents and a higher suppression default applies regardless. Jurisdiction: US practice is a patchwork of
+state law and site policy; the UK and EU analogue is data protection law (UK GDPR and the GDPR), which treats
+identifiable living people's data as regulated personal data carrying rights of access and erasure, and which
+reaches your spreadsheet as surely as a company's database. If someone asks to be removed, remove them from
+the published product promptly, record the request, and do not argue.
 
 **Sensitive findings, general protocol.** (1) **Verify before disclosing**; a misattributed parentage asserted
 on weak evidence and retracted does damage the retraction will not undo. (2) **Tell the most affected living
@@ -802,7 +915,16 @@ person first, privately, before it appears in any circulated document** — for 
 the written report goes out, rather than letting them read it there. (3) **Write it neutrally, cite it
 precisely, and stop**: record what the record says, and do not speculate about motive, morality, or feelings.
 (4) **Restrict circulation by default**: the private archive and the report to the person entitled to it, not
-the published tree.
+the published tree. (5) **When a suppressed conclusion is load-bearing, say so in place of it.** Withheld
+evidence is routinely the evidence a lineage application, a portfolio submission, or a published descent
+actually stands on, and the two dishonest exits are publishing it anyway and restating the descent as though
+the link needed no support. Take neither. Write into the document itself that the relationship rests on
+evidence withheld at the request of a living person, name who holds that evidence and in what form, and state
+that it is available to a reviewer, judge, or society examiner under confidentiality on request. Then ask the
+person whose privacy is at stake whether that much disclosure is acceptable, and record the answer and its
+date in the consent register. If they decline even that, the application or the publication proceeds without
+the link and says the link is unproved **on the evidence this document may show** — which is true — or it does
+not proceed. It never proceeds on evidence the reader is not told exists.
 
 | Category | Specific handling |
 |---|---|
@@ -830,42 +952,38 @@ descendant researchers who contact you. Living descendants get the living-people
 narrate around it**: a family history detailing a man's land and livestock while passing over the people he
 held is a documentation failure as well as a moral one.
 
-**DNA.** Correlation mechanics: `references/relationship-mapping.md`. The consent protocol is here.
-*Consent to test*: before a sample is given, the test taker understands, in their own words, that results may
-reveal unexpected close relationships including misattributed parentage, unknown siblings, and donor
-conception, in their family and others'; that results will be matched against other testers and that matching
-is the point; who has access to the account and raw data and who controls it; what the company's terms permit,
-including transfer and any law-enforcement matching options and whether those are opt-in; and that the data
-outlives the test and may be inherited or sold with the company. Record the consent. A minor's parent or
-guardian consents, with the higher suppression default. For a deceased or incapacitated person's sample, the
-person with legal authority decides, and what that person would have wanted remains yours to weigh.
-*Consent to publish is separate and specific*: being in your match list is not consent to be named in your
-proof argument. Agree in advance whether they are named in full, by initials, by code (`Match A`), or not at
-all; whether shared centimorgan totals and segment data appear, since shared cM is data about a relationship
-and so partly the match's; whether their tree, stated ancestry, or correspondence may be quoted; and whether
-the publication is private, society-restricted, or public, consent to one not being consent to another. The
-defensible default in a published argument is pseudonymised labels for living matches, full cM values, the
-relationship path stated, and the underlying identifications retained privately and available to a reviewer
-or portfolio judge under confidentiality. Say in the document that you have done this.
+**DNA.** Correlation mechanics: `references/relationship-mapping.md`. The consent protocol is here, and it is
+two consents, not one. *Consent to test*: before the sample is given, the taker understands in their own words
+that results may reveal unexpected close relationships — misattributed parentage, unknown siblings, donor
+conception — in their family and in others'; that matching against other testers is the point; who holds and
+controls the account and the raw data; what the company's terms permit, including transfer and any
+law-enforcement matching, and whether those are opt-in; and that the data outlives the test and may be
+inherited or sold with the company. Record it. A minor's parent or guardian consents, with the higher
+suppression default; for a deceased or incapacitated person's sample the holder of legal authority decides,
+and what that person would have wanted is still yours to weigh. *Consent to publish is separate and
+specific*: being in your match list is not consent to be named in your proof argument. Settle in advance
+whether a match is named in full, by initials, by code (`Match A`), or not at all; whether shared cM totals
+and segment data appear, since shared cM is data about a relationship and so partly theirs; whether their
+tree, stated ancestry, or correspondence may be quoted; and whether publication is private,
+society-restricted, or public, consent to one being no consent to another. The defensible default in a
+published argument is pseudonymised labels for living matches, full cM values, the relationship path stated,
+and the underlying identifications held privately and available to a reviewer or portfolio judge under
+confidentiality. Say in the document that you have done this.
 
 **Copyright, fair use, and repository restrictions** are three separate constraints; clearing one does not
-clear the others. **Copyright** protects expression, not facts: the information in a 1921 death certificate is
-not copyrightable, a modern author's prose about it is, and while a straightforward reproduction of a
-public-domain document generally attracts no new copyright in the United States, some other jurisdictions
-have treated skilled reproduction more generously, so do not assume an old record's image is free everywhere.
-**Database and compilation rights** may protect selection and arrangement even where the items are free, and
-the EU and UK recognise a specific database right with no US equivalent. **Contract and licence** bind you
-independently of copyright: a subscription site's terms or a repository's reader agreement may forbid
-republishing images you were entitled to view, and this is the constraint that catches genealogists because it
-applies to public-domain records. **Repository publication restrictions** are conditions of access, and a "no
-publication without written permission" clause on a photography form is enforceable against you as a promise;
-archives do withdraw access. **US fair use** weighs purpose, nature, amount, and market effect; the UK,
-Canadian, Australian, and Irish analogue is **fair dealing**, which is narrower and works through enumerated
-purposes such as research and private study, criticism, review, and quotation. Practically: quote sparingly
-and transcribe freely; seek permission before publishing an image you did not create, and keep the reply; use
-the repository's required acknowledgement exactly as specified; never republish a subscription site's images
-publicly, citing them and describing the route instead (`references/citation-management.md`); and keep a
+clear the others. Copyright protects **expression, not facts**: a 1921 certificate's information is free, a
+modern author's prose about it is not, and some jurisdictions treat a skilled reproduction of a public-domain
+document more generously than the United States does. **Database and compilation rights** may protect
+selection and arrangement where the items themselves are free; the EU and UK recognise a database right with
+no US equivalent. **Contract and repository restriction bind independently of copyright** — a subscription
+site's terms, a reader agreement, a "no publication without written permission" clause on a photography form
+— and this is the constraint that actually catches genealogists, because it reaches public-domain records.
+**US fair use** weighs purpose, nature, amount, and market effect; the UK, Irish, Canadian, and Australian
+analogue is **fair dealing**, narrower and limited to enumerated purposes. Practically: quote sparingly,
+transcribe freely, seek permission before publishing an image you did not create, use the repository's
+required acknowledgement exactly as given, never republish a subscription site's images publicly, and keep a
 permissions file recording what you asked, of whom, what they said, and when.
+
 
 **Attribution.** **Cite the researcher** by name and medium for anything you learned from them and have not
 re-derived from the original: email, conference paper, message board post, database entry, private
@@ -882,25 +1000,9 @@ later. And if you circulated someone else's mistake, your correction goes to eve
 
 ---
 
-## 10. Common documentation failures and their correctives
-
-| Failure | What it looks like | Why it is fatal | Corrective |
-|---|---|---|---|
-| **The undocumented assertion** | A date, place, or relationship with no citation sitting among cited ones | Indistinguishable from a sourced statement; the reader cannot tell what to check | Cite it, flag it as an inference with a pointer to the reasoning, or delete it |
-| **The citation that cannot be followed** | "Ancestry.com"; "county records"; a bare URL; a family Bible with no owner or custody | Fails the citation element outright and makes every conclusion resting on it unverifiable | Apply the layered model plus the provenance chain for online material; re-test three at random (`references/citation-management.md`) |
-| **The conclusion that outruns its evidence** | "Proved" on one indexed entry; a relationship stated flatly where only an inference exists | Miscalibrates every downstream user, including you in five years | Match language to evidence: *proved*, *probably*, *possibly*, *unresolved*. Choose the right proof form (§3); a proof statement where an argument is required is an overclaim |
-| **Hedging instead of analysis** | "It seems likely that perhaps she may have been his daughter" | Sounds cautious, neither proves nor disproves, and hides that no analysis happened | Say how strong the case is and why. Hedge once, precisely, with the reason |
-| **The conflict quietly dropped** | A contradicting record found, not cited, not mentioned | Fails the conflict element and destroys trust in everything else when found | State every conflict, both sides at strength, resolve with reasons or declare unresolved (§4). Never delete the losing evidence |
-| **The tree merged without review** | Hundreds of people absorbed from someone else's tree in one click | Imports unverified conclusions as your findings, indistinguishable from your work within a month | Import to a separate file, flag every assertion unverified, re-test each against a source you examined, cite the researcher for what you keep (§9) |
-| **The "proof" that is an assertion repeated** | Six sources agree, all descended from one undocumented compilation; a tree citing a tree citing the first | Repetition is not corroboration; independence is what makes agreement mean anything | Trace each source to its origin and ask of every pair: could these two have disagreed? Count independent origins, never citations |
-| **Nil result passed off as negative evidence** | "She is not in the 1840 index, so the family had left the county" | An inference from absence with no showing that presence was expected; the index may simply be bad | Establish the expectation, state the completeness of the search, then argue from absence (§1.3) |
-| **The unwritten conclusion** | A full database, a beautiful chart, no prose anywhere | Fails the written-conclusion element; the reasoning exists only in your head and dies with your memory | Write the proof document. A conclusion not written up is not proved, however good the research behind it |
-
----
-
 ## Templates and cross-references
 
-- `templates/proof-argument.md` — the seven-part skeleton with inline guidance.
+- `templates/proof-argument.md` — the eight-part skeleton with inline guidance.
 - `templates/research-report.md` — report skeleton for client and self, with the sources-searched table.
 - Search strategy, planning, logs, negative searching as method, when to stop: `references/research-workflows.md`
 - Citation anatomy, layered and provenance citations, shortened forms, source lists, QA: `references/citation-management.md`

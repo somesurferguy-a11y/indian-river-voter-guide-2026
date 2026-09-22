@@ -27,8 +27,8 @@ rows themselves survive.
 | Column | Definition | Rule |
 |---|---|---|
 | `id` | Stable row label, `T-001` | Never reuse, never renumber. Proof arguments cite these |
-| `key_lo` | `YYYYMMDD.SS` of the **earliest** date the assertion permits | Unknown month `01`, unknown day `01`. `.SS` orders events within a day, assigned in tens |
-| `key_hi` | `YYYYMMDD` of the **latest** date the assertion permits | Unknown month `12`, unknown day = last of that month |
+| `key_lo` | The ten-digit integer `YYYYMMDDSS` of the **earliest** date the assertion permits | Unknown month `01`, unknown day `01`, bare year always `0101`. `SS` orders events within a day. An integer, never a decimal: `1735020800`, not `17350208.00` |
+| `key_hi` | The eight-digit integer `YYYYMMDD` of the **latest** date the assertion permits | Unknown month `12`, unknown day = last of that month. No `SS`: nothing sorts inside the last day an assertion permits |
 | `prec` | `D` day, `M` month, `Y` year, `Y+` multi-year, `U` unbounded on one side | Filter to `Y+` and `U` to get your research plan |
 | `date_rec` | The date **verbatim**, original spelling, original numerals | Never overwrite with your conversion |
 | `date_norm` | Your normalisation in the notation below, with qualifiers | Show the arithmetic in `notes` |
@@ -60,10 +60,13 @@ abt 1735                          approximate; the record itself is soft
 bef 1799-11-26                    on or before  (INCLUSIVE)
 aft 1751-11-03                    on or after   (INCLUSIVE)
 bet 1791-03-02 and 1793-02-28     inclusive at both ends
-cal 1747-06-05 / 1748-06-04       calculated; show the arithmetic in notes
+cal 1748-01-24                    calculated to a SINGLE date; arithmetic in notes
 est 1730s                         estimated from context only; the weakest
 from 1752-04 to 1771-04           a period of time, not an event
 ```
+
+A **calculated range** is written `bet A and B`, with `calculated from age at X; see notes`
+in `notes`. `cal` takes one date and one date only. Never `cal A / B`, never `cal bet A and B`.
 
 Qualifiers append in square brackets and stack: `1735-02-08 [OS, 1734/5, Q]`
 
