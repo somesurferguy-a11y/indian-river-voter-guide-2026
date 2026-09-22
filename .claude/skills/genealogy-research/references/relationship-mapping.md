@@ -466,8 +466,9 @@ an index, not an argument.
 
 ### 9.2 Descending systems: one family, numbered four ways
 
-> **Bartholomew Cray** (1788-1851), m. Susannah Teale. Children: Mary (1810-1884), Bartholomew the
-> younger (1812-1880, m. Verity Marchbank, with children Josiah and Ann), Hosea (1815-1816).
+> **Bartholomew Cray of Bellwether Creek** (1788-1851), m. Susannah Teale, from the roster at the head of
+> this file. Children: Mary (1810-1884), Bartholomew the younger (1812-1880, m. Verity Marchbank, with
+> children Josiah and Ann), Hosea (1815-1816).
 
 **Register system** (the New England Historical and Genealogical Register style). Arabic numbers go
 **only** to persons whose descendants are carried forward to a later entry; all children get lower-case
@@ -569,8 +570,8 @@ cousins" is a soft one, because it is consistent with a dozen other relationship
 
 ### 10.2 Autosomal DNA: ranges, not relationships
 
-A child inherits about half of each parent's autosomal DNA, but *which* half is decided by recombination,
-which is random. Three consequences drive everything.
+A child inherits **exactly half** of each parent's autosomal DNA; what is random is *which* half, decided
+by recombination. Three consequences drive everything.
 
 - Beyond the parent-child pair, the amount two relatives share is a **random draw from a
 distribution**, not a fixed figure. Two pairs in the same documented relationship can share markedly
@@ -589,6 +590,14 @@ measured figure and the tool that produced the range, and treat published thresh
 than boundaries. Tools and authors set different minimum segment-size floors for exactly this reason:
 **state the floor you used** instead of assuming your reader shares it.
 
+**An ethnicity or admixture estimate is not an ancestor.** It is a statistical comparison of a tester's
+DNA against a company's reference panels. It differs between companies, because their panels and
+algorithms differ, and it differs between updates of one company's panels, so the same raw data yields a
+different figure next year. It describes populations, not people: no percentage can establish that a
+specific named person was an ancestor, and none can confirm, quantify or support a relationship
+conclusion. At most it suggests a region or population where documentary work might be productive, and
+the smallest percentages are the least stable part of the estimate.
+
 ### 10.3 Clustering and triangulation
 
 **Shared-match (in-common-with) clustering** groups matches by which of them match each other. Clusters
@@ -606,6 +615,24 @@ Hazards: segments below your chosen floor are frequently **identical by state** 
 matches; reported matches are half-identical regions, so a match may be on either parent's side unless the
 data are phased. **Testing the oldest generation available is the highest-value action in genetic
 genealogy**, because a parent's or aunt's results phase everything below them.
+
+**Plan the test before you order it.** A DNA test is a record you commission, so plan it like a search.
+
+```
+DNA TEST PLAN
+Hypothesis:  Levin Cray (1814-1889) was a son of Bartholomew Cray of Bellwether Creek.
+             Alternatives: (a) son of Bartholomew Cray of Slaughter Neck; (b) neither.
+Recruit:     a living patrilineal descendant of Levin, and one of Bartholomew the
+             younger, whose descent from Bellwether Creek is documented by [record].
+             Y-STR first, Y-SNP if the STR result is ambiguous.
+Supports:    a Y match at the tested resolution supports the hypothesis and defeats (b).
+Falsifies:   a clear Y mismatch defeats the hypothesis. It defeats (a) only if the
+             Slaughter Neck line is independently represented in the test group, so
+             recruit for that before testing rather than after.
+```
+
+A plan that no result could falsify is not a plan. Write the falsifying result down before you look at a
+match list, and keep the plan with the research log (`references/research-workflows.md`).
 
 ### 10.4 Y-DNA and mitochondrial DNA
 
@@ -676,8 +703,9 @@ only assumed. Ask which record asserted it and who informed that record.
 and carry the revision into every derived chart and report (revision and archiving practice is owned by
 `references/documentation-standards.md`).
 4. **Distinguish the genetic from the documentary relationship in the output.** Both answer real
-questions. "Josiah Cray was raised as, and legally was, the son of Bartholomew Cray; autosomal and Y-DNA
-evidence indicates his biological father was a member of the Marchbank family" beats either half alone.
+questions. "Josiah Cray (b. 1840) was raised as, and legally was, the son of Bartholomew Cray the younger;
+autosomal and Y-DNA evidence indicates his biological father was a member of the Purnell family, a
+surname absent from the documented pedigree" beats either half alone.
 5. **Expect the collapse to propagate upward.** A misattributed link invalidates every conclusion
 that depended on it, not just the link. List the affected conclusions explicitly.
 
@@ -693,7 +721,7 @@ documented. Remember that a tester's result exposes information about **relative
 weigh that before testing and before publishing.
 
 **While working.** Identify living people by initials, by a described relationship ("a documented
-great-grandson of Bartholomew Cray") or by a code, unless they have agreed in writing to be named, and
+great-grandson of Bartholomew Cray of Bellwether Creek") or by a code, unless they have agreed in writing to be named, and
 apply this to match names taken from a testing site as well. Do not publish raw data, match lists or
 segment data that identify living people. Follow each platform's terms on what may be exported, shared or
 re-uploaded.
@@ -714,8 +742,8 @@ do not, pause and renegotiate rather than proceed.
 
 A reader should never have to hold a chart in their head. Four conventions do most of the work.
 
-1. **Introduce a person with dates on first mention**, then use the short form: "Bartholomew Cray
-(1788-1851)" first, "Bartholomew" after. Mark estimated dates: "(ca. 1788-1851)". Date conventions are
+1. **Introduce a person with dates on first mention**, then use the short form: "Bartholomew Cray of
+Bellwether Creek (1788-1851)" first, "Bartholomew of Bellwether Creek" after. Mark estimated dates: "(ca. 1788-1851)". Date conventions are
 owned by `references/timeline-building.md`.
 2. **Give every same-named person a consistent tag and use it every time.** Take the tag from the
 records: a residence ("Bartholomew Cray of Bellwether Creek"), a trade ("the cooper"), or a numbering
@@ -723,9 +751,10 @@ reference ("no. 3 below"). Do **not** disambiguate with Jr and Sr unless the rec
 note that the labels are relative and can move (section 4). Declare the scheme once: "Three men of this
 name appear below and are distinguished throughout as of Bellwether Creek, of Slaughter Neck, and the
 younger."
-3. **State the path, not just the label.** "Josiah Teale was Bartholomew Cray's second cousin twice
-removed, descending through Cray's son Bartholomew the younger" beats "Josiah was a second cousin twice
-removed." Labels compress; paths do not.
+3. **State the path, not just the label.** "Josiah Teale (1919-1986) was second cousin twice removed to
+Tabitha Stannard (1871-1944), descending from Bartholomew Cray of Bellwether Creek through Cray's son
+Bartholomew the younger where Tabitha descends through his daughter Mary" beats "they were second cousins
+twice removed." Labels compress; paths do not.
 4. **Anchor everything to one subject** and describe others by their relationship to that person,
 rather than switching reference points mid-paragraph.
 
@@ -741,6 +770,7 @@ Two supporting habits: qualify half, step, adoptive and fostered relationships e
 | **Two same-named men merged** | A name match treated as an identity | Run the identity criteria (2.1) and the separation method (3); test for physical impossibility on a timeline |
 | **One man split into two** | Over-caution, or a spelling variant treated as a second person | The same criteria in the other direction; follow the land parcel and the FAN group |
 | **An online tree's link accepted** | Fast, and repeated in many trees | A tree is an authored narrative and repetition is not corroboration: a hundred copies of one error is one error. Use the tree to find the *source*, then evaluate the source |
+| **An ethnicity estimate read as an ancestor** | A percentage looks like a measurement of descent | The label names a population, not a person. An admixture percentage supports no relationship conclusion; it may at most suggest where to look, and it changes when the company updates its panels (10.2) |
 | **A cM figure treated as a relationship** | Tools print a relationship label beside a number | The number maps to a *range* of possible relationships. Report the range, then eliminate alternatives with documents (10.2) |
 | **The wife's family ignored** | Records are indexed under the husband | Half of every pedigree runs through women. Search her birth surname in deeds, probate, bonds and church records; married women appear constantly in their fathers' and brothers' files |
 | **Eldest son assumed to be named first in a will** | Birth-order intuition | Wills list legatees in whatever order suited the testator or scrivener: by bequest type, by need, by residence, by sex. Birth order comes from evidence, not sequence |

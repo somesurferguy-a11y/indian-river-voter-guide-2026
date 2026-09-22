@@ -79,23 +79,32 @@ Qualifiers append in square brackets and stack: `1735-02-08 [OS, 1734/5, Q]`
 [?]         the reading of the document itself is uncertain
 ```
 
-These modifiers match GEDCOM's date grammar, so the chronology survives export instead of
-being flattened to single years.
+These modifiers map to GEDCOM's date modifiers, but **GEDCOM's `CAL` and `EST` apply to a
+single date only**: a calculated *range* has no GEDCOM equivalent and exports as `BET…AND`
+with the calculation demoted to a note. Check what survived a round trip before trusting it.
 
 ---
 
 ## Sortable date key
 
-1. Two integer columns, `key_lo` and `key_hi`. Sort `key_lo` ascending, then `key_hi`
-   ascending. The tightest row comes first among rows that start together.
-2. Unknown components fill in **opposite directions**: `abt 1735` keys `17350101` / `17351231`.
-3. A one-sided bound still needs both keys. Set the open end to the tightest floor or ceiling
-   you can actually defend, and record in `notes` where it came from. Use the sentinels
-   `00000000` and `99999999` only when there is genuinely no bound; they sort to the edges
-   of the sheet where you will see them. Set `prec = U`.
-4. `.SS` in `key_lo` orders events inside one day. Assign in tens so you can insert later:
+1. Two **integer** columns: `key_lo` is ten digits `YYYYMMDDSS`, `key_hi` is eight digits
+   `YYYYMMDD`. No decimal points anywhere. Sort `key_lo` ascending, then `key_hi` ascending.
+   The tightest row comes first among rows that start together. Two rows may share a key; the
+   key orders the sheet, `id` identifies the row.
+2. Unknown components fill in **opposite directions**: `abt 1735` keys `1735010150` /
+   `17351231`. A bare year *always* fills `0101` / `1231`, even when you suspect the season.
+   Filling two bare years two different ways in one sheet is a silent sort bug.
+3. A one-sided bound still needs both keys, **and the open end takes the floor, not the bound**.
+   `bef 1799-11-26` keys `key_hi` 17991126 and `key_lo` at the tightest floor you can defend —
+   a last known appearance, a marriage, a birth range — with `notes` saying where it came from.
+   Keying a `bef` row at its own ceiling collapses it to a point and hides the window. Use the
+   sentinels `0000000000` and `99999999` only when there is genuinely no bound; they sort to
+   the edges of the sheet where you will see them. Set `prec = U`.
+4. `SS` in `key_lo` orders events inside one day, with gaps so you can insert later:
    birth `00`, baptism `10`, marriage `20`, deed signed `30`, deed acknowledged `40`,
-   death `80`, burial `90`.
+   deed recorded `45`, **any other event `50`**, will signed `60`, death `80`, burial `90`,
+   probate or administration granted `95`. Use `SS` to order a same-day sequence; **never add
+   a day to a key to force an order**, which falsifies a date the next reader cannot recheck.
 5. **All keys in one calendar.** Default to the calendar as recorded. If the chronology mixes
    regimes, normalise every key to proleptic Gregorian, tick the header box, and leave
    `date_rec` and `date_norm` untouched. For three or more calendar systems, use the Julian
@@ -129,10 +138,14 @@ id,key_lo,key_hi,prec,date_rec,date_norm,cal,place_rec,juris_then,juris_now,rec_
 ```markdown
 | id | key_lo | key_hi | prec | date_rec | date_norm | cal | place_rec | juris_then | juris_now | rec_level | subject | assertion | src_class | info | ev | cite | notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| T-003 | 17350208.00 | 17350208 | D | born ye 8th d of ye 12 mo 1734 | 1735-02-08 [OS, 1734/5, Q] | Q | New Garden | New Garden MM / Chester Co. / Prov. Pennsylvania | Chester Co., Pa., USA | monthly meeting | Susannah Teale (principal) | Born, daughter of Joseph and Mary Teale | original | primary | direct | New Garden MM births, p. [cite] | Pre-1752 Quaker 12 mo = February; February is inside the double-dating window. Conflicts with T-014 |
-| T-014 | 17291127.00 | 17301126 | Y | aged 69 years | cal bet 1729-11-27 and 1730-11-26 | Q | Cane Creek | Cane Creek MM / Guilford Co. / North Carolina | Guilford Co., N.C., USA | monthly meeting | Susannah Cray (principal) | Birth range implied by stated age at burial | original | secondary | direct | Cane Creek MM burials, [cite] | Burial 1799-11-26 minus 69 completed years. REJECTED: range all but three weeks precedes the parents' marriage (T-001), and a complete minute run shows no disciplinary minute (T-002). Age overstated c. 5 yrs. Row retained as the conflict |
-| T-002 | 17301106.00 | 17400101 | Y+ | -- | from 1730-11 to 1740 | -- | -- | New Garden MM / Chester Co. / Prov. Pennsylvania | Chester Co., Pa., USA | monthly meeting | Joseph and Mary Teale | No disciplinary minute naming them | original | undetermined | negative | New Garden MM men's minutes 1728-1740 | NEGATIVE EVIDENCE, not a nil search: the run is complete for 1728-1740, verified [how]. Had the volume been lost this would bound nothing |
+| T-002 | 1728010150 | 17401231 | Y+ | -- | from 1728 to 1740 | -- | -- | New Garden MM / Chester Co. / Prov. Pennsylvania | Chester Co., Pa., USA | monthly meeting | Joseph and Mary Teale (principals) | No disciplinary minute naming them | original | undetermined | negative | New Garden MM men's minutes 1728-1740, [vol./p.; repository] | NEGATIVE EVIDENCE, not a nil search: run verified complete 1728-1740, [how]. Window set to the start of the minute book so it covers the whole of T-014's range, including the part before the 1730 marriage. Had the volume been lost this would bound nothing |
+| T-014 | 1729112700 | 17301126 | Y | aged 69 years | bet 1729-11-27 and 1730-11-26 | Q | Cane Creek | not established (the register places the burial, not the birth) | -- | monthly meeting | Susannah Cray (principal) | Birth range implied by stated age at burial | original | secondary | direct | Cane Creek MM burials, [vol./p.; repository] | Calculated: burial 1799-11-26 minus 69 completed years, not 70. Informant not named in the register. Age stated at BURIAL and death precedes burial by days, so the true range opens a few days earlier. REJECTED: all but three weeks of it precedes the parents' marriage (T-001) and a complete minute run shows no disciplinary minute (T-002). Age overstated c. 5 yrs. Row retained as the conflict |
+| T-003 | 1735020800 | 17350208 | D | born ye 8th d of ye 12 mo 1734 | 1735-02-08 [OS, 1734/5, Q] | Q | New Garden | New Garden MM / Chester Co. / Prov. Pennsylvania | Chester Co., Pa., USA | monthly meeting | Susannah Teale (principal) | Born, daughter of Joseph and Mary Teale | original | primary | direct | New Garden MM births, [vol./p.; repository] | Pre-1752 Quaker 12 mo = February; February is inside the double-dating window. Conflicts with T-014 |
+| T-013 | 1799112690 | 17991126 | D | buried 26th d 11 mo 1799 | 1799-11-26 [Q] | Q | Cane Creek | Cane Creek MM / Orange Co. / North Carolina | Alamance Co., N.C., USA | monthly meeting | Susannah Cray (principal) | Buried | original | primary | indirect | Cane Creek MM burials, [vol./p.; repository] | The register asserts a BURIAL; the death is its own row, T-015, `bef 1799-11-26`, prec U, floor from the last row showing her living. Cane Creek MM is in present-day Alamance Co.; in 1799 the ground was Orange Co., Alamance having been formed from Orange in 1849 |
 ```
+
+Rows are shown in sort order, which is not id order: `id` records the order you found things,
+`key_lo` records the order the world produced them. Never renumber to make them agree.
 
 ---
 
@@ -154,5 +167,16 @@ id,key_lo,key_hi,prec,date_rec,date_norm,cal,place_rec,juris_then,juris_now,rec_
       places at once, an event before birth or after death, a drifting age, a birth after the
       father's death, a marriage after a spouse's death, an impossible journey, a
       jurisdiction that did not yet exist.
-- [ ] Rows with `prec = Y+` or `U` listed out as the next research plan.
-- [ ] Date columns stored as text, key columns as integers, and an export round trip checked.
+- [ ] Rows with `prec = Y+` or `U` listed out as the next research plan, and every multi-year
+      range is tagged `Y+` (not `Y`) and every one-sided bound `U` (not the precision of the
+      bound it names), or they drop out of that filter and off your plan.
+- [ ] No `key_lo` equals its own `key_hi` on a `bef` or `aft` row. That is the tell that a
+      one-sided bound was keyed at its bound instead of at its floor.
+- [ ] Every derived row is its own row: the record event (burial, grant of administration,
+      baptism) and the bound you derived from it are never fused into one.
+- [ ] Every negative row's window actually covers the claim it is used to exclude. Check the
+      dates, not the sentence.
+- [ ] Every conclusion's place names a row that carries it in `juris_then`. If no row carries
+      it, it goes in the residue, not the conclusion.
+- [ ] Date columns stored as text, key columns as integers with no decimal part, and an export
+      round trip checked.

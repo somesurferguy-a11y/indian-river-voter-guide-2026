@@ -363,36 +363,36 @@ Cray's household from 1830 to 1860, and the "Susannah Cray" in a Teale estate di
 woman before any parentage inference is available.
 
 Continuity of household, county, husband's name, and stated birth state across all five appearances carries
-that identity. A competing candidate was searched for and not found: the Rowan County marriage bonds and the
-clerk's marriage register, the federal census population schedules for the county for 1820 through 1860 read
-page by page, and the county's estate and guardian records for 1821 through 1845 were searched under Cray,
-Crey, and Craig, and no second Susannah Cray of comparable age appears in any of them. That is a **negative
-search result with a stated scope**, not negative evidence (§1.3): it eliminates the candidates those record
-groups would have held, and no others. Rowan County tax lists for the 1820s were not searched, and a
-same-named woman who never married, never held land, and never took a share could still be invisible to all
-of the above.
+that identity. A competing candidate was searched for and not found: Rowan County marriage bonds and the
+clerk's marriage register, the federal census population schedules for the county 1820 through 1860 read page
+by page, and county estate and guardian records 1821 through 1845, all under Cray, Crey, and Craig; no second
+Susannah Cray of comparable age appears. That is a **negative search result of stated scope**, not negative
+evidence (§1.3): it eliminates the candidates those record groups would have held and no others. Tax lists
+were not searched, and a same-named woman who never married, held land, or took a share stays invisible to
+all of the above.
 
 **The evidence.**
 
 *Item A. The marriage bond.* Rowan County, 14 November 1821, for Bartholomew Cray and Susannah Teale, Jesse
-Teale bondsman.[^5] Original source; primary information as to the bonding, from the parties themselves. For
-the parentage question this is **indirect**: it names no relationship. Its force comes from North Carolina
-practice, in which the bondsman was ordinarily a close male relative of the bride, most often father or
-brother, standing surety against a legal impediment. Practice is not law, and some bondsmen were friends or
-the groom's kin. This narrows the field; it does not close it.
+Teale bondsman.[^5] Original source; primary information as to the bonding, from the parties themselves.
+**Indirect** for parentage: it names no relationship. Its force comes from North Carolina practice, in which
+the bondsman was ordinarily a close male relative of the bride, most often father or brother, standing surety
+against a legal impediment. Practice is not law, and some bondsmen were friends or the groom's kin. It does
+not establish kinship at all: it narrows the field and does not close it.
 
 *Item B. The 1820 census.* Jesse Teale, Rowan County, heading a household including one female aged 16 to
 25.[^6] Original source; information of undetermined origin, the enumerator's informant being unnamed.
-**Indirect**: consistent with a daughter of Susannah's estimated age at home the year before her marriage,
-and consistent with several other things.
+**Indirect**: consistent with a daughter of Susannah's estimated age ‡ at home the year before her marriage,
+and consistent with several other things. It does not establish who that female was, or any relationship
+between her and the head of household, which these schedules never state.
 
 *Item C. The 1830 census.* Jesse Teale's household in the same county holds no female in the bracket that
 would then contain Susannah, while Bartholomew Cray's does.[^7] Original source; information of undetermined
-origin, the enumerator's informant being unnamed here as in 1820. **Indirect**, and meaningful only in
-sequence with Item B: a female of the right age left Jesse Teale's house in the decade a Susannah Teale left
-it to marry. It does not establish that the female who left was Susannah, that she left to marry rather than
-to die or move, or that the two enumerations counted the same people accurately; age brackets in these
-schedules are the enumerator's arithmetic on a reported age.
+origin, the informant again unnamed. **Indirect**, and meaningful only in sequence with Item B: a female of
+the right age left Jesse Teale's house in the decade a Susannah Teale left it to marry. It does not establish
+that the woman who left was Susannah, that she left to marry rather than to die or move away, or that the two
+enumerations counted the same people accurately; the age brackets are the enumerator's arithmetic on a
+reported age.
 
 *Item D. The estate division.* Jesse Teale died intestate in Rowan County in 1838. The report of division
 returned 9 May 1839 divides his estate into seven equal shares, one of them to "Bartholomew Cray in right of
@@ -404,19 +404,18 @@ husband in his wife's right, is consistent with seven surviving children of whom
 and equally consistent with a distribution in which a share passed by representation to grandchildren.
 
 A third reading must also be excluded. Under North Carolina's act of distributions a widow took a child's part
-where the intestate left more than two children, so seven shares is equally consistent with a widow and six
-children. Read the act in force at the date of the division before relying on the fraction: the shares varied
-with the number of children, and later acts altered them. Three readings, one record: the count of shares
+where the intestate left more than two children, so seven shares is equally consistent with **a widow and six
+children**. Read the act in force at the date of the division before relying on any fraction: the shares
+turned on the number of children and later acts altered them. Three readings, one record; the count of shares
 alone decides nothing.
 
-*Item E. Negative evidence: no representation, and no widow.* Two absences carry part of the load here, and
-neither means anything until the expectation behind it is stated and cited.
-
-*The expectation, cited.* Rowan County took guardian bonds for the minor heirs of intestate decedents
-throughout this period, and the commissioners returning divisions in this county wrote representation into the
-return itself when a deceased child's issue took a share: two returns in the same volume as Jesse Teale's, one
-of [date] and one of [date], name the grandchildren and say they take their parent's part.[^9] The expectation
-is cited, not assumed, which is the only thing separating the two paragraphs below from hand-waving.
+*Item E. Negative evidence: no representation, and no widow.* Two absences carry part of the load, and neither
+means anything until the expectation behind it is stated **and cited**. *The expectation.* Rowan County took
+guardian bonds for the minor heirs of intestate decedents throughout this period, and commissioners returning
+divisions here wrote representation into the return itself when a deceased child's issue took a share: two
+returns in the same volume as Jesse Teale's, of [date] and [date], name the grandchildren and say they take
+their parent's part.[^9] That the expectation is cited rather than assumed is the only thing separating what
+follows from hand-waving.
 
 *No representation.* The clerk's guardian bonds for 1838 to 1841 contain none arising from the Teale estate,
 and the estate file names no grandchild and uses none of that representation language.[^9] **Negative

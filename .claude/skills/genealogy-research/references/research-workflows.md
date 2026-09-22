@@ -550,20 +550,23 @@ names none, is in `references/documentation-standards.md` section 1.2, which mak
 the informant in writing a prerequisite for classifying at all. Column 14 is where that writing
 goes.
 
-Citation syntax for column 6 belongs to `references/citation-management.md`. The only rule this
-file imposes is that the citation cell must carry the full provenance chain when the item came
-through a website, so that the layer you actually saw is visible. Shape only:
+Citation syntax for column 7 belongs to `references/citation-management.md`, whose conventions
+govern: `{curly braces}` are slots, `_underscores_` mark a title to be set in italics. The only
+rule this file imposes is that the cell must carry the full provenance chain when the item came
+through a website, so the layer you actually saw is visible. Shape only:
 
 ```
-"[database title exactly as the site gives it]," database with images, [website name]
-  ([site URL] : accessed 14 August 2026), entry for Josiah Cray and Rachel Teale, 1889;
-  imaging [film or image-set identifier]; citing Greene County Marriage Record, vol. 3: 118,
-  Clerk of Orphans' Court, Waynesburg, Pennsylvania.
+"{exact database title as the site gives it}," database with images, _{Site Name}_
+  ({site root URL} : accessed 14 August 2026), entry for Josiah Cray and Rachel Teale, 1889;
+  citing Greene County Marriage Record, vol. 3: 118, Clerk of Orphans' Court, Waynesburg,
+  Pennsylvania, and {the film or digital-folder identifier the site names}.
 ```
 
-Three layers, in order: the website you searched, the imaging that stands between it and the
-paper, and the original the clerk wrote. Drop the middle layer and a reader cannot tell whether
-you saw an image or a transcription.
+Three layers in one sentence: the titled database you searched, the original the clerk wrote,
+and the imaging between them. **`citing` marks the boundary of your own knowledge** — everything
+after it is what the provider asserts and you did not verify, which is exactly where a film or
+image-set identifier belongs. There is no "imaging" connector; that identifier is not a layer
+you examined. Drop it and a reader cannot tell whether you saw an image or a transcription.
 
 ### A filled log (extract)
 
