@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 17:15",
+  "updated": "2026-09-22 21:53",
   "domains": [
     {
       "id": "research-workflows",
@@ -72,7 +72,7 @@
         "documentation_completeness": 8
       },
       "verdict": "FAIL",
-      "gap": "DNA test plan recruits a Bellwether Creek tester whose Y the file says is Purnell, so no result can support the hypothesis"
+      "gap": "DNA plan, grid column, widening, tax extent and adoption search fixed by hand; artifact source-typing and template de-duplication remain"
     },
     {
       "id": "documentation-standards",
@@ -138,6 +138,10 @@
     {
       "t": "17:15",
       "msg": "citation-management R2: FAIL 38/50 (was 37). Round-1 fix misapplied in the revision's own new content; R3 dispatched."
+    },
+    {
+      "t": "21:53",
+      "msg": "Rate limit killed round-3 agents; orchestrator applied relationship-mapping fixes 1,2,3,4,7,9 directly"
     }
   ]
 }
