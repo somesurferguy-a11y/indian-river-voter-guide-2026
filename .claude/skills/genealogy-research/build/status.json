@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 17:04",
+  "updated": "2026-09-22 17:10",
   "domains": [
     {
       "id": "research-workflows",
@@ -47,8 +47,8 @@
     {
       "id": "timeline-building",
       "name": "Timeline Building",
-      "status": "revising",
-      "round": 1,
+      "status": "in review",
+      "round": 2,
       "scores": {
         "citation_formats": 7,
         "source_evaluation": 7,
@@ -57,7 +57,7 @@
         "documentation_completeness": 7
       },
       "verdict": "FAIL",
-      "gap": "Section 3 states the key, notation and row conventions, then nearly every worked row violates them; plus a Julian/Gregorian offset error"
+      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
     },
     {
       "id": "relationship-mapping",
@@ -77,8 +77,8 @@
     {
       "id": "documentation-standards",
       "name": "Documentation Standards",
-      "status": "revising",
-      "round": 1,
+      "status": "in review",
+      "round": 2,
       "scores": {
         "citation_formats": 7,
         "source_evaluation": 6,
@@ -87,7 +87,7 @@
         "documentation_completeness": 6
       },
       "verdict": "FAIL",
-      "gap": "Line 38 calls a death certificate's parent names indirect evidence - the conflation the file's own section 1.4 exists to prevent"
+      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
     }
   ],
   "log": [
@@ -126,6 +126,10 @@
     {
       "t": "17:04",
       "msg": "relationship-mapping R2 complete (809 lines + 223-line kinship template); both it and citation-management now with fresh critics"
+    },
+    {
+      "t": "17:10",
+      "msg": "documentation-standards + timeline-building R2 complete; 4 of 5 domains now with fresh critics"
     }
   ]
 }

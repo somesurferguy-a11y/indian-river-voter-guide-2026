@@ -634,32 +634,29 @@ section 2. Reframed:
 Hypothesis: one man, who married twice.
 
 **Falsification condition, and how to get it wrong.** The tempting limb, "a record placing a bearer
-of the name in both counties in the same year," is worse than worthless: Greene County was erected
+of the name in both counties in the same year," is worse than worthless. Greene County was erected
 out of Washington on 9 February 1796, so the same ground is recorded at Washington before that date
-and at Waynesburg after it, and one man near the line can appear in both in one year. A reader
-applying that condition would refute a true identity. Name something **one man cannot satisfy**:
+and at Waynesburg after it: one man near the line can appear in both in one year, and a reader
+applying the condition would refute a true identity. Name something **one man cannot satisfy**:
 
 > RQ-04's hypothesis dies if (1) two Bartholomew Crays execute instruments before different
 > officials on the same date, or a Washington County record names a Bartholomew Cray "Jr." alongside
 > a living senior of the name; or (2) a Washington County record shows the 1791 grantor dead before
 > 1804.
 
-**Step 3, select records.** The jurisdictional survey pays for itself at once. Greene County was
-created in 1796 out of Washington, so pre-1796 land on the same ground is recorded at Washington,
-not Waynesburg; Pennsylvania county marriage records generally begin in 1885, so an 1816 marriage
-must be sought in church records. Priority: Greene deed indexes; Greene tax duplicates 1813-1820
-(cheap, and the nil would be informative); Washington deed indexes pre-1796; Washington tax lists;
-orphans' court; churches.
+**Step 3, select records.** The same 1796 erection puts pre-1796 land on this ground at Washington,
+not Waynesburg, and Pennsylvania county marriage records generally begin in 1885, so an 1816
+marriage must be sought in church records. Priority: Greene deed indexes; Greene tax duplicates
+1813-1820 (cheap, and the nil would be informative); Washington deed indexes pre-1796; Washington
+tax lists; orphans' court; churches.
 
 **Steps 4 and 5.** Log rows 04-01 through 04-06, section 8. Three things fall out: continuity of
 land (an 1802 Greene purchase and a 1791 Washington sale, adjacent ground); a wife problem (Mary in
-1791, Susannah in 1834, reading naively as two men and competingly as one man widowed and remarried,
-with 04-06 supplying the 1816 marriage); and an ambiguity that cannot be used at all, the 1788
-Finley Township entry at 04-04, in territory divided in 1796.
-
-**A wife's name is not an identity discriminator.** Remarriage after a wife's death was normal, and
-the gap between Mary's last appearance and Susannah's first is long enough to hold both a death and
-a remarriage. Re-enter at step 2 with a conflict-only question, not at step 3 with more searching.
+1791, Susannah in 1834); and an ambiguity that cannot be used at all, the 1788 Finley Township entry
+at 04-04, in territory divided in 1796. **A wife's name is not an identity discriminator**:
+remarriage after a wife's death was normal, and the gap between Mary's last appearance and
+Susannah's first is long enough to hold both a death and a remarriage, with 04-06 supplying the 1816
+marriage. Re-enter at step 2 with a conflict-only question, not at step 3 with more searching.
 
 ### Pass 2
 
@@ -667,25 +664,23 @@ a remarriage. Re-enter at step 2 with a conflict-only question, not at step 3 wi
 > whose will was proved in Greene County in 1834 be one man, given the ages, the land, and the
 > associates, and is any third bearer of the name in either county in 1791 through 1834?
 
-**Step 3, cluster-first.** The 1791 deed's grantee and two witnesses and the 1802 deed's adjoining
+**Step 3, cluster-first.** The 1791 deed's grantee and witnesses and the 1802 deed's adjoining
 owners become the FAN list, each run through the record-type inventory (5.6). Added: the 1850 census
-of Cumberland Township, because Susannah, if living, will give an age; and the orphans' court
-dockets themselves, because 04-05's nil was index-only.
+of Cumberland Township, because Susannah if living will give an age, and the orphans' court dockets
+themselves, because 04-05's nil was index-only.
 
 **Step 4 and 5, what the cluster returns.**
 
 - One witness to the 1791 deed appears as an appraiser of the 1834 estate: the same small social
   group brackets both documents, forty-three years apart. Indirect evidence for one man.
-- The 1850 census of Cumberland Township enumerates Susannah Cray, aged 60, widowed. That age is as
-  of 1 June 1850 and census ages are routinely rounded, so it yields an interval, not a year: **born
-  c. 1785-1795**. An 1816 marriage falls inside it, which is a consistency flag and not an
-  identification.
+- The 1850 census enumerates Susannah Cray, aged 60, widowed. That age is as of 1 June 1850 and
+  census ages are routinely rounded, so it yields an interval, not a year: **born c. 1785-1795**.
+  An 1816 marriage falls inside it, a consistency flag and not an identification.
 - **Lifespan test.** A man conveying land with a wife's dower release in 1791 was of age, so **born
-  by 1770** (twenty-one at the conveyance) and at least sixty-four at an 1834 probate. One lifespan
-  carries both records. "By 1770" is a boundary and "c. 1790" an estimate: "by about 1770" merges
-  the two into a phrase with no defined meaning. Date arithmetic belongs to
-  `references/timeline-building.md`, same-name separation to `references/relationship-mapping.md`;
-  the workflow logs that both tests were run.
+  by 1770** (twenty-one at the conveyance) and at least sixty-four at an 1834 probate; one lifespan
+  carries both records. "By 1770" is a boundary and "c. 1790" an estimate, so "by about 1770" merges
+  the two into a phrase with no defined meaning. Date arithmetic is
+  `references/timeline-building.md`, same-name separation `references/relationship-mapping.md`.
 - Orphans' court, now read against the dockets rather than the card index, produces an 1835
   guardianship of **Nancy Cray, aged 11, daughter of Bartholomew, deceased**, the youngest of the
   four children the will names. The index-only nil at 04-05 was wrong: section 4.5 in one row.
@@ -694,42 +689,41 @@ dockets themselves, because 04-05's nil was index-only.
 
 **Sufficiency tests.** Tests 1 through 5 pass: identity carried by indirect evidence from land
 continuity, associate overlap, and a consistent lifespan; every source class searched or documented
-as unavailable; the competing "two men" reading eliminated; the dower-release conflict resolved by
-the 1816 marriage. Test 7 finds the gap: the Washington County court order books.
+as unavailable; the "two men" reading eliminated; the dower-release conflict resolved by the 1816
+marriage. Test 7 finds the gap, the Washington County court order books.
 
 **State the family, or nothing was established.** "Identity established" is not a conclusion until
 it names people. One Bartholomew Cray: of Washington County in 1791, conveying with wife Mary; of
 Cumberland Township, Greene County, from 1802; married, 3 June 1816, Susannah Teale (04-06); dead in
 1834 leaving a will naming Susannah and four children, Abner, Levi, Rachel, and Nancy, the last
 still a minor in 1835. Which children are Mary's and which Susannah's is a further question, opened
-and not assumed: the will states relationship, not maternity.
-
-**Outcome.** RQ-05 closes with a proof summary (the escalation rule is in
-`references/documentation-standards.md`). The Virginia tradition does not close:
+and not assumed: the will states relationship, not maternity. RQ-05 therefore closes with a proof
+summary (the escalation rule is in `references/documentation-standards.md`), while the Virginia
+tradition does not close:
 
 ```
 OPEN QUESTION  OQ-02   opened 2026-03-28   last worked 2026-03-28
 Question:            Where was the Bartholomew Cray of the 1791 Washington Co., Pa., deed
-                     resident before 1791, and specifically is there evidence of residence
-                     in any Virginia county between 1770 and 1791?
+                     resident before 1791, and is there evidence of residence in any Virginia
+                     county between 1770 and 1791?
 Current hypothesis:  Origin in a Virginia county, source unknown
-Status:              unresolved. The only support is an undocumented online tree
-                     (authored narrative, no information value).
-Supports:            none of evidentiary weight
-Against:             none
+Status:              unresolved. Sole support is an undocumented online tree (authored
+                     narrative, no information value). Supports: none of evidentiary weight.
+                     Against: none
 Missing:             any record naming him outside Pennsylvania before 1791
 Next steps:          1. Washington Co., Pa., court order books 1781-1800, for naturalisation,
                         road, or suit entries giving a prior residence
                      2. The 1791 grantee's and witnesses' origins; migrants travel in groups
-                     3. Virginia county court order books for the counties the cluster came from,
-                        once the cluster's origin is identified
+                     3. Virginia county court order books for the cluster's counties, once its
+                        origin is identified
                      4. A targeted DNA test of a documented descendant, informed consent
                         obtained and recorded with a date before a kit is ordered (section 8)
 Blocked by:          nothing; cost and time only
-Reopen when:         Washington Co. order books are indexed or digitised; a new DNA match
-                     appears in the surname cluster
+Reopen when:         Washington Co. order books are indexed or digitised; a new DNA match in
+                     the surname cluster
 ```
 
 Note the shape of the ending. The question that closed, closed; the one that did not is on the
 record as open, with named next steps and repositories, and nothing has been promoted into the tree
 that the evidence does not carry.
+
