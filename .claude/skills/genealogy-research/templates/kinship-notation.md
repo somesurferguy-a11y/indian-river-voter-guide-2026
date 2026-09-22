@@ -144,6 +144,10 @@ Register   NGSQ    Henry    d'Aboville   Person
      ii.   6       122      1.2.2        Ann Cray, b. 1843
 ```
 
+The last two are the children of Bartholomew the younger, so in Register and NGSQ they open a
+second numbered entry (Register 2, NGSQ 3) and their roman numerals restart at i. In Henry and
+d'Aboville no new entry is needed, because the number already carries the descent.
+
 - **Register**: an Arabic number goes **only** to a person whose family is carried forward to
   a later entry, and sits to the left of that person's roman numeral. Mary and Hosea get
   none, so there is no number by which to cite Mary. That is the system working as intended

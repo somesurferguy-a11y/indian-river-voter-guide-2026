@@ -14,11 +14,13 @@ prose by `references/documentation-standards.md`.
 
 Every example in this file comes from one roster, so any example can be checked against any other. The
 people are illustrative; the record types, jurisdictions and repositories around them are structurally
-real. Sussex County, Delaware, unless stated.
+real. Sussex County, Delaware, unless stated. Dates here are the researched ones; where a working
+artifact below shows a date as "ca.", that is the state of the argument at that point in the work.
 
 ```
 THREE MEN NAMED BARTHOLOMEW CRAY. Kept deliberately: section 3 works the separation problem on
-them, and each is tagged the same way in every example here. Nobody else in the cast shares a name.
+them, and each is tagged the same way in every example here. No other full name is shared. Josiah Cray
+and Josiah Teale share a given name only; they stand three generations apart and always carry surnames.
 
 "of Bellwether Creek"  b. 1788, d. 1851, cooper. m. 1810 Susannah Teale (1791-1868), one
     marriage each. 84 a. on Bellwether Creek by the 1819 deed. Will executed 1848, proved 1851.
@@ -39,7 +41,7 @@ LATER GENERATIONS (the cousin arithmetic in section 5 runs on these)
     Tabitha Stannard (1871-1944), daughter of Reuben, great-granddaughter of Bellwether Creek
     Josiah Teale (1919-1986), great-grandson of Ann (Cray) Teale, 3x-great-grandson of
         Bellwether Creek
-    Nehemiah Cray (b. 1885), adopted 1889 into the household of Josiah Cray
+    Nehemiah Cray (b. 1885), adopted 1889 into the household of Josiah Cray (b. 1840)
     Purnell: a surname absent from this pedigree, used in section 11 as the cluster a
         misattributed-parentage result points to
 ```
@@ -151,12 +153,13 @@ C  "the younger"          b. ca. 1812, son of A, removed to Ohio ca. 1840
 RECORD                           ASSIGNED    BASIS                          CITATION
 1819 deed, 84 a. Bellwether Cr.  A           parcel; witnesses Teale,       [S1]
                                                Marchbank
-1827 tax, Cedar Creek Hd.        B           hundred; no land matches A's   [S5]
-                                               parcel
-1830 census, Broadkill Hd.       A           household composition fits A   [S7]
-1838 marr. bond, surety B. Cray  UNASSIGNED  A and C both plausible; hand   [S8]
-                                               unclear
-1841 Ohio deed, B. Cray          C           A taxed in Sussex in 1841      [S9][S10]
+1827 tax, Cedar Creek Hd., the   B           parcel; the land taxed is not  [S5]
+  second of two B. Cray entries                A's 84 a.
+1830 census, Cedar Creek Hd.     A           household composition fits A   [S7]
+1838 marr. bond, surety B. Cray  UNASSIGNED  all three were then alive and  [S8]
+                                               in the county; hand unclear
+1841 Ohio deed, B. Cray          C           A taxed in Sussex in 1841;     [S9][S10]
+                                               B d. 1839
 ```
 
 **A separation file with no citation column is a claim, not a record.** The bracketed keys resolve in
@@ -237,9 +240,10 @@ generations down from the common ancestor, which is the same count as the arrows
 | **2x-gt-grandchild (4)** | | | | 3rd cousins |
 
 The grid stops at four generations for width, not for arithmetic. Each further column adds one removal and
-nothing else, so a great-grandchild (3) against a 3x-great-grandchild (5) is second cousins twice removed,
-and a child (1) against a 3x-great-grandchild (5) is a 2x-great-grandaunt or granduncle. Both worked
-examples below sit in that fifth column, and both can be read off the grid by extending it one step.
+nothing else, so extending it one step puts both worked examples below in a fifth column: a
+great-grandchild (3) against a 3x-great-grandchild (5) is second cousins twice removed, and a child (1)
+against a 3x-great-grandchild (5) is a 2x-great-grandaunt or granduncle. The extended grid, out to that
+column, is in `templates/kinship-notation.md`.
 
 ### 5.2 Worked example A
 
@@ -250,9 +254,9 @@ five generations down (Josiah -> his father -> his grandfather -> his great-gran
 his 2x-great-grandfather Bartholomew the younger -> Bartholomew), so `b = 5`. Degree `= a - 1 = 2`;
 removal `= b - a = 2`. **Second cousins twice removed**, which is what the grid gives at row 3, column 5.
 
-**Count arrows, not names: each arrow is one generation.** A chain showing four arrows cannot support
-`b = 5`, and a chain miscounted by one is the commonest way this calculation fails. Count the chain, then
-check the label against the grid; if they disagree, the chain is usually right and the label wrong.
+**Count arrows, not names: each arrow is one generation.** A four-arrow chain cannot support `b = 5`, and
+a chain miscounted by one is the commonest way this calculation fails. Where chain and label disagree, the
+chain is usually right.
 
 Written out: "Josiah Teale (1919-1986) and Tabitha Stannard (1871-1944) were second cousins twice removed,
 both descending from Bartholomew Cray of Bellwether Creek (1788-1851): Tabitha through his daughter Mary,
@@ -263,16 +267,17 @@ namely *which child of the NCA each descends through*. Always supply it.
 
 Same family, one step sideways. Common ancestor **Susannah (Teale) Cray (1791-1868)**, wife of the
 Bartholomew in 5.2. **Mary (Cray) Stannard (1810-1884)** is her daughter, so `a = 1`. **Josiah Teale
-(1919-1986)** is her 3x-great-grandson by the same five-arrow chain used in 5.2, so `b = 5`. Because
+(1919-1986)** is her 3x-great-grandson by the chain used in 5.2 with Susannah at its head in place of her
+husband (Josiah -> father -> grandfather -> Ann (Cray) Teale -> Bartholomew the younger -> Susannah): five
+arrows again, so `b = 5`. Because
 `a = 1`, do not say "zeroth cousins four times removed." Mary is the sibling of Josiah's ancestor
 `b - 1 = 4` generations up, that is, of his 2x-great-grandparent Bartholomew the younger. **Mary is
 Josiah's 2x-great-grandaunt; Josiah is her 2x-great-grandnephew**, which is row 1, column 5 of the grid.
 Prefer *grandaunt* and *granduncle* to *great-aunt* and *great-uncle*, which are also used loosely for any
 aunt or uncle of an older generation, and say which convention your document uses.
 
-The two examples share a cast deliberately: Tabitha in 5.2 is Mary's granddaughter, so if 5.2 and 5.3
-disagreed about where Mary sits, one of them would be wrong and you could see it. Build your own examples
-so they check against each other.
+The two examples share a cast deliberately: Tabitha in 5.2 is Mary's granddaughter, so if they disagreed
+about where Mary sits you could see it. Build your own examples so they check against each other.
 
 **Direction is not optional.** "First cousin once removed" describes both *your parent's first cousin* and
 *your first cousin's child*. Write the direction, or name the path.
@@ -328,7 +333,7 @@ corroborate.
 
 Direct evidence of parentage answers the parentage question on its own. Its characteristic failure modes:
 the informant did not know; the informant confused a same-named person; the clerk transcribed wrongly; the
-relationship word means something other than you assume (section 4); the "original" is in fact a
+relationship word means something other than you assume (section 4); the "original" turns out to be a
 derivative copy.
 
 ### 7.2 Indirect evidence assembled into a relationship argument
@@ -622,13 +627,18 @@ genealogy**, because a parent's or aunt's results phase everything below them.
 DNA TEST PLAN
 Hypothesis:  Levin Cray (1814-1889) was a son of Bartholomew Cray of Bellwether Creek.
              Alternatives: (a) son of Bartholomew Cray of Slaughter Neck; (b) neither.
-Recruit:     a living patrilineal descendant of Levin, and one of Bartholomew the
-             younger, whose descent from Bellwether Creek is documented by [record].
-             Y-STR first, Y-SNP if the STR result is ambiguous.
-Supports:    a Y match at the tested resolution supports the hypothesis and defeats (b).
-Falsifies:   a clear Y mismatch defeats the hypothesis. It defeats (a) only if the
-             Slaughter Neck line is independently represented in the test group, so
-             recruit for that before testing rather than after.
+Recruit:     a living patrilineal descendant of Levin; one of Silas Cray (1825-1901)
+             for the Slaughter Neck line; one of Bartholomew the younger, the only
+             patrilineal line out of Bellwether Creek. Document each descent by
+             [record]. Y-STR first, Y-SNP if the STR result is ambiguous.
+Supports:    Levin matching Bellwether Creek and not Slaughter Neck supports the
+             hypothesis; the reverse pattern supports (a); matching neither supports (b).
+Falsifies:   a clear Y mismatch with Bellwether Creek defeats the hypothesis, and
+             defeats (a) only because the Slaughter Neck line is in the test group.
+             Recruit both comparison lines before testing rather than after.
+Watch for:   the Bellwether Creek recruit descends through Josiah Cray (b. 1840), the
+             misattributed-parentage case in section 11, so a mismatch on that line may
+             be testing his descent rather than Levin's.
 ```
 
 A plan that no result could falsify is not a plan. Write the falsifying result down before you look at a
@@ -751,10 +761,9 @@ reference ("no. 3 below"). Do **not** disambiguate with Jr and Sr unless the rec
 note that the labels are relative and can move (section 4). Declare the scheme once: "Three men of this
 name appear below and are distinguished throughout as of Bellwether Creek, of Slaughter Neck, and the
 younger."
-3. **State the path, not just the label.** "Josiah Teale (1919-1986) was second cousin twice removed to
-Tabitha Stannard (1871-1944), descending from Bartholomew Cray of Bellwether Creek through Cray's son
-Bartholomew the younger where Tabitha descends through his daughter Mary" beats "they were second cousins
-twice removed." Labels compress; paths do not.
+3. **State the path, not just the label.** The written-out form in 5.2, which names the child of the
+common ancestor each person descends through, beats "they were second cousins twice removed." Labels
+compress; paths do not.
 4. **Anchor everything to one subject** and describe others by their relationship to that person,
 rather than switching reference points mid-paragraph.
 

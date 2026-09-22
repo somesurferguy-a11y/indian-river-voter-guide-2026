@@ -17,23 +17,17 @@ stop), `references/citation-management.md` (citation shape and the provenance ch
 
 ## 1. Why a timeline, not a tree
 
-A tree stores conclusions. Every node in it is already an answer, and the reasoning that
-produced it has been thrown away. You cannot audit a tree, you can only believe it.
-
-A timeline stores assertions in the order the world produced them, each still attached to the
-record it came from, and sorting it does four things a tree cannot: two rows that cannot both
-be true land next to each other instead of being silently merged; two same-named people come
-apart on a sequence impossibility (section 7); indirect evidence assembles, because no single
-row says "Susannah was the daughter of Joseph" but a residence, a removal certificate, a
-marriage entry and a probate share-out in sequence say it jointly; and gaps become legible,
-so a four-year hole between sibling births turns into a question you would never have asked.
-That is the Genealogical Proof Standard's **thorough analysis and correlation** element in its
-most literal form — the BCG standards on correlation and on resolving conflicting evidence
-both assume something like this exists and none of them prescribes its shape, which is why
-yours has to be deliberate.
-
-Build the timeline **before** you draw a chart or enter anything in a tree program. The tree
-is a publication format. The timeline is the workbench.
+A tree stores conclusions: every node is already an answer, the reasoning that produced it has
+been thrown away, and you can only believe it. A timeline stores assertions in the order the
+world produced them, each still attached to its record — so rows that cannot both be true land
+next to each other instead of being silently merged; two same-named people come apart on a
+sequence impossibility (section 7); indirect evidence assembles, because no single row says
+"Susannah was the daughter of Joseph" but a residence, a removal certificate, a marriage entry
+and a probate share-out in sequence say it jointly; and a four-year hole between sibling births
+becomes a question you would never have asked. That is the Genealogical Proof Standard's
+**thorough analysis and correlation** element in its most literal form, and no BCG standard
+prescribes the shape, which is why yours has to be deliberate. Build it **before** you draw a
+chart or open a tree program: the tree is a publication format, the timeline is the workbench.
 
 ---
 
@@ -51,13 +45,12 @@ assertion. An 1804 Chester County probate file, taken apart, yields:
 | Guardian bond for two of them | Two of the five were minors as of that date |
 | Widow signs with a mark; two children sign autographs | A literacy assertion about three people |
 
-That is at least ten rows, each with a different information type, a different evidence
-type, and sometimes a different date. Collapsed into one row, none of the arithmetic works:
-you cannot compute a birth range for a minor from a row whose date is the administration
-grant, and you cannot flag the widow's mark against her signature on a later deed.
-
-**The rule:** a row is one assertion, made by one record, about one person, at one moment.
-If a cell would need the word "and," you probably have two rows.
+That is at least ten rows, each with a different information type, a different evidence type,
+and sometimes a different date. Collapsed into one, none of the arithmetic works: you cannot
+compute a birth range for a minor from a row dated to the administration grant, and you cannot
+flag the widow's mark against her signature on a later deed. **The rule:** a row is one
+assertion, made by one record, about one person, at one moment. If a cell would need the word
+"and," you probably have two rows.
 
 ### The column set
 
@@ -82,26 +75,21 @@ If a cell would need the word "and," you probably have two rows.
 | `cite` | Shortened citation, keyed to the full citation in your source list. |
 | `notes` | Arithmetic shown, conflicts flagged by `id`, alternative readings, why you chose a bound. |
 
-Eighteen columns is not padding. Each one is load-bearing:
-
-- `src_class`, `info` and `ev` are **three different axes** and a row can be original /
-  secondary / indirect all at once. A death certificate is an original source; its "father's
-  name" is secondary information; and for a question about the decedent's parentage it is
-  direct evidence while for one about the father's residence it is indirect. Separate columns
-  stop the usual collapse into a single vague "reliability" score. `ev` is question-relative
-  by definition: change the question in the header and that column is stale and must be
-  recomputed, while the rest of the table survives untouched (section 10).
-- `subject` plus role lets you sort the file by person later and stops you inventing a row for
-  someone the record does not mention. A tax list naming the householder asserts nothing about
-  his wife. Do not create her row. `rec_level` tells you where to look next and what a
-  boundary change does to your search.
+Eighteen columns is not padding. `src_class`, `info` and `ev` are **three different axes** and
+one row can be original / secondary / indirect at once: a death certificate is an original
+source, its "father's name" is secondary information, and for a question about the decedent's
+parentage it is direct evidence while for one about the father's residence it is indirect.
+Separate columns stop the usual collapse into a single vague "reliability" score. `ev` is
+question-relative by definition, so changing the question in the header makes that one column
+stale while the rest of the table survives untouched (section 10). `subject` plus role lets you
+sort by person and stops you inventing a row for someone the record does not mention — a tax
+list naming the householder asserts nothing about his wife, so do not create her row — and
+`rec_level` tells you where to look next and what a boundary change does to your search.
 
 **Minimum viable subset** for notebook work: `id`, `key_lo`, `key_hi`, `date_norm`,
 `juris_then`, `subject`, `assertion`, `info`, `ev`, `cite`. Drop the verbatim columns only if
-you have a transcript elsewhere. Without one you have normalised silently: a conversion nobody
-can check, and an invisible error if the calendar regime was wrong.
-
-`templates/timeline.md` has the blank table, the CSV header, and the legend.
+you have a transcript elsewhere; without one you have normalised silently, and an error in the
+calendar regime is invisible. `templates/timeline.md` has the blank table, CSV header and legend.
 
 ---
 
@@ -341,9 +329,9 @@ from 1752-04 to 1771-04           a period of time, not an event
 
 **There is exactly one way to write a calculated range, and it is `bet A and B`.** `cal` takes
 a single date and nothing else: `cal 1748-01-24` is what `aged 22 years, 4 months, 11 days` on
-1770-06-04 yields. A calculation that lands on a range — which is almost every age calculation
-— is `bet 1747-06-05 and 1748-06-04` with `calculated from age at X; see notes` in `notes`.
-Do not write `cal A / B`, do not write `cal bet A and B`, and do not stack the two constructs.
+1770-06-04 yields. A calculation landing on a range — almost every age calculation — is
+`bet 1747-06-05 and 1748-06-04`, with `calculated from age at X; see notes` in `notes`. Never
+`cal A / B`, never `cal bet A and B`, and never the two constructs stacked.
 
 Qualifiers append in square brackets and stack, e.g. `1735-02-08 [OS, 1734/5, Q]`:
 
@@ -355,11 +343,10 @@ Qualifiers append in square brackets and stack, e.g. `1735-02-08 [OS, 1734/5, Q]
 
 `abt`, `bef`, `aft`, `bet…and`, `from…to`, `cal` and `est` map to GEDCOM's date modifiers, but
 **GEDCOM's `CAL` and `EST` apply to a single date only** — a calculated *range* has no GEDCOM
-equivalent and exports as `BET…AND` with the calculation demoted to a note. That is one more
-reason the calculation lives in `notes` rather than in the date string. GEDCOM also carries an
-explicit calendar escape for Julian, French Republican and Hebrew dates; check your program's
-exact syntax before relying on it, because consumer software frequently drops it on import.
-**Check what survived a round trip** rather than assuming any of this held.
+equivalent and exports as `BET…AND` with the calculation demoted to a note, one more reason the
+calculation lives in `notes` and not in the date string. GEDCOM also carries a calendar escape
+for Julian, French Republican and Hebrew dates, which consumer software frequently drops on
+import. **Check what survived a round trip** rather than assuming any of this held.
 
 ### 3.9 The sortable date key
 
@@ -372,24 +359,23 @@ key_hi = YYYYMMDD      8 digits: the latest date the assertion permits. No SS; n
                       sorts inside the last day an assertion permits
 ```
 
-**Both are integers, not decimals.** `1735020800`, never `17350208.00`. A fractional part is
-the one thing a spreadsheet will round, reformat or coerce on you, and rule 7 exists to stop
-exactly that. Two rows may legitimately carry the same key; the key orders the sheet, it does
-not identify the row. `id` does that.
+**Both are integers, not decimals.** `1735020800`, never `17350208.00`: a fractional part is
+the one thing a spreadsheet will round, reformat or coerce on you. Two rows may legitimately
+share a key; the key orders the sheet, `id` identifies the row.
 
 1. **Unknown components fill in opposite directions.** Unknown month: `01` in `key_lo`, `12` in
    `key_hi`. Unknown day: `01` in `key_lo`, the last day of that month in `key_hi`. So
    `abt 1735` becomes `1735010150` / `17351231`. **A bare year always fills this way**, however
-   tempting it is to guess the season a tax list or a court term actually sat. If you know the
-   assessment date the row is not a bare year; key the real date. If you do not, key `0101` and
-   say so in `notes`. Two bare years filled two different ways in one sheet is a silent sort bug.
+   tempting it is to guess the season a tax list or a court term sat. If you know the assessment
+   date the row is not a bare year; key the real date. If you do not, key `0101` and say so in
+   `notes`. Two bare years filled two different ways in one sheet is a silent sort bug.
 2. **One-sided bounds still need two keys, and the open end takes the FLOOR, not the bound.**
    For `bef 1799-11-26`, `key_hi` is 17991126 and `key_lo` is the tightest floor you can defend
    — a last known appearance, a marriage, a birth range — with `notes` saying where it came
    from. Keying `bef` at its own ceiling is the standard error: it collapses the row to a point,
    hides the window, and destroys the tightest-row-first property in rule 4. Choosing the floor
    is an analytic act, not bookkeeping. Only when there is genuinely no floor use the sentinel
-   `0000000000`, which sorts to the top of the sheet where you will see it; mirror image
+   `0000000000`, which sorts to the top of the sheet where you will see it; mirror it with
    `99999999` in `key_hi` for an unbounded `aft`. Either way set `prec = U`.
 3. **`SS` orders events inside a day.** Assigned with gaps so you can insert later:
 
@@ -399,33 +385,33 @@ not identify the row. `id` does that.
    80 death          90 burial         95 probate or administration granted
    ```
 
-   Use `50` when the row has no position inside a day: a period, a bare year, a jurisdictional
-   fact. `SS` is how you order a same-day sequence *without shifting a date*: a man alive when
-   he signed his will on 1791-03-02 and possibly dead later that day gives two rows keyed
-   `1791030260` and `1791030280`, both still dated 1791-03-02. **Never add a day to a key to
-   force an order.** That is a falsified date and the next reader cannot tell.
+   The gaps are there so you can insert later. Use `50` when the row has no position inside a
+   day: a period, a bare year, a jurisdictional fact. `SS` orders a same-day sequence *without
+   shifting a date* — a man alive when he signed his will on 1791-03-02 and possibly dead later
+   that day gives two rows keyed `1791030260` and `1791030280`, both still dated 1791-03-02.
+   **Never add a day to a key to force an order.** That falsifies a date, and the next reader
+   cannot tell.
 4. **Sort on `key_lo` ascending, then `key_hi` ascending.** That puts the tightest row first
    among rows that start together, which is what you want reading down the page.
-5. **Sort on `prec` to find your work.** Filtering to `Y+` and `U` gives you, in one click, the
-   rows whose looseness is holding the argument back. That list is your research plan; hand it
-   to `references/research-workflows.md`.
+5. **Sort on `prec` to find your work.** Filtering to `Y+` and `U` gives you the rows whose
+   looseness is holding the argument back. That list is your research plan; hand it to
+   `references/research-workflows.md`.
 6. **Keys live in one calendar.** Default to the calendar as recorded. When the chronology
-   mixes regimes — a family with records in both Pennsylvania (Julian until 1752) and France
-   (Gregorian since 1582) — normalise every key to proleptic Gregorian, mark the column header,
-   and leave `date_rec` and `date_norm` untouched. A Julian 20 February 1719/20 is 2 March 1720
-   Gregorian and keys `1720030250`, interleaving correctly with a French record of the same
-   season. For three or more systems the Julian Day Number is a cleaner single key.
+   mixes regimes — records in both Pennsylvania (Julian until 1752) and France (Gregorian since
+   1582) — normalise every key to proleptic Gregorian, mark the column header, and leave
+   `date_rec` and `date_norm` untouched. A Julian 20 February 1719/20 is 2 March 1720 Gregorian
+   and keys `1720030250`, interleaving correctly with a French record of the same season. For
+   three or more systems the Julian Day Number is a cleaner single key.
 7. **Date columns as text, key columns as integers.** Spreadsheet date types commonly cannot
-   represent dates before 1900 and will silently coerce, reformat or reject them; they will
-   also round a decimal key. Tree programs collapse `bet 1746 and 1750` to a single displayed
-   year and sometimes store it that way. Check what survived a round trip before trusting an
-   export. This is the mechanism behind most of the corruption in section 10.
+   represent dates before 1900 and will silently coerce, reformat or reject them, and will
+   round a decimal key. Tree programs collapse `bet 1746 and 1750` to a single displayed year
+   and sometimes store it that way. Check what survived a round trip before trusting an export.
 
 ### 3.10 Where to look it up
 
-This file tells you to look something up rather than assume it seven times. Here is where.
-Name the one you used in `notes`, with its edition or access date; "looked it up" without a
-name is as unverifiable as not having looked.
+This file tells you to look something up rather than assume it seven times. Here is where. Name
+the one you used in `notes`, with its edition or access date: "looked it up" without a name is
+as unverifiable as not having looked.
 
 | The lookup | Where |
 |---|---|
@@ -441,8 +427,7 @@ name is as unverifiable as not having looked.
 
 The Research Wiki is also where the research cycle itself lives — identify what you know,
 decide what you want to learn, select records, search them, then **evaluate and record** what
-you found. A timeline is the recording half of that step made auditable, and section 10 is
-what keeps it so.
+you found. A timeline is the recording half of that step made auditable; section 10 keeps it so.
 
 ---
 
@@ -458,45 +443,40 @@ Every row carries three place facts, because they answer three different questio
 | `rec_level` | Who created and kept the record? | `county court` |
 
 **Record the jurisdiction as it was at the moment of the event**, not as the record names it.
-These differ more often than people expect, because a record can be created years after the
-event it describes, by which time the county has changed, and clerks and abstractors both
-back-project. An 1850 deed reciting a 1771 conveyance will name the 1850 county.
+These differ more often than people expect: a record can be created years after the event it
+describes, by which time the county has changed, and clerks and abstractors both back-project.
+An 1850 deed reciting a 1771 conveyance will name the 1850 county.
 
 ### Boundary changes, and the family that did not move
 
-When a county is created from its parents, everybody inside the new line acquires a new
-county without going anywhere. The tell in your chronology is a change of jurisdiction with
-no change of neighbours, no land transaction, and no church removal. That is not migration;
-it is cartography.
-
-The two errors are symmetrical and both common:
-
-- **Inferring a move from a name change.** The family is in the same house on the same creek.
-- **Inferring continuity from a name.** A county name reused after subdivision may cover
-  quite different ground.
+When a county is created from its parents, everybody inside the new line acquires a new county
+without going anywhere. The tell is a change of jurisdiction with no change of neighbours, no
+land transaction and no church removal: that is not migration, it is cartography. The two
+errors are symmetrical and both common — **inferring a move from a name change**, when the
+family is in the same house on the same creek, and **inferring continuity from a name**, when a
+county name reused after subdivision covers quite different ground.
 
 **Parent-county research** is the operational consequence. If your subject was in a county
 formed in 1771, his earlier records are in whichever parent county held that ground, and his
 earlier deeds may be recorded there and never re-recorded. Work the county-formation chain
-backwards to the colonial or territorial parent, and note in `notes` which reference gave
-you the chain. Records also do not always move with the line: a deed recorded in the parent
-county before the split usually stays in the parent county's books forever.
+backwards to the colonial or territorial parent, and note in `notes` which reference gave you
+the chain. Records also do not move with the line: a deed recorded in the parent county before
+the split usually stays in the parent county's books forever.
 
-Make the boundary change **its own row** in the timeline, with the statute or the county
-formation reference as the source. It is an assertion about the world that changes where
-you search, so it belongs in the sequence like any other.
+Make the boundary change **its own row**, with the statute or the county formation reference as
+the source. It is an assertion about the world that changes where you search, so it belongs in
+the sequence like any other.
 
 ### Record loss
 
-Record loss is a property of a jurisdiction and a period, never of a family. Before you
-conclude that someone left no records, find out whether the jurisdiction's records survive
-for those years. Well-established losses to reason from: the 1890 United States federal
-census, lost after a 1921 fire; the destruction of the Public Record Office of Ireland in
-1922, which took most pre-1901 Irish census returns and a very large body of testamentary
-records; and the 1973 fire at the National Personnel Records Center in St. Louis, which
-destroyed a large share of twentieth-century US Army and Air Force personnel files. County
-courthouse fires in the American South are common enough that "burned county" is standard
-vocabulary.
+Record loss is a property of a jurisdiction and a period, never of a family. Before concluding
+that someone left no records, find out whether the jurisdiction's records survive for those
+years. Well-established losses to reason from: the 1890 United States federal census, lost
+after a 1921 fire; the destruction of the Public Record Office of Ireland in 1922, which took
+most pre-1901 Irish census returns and a very large body of testamentary records; and the 1973
+fire at the National Personnel Records Center in St. Louis, which destroyed a large share of
+twentieth-century US Army and Air Force personnel files. Courthouse fires in the American South
+are common enough that "burned county" is standard vocabulary.
 
 The remedy is structural, and each option is a different `rec_level`:
 
@@ -506,38 +486,36 @@ The remedy is structural, and each option is a different `rec_level`:
 - **Different creator**: church registers, tax lists, militia rolls, newspapers, private
   land company records, undertakers' and cemetery records.
 
-In your chronology, a burned jurisdiction shows up as an unexplained silence. Record the
-silence as a row with an explicit source for the loss, so that you and the next reader can
-tell it apart from a silence you have not yet investigated. The distinction between a
-**negative search result** and **negative evidence** turns on exactly this: absence from a
-record set that survives complete is evidence; absence from a record set that burned is
-nothing at all.
+In your chronology a burned jurisdiction shows up as an unexplained silence. Record the silence
+as a row with an explicit source for the loss, so you and the next reader can tell it apart
+from a silence nobody has investigated yet. The distinction between a **negative search
+result** and **negative evidence** turns on exactly this: absence from a record set that
+survives complete is evidence; absence from a record set that burned is nothing at all.
 
 ### Record level and the nesting
 
-In the United States, the level that holds vital information varies by region and era, and
-knowing which saves weeks. New England towns kept vital records from the colonial period;
-in most of the South and Midwest the county was the record-keeping unit and there is often
-no town layer at all; statewide vital registration mostly arrives between the 1850s and the
-1920s, unevenly, with early years poorly complied with. A city may be inside its county, or
-independent of it with its own records. An event "in" a place may have been recorded by the
-town, the county, the state, or a church, and only one of those has the paper.
+In the United States the level that holds vital information varies by region and era, and
+knowing which saves weeks. New England towns kept vital records from the colonial period; in
+most of the South and Midwest the county was the record-keeping unit with often no town layer
+at all; statewide vital registration mostly arrives between the 1850s and the 1920s, unevenly
+and poorly complied with at first. A city may be inside its county or independent of it with
+its own records. An event "in" a place may have been recorded by the town, the county, the
+state or a church, and only one of those has the paper.
 
-**Non-US analogues.** England and Wales: the ancient **parish** is the pre-1837 unit, and
-from 1 July 1837 civil registration runs through **registration districts** built on Poor
-Law unions, which respect neither parish nor county lines, so the district that holds a
-birth may be named for a town your family never lived in. Scotland's statutory registration
-begins in 1855 and is organised by registration district on a different pattern again.
-Historic counties have also been abolished and redrawn: records for a place in historic
-Middlesex are now sought under Greater London, created in 1965. In Germany, the civil
-registry office, the *Standesamt*, begins in Prussia in 1874 and across the empire in 1876;
-before that the church books are the registration, and sovereignty changes mean the place
-name in the record and the place name on a modern map may be in different languages and
-different countries. In Ireland, the Roman Catholic parish and the civil parish rarely
-coincide, and the **townland** is the fundamental land unit that ties them together.
+**Non-US analogues.** England and Wales: the ancient **parish** is the pre-1837 unit, and from
+1 July 1837 civil registration runs through **registration districts** built on Poor Law
+unions, which respect neither parish nor county lines, so the district holding a birth may be
+named for a town your family never lived in. Scotland's statutory registration begins in 1855
+on a different district pattern again. Historic counties have been abolished and redrawn:
+records for a place in historic Middlesex are now sought under Greater London, created in 1965.
+In Germany the civil registry office, the *Standesamt*, begins in Prussia in 1874 and across
+the empire in 1876; before that the church books are the registration, and sovereignty changes
+mean the place name in the record and on a modern map may be in different languages and
+different countries. In Ireland the Roman Catholic parish and the civil parish rarely coincide,
+and the **townland** is the land unit that ties them together.
 
 Where a record now physically sits, and how to express that in a citation, belongs to
-`references/citation-management.md`. The timeline records the jurisdiction; the citation
+`references/citation-management.md`: the timeline records the jurisdiction, the citation
 records the repository.
 
 ---
@@ -642,31 +620,28 @@ dropped for width. The full column set is section 2, and a real sheet carries al
 | C-07 | 1791030260 | 17910302 | D | 1791-03-02 | Guilford Co. / N.C. | Bartholomew Cray signs his will | primary | direct | [will bk] | B |
 
 Three things to read off the keys. **C-01 and C-04 are bare years and both fill `0101`/`1231`**
-(3.9 rule 1); a tax list is taxable on an assessment date you have not looked up yet, and
-guessing a month to make the sort look tidier is how a fabricated date enters a sheet.
-**C-05 and C-08 are one document and two rows** (section 2, and 3.7): the grant is a dated
-record event with a month-precise date; the death is a derived one-sided bound, and it takes a
-separate row, `prec = U`, and `info = secondary` because no one in 1781 witnessed it and said
-so. **C-08's `key_lo` is the sentinel `0000000000`**, not 17810801: while the pool is still
-merged there is no row that defensibly shows *this* Bartholomew alive, so there is no floor to
-claim. The sentinel puts the row at the top of the sheet where its openness is visible, which
-is the whole point; once C-01 or C-03 is assigned to A, the floor tightens and the key moves.
-Note also that C-08 was numbered last and sorts first: **`id` records the order you found
-things, `key_lo` records the order the world produced them.** Never renumber to make them agree.
+(3.9 rule 1): a tax list is taxable on an assessment date you have not looked up, and guessing
+a month to tidy the sort is how a fabricated date enters a sheet. **C-05 and C-08 are one
+document and two rows** (section 2, and 3.7): the grant is a dated record event with a
+month-precise date, the death is a derived one-sided bound and takes its own row, `prec = U`,
+`info = secondary` because no one in 1781 witnessed it and said so. **C-08's `key_lo` is the
+sentinel `0000000000`**, not 17810801, because while the pool is still merged no row defensibly
+shows *this* Bartholomew alive and there is no floor to claim; the sentinel puts the row at the
+top of the sheet where its openness is visible, and once C-01 or C-03 is assigned to A the
+floor tightens and the key moves. C-08 was numbered last and sorts first: **`id` records the
+order you found things, `key_lo` the order the world produced them.** Never renumber to agree.
 
-The impossibility is C-05/C-08 against C-06 and C-07: a man whose estate was administered in 1781
-does not convey land in 1786 or sign a will in 1791. That alone establishes **at least two**
-men of the name in one county.
+The impossibility is C-05/C-08 against C-06 and C-07: a man whose estate was administered in
+1781 does not convey land in 1786 or sign a will in 1791. That alone establishes **at least
+two** men of the name in one county — and C-04 had said so three years earlier, for free, to
+whoever read the whole tax list instead of the one line with the right name on it. Read the
+whole list, every time.
 
-C-04 had said so already, three years earlier, for free. It was found by reading the whole
-tax list instead of the one line with the right name on it. Read the whole list, every time.
-
-Assignment then proceeds by title, not by plausibility. If the tract in C-06 is the tract
-C-03 conveyed away, the 1786 grantor cannot be the 1774 grantor unless he reacquired it, and
-the deed books will say. C-01 stays unassigned unless the junior's age excludes him: if the
-tithable age in that jurisdiction in 1762 was sixteen and the junior was not yet sixteen,
-C-01 is A's, and you have now made an interval check do identity work. Look the statutory
-age up; do not assume it.
+Assignment then proceeds by title, not by plausibility. If the tract in C-06 is the tract C-03
+conveyed away, the 1786 grantor cannot be the 1774 grantor unless he reacquired it, and the
+deed books will say. C-01 stays unassigned unless the junior's age excludes him: if the
+tithable age in that jurisdiction in 1762 was sixteen and the junior was not yet sixteen, C-01
+is A's, and you have made an interval check do identity work. Look the statutory age up.
 
 Three cautions:
 
@@ -701,18 +676,17 @@ in the old place and the first in the new, and the narrower that pair, the bette
 Two habits that pay:
 
 - **Bracket, then state the bracket as one row.** Certificate granted 1751-11-03, received
-  1752-04-05: the journey is `from 1751-11-03 to 1752-04-05`, entered as a period, not as
-  two separate events you will later misremember as a date.
-- **Use the silence, but only where the record set is complete.** A man absent from a
-  complete run of annual tax lists between two years in which he appears has a story to
-  explain: that is negative evidence and it bounds a range. The same absence in a year whose
-  list is lost is a negative search result and bounds nothing. Record which you have, with a
-  source for the completeness claim. `references/research-workflows.md` covers how to log
-  and cite nil results.
+  1752-04-05: the journey is `from 1751-11-03 to 1752-04-05`, entered as a period, not as two
+  separate events you will later misremember as a date.
+- **Use the silence, but only where the record set is complete.** A man absent from a complete
+  run of annual tax lists between two years in which he appears has a story to explain: that is
+  negative evidence and it bounds a range. The same absence in a year whose list is lost is a
+  negative search result and bounds nothing. Record which you have, with a source for the
+  completeness claim; `references/research-workflows.md` covers logging and citing nil results.
 
 Life-stage chronologies use the same machinery on one person: apprenticeship, coming of age,
-first appearance on a tax list, marriage, first land, first public office, last land,
-probate. Stages that are missing where they should be present are research questions.
+first tax list, marriage, first land, first public office, last land, probate. Stages missing
+where they should be present are research questions.
 
 ---
 
@@ -725,13 +699,12 @@ The question has two halves, and `ev` is computed against the question as stated
 entry is indirect evidence for a death, direct evidence of nothing but a burial, and for the
 birth half it is indirect at best. Change the question and that column is stale (section 10).
 
-Eleven records, in the order they were found, which is not the order they happened. **These
-are working shorthand, not citations.** Each `S`-number resolves to a full first reference note
-in the source list — who, what, when, where-in, where-is, and the provenance chain if you
-worked from an image rather than the book — built per `references/citation-management.md`.
-The bracketed blanks below are the volume, page and repository you must fill from the item in
-front of you; a `cite` column pointing at shorthand with no source list behind it fails the QA
-gate in `templates/timeline.md`.
+Eleven records, in the order they were found, which is not the order they happened. **These are
+working shorthand, not citations.** Each `S`-number resolves to a full first reference note in
+the source list — who, what, when, where-in, where-is, and the provenance chain if you worked
+from an image rather than the book — built per `references/citation-management.md`. A `cite`
+column pointing at shorthand with no source list behind it fails the QA gate in
+`templates/timeline.md`.
 
 ```
 S1  New Garden MM (Chester Co., Pa.) marriages: Joseph Teale & Mary Bowater, 5th d 9 mo 1730
@@ -765,7 +738,7 @@ and `rec_level` are dropped for width and a real sheet carries them (section 2).
 | T-03 | 1735020800 | 17350208 | D | 1735-02-08 [OS, 1734/5, Q] | as T-02 | Susannah Teale (principal) | Born, daughter of Joseph & Mary | original | primary | direct | S2 | 12 mo pre-1752 = February; February is inside the double-dating window. Conflicts with T-14 |
 | T-04 | 1737050300 | 17370503 | D | 1737-05-03 [OS, Q] | as T-02 | Joseph Teale jr (principal) | Born, son of Joseph & Mary | original | primary | indirect | S3 | 3 mo pre-1752 = May, not March |
 | T-05 | 1751110350 | 17511103 | D | 1751-11-03 [OS, Q] | as T-02 | Susannah Teale (named child) | Named as a child of Joseph & Mary on a removal certificate; present in Chester Co. | original | primary | direct | S5 | 9 mo = November. Ties the Susannah of T-03 to the household that moved |
-| T-06 | 1751110360 | 17520604 | M | from 1751-11-03 to bet 1752-04-04 and 1752-06-04 [OS, Q] | in transit | Teale household | Journey bracket: departed on or after the grant, arrived on or before the receipt | original | secondary | indirect | S5, S6 | DERIVED row, no record asserts it: bracket built from S5 and S6 per section 8. `info = secondary` for that reason. `SS` 60 sorts it after T-05 on the same day without shifting the date |
+| T-06 | 1751110355 | 17520604 | M | from 1751-11-03 to bet 1752-04-04 and 1752-06-04 [OS, Q] | in transit | Teale household | Journey bracket: departed on or after the grant, arrived on or before the receipt | original | secondary | indirect | S5, S6 | DERIVED row, no record asserts it: bracket built from S5 and S6 per section 8. `info = secondary` for that reason. `SS` 55, inserted in the gap above `50`, sorts it after T-05 on the same day without shifting the date |
 | T-07 | 1752040450 | 17520604 | M | bet 1752-04-04 and 1752-06-04 [OS, Q] | Cane Creek MM / Orange Co. (created 1752 from Johnston, Bladen and Granville; for a 1751 date establish which parent held this ground) / Prov. North Carolina | Susannah Teale (named child) | Certificate received; present in North Carolina | original | primary | direct | S6 | 4 mo in 1752 is ambiguous April/June: unresolved. Still `[OS]` — Britain and colonies were Julian until 14 September 1752 |
 | T-08 | 1757050420 | 17570504 | D | 1757-05-04 [Q] | Cane Creek MM / Orange Co. / N.C. | Susannah Teale (principal) | Married Bartholomew Cray | original | primary | indirect | S7 | 5 mo post-1752 = May. No `[OS]`: after September 1752 |
 | T-09 | 1759120200 | 17591202 | D | 1759-12-02 [Q] | as T-08 | Susannah Cray (mother) | Bore a child | original | primary | indirect | S8 | 12 mo post-1752 = December. Same numeral as T-03, different month, same family |
@@ -778,68 +751,56 @@ and `rec_level` are dropped for width and a real sheet carries them (section 2).
 Two rows share `key_lo` 1791030280 and sort by `key_hi`: T-12 (ceiling 1793) before T-15
 (ceiling 1799). That is rule 4 doing its job — the tighter row first.
 
-**Calendar handling in this set.** Four rows need it and they demonstrate the whole problem:
-
-- T-03: `12 mo 1734` in a pre-1752 Quaker register is **February**, and February falls in the
-  double-dating window, so the year is 1734/5. The date is 8 February 1734/5. Read as
-  December 1734 it would be off by fourteen months, and every interval below would break.
-- T-09: `12 mo 1759` in the same meeting's register, post-1752, is **December**. Same
-  numeral, different month, same family. This is why the numeral stays in `date_rec`.
-- T-07: `4 mo 1752` falls in the transition year and is ambiguous between April and June.
-  It enters as a range with `prec = M`. Resolve it, if you can, by reading the register's
-  surrounding entries in sequence for the changeover; until then the range stands.
-- T-04: `3 mo 1737` is **May**, not March.
+**Calendar handling in this set.** The conversions are shown row by row in `notes`. The one to
+dwell on is T-03: read `12 mo 1734` as December rather than February, and the birth moves
+fourteen months, the double-dated year disappears, and every interval below it breaks. T-09 is
+the same numeral in the same meeting's register thirty-five years later and really is December,
+which is why the numeral never leaves `date_rec`.
 
 **The conflict.** T-03 says born 8 February 1734/5. T-14 says born between 27 November 1729
 and 26 November 1730. They cannot both be true, and the gap is about five years.
 
 **Resolution, by the timeline and not by taste.** The tempting move is to prefer T-03 because
-it comes from an original register with primary information while T-14 rests on an age
-reported by a survivor sixty-four years later. That is a real argument but a weak one on its
-own, because burial-register ages are sometimes right and birth registers are sometimes
-retrospective. The chronology gives a harder one:
-
-T-01 places the parents' marriage on 5 November 1730. T-14's range runs from 27 November 1729
-to 26 November 1730, and **all but the last three weeks of it precedes the marriage**. A
-birth three weeks after a Quaker marriage, or at any point before it, would have produced a
-disciplinary minute in the men's minutes, and T-02 records that a run of those minutes
-verified complete for 1728 to 1740 contains none. **T-02's window was set deliberately to
-1728, not to the marriage year**: a negative-evidence row has to cover the whole window the
-argument needs, and a row that began in November 1730 would have excluded the eleven months
-of T-14's range that fall before the wedding — that is, almost the entire thing it is being
-used to exclude. Check the coverage of every negative row against the claim it supports; this
-is the most common way a negative argument quietly fails. That is **negative evidence**,
-absence where presence is required, and it is only worth anything because the run is
-complete. Had the volume been lost, T-02 would be a negative search result and would bound
-nothing at all. Note the completeness claim and its source in `notes`.
-
-T-14 is therefore rejected: the age at burial is overstated by about five years, which is an
-ordinary error in a record whose informant was reporting rather than witnessing.
+it is an original register carrying primary information while T-14 rests on an age reported by
+a survivor sixty-four years later. That is a real argument but weak on its own: burial-register
+ages are sometimes right and birth registers are sometimes retrospective. The chronology gives
+a harder one. T-01 places the parents' marriage on 5 November 1730, so **all but the last three
+weeks of T-14's range precedes the marriage**. A birth three weeks after a Quaker marriage, or
+at any point before it, would have produced a disciplinary minute, and T-02 records that a run
+of the men's minutes verified complete for 1728 to 1740 contains none. **T-02's window was set
+deliberately to 1728, not to the marriage year**: a row that began in November 1730 would have
+excluded the eleven months of T-14's range falling before the wedding, almost the entire thing
+it is being used to exclude. Check the coverage of every negative row against the claim it
+supports; this is the most common way a negative argument quietly fails. That is **negative
+evidence**, absence where presence is required, and it is worth something only because the run
+is complete: had the volume been lost, T-02 would be a negative search result and would bound
+nothing at all. Note the completeness claim and its source in `notes`. T-14 is therefore
+rejected — the age at burial is overstated by about five years, an ordinary error in a record
+whose informant was reporting rather than witnessing.
 
 **Conclusion, with its residue.** Susannah Teale was born 8 February 1734/5 in Chester County,
 Pennsylvania, and died on or shortly before 26 November 1799 and was buried at Cane Creek
 Monthly Meeting, Orange County, North Carolina; **her residence at death is not established by
 this record set.**
 
-That last clause is not modesty, it is arithmetic. Read down the `juris_then` column: the only
-1799 row is a burial at Cane Creek, which sat in Orange County until Alamance was carved out of
-Orange in 1849. The Guilford rows are her husband's land (T-10) and his will (T-11, T-12).
-Burial at the meeting she joined in 1752 is entirely ordinary and tells you nothing about the
-county she was living in forty-seven years later. **A conclusion may not assert a jurisdiction
-no row carries.** If the draft conclusion names a place, find the row; if there is no row, the
-place goes in the residue and becomes a research task.
+That last clause is arithmetic, not modesty. The only 1799 row in the `juris_then` column is a
+burial at Cane Creek, which sat in Orange County until Alamance was carved out of Orange in
+1849; the Guilford rows are her husband's land (T-10) and his will (T-11, T-12). Burial at the
+meeting she joined in 1752 says nothing about where she lived forty-seven years later. **A
+conclusion may not assert a jurisdiction no row carries.** If a draft conclusion names a place,
+find the row; if there is none, the place goes in the residue and becomes a research task.
 
 What the timeline does **not** settle, and which must be stated rather than absorbed:
 
-- **Her residence at death.** Nothing in this set places her anywhere in 1799 but a grave. Next
-  steps: the Cane Creek membership and removal records for 1793-1799, the Guilford estate file
-  of Bartholomew Cray for a widow's dower or allotment, and the tax lists of both counties.
-- Whether the Susannah who married in 1757 is the Susannah born in 1734/5 rests on the
-  removal certificate naming her among Joseph and Mary's children (T-05) and on the receiving
-  meeting's record. If the 1757 marriage entry does not name her parents, a second Susannah
-  Teale in the same meeting remains an open alternative, and section 7 is the next step.
-- T-07's month is unresolved.
-- T-12's upper bound is a placeholder until the court term's sitting dates are checked.
+- **Her residence at death.** Nothing here places her anywhere in 1799 but a grave. Next steps:
+  the Cane Creek membership and removal records for 1793-1799, the Guilford estate file of
+  Bartholomew Cray for a widow's dower or allotment, and the tax lists of both counties.
+- Whether the Susannah who married in 1757 is the Susannah born in 1734/5 rests on the removal
+  certificate naming her among Joseph and Mary's children (T-05) and on the receiving meeting's
+  record. If the 1757 marriage entry does not name her parents, a second Susannah Teale in the
+  same meeting remains an open alternative, and section 7 is the next step.
+- T-07's month is unresolved, and T-12's upper bound is a placeholder until the court term's
+  sitting dates are checked.
 - T-15's floor rests on T-11, eight years earlier. Anything showing Susannah alive after 1791
   tightens it, and `prec = U` is what keeps that task on the list.
 
@@ -869,25 +830,24 @@ Rebuild when:
 - **more than roughly one row in eight is unassigned or uncited.** At that density you are
   no longer reading a chronology, you are reading a pile.
 
-**How it feeds the proof.** The timeline is the skeleton of the written argument, and the
-mapping is mechanical: rows become the numbered evidence items; the sort order becomes the
-narrative spine; the conflict pairs and their resolutions become the resolution-of-conflict
-section that the GPS requires; the unassigned rows and the `prec = U` rows become the stated
-limits of the conclusion. A chronology whose rows all carry `cite` values converts into a
-proof summary almost without rewriting. Structure, register, and the proof triad itself are
+**How it feeds the proof.** The timeline is the skeleton of the written argument and the
+mapping is mechanical: rows become the numbered evidence items, the sort order becomes the
+narrative spine, the conflict pairs and their resolutions become the resolution-of-conflict
+section the GPS requires, and the unassigned and `prec = U` rows become the stated limits of
+the conclusion. A chronology whose rows all carry `cite` values converts into a proof summary
+almost without rewriting. Structure, register and the proof triad are
 `references/documentation-standards.md`.
 
 **Failure modes**
 
-1. **Recording a conclusion instead of an assertion.** The row says `b. 1748`; the record
-   said "aged 22" in 1770. The range is gone, the arithmetic is unverifiable, and the next
-   person inherits a date that was never in any document. Every row must be recoverable to
-   the words on the page.
+1. **Recording a conclusion instead of an assertion.** The row says `b. 1748`; the record said
+   "aged 22" in 1770. The range is gone, the arithmetic is unverifiable, and the next person
+   inherits a date that was never in any document. Every row must be recoverable to the page.
 2. **Dropping the nil results that bound a range.** The searches that found nothing are what
    turn "no evidence he was there" into "he was not there," and only when the record set is
    complete. Unrecorded, they get repeated and the bound silently evaporates.
-3. **Copying a derivative's normalisation.** An abstract that already says "12 March 1749" has
-   made a calendar decision for you, and abstractors get the year-start window wrong
-   routinely. Go to the image.
+3. **Copying a derivative's normalisation.** An abstract that says "12 March 1749" has made a
+   calendar decision for you, and abstractors get the year-start window wrong routinely. Go to
+   the image.
 4. **Rows without citations.** A row with no `cite` is a rumour occupying a slot in an
    argument. Delete it or source it; do not leave it.

@@ -54,6 +54,15 @@ Type:           identity / relationship / activity-event
 7. AMENDMENTS
    | Date | What changed | What triggered it |
    |------|--------------|-------------------|
+
+LIVING PEOPLE AND CONSENT  [fill whenever the plan touches one; not a numbered part]
+   Living people in scope:     [identifying detail stays in the private archive; in anything
+                                circulated the default is name withheld]
+   Restricted records:         [restriction, its authority, conditions of access]
+   DNA test of a living person:[informed consent recorded with a date before a kit is
+                                ordered; consent to test is not consent to be named]
+   [Protocol: references/research-workflows.md section 8. Full version, including the
+    consent register and misattributed parentage: references/documentation-standards.md §9]
 ```
 
 ## Sufficiency check before closing the plan

@@ -170,8 +170,8 @@ Rows are shown in sort order, which is not id order: `id` records the order you 
 - [ ] Rows with `prec = Y+` or `U` listed out as the next research plan, and every multi-year
       range is tagged `Y+` (not `Y`) and every one-sided bound `U` (not the precision of the
       bound it names), or they drop out of that filter and off your plan.
-- [ ] No `key_lo` equals its own `key_hi` on a `bef` or `aft` row. That is the tell that a
-      one-sided bound was keyed at its bound instead of at its floor.
+- [ ] On every `bef` or `aft` row, the first eight digits of `key_lo` differ from `key_hi`.
+      Matching them is the tell that a one-sided bound was keyed at its bound, not at its floor.
 - [ ] Every derived row is its own row: the record event (burial, grant of administration,
       baptism) and the bound you derived from it are never fused into one.
 - [ ] Every negative row's window actually covers the claim it is used to exclude. Check the
