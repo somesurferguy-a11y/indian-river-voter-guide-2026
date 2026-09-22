@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 07:04",
+  "updated": "2026-09-22 11:53",
   "domains": [
     {
       "id": "research-workflows",
@@ -42,7 +42,7 @@
         "documentation_completeness": 8
       },
       "verdict": "FAIL",
-      "gap": "11 of 15 record-type templates carry no provenance chain, teaching the defect the file's own QA section condemns"
+      "gap": "Reference file fixed (11 Online layered variants added); quickref mirror in progress"
     },
     {
       "id": "timeline-building",
@@ -110,6 +110,10 @@
     {
       "t": "07:04",
       "msg": "Round 1 complete: all 5 domains FAIL. Range 31-37/50. Fixers running on all five."
+    },
+    {
+      "t": "11:53",
+      "msg": "Rate limit killed all 5 round-2 fixers; citation-management reference survived. All relaunched with incremental-save instructions."
     }
   ]
 }

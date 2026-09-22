@@ -141,8 +141,14 @@ Two neighbouring territories could be eleven days apart for over a century, and
 correspondence between them routinely carried both dates.
 
 The offset is not fixed: Julian ran 10 days behind Gregorian from 1582 to 28 February 1700,
-11 days from 1 March 1700 through 1799, 12 days in the 1800s, 13 days from 1900. If you
-convert, you must know which century you are in.
+11 days from 1 March 1700 through 28 February 1800, 12 days from 1 March 1800 through
+28 February 1900, 13 days from 1 March 1900. (Those boundary dates are Julian dates: the
+step happens because the Julian calendar keeps a 29 February in 1700, 1800 and 1900 and the
+Gregorian does not.) If you convert, you must know which side of 1 March of the century year
+you are on — the offset steps on 1 March, not on 1 January. January and February 1800 are
+11 days, not 12; January and February 1900 are 12 days, not 13. This bites hardest in exactly
+the records this section sends you to: Orthodox parish registers, Russian records before
+February 1918, Greek records before 1923.
 
 **Convention for recording**, the mainstream genealogical one and the one used throughout this
 file: transcribe the day and month exactly as written and **do not shift them**; handle the
