@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 12:02",
+  "updated": "2026-09-22 16:54",
   "domains": [
     {
       "id": "research-workflows",
@@ -118,6 +118,10 @@
     {
       "t": "12:02",
       "msg": "citation-management R2 complete (ref 833 lines, quickref 478, in sync); fresh critic re-scoring"
+    },
+    {
+      "t": "16:54",
+      "msg": "SKILL.md router written; skill now registers and loads. Four fixers relaunched to audit and finish round 2."
     }
   ]
 }
