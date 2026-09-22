@@ -12,16 +12,22 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 06:59",
+  "updated": "2026-09-22 07:04",
   "domains": [
     {
       "id": "research-workflows",
       "name": "Research Workflows",
-      "status": "in review",
+      "status": "revising",
       "round": 1,
-      "scores": null,
-      "verdict": "-",
-      "gap": "Awaiting round 1 critic verdict"
+      "scores": {
+        "citation_formats": 7,
+        "source_evaluation": 6,
+        "timeline_accuracy": 7,
+        "relationship_clarity": 7,
+        "documentation_completeness": 6
+      },
+      "verdict": "FAIL",
+      "gap": "The worked log and its negative-evidence example are not auditable: no citations, no searcher, coverage gaps, an inference failing the file's own four-premise test"
     },
     {
       "id": "citation-management",
@@ -41,29 +47,47 @@
     {
       "id": "timeline-building",
       "name": "Timeline Building",
-      "status": "in review",
+      "status": "revising",
       "round": 1,
-      "scores": null,
-      "verdict": "-",
-      "gap": "Awaiting round 1 critic verdict"
+      "scores": {
+        "citation_formats": 7,
+        "source_evaluation": 7,
+        "timeline_accuracy": 5,
+        "relationship_clarity": 8,
+        "documentation_completeness": 7
+      },
+      "verdict": "FAIL",
+      "gap": "Section 3 states the key, notation and row conventions, then nearly every worked row violates them; plus a Julian/Gregorian offset error"
     },
     {
       "id": "relationship-mapping",
       "name": "Relationship Mapping",
-      "status": "in review",
+      "status": "revising",
       "round": 1,
-      "scores": null,
-      "verdict": "-",
-      "gap": "Awaiting round 1 critic verdict"
+      "scores": {
+        "citation_formats": 7,
+        "source_evaluation": 8,
+        "timeline_accuracy": 7,
+        "relationship_clarity": 6,
+        "documentation_completeness": 6
+      },
+      "verdict": "FAIL",
+      "gap": "The worked cast is not individuated and contradicts itself, so no example can be checked; cousin chain shows 4 arrows for b=5"
     },
     {
       "id": "documentation-standards",
       "name": "Documentation Standards",
-      "status": "in review",
+      "status": "revising",
       "round": 1,
-      "scores": null,
-      "verdict": "-",
-      "gap": "Awaiting round 1 critic verdict"
+      "scores": {
+        "citation_formats": 7,
+        "source_evaluation": 6,
+        "timeline_accuracy": 6,
+        "relationship_clarity": 6,
+        "documentation_completeness": 6
+      },
+      "verdict": "FAIL",
+      "gap": "Line 38 calls a death certificate's parent names indirect evidence - the conflation the file's own section 1.4 exists to prevent"
     }
   ],
   "log": [
@@ -78,6 +102,14 @@
     {
       "t": "06:59",
       "msg": "citation-management R1: FAIL 37/50 (citations 6). Layering rule contradicts its own example; fixer dispatched"
+    },
+    {
+      "t": "07:02",
+      "msg": "documentation-standards R1: FAIL 31/50. Three axes capped at 6 (stated falsehood + 3 dead internal pointers); fixer dispatched"
+    },
+    {
+      "t": "07:04",
+      "msg": "Round 1 complete: all 5 domains FAIL. Range 31-37/50. Fixers running on all five."
     }
   ]
 }
