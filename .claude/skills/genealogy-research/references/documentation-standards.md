@@ -330,8 +330,8 @@ answer.
 5. **Conflicting evidence, stated and resolved.** Its own heading. Both sides at strength (§4).
 6. **The extent of the research.** What was searched, with jurisdiction and span, nil results included, and
    the known record loss for the period. This is the reasonably-exhaustive element made visible; without it
-   the reader cannot apply the test in §2. In `templates/proof-argument.md` it is section 8, placed after the
-   apparatus so the argument's prose runs unbroken. Either position works; absence does not.
+   the reader cannot apply the test in §2. In `templates/proof-argument.md` it is section 8, after the
+   apparatus; either position works, absence does not.
 7. **The conclusion.** What, at what confidence, with residual doubt named.
 8. **The citation apparatus.** Full reference notes, shortened notes on repetition, and a source list if the
    argument circulates alone. Three shapes: `references/citation-management.md`.
@@ -502,11 +502,10 @@ division speaks, and was probably his daughter by birth. (Period records often u
 step-daughter; the term is avoided here for that reason. Kinship drift: `references/relationship-mapping.md`.)
 
 ```
-APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
+APPARATUS (selected: the online shape, the load-bearing record, the compound negative
+note, and the authored narrative. Notes 5, 7, 10, and 12 repeat the shapes of 6 and 8.
+Full syntax for all three shapes: references/citation-management.md)
 
-[^5]:  Rowan County, North Carolina, marriage bonds, bond of Bartholomew Cray and Susannah
-       Teale, 14 November 1821, Jesse Teale bondsman; Rowan County records, State Archives
-       of North Carolina, Raleigh.
 [^6]:  1820 U.S. census, Rowan County, North Carolina, population schedule, [township],
        p. [page], line [line], Jesse Teale; digital image, [website name] ([URL] : accessed
        [date]); imaged from National Archives microfilm publication [number], roll [number].
@@ -530,13 +529,11 @@ APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
 [^11]: Ambrose Pell, Annals of Rowan County (Salisbury, N.C.: [publisher], 1897), [page].
        Authored narrative; no sources cited for the Teale sketch.
 
-Shortened forms: Rowan Co., N.C., marriage bond, Cray-Teale, 1821. / Jesse Teale estate
-       file (1838), Rowan Co., N.C., report of division, 1839. / Pell, Annals, [page].
+Shortened forms: Jesse Teale estate file (1838), Rowan Co., N.C., report of division,
+       1839. / Pell, Annals, [page].
 Source list: North Carolina. Rowan County. Estates records. State Archives of North
        Carolina, Raleigh. / Pell, Ambrose. Annals of Rowan County. Salisbury, N.C., 1897.
 ```
-
-Syntax for all three shapes: `references/citation-management.md`.
 
 ---
 
@@ -633,15 +630,13 @@ steps. For yourself, jargon and filename pointers are fine and the priority orde
 instead of a cost. Nil results and the tone on doubt are identical, because **"write it for your future self"
 is not a lower bar**: your future self has forgotten everything and cannot ask you a question.
 
-**Why the nil-results section is not optional**, any one reason being sufficient: positive findings show where
-you looked last, nil results show where you looked at all; a source searched in 2019 and not recorded is a
-source you search again in 2027; negative evidence (§1.3) is unavailable without a documented search of stated
-scope; and for a client, eight hours that eliminated four record groups is real work an unreported nil result
-makes look like nothing. Record each so it is reusable — source, jurisdiction, exact span, index or
-page-by-page, variants, condition. "Searched the 1840 census, nothing" is useless. "Searched 1840 US census,
-Rowan and Davidson counties, N.C., every-name index plus page-by-page review of Rowan; variants Teale, Teal,
-Teele, Tale; no head of household of that surname in either county" is reusable for a decade. (*Strategy* for
-negative searching: `references/research-workflows.md`; the duty to record them auditably is here.)
+**Nil results are not optional**, for the reason in the table above and because negative evidence (§1.3) is
+unavailable without a documented search of stated scope. Record each so it stays usable: source, jurisdiction,
+exact span, index or page-by-page, variants, condition. "Searched the 1840 census, nothing" is useless.
+"Searched 1840 US census, Rowan and Davidson counties, N.C., every-name index plus page-by-page review of
+Rowan; variants Teale, Teal, Teele, Tale; no head of household of that surname in either county" is reusable
+for a decade, and for a client it is the visible half of the eight hours that eliminated four record groups.
+(*Strategy* for negative searching: `references/research-workflows.md`; the duty to record is here.)
 
 **Report vs. compiled genealogy.** Different documents, different jobs; do not let one masquerade as the other.
 

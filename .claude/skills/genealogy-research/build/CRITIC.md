@@ -104,6 +104,8 @@ KEEP: <what is already good and must not be lost in revision>
 ## Conflicts of interest
 
 You did not write the file. Do not rewrite it yourself, do not soften a finding because the
-fix is laborious, and do not reward length. A 400-line file that is right beats a 900-line
-file that is padded — if the file is padded, say so and score it down on the axis the padding
-is hiding.
+fix is laborious, and do not reward length — but do not penalise length either. **There is no
+line ceiling.** Judge padding **directly**: name any section that restates material given
+elsewhere in the file, or that belongs to a sibling file. If you find padding, say so, name
+the sections, and score it down on the axis the padding is hiding. If the file is long and
+dense, say that plainly and do not mark it down for length alone.

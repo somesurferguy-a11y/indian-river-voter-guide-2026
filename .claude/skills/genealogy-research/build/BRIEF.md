@@ -78,7 +78,15 @@ are three different shapes — show all three when you show a template.
   anything copy-pasteable.
 - Lead each file with a 2-3 line "what this file is for" and a "when to load me" line.
 - Concrete over abstract: show the artifact, then explain the rule behind it.
-- Target 350-650 lines per reference file. Density over length; the critic penalises padding.
+- **Length: no fixed ceiling. The binding rule is that every section must earn its place.**
+  A section that restates material given elsewhere in the file, or that belongs to a sibling
+  file, is padding and must be cut regardless of the file's total length. A section that is
+  dense and required stays regardless of the file's total length. Typical reference files
+  land around 600-900 lines; treat that as observation, not as a target to hit.
+  (Revised after round 1: the original 350-650 target was set before any content existed and
+  proved to be a poor proxy. Three independent critics judged the content dense rather than
+  padded, and trimming to the number would have amputated verified-correct material. The
+  anti-padding requirement is unchanged and is tested directly.)
 - Cross-reference sibling files by path, e.g. `references/citation-management.md`, when a
   topic properly belongs to a sibling. Do not duplicate a sibling's job.
 

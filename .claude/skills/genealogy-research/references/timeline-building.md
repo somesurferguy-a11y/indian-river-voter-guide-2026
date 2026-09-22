@@ -581,24 +581,23 @@ them by finding a single row pair that cannot describe one life.
 
 **Procedure**
 
-1. Pool every row for the name in one chronology, with `subject` set to
-   `Bartholomew Cray, unassigned` for all of them. Resist assigning anything yet.
-2. Sort and read for the shapes in section 6, looking specifically for a hard impossibility:
-   an event after a death, a conveyance of land already conveyed, two simultaneous presences.
-3. Tag every row in a `col` column with exactly one of four defined values. There are four,
-   not three, because "this row is about both men" and "I do not yet know which man" are
-   different claims and collapsing them loses the distinction:
-   **`A`** / **`B`** — assigned to one man; **`A+B`** — the row asserts something about both,
-   as a tax list naming both does, or something about ground or title that both held;
-   **`unassigned`** — not yet attributable. No other value. A bare `?` is `unassigned`
-   spelled worse.
+1. Pool every row for the name in one chronology, `subject` set to
+   `Bartholomew Cray, unassigned` throughout. Resist assigning anything yet.
+2. Sort and read for the shapes in section 6, looking for a hard impossibility: an event after
+   a death, a conveyance of land already conveyed, two simultaneous presences.
+3. Tag every row in a `col` column with exactly one of four defined values. Four, not three,
+   because "this row is about both men" and "I do not yet know which man" are different claims
+   and collapsing them loses the distinction: **`A`** / **`B`** — assigned to one man;
+   **`A+B`** — the row asserts something about both, as a tax list naming both does, or about
+   ground or title both held; **`unassigned`** — not yet attributable. No other value. A bare
+   `?` is `unassigned` spelled worse.
 4. Anchor each column with a row that can belong to nobody else.
 5. Propagate outward using **linked evidence**, never similarity. Chain of title is the
    strongest chronological spine there is: the grantor in a later deed must be a person who
    held title under an earlier one, so the deeds themselves order the men.
 6. Stop where the evidence stops, and leave the unassigned column visible.
-7. Hand the identity conclusion over. The chronology shows that two men existed and which
-   rows belong to which; who those men were to each other is kinship work and belongs to
+7. Hand the identity conclusion over. The chronology shows that two men existed and which rows
+   belong to which; who they were to each other is kinship work and belongs to
    `references/relationship-mapping.md`.
 
 **Worked example.** Question: *which Bartholomew Cray sold 150 acres on Deep Creek, Guilford
@@ -647,9 +646,9 @@ Three cautions:
 
 - **"Junr." in early Anglo-American usage means the younger of two men of that name in the
   community, not the son of the elder.** It is a disambiguator, and it moves: when the elder
-  dies, the junior often becomes the senior in the next record, and a third man becomes the
+  dies the junior often becomes the senior in the next record and a third man becomes the
   junior. Treat it as a label on a row, not a relationship.
-- **Two is a floor, not a count.** An impossibility proves at least two. A third can hide
+- **Two is a floor, not a count.** An impossibility proves at least two; a third can hide
   behind rows you assigned too eagerly. Re-run the test after each assignment pass.
 - **Do not delete the merged chronology.** The unresolved pool is the evidence that the
   separation was necessary, and the proof argument needs it.
@@ -745,8 +744,8 @@ and `rec_level` are dropped for width and a real sheet carries them (section 2).
 | T-10 | 1771010150 | 17711231 | Y | 1771 | Guilford Co. / N.C. | the Cray land | Passed from Orange and Rowan to Guilford jurisdiction. No move | original | primary | indirect | S9 | Boundary change as its own row (section 4). `info = primary`: the act is the record of its own enactment. Bare year fills `0101`/`1231`; key the effective date if the act gives one |
 | T-11 | 1791030260 | 17910302 | D | 1791-03-02 | Guilford Co. / N.C. | Susannah Cray (wife named in a will) | Living, and wife of Bartholomew, on the day he signed his will | original | primary | direct | S10 | `SS` 60 = will signed. Says nothing about the probate date: she is not shown alive in 1793 |
 | T-12 | 1791030280 | 17930228 | Y+ | bet 1791-03-02 and 1793-02-28 | as T-11 | Bartholomew Cray (principal) | Died | original | secondary | indirect | S10 | DERIVED bound: floor = the signing date, T-11, `SS` 80 places death after signing inside that day. Ceiling is a placeholder for the last sitting day of the February 1793 term: look it up |
-| T-15 | 1791030280 | 17991126 | U | bef 1799-11-26 | Cane Creek MM / Orange Co. / N.C. | Susannah Cray (principal) | Died | original | secondary | direct | S11 | DERIVED bound from the burial entry, T-13; lag is days. Floor = T-11, the last row showing her living; `prec = U` because the floor is inference, not record. Sorts on its floor, which is the point: the open window is visible |
-| T-13 | 1799112690 | 17991126 | D | 1799-11-26 [Q] | as T-15 | Susannah Cray (principal) | Buried | original | primary | indirect | S11 | 11 mo post-1752 = November. The register asserts a BURIAL. The death is T-15. Cane Creek is in present-day Alamance Co., carved from Orange in 1849; in 1799 the ground was Orange |
+| T-15 | 1791030280 | 17991126 | U | bef 1799-11-26 | not established (the register places the burial, not the death) | Susannah Cray (principal) | Died | original | secondary | direct | S11 | DERIVED bound from the burial entry, T-13; lag is days. Floor = T-11, the last row showing her living; `prec = U` because the floor is inference, not record. Sorts on its floor, which is the point: the open window is visible. She may have died anywhere within days' carriage of the burial ground |
+| T-13 | 1799112690 | 17991126 | D | 1799-11-26 [Q] | Cane Creek MM / Orange Co. / N.C. | Susannah Cray (principal) | Buried | original | primary | indirect | S11 | 11 mo post-1752 = November. The register asserts a BURIAL. The death is T-15. Cane Creek is in present-day Alamance Co., carved from Orange in 1849; in 1799 the ground was Orange |
 
 Two rows share `key_lo` 1791030280 and sort by `key_hi`: T-12 (ceiling 1793) before T-15
 (ceiling 1799). That is rule 4 doing its job — the tighter row first.
@@ -821,14 +820,13 @@ ordinary. Nothing flags. Which, per section 5, proves nothing on its own.
 Rebuild when:
 
 - **the research question changes.** `ev` is question-relative, so every value in that column
-  is now wrong. The rows survive; recompute the column. This is the cheap rebuild and it is
-  the one people skip.
-- **you discover a second person.** Re-pool and re-split (section 7). Do not edit `subject`
-  in place, because you will lose the record of what was once merged.
+  is now wrong. The rows survive; recompute the column. This is the cheap rebuild people skip.
+- **you discover a second person.** Re-pool and re-split (section 7). Do not edit `subject` in
+  place, because you will lose the record of what was once merged.
 - **you find a systematic error**: a calendar regime applied wrongly across a decade, a
   jurisdiction back-projected, a tithable age assumed. Systematic errors do not patch.
-- **more than roughly one row in eight is unassigned or uncited.** At that density you are
-  no longer reading a chronology, you are reading a pile.
+- **more than roughly one row in eight is unassigned or uncited.** At that density you are no
+  longer reading a chronology, you are reading a pile.
 
 **How it feeds the proof.** The timeline is the skeleton of the written argument and the
 mapping is mechanical: rows become the numbered evidence items, the sort order becomes the
