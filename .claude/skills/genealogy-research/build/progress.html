@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genealogy Skill Build Progress</title>
+<style>
+  :root {
+    --bg:#f7f6f3; --panel:#fff; --ink:#1b1917; --muted:#6b6560; --line:#e3ded6;
+    --good:#1f7a4d; --goodbg:#e4f3ea; --ok:#8a6a12; --okbg:#fbf2d9; --bad:#a32b26; --badbg:#fae8e6;
+    --accent:#5a4632;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#17150f; --panel:#201d16; --ink:#efeae1; --muted:#a49c90; --line:#353026;
+      --good:#6cd39b; --goodbg:#16311f; --ok:#e0bc5c; --okbg:#33290f; --bad:#f08b85; --badbg:#3a1a18;
+      --accent:#d8c3a5;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#17150f; --panel:#201d16; --ink:#efeae1; --muted:#a49c90; --line:#353026;
+    --good:#6cd39b; --goodbg:#16311f; --ok:#e0bc5c; --okbg:#33290f; --bad:#f08b85; --badbg:#3a1a18;
+    --accent:#d8c3a5;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 24px; font-size:.9rem; }
+  .stats { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:22px; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:10px;
+    padding:10px 16px; min-width:110px; }
+  .stat b { display:block; font-size:1.5rem; line-height:1.1; font-variant-numeric:tabular-nums; }
+  .stat span { color:var(--muted); font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:4px 4px 8px; margin-bottom:22px; overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:840px; }
+  th,td { padding:10px 10px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+  thead th { font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted);
+    font-weight:600; border-bottom:1px solid var(--line); }
+  thead th.num span { display:inline-block; max-width:82px; }
+  tbody tr:last-child td, tbody tr:last-child th { border-bottom:0; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .good { color:var(--good); } .ok { color:var(--ok); } .bad { color:var(--bad); }
+  .empty { color:var(--muted); }
+  .total { font-weight:700; } .den { color:var(--muted); font-weight:400; font-size:.8em; }
+  .dname { display:block; font-weight:600; }
+  .did { display:block; color:var(--muted); font-size:.75rem; font-family:ui-monospace,monospace; }
+  .gap { font-size:.85rem; color:var(--muted); max-width:300px; }
+  .pill { display:inline-block; padding:2px 9px; border-radius:99px; font-size:.75rem;
+    font-weight:600; white-space:nowrap; }
+  .s-queued { background:var(--line); color:var(--muted); }
+  .s-building { background:var(--okbg); color:var(--ok); }
+  .s-review { background:var(--okbg); color:var(--ok); }
+  .s-pass { background:var(--goodbg); color:var(--good); }
+  .s-fail { background:var(--badbg); color:var(--bad); }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.07em; color:var(--muted);
+    margin:0 0 10px; font-weight:600; }
+  ul.bench, ul.log { margin:0; padding-left:18px; }
+  ul.log { list-style:none; padding:0; font-size:.85rem; }
+  ul.log li { padding:5px 0; border-bottom:1px solid var(--line); }
+  ul.log li:last-child { border-bottom:0; }
+  .lt { color:var(--muted); font-family:ui-monospace,monospace; font-size:.78rem; margin-right:8px; }
+  .muted { color:var(--muted); }
+  .pad { padding:16px; }
+  footer { color:var(--muted); font-size:.8rem; margin-top:8px; }
+  @media (max-width:640px) { .wrap { padding:24px 16px 48px; } h1 { font-size:1.3rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Genealogy Research Skill — build progress</h1>
+  <p class="sub">Builder → critic loop per domain. Pass = total &gt;= 44/50 AND no single criterion below 8. Last updated 2026-09-22 01:55.</p>
+
+  <div class="stats">
+    <div class="stat"><b>0/5</b><span>Domains passing</span></div>
+    <div class="stat"><b>0</b><span>Critic rounds run</span></div>
+    <div class="stat"><b>5</b><span>Scored criteria</span></div>
+  </div>
+
+  <div class="card">
+  <table>
+    <thead><tr>
+      <th scope="col">Domain</th><th scope="col">Status</th><th class="num" scope="col">Rd</th>
+      <th class="num" scope="col"><span>Citation formats</span></th><th class="num" scope="col"><span>Source evaluation rigor</span></th><th class="num" scope="col"><span>Timeline accuracy</span></th><th class="num" scope="col"><span>Relationship clarity</span></th><th class="num" scope="col"><span>Documentation completeness</span></th>
+      <th class="num" scope="col">Total</th><th scope="col">Biggest remaining gap</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <th scope="row"><span class="dname">Research Workflows</span><span class="did">research-workflows.md</span></th>
+      <td><span class="pill s-building">building</span></td>
+      <td class="num">0</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="gap">Round 1 draft in progress</td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="dname">Citation Management</span><span class="did">citation-management.md</span></th>
+      <td><span class="pill s-building">building</span></td>
+      <td class="num">0</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="gap">Round 1 draft in progress</td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="dname">Timeline Building</span><span class="did">timeline-building.md</span></th>
+      <td><span class="pill s-building">building</span></td>
+      <td class="num">0</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="gap">Round 1 draft in progress</td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="dname">Relationship Mapping</span><span class="did">relationship-mapping.md</span></th>
+      <td><span class="pill s-building">building</span></td>
+      <td class="num">0</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="gap">Round 1 draft in progress</td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="dname">Documentation Standards</span><span class="did">documentation-standards.md</span></th>
+      <td><span class="pill s-building">building</span></td>
+      <td class="num">0</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="num empty">—</td>
+      <td class="gap">Round 1 draft in progress</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="card pad">
+    <h2>Benchmarks the critic scores against</h2>
+    <ul class="bench"><li>Board for Certification of Genealogists, Genealogy Standards (2nd ed. rev.) - incl. the Genealogical Proof Standard</li><li>FamilySearch Research Wiki - Principles of Family History Research / research process best practices</li></ul>
+  </div>
+
+  <div class="card pad">
+    <h2>Event log</h2>
+    <ul class="log"><li><span class="lt">01:55</span> Round 1: five domain builders dispatched in parallel</li></ul>
+  </div>
+  <footer>Generated by generate_progress.py from status.json.</footer>
+</div>
+</body>
+</html>

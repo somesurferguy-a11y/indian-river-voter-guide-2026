@@ -1,1 +1,7 @@
-.claude/
+# Local Claude Code configuration stays out of the repo...
+.claude/*
+!.claude/skills/
+.claude/skills/*
+
+# ...but the genealogy-research skill is a deliverable and is tracked.
+!.claude/skills/genealogy-research/

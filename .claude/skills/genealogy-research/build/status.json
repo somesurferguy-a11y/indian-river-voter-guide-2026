@@ -1,0 +1,69 @@
+{
+  "project": "Genealogy Research Skill",
+  "bar": "Pass = total >= 44/50 AND no single criterion below 8",
+  "benchmarks": [
+    "Board for Certification of Genealogists, Genealogy Standards (2nd ed. rev.) - incl. the Genealogical Proof Standard",
+    "FamilySearch Research Wiki - Principles of Family History Research / research process best practices"
+  ],
+  "criteria": [
+    "citation_formats",
+    "source_evaluation",
+    "timeline_accuracy",
+    "relationship_clarity",
+    "documentation_completeness"
+  ],
+  "updated": "2026-09-22 01:55",
+  "domains": [
+    {
+      "id": "research-workflows",
+      "name": "Research Workflows",
+      "status": "building",
+      "round": 0,
+      "scores": null,
+      "verdict": "-",
+      "gap": "Round 1 draft in progress"
+    },
+    {
+      "id": "citation-management",
+      "name": "Citation Management",
+      "status": "building",
+      "round": 0,
+      "scores": null,
+      "verdict": "-",
+      "gap": "Round 1 draft in progress"
+    },
+    {
+      "id": "timeline-building",
+      "name": "Timeline Building",
+      "status": "building",
+      "round": 0,
+      "scores": null,
+      "verdict": "-",
+      "gap": "Round 1 draft in progress"
+    },
+    {
+      "id": "relationship-mapping",
+      "name": "Relationship Mapping",
+      "status": "building",
+      "round": 0,
+      "scores": null,
+      "verdict": "-",
+      "gap": "Round 1 draft in progress"
+    },
+    {
+      "id": "documentation-standards",
+      "name": "Documentation Standards",
+      "status": "building",
+      "round": 0,
+      "scores": null,
+      "verdict": "-",
+      "gap": "Round 1 draft in progress"
+    }
+  ],
+  "log": [
+    {
+      "t": "01:55",
+      "msg": "Round 1: five domain builders dispatched in parallel"
+    }
+  ]
+}
