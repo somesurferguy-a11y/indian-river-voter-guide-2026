@@ -142,7 +142,7 @@ def main():
 
   <div class="stats">
     <div class="stat"><b>{passed}/{len(domains)}</b><span>Domains passing</span></div>
-    <div class="stat"><b>{rounds}</b><span>Critic rounds run</span></div>
+    <div class="stat"><b>{rounds}</b><span>Domain-rounds run</span></div>
     <div class="stat"><b>{len(crits)}</b><span>Scored criteria</span></div>
   </div>
 

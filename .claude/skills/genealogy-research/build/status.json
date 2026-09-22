@@ -12,58 +12,62 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-22 01:55",
+  "updated": "2026-09-22 06:53",
   "domains": [
     {
       "id": "research-workflows",
       "name": "Research Workflows",
-      "status": "building",
-      "round": 0,
+      "status": "in review",
+      "round": 1,
       "scores": null,
       "verdict": "-",
-      "gap": "Round 1 draft in progress"
+      "gap": "Awaiting round 1 critic verdict"
     },
     {
       "id": "citation-management",
       "name": "Citation Management",
-      "status": "building",
-      "round": 0,
+      "status": "in review",
+      "round": 1,
       "scores": null,
       "verdict": "-",
-      "gap": "Round 1 draft in progress"
+      "gap": "Awaiting round 1 critic verdict"
     },
     {
       "id": "timeline-building",
       "name": "Timeline Building",
-      "status": "building",
-      "round": 0,
+      "status": "in review",
+      "round": 1,
       "scores": null,
       "verdict": "-",
-      "gap": "Round 1 draft in progress"
+      "gap": "Awaiting round 1 critic verdict"
     },
     {
       "id": "relationship-mapping",
       "name": "Relationship Mapping",
-      "status": "building",
-      "round": 0,
+      "status": "in review",
+      "round": 1,
       "scores": null,
       "verdict": "-",
-      "gap": "Round 1 draft in progress"
+      "gap": "Awaiting round 1 critic verdict"
     },
     {
       "id": "documentation-standards",
       "name": "Documentation Standards",
-      "status": "building",
-      "round": 0,
+      "status": "in review",
+      "round": 1,
       "scores": null,
       "verdict": "-",
-      "gap": "Round 1 draft in progress"
+      "gap": "Awaiting round 1 critic verdict"
     }
   ],
   "log": [
     {
       "t": "01:55",
       "msg": "Round 1: five domain builders dispatched in parallel"
+    },
+    {
+      "t": "06:52",
+      "msg": "Round 1 drafts complete (4,914 lines across 5 references + 6 templates); critics dispatched"
     }
   ]
 }
