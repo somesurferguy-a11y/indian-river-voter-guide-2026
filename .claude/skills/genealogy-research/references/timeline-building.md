@@ -8,9 +8,9 @@ names outlived their boundaries, and catch the conflicts that only sequence reve
 date is old-style, numbered-month, regnal, or derived from an age; or two same-named
 candidates you need to separate; or a conclusion that "feels" wrong and you cannot say why.
 
-Sibling files: `references/research-workflows.md` (planning, logs, negative results, when to
-stop), `references/citation-management.md` (citation shape and the provenance chain),
-`references/relationship-mapping.md` (kinship notation, identity conclusions, DNA),
+Siblings: `references/research-workflows.md` (planning, logs, nil results, when to stop),
+`references/citation-management.md` (citation shape, provenance chain),
+`references/relationship-mapping.md` (kinship, identity conclusions, DNA),
 `references/documentation-standards.md` (proof triad, reports, GPS self-audit).
 
 ---

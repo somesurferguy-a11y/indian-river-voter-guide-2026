@@ -350,16 +350,14 @@ Carolina required no civil registration of births until 1913 and no baptismal re
 County congregation covering 1795 to 1810. No record states her parentage in words, so the question must be
 answered from indirect evidence, and it turns first on identity: the 1821 bride, the woman in Bartholomew
 Cray's household from 1830 to 1860, and the "Susannah Cray" in a Teale estate division must be shown to be one
-woman before any parentage inference is available.
-
-Continuity of household, county, husband's name, and stated birth state across all five appearances carries
-that identity. A competing candidate was searched for and not found: Rowan County marriage bonds and the
-clerk's marriage register, the federal census population schedules for the county 1820 through 1860 read page
-by page, and county estate and guardian records 1821 through 1845, all under Cray, Crey, and Craig; no second
-Susannah Cray of comparable age appears. That is a **negative search result of stated scope**, not negative
-evidence (§1.3): it eliminates the candidates those record groups would have held and no others. Tax lists
-were not searched, and a same-named woman who never married, held land, or took a share stays invisible to
-all of the above.
+woman before any parentage inference is available. Continuity of household, county, husband's name, and stated
+birth state across all five appearances carries that identity. A competing candidate was searched for and not
+found: Rowan County marriage bonds and the clerk's marriage register, the county's federal census population
+schedules 1820 through 1860 read page by page, and county estate and guardian records 1821 through 1845, all
+under Cray, Crey, and Craig; no second Susannah Cray of comparable age appears. That is a **negative search
+result of stated scope**, not negative evidence (§1.3): it eliminates the candidates those record groups would
+have held and no others. Tax lists were not searched, and a same-named woman who never married, held land, or
+took a share stays invisible to all of it.
 
 **The evidence.**
 
@@ -496,13 +494,12 @@ confirmed by negative evidence, and it survives the one direct statement to the 
 statement is undocumented, late, and inconsistent with the estate division.
 
 **Residual doubt, stated.** The division establishes that Susannah took a child's share. It does not
-distinguish a natural daughter from a step-daughter, or from a daughter of a wife's earlier marriage treated
-as a child in the distribution, and Rowan County records disclose no wife for Jesse Teale before about 1795. A
-deed of gift from Jesse Teale to Susannah, a Teale Bible record, or an identification of Jesse's wife would
-settle it. Until then the conclusion is that Susannah was **treated as Jesse Teale's daughter in the eyes of
-the law and of the county**, which is the sense in which the estate division speaks, and was probably his
-daughter by birth. (Period records often use *daughter-in-law* to mean step-daughter; the term is avoided here
-for that reason. Kinship-term drift: `references/relationship-mapping.md`.)
+distinguish a natural daughter from a step-daughter taken into the distribution, and Rowan County records
+disclose no wife for Jesse Teale before about 1795. A deed of gift, a Teale Bible record, or an
+identification of Jesse's wife would settle it. Until then the conclusion is that Susannah was **treated as
+Jesse Teale's daughter in the eyes of the law and of the county**, which is the sense in which the estate
+division speaks, and was probably his daughter by birth. (Period records often use *daughter-in-law* to mean
+step-daughter; the term is avoided here for that reason. Kinship drift: `references/relationship-mapping.md`.)
 
 ```
 APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
@@ -536,8 +533,7 @@ APPARATUS (selected; notes 7, 10, and 12 take the same shapes as 6 and 11)
 Shortened forms: Rowan Co., N.C., marriage bond, Cray-Teale, 1821. / Jesse Teale estate
        file (1838), Rowan Co., N.C., report of division, 1839. / Pell, Annals, [page].
 Source list: North Carolina. Rowan County. Estates records. State Archives of North
-       Carolina, Raleigh. / Pell, Ambrose. Annals of Rowan County. Salisbury, N.C.:
-       [publisher], 1897.
+       Carolina, Raleigh. / Pell, Ambrose. Annals of Rowan County. Salisbury, N.C., 1897.
 ```
 
 Syntax for all three shapes: `references/citation-management.md`.
@@ -941,11 +937,9 @@ later, and if you circulated someone else's mistake, correct it to everyone you 
 
 ---
 
-## Templates and cross-references
+## Templates
 
 - `templates/proof-argument.md` — the eight-part skeleton with inline guidance.
 - `templates/research-report.md` — report skeleton for client and self, with the sources-searched table.
-- Search strategy, planning, logs, negative searching as method, when to stop: `references/research-workflows.md`
-- Citation anatomy, layered and provenance citations, shortened forms, source lists, QA: `references/citation-management.md`
-- Chronologies, calendars, date arithmetic, place normalisation, conflict detection by sequence: `references/timeline-building.md`
-- Kinship, identity resolution, same-name separation, numbering systems, DNA integration: `references/relationship-mapping.md`
+
+Sibling reference files and what each owns are listed at the head of this file.

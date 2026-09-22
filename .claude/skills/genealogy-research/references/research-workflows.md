@@ -110,8 +110,8 @@ condition**.
 
 ## 3. The research plan
 
-One question per plan; a plan covering "the Cray family" is a wish list. Six parts, and the
-copy-paste form is at `templates/research-plan.md`.
+One question per plan; a plan covering "the Cray family" is a wish list. Six parts; the
+copy-paste form is `templates/research-plan.md`.
 
 | Part | Contents | The discipline it enforces |
 |---|---|---|
@@ -122,14 +122,13 @@ copy-paste form is at `templates/research-plan.md`.
 | 5. Expected yield per set | What it tells you if it names your subject, **and** what it tells you if it does not | Makes informative nils worth buying early |
 | 6. Falsification condition | What finding kills the hypothesis, plus which part-3 assertions you trust least | *Sound basis*, and the refutation test |
 
-**Priority order** is *Efficient sequence* in practice: order by expected information gain per
-unit cost, but let three things jump the queue. Records at risk (a deteriorating original, a
-closing repository, an aging informant); cheap records that would reframe everything (the
-jurisdictional survey, a published county record inventory); and records that would resolve an
-identity ambiguity, because until identity is settled everything downstream is provisional.
-
-**Flexibility** is also a standard. When step 4 hands you something unexpected, amend the plan
-in writing and date the amendment, rather than ignoring the finding or silently drifting.
+**Priority order** is *Efficient sequence* in practice: expected information gain per unit cost,
+with three queue-jumpers. Records at risk (a deteriorating original, a closing repository, an
+aging informant); cheap records that would reframe everything (the jurisdictional survey, a
+published county record inventory); and records that would resolve an identity ambiguity, because
+until identity is settled everything downstream is provisional. **Flexibility** is also a
+standard: when step 4 hands you something unexpected, amend the plan in writing and date the
+amendment rather than ignoring the finding or silently drifting.
 
 ---
 
@@ -137,45 +136,40 @@ in writing and date the amendment, rather than ignoring the finding or silently 
 
 ### 4.1 What the standard demands, and what it does not
 
-**It does not mean every record everywhere.** It does not mean you must exhaust a repository,
-or search records that could not plausibly contain relevant information, or keep going after
-the answer is established and independently corroborated.
+**It does not mean every record everywhere:** not exhausting a repository, not searching records
+that could not plausibly be relevant, not continuing after the answer is established and
+independently corroborated.
 
-**It does mean:** every *source class* reasonably likely to contain information relevant to
-*this question* about *this person* in *this place and period* has been either searched, or
-shown to be unavailable, lost, or out of coverage, with that shown-ness written down. The test
-is exhaustive-by-class, not exhaustive-by-item: you do not read every deed in the county, you
-search the grantor and grantee indexes for the whole relevant span, and where the indexes are
-known to be incomplete you say so and read the books for the critical years.
-
-It also means you did not stop when you found *an* answer. Reasonably exhaustive research is
-the mechanism by which conflicting evidence gets discovered at all; a conclusion that has not
-survived the search for its own counter-evidence is not a conclusion. Four practices carry most
-of the weight: whole-family research, FAN/cluster research, the jurisdictional survey, and the
-record-type inventory.
+**It does mean** every *source class* reasonably likely to hold information relevant to *this
+question* about *this person* in *this place and period* has been searched, or shown unavailable,
+lost, or out of coverage, with that shown-ness written down. The test is exhaustive-by-class, not
+exhaustive-by-item: you do not read every deed in the county, you search the grantor and grantee
+indexes for the whole relevant span, and where an index is known incomplete you say so and read
+the books for the critical years. It also means you did not stop at *an* answer. Reasonably
+exhaustive research is the mechanism by which conflicting evidence gets discovered at all; a
+conclusion that has not survived the search for its own counter-evidence is not a conclusion.
+Four practices carry the weight: whole-family research, FAN/cluster research, the jurisdictional
+survey, and the record-type inventory.
 
 ### 4.2 Whole-family and FAN/cluster research
 
 **Whole family** means every child, not just your line; both spouses and their prior and later
-marriages; the household in every census year it survives for. The younger children's records
-are often better than the eldest's, because civil registration caught up with them, and a
-daughter's marriage record may name a father the son's does not.
+marriages; the household in every surviving census year. The younger children's records are often
+better than the eldest's, because civil registration caught up with them, and a daughter's
+marriage record may name a father the son's does not.
 
-**FAN** is Elizabeth Shown Mills's term: **Friends, Associates, and Neighbours** (the "FAN
+**FAN** is Elizabeth Shown Mills's term, **Friends, Associates, and Neighbours** (the "FAN
 club"), also called cluster or collateral research. Your ancestor's paper trail is thin; the
-trail of the people around them is not, and those people moved, witnessed, married, and
-litigated in patterns your ancestor shares.
-
-Harvest the cluster from every document you already hold: witnesses to deeds, wills, and
-marriages; bondsmen and sureties; executors, administrators, guardians, and estate appraisers;
-grantors, grantees, and the adjoining owners in the metes-and-bounds description; chain carriers
-on a survey; jurors and petitioners on a road or court order; godparents, sponsors, and the
-officiating minister; informants on death certificates; census, tax-list, and plat neighbours;
-people appearing in both the origin and the destination records; fellow soldiers; fellow members
-of a congregation, lodge, or benefit society.
-
-Then **search the cluster as though each member were your subject**. You are not looking for
-them; you are looking for your subject to surface in their records (section 5.6).
+trail of the people around them is not, and those people moved, witnessed, married, and litigated
+in patterns your ancestor shares. Harvest the cluster from every document you hold: witnesses to
+deeds, wills, and marriages; bondsmen and sureties; executors, administrators, guardians, and
+appraisers; grantors, grantees, and the adjoining owners in the metes-and-bounds description;
+chain carriers on a survey; jurors and petitioners on a road or court order; godparents,
+sponsors, and the officiating minister; informants on death certificates; census, tax-list, and
+plat neighbours; people in both the origin and the destination records; fellow soldiers; fellow
+members of a congregation, lodge, or benefit society. Then **search the cluster as though each
+member were your subject**: you are not looking for them, you are looking for your subject to
+surface in their records (5.6).
 
 ### 4.3 The jurisdictional survey
 
