@@ -828,4 +828,5 @@ Two supporting habits: qualify half, step, adoptive and fostered relationships e
       than relying on the reader to hold a chart in their head.
 
 Copy-paste notation, the cousin grid, the numbering systems side by side and the standard abbreviations
-are in `templates/kinship-notation.md`.
+are in `templates/kinship-notation.md`. This file is the authority for all of them; the template is a
+paste-ready copy, so a correction is made here first and then carried there.

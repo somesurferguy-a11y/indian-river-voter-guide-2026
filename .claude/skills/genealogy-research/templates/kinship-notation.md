@@ -1,6 +1,9 @@
 # Template: kinship notation
 
-Copy-paste artifact for `references/relationship-mapping.md`. Four things live here: the
+Copy-paste artifact for `references/relationship-mapping.md`. **That reference file is the
+authority.** Everything here is a paste-ready copy of rules it states in full, so if the two ever
+disagree the reference governs, and a correction is made there first and then here. Four things
+live here: the
 writing conventions for half, step, adoptive and fostered relationships; the cousin
 degree-and-removal grid; the four descending numbering systems side by side on one family,
 with Ahnentafel for the ascending direction; and the standard abbreviations.
