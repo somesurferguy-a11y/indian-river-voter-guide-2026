@@ -50,9 +50,9 @@ Examined an online image of an original
    {original, full Where-in}; digital image, _{Site}_ ({site root URL} : accessed {date});
    citing {film / publication / record group the site names}.
 
-Examined microfilm
-   {original, full Where-in}; FamilySearch microfilm {film no.}, item {no.}; digital folder
-   (DGS) {no.}, FamilySearch Library, Salt Lake City.
+Examined microfilm (the DGS number is a pointer inside the film layer, not a layer seen)
+   {original, full Where-in}; FamilySearch microfilm {film no.}, item {no.}, FamilySearch
+   Library, Salt Lake City (scanned as digital folder (DGS) {no.}).
 
 Examined an index entry only
    "{exact database title}," database, _{Site}_ ({site root URL} : accessed {date}),
@@ -61,6 +61,9 @@ Examined an index entry only
 Read it in someone else's book ("cited in")
    {Author}, _{Title}_ ({place}: {publisher}, {year}), {page}, citing {their source}
    [not examined by this researcher].
+
+Source-list entry when you worked in online images (the list carries the web layer too)
+   {Series, inverted}. Digital images. _{Site}_. {site root URL} : {year accessed}.
 ```
 
 Descriptor matters: `database` = index fields only. `database with images` = index plus
@@ -78,8 +81,9 @@ Short  Indiana death certificate no. {cert. no.} ({year}), Teale.
 List   Indiana. {State health agency as named on the certificates}. Death certificates,
        {year range}. Indiana Department of Health, Vital Records, Indianapolis.
 Online Indiana, {state health agency as named on the certificate}, death certificate no.
-       {cert. no.} ({year of cert.}), Susannah Teale; digital image, _{Site Name}_
-       ({site root URL} : accessed {date}); citing {the series or digital folder (DGS)
+       {cert. no.} ({year of cert.}), Susannah Teale, informant {informant as named},
+       {relationship as stated}; digital image, _{Site Name}_ ({site root URL} : accessed
+       {date}); citing {the series or digital folder (DGS)
        number the site names}.
 ```
 Certificate numbers restart annually: always parenthesise the certificate year. Who is a
@@ -238,13 +242,14 @@ different courts and years apart.
 Full   "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}.
 Short  "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}.
 List   _Indianapolis Journal_. Indianapolis, Indiana. {year range}.
-Online "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}; digital
-       images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the title's LCCN
-       or the provider's own item identifier}.
+Online "Death of B. Cray," _Indianapolis Journal_ (LCCN {no.}), {date}, p. {page}, col.
+       {col.}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {the
+       provider's own item or image identifier}.
 ```
 Untitled item: `[untitled death notice]`. Add the edition if the paper ran several a day.
 The newspaper title is italicised (a published title); the headline stays in quotation
-marks. For a digitised paper carry the title's LCCN, since newspaper site URLs move often.
+marks. For a digitised paper carry the title's LCCN beside the title, not behind `citing`:
+it identifies the newspaper, not a layer beneath the image.
 
 ### Cemetery marker and sexton record
 
@@ -476,10 +481,11 @@ Full checklist with commentary and the before/after defect table:
 - [ ] Italics are actually on: strip `_underscores_` and italicise every published title
       (book, journal, newspaper, website) when you paste; code fences cannot show italics.
 - [ ] The layer I EXAMINED leads; `citing` marks everything I did not see, with the correct
-      descriptor (`database` / `database with images` / `digital images`).
+      descriptor (`database` / `database with images` / `digital images` / `digital image`).
 - [ ] Access date on every online item; square brackets around everything I supplied.
 - [ ] Shape matches position (full / short / source list, no locator); short note
       unambiguous; every number, title, and identifier was read off the item, not assumed.
 - [ ] Private holdings and interviews carry the provenance or informant sentence.
+- [ ] A note with a website layer has a source-list entry with the website layer too.
 
 Cite as you capture, never at write-up.

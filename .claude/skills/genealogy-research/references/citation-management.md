@@ -148,8 +148,18 @@ this researcher work in?* One entry stands behind fifty notes, and a page number
 false for forty-nine of them. The list is also sorted, so its lead element must be what a
 reader would look under, which is why it inverts.
 
+**When the note carries a website layer, so does the list entry.** A list entry that names only the
+courthouse or NARA, when every image came through a website, asserts work in a repository you never
+visited. Name the series first, then the reproduction you worked in: the site in italics, its root
+URL, and the year of access. If you worked in both the images and the originals, give two entries.
+
 ```
-Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Cray-Teale, {date}; Clerk of the Circuit Court, Indianapolis.
+List   Indiana. Marion County. 1880 U.S. census, population schedule. Digital images. _Ancestry.com_. https://www.ancestry.com : {year accessed}.
+List   Marion County, Indiana. Deed Books, {year range}. Digital images. _FamilySearch_. https://www.familysearch.org : {year accessed}.
+```
+
+```
+Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah Teale, {date}; Clerk of the Circuit Court, Indianapolis.
 Short  Marion Co., Ind., Marriage Record {vol.}: {page}, Cray-Teale.
 List   Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circuit Court, Indianapolis.
 
@@ -230,8 +240,8 @@ and 4 below as the two halves of that distinction.
 **Mechanics.** Layers are separated by **semicolons**. Layers you did *not* see, which the
 provider names for you, are introduced by **`citing`**, a word that functions as a disclaimer:
 *the provider asserts this, I did not verify it*. Name the kind of digital object: `database`
-(index fields only), `database with images`, and `digital images` (images, no index) are three
-different claims about what you saw.
+(index fields only), `database with images`, `digital images` (a browsable set, no index) and
+`digital image` (one image) are four different claims about what you saw.
 
 **The website layer has two shapes, and which one is right depends on what the site is to you.**
 
@@ -260,10 +270,11 @@ the image; you did not see the film, and `citing` marks the boundary of your kno
 1880 U.S. census, Marion County, Indiana, population schedule, Indianapolis, ED {ED no.}, sheet {no.}, dwelling {no.}, family {no.}, Bartholomew Cray; digital image, _Ancestry.com_ (https://www.ancestry.com : accessed {date}); citing NARA microfilm publication T9, roll {roll no.}.
 ```
 
-**3. Microfilm examined.** Two layers: original, film. No web layer at all.
+**3. Microfilm examined.** Two layers: original, film. The DGS number rides inside the film layer as a
+pointer for today's reader; it is not a layer you examined, so it takes no semicolon of its own.
 
 ```
-Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date}; FamilySearch microfilm {film no.}, item {no.}; digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date}; FamilySearch microfilm {film no.}, item {no.}, FamilySearch Library, Salt Lake City (scanned as digital folder (DGS) {no.}).
 ```
 
 FamilySearch stopped lending microfilm in 2017 and the Family History Library was renamed the
@@ -350,7 +361,7 @@ close the section.
 Full   Indiana, {state health agency as named on the certificate}, death certificate no. {cert. no.} ({year of cert.}), Susannah Teale, informant {informant as named}, {relationship as stated}; Indiana Department of Health, Vital Records, Indianapolis.
 Short  Indiana death certificate no. {cert. no.} ({year}), Teale.
 List   Indiana. {State health agency as named on the certificates}. Death certificates, {year range}. Indiana Department of Health, Vital Records, Indianapolis.
-Online Indiana, {state health agency as named on the certificate}, death certificate no. {cert. no.} ({year of cert.}), Susannah Teale; digital image, _{Site Name}_ ({site root URL} : accessed {date}); citing {the series or digital folder (DGS) number the site names}.
+Online Indiana, {state health agency as named on the certificate}, death certificate no. {cert. no.} ({year of cert.}), Susannah Teale, informant {informant as named}, {relationship as stated}; digital image, _{Site Name}_ ({site root URL} : accessed {date}); citing {the series or digital folder (DGS) number the site names}.
 ```
 
 Certificate numbers restart annually, so parenthesise the certificate year; the number alone is
@@ -510,7 +521,7 @@ never fold them into a single "naturalization record."
 Full   "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}.
 Short  "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}.
 List   _Indianapolis Journal_. Indianapolis, Indiana. {year range}.
-Online "Death of B. Cray," _Indianapolis Journal_, {date}, p. {page}, col. {col.}; digital images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the title's LCCN or the provider's own item identifier}.
+Online "Death of B. Cray," _Indianapolis Journal_ (LCCN {no.}), {date}, p. {page}, col. {col.}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {the provider's own item or image identifier}.
 ```
 
 The **newspaper title is italicised** (it is a published title) and the **headline is in
@@ -518,7 +529,8 @@ quotation marks** (it is an item within the publication). Describe an untitled i
 `[untitled death notice]`. Add the edition where a paper ran several in a day, because page
 numbers differ between them. For a digitised paper carry the title's Library of Congress control
 number (LCCN) or the provider's item identifier: newspaper site URLs move often, and the LCCN
-identifies the title across every provider that has digitised it.
+identifies the title across every provider that has digitised it. The LCCN belongs beside the title
+it identifies, not behind `citing`: it names the newspaper, not a layer beneath the image you saw.
 
 ### Cemetery markers and sexton records
 
@@ -564,7 +576,7 @@ List   "{exact database title}." Database. _{Site Name}_. {site root URL} : {yea
 ```
 
 Copy the database title **exactly**, including its date range and any odd capitalisation, in
-quotation marks. Pick the right descriptor: `database`, `database with images`, `digital images`.
+quotation marks. Pick the right descriptor: `database`, `database with images`, `digital images`, `digital image`.
 These three tell a reader what you can and cannot have seen.
 
 ### Digitised books
@@ -701,7 +713,7 @@ Rules here; the paste-ready string for every row lives once, in
 | **Unpaginated register** | Supply a locator and state the counting rule once per source. Prefer any existing anchor (a date, entry number, column heading, film frame, named officiant) over a raw count; two anchors beat one count. |
 | **Mis-numbered page** | Cite what is printed, then correct in brackets: `p. 214 [mis-numbered; falls physically between pp. 211 and 212]`. Never silently renumber: the reader will meet the same error, and your bracket tells them they are in the right place. |
 | **Two numbering systems** | Cite the system the repository's own finding aid uses, then supply the other in parentheses: `fol. 42 (stamped), p. 83 (written)`. If you cannot tell which it uses, give both and label them. Common in English registers (stamped folio vs written page), 1850-1870 US census schedules, and volume pagination vs film frame. |
-| **Double-dated or Old Style date** | **Reproduce the date exactly as the entry gives it: `12 February 1712/13`. Do not convert inside the citation** and do not silently modernise the year. Where the entry gives one year and you have established the style, mark it as yours: `2 January 1691 [Old Style; year beginning 25 March]`. The citation reproduces what the page says; conversion, the Julian and Gregorian reasoning, and which convention your report uses belong to `references/timeline-building.md`. A converted date presented as the register's wording is a fabricated quotation of a record. |
+| **Double-dated or Old Style date** | **Reproduce the date exactly as the entry gives it: `12 February 1712/13`. Do not convert inside the citation** and do not silently modernise the year. Where the entry gives one year and you have established the style, mark it as yours: `2 January 1691 [Old Style; year beginning 25 March]`. The citation reproduces what the page says; conversion, the Julian and Gregorian reasoning, and which convention your report uses belong to `references/timeline-building.md`. A converted date presented as the register's wording is a fabricated quotation of a record. The same rule covers regnal years and Quaker numbered-month dates: reproduce `the 3rd day of the 5th month 1698` as written and convert in the chronology, not the citation. |
 | **Loose paper, unprocessed collection** | Describe the container as you found it, date the visit, flag the instability, and photograph the container label as well as the document. |
 | **Recatalogued since your visit** | Keep the citation as you used it and append the current reference, so readers with either finding aid can get there. Never quietly overwrite: you examined nothing under the new number, and your notes and images carry the old one. |
 | **Behind a paywall** | Nothing changes in the citation. It raises the stakes on the layer beneath: always carry the film number, roll, record group, or repository so a reader without a subscription can reach the content another way. Do not write "available by subscription" in place of a locator. |
@@ -780,11 +792,13 @@ Run this on every citation before it leaves your file. About twenty seconds, onc
 - [ ] **Where-in** names the one entry: volume, page, entry, line, or number. Present, specific.
 - [ ] **Where-is** names a repository, collection, film, or site plus a persistent identifier.
 - [ ] **The layer I examined leads**, and `citing` marks everything I did not see.
-- [ ] `database`, `database with images`, or `digital images` correctly describes what I saw.
+- [ ] `database`, `database with images`, `digital images` (a set) or `digital image` (one) correctly
+      describes what I saw.
 - [ ] An access date appears on every online item.
 - [ ] Supplied information is in **square brackets**, and nothing the item states is.
 - [ ] The **shape** matches the position: full note first, short note after, source-list entry
       with no specific locator.
+- [ ] If a note carries a website layer, the matching **source-list entry** carries it too.
 - [ ] The short note is **unambiguous** against every other source in this document.
 - [ ] A reader could classify the source as original, derivative, or authored narrative from the
       citation alone.
@@ -812,7 +826,7 @@ Run this on every citation before it leaves your file. About twenty seconds, onc
 | **Nil result recorded without a citation** | `Searched Ancestry for Cray. Nothing.` | `"{exact database title}," database, _Ancestry.com_ (https://www.ancestry.com : accessed {date}), searched for Cray, Cray*, and Gray, {year range}, {jurisdiction}: no entry found.` |
 
 **A nil result needs a citation as complete as a positive one.** "Searched the census, nothing
-there" is not a negative search result; it is an untestable claim, and it is the claim your
+there" is a negative search result nobody can test, and it is not evidence of anything. It is the claim your
 successor is most likely to have to re-do from scratch. Cite the source you searched to the same
 five elements, then add **what you searched for, how, and over what range** (names and spelling
 variants, date span, jurisdiction, whether you searched the index or read every page), and record
