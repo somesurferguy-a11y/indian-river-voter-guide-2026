@@ -136,7 +136,7 @@ structures**, not one structure at three lengths. Mixing them is a visible defec
 **The semicolon does two jobs, and they are the same job.** It separates **provenance layers**
 (`...; digital image, _Ancestry.com_ (...); citing NARA microfilm publication T9, roll {roll no.}.`)
 and it introduces the **Where-is** in a single-layer citation
-(`...Marriage Record {vol.}: {page}, Cray-Teale, {date}; Clerk of the Circuit Court, Indianapolis.`).
+(`...Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah Teale, {date}; Clerk of the Circuit Court, Indianapolis.`).
 In both cases the semicolon marks the move out of the source and into where that source lives,
 whether "where it lives" is a courthouse shelf or the next layer of reproduction. Commas stay
 inside one layer. If you find yourself wanting a semicolon in the middle of a layer, you have
@@ -250,7 +250,7 @@ because a memorial page is a publication rather than a reproduction of one.
 **1. Original examined in person.** One layer. No `citing`, no access date, no URL.
 
 ```
-Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray ({year}), original petition and inventory; Indiana State Archives, Indianapolis.
+Marion County, Indiana, {court with probate jurisdiction, as then named}, estate file no. {no.}, Bartholomew Cray ({year}), original petition and inventory; Indiana State Archives, Indianapolis.
 ```
 
 **2. Image of an original on a commercial site.** Three layers: original, image, film. You saw
@@ -404,7 +404,7 @@ birth and undetermined about who was present.
 Full   Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufregister {year range}," p. {page}, entry {no.}, baptism of Susannah Teale, {date}; parish office, Indianapolis.
 Short  St. John's Lutheran (Indianapolis), "Taufregister," p. {page}, entry {no.}, Teale.
 List   Saint John's Evangelical Lutheran Church (Indianapolis, Indiana). "Taufregister {year range}." Parish office, Indianapolis.
-Online Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufregister {year range}," p. {page}, entry {no.}, baptism of Susannah Teale, {date}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+Online Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufregister {year range}," p. {page}, entry {no.}, baptism of Susannah Teale, {date}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}), digital folder (DGS) {no.}, image {n}; citing FamilySearch microfilm {film no.}; parish office, Indianapolis.
 ```
 
 Parenthesise the church's place, because church names repeat endlessly. Cite the volume by the
@@ -415,15 +415,15 @@ the event date (`references/timeline-building.md`).
 ### Probate files and will books (two different sources)
 
 ```
-Full   Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date}, proved {date}; Clerk of the Circuit Court, Indianapolis.
+Full   Marion County, Indiana, {court with probate jurisdiction, as then named}, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date}, proved {date}; Clerk of the Circuit Court, Indianapolis.
 Short  Marion Co., Ind., Will Book {vol.}: {page}, Cray will.
-List   Marion County, Indiana. Probate Court. Will Books, {year range}. Clerk of the Circuit Court, Indianapolis.
-Online Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date}, proved {date}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+List   Marion County, Indiana. {Court with probate jurisdiction, as named for the years listed}. Will Books, {year range}. Clerk of the Circuit Court, Indianapolis.
+Online Marion County, Indiana, {court with probate jurisdiction, as then named}, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date}, proved {date}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}), digital folder (DGS) {no.}, image {n}; citing FamilySearch microfilm {film no.}; Clerk of the Circuit Court, Indianapolis.
 
-Full   Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray ({year}); Indiana State Archives, Indianapolis.
+Full   Marion County, Indiana, {court with probate jurisdiction, as then named}, estate file no. {no.}, Bartholomew Cray ({year}); Indiana State Archives, Indianapolis.
 Short  Marion Co., Ind., estate file no. {no.}, Cray.
-List   Marion County, Indiana. Probate Court. Estate files, {year range}. Indiana State Archives, Indianapolis.
-Online Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray ({year}), {document within the file}, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the film or digital folder (DGS) number the site names}, Indiana State Archives, Indianapolis.
+List   Marion County, Indiana. {Court with probate jurisdiction, as named for the years listed}. Estate files, {year range}. Indiana State Archives, Indianapolis.
+Online Marion County, Indiana, {court with probate jurisdiction, as then named}, estate file no. {no.}, Bartholomew Cray ({year}), {document within the file}, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the film or digital folder (DGS) number the site names}, Indiana State Archives, Indianapolis.
 ```
 
 The distinction is load-bearing. The will book is a clerk's recorded copy, a **derivative**, and
@@ -433,13 +433,19 @@ and guardianship papers that never reached the book. Never cite a will book entr
 original will." In the packet, name the paper: the file is a container and the affidavit inside
 it is what carries your assertion.
 
+**Probate jurisdiction moves, so the court is a slot.** In Indiana a separate Probate Court sat from
+1829; the Court of Common Pleas took probate from 1853; the Circuit Court took it when Common Pleas was
+abolished in 1873; and Marion County gained its own Probate Court again in 1907. An 1868 Marion County
+will was proved in the Court of Common Pleas. Name the court the record names, and look the chain up
+for any other state or county rather than assuming it.
+
 ### Deeds and land records
 
 ```
 Full   Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date of instrument}, recorded {date of recording}; County Recorder's Office, Indianapolis.
 Short  Marion Co., Ind., Deed Book {vol.}: {page}, Cray to Teale.
 List   Marion County, Indiana. Deed Books, {year range}. County Recorder's Office, Indianapolis.
-Online Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date of instrument}, recorded {date of recording}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+Online Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date of instrument}, recorded {date of recording}; digital images, _FamilySearch_ (https://www.familysearch.org : accessed {date}), digital folder (DGS) {no.}, image {n}; citing FamilySearch microfilm {film no.}; County Recorder's Office, Indianapolis.
 ```
 
 Give **both** dates. The gap between execution and recording is routinely years and is
@@ -456,18 +462,17 @@ Full   Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War
 Short  Cray pension no. {cert. no.}, RG 15, NARA-Washington.
 List   United States. Department of Veterans Affairs. "{series title exactly as the finding aid gives it}." Record Group 15. National Archives, Washington, D.C.
 
-Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana Infantry; Records of the Adjutant General's Office, 1780s-1917, Record Group 94; National Archives, Washington, D.C.
+Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana Infantry, Records of the Adjutant General's Office, 1780s-1917, Record Group 94; National Archives, Washington, D.C.
 Short  Cray CSR, Co. {co.}, {regiment} Ind. Inf., RG 94, NARA-Washington.
 List   United States. Adjutant General's Office. "{series title exactly as the finding aid gives it}." Record Group 94. National Archives, Washington, D.C.
 ```
 
-**The source-list entry is series-level, even for a discrete case file.** It is tempting to write
-`Cray, Bartholomew. Pension file, certificate no. {cert. no.}` because the file feels like a
-book with a shelfmark, but a certificate number is a specific locator and §3 says the list never
-carries one. The list answers *what bodies of material did I work in*, and the answer is the
-series, not Bartholomew Cray. Keep the certificate number in every note, where it belongs and
-where it changes per use. If you need a finding list keyed to individual case files, that is a
-research-log column, not a source list: `references/research-workflows.md`.
+**The source-list entry is series-level, even for a discrete case file.** A certificate number is a
+locator, so it lives in the notes (§3); a finding list keyed to case files belongs in the research log
+(`references/research-workflows.md`). **A record-group title is archival provenance, not the creating
+body.** RG 15 is titled for the Department of Veterans Affairs, the modern successor; a Civil War
+pension was created by the Pension Bureau. Lead the list entry with the record group as NARA titles
+it, and name the creating office as it then was when you describe the file in prose or in a note.
 
 A pension file is a **file**, not a document, and its contents differ wildly in quality: a
 surgeon's certificate is primary for the examination and secondary for the birth date the
@@ -485,7 +490,7 @@ Short  Marion Co., Ind., Declarations of Intention {vol.}: {page}, Cray.
 List   Marion County, Indiana. Circuit Court. Declarations of Intention, {year range}. Indiana State Archives, Indianapolis.
 Online Marion County, Indiana, Circuit Court, "Declarations of Intention," vol. {vol.}: {page}, Bartholomew Cray, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}); citing {the film or digital folder (DGS) number the site names}, Indiana State Archives, Indianapolis.
 
-Full   {U.S. district court as named on the record at the date of the petition}, petition for naturalization no. {no.}, Bartholomew Cray, {date}; Records of District Courts of the United States, Record Group 21; National Archives at Chicago.
+Full   {U.S. district court as named on the record at the date of the petition}, petition for naturalization no. {no.}, Bartholomew Cray, {date}, Records of District Courts of the United States, Record Group 21; National Archives at Chicago.
 Short  {U.S. district court}, petition for naturalization no. {no.}, Cray.
 List   United States. {District court as named on the records}. Petitions for naturalization, {year range}. Record Group 21. National Archives at Chicago.
 ```
@@ -798,7 +803,7 @@ Run this on every citation before it leaves your file. About twenty seconds, onc
 | **Missing locator** | `Marion County, Indiana, Deed Books; County Recorder's Office, Indianapolis.` | `Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date}, recorded {date}; County Recorder's Office, Indianapolis.` |
 | **Repository omitted** | `Marion County, Indiana, Will Book {vol.}: {page}, will of Bartholomew Cray.` | Add Where-is: `...; Clerk of the Circuit Court, Indianapolis.` A county name is a jurisdiction, not a place a reader can walk into. |
 | **Undated access, no stable identifier** | `Find a Grave (https://www.findagrave.com), Bartholomew Cray.` | `_Find a Grave_, database with images (https://www.findagrave.com : accessed {date}), memorial {memorial no.}, Bartholomew Cray ({birth year}-{death year}), Crown Hill Cemetery, Indianapolis, Marion County, Indiana; gravestone photograph by {contributor}.` |
-| **Derivative presented as original** | `Original will of Bartholomew Cray, Marion County, Indiana, Will Book {vol.}: {page}.` | `Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, proved {date}; Clerk of the Circuit Court, Indianapolis.` |
+| **Derivative presented as original** | `Original will of Bartholomew Cray, Marion County, Indiana, Will Book {vol.}: {page}.` | `Marion County, Indiana, {court with probate jurisdiction, as then named}, Will Book {vol.}: {page}, recorded copy of the will of Bartholomew Cray, proved {date}; Clerk of the Circuit Court, Indianapolis.` |
 | **Abbreviations in a first full note** | `Marion Co., Ind., Mar. Rec. 4: 112.` | Spell it out on first use. Abbreviate only in the short note. |
 | **Source-list entry carrying a locator** | `Marion County, Indiana. Marriage Record 4: 112. Clerk of the Circuit Court.` | `Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circuit Court, Indianapolis.` |
 | **"Cited in" collapsed into a direct citation** (read in a county history) | `Marion County, Indiana, Will Book {vol.}: {page}.` | `{Author}, _{Title of the Work}_ ({place}: {publisher}, {year}), {page}, citing Marion County, Indiana, Will Book {vol.}: {page} [not examined by this researcher].` |

@@ -89,12 +89,13 @@ Where-is (`references/citation-management.md` §2).
 ### County marriage record
 
 ```
-Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Cray-Teale, {date}; Clerk of
-       the Circuit Court, Indianapolis.
+Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah
+       Teale, {date}; Clerk of the Circuit Court, Indianapolis.
 Short  Marion Co., Ind., Marriage Record {vol.}: {page}, Cray-Teale.
 List   Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circuit Court,
        Indianapolis.
 ```
+`Cray-Teale` is groom-bride shorthand for SHORT notes only; a full note names both parties.
 
 ### US federal census
 
@@ -126,37 +127,42 @@ List   Saint John's Evangelical Lutheran Church (Indianapolis, Indiana). "Taufre
        {year range}." Parish office, Indianapolis.
 Online Saint John's Evangelical Lutheran Church (Indianapolis, Indiana), "Taufregister
        {year range}," p. {page}, entry {no.}, baptism of Susannah Teale, {date}; digital
-       images, _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing
-       digital folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+       images, _FamilySearch_ (https://www.familysearch.org : accessed {date}), digital
+       folder (DGS) {no.}, image {n}; citing FamilySearch microfilm {film no.}; parish
+       office, Indianapolis.
 ```
 Always parenthesise the church's place. Baptism is not birth; burial is not death.
 
 ### Probate: will book AND estate file (two different sources)
 
 ```
-Full   Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the
-       will of Bartholomew Cray, written {date}, proved {date}; Clerk of the Circuit Court,
-       Indianapolis.
+Full   Marion County, Indiana, {court with probate jurisdiction, as then named}, Will Book
+       {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date},
+       proved {date}; Clerk of the Circuit Court, Indianapolis.
 Short  Marion Co., Ind., Will Book {vol.}: {page}, Cray will.
-List   Marion County, Indiana. Probate Court. Will Books, {year range}. Clerk of the Circuit
-       Court, Indianapolis.
-Online Marion County, Indiana, Probate Court, Will Book {vol.}: {page}, recorded copy of the
-       will of Bartholomew Cray, written {date}, proved {date}; digital images,
-       _FamilySearch_ (https://www.familysearch.org : accessed {date}); citing digital
-       folder (DGS) {no.}, FamilySearch Library, Salt Lake City.
+List   Marion County, Indiana. {Court with probate jurisdiction, as named for the years
+       listed}. Will Books, {year range}. Clerk of the Circuit Court, Indianapolis.
+Online Marion County, Indiana, {court with probate jurisdiction, as then named}, Will Book
+       {vol.}: {page}, recorded copy of the will of Bartholomew Cray, written {date},
+       proved {date}; digital images, _FamilySearch_ (https://www.familysearch.org :
+       accessed {date}), digital folder (DGS) {no.}, image {n}; citing FamilySearch
+       microfilm {film no.}; Clerk of the Circuit Court, Indianapolis.
 
-Full   Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray
-       ({year}); Indiana State Archives, Indianapolis.
+Full   Marion County, Indiana, {court with probate jurisdiction, as then named}, estate
+       file no. {no.}, Bartholomew Cray ({year}); Indiana State Archives, Indianapolis.
 Short  Marion Co., Ind., estate file no. {no.}, Cray.
-List   Marion County, Indiana. Probate Court. Estate files, {year range}. Indiana State
-       Archives, Indianapolis.
-Online Marion County, Indiana, Probate Court, estate file no. {no.}, Bartholomew Cray
+List   Marion County, Indiana. {Court with probate jurisdiction, as named for the years
+       listed}. Estate files, {year range}. Indiana State Archives, Indianapolis.
+Online Marion County, Indiana, {court with probate jurisdiction, as then named}, estate
+       file no. {no.}, Bartholomew Cray
        ({year}), {document within the file}, {date}; digital images, _{Site Name}_
        ({site root URL} : accessed {date}); citing {the film or digital folder (DGS)
        number the site names}, Indiana State Archives, Indianapolis.
 ```
 Will book = clerk's copy = DERIVATIVE. Loose estate packet = the originals. Never call a
-will book entry "the original will."
+will book entry "the original will." The court is a slot because probate jurisdiction
+moves: in Marion County, Probate Court from 1829, Common Pleas from 1853, Circuit Court
+from 1873, Probate Court again from 1907.
 
 ### Deeds and land
 
@@ -169,8 +175,9 @@ List   Marion County, Indiana. Deed Books, {year range}. County Recorder's Offic
        Indianapolis.
 Online Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale,
        {date of instrument}, recorded {date of recording}; digital images, _FamilySearch_
-       (https://www.familysearch.org : accessed {date}); citing digital folder (DGS) {no.},
-       FamilySearch Library, Salt Lake City.
+       (https://www.familysearch.org : accessed {date}), digital folder (DGS) {no.}, image
+       {n}; citing FamilySearch microfilm {film no.}; County Recorder's Office,
+       Indianapolis.
 ```
 Give BOTH dates. US federal land: cite the patent via General Land Office Records
 (https://glorecords.blm.gov) and the land entry case file separately, in Record Group 49,
@@ -188,7 +195,7 @@ List   United States. Department of Veterans Affairs. "{series title exactly as 
        aid gives it}." Record Group 15. National Archives, Washington, D.C.
 
 Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana
-       Infantry; Records of the Adjutant General's Office, 1780s-1917, Record Group 94;
+       Infantry, Records of the Adjutant General's Office, 1780s-1917, Record Group 94;
        National Archives, Washington, D.C.
 Short  Cray CSR, Co. {co.}, {regiment} Ind. Inf., RG 94, NARA-Washington.
 List   United States. Adjutant General's Office. "{series title exactly as the finding aid
@@ -214,7 +221,7 @@ Online Marion County, Indiana, Circuit Court, "Declarations of Intention," vol. 
        Indiana State Archives, Indianapolis.
 
 Full   {U.S. district court as named on the record at the date of the petition}, petition
-       for naturalization no. {no.}, Bartholomew Cray, {date}; Records of District Courts
+       for naturalization no. {no.}, Bartholomew Cray, {date}, Records of District Courts
        of the United States, Record Group 21; National Archives at Chicago.
 Short  {U.S. district court}, petition for naturalization no. {no.}, Cray.
 List   United States. {District court as named on the records}. Petitions for
