@@ -97,11 +97,18 @@ IDENTITY NOTE - Bartholomew Cray of Bellwether Creek
 Question:   Is the B. Cray taxed in Sussex Co. 1819-1848 the man whose 1848 will
             was proved there in 1851?
 For:        Same parcel (84 a., Bellwether Cr.) in the 1819 deed and the 1848 will
-              (proved 1851). [S1][S2]
+              (proved 1851). Both derivative (recorded copies); primary for the
+              parcel, from the parties. [S1][S2]
             Same two witnesses (Teale, Marchbank) to the 1819 deed and the 1848
-              will (proved 1851). [S1][S2]
-            Age in 1850 census (62) consistent with age at the 1810 marriage. [S3][S4]
-Against:    1827 tax list shows two B. Crays in the same hundred. [S5]
+              will (proved 1851). Derivative; primary for who attested, as the
+              clerk copied the names from the signed instruments. [S1][S2]
+            Age in 1850 census (62) consistent with age at the 1810 marriage.
+              Census schedule, original or clerk's copy per the set viewed; age
+              secondary, informant not stated, rounding likely. Marriage record
+              original; primary for the date it records, silent on age.
+              Consistency only, not identification. [S3][S4]
+Against:    1827 tax list shows two B. Crays in the same hundred. Original;
+              primary, the assessor's own listing. [S5]
 Resolved:   The second is Bartholomew Cray of Slaughter Neck, taxed on a different
               parcel, d. 1839 (adm. bond). [S5][S6] Assignment of the 1827 entries
               follows the parcel. See SEPARATION FILE: Cray, Bartholomew.
@@ -146,9 +153,9 @@ proof argument (`references/documentation-standards.md`).
 NAME UNDER STUDY: Bartholomew Cray (also Crey, Craye, Kray)
 UNIVERSE: Sussex County, Delaware, 1795-1860
 WIDENED:  3 May 2026 to Ohio, 1840-1860, after C's removal was established.
-          Lower bound 1795 predates no candidate's first record; A's ca. 1788
-          birth falls outside it and is carried from the identity note, not from
-          a record inside this universe.
+          The 1795 lower bound is the earliest surviving county series searched.
+          A's ca. 1788 birth precedes it and is carried from the identity note,
+          not from a record inside this universe.
 
 A  "of Bellwether Creek"  b. ca. 1788, d. 1851, cooper, m. Susannah Teale
 B  "of Slaughter Neck"    b. ca. 1790, d. 1839, farmer, m. (2) Dorcas (Wake) Kell
@@ -164,6 +171,9 @@ RECORD                           ASSIGNED    BASIS                          CITA
                                                in the county; hand unclear
 1841 Ohio deed, B. Cray          C           A taxed in Sussex in 1841;     [S9][S10]
                                                B d. 1839
+
+3 May 2026 / [researcher]. Every change of assignment is dated in place,
+never overwritten.
 ```
 
 **A separation file with no citation column is a claim, not a record.** The bracketed keys resolve in
@@ -209,6 +219,7 @@ reason. Never silently translate.
 
 ```
 Record:      Bartholomew Cray of Bellwether Creek, will executed 1848 (proved 1851)
+Source:      [S2: full reference note]
 Source says: "to my cousin Silas Cray"
 Read as:     an unspecified collateral kinsman. Silas Cray (1825-1901) is the son of
              Bartholomew Cray of Slaughter Neck, whose kinship to the testator is not
@@ -724,7 +735,9 @@ and carry the revision into every derived chart and report (revision and archivi
 4. **Distinguish the genetic from the documentary relationship in the output.** Both answer real
 questions. "Josiah Cray (b. 1840) was raised as, and legally was, the son of Bartholomew Cray the younger;
 autosomal and Y-DNA evidence indicates his biological father was a member of the Purnell family, a
-surname absent from the documented pedigree" beats either half alone.
+surname absent from the documented pedigree [adoption or guardianship record; DNA citation per
+`references/citation-management.md`]" beats either half alone. The genetic half is cited like any other
+evidence; an uncited DNA conclusion about a named person is an assertion, not a finding.
 5. **Expect the collapse to propagate upward.** A misattributed link invalidates every conclusion
 that depended on it, not just the link. List the affected conclusions explicitly.
 

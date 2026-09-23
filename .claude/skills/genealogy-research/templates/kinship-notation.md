@@ -85,6 +85,7 @@ Log a record's own kinship word before you interpret it:
 
 ```
 Record:      [creator, instrument, execution date (proved date)]
+Source:      [full reference note]
 Source says: "[the word, verbatim, original spelling]"
 Read as:     [your reading]
 Basis:       [what supports the reading: era, place, the writer's other usages]
