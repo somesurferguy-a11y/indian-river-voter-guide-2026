@@ -12,7 +12,7 @@
     "relationship_clarity",
     "documentation_completeness"
   ],
-  "updated": "2026-09-23 02:02",
+  "updated": "2026-09-23 02:09",
   "domains": [
     {
       "id": "research-workflows",
@@ -47,17 +47,17 @@
     {
       "id": "timeline-building",
       "name": "Timeline Building",
-      "status": "in review",
+      "status": "revising",
       "round": 2,
       "scores": {
         "citation_formats": 7,
-        "source_evaluation": 7,
-        "timeline_accuracy": 5,
-        "relationship_clarity": 8,
+        "source_evaluation": 5,
+        "timeline_accuracy": 6,
+        "relationship_clarity": 7,
         "documentation_completeness": 7
       },
       "verdict": "FAIL",
-      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
+      "gap": "ev column tags rows direct because the record speaks explicitly, not because they answer the sheet's question; 8 worked rows wrong"
     },
     {
       "id": "relationship-mapping",
@@ -77,17 +77,17 @@
     {
       "id": "documentation-standards",
       "name": "Documentation Standards",
-      "status": "in review",
+      "status": "revising",
       "round": 2,
       "scores": {
-        "citation_formats": 7,
-        "source_evaluation": 6,
-        "timeline_accuracy": 6,
-        "relationship_clarity": 6,
-        "documentation_completeness": 6
+        "citation_formats": 5,
+        "source_evaluation": 5,
+        "timeline_accuracy": 5,
+        "relationship_clarity": 4,
+        "documentation_completeness": 5
       },
       "verdict": "FAIL",
-      "gap": "Round 2 revision complete; re-scoring by a fresh critic"
+      "gap": "Primary/secondary defined by timing instead of first-hand knowledge; worked argument never excludes the collateral (sister) reading"
     }
   ],
   "log": [
@@ -142,6 +142,14 @@
     {
       "t": "21:53",
       "msg": "Rate limit killed round-3 agents; orchestrator applied relationship-mapping fixes 1,2,3,4,7,9 directly"
+    },
+    {
+      "t": "02:08",
+      "msg": "timeline-building R2: FAIL 32/50. Sort keys (R1 gap) verified fixed; critic found errors R1 missed. Orchestrator applying fixes."
+    },
+    {
+      "t": "02:09",
+      "msg": "documentation-standards R2: FAIL 24/50. R1 caps cleared; new critic found deeper definitional and factual errors."
     }
   ]
 }
