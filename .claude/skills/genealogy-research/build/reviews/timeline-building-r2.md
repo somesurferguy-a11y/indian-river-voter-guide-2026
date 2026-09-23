@@ -79,3 +79,42 @@ and breaks the principle the file repeats most (ref 74, 82-83, 697-699, 822-823)
 - T-02 widened to 1728; the coverage warning at ref 770-773.
 - Section 3.10: every named work is real and correctly titled.
 - The template's QA items, header block, "Do not delete T-14", and the no-invented-numbers discipline.
+
+## ORCHESTRATOR OVERRIDES (verified; these supersede the critic's text where they conflict)
+
+A. Fix 1, the offset sentence. The critic's diagnosis is right and its replacement is WRONG.
+   Verified by Julian Day Number: Julian 28 Feb 1900 = Gregorian 12 Mar (12 days); Julian
+   29 Feb 1900 = Gregorian 13 Mar (13 days). But the boundaries are NOT Gregorian dates:
+   Gregorian 5 Mar 1800 = Julian 22 Feb 1800, still 11 days. The correct rule, stated for
+   Julian dates (the direction genealogists actually convert):
+     "Julian ran 10 days behind Gregorian from 1582 through Julian 28 February 1700, 11 days
+      from Julian 29 February 1700 through 28 February 1800, 12 days from Julian 29 February
+      1800 through 28 February 1900, and 13 days from Julian 29 February 1900. The step falls
+      on 29 February because the Julian calendar keeps that day in 1700, 1800 and 1900 and the
+      Gregorian does not. So Julian 1 January to 28 February 1800 takes 11 days, not 12, and
+      Julian 29 February 1800 already takes 12; the same pattern holds in 1900."
+   Replace the whole passage from "The offset is not fixed" through "12 days, not 13." with that,
+   keeping the sentence that follows about Orthodox, Russian and Greek records.
+
+B. Fix 6, derived rows. Do NOT write `primary (T-05, T-07)`. The sibling
+   references/documentation-standards.md already uses `derived` in its information column for
+   computed values (its section 1.4 table, row 8). Use `derived (T-05, T-07)` etc., and define it
+   in the `info` row of both files: "`derived (row ids)` for a row no record asserts: an inference
+   has no informant, so it names the rows it rests on instead." Apply to T-06, T-12, T-15, C-08,
+   and fix the prose that justified `secondary` for them.
+
+C. Fix 12. Do NOT add an effective date for the 1771 Guilford act; it has not been verified. Keep
+   T-10 and C-02 keyed as the bare year 1771 (0101/1231) and make the assertion what the act says:
+   "Guilford County erected from parts of Rowan and Orange". Remove "the Cray land" and "No move"
+   from T-10, and put "where the Cray land lay before 1771" in the residue.
+
+D. Fix 2's example is verified: Gregorian 1748-01-24 = Julian 1748-01-13, inside the
+   double-dating window, so `cal 1748-01-13 [OS, 1747/8]` is correct.
+
+E. Fix 4's T-14 conversion is verified: Gregorian 1729-11-27 = Julian 1729-11-16 and Gregorian
+   1730-11-26 = Julian 1730-11-15. Marriage T-01 is Julian 1730-11-05, so the overlap is TEN days.
+
+F. Fix 14's arithmetic is verified: T-01 (1730-11-05) to T-03 (1735-02-08) is 51 months; T-08
+   (1757-05-04) to T-09 (1759-12-02) is 31 months.
+
+G. Fix 13, the Irish census, is correct as the critic states it.

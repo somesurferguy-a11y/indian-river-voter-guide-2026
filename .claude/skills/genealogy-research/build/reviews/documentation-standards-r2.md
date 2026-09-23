@@ -98,3 +98,29 @@ steelman, compound note 9, Bible custody; section 4's principles and three outco
 nil-result sentence; section 7's folder tree, disposition plan, image capture; section 8's conclusion
 record and propagation; section 9's rule 5, enslavement protocol, misattributed-parentage row; the
 bracket discipline (no invented page, film, roll, standard number or URL).
+
+## ORCHESTRATOR OVERRIDES (verified; these supersede the critic's text where they conflict)
+
+Verified correct as the critic states them:
+- Pennsylvania death certificates 1906 to about 1975 are held by the Pennsylvania State Archives,
+  Harrisburg, Record Group 11 (Department of Health), public 50 years after the year of death.
+  Use `Pennsylvania State Archives, Harrisburg, Record Group 11, [series]` (fix 13).
+- North Carolina county marriage registers recording officiants' returns begin in 1851; before
+  that the bond (1741-1868) is the surviving record (fix 14).
+- Organ Lutheran Church, Rowan County, has surviving records from the 1770s, so the absolute claim
+  that no Rowan County baptismal register survives for 1795-1810 is false (fix 9).
+- Statute of distributions: an intestate with no issue and no widow goes to next of kin
+  (siblings, a dead sibling's children by representation). The collateral reading is real (fix 2).
+- GDPR Article 2(2)(c) household exemption; CJEU Lindqvist C-101/01 (fix 15).
+
+Overrides:
+A. Fix 9's replacement text. Do NOT write that "the surviving Lutheran and Reformed church books of
+   Rowan County" were searched: that asserts which denominations' books survive. Write instead that
+   "the surviving church books of Rowan County congregations for 1795-1810 ([congregations
+   searched]) were searched with a nil result, and no register is known for [the Teales' own
+   congregation]."
+B. Fix 3's claim that a man aged 45+ in 1820 with a sister born 1799-1804 is "excluded". A sibling
+   25 or more years younger is unusual, not impossible, and the file's own rule (and
+   references/timeline-building.md section 5) is that a plausibility check is a flag, never proof.
+   Frame the age gap as weighing against the collateral reading. The exclusion must come from
+   records that tie at least two co-distributees to Jesse Teale as his children.
