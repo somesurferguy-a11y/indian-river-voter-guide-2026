@@ -23,11 +23,11 @@ of citations before it goes to a cousin, a society, or a portfolio judge.
   agencies, record types, record groups, and repositories are real, so the shapes transfer.
 - Vocabulary is the skill's shared vocabulary: *original / derivative / authored narrative*
   for sources, *primary / secondary / undetermined* for information, assessed per assertion.
-- **One home per thing.** This file owns the rules, the hard cases, the software split, and the
-  QA checklist. `templates/citation-quickref.md` owns the paste-ready hard-case strings and the
-  software field rules. The only block deliberately kept in both files is §5, which appears here
-  with the commentary that makes it usable and there stripped bare for pasting. Change a slot in
-  one and change it in the other; everything else is corrected once, in one place.
+- **This file is the authority.** `templates/citation-quickref.md` is a paste sheet: it repeats
+  §5's templates verbatim and carries abridged, paste-ready versions of the marks and conventions
+  (§2, §3), the layering formulas (§4), the software field rules (§7) and a quick QA pass (§8).
+  A change to any rule is made here first and then carried into the quickref; if the two ever
+  disagree, this file governs.
 
 ## 1. What a citation must accomplish
 
@@ -162,6 +162,7 @@ List   Marion County, Indiana. Deed Books, {year range}. Digital images. _Family
 Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah Teale, {date}; Clerk of the Circuit Court, Indianapolis.
 Short  Marion Co., Ind., Marriage Record {vol.}: {page}, Cray-Teale.
 List   Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circuit Court, Indianapolis.
+Online Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah Teale, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or item identifier}; citing {the film or digital folder the site names}; Clerk of the Circuit Court, Indianapolis.
 
 Full   1880 U.S. census, Marion County, Indiana, population schedule, Indianapolis, enumeration district (ED) {ED no.}, sheet {no. and letter}, dwelling {no.}, family {no.}, Bartholomew Cray; NARA microfilm publication T9, roll {roll no.}.
 Short  1880 U.S. census, Marion Co., Ind., pop. sch., ED {ED no.}, sheet {no.}, fam. {no.}, Cray.
@@ -208,6 +209,20 @@ a roll number is a real catalog number that identifies one physical reel, and th
 to fill it is to read it off the film label or the provider's own citation. Guessing a plausible
 number is the single defect that makes a reader distrust every other number you wrote.
 
+And the shape most researchers now meet first, a FamilySearch image of a county volume, with the
+two catalog numbers left as slots for the same reason:
+
+```
+Full   Marion County, Indiana, Deed Book 27: 348-349, Bartholomew Cray to Susannah Teale, 12 April 1868, recorded 2 May 1868; digital images, _FamilySearch_ (https://www.familysearch.org : accessed 4 March 2026), digital folder (DGS) {no.}, image 412; citing FamilySearch microfilm {film no.}; County Recorder's Office, Indianapolis.
+Short  Marion Co., Ind., Deed Book 27: 348-349, Cray to Teale.
+List   Marion County, Indiana. Deed Books, 1866-1870. Digital images. _FamilySearch_. https://www.familysearch.org : 2026.
+```
+
+Read each semicolon as a layer boundary. First the deed book, which you saw as an image. Then the
+FamilySearch image set, which is where you actually were, so the DGS folder and image number sit
+inside it. After `citing`, the reel and the courthouse volume, which you did not see. The list
+entry names the website because that is where the work was done.
+
 ## 4. Layered citations and the provenance chain
 
 **The most important section in this file.** Almost everything a modern researcher touches is
@@ -230,12 +245,9 @@ a reviewer catches.
 > abstract, or authored narrative), that source leads, because you are not citing the underlying
 > record at all. In both cases `citing` marks the first layer you did not see.
 
-This is the ordering consequence of the classification table at the end of this section. An
-image "takes the class of what is imaged," so it is not a source of its own and cannot lead; it
-is the medium through which you reached the record, and it follows the record. An index is a
-derivative in its own right, with its own creator who could misread, so it does lead, and the
-record beneath it is something you have a claim about rather than a look at. Read situations 2
-and 4 below as the two halves of that distinction.
+This follows from the classification table at the end of this section: an image takes the class of
+what it images, so it follows the record; an index has its own creator who could misread, so it
+leads. Situations 2 and 4 below are the two halves.
 
 **Mechanics.** Layers are separated by **semicolons**. Layers you did *not* see, which the
 provider names for you, are introduced by **`citing`**, a word that functions as a disclaimer:
@@ -472,10 +484,12 @@ Archives, and it is a different source from the one-page patent.
 Full   Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War), pension application no. {app. no.}, certificate no. {cert. no.}, "{series title exactly as the finding aid gives it}," Records of the Department of Veterans Affairs, Record Group 15; National Archives, Washington, D.C.
 Short  Cray pension no. {cert. no.}, RG 15, NARA-Washington.
 List   United States. Department of Veterans Affairs. "{series title exactly as the finding aid gives it}." Record Group 15. National Archives, Washington, D.C.
+Online Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War), pension application no. {app. no.}, certificate no. {cert. no.}, {document within the file}, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or item identifier}; citing "{series title exactly as the finding aid gives it}," Record Group 15, National Archives, Washington, D.C.
 
 Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana Infantry, Records of the Adjutant General's Office, 1780s-1917, Record Group 94; National Archives, Washington, D.C.
 Short  Cray CSR, Co. {co.}, {regiment} Ind. Inf., RG 94, NARA-Washington.
 List   United States. Adjutant General's Office. "{series title exactly as the finding aid gives it}." Record Group 94. National Archives, Washington, D.C.
+Online Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana Infantry; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or item identifier}; citing {the NARA microfilm publication and roll the site names}, Record Group 94, National Archives, Washington, D.C.
 ```
 
 **The source-list entry is series-level, even for a discrete case file.** A certificate number is a
@@ -504,6 +518,7 @@ Online Marion County, Indiana, Circuit Court, "Declarations of Intention," vol. 
 Full   {U.S. district court as named on the record at the date of the petition}, petition for naturalization no. {no.}, Bartholomew Cray, {date}, Records of District Courts of the United States, Record Group 21; National Archives at Chicago.
 Short  {U.S. district court}, petition for naturalization no. {no.}, Cray.
 List   United States. {District court as named on the records}. Petitions for naturalization, {year range}. Record Group 21. National Archives at Chicago.
+Online {U.S. district court as named on the record at the date of the petition}, petition for naturalization no. {no.}, Bartholomew Cray, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or item identifier}; citing {the series and film the site names}, Record Group 21, National Archives at Chicago.
 ```
 
 Before the 1906 federal standardisation, naturalisation could happen in **any court of record**,
@@ -799,7 +814,9 @@ Run this on every citation before it leaves your file. About twenty seconds, onc
 - [ ] The **shape** matches the position: full note first, short note after, source-list entry
       with no specific locator.
 - [ ] If a note carries a website layer, the matching **source-list entry** carries it too.
-- [ ] The short note is **unambiguous** against every other source in this document.
+- [ ] The short note is **unambiguous** against every other source in this document, and against
+      every other **person**: where two people share a name, it carries the tag the report uses,
+      e.g. `Cray (of Bellwether Creek) will`, so a citation is never where two people merge.
 - [ ] A reader could classify the source as original, derivative, or authored narrative from the
       citation alone.
 - [ ] Nothing in the citation is a number, title, or identifier I did not read off the item.
@@ -812,7 +829,7 @@ Run this on every citation before it leaves your file. About twenty seconds, onc
 |---|---|---|
 | **URL-only citation** | `https://www.ancestry.com/{deep session URL}` | `1880 U.S. census, Marion County, Indiana, population schedule, Indianapolis, ED {ED no.}, sheet {no.}, dwelling {no.}, family {no.}, Bartholomew Cray; digital image, _Ancestry.com_ (https://www.ancestry.com : accessed {date}); citing NARA microfilm publication T9, roll {roll no.}.` |
 | **"Ancestry.com" as an entire citation** | `Ancestry.com` | As above. A site name is a fragment of Where-is and answers none of the other four questions. |
-| **Missing layer** (you saw an online image) | `1880 U.S. census, Marion County, Indiana, ED {ED no.}, sheet {no.}, Bartholomew Cray.` | Append the layers you passed through: `...; digital image, _Ancestry.com_ (https://www.ancestry.com : accessed {date}); citing NARA microfilm publication T9, roll {roll no.}.` |
+| **Missing layer** (you saw an online image) | `1880 U.S. census, Marion County, Indiana, ED {ED no.}, sheet {no.}, Bartholomew Cray.` | Append the layers you passed through, exactly as in the URL-only row above. |
 | **Index cited as if it were the original** (you saw only an index entry) | `Marion County, Indiana, death certificate no. {cert. no.} ({year}), Susannah Teale.` | `"{exact database title}," database, _FamilySearch_ (https://www.familysearch.org : accessed {date}), entry for Susannah Teale, {event date}; citing Marion County, Indiana, death certificate no. {cert. no.}. Certificate not examined.` |
 | **Missing locator** | `Marion County, Indiana, Deed Books; County Recorder's Office, Indianapolis.` | `Marion County, Indiana, Deed Book {vol.}: {page}, Bartholomew Cray to Susannah Teale, {date}, recorded {date}; County Recorder's Office, Indianapolis.` |
 | **Repository omitted** | `Marion County, Indiana, Will Book {vol.}: {page}, will of Bartholomew Cray.` | Add Where-is: `...; Clerk of the Circuit Court, Indianapolis.` A county name is a jurisdiction, not a place a reader can walk into. |

@@ -13,7 +13,8 @@ LEGEND
 _title_           underscores mark a published title (book, journal, newspaper, website)
                   that must be set in italics; code fences cannot render italics, so strip
                   the underscores and italicise the title when you paste
-;                 separates provenance layers
+;                 separates provenance layers, and introduces the Where-is in a
+                  single-layer citation
 citing            everything after this word is the provider's claim, unverified by you
 ( : accessed )    website layer: (site root URL : accessed {date})
 ```
@@ -98,6 +99,10 @@ Full   Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray 
 Short  Marion Co., Ind., Marriage Record {vol.}: {page}, Cray-Teale.
 List   Marion County, Indiana. Marriage Records, {year range}. Clerk of the Circuit Court,
        Indianapolis.
+Online Marion County, Indiana, Marriage Record {vol.}: {page}, Bartholomew Cray and Susannah
+       Teale, {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}),
+       {image or item identifier}; citing {the film or digital folder the site names}; Clerk
+       of the Circuit Court, Indianapolis.
 ```
 `Cray-Teale` is groom-bride shorthand for SHORT notes only; a full note names both parties.
 
@@ -197,6 +202,11 @@ Full   Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War
 Short  Cray pension no. {cert. no.}, RG 15, NARA-Washington.
 List   United States. Department of Veterans Affairs. "{series title exactly as the finding
        aid gives it}." Record Group 15. National Archives, Washington, D.C.
+Online Bartholomew Cray (Pvt., Co. {co.}, {regiment} Indiana Infantry, Civil War), pension
+       application no. {app. no.}, certificate no. {cert. no.}, {document within the file},
+       {date}; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or
+       item identifier}; citing "{series title exactly as the finding aid gives it}," Record
+       Group 15, National Archives, Washington, D.C.
 
 Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana
        Infantry, Records of the Adjutant General's Office, 1780s-1917, Record Group 94;
@@ -204,6 +214,10 @@ Full   Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} In
 Short  Cray CSR, Co. {co.}, {regiment} Ind. Inf., RG 94, NARA-Washington.
 List   United States. Adjutant General's Office. "{series title exactly as the finding aid
        gives it}." Record Group 94. National Archives, Washington, D.C.
+Online Compiled service record, Bartholomew Cray, Pvt., Co. {co.}, {regiment} Indiana
+       Infantry; digital images, _{Site Name}_ ({site root URL} : accessed {date}), {image or
+       item identifier}; citing {the NARA microfilm publication and roll the site names},
+       Record Group 94, National Archives, Washington, D.C.
 ```
 The source-list entry is series-level, even for a discrete case file: it names the body of
 material searched, not one certificate number (`references/citation-management.md` §5).
@@ -230,6 +244,10 @@ Full   {U.S. district court as named on the record at the date of the petition},
 Short  {U.S. district court}, petition for naturalization no. {no.}, Cray.
 List   United States. {District court as named on the records}. Petitions for
        naturalization, {year range}. Record Group 21. National Archives at Chicago.
+Online {U.S. district court as named on the record at the date of the petition}, petition for
+       naturalization no. {no.}, Bartholomew Cray, {date}; digital images, _{Site Name}_
+       ({site root URL} : accessed {date}), {image or item identifier}; citing {the series
+       and film the site names}, Record Group 21, National Archives at Chicago.
 ```
 Pre-1906: any court of record, so the COURT is essential. It is also a slot, not a fixed
 name: federal districts split as populations grew (Indiana split into two in 1928), so read
