@@ -2,10 +2,6 @@
 
 **Version:** 1.0 · **Drafted:** Sep 30, 2026 · **First target:** Indian River County, FL
 
-> **Status:** Saved as received. The source text ended after section 7. Section 8 (records-request
-> list), section 9 (JSON output format), and the "Indian River County values" block were not
-> included and still need to be added. Sections 4 and 7 reference them.
-
 Copy everything below the line into a fresh Claude session (Claude Code with web access works best,
 because the audit needs to download PDFs and spreadsheets). The `{{PLACEHOLDERS}}` are deliberate:
 this is written so it can become a reusable skill later. For the first run, fill them in as shown in
@@ -153,5 +149,114 @@ For every `DOCUMENTED` or `ANOMALY` finding, write the specific question you wou
 responsible official, and name the office it goes to. Mark each response as `pending` until one is
 received. **No finding is published as final until the entity has had a chance to respond.**
 
-<!-- TODO: section 8 (records-request list), section 9 (JSON output format), and the
-     "Indian River County values" block were missing from the source text. -->
+### 8. Public records requests
+
+List every document you needed and couldn't find online. For each one, draft a public records request
+under {{PUBLIC_RECORDS_LAW}} addressed to the right custodian, asking for electronic copies in their
+native format (spreadsheets, not PDFs, where they exist).
+
+### 9. Deliverables
+
+Save these under `audit/{{COUNTY_SLUG}}/`:
+
+1. **`report.md`** — the human-readable audit, in this order:
+   1. Executive summary of no more than ten findings, ranked by dollar impact, each with its label.
+   2. Entity map.
+   3. Revenue.
+   4. Spending.
+   5. Debt and liabilities.
+   6. Controls.
+   7. Benchmarks.
+   8. A "What looks fine" section. Say what you checked and found in order, so readers know it was
+      examined and not skipped.
+   9. Could not verify.
+   10. Sources.
+2. **`findings.json`** — one object per finding:
+
+```json
+{
+  "id": "IRC-2026-001",
+  "entity": "Indian River County BOCC",
+  "title": "short plain-English headline",
+  "category": "contracts | payroll | debt | capital | revenue | controls | duplication | grants | other",
+  "waste_type": "a | b | c | d | e | f | null",
+  "label": "DOCUMENTED | CALCULATED | ANOMALY | POLICY_DISAGREEMENT",
+  "summary": "two to three sentences",
+  "impact_usd": { "low": 0, "high": 0, "method": "how you got it", "recurring": true },
+  "fiscal_years": ["FY2024"],
+  "sources": [{ "title": "", "url": "", "page": "", "retrieved": "YYYY-MM-DD" }],
+  "question_for_officials": "",
+  "response": { "status": "pending | received | none", "text": "", "date": "", "source": "" }
+}
+```
+
+3. **`debt.json`** — the input data for the debt clock:
+
+```json
+{
+  "entity": "Indian River County (primary government)",
+  "fips": "12061",
+  "as_of": "YYYY-09-30",
+  "source": { "title": "FY20XX ACFR", "url": "", "page": "" },
+  "components": {
+    "bonds": 0, "notes_loans": 0, "leases_subscriptions": 0,
+    "net_pension_liability": 0, "opeb": 0, "compensated_absences": 0, "other": 0
+  },
+  "total": 0,
+  "population": { "value": 0, "source": "" },
+  "households": { "value": 0, "source": "" },
+  "history": [{ "as_of": "YYYY-09-30", "total": 0 }],
+  "debt_service_schedule": [{ "fy": "FY2027", "principal": 0, "interest": 0 }]
+}
+```
+
+4. **`records-requests.md`** — the drafted requests from section 8.
+5. **`questions-for-officials.md`** — the questions from section 7, grouped by office.
+
+Before you finish, re-check every number in the executive summary against its source document. For
+each one, write "verified" or "corrected" with a note.
+
+---
+
+## Indian River County values (first run)
+
+| Placeholder | Value |
+|---|---|
+| `{{COUNTY}}` | Indian River County |
+| `{{STATE}}` | Florida |
+| `{{COUNTY_SLUG}}` | fl-indian-river |
+| `{{FY_START}}` / `{{FY_END}}` | FY2016 / FY2025 (Florida county fiscal years run Oct 1 – Sep 30) |
+| `{{FY_CURRENT}}` | FY2026-27 (adopted September 2026) |
+| `{{PEER_COUNTIES}}` | Martin, St. Lucie, Brevard, Okeechobee, Charlotte, Sarasota |
+| `{{CAPITAL_THRESHOLD}}` | $1,000,000 |
+| `{{PUBLIC_RECORDS_LAW}}` | Florida Statutes Chapter 119 |
+
+**Entities to include:** the Board of County Commissioners and the five constitutional officers; the
+cities of Vero Beach, Sebastian, and Fellsmere and the towns of Indian River Shores and Orchid; the
+School District of Indian River County; and the special districts, including the Hospital District,
+Mosquito Control District, Sebastian Inlet District, and Soil & Water Conservation District, plus the
+county's share of regional districts (St. Johns River Water Management District and the Florida Inland
+Navigation District). Confirm this list against the state registry.
+
+**Florida source pack (start here, and confirm every URL still works):**
+
+- Clerk of Circuit Court & Comptroller: the ACFRs, the check register or transparency portal, and internal audit reports.
+- County Budget Office: adopted and proposed budgets and capital improvement elements.
+- Property Appraiser: taxable values, and the TRIM notices with rolled-back rates.
+- Florida Department of Financial Services, Local Government Annual Financial Reports: standardized revenue and spending data for every Florida local government. This is the key dataset for peer benchmarking.
+- Florida Auditor General: local government audit reports, and the list of entities that failed to file.
+- FloridaCommerce Special District Accountability Program: the official registry of special districts.
+- Florida CFO and state DOGE local-government reviews (2025 onward): check whether any of them covered Indian River County entities.
+- Florida Retirement System: each employer's share of the pension liability, from the FRS GASB 68 schedules.
+- MSRB EMMA: bond official statements and continuing disclosures.
+- USAspending.gov and the Treasury SLFRF reports for federal awards and ARPA use.
+- Board meeting agendas and minutes for votes on millage, contracts, and change orders.
+
+**Known high-dollar local topics to check first** (chosen for size, not as conclusions):
+
+- The county's legal spending on the Brightline litigation, and what came of it.
+- Indian River Lagoon, septic-to-sewer, and stormwater spending compared with measured outcomes.
+- What the Hospital District gets for its tax levy under its hospital lease arrangements.
+- How the proceeds of Vero Beach's 2018 electric utility sale to FPL have been used.
+- Whether ARPA funds were used for recurring costs.
+- Fire and EMS costs per call compared with peer counties.
