@@ -1152,7 +1152,14 @@ window.GUIDE = {
           record: [
             {
               type: 'fact',
-              claim: 'This guide could locate no campaign website, issue platform, or quoted policy statements from Hardingham.',
+              claim: 'Updated Oct 25, 2026: his candidate statement filed with the Supervisor of Elections now lays out a platform he calls VALOR — Veterans, Affordability, Lagoon, Opportunity, and Respect.',
+              detail: 'The statement on the county site introduces VALOR and his background (Army fuel-truck driver, nearly three decades as a CDL driver across all 48 states) but does not spell out specific policies under each heading; this guide has not found where he does.',
+              date: '2026-10-25',
+              source: { title: 'Robbie Hardingham — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=567&rellevel=4&committee=N', date: '2026-10-25' }
+            },
+            {
+              type: 'fact',
+              claim: 'As of this guide\'s August review, it could locate no campaign website, issue platform, or quoted policy statements from Hardingham (see the Oct 2026 update below).',
               detail: 'His answers to TCPalm\'s candidate questionnaire exist but sit behind that outlet\'s paywall. This is a real information deficit for voters and is stated plainly rather than left as an empty section. No criminal record, litigation, ethics matter, or controversy was located either — there is very little independent coverage of him in any direction.',
               date: '2026-08-05',
               source: { title: 'Sebastian Daily — the one substantive profile located', url: 'https://www.sebastiandaily.com/business/multiple-candidates-enter-race-for-indian-river-county-commission-district-2-seat-90632/' }
@@ -1180,8 +1187,8 @@ window.GUIDE = {
           name: 'Nicole Paradiso',
           party: 'WRITE-IN',
           residence: 'Indian River County',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Qualified as a write-in candidate for the November 3 general election. Write-in candidates are never printed on the ballot — a voter choosing her must physically write her name on the blank line provided. Note: her candidacy is NOT what closes the August Republican primary. That is caused by Democrat Robert Hardingham qualifying, which guarantees November opposition regardless of any write-in.',
+          occupation: 'Program manager (former Fortune 100 program management); public-administration student',
+          bio: 'By her own candidate statement (filed after this guide\'s August review): a third-generation Indian River County resident and graduate of Sebastian River High School and Indian River State College, now pursuing a bachelor\'s in public administration. Worked with military communities as a military spouse, civilian employee, volunteer and advocate, then spent more than a decade in Fortune 100 program management. Has served on the executive boards of Vero Beach Rowing and the Stafford Education Foundation. Says she is a two-time recipient of the Commander\'s Award for Civilian Service and of the Dr. Mary E. Walker Award for volunteerism (not independently verified by this guide). Qualified as a write-in candidate for the November 3 general election. Write-in candidates are never printed on the ballot — a voter choosing her must physically write her name on the blank line provided. Note: her candidacy is NOT what closes the August Republican primary. That is caused by Democrat Robert Hardingham qualifying, which guarantees November opposition regardless of any write-in.',
           primary: {
             result: 'advanced',
             source: {
@@ -1190,11 +1197,16 @@ window.GUIDE = {
               date: '2026-08-25'
             }
           },
-          positions: {},
+          positions: {
+            growth: {
+              summary: 'Says she cares about smart growth, thoughtful infrastructure investment, and closing the gap between government decision-making and the residents it affects. Her statement does not describe specific policies.',
+              source: { title: 'Nicole Paradiso — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=573&rellevel=4&committee=N', date: '2026-10-25' }
+            }
+          },
           record: [
             {
               type: 'fact',
-              claim: 'This guide could locate no biography, occupation, platform, statements, or press coverage of Paradiso in any source.',
+              claim: 'As of this guide\'s August review, it could locate no biography, occupation, platform, statements, or press coverage of Paradiso in any source. Updated Oct 25, 2026: she has since filed a candidate statement with the Supervisor of Elections (see bio and positions); this guide still found no press coverage of her campaign.',
               detail: 'As of early August she had reported raising $30.00 and spending nothing; by mid-October she had raised $2,380 (see money section). Her name will not be printed on the November ballot — voters choosing her must write it in.',
               date: '2026-08-05',
               source: { title: 'Indian River County Supervisor of Elections — candidate financial reports', url: 'https://www.voteindianriver.gov/campaigns/candidates/financial_reports_profiles.php' }
