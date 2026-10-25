@@ -114,7 +114,7 @@ window.MEDIA_RATINGS = {
 window.GUIDE = {
 
   meta: {
-    updated: '2026-08-26',
+    updated: '2026-10-25',
     primaryDate: '2026-08-18',
     generalDate: '2026-11-03',
     disclaimer: 'Independent, nonpartisan, and not affiliated with any candidate, party, or government agency.'
@@ -139,9 +139,9 @@ window.GUIDE = {
       source: { title: 'IRC Supervisor of Elections homepage notice', url: 'https://voteindianriver.gov/', date: '2026-08-05' }
     },
     {
-      label: 'Sebastian Inlet Tax District — added Aug 26, 2026; status genuinely unclear',
-      detail: 'An independent special taxing district managing Sebastian Inlet, separate from the county, with a 5-member commission (3 Brevard County seats, 2 Indian River County seats). The Indian River County seat, Board District 4, is held by David Barney with a term expiring in 2026 — but this guide could NOT confirm whether he is seeking re-election, whether the seat is contested, or whether it will actually appear on any Indian River County voter\'s printed ballot this cycle. It does not appear on the county Supervisor of Elections\' own "offices up for election" list, which only covers offices that qualify through the county\'s regular candidate portal — this district appears to run its own separate qualifying process. Included here so voters who\'ve heard of it know what is and isn\'t confirmed, rather than finding no mention of it at all.',
-      source: { title: 'Sebastian Inlet District — Board of Commissioners', url: 'https://www.sitd.us/board-of-commissioners', date: '2026-08-25' }
+      label: 'Sebastian Inlet District — Indian River seat is unopposed (updated Oct 25, 2026)',
+      detail: 'An independent special taxing district managing Sebastian Inlet, separate from the county, with a 5-member commission (3 Brevard County seats, 2 Indian River County seats). Updated Oct 25, 2026: the Florida Division of Elections candidate listing shows incumbent David Barney (Board District 4, the Indian River County seat up this year) as qualified and UNOPPOSED, so he keeps the seat and there is no Indian River County contest for this district. The one contested Sebastian Inlet seat this year is Seat 5 — a Brevard County seat (incumbent Lisa Leger Frazier vs. Calvin Holton) — which this guide does not cover; confirm on your own sample ballot whether any Sebastian Inlet race appears on it.',
+      source: { title: 'Florida Division of Elections — Sebastian Inlet District candidate listing, 2026 general', url: 'https://dos.elections.myflorida.com/candidates/CanList.asp?elecid=20261103-GEN&OfficeCode=SEB', date: '2026-10-25' }
     }
   ],
 
@@ -783,6 +783,53 @@ window.GUIDE = {
       background:
         'Added Aug 2026. A federal question most directly relevant to the U.S. Senate and House races, but with real local stakes: Florida has roughly 4.7 million ACA marketplace enrollees relying on subsidies set to expire — more than any other state — and whether Congress extends them affects premiums for Indian River County residents directly.',
       sources: []
+    },
+    {
+      id: 'abortion',
+      name: 'Abortion',
+      background:
+        'Added Oct 2026. Mainly a state and federal question — the Governor, Legislature, Attorney General and Congress set and enforce the law; county and city boards do not. Florida bans most abortions after six weeks of pregnancy under SB 300 (2023), in effect since May 1, 2024. In November 2024, Amendment 4, which would have protected abortion access before viability, won 57% of the statewide vote but fell short of the 60% Florida requires to amend its constitution. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — SB 300 (2023), Pregnancy and Parenting Resources', url: 'https://www.flsenate.gov/Session/Bill/2023/300', date: '2026-10-25' },
+        { title: 'Ballotpedia — Florida Amendment 4, Right to Abortion Initiative (2024)', url: 'https://ballotpedia.org/Florida_Amendment_4,_Right_to_Abortion_Initiative_(2024)', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'guns',
+      name: 'Guns & the Second Amendment',
+      background:
+        'Added Oct 2026. Set almost entirely by the Legislature and Congress — Florida law preempts local governments from regulating firearms. Since July 1, 2023 (HB 543), Floridians who can legally own a gun may carry it concealed without a permit. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — HB 543 (2023), Public Safety', url: 'https://www.flsenate.gov/Session/Bill/2023/543', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'lgbtq',
+      name: 'LGBTQ+ Policy',
+      background:
+        'Added Oct 2026. Includes classroom instruction on sexual orientation and gender identity (HB 1557, 2022, the "Parental Rights in Education" law), gender-transition care for minors (restricted by SB 254, 2023), and transgender athletes in school sports. Set mostly by the Legislature, Congress and school boards. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — HB 1557 (2022), Parental Rights in Education', url: 'https://www.flsenate.gov/Session/Bill/2022/1557', date: '2026-10-25' },
+        { title: 'Florida Senate — SB 254 (2023), Treatments for Sex Reassignment', url: 'https://www.flsenate.gov/Session/Bill/2023/254', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'data-centers',
+      name: 'AI Data Centers',
+      background:
+        'Added Oct 2026. Large data centers draw heavily on the power grid and, depending on cooling, on water. Local governments control zoning and site approval; the state controls utility regulation and tax incentives. As of August 2026, Indian River County had no approved path for a data center project. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'WQCS — "Indian River County: No Path Yet for Data Centers"', url: 'https://www.wqcs.org/wqcs-news/2026-08-04/indian-river-county-no-path-yet-for-data-centers?_amp=true', date: '2026-08-04' }
+      ]
+    },
+    {
+      id: 'drugs',
+      name: 'Drug Policy & Marijuana',
+      background:
+        'Added Oct 2026. Florida allows medical marijuana but not recreational use. In November 2024, Amendment 3, which would have legalized recreational marijuana for adults 21 and over, won about 56% of the statewide vote but fell short of the required 60%. Federal scheduling of marijuana is set by Congress and federal agencies. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Ballotpedia — Florida Amendment 3, Marijuana Legalization Initiative (2024)', url: 'https://ballotpedia.org/Florida_Amendment_3,_Marijuana_Legalization_Initiative_(2024)', date: '2026-10-25' }
+      ]
     }
   ],
 
@@ -998,12 +1045,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 37012,
-            spent: 34562,
+            raised: 67073.21,
+            spent: 55526.51,
             selfFunded: 6550,
-            asOf: '2026-07-31',
-            note: 'Includes $6,550 in candidate loans. 104 donors — the broadest donor base of any District 2 candidate. Dominant pattern: small-dollar contributions plus $1,000 maximum checks from local individuals and a conservative donor network.',
-            source: { title: 'IRC Supervisor of Elections campaign finance portal (transaction-level data)', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian', date: '2026-08-05' }
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Includes $6,550 in candidate loans, plus $6,342 in in-kind support not counted in the total. About 160 donors; roughly 68% of the money came from Indian River County addresses. About $30,000 raised since July 31. Roughly $11,500 left (raised minus spent). Largest spending: Post It Studios ($17,319), Direct Mail Systems ($7,031), Mercury Messages ($6,852), plus the $5,184 qualifying fee. Raises about 4.3 times what her Democratic opponent has.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=566&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: { 'Campaign website': 'https://votejenniferpippin.com/' }
@@ -1105,7 +1152,14 @@ window.GUIDE = {
           record: [
             {
               type: 'fact',
-              claim: 'This guide could locate no campaign website, issue platform, or quoted policy statements from Hardingham.',
+              claim: 'Updated Oct 25, 2026: his candidate statement filed with the Supervisor of Elections now lays out a platform he calls VALOR — Veterans, Affordability, Lagoon, Opportunity, and Respect.',
+              detail: 'The statement on the county site introduces VALOR and his background (Army fuel-truck driver, nearly three decades as a CDL driver across all 48 states) but does not spell out specific policies under each heading; this guide has not found where he does.',
+              date: '2026-10-25',
+              source: { title: 'Robbie Hardingham — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=567&rellevel=4&committee=N', date: '2026-10-25' }
+            },
+            {
+              type: 'fact',
+              claim: 'As of this guide\'s August review, it could locate no campaign website, issue platform, or quoted policy statements from Hardingham (see the Oct 2026 update below).',
               detail: 'His answers to TCPalm\'s candidate questionnaire exist but sit behind that outlet\'s paywall. This is a real information deficit for voters and is stated plainly rather than left as an empty section. No criminal record, litigation, ethics matter, or controversy was located either — there is very little independent coverage of him in any direction.',
               date: '2026-08-05',
               source: { title: 'Sebastian Daily — the one substantive profile located', url: 'https://www.sebastiandaily.com/business/multiple-candidates-enter-race-for-indian-river-county-commission-district-2-seat-90632/' }
@@ -1118,12 +1172,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2686,
-            spent: 2096,
+            raised: 15748.68,
+            spent: 14533.11,
             selfFunded: 80,
-            asOf: '2026-07-31',
-            note: '25 donors, almost entirely small-dollar local individuals. Roughly one-sixteenth of the leading Republican total — a minimal-budget campaign.',
-            source: { title: 'IRC Supervisor of Elections campaign finance portal (transaction-level data)', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian', date: '2026-08-05' }
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Up from $2,686 at July 31 — about $13,000 raised since the primary, almost all in small checks: about 340 donors, more than any other county candidate this cycle, with most contributions under $100 and about half the money from Indian River County addresses. No PAC or business money. $80 in candidate loans plus most of his $1,244 in in-kind support came from himself. Roughly $1,200 left (raised minus spent).',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=567&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {}
@@ -1133,8 +1187,8 @@ window.GUIDE = {
           name: 'Nicole Paradiso',
           party: 'WRITE-IN',
           residence: 'Indian River County',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Qualified as a write-in candidate for the November 3 general election. Write-in candidates are never printed on the ballot — a voter choosing her must physically write her name on the blank line provided. Note: her candidacy is NOT what closes the August Republican primary. That is caused by Democrat Robert Hardingham qualifying, which guarantees November opposition regardless of any write-in.',
+          occupation: 'Program manager (former Fortune 100 program management); public-administration student',
+          bio: 'By her own candidate statement (filed after this guide\'s August review): a third-generation Indian River County resident and graduate of Sebastian River High School and Indian River State College, now pursuing a bachelor\'s in public administration. Worked with military communities as a military spouse, civilian employee, volunteer and advocate, then spent more than a decade in Fortune 100 program management. Has served on the executive boards of Vero Beach Rowing and the Stafford Education Foundation. Says she is a two-time recipient of the Commander\'s Award for Civilian Service and of the Dr. Mary E. Walker Award for volunteerism (not independently verified by this guide). Qualified as a write-in candidate for the November 3 general election. Write-in candidates are never printed on the ballot — a voter choosing her must physically write her name on the blank line provided. Note: her candidacy is NOT what closes the August Republican primary. That is caused by Democrat Robert Hardingham qualifying, which guarantees November opposition regardless of any write-in.',
           primary: {
             result: 'advanced',
             source: {
@@ -1143,21 +1197,28 @@ window.GUIDE = {
               date: '2026-08-25'
             }
           },
-          positions: {},
+          positions: {
+            growth: {
+              summary: 'Says she cares about smart growth, thoughtful infrastructure investment, and closing the gap between government decision-making and the residents it affects. Her statement does not describe specific policies.',
+              source: { title: 'Nicole Paradiso — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=573&rellevel=4&committee=N', date: '2026-10-25' }
+            }
+          },
           record: [
             {
               type: 'fact',
-              claim: 'This guide could locate no biography, occupation, platform, statements, or press coverage of Paradiso in any source.',
-              detail: 'She reported raising $30.00 and spending nothing. Her name will not be printed on the November ballot — voters choosing her must write it in.',
+              claim: 'As of this guide\'s August review, it could locate no biography, occupation, platform, statements, or press coverage of Paradiso in any source. Updated Oct 25, 2026: she has since filed a candidate statement with the Supervisor of Elections (see bio and positions); this guide still found no press coverage of her campaign.',
+              detail: 'As of early August she had reported raising $30.00 and spending nothing; by mid-October she had raised $2,380 (see money section). Her name will not be printed on the November ballot — voters choosing her must write it in.',
               date: '2026-08-05',
               source: { title: 'Indian River County Supervisor of Elections — candidate financial reports', url: 'https://www.voteindianriver.gov/campaigns/candidates/financial_reports_profiles.php' }
             }
           ],
           finance: {
-            raised: 30.00,
-            spent: 0,
-            asOf: '2026-08-05',
-            source: { title: 'Indian River County Supervisor of Elections — candidate financial reports', url: 'https://www.voteindianriver.gov/campaigns/candidates/financial_reports_profiles.php', date: '2026-08-05' }
+            raised: 2380,
+            spent: 802.16,
+            selfFunded: 30,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Up from $30 in early August: four outside donors, plus $666 in in-kind support not counted in the total.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=573&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {}
@@ -1264,16 +1325,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 54690,
-            spent: 6040,
-            selfFunded: 12000,
-            asOf: '2026-07-31',
-            note: 'The largest war chest of any local candidate this cycle, and he has spent only about 11% of it — a strong position heading into November. Includes a $10,000 candidate loan plus $2,000 in-kind. 54 donors. Dominant categories: business owners, real estate, and out-of-county manufacturing.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian',
-              date: '2026-08-05'
-            }
+            raised: 54820,
+            spent: 30411.3,
+            selfFunded: 10000,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Was the largest total of any county candidate in July, but has raised almost nothing since ($130 after July 31) and is now second to Pippin. He has now spent about $30,400 — $24,000 of it since July, led by Marc Media ($12,148) and VB 32963 ($4,631) — leaving roughly $24,400. Includes a $10,000 candidate loan; he also gave $2,000 in in-kind signs and shirts. 55 donors, about 78% of the money from Indian River County addresses; about $23,000 from businesses, including several checks from Sembler family members and Sembler-named businesses in Tallahassee.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=560&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1359,16 +1416,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2863,
-            spent: 1070,
+            raised: 6408.14,
+            spent: 3724.47,
             selfFunded: 100,
-            asOf: '2026-07-31',
-            note: '21 donors, almost entirely small-dollar local individuals. Roughly one-nineteenth of the incumbent total.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian',
-              date: '2026-08-05'
-            }
+            asOf: '2026-10-02',
+            note: 'Updated Oct 25, 2026 through report G4 (period ending Oct 2) — his report for the period ending Oct 16 was not posted on the county portal as of Oct 25. More than doubled since July: about 42 donors, nearly all local individuals, 73% from Indian River County addresses. Roughly $2,700 left (raised minus spent). About one-ninth of the incumbent total.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=564&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1656,18 +1709,14 @@ window.GUIDE = {
       office: 'Mosquito Control District',
       district: 'Seat 2',
       type: 'nonpartisan',
-      ballot: 'decided',
+      ballot: 'general',
       term: '4 years',
-      stakes: 'The ONLY contested special-district race on the August 18 ballot, and one of just two races open to every voter regardless of party. This is a separate government you already pay taxes to: an independent special district created by the Legislature in 1925, governed by just THREE commissioners elected countywide, levying its own property tax of about 0.25 mills — roughly $75 a year on a home with $300,000 of taxable value, paid by about 93,000 parcels. It raises around $5.4 million a year. With only three seats, this one is a third of the entire governing body.',
-      whoVotes: 'EVERY registered voter in Indian River County, including No Party Affiliation voters. It is nonpartisan, and with two candidates it is decided outright on August 18 — it does not appear again in November. Worth noting: roughly 24,000 NPA and 26,000 Democratic voters are eligible here, and neither candidate has made a documented campaign expenditure aimed at them. Both candidates\' only political-organization spending was at Republican Party events. That is a sourced observation about spending, not a claim about either candidate\'s registration, which this guide did not verify.',
-      primaryResult: {
-        status: 'decided',
-        summary: 'This is a two-candidate nonpartisan race, so Florida\'s universal-primary rule means it was decided outright on Aug 18 regardless of margin — it will not appear on the Nov 3 ballot. However, despite an extensive search of the state\'s Election Night Reporting system, local news coverage, and official county sources, this guide could not confirm a winner or vote totals as of its last update (Aug 25, 2026). Confirm directly with the Indian River County Supervisor of Elections at (772) 226-4700.',
-        source: {
-          title: 'This guide\'s review of official and news sources — winner not located as of last update',
-          url: 'https://www.voteindianriver.gov/',
-          date: '2026-08-25'
-        }
+      stakes: 'The only contested special-district race on any Indian River County ballot this cycle, and on the November 3 ballot of every voter in the county. This is a separate government you already pay taxes to: an independent special district created by the Legislature in 1925, governed by just THREE commissioners elected countywide, levying its own property tax of about 0.25 mills — roughly $75 a year on a home with $300,000 of taxable value, paid by about 93,000 parcels. It raises around $5.4 million a year. With only three seats, this one is a third of the entire governing body.',
+      whoVotes: 'EVERY registered voter in Indian River County, including No Party Affiliation voters, on the November 3, 2026 general election ballot. It is nonpartisan; the higher vote-getter wins. Worth noting: roughly 24,000 NPA and 26,000 Democratic voters are eligible here, and neither candidate has made a documented campaign expenditure aimed at them. Both candidates\' only political-organization spending was at Republican Party events. That is a sourced observation about spending, not a claim about either candidate\'s registration, which this guide did not verify.',
+      correction: {
+        summary: 'Earlier editions of this guide (through Aug 26, 2026) said this race was decided on the August 18 primary ballot and would not appear in November. That was wrong. Florida law elects mosquito control commissioners "at the general election" (s. 388.101, F.S.), and Kirkland vs. MacCoy is on the November 3, 2026 ballot for every voter in the county. If you skipped this race because this guide said it was over, it is not.',
+        date: '2026-10-25',
+        source: { title: 'Florida Statutes s. 388.101 — district commissioners are elected "at the general election" on a nonpartisan basis', url: 'https://www.flsenate.gov/Laws/Statutes/2019/Chapter388/All', date: '2026-10-25' }
       },
       candidates: [
         {
@@ -1692,6 +1741,13 @@ window.GUIDE = {
           },
           record: [
             {
+              type: 'vote',
+              claim: 'At an Oct. 10, 2025 special meeting, she and Commissioner Janice Broda voted not to extend Executive Director Sherry Burroughs\' contract on the five-year, unchanged terms Chair Matt Erpenbeck wanted, and to renegotiate instead.',
+              detail: 'Broda called the meeting while Erpenbeck was out of town; for that meeting Broda served as chair and Kirkland as vice chair. The two then offered Burroughs a two-year contract and removed a clause guaranteeing 15 weeks of severance pay if she was fired. No agreement was reached and Burroughs left. Erpenbeck filed a state ethics complaint against Broda (not Kirkland) on Dec. 4, 2025, and resigned from the board on Feb. 6, 2026; the Florida Commission on Ethics dismissed the complaint on March 6. A hiring committee set up by Broda and Kirkland then chose Isik Unlu from 31 applicants as the new executive director, on a two-year, $165,000-a-year contract starting May 26, 2026. Kirkland said the decision not to renew Burroughs\' contract was difficult, but that the focus had to be on what is best for the district. Earlier, district minutes show the board asked its lawyer whether Erpenbeck had to disclose a conflict of interest: he was executive director of the Florida Mosquito Control Association, where Burroughs was a vice president. Coverage reflects mostly one side; this guide found no published account from Erpenbeck or Burroughs of the Oct. 10 vote.',
+              date: '2025-10-10',
+              source: { title: 'Vero News — "Legacy resident Lowther, newcomer Unlu added to Mosquito Control District"', url: 'http://veronews.com/2026/05/23/legacy-resident-lowther-newcomer-unlu-added-to-mosquito-control-district/', date: '2026-05-23' }
+            },
+            {
               type: 'fact',
               claim: 'Her filed candidate statement contains no specific policy proposal — no stated position on the millage rate, aerial spraying, the district\'s growing reserves, or the consolidation question.',
               detail: 'Noted because in a race with two candidates and almost no press coverage, the filed statement is the main thing a voter can read.',
@@ -1713,8 +1769,8 @@ window.GUIDE = {
             },
             {
               type: 'fact',
-              claim: 'This guide located no lawsuits, ethics complaints, criminal record, or controversies involving Kirkland.',
-              detail: 'Reported as nothing found rather than as a clean record — the search was web-based and did not include a manual clerk-of-court docket search.',
+              claim: 'This guide located no lawsuits, ethics complaints, or criminal record naming Kirkland.',
+              detail: 'Corrected Oct 25, 2026: earlier editions also said no "controversies" were found. That was wrong — she was one of the two commissioners at the center of the district\'s 2025-26 leadership dispute (see the vote below). The one ethics complaint filed during that dispute named her colleague Janice Broda, not Kirkland, and was dismissed. Reported as nothing found rather than as a clean record — the search was web-based and did not include a manual clerk-of-court docket search.',
               date: '2026-08-05',
               source: {
                 title: 'This guide review of public sources',
@@ -1729,16 +1785,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2450.0,
-            spent: 60.0,
-            selfFunded: 450.0,
-            asOf: '2026-08-05',
-            note: 'Includes $300 in-kind. Only TWO outside donors. Out-raised by her challenger nearly 2 to 1 — unusual for an incumbent. Her single reported expenditure, $60, went to a Republican Women event.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',
-              date: '2026-08-05'
-            }
+            raised: 6200,
+            spent: 3871.11,
+            selfFunded: 150,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). She has now overtaken her challenger: $6,200 to his $5,925 — earlier editions, using July figures, said he had out-raised her. 15 donors, nearly all from Vero Beach, including a $1,000 check from a Starlet Kirkland. $150 of her own money plus $300 in-kind from herself. Largest spending: Treasure Coast Embroidery ($1,851) and Facebook/Meta ads ($528). Roughly $2,300 left.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=562&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1752,14 +1804,24 @@ window.GUIDE = {
           party: 'NONPARTISAN',
           residence: 'Vero Beach',
           occupation: 'Operations Manager, Chuck Stone Painting (confirmed directly with the company)',
-          bio: 'Works as Operations Manager at Chuck Stone Painting, a Vero Beach painting company — confirmed directly on the company\'s own staff page. Business records connect a Craig MacCoy at the same street address on file with the Supervisor of Elections to a Vero Beach pool-service business dating to 2004, alongside his current painting-company role. Ran previously for a DIFFERENT seat on this board — Seat 1 — in 2020, when a news article described him as a consultant and a graduate student at USF studying cybercrime. His 2026 Supervisor of Elections filing itself still contains no biography, platform, or photograph.',
+          bio: 'Works as Operations Manager at Chuck Stone Painting, a Vero Beach painting company — confirmed directly on the company\'s own staff page. Business records connect a Craig MacCoy at the same street address on file with the Supervisor of Elections to a Vero Beach pool-service business dating to 2004, alongside his current painting-company role. Ran previously for a DIFFERENT seat on this board — Seat 1 — in 2020, when a news article described him as a consultant and a graduate student at USF studying cybercrime. By his own candidate statement (filed after this guide\'s August review): an Indian River County resident since 1981, born and raised in Williamsburg, Virginia; Walsingham Academy and Fork Union Military Academy (1986); studied business management at Virginia Commonwealth University on a soccer scholarship; eight years in the U.S. Marine Corps; then, after returning to Vero Beach in 1996, heavy-equipment operator and later superintendent at Dennis L. Smith Inc. and manager of a mobile asphalt plant after its sale to Martin Paving. He says he has been a state-certified pool builder running his own business for about 30 years. He has coached at Master\'s Academy, including varsity football. His statement does not mention the Chuck Stone Painting role confirmed on that company\'s staff page in August.',
           positions: {
-
+            taxes: {
+              stance: 'transparency-oversight',
+              summary: 'Says the district needs strong oversight, accountability, transparency, sound financial management and long-term planning, and that taxpayer dollars should be handled with the care a responsible business owner gives his own money.',
+              quote: 'I believe taxpayer dollars should be treated with the same care and accountability that a responsible business owner gives his own money.',
+              source: { title: 'Craig MacCoy — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
+            },
+            'mosquito-district': {
+              summary: 'Calls mosquito control "first and foremost a public-health responsibility" and stresses preparedness: equipment, personnel, infrastructure and contingency plans, with backup plans before equipment fails. Has advocated considering expanding the commission from three members to five for broader representation.',
+              quote: 'Mosquito control is first and foremost a public-health responsibility.',
+              source: { title: 'Craig MacCoy — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
+            }
           },
           record: [
             {
               type: 'fact',
-              claim: 'His official Supervisor of Elections page contains contact information and financial reports only — no biography, no platform, no photograph filed with the county.',
+              claim: 'As of this guide\'s August review, his official Supervisor of Elections page contained contact information and financial reports only — no biography, no platform, no photograph. Updated Oct 25, 2026: he has since filed a full candidate statement (see bio and positions).',
               detail: 'A voter who looks him up through the official county channel finds nothing about who he is there. This guide also found no 2026 campaign website and no campaign social media with meaningful content. His opponent filed a statement with the county and has both a website and a Facebook page.',
               date: '2026-08-05',
               source: {
@@ -1792,24 +1854,20 @@ window.GUIDE = {
               }
             },
             {
-              type: 'unverified',
-              claim: 'A source describes a Craig MacCoy prioritizing "the Lagoon and wetlands first," then public education, "while being good stewards for taxpayers," and favoring integrated pest management.',
-              detail: 'This guide could not confirm this statement is specific to his 2026 Seat 2 candidacy — it may date to an earlier MacCoy candidacy for a different seat (he previously ran for Seat 1 in 2020). Flagged as uncertain rather than presented as a confirmed current position. Neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located.',
-              date: '2026-08-27',
-              source: { title: "This guide's review of public sources (date/seat uncertain)", url: 'https://www.irmosquito.com/', date: '2026-08-27' }
+              type: 'fact',
+              claim: 'Resolved Oct 25, 2026: the statement putting "the Lagoon and wetlands first," then public education, comes from his 2020 run for Seat 1 of this board, not his 2026 Seat 2 campaign.',
+              detail: 'Earlier editions listed this as unverified because its date and seat were unclear. It is included as background on his past candidacy, not as a current platform; his 2026 statement does not mention the lagoon. Neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located.',
+              date: '2020-10-15',
+              source: { title: 'Hometown News — "Indian River Mosquito Control District Seat 1" (2020 candidate profiles)', url: 'https://www.hometownnewstc.com/news/indian-river-mosquito-control-district-seat-1/article_4524a358-0e31-11eb-b7cc-67bb8a9504b0.html', date: '2020-10-15' }
             }
           ],
           finance: {
-            raised: 4025.0,
-            spent: 211.35,
-            selfFunded: 25.0,
-            asOf: '2026-08-05',
-            note: 'Six outside donors. Has out-raised the sitting incumbent nearly 2 to 1 — the notable fact in this race. His only political-organization spending was $60 to a Republican Women event and $26.35 at an Indian River County Republican Executive Committee barbecue.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',
-              date: '2026-08-05'
-            }
+            raised: 5925,
+            spent: 5176.85,
+            selfFunded: 25,
+            asOf: '2026-10-02',
+            note: 'Updated Oct 25, 2026 through report G4 (period ending Oct 2) — no report for the period ending Oct 16 was posted on the county portal as of Oct 25. 11 donors. His contributors include a Matthew Erpenbeck of Austin, Texas (listed as businessman, $1,000, Aug. 4, 2026); the district chair who resigned in February after the leadership dispute with Kirkland is also named Matt Erpenbeck, but this guide has not confirmed they are the same person. Largest spending: $3,792 for signs and media (Seahorse Global Enterprises). Political-organization spending: Republican Women ($60), the county Republican Executive Committee barbecue ($26.35), and a $350 county GOP campaign event. Roughly $750 left.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1939,7 +1997,9 @@ window.GUIDE = {
         { id: 'zudans', name: 'Tracey Lockwood Zudans', party: 'NONPARTISAN',
           occupation: 'Former Vero Beach City Council member',
           bio: 'Previously served a term on Vero Beach City Council before leaving to run for Indian River County Commission District 5 in 2024, where she lost the Republican primary to incumbent Laura Moss, 55%-45% — that county seat is not up again until 2028 and is unrelated to this race. Her 2026 campaign site (copyright-dated 2026) confirms she is now seeking a return to City Council, describing herself as having "previously served as a Vero Beach City Council Member."',
-          positions: {}, record: [
+          positions: {
+            taxes: { summary: 'Names three main objectives: accountability, fiscal responsibility, and attention to residents\' needs.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
             { type: 'vote', claim: 'Cast the sole dissenting vote against both the FY2023-24 city budget and its accompanying millage-rate increase (consecutive 4-1 votes, Sept. 2023). The $33 million budget, up 5.1%, raised the millage from $2.69 to $2.77 per $1,000 of taxable value to fund four new police officers, added staff, and 5% raises for 330+ employees.',
               quote: "unnecessary [spending]... [the council could have] met the public-safety criteria without raising the millage.",
               date: '2023-10-30', source: { title: 'Vero News — "City ups taxes to fund raises, add cops"', url: 'https://veronews.com/2023/10/30/city-ups-taxes-to-fund-raises-add-cops/', date: '2023-10-30' } },
@@ -1961,7 +2021,11 @@ window.GUIDE = {
         { id: 'vos', name: 'Aaron Vos', party: 'NONPARTISAN', incumbent: true,
           occupation: 'Management/technical consultant, RTX Corporation (formerly Raytheon)',
           bio: 'Elected to City Council in 2024 after moving to Vero Beach from California; lives in Castaway Cove. Age 63 at the time of that election, a first-time officeholder who won with 23% of the vote in a multi-candidate field. Seeking a second term in 2026.',
-          positions: {}, record: [
+          positions: {
+            taxes: { summary: 'Lists responsible fiscal management, transparent government, thoughtful long-term planning, and preserving quality of life as his priorities.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
+            { type: 'vote', claim: 'On Oct. 13, 2026, voted with Vice Mayor Taylor Dingle against Linda Moore\'s motion to remove a "Parental Rights and Appreciation Month" proclamation from the agenda; the motion carried 3-2.',
+              date: '2026-10-13', source: { title: 'Vero News / Vero Beach 32963 — "Councilwoman\'s week of missteps ends with a bang"', url: 'https://veronews.com/2026/10/22/councilwomans-week-of-missteps-ends-with-a-bang/', date: '2026-10-22' } },
             { type: 'vote', claim: 'Seconded then-Vice Mayor Moore\'s motion to approve the FY2025-26 budget (2.9816 millage, 7.72% higher than the prior year); passed unanimously, 5-0. Separately advocated using AI to assist with crime-data analysis during the police-budget discussion.',
               date: '2025-09-04', source: { title: 'Hometown News — "Vero Beach approves $36m city budget with higher tax rate"', url: 'https://www.hometownnewstc.com/news/indian_river/vero-beach-approves-36m-city-budget-with-higher-tax-rate/article_e73e323f-e8a2-5b1e-b911-2e7922c34448.html', date: '2025-09-04' } },
             { type: 'vote', claim: 'Voted against using a 14-acre city-owned "old nursery site" for affordable housing under the Live Local Act (joined by Vice Mayor Dingle and Councilman Carroll; opposed by Moore and Mayor Cotugno, who wanted to use the site). Cited environmental/industrial-zoning concerns tied to a nearby cement operation.',
@@ -1985,15 +2049,18 @@ window.GUIDE = {
           occupation: 'Owner, Exit Right Realty (downtown Vero Beach)',
           bio: 'Spent much of his youth in Vero Beach before a career in sports promotion and marketing, including work for Major League Soccer\'s Real Salt Lake, and later launched an insurance business in Massachusetts. He and his wife Colleen started their downtown realty company. Filed his candidacy in June 2026.',
           positions: {
+            amendment: { stance: 'support', summary: 'Supports Amendment 3, the homestead property-tax exemption amendment, and says he is committed to protecting taxpayers.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } },
             growth: {
               summary: 'Frames the council term as a pivotal moment for shaping the city\'s next 30 years, citing his business and leadership background. Correction, Aug 2026: this guide had tagged this as a "balanced management" stance for the match quiz — on review, this statement doesn\'t actually commit to a growth-policy direction, so no stance is assigned; it will correctly show as "no data" in the quiz rather than a false match.',
               quote: 'I live, work, and raise my family in this city, and I believe we have a tremendous opportunity to shape what our community becomes over the next 30 years. I believe this is a pivotal moment in our city\'s history.',
               source: { title: 'The Sunshine Journal (partisan Substack) — reporting his candidacy filing', url: 'https://thomasaugustus.substack.com/p/breaking-rob-maccallum-files-candidacy', date: '2026-06-01' } }
           }, record: [], finance: null, endorsements: [], links: {} },
         { id: 'kramer', name: 'Jay Kramer', party: 'NONPARTISAN',
-          occupation: 'Former Vero Beach City Council member and two-time Mayor; Indian River County Republican Executive Committee Chairman',
-          bio: 'Served on Vero Beach City Council Nov. 2010 - Nov. 2016, including two terms as Mayor (2010-2011, 2015-2016), returning after roughly a decade away from the ballot. This guide located his historical council service and record below — his 2010s policy positions are not imported as current 2026 platform statements, but the record of his conduct in office is fair game the same as any other candidate\'s. Confirmed, resolving a prior open question: he is the same Jay Kramer who chairs the Indian River County Republican Executive Committee.',
-          positions: {}, record: [
+          occupation: 'Former Vero Beach City Council member and two-time Mayor; former Indian River County Republican Executive Committee Chairman',
+          bio: 'Served on Vero Beach City Council Nov. 2010 - Nov. 2016, including two terms as Mayor (2010-2011, 2015-2016), returning after roughly a decade away from the ballot. This guide located his historical council service and record below — his 2010s policy positions are not imported as current 2026 platform statements, but the record of his conduct in office is fair game the same as any other candidate\'s. Confirmed, resolving a prior open question: he is the same Jay Kramer who chaired the Indian River County Republican Executive Committee. Corrected Oct 25, 2026: earlier editions described him as the current chairman; the committee\'s chair at its Oct. 14, 2026 candidate forum was Lamarre Notargiacomo. Vero News also notes he was Republican State Committeeman, 2012-2016.',
+          positions: {
+            lagoon: { summary: 'Lists restoring the Indian River Lagoon among his key priorities, alongside retaining and attracting businesses that bring jobs, and infrastructure work. No specific lagoon approach stated.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
             { type: 'vote', claim: 'Elected in 2010 as part of a slate favoring the sale of the city\'s Vero Electric utility to Florida Power & Light, then reversed himself and became the leading council opponent of the sale, arguing the city could run the utility without a power plant.',
               detail: 'Voters ultimately approved the FPL sale in a March 2013 referendum; it closed in 2014, with the full transition completed by Dec. 2018, after Kramer had left the council.',
               date: '2015-12-03', source: { title: 'Vero Beach 32963 — "Will new Mayor Kramer steer Vero Council back to the right?"', url: 'https://vb32963online.com/STORIES%202015/DECEMBER%202015/VB32963_Will_New_Mayor_Kramer_Steer_Vero_Council_Back_To_The_Right_Issue49_120315.html', date: '2015-12-03' } },
@@ -2013,7 +2080,9 @@ window.GUIDE = {
         { id: 'heady', name: 'Brian Heady', party: 'NONPARTISAN',
           occupation: 'Perennial Vero Beach candidate; one prior term on City Council (2009-2011)',
           bio: 'Correction, Aug 26, 2026: this guide previously described him only as a "perennial candidate," which undersold his history — he won one of his roughly 26 campaigns for office, serving a full term on Vero Beach City Council 2009-2011 after riding voter anger over high Vero Electric bills (he served alongside Jay Kramer, also a candidate in this race). He lost his 2011 re-election bid and has run for various offices since, including an unsuccessful 2016 run for County Commission District 5. His past stated focus has been opposing what he calls wasteful council spending on studies (downtown parking, the Twin Pairs). This guide has not confirmed his specific 2026 platform and is not importing older statements as current.',
-          positions: {}, record: [
+          positions: {
+            taxes: { summary: 'Lists fiscal responsibility and more public input at City Council meetings as his priorities.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
             { type: 'vote', claim: 'In Nov. 2010, voted "no" on a motion related to selling Vero Electric to FPL, despite having spent months pushing for the city to at least discuss a sale — a reversal he disputed.',
               quote: 'I did not backtrack. I have not changed my position.',
               detail: 'He argued the amended motion required proof the sale would be financially beneficial before he\'d support it. On the same underlying issue, he opposed a colleague\'s push for public FPL meetings, instead favoring private one-on-one sessions between each council member and FPL.',
@@ -2030,7 +2099,18 @@ window.GUIDE = {
         { id: 'moore', name: 'Linda Moore', party: 'NONPARTISAN', incumbent: true,
           occupation: 'Vero Beach City Council member (Vice Mayor 2023-2025)',
           bio: 'Correction, Aug 26, 2026: this guide previously listed her as sitting Vice Mayor — she stepped down from that post at the council\'s Nov. 17, 2025 organizational meeting, nominating Councilman Taylor Dingle instead (he won 3-2). John Cotugno remains Mayor. Moore is now a Councilmember seeking a further term. This guide has not confirmed her specific 2026 platform beyond the record items below and is not importing older statements as current positions.',
-          positions: {}, record: [
+          positions: {
+            lagoon: { stance: 'infrastructure-investment', summary: 'Priorities include saving the Indian River Lagoon by relocating the city\'s wastewater treatment plant from the lagoon to the Vero Beach airport, and making it easy and affordable for residents to switch from septic to sewer.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } },
+            growth: { summary: 'Wants Three Corners developed "for all residents." Served on the Three Corners Steering Committee.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
+            { type: 'vote', claim: 'On Oct. 13, 2026, moved to remove a "Parental Rights and Appreciation Month" proclamation from the council agenda so it would not be read or presented. The motion carried 3-2 (Moore, Mayor John Cotugno and John Carroll in favor; Vice Mayor Taylor Dingle and Aaron Vos against).',
+              quote: 'We have a policy against any proclamations that are controversial, and, um, I feel like perhaps this one could be revisited and maybe restructured a little bit.',
+              detail: 'Dingle, who placed the proclamation on the agenda, noted it had gone through staff channels and that Moore had signed it. Moore replied: "Well, I\'m guilty of signing it without reading it. I am. They give me a bunch of stuff to sign and I just do it. And then later when I saw it on the agenda, I went back and read it. So I\'m guilty of that. And I apologize for signing it without reading it." At the county Republican Executive Committee\'s candidate forum the next evening, she said the issue reminded her of the Covid-era school mask debate and was not something the city should weigh in on; the other council candidates present said they supported parental rights.',
+              date: '2026-10-13', source: { title: 'Vero News / Vero Beach 32963 — "Councilwoman\'s week of missteps ends with a bang"', url: 'https://veronews.com/2026/10/22/councilwomans-week-of-missteps-ends-with-a-bang/', date: '2026-10-22' } },
+            { type: 'fact', claim: 'On Oct. 15, 2026, by her own account, she struck a parked car while backing out of a space at Young\'s Market and drove away. Vero Beach police then collected her license, registration and insurance and passed them to the other car\'s owner; officers completed a crash report that police say they will not release for 60 days, which is after the election.',
+              detail: 'Leaving the scene of a crash with property damage is a second-degree misdemeanor in Florida. Asked whether she received a ticket or notice to appear, Moore said: "No. There were no charges." Some residents publicly suggested she received special treatment as an elected official; this guide found no evidence either way. Challengers Tracey Zudans, John O\'Connor and Rob MacCallum each said elected officials should be held to the same standard as anyone else. The source article is written in a pointed, critical tone; this entry reports only its factual content.',
+              response: 'In a video she posted, Moore said she backed out of a space next to an employee\'s car and "did not feel my car hit that car," that the owner knew who she was and where she worked, that it "makes zero sense" she would drive off thinking she would get away with it, and that she later apologized and offered to pay for the damage.',
+              date: '2026-10-15', source: { title: 'Vero News / Vero Beach 32963 — "Councilwoman\'s week of missteps ends with a bang"', url: 'https://veronews.com/2026/10/22/councilwomans-week-of-missteps-ends-with-a-bang/', date: '2026-10-22' } },
             { type: 'vote', claim: 'Made the motion to approve the city\'s FY2025-26 budget: a 2.9816 millage rate, 7.72% higher than the prior year, funding a $36 million budget with seven new positions and a 2% raise for retirees. Passed unanimously, 5-0.',
               date: '2025-09-04', source: { title: 'Hometown News — "Vero Beach approves $36m city budget with higher tax rate"', url: 'https://www.hometownnewstc.com/news/indian_river/vero-beach-approves-36m-city-budget-with-higher-tax-rate/article_e73e323f-e8a2-5b1e-b911-2e7922c34448.html', date: '2025-09-04' } },
             { type: 'vote', claim: 'On the Three Corners waterfront redevelopment, initially voted with two other council members to pursue a rival "SuDa" development proposal over "Clearpath" — a 3-2 vote. The council later disqualified SuDa in a separate, contested vote, and on April 22, 2025 selected Clearpath, reported by multiple outlets as unanimous.',
@@ -2053,10 +2133,14 @@ window.GUIDE = {
           ], finance: null, endorsements: [],
           links: { 'Campaign Facebook': 'https://www.facebook.com/Lindamoreismore/' } },
         { id: 'benedict', name: 'Davis Benedict', party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Added Aug 25, 2026 after this guide found it had missed him in an earlier pass — he was confirmed as the 8th qualified candidate via the City of Vero Beach\'s official candidate page. This guide has not yet researched his background, occupation, or platform.',
-          positions: {}, record: [
-            { type: 'fact', claim: 'This guide has not yet completed research on this candidate beyond confirming his name on the official qualified-candidate list.',
+          occupation: 'Educator and strategic business planner, Aiello Environmental Pest Management',
+          bio: 'Political newcomer, confirmed as the 8th qualified candidate via the City of Vero Beach\'s official candidate page. Per Vero News: a fourth-generation Floridian and 30-year educator, now a strategic business planner with Aiello Environmental Pest Management in Indian River County, who has served on boards including the VNA & Hospice Foundation, the Surdna Foundation, and Andrus on the Hudson, a nursing home. (Earlier editions of this guide referred to Benedict as "he"; Vero News uses "she.")',
+          positions: {
+            growth: { summary: 'Wants to move forward with the long-awaited Three Corners waterfront development, manage the growth of Vero Beach Regional Airport, and preserve neighborhoods.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } },
+            taxes: { summary: 'Lists maintaining a balanced budget while retaining services among her objectives.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } },
+            lagoon: { summary: 'Lists protecting the Indian River Lagoon among her objectives, without naming a specific approach.', source: { title: 'Vero News — "8 candidates contend for 3 seats on Vero Beach City Council"', url: 'https://veronews.com/2026/10/19/8-candidates-contend-for-3-seats-on-vero-beach-city-council/', date: '2026-10-19' } }
+          }, record: [
+            { type: 'fact', claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
               detail: 'Added late after an initial gap in this guide\'s research; flagged honestly rather than left off the ballot entirely.',
               date: '2026-08-25', source: { title: 'City of Vero Beach — official candidate list', url: 'https://www.covb.org/659/Candidates-For-City-Council-2026', date: '2026-08-25' } }
           ], finance: null, endorsements: [], links: {} }
@@ -2598,15 +2682,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2157834,
-            spent: 984598,
-            asOf: '2026-07-29',
-            note: '$1,187,355 cash on hand. Includes $751,537 in itemized individual contributions and $1,385,550 from political committees — the only candidate in the race with significant institutional PAC money.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=H&state=FL&district=09',
-              date: '2026-08-07'
-            }
+            raised: 3464996,
+            spent: 2137323,
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026 from the Q3 report. $1.34 million cash on hand entering October; about $1.6 million raised in the third quarter alone. Earlier (through July 29) the guide reported $2.16M raised, including $1,385,550 from political committees — the only candidate in the race with significant institutional PAC money. Cycle totals here are from a summary of FEC filings; the cash-on-hand figure matches Florida Politics.',
+            source: { title: 'Florida Politics — "Darren Soto faces fight of his career against Dan Green in newly redrawn CD 9"', url: 'https://floridapolitics.com/archives/826101-darren-soto-faces-fight-of-his-career-against-dan-green-in-newly-redrawn-cd-9/', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -2717,12 +2797,8 @@ window.GUIDE = {
             spent: 935273,
             selfFunded: 1000000,
             asOf: '2026-07-29',
-            note: '$363,243 cash on hand. Only $144,589 came from itemized individual contributions and $8,500 from PACs — the bulk is his own money.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=H&state=FL&district=09',
-              date: '2026-08-07'
-            }
+            note: 'Raised/spent totals are through July 29, 2026. UPDATE through Sept 30, 2026 (FEC candidate page): $516,286 cash on hand and $1.84 million in total candidate loans — he lent his campaign another $700,000 in the third quarter, part of the $889,000 Florida Politics reports he took in that quarter. As of July, only $144,589 came from itemized individual contributions and $8,500 from PACs — the bulk is his own money.',
+            source: { title: 'FEC — Dan Green candidate overview, 2026', url: 'https://www.fec.gov/data/candidate/H6FL09294/', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -3605,15 +3681,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 11260000,
+            raised: 20600000,
             spent: null,
-            asOf: '2026-07-29',
-            note: '$8.48 million cash on hand. Separately, roughly $520,000 in independent expenditures has supported her, and a pro-Moody super PAC (Stronger Safer Nation) reported about $11 million on hand — including a single $2.5 million contribution from Ken Griffin. That outside support dwarfs the $2,167 in independent expenditures recorded for Vindman.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=S&state=FL',
-              date: '2026-07-29'
-            }
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026. Cycle total across her committees, per the Tampa Bay Times; $7.2 million cash on hand entering October. She raised about $5.8 million in the third quarter, and about 10% of her money came from donors giving under $200. Not directly comparable to the $11.26 million (campaign account only, through July 29) shown in earlier editions. Separately, a pro-Moody super PAC (Stronger Safer Nation) reported about $11 million on hand as of the summer, including a single $2.5 million contribution from Ken Griffin.',
+            source: { title: 'Tampa Bay Times — "Angie Nixon outraises Ashley Moody in third quarter, still has less cash"', url: 'https://www.tampabay.com/news/florida-politics/elections/2026/10/17/nixon-moody-senate-campaign-donors/', date: '2026-10-17' }
           },
           endorsements: [],
           links: {
@@ -3841,15 +3913,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 974845,
+            raised: 8500000,
             spent: null,
-            asOf: '2026-08-05',
-            note: '$265,000 cash on hand — roughly one-fifteenth of her primary opponent’s war chest.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=S&state=FL',
-              date: '2026-08-05'
-            }
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026. Cycle total per the Tampa Bay Times, including other committees and pre-primary reports; $4.5 million cash on hand at the end of September. She out-raised Moody in the third quarter ($7.9 million to $5.8 million), with roughly 61% of her haul from donors giving under $200. Florida Politics, counting her campaign account separately, reports $7.2 million raised in the quarter and just over $4.1 million cash entering October.',
+            source: { title: 'Tampa Bay Times — "Angie Nixon outraises Ashley Moody in third quarter, still has less cash"', url: 'https://www.tampabay.com/news/florida-politics/elections/2026/10/17/nixon-moody-senate-campaign-donors/', date: '2026-10-17' }
           },
           endorsements: [],
           links: {
@@ -3958,7 +4026,7 @@ window.GUIDE = {
     type: 'partisan',
     ballot: 'general',
     term: '4 years',
-    stakes: 'Florida\'s chief executive, term-limited after two terms; Ron DeSantis is not seeking re-election. The governor appoints agency heads and judges (subject to retention), signs or vetoes legislation including line-item budget vetoes, and sits atop the Florida Cabinet with the Attorney General, CFO, and Commissioner of Agriculture. The governor and lieutenant governor run as a single ticket. This was the most expensive primary cycle on the entire 2026 ballot: Donalds\' campaign and PAC combined raised more than $67 million, roughly ten times Jolly\'s total.',
+    stakes: 'Florida\'s chief executive, term-limited after two terms; Ron DeSantis is not seeking re-election. The governor appoints agency heads and judges (subject to retention), signs or vetoes legislation including line-item budget vetoes, and sits atop the Florida Cabinet with the Attorney General, CFO, and Commissioner of Agriculture. The governor and lieutenant governor run as a single ticket. This is the most expensive race on the entire 2026 ballot: as of Sept. 11, 2026, Donalds\' campaign and affiliated committees had raised about $120.9 million to Jolly\'s $14.6 million, roughly eight to one (see each candidate\'s money section).',
     whoVotes: 'Statewide. Registered Republicans and Democrats each had a contested primary on August 18; NPA and Libertarian candidates skipped the primary and go straight to the Nov 3 general ballot alongside the two major-party nominees. Every registered voter chooses among all qualified candidates on November 3.',
     primaryResult: {
         status: 'advanced',
@@ -4167,16 +4235,12 @@ window.GUIDE = {
               }
             ],
           finance: {
-              raised: 67000000,
-              spent: null,
-              asOf: '2026-06-01',
-              note: 'Campaign account plus political committee combined; $65.8 million cash on hand as of June 1, 2026. A direct FL Division of Elections database query returned individual contribution records but not a computed grand total (the tool\'s "totals" mode errored on every attempted date range) — this figure is secondary-sourced to reporting that itself cites DOE filings, not a raw database pull. Major PAC donors include Palm Beach billionaire Thomas Peterffy and shipping magnate Richard Uihlein ($1 million each) and the Florida Club for Growth ($975,000).',
-              source: {
-                  title: 'Florida Politics — "Byron Donalds posts record $22M quarter to kick off 2026 Governor\'s race"',
-                  url: 'https://floridapolitics.com/archives/788293-byron-donalds-posts-record-22m-quarter-to-kick-off-2026-governors-race/',
-                  date: '2026-04-01'
-                }
-            },
+            raised: 120900000,
+            spent: null,
+            asOf: '2026-09-11',
+            note: 'Updated Oct 25, 2026. Campaign account plus affiliated political committees combined, from state filings through Sept. 11, 2026: $43.5 million cash on hand — nearly seven times Jolly\'s. Later reports put his combined total above $140 million, and the Florida Phoenix (Oct 20, citing OpenSecrets) reports a cash-on-hand edge over Jolly of about $33 million. Secondary-sourced to reporting on Division of Elections filings, not a direct database pull. Major earlier donors include Thomas Peterffy and Richard Uihlein ($1 million each) and the Florida Club for Growth ($975,000).',
+            source: { title: 'Florida Politics — "Polls say dead heat, money says otherwise: Byron Donalds holds $44 million to David Jolly\'s $6 million"', url: 'https://floridapolitics.com/archives/820861-cash-crunch-continues-for-david-jolly-in-governors-race/', date: '2026-09-11' }
+          },
           endorsements: [
               {
                 name: 'President Donald Trump — "As Governor, Byron would have a BIG Voice and would work closely with me to advance our America First Agenda."',
@@ -4374,16 +4438,12 @@ window.GUIDE = {
               }
             ],
           finance: {
-              raised: 6400000,
-              spent: null,
-              asOf: '2026-08-18',
-              note: 'Includes $1.6 million from Florida\'s public campaign-finance matching-funds program. Roughly one-tenth of Donalds\' reported $67M+. Top donors in one recent quarter were investment advisor Donald Sussman and heiress Barbara Stiefel, $100,000 each; campaign says its broader donor base is mostly grassroots. A direct FL DOE database query for a grand total could not be completed in this research pass; this figure is secondary-sourced to reporting that itself cites DOE filings.',
-              source: {
-                  title: 'WLRN — "David Jolly wins Democratic nomination for governor"',
-                  url: 'https://www.wlrn.org/government-politics/2026-08-18/david-jolly-governors-race-florida',
-                  date: '2026-08-18'
-                }
-            },
+            raised: 14600000,
+            spent: null,
+            asOf: '2026-09-11',
+            note: 'Updated Oct 25, 2026. Campaign account plus political committee combined, from state filings through Sept. 11, 2026: $6.4 million cash on hand. Includes money from Florida\'s public matching-funds program ($1.6 million as of August). Later reports put his two accounts at around $20 million raised, and the Democratic Governors Association announced a $1 million investment in his campaign on Oct 20. Secondary-sourced to reporting on Division of Elections filings, not a direct database pull.',
+            source: { title: 'Florida Politics — "Polls say dead heat, money says otherwise: Byron Donalds holds $44 million to David Jolly\'s $6 million"', url: 'https://floridapolitics.com/archives/820861-cash-crunch-continues-for-david-jolly-in-governors-race/', date: '2026-09-11' }
+          },
           endorsements: [
               {
                 name: 'Florida Education Association (the state\'s largest teachers\' union), in coordination with the Florida AFL-CIO',
@@ -6338,6 +6398,222 @@ window.GUIDE = {
             }
         }
       ]
+  },
+
+  {
+    id: 'sebastian-council',
+    office: 'Sebastian City Council',
+    district: 'At-large',
+    type: 'nonpartisan',
+    ballot: 'general',
+    term: '2 years',
+    stakes: 'Added Oct 25, 2026. ONLY relevant if you live within Sebastian city limits. Two of the council\'s five seats are up, decided in a single nonpartisan "vote for 2" election on November 3, 2026 (an earlier edition of this guide wrongly gave the date as November 10). The seats are currently held by Ed Dodd, who is not on the ballot, and Sherrie Matthews, who is seeking another term. After the election, the council chooses the mayor and vice mayor from its own members. Growth and annexation, the city budget, Amendment 3, septic-to-sewer and the Indian River Lagoon dominated the candidates\' Oct 2 forum, hosted by the Sebastian River Area Chamber of Commerce, the Taxpayers Association of Indian River County and Sebastian Daily. A recording of the full forum (about 73 minutes) is on Sebastian Daily\'s YouTube channel and Facebook page. Positions below come from that forum.',
+    whoVotes: 'Only registered voters residing within Sebastian city limits, on the November 3, 2026 general election ballot. Vote for up to two; the top two finishers win.',
+    candidates: [
+        {
+          id: 'gable_sebastian',
+          name: 'Robert Gable',
+          party: 'NONPARTISAN',
+          occupation: 'Not stated in forum coverage',
+          bio: 'Says he has lived in Sebastian 15 years and raised two daughters there, spending most of that time on the sidelines watching the council. First run for office located by this guide.',
+          positions: {
+            growth: {
+              summary: 'Says development is coming and the question is how the city handles it. Would support annexation if it benefits the whole city rather than one developer, because it puts tax money in city hands and lets the council set lot sizes and stormwater rules. Prefers small local business — family restaurants, bait shops, fish markets — over mall-style retail.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Says reserves are for hurricanes, stormwater and public-safety repairs, not daily bills — opposing their use to balance the budget.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Says passage would be hard on Sebastian: law enforcement has to stay funded and street work would be the first thing pushed back. Does not want special assessments to fill the gap. Did not say how he will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Credits earlier councils for oyster reefs and says more of that work depends on volunteers, not a big check; says state drains near the waterfront still dump into the lagoon in heavy rain. On septic-to-sewer, says Sebastian should demand a plan and a funding source from the county.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'gilliams_sebastian',
+          name: 'Damien Gilliams',
+          party: 'NONPARTISAN',
+          occupation: 'Former Sebastian City Council member',
+          bio: 'A former Sebastian City Council member who was recalled by voters in 2020 (see record). Ran again for council in 2024 and finished third of three.',
+          positions: {
+            growth: {
+              summary: 'Wants environmental groups, including the Audubon Society and Friends of the Sebastian River, at the table on annexation; calls for an annexation attorney and a master plan, and warns against eight to 10 units an acre where residents are used to quarter-acre lots. Says the city cannot attract business without infrastructure, starting with a cleaner lagoon.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Says reserves should not pay daily bills, and told voters to read the city\'s audited financial report, not just the budget.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              stance: 'support',
+              summary: 'Supports Amendment 3. Says every department can spend less, pointing to the cost of city trucks and police-car wraps.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Says spraying herbicides and pesticides in stormwater canals and on golf courses has to stop. On septic-to-sewer, says hookup costs are beyond many people on fixed incomes, wants legislators asked for more time, and raised a moratorium on permits where sewer is unavailable.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'Recalled from the Sebastian City Council by voters in 2020 after his arrest on perjury and Sunshine Law charges. A jury convicted him; he served jail time and was ordered to pay the city $26,098.50 in restitution.',
+              response: 'At the Oct. 2, 2026 forum he called the prosecution political and pointed attendees to a flyer about the case.',
+              date: '2026-10-06',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            {
+              type: 'fact',
+              claim: 'Ran for Sebastian City Council in 2024 and finished third of three, with 1,518 votes (7%), behind Kelly Dixon and Ed Dodd.',
+              date: '2024-11-05',
+              source: { title: 'Sebastian Daily — "Sebastian Voters Re-Elect Ed Dodd, Kelly Dixon for City Council"', url: 'https://sebastiandaily.com/business/sebastian-voters-re-elect-ed-dodd-kelly-dixon-for-city-council-73142', date: '2024-11-06' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'gillmor_sebastian',
+          name: 'Richard Gillmor',
+          party: 'NONPARTISAN',
+          occupation: 'Former Sebastian City Council member',
+          bio: 'Says he served on the council about 10 years ago and can start without a learning curve. "I want to keep Sebastian Sebastian," he said in closing.',
+          positions: {
+            growth: {
+              summary: 'Does not want the city\'s character changed. Favors annexing commercial land along U.S. 1 and County Roads 512 and 510, which he says helps pay the bills; says residential annexation does less of that.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Argues city spending has grown far faster than the city: he said the budget was $22.5 million when he left office and $50 million last year, up 123.5%, while population grew 16%. Opposed using reserves to balance this year\'s budget, saying a storm could wipe out what is left and the city would eventually raise taxes to refill the account. Also said the city has let property it owns, such as Hurricane Harbor, fall into disrepair.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Said the city has already proved it can shrink: after the housing crash its workforce fell from 207 to about 150 employees while services continued. Did not say how he will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Blames septic waste carried toward the lagoon by groundwater, and wants scientists to run well tests before the city picks a fix.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'matthews_sebastian',
+          name: 'Sherrie Matthews',
+          party: 'NONPARTISAN',
+          incumbent: true,
+          occupation: 'Sebastian City Council member (incumbent)',
+          bio: 'The sitting council member for one of the two seats up this year, seeking another term. Says she has lived in Indian River County a little more than 50 years, been involved in the community for more than 40, and is raising a grandson here.',
+          positions: {
+            growth: {
+              summary: 'Her standard for annexation is "evolve with grace": a deal has to give something back for the long term, and she will not support one that is not sustainable. Wants more family-owned shops and a fishing-village look for waterfront buildings.',
+              quote: 'evolve with grace',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Voted to use reserves to balance this year\'s budget so the council could adopt a lower tax rate, and says she would do it again while Amendment 3 is unresolved. Disputes the $50 million budget figure, saying grant money inflates it and the operating budget is closer to $37 million.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Says she has never opposed Amendment 3 and is glad voters get to decide; says that once it passes, local government will have to do more with less, and that she is the best candidate to manage that. Did not say how she will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Points to about nine treatment filters the city has installed and says it can add more. On septic-to-sewer, says she has called state representatives about statutory changes that took effect July 1, 2024.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'shellenberger_sebastian',
+          name: 'Deborah Shellenberger',
+          party: 'NONPARTISAN',
+          occupation: 'Retired nurse and physician assistant',
+          bio: 'Says she worked 23 years as a nurse and about 25 as a physician assistant, and describes herself as newer to the city — which she says may be useful.',
+          positions: {
+            growth: {
+              summary: 'Sees annexation as the city\'s chance to control growth: wants the added tax base, housing that people who work in Sebastian can afford, and a hard look at environmental harm. Supports small manufacturing and more local restaurants.',
+              quote: 'If you don\'t grow, you die.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Praised last year\'s budget work for holding down the increase, and says reserves can be used when the city needs help getting through a year.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              stance: 'oppose',
+              summary: 'Opposes Amendment 3, calling it a "Trojan horse." Estimates a $300,000 homeowner might save $1,400 to $1,800 the first year while the city could lose $2.7 to $2.8 million, and warns the ballot language bundles more than one change.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Wants seagrass and oyster reefs, cleared ditches before a wet El Niño season, and a seasonal ban on lawn chemicals. Opposes a county stopgap of electric nitrogen-reducing septic tanks, which she says would fail in a power outage.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        }
+    ]
   }
 
   ]

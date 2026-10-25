@@ -125,8 +125,8 @@ Summarized in full on [methodology.html](methodology.html). The short version:
 
 Honest accounting of what is not yet filled in:
 
-- **Mosquito Control Seat 2** — the only contested special-district race, and one of only two races
-  open to every voter on Aug 18 — has almost no available candidate information. Down-ballot races
+- **Mosquito Control Seat 2** — the only contested special-district race, on every county voter's
+  Nov 3 ballot (earlier editions wrongly said it was decided Aug 18) — has almost no available candidate information. Down-ballot races
   get very little press. This is the largest remaining gap relative to its importance.
 - **County Commission District 4** positions are sparse for both candidates.
 - **Florida constitutional amendments** other than the property tax measure (HJR 203) are not yet

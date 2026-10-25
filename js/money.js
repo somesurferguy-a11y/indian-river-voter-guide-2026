@@ -50,6 +50,7 @@
         '</div></th>' +
         '<td class="small">' + VG.esc(x.race.office) + (x.race.district ? '<br>' + VG.esc(x.race.district) : '') + '</td>' +
         '<td><strong style="font-variant-numeric:tabular-nums">' + money(x.f.raised) + '</strong>' +
+          (x.f.asOf ? '<div class="small muted">as of ' + VG.esc(x.f.asOf) + '</div>' : '') +
           '<div style="height:5px;background:var(--brand);opacity:.7;border-radius:3px;margin-top:5px;width:' + w + '%"></div></td>' +
         '<td style="font-variant-numeric:tabular-nums">' + money(x.f.spent) +
           '<div class="small muted">' + pct(x.f.spent, x.f.raised) + ' of raised</div></td>' +
@@ -70,20 +71,20 @@
   out.innerHTML =
     '<section class="section"><div class="wrap">' +
       '<div class="callout callout--warn"><h4>Read this before the numbers</h4>' +
-      '<p>County figures are <strong>as of the reporting period ending July 31, 2026</strong>. Campaign finance ' +
-      'changes weekly as new reports are filed — later filings may exist.</p>' +
+      '<p>Figures come from different dates — each row shows its own "as of" date. County candidates still on the ' +
+      'Nov 3 ballot are updated through the reporting period ending <strong>Oct 16, 2026</strong> (Oct 2 where a later ' +
+      'report was not yet posted). Candidates whose races were decided in August keep their July 31 figures. ' +
+      'Campaign finance changes weekly — later filings may exist.</p>' +
       '<p class="mb-0">"Raised" here includes candidate loans, which is why a heavily self-funded campaign can ' +
       'show a large total while having little outside support. The self-funded column separates that out.</p></div>' +
       table +
       '<div class="grid grid--2" style="margin-top:28px">' +
         '<div class="card"><h3>What stands out</h3>' +
         '<ul style="margin:0;padding-left:18px">' +
-          '<li>The <strong>County Commission District 2</strong> Republican primary is remarkably tight — the three candidates are within a few thousand dollars of each other and have each spent roughly 90% of what they raised.</li>' +
-          '<li>Their reliance on their own money differs sharply: Robinson is about <strong>63% self-funded</strong>, McPartlan 27%, Pippin 18%.</li>' +
-          '<li>Pippin has the <strong>broadest donor base</strong> in that race (104 donors); Robinson the narrowest (48).</li>' +
-          '<li>Both Democrats — Hardingham and Jaffe — are running on well under <strong>one-fifteenth</strong> of their Republican opponents\' money.</li>' +
-          '<li>In the School Board race, <strong>neither candidate put in a dollar of their own.</strong> Rosario raised about 1.76x Lange and has spent less of it, holding the larger reserve.</li>' +
-          '<li>Their money comes from different places: Rosario\'s from the Republican party and state political committees, Lange\'s from a retired Vero Beach donor network writing maximum checks.</li>' +
+          '<li><strong>County Commission District 2:</strong> Pippin (R) has raised about <strong>4.3 times</strong> what Hardingham (D) has, $67,073 to $15,749. But Hardingham has by far the most donors of any county candidate — about 340, almost all under $100 — to Pippin\'s 160.</li>' +
+          '<li><strong>County Commission District 4:</strong> Loar (R) raised almost nothing new after July ($54,820 total, now second to Pippin among county candidates) and has spent about $30,400 of it. Jaffe (D) has raised $6,408.</li>' +
+          '<li><strong>Mosquito Control Seat 2:</strong> the incumbent, Kirkland, has overtaken her challenger, $6,200 to $5,925 — reversing the July picture.</li>' +
+          '<li>In the School Board race decided Aug 18 (July figures), <strong>neither candidate put in a dollar of their own.</strong> Rosario\'s money came largely from the Republican party and state political committees, Lange\'s from a retired Vero Beach donor network writing maximum checks.</li>' +
         '</ul></div>' +
         '<div class="card"><h3>A note on withdrawn candidates</h3>' +
         '<p>Melissa Dean (R) raised <strong>$84,670</strong> for County Commission District 2 — more than any active candidate in the race — roughly 98% of it her own money, then withdrew and filed a termination report. Damien Gilliams (R) qualified and withdrew with no transactions on file.</p>' +
