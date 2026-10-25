@@ -1735,6 +1735,13 @@ window.GUIDE = {
           },
           record: [
             {
+              type: 'vote',
+              claim: 'At an Oct. 10, 2025 special meeting, she and Commissioner Janice Broda voted not to extend Executive Director Sherry Burroughs\' contract on the five-year, unchanged terms Chair Matt Erpenbeck wanted, and to renegotiate instead.',
+              detail: 'Broda called the meeting while Erpenbeck was out of town; for that meeting Broda served as chair and Kirkland as vice chair. The two then offered Burroughs a two-year contract and removed a clause guaranteeing 15 weeks of severance pay if she was fired. No agreement was reached and Burroughs left. Erpenbeck filed a state ethics complaint against Broda (not Kirkland) on Dec. 4, 2025, and resigned from the board on Feb. 6, 2026; the Florida Commission on Ethics dismissed the complaint on March 6. A hiring committee set up by Broda and Kirkland then chose Isik Unlu from 31 applicants as the new executive director, on a two-year, $165,000-a-year contract starting May 26, 2026. Kirkland said the decision not to renew Burroughs\' contract was difficult, but that the focus had to be on what is best for the district. Earlier, district minutes show the board asked its lawyer whether Erpenbeck had to disclose a conflict of interest: he was executive director of the Florida Mosquito Control Association, where Burroughs was a vice president. Coverage reflects mostly one side; this guide found no published account from Erpenbeck or Burroughs of the Oct. 10 vote.',
+              date: '2025-10-10',
+              source: { title: 'Vero News — "Legacy resident Lowther, newcomer Unlu added to Mosquito Control District"', url: 'http://veronews.com/2026/05/23/legacy-resident-lowther-newcomer-unlu-added-to-mosquito-control-district/', date: '2026-05-23' }
+            },
+            {
               type: 'fact',
               claim: 'Her filed candidate statement contains no specific policy proposal — no stated position on the millage rate, aerial spraying, the district\'s growing reserves, or the consolidation question.',
               detail: 'Noted because in a race with two candidates and almost no press coverage, the filed statement is the main thing a voter can read.',
@@ -1756,8 +1763,8 @@ window.GUIDE = {
             },
             {
               type: 'fact',
-              claim: 'This guide located no lawsuits, ethics complaints, criminal record, or controversies involving Kirkland.',
-              detail: 'Reported as nothing found rather than as a clean record — the search was web-based and did not include a manual clerk-of-court docket search.',
+              claim: 'This guide located no lawsuits, ethics complaints, or criminal record naming Kirkland.',
+              detail: 'Corrected Oct 25, 2026: earlier editions also said no "controversies" were found. That was wrong — she was one of the two commissioners at the center of the district\'s 2025-26 leadership dispute (see the vote below). The one ethics complaint filed during that dispute named her colleague Janice Broda, not Kirkland, and was dismissed. Reported as nothing found rather than as a clean record — the search was web-based and did not include a manual clerk-of-court docket search.',
               date: '2026-08-05',
               source: {
                 title: 'This guide review of public sources',
