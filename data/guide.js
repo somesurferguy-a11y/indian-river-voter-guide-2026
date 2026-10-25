@@ -1045,12 +1045,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 37012,
-            spent: 34562,
+            raised: 67073.21,
+            spent: 55526.51,
             selfFunded: 6550,
-            asOf: '2026-07-31',
-            note: 'Includes $6,550 in candidate loans. 104 donors — the broadest donor base of any District 2 candidate. Dominant pattern: small-dollar contributions plus $1,000 maximum checks from local individuals and a conservative donor network.',
-            source: { title: 'IRC Supervisor of Elections campaign finance portal (transaction-level data)', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian', date: '2026-08-05' }
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Includes $6,550 in candidate loans, plus $6,342 in in-kind support not counted in the total. About 160 donors; roughly 68% of the money came from Indian River County addresses. About $30,000 raised since July 31. Roughly $11,500 left (raised minus spent). Largest spending: Post It Studios ($17,319), Direct Mail Systems ($7,031), Mercury Messages ($6,852), plus the $5,184 qualifying fee. Raises about 4.3 times what her Democratic opponent has.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=566&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: { 'Campaign website': 'https://votejenniferpippin.com/' }
@@ -1165,12 +1165,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2686,
-            spent: 2096,
+            raised: 15748.68,
+            spent: 14533.11,
             selfFunded: 80,
-            asOf: '2026-07-31',
-            note: '25 donors, almost entirely small-dollar local individuals. Roughly one-sixteenth of the leading Republican total — a minimal-budget campaign.',
-            source: { title: 'IRC Supervisor of Elections campaign finance portal (transaction-level data)', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian', date: '2026-08-05' }
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Up from $2,686 at July 31 — about $13,000 raised since the primary, almost all in small checks: about 340 donors, more than any other county candidate this cycle, with most contributions under $100 and about half the money from Indian River County addresses. No PAC or business money. $80 in candidate loans plus most of his $1,244 in in-kind support came from himself. Roughly $1,200 left (raised minus spent).',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=567&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {}
@@ -1195,16 +1195,18 @@ window.GUIDE = {
             {
               type: 'fact',
               claim: 'This guide could locate no biography, occupation, platform, statements, or press coverage of Paradiso in any source.',
-              detail: 'She reported raising $30.00 and spending nothing. Her name will not be printed on the November ballot — voters choosing her must write it in.',
+              detail: 'As of early August she had reported raising $30.00 and spending nothing; by mid-October she had raised $2,380 (see money section). Her name will not be printed on the November ballot — voters choosing her must write it in.',
               date: '2026-08-05',
               source: { title: 'Indian River County Supervisor of Elections — candidate financial reports', url: 'https://www.voteindianriver.gov/campaigns/candidates/financial_reports_profiles.php' }
             }
           ],
           finance: {
-            raised: 30.00,
-            spent: 0,
-            asOf: '2026-08-05',
-            source: { title: 'Indian River County Supervisor of Elections — candidate financial reports', url: 'https://www.voteindianriver.gov/campaigns/candidates/financial_reports_profiles.php', date: '2026-08-05' }
+            raised: 2380,
+            spent: 802.16,
+            selfFunded: 30,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Up from $30 in early August: four outside donors, plus $666 in in-kind support not counted in the total.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=573&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {}
@@ -1311,16 +1313,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 54690,
-            spent: 6040,
-            selfFunded: 12000,
-            asOf: '2026-07-31',
-            note: 'The largest war chest of any local candidate this cycle, and he has spent only about 11% of it — a strong position heading into November. Includes a $10,000 candidate loan plus $2,000 in-kind. 54 donors. Dominant categories: business owners, real estate, and out-of-county manufacturing.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian',
-              date: '2026-08-05'
-            }
+            raised: 54820,
+            spent: 30411.3,
+            selfFunded: 10000,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). Was the largest total of any county candidate in July, but has raised almost nothing since ($130 after July 31) and is now second to Pippin. He has now spent about $30,400 — $24,000 of it since July, led by Marc Media ($12,148) and VB 32963 ($4,631) — leaving roughly $24,400. Includes a $10,000 candidate loan; he also gave $2,000 in in-kind signs and shirts. 55 donors, about 78% of the money from Indian River County addresses; about $23,000 from businesses, including several checks from Sembler family members and Sembler-named businesses in Tallahassee.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=560&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1406,16 +1404,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2863,
-            spent: 1070,
+            raised: 6408.14,
+            spent: 3724.47,
             selfFunded: 100,
-            asOf: '2026-07-31',
-            note: '21 donors, almost entirely small-dollar local individuals. Roughly one-nineteenth of the incumbent total.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=candlist&c=indian',
-              date: '2026-08-05'
-            }
+            asOf: '2026-10-02',
+            note: 'Updated Oct 25, 2026 through report G4 (period ending Oct 2) — his report for the period ending Oct 16 was not posted on the county portal as of Oct 25. More than doubled since July: about 42 donors, nearly all local individuals, 73% from Indian River County addresses. Roughly $2,700 left (raised minus spent). About one-ninth of the incumbent total.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=564&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1779,16 +1773,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2450.0,
-            spent: 60.0,
-            selfFunded: 450.0,
-            asOf: '2026-08-05',
-            note: 'Figures as of Aug 5, 2026. Includes $300 in-kind. Only TWO outside donors at that point. A later secondary summary of county filings (The Ballot Brief, October 2026 — not re-pulled directly by this guide) reports $4,450 raised. Her challenger has out-raised her throughout — unusual for an incumbent. Her single reported expenditure, $60, went to a Republican Women event.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',
-              date: '2026-08-05'
-            }
+            raised: 6200,
+            spent: 3871.11,
+            selfFunded: 150,
+            asOf: '2026-10-16',
+            note: 'Updated Oct 25, 2026 through report G5 (period ending Oct 16). She has now overtaken her challenger: $6,200 to his $5,925 — earlier editions, using July figures, said he had out-raised her. 15 donors, nearly all from Vero Beach, including a $1,000 check from a Starlet Kirkland. $150 of her own money plus $300 in-kind from herself. Largest spending: Treasure Coast Embroidery ($1,851) and Facebook/Meta ads ($528). Roughly $2,300 left.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=562&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -1850,16 +1840,12 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 4025.0,
-            spent: 211.35,
-            selfFunded: 25.0,
-            asOf: '2026-08-05',
-            note: 'Figures as of Aug 5, 2026, when he had six outside donors. A later secondary summary of county filings (The Ballot Brief, October 2026 — not re-pulled directly by this guide) reports $5,925 raised and $5,177 spent, still ahead of the sitting incumbent — the notable fact in this race. His only political-organization spending was $60 to a Republican Women event and $26.35 at an Indian River County Republican Executive Committee barbecue.',
-            source: {
-              title: 'IRC Supervisor of Elections campaign finance portal',
-              url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',
-              date: '2026-08-05'
-            }
+            raised: 5925,
+            spent: 5176.85,
+            selfFunded: 25,
+            asOf: '2026-10-02',
+            note: 'Updated Oct 25, 2026 through report G4 (period ending Oct 2) — no report for the period ending Oct 16 was posted on the county portal as of Oct 25. 11 donors. His contributors include a Matthew Erpenbeck of Austin, Texas (listed as businessman, $1,000, Aug. 4, 2026); the district chair who resigned in February after the leadership dispute with Kirkland is also named Matt Erpenbeck, but this guide has not confirmed they are the same person. Largest spending: $3,792 for signs and media (Seahorse Global Enterprises). Political-organization spending: Republican Women ($60), the county Republican Executive Committee barbecue ($26.35), and a $350 county GOP campaign event. Roughly $750 left.',
+            source: { title: 'IRC Supervisor of Elections campaign finance portal (VoterFocus) — candidate reports and transaction export', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
