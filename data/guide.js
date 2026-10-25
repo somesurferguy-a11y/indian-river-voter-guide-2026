@@ -6359,25 +6359,40 @@ window.GUIDE = {
     type: 'nonpartisan',
     ballot: 'general',
     term: '2 years',
-    stakes: 'Added Oct 25, 2026. ONLY relevant if you live within Sebastian city limits. Two of the council\'s five seats are up, decided in a single nonpartisan "vote for 2" election on November 3, 2026 (an earlier edition of this guide wrongly gave the date as November 10). The seats are currently held by Ed Dodd, who is not on the ballot, and Sherrie Matthews, who is seeking another term. Growth, the city budget and the Indian River Lagoon dominated the candidates\' Oct 2 forum, hosted by the Sebastian River Area Chamber of Commerce, the Taxpayers Association of Indian River County and Sebastian Daily; a recording of the full forum (about 73 minutes) is on Sebastian Daily\'s YouTube channel and Facebook page. Coverage here is thin: this guide could read only excerpts of that coverage and has not checked the candidate list against the City Clerk\'s official qualified-candidate list.',
+    stakes: 'Added Oct 25, 2026. ONLY relevant if you live within Sebastian city limits. Two of the council\'s five seats are up, decided in a single nonpartisan "vote for 2" election on November 3, 2026 (an earlier edition of this guide wrongly gave the date as November 10). The seats are currently held by Ed Dodd, who is not on the ballot, and Sherrie Matthews, who is seeking another term. After the election, the council chooses the mayor and vice mayor from its own members. Growth and annexation, the city budget, Amendment 3, septic-to-sewer and the Indian River Lagoon dominated the candidates\' Oct 2 forum, hosted by the Sebastian River Area Chamber of Commerce, the Taxpayers Association of Indian River County and Sebastian Daily. A recording of the full forum (about 73 minutes) is on Sebastian Daily\'s YouTube channel and Facebook page. Positions below come from that forum.',
     whoVotes: 'Only registered voters residing within Sebastian city limits, on the November 3, 2026 general election ballot. Vote for up to two; the top two finishers win.',
     candidates: [
         {
           id: 'gable_sebastian',
           name: 'Robert Gable',
           party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Candidate for an at-large Sebastian City Council seat. This guide has not yet documented his background.',
+          occupation: 'Not stated in forum coverage',
+          bio: 'Says he has lived in Sebastian 15 years and raised two daughters there, spending most of that time on the sidelines watching the council. First run for office located by this guide.',
           positions: {
-
+            growth: {
+              summary: 'Says development is coming and the question is how the city handles it. Would support annexation if it benefits the whole city rather than one developer, because it puts tax money in city hands and lets the council set lot sizes and stormwater rules. Prefers small local business — family restaurants, bait shops, fish markets — over mall-style retail.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Says reserves are for hurricanes, stormwater and public-safety repairs, not daily bills — opposing their use to balance the budget.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Says passage would be hard on Sebastian: law enforcement has to stay funded and street work would be the first thing pushed back. Does not want special assessments to fill the gap. Did not say how he will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Credits earlier councils for oyster reefs and says more of that work depends on volunteers, not a big check; says state drains near the waterfront still dump into the lagoon in heavy rain. On septic-to-sewer, says Sebastian should demand a plan and a funding source from the county.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
-              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
               date: '2026-10-25',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           ],
           finance: null,
@@ -6388,12 +6403,35 @@ window.GUIDE = {
           id: 'gilliams_sebastian',
           name: 'Damien Gilliams',
           party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Candidate for an at-large Sebastian City Council seat; also ran for the council in 2024.',
+          occupation: 'Former Sebastian City Council member',
+          bio: 'A former Sebastian City Council member who was recalled by voters in 2020 (see record). Ran again for council in 2024 and finished third of three.',
           positions: {
-
+            growth: {
+              summary: 'Wants environmental groups, including the Audubon Society and Friends of the Sebastian River, at the table on annexation; calls for an annexation attorney and a master plan, and warns against eight to 10 units an acre where residents are used to quarter-acre lots. Says the city cannot attract business without infrastructure, starting with a cleaner lagoon.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Says reserves should not pay daily bills, and told voters to read the city\'s audited financial report, not just the budget.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              stance: 'support',
+              summary: 'Supports Amendment 3. Says every department can spend less, pointing to the cost of city trucks and police-car wraps.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Says spraying herbicides and pesticides in stormwater canals and on golf courses has to stop. On septic-to-sewer, says hookup costs are beyond many people on fixed incomes, wants legislators asked for more time, and raised a moratorium on permits where sewer is unavailable.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
           },
           record: [
+            {
+              type: 'fact',
+              claim: 'Recalled from the Sebastian City Council by voters in 2020 after his arrest on perjury and Sunshine Law charges. A jury convicted him; he served jail time and was ordered to pay the city $26,098.50 in restitution.',
+              response: 'At the Oct. 2, 2026 forum he called the prosecution political and pointed attendees to a flyer about the case.',
+              date: '2026-10-06',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
             {
               type: 'fact',
               claim: 'Ran for Sebastian City Council in 2024 and finished third of three, with 1,518 votes (7%), behind Kelly Dixon and Ed Dodd.',
@@ -6402,10 +6440,10 @@ window.GUIDE = {
             },
             {
               type: 'fact',
-              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
-              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
               date: '2026-10-25',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           ],
           finance: null,
@@ -6417,20 +6455,32 @@ window.GUIDE = {
           name: 'Richard Gillmor',
           party: 'NONPARTISAN',
           occupation: 'Former Sebastian City Council member',
-          bio: 'A former Sebastian City Council member seeking to return to the council.',
+          bio: 'Says he served on the council about 10 years ago and can start without a learning curve. "I want to keep Sebastian Sebastian," he said in closing.',
           positions: {
+            growth: {
+              summary: 'Does not want the city\'s character changed. Favors annexing commercial land along U.S. 1 and County Roads 512 and 510, which he says helps pay the bills; says residential annexation does less of that.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
             taxes: {
-              summary: 'Argues city spending has grown far faster than the city: he said the budget was $22.5 million when he left office and $50 million last year, a 123.5% increase, while population grew 16%. Also said the city has not taken care of property it already owns, citing Hurricane Harbor.',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              summary: 'Argues city spending has grown far faster than the city: he said the budget was $22.5 million when he left office and $50 million last year, up 123.5%, while population grew 16%. Opposed using reserves to balance this year\'s budget, saying a storm could wipe out what is left and the city would eventually raise taxes to refill the account. Also said the city has let property it owns, such as Hurricane Harbor, fall into disrepair.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Said the city has already proved it can shrink: after the housing crash its workforce fell from 207 to about 150 employees while services continued. Did not say how he will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Blames septic waste carried toward the lagoon by groundwater, and wants scientists to run well tests before the city picks a fix.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
-              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
               date: '2026-10-25',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           ],
           finance: null,
@@ -6441,21 +6491,35 @@ window.GUIDE = {
           id: 'matthews_sebastian',
           name: 'Sherrie Matthews',
           party: 'NONPARTISAN',
+          incumbent: true,
           occupation: 'Sebastian City Council member (incumbent)',
-          bio: 'The sitting council member for one of the two seats up this year, seeking another term.',
+          bio: 'The sitting council member for one of the two seats up this year, seeking another term. Says she has lived in Indian River County a little more than 50 years, been involved in the community for more than 40, and is raising a grandson here.',
           positions: {
+            growth: {
+              summary: 'Her standard for annexation is "evolve with grace": a deal has to give something back for the long term, and she will not support one that is not sustainable. Wants more family-owned shops and a fishing-village look for waterfront buildings.',
+              quote: 'evolve with grace',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
             taxes: {
-              summary: 'Disputed the $50 million budget figure at the forum, saying grant money inflates the total and the city\'s operating budget is closer to $37 million.',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              summary: 'Voted to use reserves to balance this year\'s budget so the council could adopt a lower tax rate, and says she would do it again while Amendment 3 is unresolved. Disputes the $50 million budget figure, saying grant money inflates it and the operating budget is closer to $37 million.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              summary: 'Says she has never opposed Amendment 3 and is glad voters get to decide; says that once it passes, local government will have to do more with less, and that she is the best candidate to manage that. Did not say how she will vote.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Points to about nine treatment filters the city has installed and says it can add more. On septic-to-sewer, says she has called state representatives about statutory changes that took effect July 1, 2024.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
-              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
               date: '2026-10-25',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           ],
           finance: null,
@@ -6466,18 +6530,35 @@ window.GUIDE = {
           id: 'shellenberger_sebastian',
           name: 'Deborah Shellenberger',
           party: 'NONPARTISAN',
-          occupation: 'Not yet documented by this guide',
-          bio: 'Candidate for an at-large Sebastian City Council seat. Forum coverage reports she tied annexation to housing and the city\'s tax base; this guide could not read her full remarks, so no position is listed yet.',
+          occupation: 'Retired nurse and physician assistant',
+          bio: 'Says she worked 23 years as a nurse and about 25 as a physician assistant, and describes herself as newer to the city — which she says may be useful.',
           positions: {
-
+            growth: {
+              summary: 'Sees annexation as the city\'s chance to control growth: wants the added tax base, housing that people who work in Sebastian can afford, and a hard look at environmental harm. Supports small manufacturing and more local restaurants.',
+              quote: 'If you don\'t grow, you die.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            taxes: {
+              summary: 'Praised last year\'s budget work for holding down the increase, and says reserves can be used when the city needs help getting through a year.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            amendment: {
+              stance: 'oppose',
+              summary: 'Opposes Amendment 3, calling it a "Trojan horse." Estimates a $300,000 homeowner might save $1,400 to $1,800 the first year while the city could lose $2.7 to $2.8 million, and warns the ballot language bundles more than one change.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            },
+            lagoon: {
+              summary: 'Wants seagrass and oyster reefs, cleared ditches before a wet El Niño season, and a seasonal ban on lawn chemicals. Opposes a county stopgap of electric nitrogen-reducing septic tanks, which she says would fail in a power outage.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
           },
           record: [
             {
               type: 'fact',
-              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
-              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              claim: 'This guide has not completed a full record search on this candidate (no check of court, ethics, or campaign-finance filings beyond what is listed here).',
+              detail: 'Added Oct 25, 2026, nine days before the election. Reported as not fully searched, not as a clean record. City candidates file campaign finance with the Sebastian City Clerk, not the county system used elsewhere in this guide; those reports were not retrieved.',
               date: '2026-10-25',
-              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon" (Oct 2, 2026 forum)', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
             }
           ],
           finance: null,
