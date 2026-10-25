@@ -6357,6 +6357,141 @@ window.GUIDE = {
             }
         }
       ]
+  },
+
+  {
+    id: 'sebastian-council',
+    office: 'Sebastian City Council',
+    district: 'At-large',
+    type: 'nonpartisan',
+    ballot: 'general',
+    term: '2 years',
+    stakes: 'Added Oct 25, 2026. ONLY relevant if you live within Sebastian city limits. Two of the council\'s five seats are up, decided in a single nonpartisan "vote for 2" election on November 3, 2026 (an earlier edition of this guide wrongly gave the date as November 10). The seats are currently held by Ed Dodd, who is not on the ballot, and Sherrie Matthews, who is seeking another term. Growth, the city budget and the Indian River Lagoon dominated the candidates\' Oct 2 forum, hosted by the Sebastian River Area Chamber of Commerce, the Taxpayers Association of Indian River County and Sebastian Daily; a recording of the full forum (about 73 minutes) is on Sebastian Daily\'s YouTube channel and Facebook page. Coverage here is thin: this guide could read only excerpts of that coverage and has not checked the candidate list against the City Clerk\'s official qualified-candidate list.',
+    whoVotes: 'Only registered voters residing within Sebastian city limits, on the November 3, 2026 general election ballot. Vote for up to two; the top two finishers win.',
+    candidates: [
+        {
+          id: 'gable_sebastian',
+          name: 'Robert Gable',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Candidate for an at-large Sebastian City Council seat. This guide has not yet documented his background.',
+          positions: {
+
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
+              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'gilliams_sebastian',
+          name: 'Damien Gilliams',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Candidate for an at-large Sebastian City Council seat; also ran for the council in 2024.',
+          positions: {
+
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'Ran for Sebastian City Council in 2024 and finished third of three, with 1,518 votes (7%), behind Kelly Dixon and Ed Dodd.',
+              date: '2024-11-05',
+              source: { title: 'Sebastian Daily — "Sebastian Voters Re-Elect Ed Dodd, Kelly Dixon for City Council"', url: 'https://sebastiandaily.com/business/sebastian-voters-re-elect-ed-dodd-kelly-dixon-for-city-council-73142', date: '2024-11-06' }
+            },
+            {
+              type: 'fact',
+              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
+              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'gillmor_sebastian',
+          name: 'Richard Gillmor',
+          party: 'NONPARTISAN',
+          occupation: 'Former Sebastian City Council member',
+          bio: 'A former Sebastian City Council member seeking to return to the council.',
+          positions: {
+            taxes: {
+              summary: 'Argues city spending has grown far faster than the city: he said the budget was $22.5 million when he left office and $50 million last year, a 123.5% increase, while population grew 16%. Also said the city has not taken care of property it already owns, citing Hurricane Harbor.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
+              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'matthews_sebastian',
+          name: 'Sherrie Matthews',
+          party: 'NONPARTISAN',
+          occupation: 'Sebastian City Council member (incumbent)',
+          bio: 'The sitting council member for one of the two seats up this year, seeking another term.',
+          positions: {
+            taxes: {
+              summary: 'Disputed the $50 million budget figure at the forum, saying grant money inflates the total and the city\'s operating budget is closer to $37 million.',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
+              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        },
+        {
+          id: 'shellenberger_sebastian',
+          name: 'Deborah Shellenberger',
+          party: 'NONPARTISAN',
+          occupation: 'Not yet documented by this guide',
+          bio: 'Candidate for an at-large Sebastian City Council seat. Forum coverage reports she tied annexation to housing and the city\'s tax base; this guide could not read her full remarks, so no position is listed yet.',
+          positions: {
+
+          },
+          record: [
+            {
+              type: 'fact',
+              claim: 'This guide has not yet completed a record search on this candidate (no check of court, ethics, or campaign-finance filings).',
+              detail: 'Added Oct 25, 2026, nine days before the election, from news coverage of the Oct 2 candidate forum. Reported as not yet searched, not as a clean record.',
+              date: '2026-10-25',
+              source: { title: 'Sebastian Daily — "Five Sebastian council candidates face voters on growth, taxes and the lagoon"', url: 'https://www.sebastiandaily.com/business/five-sebastian-council-candidates-face-voters-on-growth-taxes-and-the-lagoon-95985/', date: '2026-10-06' }
+            }
+          ],
+          finance: null,
+          endorsements: [],
+          links: {}
+        }
+    ]
   }
 
   ]
