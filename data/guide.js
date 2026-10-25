@@ -783,6 +783,53 @@ window.GUIDE = {
       background:
         'Added Aug 2026. A federal question most directly relevant to the U.S. Senate and House races, but with real local stakes: Florida has roughly 4.7 million ACA marketplace enrollees relying on subsidies set to expire — more than any other state — and whether Congress extends them affects premiums for Indian River County residents directly.',
       sources: []
+    },
+    {
+      id: 'abortion',
+      name: 'Abortion',
+      background:
+        'Added Oct 2026. Mainly a state and federal question — the Governor, Legislature, Attorney General and Congress set and enforce the law; county and city boards do not. Florida bans most abortions after six weeks of pregnancy under SB 300 (2023), in effect since May 1, 2024. In November 2024, Amendment 4, which would have protected abortion access before viability, won 57% of the statewide vote but fell short of the 60% Florida requires to amend its constitution. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — SB 300 (2023), Pregnancy and Parenting Resources', url: 'https://www.flsenate.gov/Session/Bill/2023/300', date: '2026-10-25' },
+        { title: 'Ballotpedia — Florida Amendment 4, Right to Abortion Initiative (2024)', url: 'https://ballotpedia.org/Florida_Amendment_4,_Right_to_Abortion_Initiative_(2024)', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'guns',
+      name: 'Guns & the Second Amendment',
+      background:
+        'Added Oct 2026. Set almost entirely by the Legislature and Congress — Florida law preempts local governments from regulating firearms. Since July 1, 2023 (HB 543), Floridians who can legally own a gun may carry it concealed without a permit. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — HB 543 (2023), Public Safety', url: 'https://www.flsenate.gov/Session/Bill/2023/543', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'lgbtq',
+      name: 'LGBTQ+ Policy',
+      background:
+        'Added Oct 2026. Includes classroom instruction on sexual orientation and gender identity (HB 1557, 2022, the "Parental Rights in Education" law), gender-transition care for minors (restricted by SB 254, 2023), and transgender athletes in school sports. Set mostly by the Legislature, Congress and school boards. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Florida Senate — HB 1557 (2022), Parental Rights in Education', url: 'https://www.flsenate.gov/Session/Bill/2022/1557', date: '2026-10-25' },
+        { title: 'Florida Senate — SB 254 (2023), Treatments for Sex Reassignment', url: 'https://www.flsenate.gov/Session/Bill/2023/254', date: '2026-10-25' }
+      ]
+    },
+    {
+      id: 'data-centers',
+      name: 'AI Data Centers',
+      background:
+        'Added Oct 2026. Large data centers draw heavily on the power grid and, depending on cooling, on water. Local governments control zoning and site approval; the state controls utility regulation and tax incentives. As of August 2026, Indian River County had no approved path for a data center project. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'WQCS — "Indian River County: No Path Yet for Data Centers"', url: 'https://www.wqcs.org/wqcs-news/2026-08-04/indian-river-county-no-path-yet-for-data-centers?_amp=true', date: '2026-08-04' }
+      ]
+    },
+    {
+      id: 'drugs',
+      name: 'Drug Policy & Marijuana',
+      background:
+        'Added Oct 2026. Florida allows medical marijuana but not recreational use. In November 2024, Amendment 3, which would have legalized recreational marijuana for adults 21 and over, won about 56% of the statewide vote but fell short of the required 60%. Federal scheduling of marijuana is set by Congress and federal agencies. Positions below are each candidate\'s own statements or votes.',
+      sources: [
+        { title: 'Ballotpedia — Florida Amendment 3, Marijuana Legalization Initiative (2024)', url: 'https://ballotpedia.org/Florida_Amendment_3,_Marijuana_Legalization_Initiative_(2024)', date: '2026-10-25' }
+      ]
     }
   ],
 
