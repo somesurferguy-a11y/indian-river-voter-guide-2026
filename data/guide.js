@@ -2641,15 +2641,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 2157834,
-            spent: 984598,
-            asOf: '2026-07-29',
-            note: '$1,187,355 cash on hand. Includes $751,537 in itemized individual contributions and $1,385,550 from political committees — the only candidate in the race with significant institutional PAC money.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=H&state=FL&district=09',
-              date: '2026-08-07'
-            }
+            raised: 3464996,
+            spent: 2137323,
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026 from the Q3 report. $1.34 million cash on hand entering October; about $1.6 million raised in the third quarter alone. Earlier (through July 29) the guide reported $2.16M raised, including $1,385,550 from political committees — the only candidate in the race with significant institutional PAC money. Cycle totals here are from a summary of FEC filings; the cash-on-hand figure matches Florida Politics.',
+            source: { title: 'Florida Politics — "Darren Soto faces fight of his career against Dan Green in newly redrawn CD 9"', url: 'https://floridapolitics.com/archives/826101-darren-soto-faces-fight-of-his-career-against-dan-green-in-newly-redrawn-cd-9/', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -2760,12 +2756,8 @@ window.GUIDE = {
             spent: 935273,
             selfFunded: 1000000,
             asOf: '2026-07-29',
-            note: '$363,243 cash on hand. Only $144,589 came from itemized individual contributions and $8,500 from PACs — the bulk is his own money.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=H&state=FL&district=09',
-              date: '2026-08-07'
-            }
+            note: 'Raised/spent totals are through July 29, 2026. UPDATE through Sept 30, 2026 (FEC candidate page): $516,286 cash on hand and $1.84 million in total candidate loans — he lent his campaign another $700,000 in the third quarter, part of the $889,000 Florida Politics reports he took in that quarter. As of July, only $144,589 came from itemized individual contributions and $8,500 from PACs — the bulk is his own money.',
+            source: { title: 'FEC — Dan Green candidate overview, 2026', url: 'https://www.fec.gov/data/candidate/H6FL09294/', date: '2026-10-25' }
           },
           endorsements: [],
           links: {
@@ -3648,15 +3640,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 11260000,
+            raised: 20600000,
             spent: null,
-            asOf: '2026-07-29',
-            note: '$8.48 million cash on hand. Separately, roughly $520,000 in independent expenditures has supported her, and a pro-Moody super PAC (Stronger Safer Nation) reported about $11 million on hand — including a single $2.5 million contribution from Ken Griffin. That outside support dwarfs the $2,167 in independent expenditures recorded for Vindman.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=S&state=FL',
-              date: '2026-07-29'
-            }
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026. Cycle total across her committees, per the Tampa Bay Times; $7.2 million cash on hand entering October. She raised about $5.8 million in the third quarter, and about 10% of her money came from donors giving under $200. Not directly comparable to the $11.26 million (campaign account only, through July 29) shown in earlier editions. Separately, a pro-Moody super PAC (Stronger Safer Nation) reported about $11 million on hand as of the summer, including a single $2.5 million contribution from Ken Griffin.',
+            source: { title: 'Tampa Bay Times — "Angie Nixon outraises Ashley Moody in third quarter, still has less cash"', url: 'https://www.tampabay.com/news/florida-politics/elections/2026/10/17/nixon-moody-senate-campaign-donors/', date: '2026-10-17' }
           },
           endorsements: [],
           links: {
@@ -3884,15 +3872,11 @@ window.GUIDE = {
             }
           ],
           finance: {
-            raised: 974845,
+            raised: 8500000,
             spent: null,
-            asOf: '2026-08-05',
-            note: '$265,000 cash on hand — roughly one-fifteenth of her primary opponent’s war chest.',
-            source: {
-              title: 'FEC candidate totals, 2026 cycle',
-              url: 'https://www.fec.gov/data/candidates/?election_year=2026&office=S&state=FL',
-              date: '2026-08-05'
-            }
+            asOf: '2026-09-30',
+            note: 'Updated Oct 25, 2026. Cycle total per the Tampa Bay Times, including other committees and pre-primary reports; $4.5 million cash on hand at the end of September. She out-raised Moody in the third quarter ($7.9 million to $5.8 million), with roughly 61% of her haul from donors giving under $200. Florida Politics, counting her campaign account separately, reports $7.2 million raised in the quarter and just over $4.1 million cash entering October.',
+            source: { title: 'Tampa Bay Times — "Angie Nixon outraises Ashley Moody in third quarter, still has less cash"', url: 'https://www.tampabay.com/news/florida-politics/elections/2026/10/17/nixon-moody-senate-campaign-donors/', date: '2026-10-17' }
           },
           endorsements: [],
           links: {
@@ -4001,7 +3985,7 @@ window.GUIDE = {
     type: 'partisan',
     ballot: 'general',
     term: '4 years',
-    stakes: 'Florida\'s chief executive, term-limited after two terms; Ron DeSantis is not seeking re-election. The governor appoints agency heads and judges (subject to retention), signs or vetoes legislation including line-item budget vetoes, and sits atop the Florida Cabinet with the Attorney General, CFO, and Commissioner of Agriculture. The governor and lieutenant governor run as a single ticket. This was the most expensive primary cycle on the entire 2026 ballot: Donalds\' campaign and PAC combined raised more than $67 million, roughly ten times Jolly\'s total.',
+    stakes: 'Florida\'s chief executive, term-limited after two terms; Ron DeSantis is not seeking re-election. The governor appoints agency heads and judges (subject to retention), signs or vetoes legislation including line-item budget vetoes, and sits atop the Florida Cabinet with the Attorney General, CFO, and Commissioner of Agriculture. The governor and lieutenant governor run as a single ticket. This is the most expensive race on the entire 2026 ballot: as of Sept. 11, 2026, Donalds\' campaign and affiliated committees had raised about $120.9 million to Jolly\'s $14.6 million, roughly eight to one (see each candidate\'s money section).',
     whoVotes: 'Statewide. Registered Republicans and Democrats each had a contested primary on August 18; NPA and Libertarian candidates skipped the primary and go straight to the Nov 3 general ballot alongside the two major-party nominees. Every registered voter chooses among all qualified candidates on November 3.',
     primaryResult: {
         status: 'advanced',
@@ -4210,16 +4194,12 @@ window.GUIDE = {
               }
             ],
           finance: {
-              raised: 67000000,
-              spent: null,
-              asOf: '2026-06-01',
-              note: 'Campaign account plus political committee combined; $65.8 million cash on hand as of June 1, 2026. A direct FL Division of Elections database query returned individual contribution records but not a computed grand total (the tool\'s "totals" mode errored on every attempted date range) — this figure is secondary-sourced to reporting that itself cites DOE filings, not a raw database pull. Major PAC donors include Palm Beach billionaire Thomas Peterffy and shipping magnate Richard Uihlein ($1 million each) and the Florida Club for Growth ($975,000).',
-              source: {
-                  title: 'Florida Politics — "Byron Donalds posts record $22M quarter to kick off 2026 Governor\'s race"',
-                  url: 'https://floridapolitics.com/archives/788293-byron-donalds-posts-record-22m-quarter-to-kick-off-2026-governors-race/',
-                  date: '2026-04-01'
-                }
-            },
+            raised: 120900000,
+            spent: null,
+            asOf: '2026-09-11',
+            note: 'Updated Oct 25, 2026. Campaign account plus affiliated political committees combined, from state filings through Sept. 11, 2026: $43.5 million cash on hand — nearly seven times Jolly\'s. Later reports put his combined total above $140 million, and the Florida Phoenix (Oct 20, citing OpenSecrets) reports a cash-on-hand edge over Jolly of about $33 million. Secondary-sourced to reporting on Division of Elections filings, not a direct database pull. Major earlier donors include Thomas Peterffy and Richard Uihlein ($1 million each) and the Florida Club for Growth ($975,000).',
+            source: { title: 'Florida Politics — "Polls say dead heat, money says otherwise: Byron Donalds holds $44 million to David Jolly\'s $6 million"', url: 'https://floridapolitics.com/archives/820861-cash-crunch-continues-for-david-jolly-in-governors-race/', date: '2026-09-11' }
+          },
           endorsements: [
               {
                 name: 'President Donald Trump — "As Governor, Byron would have a BIG Voice and would work closely with me to advance our America First Agenda."',
@@ -4417,16 +4397,12 @@ window.GUIDE = {
               }
             ],
           finance: {
-              raised: 6400000,
-              spent: null,
-              asOf: '2026-08-18',
-              note: 'Includes $1.6 million from Florida\'s public campaign-finance matching-funds program. Roughly one-tenth of Donalds\' reported $67M+. Top donors in one recent quarter were investment advisor Donald Sussman and heiress Barbara Stiefel, $100,000 each; campaign says its broader donor base is mostly grassroots. A direct FL DOE database query for a grand total could not be completed in this research pass; this figure is secondary-sourced to reporting that itself cites DOE filings.',
-              source: {
-                  title: 'WLRN — "David Jolly wins Democratic nomination for governor"',
-                  url: 'https://www.wlrn.org/government-politics/2026-08-18/david-jolly-governors-race-florida',
-                  date: '2026-08-18'
-                }
-            },
+            raised: 14600000,
+            spent: null,
+            asOf: '2026-09-11',
+            note: 'Updated Oct 25, 2026. Campaign account plus political committee combined, from state filings through Sept. 11, 2026: $6.4 million cash on hand. Includes money from Florida\'s public matching-funds program ($1.6 million as of August). Later reports put his two accounts at around $20 million raised, and the Democratic Governors Association announced a $1 million investment in his campaign on Oct 20. Secondary-sourced to reporting on Division of Elections filings, not a direct database pull.',
+            source: { title: 'Florida Politics — "Polls say dead heat, money says otherwise: Byron Donalds holds $44 million to David Jolly\'s $6 million"', url: 'https://floridapolitics.com/archives/820861-cash-crunch-continues-for-david-jolly-in-governors-race/', date: '2026-09-11' }
+          },
           endorsements: [
               {
                 name: 'Florida Education Association (the state\'s largest teachers\' union), in coordination with the Florida AFL-CIO',
