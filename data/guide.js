@@ -1792,14 +1792,24 @@ window.GUIDE = {
           party: 'NONPARTISAN',
           residence: 'Vero Beach',
           occupation: 'Operations Manager, Chuck Stone Painting (confirmed directly with the company)',
-          bio: 'Works as Operations Manager at Chuck Stone Painting, a Vero Beach painting company — confirmed directly on the company\'s own staff page. Business records connect a Craig MacCoy at the same street address on file with the Supervisor of Elections to a Vero Beach pool-service business dating to 2004, alongside his current painting-company role. Ran previously for a DIFFERENT seat on this board — Seat 1 — in 2020, when a news article described him as a consultant and a graduate student at USF studying cybercrime. His 2026 Supervisor of Elections filing itself still contains no biography, platform, or photograph.',
+          bio: 'Works as Operations Manager at Chuck Stone Painting, a Vero Beach painting company — confirmed directly on the company\'s own staff page. Business records connect a Craig MacCoy at the same street address on file with the Supervisor of Elections to a Vero Beach pool-service business dating to 2004, alongside his current painting-company role. Ran previously for a DIFFERENT seat on this board — Seat 1 — in 2020, when a news article described him as a consultant and a graduate student at USF studying cybercrime. By his own candidate statement (filed after this guide\'s August review): an Indian River County resident since 1981, born and raised in Williamsburg, Virginia; Walsingham Academy and Fork Union Military Academy (1986); studied business management at Virginia Commonwealth University on a soccer scholarship; eight years in the U.S. Marine Corps; then, after returning to Vero Beach in 1996, heavy-equipment operator and later superintendent at Dennis L. Smith Inc. and manager of a mobile asphalt plant after its sale to Martin Paving. He says he has been a state-certified pool builder running his own business for about 30 years. He has coached at Master\'s Academy, including varsity football. His statement does not mention the Chuck Stone Painting role confirmed on that company\'s staff page in August.',
           positions: {
-
+            taxes: {
+              stance: 'transparency-oversight',
+              summary: 'Says the district needs strong oversight, accountability, transparency, sound financial management and long-term planning, and that taxpayer dollars should be handled with the care a responsible business owner gives his own money.',
+              quote: 'I believe taxpayer dollars should be treated with the same care and accountability that a responsible business owner gives his own money.',
+              source: { title: 'Craig MacCoy — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
+            },
+            'mosquito-district': {
+              summary: 'Calls mosquito control "first and foremost a public-health responsibility" and stresses preparedness: equipment, personnel, infrastructure and contingency plans, with backup plans before equipment fails. Has advocated considering expanding the commission from three members to five for broader representation.',
+              quote: 'Mosquito control is first and foremost a public-health responsibility.',
+              source: { title: 'Craig MacCoy — candidate statement filed with the Supervisor of Elections', url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?op=cv&e=18&c=indian&ca=571&rellevel=4&committee=N', date: '2026-10-25' }
+            }
           },
           record: [
             {
               type: 'fact',
-              claim: 'His official Supervisor of Elections page contains contact information and financial reports only — no biography, no platform, no photograph filed with the county.',
+              claim: 'As of this guide\'s August review, his official Supervisor of Elections page contained contact information and financial reports only — no biography, no platform, no photograph. Updated Oct 25, 2026: he has since filed a full candidate statement (see bio and positions).',
               detail: 'A voter who looks him up through the official county channel finds nothing about who he is there. This guide also found no 2026 campaign website and no campaign social media with meaningful content. His opponent filed a statement with the county and has both a website and a Facebook page.',
               date: '2026-08-05',
               source: {
@@ -1832,11 +1842,11 @@ window.GUIDE = {
               }
             },
             {
-              type: 'unverified',
-              claim: 'A source describes a Craig MacCoy prioritizing "the Lagoon and wetlands first," then public education, "while being good stewards for taxpayers," and favoring integrated pest management.',
-              detail: 'This guide could not confirm this statement is specific to his 2026 Seat 2 candidacy — it may date to an earlier MacCoy candidacy for a different seat (he previously ran for Seat 1 in 2020). Flagged as uncertain rather than presented as a confirmed current position. Neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located.',
-              date: '2026-08-27',
-              source: { title: "This guide's review of public sources (date/seat uncertain)", url: 'https://www.irmosquito.com/', date: '2026-08-27' }
+              type: 'fact',
+              claim: 'Resolved Oct 25, 2026: the statement putting "the Lagoon and wetlands first," then public education, comes from his 2020 run for Seat 1 of this board, not his 2026 Seat 2 campaign.',
+              detail: 'Earlier editions listed this as unverified because its date and seat were unclear. It is included as background on his past candidacy, not as a current platform; his 2026 statement does not mention the lagoon. Neither Flock/ALPR cameras nor AI data centers fall within this district\'s authority in any source located.',
+              date: '2020-10-15',
+              source: { title: 'Hometown News — "Indian River Mosquito Control District Seat 1" (2020 candidate profiles)', url: 'https://www.hometownnewstc.com/news/indian-river-mosquito-control-district-seat-1/article_4524a358-0e31-11eb-b7cc-67bb8a9504b0.html', date: '2020-10-15' }
             }
           ],
           finance: {
