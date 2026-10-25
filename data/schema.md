@@ -71,6 +71,15 @@ GUIDE = {
         source: { title, url, date }
       },
 
+      // OPTIONAL. A published correction to something this guide previously
+      // got wrong about the race itself (e.g. which ballot it is on). Renders
+      // as a warning callout at the top of the race. Source required.
+      correction: {
+        summary: "What was wrong, what is right, and what the voter should do",
+        date: "YYYY-MM-DD",
+        source: { title, url, date }
+      },
+
       candidates: [ Candidate ]
     }
   ]

@@ -114,7 +114,7 @@ window.MEDIA_RATINGS = {
 window.GUIDE = {
 
   meta: {
-    updated: '2026-08-26',
+    updated: '2026-10-25',
     primaryDate: '2026-08-18',
     generalDate: '2026-11-03',
     disclaimer: 'Independent, nonpartisan, and not affiliated with any candidate, party, or government agency.'
@@ -139,9 +139,9 @@ window.GUIDE = {
       source: { title: 'IRC Supervisor of Elections homepage notice', url: 'https://voteindianriver.gov/', date: '2026-08-05' }
     },
     {
-      label: 'Sebastian Inlet Tax District — added Aug 26, 2026; status genuinely unclear',
-      detail: 'An independent special taxing district managing Sebastian Inlet, separate from the county, with a 5-member commission (3 Brevard County seats, 2 Indian River County seats). The Indian River County seat, Board District 4, is held by David Barney with a term expiring in 2026 — but this guide could NOT confirm whether he is seeking re-election, whether the seat is contested, or whether it will actually appear on any Indian River County voter\'s printed ballot this cycle. It does not appear on the county Supervisor of Elections\' own "offices up for election" list, which only covers offices that qualify through the county\'s regular candidate portal — this district appears to run its own separate qualifying process. Included here so voters who\'ve heard of it know what is and isn\'t confirmed, rather than finding no mention of it at all.',
-      source: { title: 'Sebastian Inlet District — Board of Commissioners', url: 'https://www.sitd.us/board-of-commissioners', date: '2026-08-25' }
+      label: 'Sebastian Inlet District — Indian River seat is unopposed (updated Oct 25, 2026)',
+      detail: 'An independent special taxing district managing Sebastian Inlet, separate from the county, with a 5-member commission (3 Brevard County seats, 2 Indian River County seats). Updated Oct 25, 2026: the Florida Division of Elections candidate listing shows incumbent David Barney (Board District 4, the Indian River County seat up this year) as qualified and UNOPPOSED, so he keeps the seat and there is no Indian River County contest for this district. The one contested Sebastian Inlet seat this year is Seat 5 — a Brevard County seat (incumbent Lisa Leger Frazier vs. Calvin Holton) — which this guide does not cover; confirm on your own sample ballot whether any Sebastian Inlet race appears on it.',
+      source: { title: 'Florida Division of Elections — Sebastian Inlet District candidate listing, 2026 general', url: 'https://dos.elections.myflorida.com/candidates/CanList.asp?elecid=20261103-GEN&OfficeCode=SEB', date: '2026-10-25' }
     }
   ],
 
@@ -1656,18 +1656,14 @@ window.GUIDE = {
       office: 'Mosquito Control District',
       district: 'Seat 2',
       type: 'nonpartisan',
-      ballot: 'decided',
+      ballot: 'general',
       term: '4 years',
-      stakes: 'The ONLY contested special-district race on the August 18 ballot, and one of just two races open to every voter regardless of party. This is a separate government you already pay taxes to: an independent special district created by the Legislature in 1925, governed by just THREE commissioners elected countywide, levying its own property tax of about 0.25 mills — roughly $75 a year on a home with $300,000 of taxable value, paid by about 93,000 parcels. It raises around $5.4 million a year. With only three seats, this one is a third of the entire governing body.',
-      whoVotes: 'EVERY registered voter in Indian River County, including No Party Affiliation voters. It is nonpartisan, and with two candidates it is decided outright on August 18 — it does not appear again in November. Worth noting: roughly 24,000 NPA and 26,000 Democratic voters are eligible here, and neither candidate has made a documented campaign expenditure aimed at them. Both candidates\' only political-organization spending was at Republican Party events. That is a sourced observation about spending, not a claim about either candidate\'s registration, which this guide did not verify.',
-      primaryResult: {
-        status: 'decided',
-        summary: 'This is a two-candidate nonpartisan race, so Florida\'s universal-primary rule means it was decided outright on Aug 18 regardless of margin — it will not appear on the Nov 3 ballot. However, despite an extensive search of the state\'s Election Night Reporting system, local news coverage, and official county sources, this guide could not confirm a winner or vote totals as of its last update (Aug 25, 2026). Confirm directly with the Indian River County Supervisor of Elections at (772) 226-4700.',
-        source: {
-          title: 'This guide\'s review of official and news sources — winner not located as of last update',
-          url: 'https://www.voteindianriver.gov/',
-          date: '2026-08-25'
-        }
+      stakes: 'The only contested special-district race on any Indian River County ballot this cycle, and on the November 3 ballot of every voter in the county. This is a separate government you already pay taxes to: an independent special district created by the Legislature in 1925, governed by just THREE commissioners elected countywide, levying its own property tax of about 0.25 mills — roughly $75 a year on a home with $300,000 of taxable value, paid by about 93,000 parcels. It raises around $5.4 million a year. With only three seats, this one is a third of the entire governing body.',
+      whoVotes: 'EVERY registered voter in Indian River County, including No Party Affiliation voters, on the November 3, 2026 general election ballot. It is nonpartisan; the higher vote-getter wins. Worth noting: roughly 24,000 NPA and 26,000 Democratic voters are eligible here, and neither candidate has made a documented campaign expenditure aimed at them. Both candidates\' only political-organization spending was at Republican Party events. That is a sourced observation about spending, not a claim about either candidate\'s registration, which this guide did not verify.',
+      correction: {
+        summary: 'Earlier editions of this guide (through Aug 26, 2026) said this race was decided on the August 18 primary ballot and would not appear in November. That was wrong. Florida law elects mosquito control commissioners "at the general election" (s. 388.101, F.S.), and Kirkland vs. MacCoy is on the November 3, 2026 ballot for every voter in the county. If you skipped this race because this guide said it was over, it is not.',
+        date: '2026-10-25',
+        source: { title: 'Florida Statutes s. 388.101 — district commissioners are elected "at the general election" on a nonpartisan basis', url: 'https://www.flsenate.gov/Laws/Statutes/2019/Chapter388/All', date: '2026-10-25' }
       },
       candidates: [
         {
@@ -1733,7 +1729,7 @@ window.GUIDE = {
             spent: 60.0,
             selfFunded: 450.0,
             asOf: '2026-08-05',
-            note: 'Includes $300 in-kind. Only TWO outside donors. Out-raised by her challenger nearly 2 to 1 — unusual for an incumbent. Her single reported expenditure, $60, went to a Republican Women event.',
+            note: 'Figures as of Aug 5, 2026. Includes $300 in-kind. Only TWO outside donors at that point. A later secondary summary of county filings (The Ballot Brief, October 2026 — not re-pulled directly by this guide) reports $4,450 raised. Her challenger has out-raised her throughout — unusual for an incumbent. Her single reported expenditure, $60, went to a Republican Women event.',
             source: {
               title: 'IRC Supervisor of Elections campaign finance portal',
               url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',
@@ -1804,7 +1800,7 @@ window.GUIDE = {
             spent: 211.35,
             selfFunded: 25.0,
             asOf: '2026-08-05',
-            note: 'Six outside donors. Has out-raised the sitting incumbent nearly 2 to 1 — the notable fact in this race. His only political-organization spending was $60 to a Republican Women event and $26.35 at an Indian River County Republican Executive Committee barbecue.',
+            note: 'Figures as of Aug 5, 2026, when he had six outside donors. A later secondary summary of county filings (The Ballot Brief, October 2026 — not re-pulled directly by this guide) reports $5,925 raised and $5,177 spent, still ahead of the sitting incumbent — the notable fact in this race. His only political-organization spending was $60 to a Republican Women event and $26.35 at an Indian River County Republican Executive Committee barbecue.',
             source: {
               title: 'IRC Supervisor of Elections campaign finance portal',
               url: 'https://www.voterfocus.com/CampaignFinance/candidate_pr.php?c=indian&e=18',

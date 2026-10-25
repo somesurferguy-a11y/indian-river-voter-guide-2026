@@ -401,6 +401,12 @@ function renderRace(race, issues) {
           ${race.stakes ? `<p>${esc(race.stakes)}</p>` : ''}
         </div>
 
+        ${race.correction ? `<div class="callout callout--warn">
+          <h4>Correction${race.correction.date ? ' — ' + esc(race.correction.date) : ''}</h4>
+          <p class="mb-0">${esc(race.correction.summary)}</p>
+          ${srcLink(race.correction.source)}
+        </div>` : ''}
+
         ${race.primaryResult ? `<div class="callout ${race.primaryResult.status === 'decided' ? 'callout--ok' : 'callout--info'}">
           <h4>${race.primaryResult.status === 'decided' ? 'Decided in the Aug 18 primary' : 'Aug 18 primary result'}</h4>
           <p class="mb-0">${esc(race.primaryResult.summary)}</p>
@@ -497,6 +503,8 @@ function validateGuide(G) {
       if (c.primary && (c.primary.result === 'won' || c.primary.result === 'lost') && !c.primary.source)
         errs.push(`${c.name}: primary result missing source`);
     });
+    if (race.correction && !(race.correction.source && race.correction.source.url))
+      errs.push(`${race.office}: correction missing source`);
     if (race.primaryResult && !race.primaryResult.source)
       errs.push(`${race.office}: primaryResult missing source`);
   });
